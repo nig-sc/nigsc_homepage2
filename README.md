@@ -40,4 +40,4 @@ npm install  # 初回のみ
 npm start
 ```
 
-![](image.png)
+![](top_page.png)
