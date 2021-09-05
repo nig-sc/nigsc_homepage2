@@ -1,33 +1,42 @@
-# Website
+# NIG Supercomputer Home Page (version 2)
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## 起動方法
+
+
+### nvmを用いたNode.jsのインストール
+
+前提としてNode.jsがインストールされている必要があります。
+
+1. nvmのインストール
 
 ```
-$ yarn
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-### Local Development
+最新バージョンが何かは以下のページにて確認してください。https://github.com/nvm-sh/nvm
+
+2. `source ~/.bashrc`などによりnvmをアクティベートする。
+3. `nvm ls-remote` で、利用可能なnode.jsのバージョンを表示させる。
+4. `nvm install v12.18.3` のようにしてNode.jsをインストールする。
+5. `nvm use v12.18.3` のようにしてNode.jsをアクティベートする。
+
+### ホームページの起動
+
+本サイトはDocsaurusを使っています。 https://v1.docusaurus.io/en/
+
+1. このgitリポジトリをcloneする。
 
 ```
-$ yarn start
+git clone https://github.com/oogasawa/nigsc_homepage2
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+2. 以下のコマンドにてwebサーバを起動する。（ブラウザが開きページが表示される）
 
 ```
-$ yarn build
+cd nigsc_homepage2
+npm install  # 初回のみ
+npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
