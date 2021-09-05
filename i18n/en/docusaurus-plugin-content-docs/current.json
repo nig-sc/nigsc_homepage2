@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.topSidebar.category.はじめに": {
+    "message": "はじめに",
+    "description": "The label for category はじめに in sidebar topSidebar"
+  },
+  "sidebar.topSidebar.category.新着情報": {
+    "message": "新着情報",
+    "description": "The label for category 新着情報 in sidebar topSidebar"
+  },
+  "sidebar.topSidebar.category.障害情報": {
+    "message": "障害情報",
+    "description": "The label for category 障害情報 in sidebar topSidebar"
+  },
+  "sidebar.applicationsSidebar.category.利用規定等": {
+    "message": "利用規定等",
+    "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.新規登録・更新等": {
+    "message": "新規登録・更新等",
+    "description": "The label for category 新規登録・更新等 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.利用料金の支払い方法": {
+    "message": "利用料金の支払い方法",
+    "description": "The label for category 利用料金の支払い方法 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.その他問い合わせ": {
+    "message": "その他問い合わせ",
+    "description": "The label for category その他問い合わせ in sidebar applicationsSidebar"
+  },
+  "sidebar.reportSidebar.category.成果報告": {
+    "message": "成果報告",
+    "description": "The label for category 成果報告 in sidebar reportSidebar"
+  }
+}
