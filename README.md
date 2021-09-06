@@ -24,8 +24,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 ### ホームページの起動
 
-本サイトはDocsaurusを使っています。 https://v1.docusaurus.io/en/
-
 1. このgitリポジトリをcloneする。
 
 ```
