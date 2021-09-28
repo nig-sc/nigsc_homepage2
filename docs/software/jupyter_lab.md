@@ -28,7 +28,7 @@ $ ip a | grep ib0
  inet 172.19.7.186/20 brd 172.19.15.255 scope global ib0
 ``` 
 
-この例の場合はqloginにより割り当てられた<span style="color: red; ">インタラクティブノードのローカルIPアドレス</span>は172.19.7.186である。
+この例の場合はqloginにより割り当てられたインタラクティブノードのローカルIPアドレスは172.19.7.186である。
  
   
   
@@ -52,7 +52,7 @@ $ jupyter lab --no-browser --ip "*"
 
 ```
 
-ここで<span style="color: red; ">インタラクティブノード上のJupyter Labのポート番号</span>（この例の場合8888）を覚えておく。
+ここでインタラクティブノード上のJupyter Labのポート番号（この例の場合8888）を覚えておく。
 
 
 ### SSHポートフォワード
@@ -70,9 +70,9 @@ Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
 
 - (1)については適当に決めて良い。
 
-- (2)は上記の「<span style="color: red; ">インタラクティブノードのローカルIPアドレス</span>」である。
+- (2)は上記の「インタラクティブノードのローカルIPアドレス」である。
 
-- (3)は上記の「<span style="color: red; ">インタラクティブノード上のJupyter Labのポート番号</span>」である。
+- (3)は上記の「インタラクティブノード上のJupyter Labのポート番号」である。
 
 
 ### Webブラウザからのアクセス

@@ -7,11 +7,8 @@ title: "Javaの使い方"
 Java処理系 (JDK)のインストールはユーザー権限で可能なので、各自必要なバージョンのJDKを自分のホームディレクトリにインストールしてください。
 
 - [Oracle Java SE download site](https://www.oracle.com/java/technologies/javase-downloads.html)
-
 - [OpenJDK download site](https://openjdk.java.net/install/index.html)
-
-- GraalVM download site
-
+- [GraalVM download site](https://www.graalvm.org/)
 - [IBM Java SDK download site](https://www.ibm.com/support/pages/java-sdk-downloads-version-80) (古いバージョンのJavaをサポート）
 
 インストール例
@@ -63,7 +60,7 @@ $
 #### 対処方法
 
  Javaプログラムから使われるメモリは、(1)JVMが管理している「Javaヒープメモリ」 (2)OSが管理している「ネイティブメモリ」の２種類があります。
- glibc 2.10以降で arena機能が導入されたことにより、Javaプログラムにとってはネイディブメモリ側のメモリ確保量が不必要に大きくなる（常に8GB程とられる）結果となっております。arena機能はJavaプログラムの実行時には不要ですので<span style="color: red; ">Javaプログラムを使う際には環境変数 MALLOC_ARENA_MAX に小さな値を設定してください。</span>
+ glibc 2.10以降で arena機能が導入されたことにより、Javaプログラムにとってはネイディブメモリ側のメモリ確保量が不必要に大きくなる（常に8GB程とられる）結果となっております。arena機能はJavaプログラムの実行時には不要ですのでJavaプログラムを使う際には環境変数 MALLOC_ARENA_MAX に小さな値を設定してください。
  
 ```
  $ export MALLOC_ARENA_MAX=3

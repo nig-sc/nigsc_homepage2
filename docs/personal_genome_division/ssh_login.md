@@ -1,6 +1,6 @@
 ---
-id: ssh_login
-title: "SSHログイン"
+id: pg_login
+title: "ログイン方法（個人ゲノム解析区画）"
 ---
 
 VPNつかってログインします。

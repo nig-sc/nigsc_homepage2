@@ -24,7 +24,7 @@ title: "ソフトウェア"
 <tr>
 <td width="300">
 
-[Slurm](slurm)
+Slurm
 </td>
 <td width="300">利用不可</td>
 <td width="300">要申請</td>
@@ -79,8 +79,7 @@ title: "ソフトウェア"
 
 BioContainers projectが作成したSingularityコンテナイメージ(2千種類を超える解析ソフトウェア、バージョンの違いを含め9万個を超えるSingularityイメージファイル）を、遺伝研スパコンの`/user/local/biotools/`ディレクトリ以下に配置してあります。
 
-各ソフトウェアの内容、使い方については [BioContainersの公式サイト](https://biocontainers.pro/registry )
-をご参照ください。
+各ソフトウェアの内容、使い方については [BioContainersの公式サイト](https://biocontainers)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
 
 </td>
 </tr>
@@ -166,7 +165,7 @@ Singularityコンテナを利用してください。
 <tr>
 <td width="300">
 
-[RStudio Server](r_studio_server)
+R Studio Server
 
 </td>
 <td width="300">利用可能</td>
@@ -203,7 +202,7 @@ Singularityコンテナを利用してください。
 <tr>
 <td width="300">
 
-[C/C++ (GCC)](gcc)
+C/C++ (GCC)
 
 </td>
 <td width="300">利用可能</td>
@@ -212,7 +211,8 @@ Singularityコンテナを利用してください。
 <tr>
 <td width="300">
 
-[C/C++ (Intel Compiler)](intel_compiler)
+C/C++ (Intel Compiler)
+
 </td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
@@ -221,7 +221,8 @@ Singularityコンテナを利用してください。
 <tr>
 <td width="300">
 
-[C/C++ (PGI Compiler)](pgi_compiler)
+C/C++ (PGI Compiler)
+
 </td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
@@ -229,7 +230,7 @@ Singularityコンテナを利用してください。
 <tr>
 <td width="300">
 
-[CUDA](cuda)
+CUDA
 </td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>

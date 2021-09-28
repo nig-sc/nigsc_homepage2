@@ -38,25 +38,30 @@ module.exports = {
             "guides/top",
             "guides/divisions",
             "guides/hardware",
-            "software/software",
-            "guides/databases"
+            "software/software"
         ],
         "一般解析区画の使い方": [
-            "general_analysis_division/ssh_login"
+            "general_analysis_division/ga_introduction",
+            "general_analysis_division/ga_application",
+            "general_analysis_division/ga_login",
+            "general_analysis_division/ga_interactive",
+            "general_analysis_division/ga_batch",
+            "general_analysis_division/ga_transfer",
+            "general_analysis_division/ga_lustre",
         ],
         "個人ゲノム解析区画の使い方": [
-            "personal_genome_division/ssh_login"
+            "personal_genome_division/pg_introduction",
+            "personal_genome_division/pg_application",
+            "personal_genome_division/pg_login",
+            "personal_genome_division/pg_interactive",
+            "personal_genome_division/pg_batch",
+            "personal_genome_division/pg_transfer",
+            "general_analysis_division/ga_lustre",
         ],
         "稼働状況": [
             "operation/operation",
             "operation/gfree",
         ],
-        "お問い合わせ等": [
-            "faq/faq1",
-            "application/reference"
-        ],
-
-
     },
     softwareSidebar: {
         "ジョブスケジューラ": [
@@ -64,21 +69,16 @@ module.exports = {
             "software/slurm"
         ],
         "コンテナ・解析パイプライン": [
-            "software/singularity",
+            "software/Singularity",
         ],
         "開発環境・ライブラリ": [
             "software/python",
             "software/R",
             "software/jupyter_notebook",
             "software/jupyter_lab",
-            "software/r_studio_server",
             "software/java",
             "software/typescript",
             "software/rust",
-            "software/gcc",
-            "software/intel_compiler",
-            "software/pgi_compiler",
-            "software/cuda"
         ]
     },
     applicationsSidebar : {
@@ -86,6 +86,21 @@ module.exports = {
             "application/application",
             "application/use_policy",
             "application/legislation"
+        ],
+        "ユーザー登録・変更": [
+            "application/registration",
+            "application/resource_extention",
+            "application/ssh_keys",
+            "application/renewal",
+        ],
+        "課金サービス利用方法": [
+            "application/billing_service",
+            "application/invoice",
+            "application/price_list",
+        ],
+        "お問い合わせ等": [
+            "faq/faq1",
+            "application/reference"
         ],
     },
     advancedGuidesSidebar : {
