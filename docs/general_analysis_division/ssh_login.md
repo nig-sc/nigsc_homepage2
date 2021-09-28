@@ -1,6 +1,6 @@
 ---
 id: ssh_login
-title: "SSHログイン"
+title: "ログインの方法"
 ---
 
 SSHログイン

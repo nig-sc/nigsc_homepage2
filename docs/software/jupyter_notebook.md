@@ -13,7 +13,7 @@ $ ip a | grep ib0
     inet 172.19.7.186/20 brd 172.19.15.255 scope global ib0
 
 ```
-この例の場合はqloginにより割り当てられた<span style="color: red; ">インタラクティブノードのローカルIPアドレス</span>は172.19.7.186である。
+この例の場合はqloginにより割り当てられたインタラクティブノードのローカルIPアドレスは172.19.7.186である。
 
 
 次にインタラクティブノード上でJuypter Notebookサーバーを起動する。
@@ -32,7 +32,7 @@ $ ip a | grep ib0
      or http://127.0.0.1:8888/?token=bc5ae6c7d53b76f9721c95308cf25405c399bbc770b37040
 ```
 
-ここで<span style="color: red; ">インタラクティブノード上のJupyter Notebookのポート番号</span>（この例の場合8888）を覚えておく。
+ここでインタラクティブノード上のJupyter Notebookのポート番号（この例の場合8888）を覚えておく。
 
 ### SSHポートフォワード
 

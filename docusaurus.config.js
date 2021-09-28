@@ -6,7 +6,7 @@ module.exports = {
     title: 'My Site',
     tagline: 'Dinosaurs are cool',
     url: 'https://your-docusaurus-test-site.com',
-    baseUrl: '/',
+    baseUrl: '/~oogasawa/nigsc/',
     i18n:{
         defaultLocale: 'ja',
         locales: ['ja', 'en'],
