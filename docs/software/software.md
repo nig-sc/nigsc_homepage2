@@ -26,7 +26,7 @@ title: "ソフトウェア"
 
 Slurm
 </td>
-<td width="300">利用不可</td>
+<td width="300">☓</td>
 <td width="300">要申請</td>
 </tr>
 </table>
@@ -52,13 +52,13 @@ Slurm
 <tr>
 <td width="300">Rhelixa RNAseqパイプライン</td>
 <td width="300">インストール済み</td>
-<td width="300">???</td>
+<td width="300">要申請</td>
 </tr>
 
 <tr>
 <td width="300">DFAST</td>
-<td width="300">???</td>
-<td width="300">???</td>
+<td width="300">利用可能</td>
+<td width="300">利用可能</td>
 </tr>
 
 </table>
@@ -100,13 +100,13 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 </tr>
 <tr>
 <td width="300">Aspera</td>
-<td width="300">???</td>
-<td width="300">???</td>
+<td width="300">利用可能</td>
+<td width="300">☓</td>
 </tr>
 <tr>
 <td width="300">HCPtools</td>
-<td width="300">???</td>
-<td width="300">???</td>
+<td width="300">☓</td>
+<td width="300">要申請</td>
 </tr>
 </table>
 
@@ -215,7 +215,7 @@ C/C++ (Intel Compiler)
 
 </td>
 <td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">☓</td>
 
 </tr>
 <tr>
@@ -225,7 +225,7 @@ C/C++ (PGI Compiler)
 
 </td>
 <td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">☓</td>
 </tr>
 <tr>
 <td width="300">

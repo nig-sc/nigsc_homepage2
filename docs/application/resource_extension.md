@@ -1,5 +1,5 @@
 ---
-id: resource_extention
+id: resource_extension
 title: "利用リソースの拡張申請"
 ---
 
