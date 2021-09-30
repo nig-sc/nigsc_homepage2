@@ -115,7 +115,7 @@ module.exports = {
             "report/report_2019",
             "report/papers_2019",
         ],
-
+	
     }
 
 };
