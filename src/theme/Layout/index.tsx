@@ -32,7 +32,7 @@ function Layout(props: Props): JSX.Element {
       <AnnouncementBar />
 
       <div class="topnav">
-          <a href="#"><img src="/img/ddbj_logo_mini.png" height="40"/></a>
+          <a href="#"><img src="img/ddbj_logo_mini.png" height="40"/></a>
           <a href="#submission">データ登録</a>
           <a href="#database">データベース</a>
           <a href="#supercomputer">スパコン</a>

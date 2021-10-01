@@ -3,8 +3,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'My Site',
-    tagline: 'Dinosaurs are cool',
+    title: 'NIG supercomputer',
+    tagline: 'National Institute of Genetics, Japan',
     url: 'https://your-docusaurus-test-site.com',
     baseUrl: '/~oogasawa/nigsc/',
     i18n:{
@@ -17,8 +17,8 @@ module.exports = {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'oogasawa', // Usually your GitHub org/user name.
+    projectName: 'nigsc_homepage2', // Usually your repo name.
     themeConfig: {
         colorMode: {
             disableSwitch: true,
@@ -26,7 +26,7 @@ module.exports = {
         navbar: {
             title: 'NIG Supercomputer',
             logo: {
-                alt: 'My Site Logo',
+                alt: 'NIGSC Logo',
                 src: 'img/nigsc_logo.png',
             },
             items: [
