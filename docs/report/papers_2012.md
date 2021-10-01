@@ -1,6 +1,6 @@
 ---
 id: papers_2012
-title: 論文リスト(2012)
+title: 論文リスト
 ---
 
 2012.01.01 -- 2012.12.31に発表された論文リスト
@@ -13,18 +13,18 @@ title: 論文リスト(2012)
     <td>タイトル</td>
     <td>雑誌名、巻号</td>
     <td>公開年</td>
-    <td>DOI</td>
     <td>PMID</td>
+    <td>DOI</td>
 </tr>
 <tr>
     <td>1</td>
     <td>大川 恭行</td>
     <td>Yasuyuki Ohkawa</td>
-    <td>Direct isolation and RNA-seq reveal environment-dependent properties of engrafted neural stem/grogenitor cells.</td>
+    <td>Direct isolation and RNA-seq reveal environment-dependent properties of engrafted neural stem/progenitor cells.</td>
     <td>Nat Commun. 2012;3:1140.</td>
     <td>2012</td>
-    <td>doi:10.1038/ncomms2132</td>
     <td>23072808</td>
+    <td>doi:10.1038/ncomms2132</td>
 </tr>
 <tr>
     <td>2</td>
@@ -33,8 +33,8 @@ title: 論文リスト(2012)
     <td>Chd2 interacts with H3.3 to determine myogenic cell fate.</td>
     <td>EMBO J. 2012 Jun 29;31(13):2994-3007.</td>
     <td>2012</td>
-    <td>doi:10.1038/ncomms2132</td>
     <td>23072808</td>
+    <td>doi:10.1038/ncomms2132</td>
 </tr>
 <tr>
     <td>3</td>
@@ -43,8 +43,8 @@ title: 論文リスト(2012)
     <td>Identification and functional analysis of three isoforms of bovine BST-2.</td>
     <td>PLoS One. 2012;7(7):e41483. </td>
     <td>2012</td>
-    <td>doi:10.1371/journal.pone.0041483</td>
     <td>22911799</td>
+    <td>doi:10.1371/journal.pone.0041483</td>
 </tr>
 <tr>
     <td>4</td>
@@ -53,8 +53,8 @@ title: 論文リスト(2012)
     <td>Infectious endogenous retroviruses in cats and emergence of recombinant viruses.</td>
     <td>J Virol. 2012 Aug;86(16):8634-44.</td>
     <td>2012</td>
-    <td>doi:10.1128/JVI.00280-12</td>
     <td>22674983</td>
+    <td>doi:10.1128/JVI.00280-12</td>
 </tr>
 <tr>
     <td>5</td>
@@ -63,8 +63,8 @@ title: 論文リスト(2012)
     <td>Discovery of high-confidence single nucleotide polymorphisms from large-scale de novo analysis of leaf transcripts of Aegilops tauschii, a wild wheat progenitor.</td>
     <td>DNA Res. 2012 Dec;19(6):487-97. </td>
     <td>2012</td>
-    <td>doi:10.1093/dnares/dss028</td>
     <td>23125207</td>
+    <td>doi:10.1093/dnares/dss028</td>
 </tr>
 <tr>
     <td>6</td>
@@ -73,8 +73,8 @@ title: 論文リスト(2012)
     <td>DAFS: simultaneous aligning and folding of RNA sequences via dual decomposition.</td>
     <td>Bioinformatics. 2012 Dec 15;28(24):3218-24. </td>
     <td>2012</td>
-    <td>doi:10.1093/bioinformatics/bts612</td>
     <td>23060618</td>
+    <td>doi:10.1093/bioinformatics/bts612</td>
 </tr>
 <tr>
     <td>7</td>
@@ -83,8 +83,8 @@ title: 論文リスト(2012)
     <td>Rtips: fast and accurate tools for RNA 2D structure prediction using integer programming.</td>
     <td>Nucleic Acids Res. 2012 Jul;40(Web Server issue):W29-34. </td>
     <td>2012</td>
-    <td>doi:10.1093/nar/gks412</td>
     <td>22600734</td>
+    <td>doi:10.1093/nar/gks412</td>
 </tr>
 <tr>
     <td>8</td>
@@ -93,17 +93,18 @@ title: 論文リスト(2012)
     <td>Stimulation of glucoamylase gene expression with starch in Pholiota microspora. </td>
     <td>Mushreom Science and Biotechnology, Vol. 20C2) 77-S4, 2012</td>
     <td>2012</td>
-    <td>doi:10.24465/msb.20.2_77</td>
     <td>無し</td>
+    <td>doi:10.24465/msb.20.2_77</td>
+    <td>PDFあり　https://www.jstage.jst.go.jp/article/msb/20/2/20_KJ00008158018/_pdf/-char/en</td>
 </tr>
 <tr>
     <td>9</td>
     <td>石井 孝司</td>
     <td>Koji Ishii</td>
-    <td>Epidemiological and genetic analyses of a diffuse outbreak of hepatitis A in Japan. 2010</td>
+    <td>Epidemiological and genetic analyses of a diffuse outbreak of hepatitis A in Japan, 2010</td>
     <td>J Clin Virol. 2012 Mar;53(3):219-24. </td>
     <td>2012</td>
-    <td>doi:10.1016/j.jcv.2011.11.008</td>
     <td>22196871</td>
+    <td>doi:10.1016/j.jcv.2011.11.008</td>
 </tr>
 </table>
