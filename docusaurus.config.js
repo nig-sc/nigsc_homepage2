@@ -55,8 +55,8 @@ module.exports = {
                     label: '稼働状況',
                 },
                 {
-                    to: 'report/report_2020',
-                    docId: 'report_2020',
+                    to: 'report/report',
+                    docId: 'report',
                     position: 'left',
                     label: '成果報告',
                 },
