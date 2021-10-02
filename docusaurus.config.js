@@ -6,7 +6,7 @@ module.exports = {
     title: 'NIG supercomputer',
     tagline: 'National Institute of Genetics, Japan',
     url: 'https://your-docusaurus-test-site.com',
-    baseUrl: '/~oogasawa/nigsc/',
+    baseUrl: '/',
     i18n:{
         defaultLocale: 'ja',
         locales: ['ja', 'en'],
@@ -16,7 +16,7 @@ module.exports = {
     }]],
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+    favicon: '/img/favicon.ico',
     organizationName: 'oogasawa', // Usually your GitHub org/user name.
     projectName: 'nigsc_homepage2', // Usually your repo name.
     themeConfig: {
@@ -71,42 +71,55 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Search',
           items: [
-            {
-              label: 'Top',
-              to: 'top',
-            },
+              {
+                  label: 'getentry',
+                  href: 'http://getentry.ddbj.nig.ac.jp/top-j.html'
+              },
+              {
+                  label: 'ARSA',
+                  href: 'https://www.ddbj.nig.ac.jp/services/arsa.html'
+              },
+              {
+                  label: 'DRASearch',
+                  href: 'https://ddbj.nig.ac.jp/DRASearch/'
+              },
           ],
         },
         {
-          title: 'Community',
+          title: 'Database',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              {
+                  label: 'Annotated/Assembled Sequences (DDBJ)',
+                  href: 'https://www.ddbj.nig.ac.jp/ddbj/index.html'
+              },
+              {
+                  label: 'Sequence Read Archive (DRA)',
+                  href: 'https://www.ddbj.nig.ac.jp/dra/index.html',
+              },
+              {
+                  label: 'Japanese Genotype-phenotype Archive (JGA)',
+                  href: 'https://www.ddbj.nig.ac.jp/jga/index.html',
+              },
+              {
+                  label: 'Submission portal D-way',
+                  href: 'https://ddbj.nig.ac.jp/D-way/',
+              },
+
           ],
         },
         {
-          title: 'More',
+          title: 'Supercomputer',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'NIG Supercomputer',
+              href: 'https://sc.ddbj.nig.ac.jp',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} National Institute of Genetics.`,
     },
    prism: {
       theme: lightCodeTheme,

@@ -1,18 +1,19 @@
 ---
 id: papers_2019
-title: 論文リスト(2019)
+title: Published Papers (2019)
 ---
 
-2019.01.01 -- 2019.12.31に発表された論文リスト
+List of papers published by users between 2019.01.01 -- 2019.12.31.
+
 
 <table>
 <tr>
     <td></td>
-    <td>名前</td>
-    <td>名前(英語表記)</td>
-    <td>論文名</td>
-    <td>雑誌名、巻号、ページの範囲</td>
-    <td>出版年</td>
+    <td width="150">Authors (Japanese)</td>
+    <td>Authors</td>
+    <td>Title</td>
+    <td>Journal, Volume, Number, Pages</td>
+    <td>Published Year</td>
     <td>PMID</td>
     <td>DOI</td>
 </tr>

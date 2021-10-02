@@ -1,19 +1,18 @@
 ---
 id: papers_2020
-title: 論文リスト(2020)
+title: Published Papers (2020)
 ---
 
-2020.01.01 -- 2020.12.31に発表された論文リスト
-
+List of papers published by users between 2020.01.01 -- 2020.12.31.
 
 <table>
 <tr>
     <td></td>
-    <td>著者名</td>
-    <td>著者名(英語表記)</td>
-    <td>タイトル</td>
-    <td>雑誌名、巻号</td>
-    <td>公開年</td>
+    <td>Authors (Japanese)</td>
+    <td>Authors</td>
+    <td>Title</td>
+    <td>Journal, Volume, Number, Pages</td>
+    <td>Published Year</td>
     <td>PMID</td>
     <td>DOI</td>
 </tr>

@@ -5,7 +5,8 @@ title: GPUノードの稼働状況
 
 ## gfreeコマンドの説明
 
-gfree コマンドを実行することで gpu.q のGPUスロットの使用状況を確認できます。
+遺伝研スパコンではGPUノードの利用状況を表示するために`gfree`というコマンドを提供しています。
+
 
 ![figure](gfree.png)
 
@@ -31,3 +32,5 @@ gfree コマンドを実行することで gpu.q のGPUスロットの使用状�
 	<td>executable jobnums</td><td>要求GPUスロット数(1GPU、4GPU)ごとの実行可能なジョブ数</td>
 </tr>
 </table>
+
+GPUノードの場合GPUスロット数 = GPUの本数です。各GPUノードにGPUが4本ずつ搭載されています。
