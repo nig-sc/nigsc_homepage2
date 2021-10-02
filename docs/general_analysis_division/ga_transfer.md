@@ -14,7 +14,12 @@ title: データ転送（一般解析区画）
 ##  SSHプロトコルによるファイル転送の方法 (scp, sftp)
 
 一般解析区画のゲートウェイサーバ(`gw.ddbj.nig.ac.jp`)に対してscp, sftp等を用いたファイル転送が可能です。
- 
+
+例:
+
+```
+scp your_file.txt youraccount@gw.ddbj.nig.ac.jp:/home/youraccount/data
+```
 
  
 ## Asperaの利用方法

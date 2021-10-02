@@ -59,9 +59,12 @@ function TOC({toc}) {
             </tr>
             <tr>
               <td class="tableBody">
-                2021年5月13日(木) 一般解析区画short.qの設定変更<br />
-                <br />
-                ■ 過去のお知らせ一覧<br />
+              <a href="/news/N2021_1112_scheduledMaintainance">
+                【定期メンテナンス】11月12日～11月18日 定期メンテナンスのお知らせ</a><br /> <br />
+
+              <a href="/news/2021_0512_shortQ">
+                2021年5月13日(木) 一般解析区画short.qの設定変更</a><br /><br />
+               <a href="/news/past_news">■ 過去のお知らせ一覧</a><br />
               </td>
             </tr>
 
@@ -72,10 +75,16 @@ function TOC({toc}) {
             </tr>
             <tr>
               <td class="tableBody">
-                (復旧)2021年7月22日（木) qlogin等の障害のお知らせ<br />
-                (終了) 2021年7月6日(火) 富士市内での電気通信設備の移転実施に伴う通信断のお知らせ<br />
+               <a href="/news2/M2021_1004_lustre6">
+                【メンテナンス】2021年10月04日(月)10:30～10:45 Lustre6障害対応によるアクセス不可</a><br /><br />
+
+                <a href="/news2/M2021_0915_lustre6-3">
+                Lustre6 ディスク障害のお詫び</a><br /><br />
+
+                <a href="/news2/M2021_0915_lustre6-2">
+                【障害】【続報】2021年9月15日(水) Lustre6のディスク障害のお知らせ</a><br />
               <br />
-                ■ 過去の障害情報一覧
+                <a href="/news2/past_maintainance_info">■ 過去の障害情報一覧</a>
               </td>
             </tr>
 

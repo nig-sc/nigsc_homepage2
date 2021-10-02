@@ -26,13 +26,17 @@ module.exports = {
 
     topSidebar: {
         "お知らせ": [
-            "news/2021_0512_shortQ設定変更",
-            "news/過去のお知らせ"
+            "news/N2021_1112_scheduledMaintainance",
+            "news/2021_0512_shortQ",
+            "news/past_news"
         ],
         "障害情報": [
-            "news2/2021_0722_qlogin",
-            "news2/2021_0602_network",
-            "news2/過去の障害情報"
+            "news2/M2021_1004_lustre6",
+            "news2/M2021_0915_lustre6-3",
+            "news2/M2021_0915_lustre6-2",
+            "news2/M2021_0917_lustre7",
+            "news2/M2021_0915_lustre6",
+            "news2/past_maintainance_info"
         ],
         "システム構成": [
             "guides/top",
@@ -46,7 +50,9 @@ module.exports = {
             "general_analysis_division/ga_login",
             "general_analysis_division/ga_usage",
             "general_analysis_division/ga_transfer",
+            "general_analysis_division/advance_reservation",
             "general_analysis_division/ga_lustre",
+            "general_analysis_division/largescale_storage",
         ],
         "個人ゲノム解析区画の使い方": [
             "personal_genome_division/pg_introduction",
@@ -55,6 +61,8 @@ module.exports = {
             "personal_genome_division/pg_usage",
             "personal_genome_division/pg_transfer",
             "general_analysis_division/ga_lustre",
+            "general_analysis_division/largescale_storage",
+            "personal_genome_division/group_cloud",
         ],
         "稼働状況": [
             "operation/operation",
@@ -94,7 +102,6 @@ module.exports = {
         "課金サービス利用方法": [
             "application/billing_service",
             "application/invoice",
-            "application/price_list",
         ],
         "お問い合わせ等": [
             "faq/faq1",
@@ -102,17 +109,26 @@ module.exports = {
         ],
     },
     advancedGuidesSidebar : {
-        "活用方法": [
+        "活用方法概要": [
             "advanced_guides/advanced_guide",
+        ],
+        "Rhelixa RNAseq": [
+            "advanced_guides/Rhelixa_RNAseq",
+            "advanced_guides/Rhelixa_RNAseq_manual",
+        ],
+        "講習会": [
+            "advanced_guides/IIBMP",
+        ],
+        "利用方法解説": [
+            "advanced_guides/commentary"
         ],
     },
     reportSidebar: {
-        "成果報告(2020.01.01--2020.12.31)": [
-            "report/report_2020",
-            "report/papers_2020",
+        "各種統計": [
+            "report/report",
         ],
-        "成果報告(2019.01.01--2019.12.31)": [
-            "report/report_2019",
+        "論文リスト": [
+            "report/papers_2020",
             "report/papers_2019",
         ],
     }
