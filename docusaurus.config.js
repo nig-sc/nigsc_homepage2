@@ -31,8 +31,8 @@ module.exports = {
             },
             items: [
                 {
-                    to: "guides/divisions",
-                    docId: 'divisions',
+                    to: "guides/overview",
+                    docId: 'overview',
                     position: 'left',
                     label: '利用案内',
                 }, 
@@ -133,7 +133,6 @@ module.exports = {
             theme: {
                 customCss: [require.resolve('./src/css/custom.css')],
             },
-            
         docs: {
             sidebarPath: require.resolve('./sidebars.js'),
             showLastUpdateTime: true,

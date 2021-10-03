@@ -4,27 +4,27 @@
     "description": "The title in the navbar"
   },
   "item.label.ホーム": {
-    "message": "ホーム",
+    "message": "Home",
     "description": "Navbar item with label ホーム"
   },
   "item.label.利用申請等": {
-    "message": "利用申請等",
+    "message": "Make Application",
     "description": "Navbar item with label 利用申請等"
   },
   "item.label.利用案内": {
-    "message": "利用案内",
+    "message": "User Guide",
     "description": "Navbar item with label 利用案内"
   },
   "item.label.活用方法": {
-    "message": "活用方法",
+    "message": "Advanced Guide",
     "description": "Navbar item with label 活用方法"
   },
   "item.label.稼働状況": {
-    "message": "稼働状況",
+    "message": "Operation Info",
     "description": "Navbar item with label 稼働状況"
   },
   "item.label.成果報告": {
-    "message": "成果報告",
+    "message": "Report",
     "description": "Navbar item with label 成果報告"
   }
 }

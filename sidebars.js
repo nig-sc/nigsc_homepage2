@@ -25,22 +25,9 @@ module.exports = {
   */
 
     topSidebar: {
-        "お知らせ": [
-            "news/N2021_1112_scheduledMaintainance",
-            "news/2021_0512_shortQ",
-            "news/past_news"
-        ],
-        "障害情報": [
-            "news2/M2021_1004_lustre6",
-            "news2/M2021_0915_lustre6-3",
-            "news2/M2021_0915_lustre6-2",
-            "news2/M2021_0917_lustre7",
-            "news2/M2021_0915_lustre6",
-            "news2/past_maintainance_info"
-        ],
         "システム構成": [
             "guides/top",
-            "guides/divisions",
+            "guides/overview",
             "guides/hardware",
             "software/software"
         ],
@@ -63,10 +50,6 @@ module.exports = {
             "general_analysis_division/ga_lustre",
             "general_analysis_division/largescale_storage",
             "personal_genome_division/group_cloud",
-        ],
-        "稼働状況": [
-            "operation/operation",
-            "operation/gfree",
         ],
     },
     softwareSidebar: {
@@ -122,6 +105,25 @@ module.exports = {
         "利用方法解説": [
             "advanced_guides/commentary"
         ],
+    },
+    operationInfoSidebar: {
+        "お知らせ": [
+            "news/N2021_1112_scheduledMaintainance",
+            "news/2021_0512_shortQ",
+            "news/past_news"
+        ],
+        "障害情報": [
+            "news2/M2021_1004_lustre6",
+            "news2/M2021_0915_lustre6-3",
+            "news2/M2021_0915_lustre6-2",
+            "news2/M2021_0917_lustre7",
+            "news2/M2021_0915_lustre6",
+            "news2/past_maintainance_info"
+        ],
+        "稼働状況": [
+            "operation/operation",
+            "operation/gfree",
+        ],        
     },
     reportSidebar: {
         "各種統計": [
