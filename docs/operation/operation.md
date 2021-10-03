@@ -3,14 +3,15 @@ id: operation
 title: "稼働状況概要"
 ---
 
+## 概要
 
 <table>
 <tr>
 <td width="300">
 
-<a href="https://sc2.ddbj.nig.ac.jp">
-<img src="../img/2021-09-05_22-35.png" />
-</a>
+
+![](/img/2021-09-05_22-35.png)
+
 </td>
 <td>
 <a href="https://sc2.ddbj.nig.ac.jp">
@@ -26,9 +27,8 @@ UGEキュー毎に現在どの程度実行スロットが埋まっているか�
 
 <tr>
 <td>
-<a href="https://sc2.ddbj.nig.ac.jp">
-<img src="../img/2021-09-05_22-35_1.png" />
-</a>
+
+![](/img/2021-09-05_22-35-1.png)
 
 </td>
 <td>
