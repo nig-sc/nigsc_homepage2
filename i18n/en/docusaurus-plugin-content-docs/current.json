@@ -3,36 +3,80 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.topSidebar.category.はじめに": {
-    "message": "はじめに",
-    "description": "The label for category はじめに in sidebar topSidebar"
-  },
-  "sidebar.topSidebar.category.新着情報": {
-    "message": "新着情報",
-    "description": "The label for category 新着情報 in sidebar topSidebar"
-  },
-  "sidebar.topSidebar.category.障害情報": {
-    "message": "障害情報",
-    "description": "The label for category 障害情報 in sidebar topSidebar"
-  },
   "sidebar.applicationsSidebar.category.利用規定等": {
     "message": "利用規定等",
     "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
   },
-  "sidebar.applicationsSidebar.category.新規登録・更新等": {
-    "message": "新規登録・更新等",
-    "description": "The label for category 新規登録・更新等 in sidebar applicationsSidebar"
+  "sidebar.topSidebar.category.システム構成": {
+    "message": "System Structure",
+    "description": "The label for category システム構成 in sidebar topSidebar"
   },
-  "sidebar.applicationsSidebar.category.利用料金の支払い方法": {
-    "message": "利用料金の支払い方法",
-    "description": "The label for category 利用料金の支払い方法 in sidebar applicationsSidebar"
+  "sidebar.topSidebar.category.一般解析区画の使い方": {
+    "message": "General Analysis Section",
+    "description": "The label for category 一般解析区画の使い方 in sidebar topSidebar"
   },
-  "sidebar.applicationsSidebar.category.その他問い合わせ": {
-    "message": "その他問い合わせ",
-    "description": "The label for category その他問い合わせ in sidebar applicationsSidebar"
+  "sidebar.topSidebar.category.個人ゲノム解析区画の使い方": {
+    "message": "Personal Genome Section",
+    "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar topSidebar"
   },
-  "sidebar.reportSidebar.category.成果報告": {
-    "message": "成果報告",
-    "description": "The label for category 成果報告 in sidebar reportSidebar"
+  "sidebar.softwareSidebar.category.ジョブスケジューラ": {
+    "message": "ジョブスケジューラ",
+    "description": "The label for category ジョブスケジューラ in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.コンテナ・解析パイプライン": {
+    "message": "コンテナ・解析パイプライン",
+    "description": "The label for category コンテナ・解析パイプライン in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.開発環境・ライブラリ": {
+    "message": "開発環境・ライブラリ",
+    "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
+  },
+  "sidebar.applicationsSidebar.category.ユーザー登録・変更": {
+    "message": "ユーザー登録・変更",
+    "description": "The label for category ユーザー登録・変更 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.課金サービス利用方法": {
+    "message": "課金サービス利用方法",
+    "description": "The label for category 課金サービス利用方法 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.お問い合わせ等": {
+    "message": "お問い合わせ等",
+    "description": "The label for category お問い合わせ等 in sidebar applicationsSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.活用方法概要": {
+    "message": "活用方法概要",
+    "description": "The label for category 活用方法概要 in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.Rhelixa RNAseq": {
+    "message": "Rhelixa RNAseq",
+    "description": "The label for category Rhelixa RNAseq in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.講習会": {
+    "message": "講習会",
+    "description": "The label for category 講習会 in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.利用方法解説": {
+    "message": "利用方法解説",
+    "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.operationInfoSidebar.category.お知らせ": {
+    "message": "お知らせ",
+    "description": "The label for category お知らせ in sidebar operationInfoSidebar"
+  },
+  "sidebar.operationInfoSidebar.category.障害情報": {
+    "message": "障害情報",
+    "description": "The label for category 障害情報 in sidebar operationInfoSidebar"
+  },
+  "sidebar.operationInfoSidebar.category.稼働状況": {
+    "message": "稼働状況",
+    "description": "The label for category 稼働状況 in sidebar operationInfoSidebar"
+  },
+  "sidebar.reportSidebar.category.各種統計": {
+    "message": "各種統計",
+    "description": "The label for category 各種統計 in sidebar reportSidebar"
+  },
+  "sidebar.reportSidebar.category.論文リスト": {
+    "message": "論文リスト",
+    "description": "The label for category 論文リスト in sidebar reportSidebar"
   }
 }
