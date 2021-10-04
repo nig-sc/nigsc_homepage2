@@ -1,19 +1,21 @@
 ---
 id: N2021_1112_scheduledMaintainance
-title: "【定期メンテナンス】11月12日～11月18日 定期メンテナンスのお知らせ"
+title: "[Scheduled Maintenance] November 12 - November 18: Scheduled Maintenance."
 ---
 
-掲載日 : 2021年9月14日
+Publication date: September 14, 2021
 
 
-遺伝研の法定停電に合わせて、以下の日時で遺伝研スパコンの定期メンテナンスを予定しています。定期メンテナンス中はスパコンの利用は出来ません。
+The scheduled maintenance of the NIG supercomputer  is scheduled on the following date and time in accordance with the legal power outage of the NIG. The supercomputer will not be available during the scheduled maintenance.
  
-## 期間
+## Period
 
-2021年 11月 12日(金) 17:00 ～ 11月 18日(木) 24:00
+17:00, Friday, November 12, 2021 - 24:00, Thursday, November 18, 2021
  
-## 留意事項
+## Notes
  
-- 稼働中のジョブは削除されます。
-- 投入していたジョブによっては、1度目の実行で出力されたファイルの存在により、2度目の実行時にエラーもしくは不適切になる場合があります。 問題の発生が懸念される場合は、中間ファイルや結果ファイルを削除した上で、ジョブを再投入して頂けますようお願い致します。
+- Running jobs will be deleted.
+- Depending on the submitted job, the existence of the file output from the first execution may cause an error or improper execution at the second execution. If you are concerned about the occurrence of a problem, please delete the intermediate file and the result file, and then resubmit the job.
+
+
 

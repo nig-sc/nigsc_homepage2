@@ -1,6 +1,6 @@
 ---
 id: past_news
-title: "■ 過去のお知らせ一覧"
+title: "■ List of Past Announcements"
 ---
 
 - [【定期メンテナンス】11月12日～11月18日 定期メンテナンスのお知らせ](/news/N2021_1112_scheduledMaintainance)

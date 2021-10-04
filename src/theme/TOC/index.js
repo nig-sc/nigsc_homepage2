@@ -54,7 +54,7 @@ function TOC({toc}) {
           <table>
             <tr>
               <td class="tableHeader">
-                お知らせ
+                News / お知らせ
               </td>
             </tr>
             <tr>
@@ -70,7 +70,7 @@ function TOC({toc}) {
 
             <tr>
               <td class="tableHeader">
-                障害情報
+                Failure Reports / 障害情報
               </td>
             </tr>
             <tr>

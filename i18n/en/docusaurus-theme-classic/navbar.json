@@ -16,7 +16,7 @@
     "description": "Navbar item with label 利用案内"
   },
   "item.label.活用方法": {
-    "message": "Advanced Guide",
+    "message": "Advanced Guides",
     "description": "Navbar item with label 活用方法"
   },
   "item.label.稼働状況": {
@@ -24,7 +24,7 @@
     "description": "Navbar item with label 稼働状況"
   },
   "item.label.成果報告": {
-    "message": "Report",
+    "message": "Reports",
     "description": "Navbar item with label 成果報告"
   }
 }

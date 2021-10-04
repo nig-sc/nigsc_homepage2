@@ -15,10 +15,10 @@ title: Hardware
     <td rowspan="6">
     Compute Nodes
     <br /><br/><br/><br />
-	Total number of CPU cores: 15,424<br /><br />
-	Total computing performance: 933.560 TFLOPS<br />
+	15,424 CPU cores<br /><br />
+	933.560 TFLOPS<br />
 	(CPU: 434.360 TFLOPS, GPU: 499.2 TFLOPS)<br /><br />
-	Total memory capasity: 153.088 TB
+	153.088 TB total memory
     </td>	
 	<td rowspan="4">
     Thin nodes
@@ -28,10 +28,10 @@ title: Hardware
 	AMD EPYC 7501 CPU.<br />
     </td>
     <td>
-    Number of nodes: 136 nodes<br />
-	Total number of CPU cores: 8,704<br />
-	Total computing performance: 139.264 TFLOPS<br />
-    Total memory capasity: 69.632 TB（8GB/CPU core）<br/>
+    136 nodes<br />
+	8,704 CPU cores<br />
+	139.264 TFLOPS<br />
+    69.632 TB total memory（8GB memory/CPU core）<br/>
     </td>
 </tr>
 <tr>
@@ -40,62 +40,65 @@ title: Hardware
 	AMD EPYC 7702 CPU. (Expansion in April 2020)
     </td>
 	<td>
-    ノード数: 28台<br />
-	総CPUコア数: 3,584<br />
-	合計演算性能: 57.344 TFLOPS<br />
-	総メモリ容量 14.336 TB（コアあた4GB)
+    28 nodes<br />
+	3,584 CPU cores<br />
+	57.344 TFLOPS<br />
+	14.336 TB total memory (4GB memory/CPU core)
     </td>
 </tr>
 <tr>
     <td>
     Type 2a<br />
-	CPUにIntel Xeonを搭載
+	Intel Xeon Gold 6130 CPU
     </td>
     <td>
-    ノード数: 52台<br />
-	総CPUコア数: 1,664<br />
-	合計演算性能 111.800 TFLOPS<br />
-	総メモリ容量 19.968 TB (コアあたり12GB)
+    52 nodes<br />
+    1,664 CPU cores<br />
+	111.800 TFLOPS<br />
+	19.968 TB total memory (12GB memory/CPU core)
     </td>
 </tr>
 <tr>
     <td>
     Type 2b<br />
-	GPGPU搭載
+	GPGPU installed
     </td>
-	<td>ノード数: 16台<br />
-	総CPUコア数: 384<br />
-	合計演算性能: 536.064 TFLOPS<br />
+	<td>16 nodes<br />
+	384 CPU cores<br />
+    64GPUs (4 GPU/node)<br />
+	536.064 TFLOPS<br />
 	(CPU: 36.864 TFLOPS, GPU: 499.2 TFLOPS)<br />
-	総メモリ容量 6.144 TB (コアあたり16GB)
+	6.144 TB total memory (16GB moemory/CPU core)
     </td>
 </tr>
 <tr>
     <td colspan="2">
-    Medium計算ノード<br />
-	3TBの共有メモリ搭載
+    Medium node<br />
+    3TB of shared memory installed
     </td>
 	<td>
-    ノード数: 10台<br />
-	総CPUコア数: 800<br />
-	合計演算性能 61.440 TFLOPS<br />
-	総メモリ容量 30.72 TB (コアあたり 38.4GB)
+    10 nodes<br />
+	800 CPU cores<br />
+	61.440 TFLOPS<br />
+	30.72 TB total memory (38.4GB memory/CPU core)
     </td>
 </tr>
     <tr>
-	<td colspan="2">Fat計算ノード<br />
-	2ノードを接続し12TBの共有メモリを構成</td>
-	<td>ノード数 2台<br />
-	総CPUコア数: 288<br />
-	合計演算性能 27.648 TFLOPS<br />
-	総メモリ容量 12.288 TB (コアあたり42.7GB)
+	<td colspan="2">
+    Fat node<br />
+    Two nodes connected to form 12TB of shared memory</td>
+	<td>
+    2 node<br />
+	288 CPU cores<br />
+	27.648 TFLOPS<br />
+	12.288 TB total memory (42.7GB memory/CPU core)
     </td>
 </tr>
 <tr>
     <td rowspan="2">
-    ストレージ
+    Storage
     <br /><br />
-    総ストレージ容量 43.8PB
+    Total storage capacity: 43.8PB
     </td>
 	<td colspan="2">
     大容量高速ストレージ<br />
