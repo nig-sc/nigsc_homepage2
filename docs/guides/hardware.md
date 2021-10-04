@@ -48,7 +48,7 @@ title: "ハードウェア"
 <tr>
     <td>
     Type 2a<br />
-	CPUにIntel Xeonを搭載
+	CPUにIntel Xeon Gold 6130を搭載
     </td>
     <td>
     ノード数: 52台<br />
@@ -64,6 +64,7 @@ title: "ハードウェア"
     </td>
 	<td>ノード数: 16台<br />
 	総CPUコア数: 384<br />
+    総GPU数: 64基(1ノードあたり4基)<br />
 	合計演算性能: 536.064 TFLOPS<br />
 	(CPU: 36.864 TFLOPS, GPU: 499.2 TFLOPS)<br />
 	総メモリ容量 6.144 TB (コアあたり16GB)
