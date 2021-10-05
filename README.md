@@ -39,3 +39,15 @@ npm start
 ```
 
 ![](top_page.png)
+
+## 静的サイトの生成
+
+```
+npm run build
+```
+
+上記コマンドで出来たbuildディレクトリをApacheサーバなどで見せれば良い。
+
+```
+sudo rm -Rf /var/www/html ; sudo mv build /var/www/html
+```
