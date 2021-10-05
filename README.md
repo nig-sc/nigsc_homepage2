@@ -57,7 +57,7 @@ npm start -- --locale en
 npm run build
 ```
 
-上記コマンドで出来たbuildディレクトリをApacheサーバなどで見せれば良い。
+上記コマンドで出来たbuildディレクトリをApacheサーバなどで見せれば良い。以下は一例。
 
 ```
 sudo rm -Rf /var/www/html ; sudo mv build /var/www/html
