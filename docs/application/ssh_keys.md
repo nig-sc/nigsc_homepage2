@@ -58,7 +58,8 @@ $
 <table>
 <tr>
 <td>
-直接入力フォーム
+
+[直接入力フォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
 
 ![](ssh_direct_form.jpg)
 </td>
@@ -69,7 +70,8 @@ $
 
 <tr>
 <td>
-ファイルのアップロードフォーム
+
+[ファイルのアップロードフォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
 
 ![](ssh_upload_form.jpg)
 </td>
