@@ -60,5 +60,5 @@ npm run build
 上記コマンドで出来たbuildディレクトリをApacheサーバなどで見せれば良い。以下は一例。
 
 ```
-sudo rm -Rf /var/www/html ; sudo mv build /var/www/html
+sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html
 ```
