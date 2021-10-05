@@ -13,7 +13,7 @@ title: "ハードウェア"
 <tr>
     <td rowspan="6">
     計算ノード
-    <br /><br/><br/><br />
+    <br /><br/><br/>
 	総CPUコア数: 15,424<br />
 	合計演算性能 933.560 TFLOPS<br />
 	(CPU: 434.360 TFLOPS, GPU: 499.2 TFLOPS)<br />
@@ -21,6 +21,11 @@ title: "ハードウェア"
     </td>	
 	<td rowspan="4">
     Thin計算ノード
+    <br /><br/><br/>
+    総CPUコア数: 14,336<br />
+    合計演算性能 844.472 TFLOPS<br />
+    (CPU: 345.272 TFLOPS, GPU: 499.2 TFLOPS)<br />
+    総メモリ容量 110.080 TB
     </td>
     <td>
     Type 1a<br />

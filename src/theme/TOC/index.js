@@ -76,7 +76,7 @@ function TOC({toc}) {
             <tr>
               <td class="tableBody">
                <a href="/news2/M2021_1004_lustre6">
-                【メンテナンス】2021年10月04日(月)10:30～10:45 Lustre6障害対応によるアクセス不可</a><br /><br />
+                 (終了)【メンテナンス】2021年10月04日(月)10:30～10:45 Lustre6障害対応によるアクセス不可</a><br /><br />
 
                 <a href="/news2/M2021_0915_lustre6-3">
                 Lustre6 ディスク障害のお詫び</a><br /><br />
