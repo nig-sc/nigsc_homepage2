@@ -68,6 +68,7 @@ module.exports = {
             "software/java",
             "software/typescript",
             "software/rust",
+            "software/cuda",
         ]
     },
     applicationsSidebar : {
@@ -123,7 +124,7 @@ module.exports = {
         "稼働状況": [
             "operation/operation",
             "operation/gfree",
-        ],        
+        ],
     },
     reportSidebar: {
         "各種統計": [

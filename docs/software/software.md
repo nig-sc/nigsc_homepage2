@@ -230,7 +230,7 @@ C/C++ (PGI Compiler)
 <tr>
 <td width="300">
 
-CUDA
+[CUDA](/software/cuda)
 </td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
