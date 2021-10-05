@@ -483,28 +483,9 @@ intel.q@it006                  BP    0/0/32         0.00     lx-amd64
  granted_req.          1:    mem_req=8.000G
  usage                 1:    wallclock=01:00:01, cpu=00:00:00, mem=0.00000 GBs, io=0.00000 GB, iow=0.000 s, ioops=0, vmem=N/A, maxvmem=N/A
  scheduling info:            -
+```
  
- 
- ```
- 
- 
-## クラスタ全体の混雑状況の確認方法
- 
- 各キューのジョブの投入状況、キューの負荷状況等、全体を把握するのには、"qstat -g c"として確認することが 出来ます。
- 
- ```
- [username@at027 ~]$ qstat -g c
- CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE  
- --------------------------------------------------------------------------------
- epyc.q                            0.00      1      0   4159   4224      0     64 
- gpu.q                             0.00      0      0     64    112      0     48 
- intel.q                           0.00      0      0   1472   1472      0      0 
- login.q                           0.00      4      0    380    384      0      0 
- login_gpu.q                       0.00      0      0     48     48      0      0 
- medium.q                          0.00      0      0    800    800      0      0 
- short.q                           0.00      0      0    128    224      0     96 
-     
- ```
+
  
 ## ジョブの削除(qdel)
 
@@ -532,6 +513,7 @@ a specific range of array jobs.
 
 
 ## ジョブの実行条件の変更 (qalter)
+
 
 
 ## ジョブの結果の確認

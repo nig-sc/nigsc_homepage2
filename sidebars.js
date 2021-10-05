@@ -123,6 +123,7 @@ module.exports = {
         ],
         "稼働状況": [
             "operation/operation",
+            "operation/qstatGC",
             "operation/gfree",
         ],
     },
@@ -133,6 +134,13 @@ module.exports = {
         "論文リスト": [
             "report/papers_2020",
             "report/papers_2019",
+            "report/papers_2018",
+            "report/papers_2017",
+            "report/papers_2016",
+            "report/papers_2015",
+            "report/papers_2014",
+            "report/papers_2013",
+            "report/papers_2012",
         ],
     }
 
