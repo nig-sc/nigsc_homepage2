@@ -1,6 +1,6 @@
 ---
 id: gfree
-title: GPUノードの稼働状況
+title: GPUノードの稼働状況確認方法
 ---
 
 ## gfreeコマンドの説明
