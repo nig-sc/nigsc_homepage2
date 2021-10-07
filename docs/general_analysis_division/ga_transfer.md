@@ -29,19 +29,18 @@ Asperaは大容量ファイル転送を効率的に行う商用ソフトウェ�
 
 Asperaを用いてデータ転送を行うには、ユーザー側の計算機にAsperaクライアントソフトウェアをインストールする必要があります。
 また、データ転送に複数のポートを用いるので大学・研究機関などのネットワーク設定でそのポートが空いている必要があります。
-<= どのポート？
 
-問い合わせ窓口sc-help.pngまでご連絡ください。<= 本当？？何を連絡するの？？
-
-Asperaの通信経路は？
 
 
 ### Asperaクライアントソフトウェアのインストール
 
-<= コマンドライン版以外にはどんなクライアントがあるの？
+
+Asperaのダウンロードページにアクセスします。
+
+- https://downloads.asperasoft.com/ 
+- https://www.ibm.com/aspera/connect/
 
 
-Asperaのダウンロードページ（ https://downloads.asperasoft.com/ ）にアクセスします。
 
 CLIENT SOFTWAREからAspera CLIをダウンロードします。
 WindowsやMacなど、環境に合わせたファイルをダウンロードしインストールしてください。
