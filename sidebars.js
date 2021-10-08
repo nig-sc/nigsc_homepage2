@@ -114,6 +114,7 @@ module.exports = {
             "news/past_news"
         ],
         "障害情報": [
+            "news2/M2021_1008_TS4500",
             "news2/M2021_1004_lustre6",
             "news2/M2021_0915_lustre6-3",
             "news2/M2021_0915_lustre6-2",
