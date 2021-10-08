@@ -1,6 +1,6 @@
 ---
 id: papers_2019
-title: Published Papers (2019)
+title: 論文リスト(2019)
 ---
 
 List of papers published by users between 2019.01.01 -- 2019.12.31.
@@ -274,7 +274,7 @@ List of papers published by users between 2019.01.01 -- 2019.12.31.
     <td>Applying Deep Learning Models to Mouse Behavior Recognition</td>
     <td>Journal of Biomedical Science and Engineering, 12, 183-196.</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2019.122012  </td>
 </tr>
 <tr>
@@ -304,7 +304,7 @@ List of papers published by users between 2019.01.01 -- 2019.12.31.
     <td>Determining the parental combinations of the triploid acid citrus cultivars ‘Yellow Bell’ and ‘Tahiti lime’ using DNA marker analyses</td>
     <td>Scientia HorticulturaeVolume 246, 27 February 2019, Pages 893-897</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1016/j.scienta.2018.11.071</td>
 </tr>
 <tr>
@@ -314,7 +314,7 @@ List of papers published by users between 2019.01.01 -- 2019.12.31.
     <td>Citrus Breeding 2.0: A Novel Approach Integrating Deciphered Parentage and Genomics-assisted Selection</td>
     <td>JARQ 53 (2), 81-85 (2019)</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.6090/jarq.53.81</td>
 </tr>
 <tr>
@@ -455,7 +455,7 @@ List of papers published by users between 2019.01.01 -- 2019.12.31.
 code for viral-like protein domains</td>
     <td>BioRxiv, November 12, 2019.</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1186/s13100-020-00224-w</td>
 </tr>
 <tr>
@@ -535,7 +535,7 @@ code for viral-like protein domains</td>
     <td>Effect of seed sett size on sprouting, shoot growth, and tuber yield of white guinea yam (Dioscorea rotundata)</td>
     <td>PLANT PRODUCTION SCIENCE2020, VOL. 23, NO. 1, 75-80</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1080/1343943X.2019.1667835</td>
 </tr>
 <tr>
@@ -545,7 +545,7 @@ code for viral-like protein domains</td>
     <td>Effects of ion?water Lennard-Jones potentials on the hydration dynamics around a monovalent atomic ion in molecular dynamics simulations</td>
     <td>Molecular Simulation Volume 46, 2020 - Issue 2,Pages 83-91</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1080/08927022.2019.1675883</td>
 </tr>
 <tr>
@@ -575,7 +575,7 @@ code for viral-like protein domains</td>
     <td>Effects of number of parallel runs and frequency of bias-strength replacement in generalized ensemble molecular dynamics simulations</td>
     <td>Peer J. Phys. Chem.October 15, 2019, 1:e4,</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>10.7717/peerj-pchem.4</td>
 </tr>
 <tr>
@@ -767,7 +767,7 @@ ted with Lotus japonicus in Natural Environments</td>
     <td>Late Jomon male and female genome sequences from the Funadomari site in Hokkaido, Japan</td>
     <td>Anthropological ScienceVol. 127(2), 83?108, 2019</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1537/ase.190415</td>
 </tr>
 <tr>
@@ -1047,7 +1047,7 @@ ted with Lotus japonicus in Natural Environments</td>
     <td>西北九州弥生人の遺伝的な特徴 ―佐世保市下本山岩陰遺跡出土人骨の核ゲノム解析―</td>
     <td>Anthropological Science (Japanese Series)Vol. 127(1), 25?43, 2019</td>
     <td>2019</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1537/asj.1904231</td>
 </tr>
 </table>

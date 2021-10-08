@@ -1,6 +1,6 @@
 ---
 id: papers_2018
-title: 論文リスト(2018)
+title: Published Papers(2018)
 ---
 
 2018.01.01. -- 2018.12.31に発表された論文リスト
@@ -8,7 +8,6 @@ title: 論文リスト(2018)
 <table>
 <tr>
     <td></td>
-    <td>著者名</td>
     <td>Authors (Japanese)</td>
     <td>Authors</td>
     <td>Title</td>
@@ -44,7 +43,7 @@ title: 論文リスト(2018)
     <td>Comparing local- and regional-scale estimations of thediversity of stream fish using eDNA metabarcoding andconventional observation methods</td>
     <td>Freshwater Biology:27 February 2018;Volume63, Issue6 Pages 569-580</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1111/fwb.13094</td>
 </tr>
 <tr>
@@ -314,7 +313,7 @@ title: 論文リスト(2018)
     <td>Review of Schismatogobius (Gobiidae) from Japan, with the description of a new species</td>
     <td>Ichthyological Research volume 65, pages56-77 (2018)</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1007/s10228-017-0593-4</td>
 </tr>
 <tr>
@@ -344,7 +343,7 @@ title: 論文リスト(2018)
     <td>Potential of Oryza officinalis to augment the cold tolerance genetic mechanisms of Oryza sativa by network complementation</td>
     <td>Scientific Reports volume 8, Article number: 16346 (2018)</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1038/s41598-018-34608-z</td>
 </tr>
 <tr>
@@ -1004,7 +1003,7 @@ title: 論文リスト(2018)
     <td>Improving Protein Sequence Classification Performance Using Adjacent and Overlapped Segments on Existing Protein Descriptors</td>
     <td>January 2018Journal of Biomedical Science and Engineering 11(06):126-143</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2018.116012.</td>
 </tr>
 <tr>
@@ -1014,7 +1013,7 @@ title: 論文リスト(2018)
     <td>Improved Protein Phosphorylation Site Prediction by a New Combination of Feature Set and</td>
     <td>January 2018Journal of Biomedical Science and Engineering 11(06):144-157</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2018.116013.</td>
 </tr>
 <tr>
@@ -1024,7 +1023,7 @@ title: 論文リスト(2018)
     <td>Sexual selection sustains biodiversity via producing negative density‐dependent population growth</td>
     <td>Journal of Ecology Volume107, Issue3 May 2019 Pages 1433-1438</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1111/1365-2745.13088</td>
 </tr>
 <tr>
@@ -1034,8 +1033,8 @@ title: 論文リスト(2018)
     <td>ライフサイエンス研究におけるクラウドソーシングの利用と実践</td>
     <td>デジタルプラクティス　Vol.9 No.4 (Oct. 2018)</td>
     <td>2018</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>103</td>
@@ -1044,7 +1043,7 @@ title: 論文リスト(2018)
     <td>A first genetic map in the genus Streptocarpus generated with RAD sequencing based SNP markers</td>
     <td>South African Journal of Botany, 117, 158-168 - July 2018</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1016/j.sajb.2018.05.009</td>
 </tr>
 <tr>
@@ -1064,7 +1063,7 @@ title: 論文リスト(2018)
     <td>Transcriptome of Homoeologous Genes Deduced from the Full-Length cDNA Clones of Common Wheat, Triticum aestivum L</td>
     <td>Jurnal of Genetics & Genomic Sciences.2018;vol-3, issue-1</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>DOI: 10.24966/GGS-2485/100007</td>
 </tr>
 <tr>
@@ -1124,7 +1123,7 @@ title: 論文リスト(2018)
     <td>Ch IP -Atlas: a data‐mining suite powered by full integration of public Ch IP -seq data.</td>
     <td>EMBO Rep (2018)19:e46255</td>
     <td>2018</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.15252/embr.201846255</td>
 </tr>
 <tr>
@@ -1154,8 +1153,8 @@ title: 論文リスト(2018)
     <td>ゲノム，トランスクリプトームデータから明らかにされる刺胞動物−藻類の細胞内共生</td>
     <td>生物科学 69(4), 214-222, 2018-07</td>
     <td>2018</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>115</td>

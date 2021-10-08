@@ -1,6 +1,6 @@
 ---
 id: papers_2013
-title: 論文リスト(2013)
+title: Published Papers(2013)
 ---
 
 2013.01.01 -- 2013.12.31に発表された論文リスト
@@ -63,7 +63,7 @@ title: 論文リスト(2013)
     <td>Draft Genome Sequence of Paenibacillus popilliae ATCC 14706T</td>
     <td>Volume 82 Issue 2 Pages 2_045-2_048</td>
     <td>2013</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.11416/jibs.82.2_045</td>
 </tr>
 <tr>

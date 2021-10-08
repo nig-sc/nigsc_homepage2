@@ -1,6 +1,6 @@
 ---
 id: papers_2015
-title: 論文リスト(2015)
+title: Published Papers(2015)
 ---
 
 2015.01.01 -- 2015.12.31に発表された論文リスト
@@ -33,7 +33,7 @@ title: 論文リスト(2015)
     <td>High-speed westfall-young permutation procedure for genome-wide association studies. </td>
     <td>BCB '15 Proceedings of the 6th ACM Conference on Bioinformatics, Computational Biology and Health Informatics, p17-26</td>
     <td>2015</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1145/2808719.2808721</td>
 </tr>
 <tr>
@@ -83,7 +83,7 @@ title: 論文リスト(2015)
     <td>Development and validation of SSR markers for the plant-parasitic nematode Subanguina moxaeusing genome assembly of Illumina pair-end reads.</td>
     <td>Nematology (2015) 17, p515-522</td>
     <td>2015</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi:10.1163/15685411-00002885</td>
 </tr>
 <tr>
@@ -353,8 +353,8 @@ title: 論文リスト(2015)
     <td>シイタケ（Lentinula edodes）におけるレトロトランスポゾン挿入多型を利用したHigh-Throughput な品種判定マーカーの開発.</td>
     <td>DNA多型 23, p34-38 (2015)</td>
     <td>2015</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>35</td>

@@ -1,20 +1,20 @@
 ---
 id: papers_2012
-title: 論文リスト
+title: Published Papers(2012)
 ---
 
 2012.01.01 -- 2012.12.31に発表された論文リスト
 
 <table>
 <tr>
-    <td></td>
-    <td>Authors (Japanese)</td>
-    <td>Authers</td>
-    <td>Title</td>
-    <td>Journal, Volume, Number, Pages</td>
-    <td>Published Year</td>
-    <td>PMID</td>
-    <td>DOI</td>
+	<td></td>
+	<td>Authors (Japanese)</td>
+	<td>Authors</td>
+	<td>Title</td>
+	<td>Journal, Volume, Number, Pages</td>
+	<td>Published Year</td>
+	<td>PMID</td>
+	<td>DOI</td>
 </tr>
 <tr>
     <td>1</td>
@@ -93,9 +93,8 @@ title: 論文リスト
     <td>Stimulation of glucoamylase gene expression with starch in Pholiota microspora. </td>
     <td>Mushreom Science and Biotechnology, Vol. 20C2) 77-S4, 2012</td>
     <td>2012</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi:10.24465/msb.20.2_77</td>
-    <td>PDFあり　https://www.jstage.jst.go.jp/article/msb/20/2/20_KJ00008158018/_pdf/-char/en</td>
 </tr>
 <tr>
     <td>9</td>
