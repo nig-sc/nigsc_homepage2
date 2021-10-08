@@ -73,7 +73,7 @@ title: Published Papers(2017)
     <td>Genome-wide population genetic analysis identifies evolutionary forces establishing continuous population divergence. </td>
     <td>Ecological Research, Vol 32(2017), p461-468</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1007/s11284-017-1459-y</td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@ title: Published Papers(2017)
     <td>Cost-Effective Discovery of Nucleotide Polymorphisms in Populations of an Allopolyploid Species Using Pool-Seq. American Journal of Molecular Biology Vol.7 No.4, October 2017, PP. 1031-1046</td>
     <td>Biology, 7, 153-168.</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/ajmb.2017.74012.</td>
 </tr>
 <tr>
@@ -283,7 +283,7 @@ title: Published Papers(2017)
     <td>A reconsideration of the taxonomic position of two bacterial strains isolated from acherie-diseased silkworms in 1965. J Insect Biotechnol Sericology 86(2017) p35-41</td>
     <td>2017 Volume 86 Issue 2 Pages 2_035-2_041</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.11416/jibs.86.2_035</td>
 </tr>
 <tr>
@@ -314,8 +314,8 @@ title: Published Papers(2017)
     <td>外国産コムギ品種を識別する技術の開発</td>
     <td>DNA多型 25, p68-71 (2017).</td>
     <td>2017</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>31</td>
@@ -623,9 +623,9 @@ title: Published Papers(2017)
     <td>平野 雅規</td>
     <td>MasakiHirano </td>
     <td>Aberrant active enhancers associated with downregulation of RET finger prote in overcomes chemoresistance in glioblastoma. (学会発表)</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1016/j.celrep.2019.01.109</td>
 </tr>
 <tr>
@@ -645,7 +645,7 @@ title: Published Papers(2017)
     <td>Combined Use of k-Mer Numerical Features and Position-Specific Categorical Features in Fixed-Length DNA Sequence Classification</td>
     <td>Journal of Biomedical Science and Engineering, 10, 390-401.</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2017.108030.</td>
 </tr>
 <tr>
@@ -735,7 +735,7 @@ title: Published Papers(2017)
     <td>Evolution of sequence-specific anti-silencing systems in Arabidopsis</td>
     <td>Nature Communications volume 8, Article number: 2161 (2017)</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1038/s41467-017-02150-7</td>
 </tr>
 <tr>
@@ -795,7 +795,7 @@ title: Published Papers(2017)
     <td>Inferring evolutionary responses of Anolis carolinensis introduced into the Ogasawara archipelago using whole genome sequence data</td>
     <td>Scientific Reports volume 7, Article number: 18008 (2017)</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1038/s41598-017-17852-7</td>
 </tr>
 <tr>
@@ -855,7 +855,7 @@ title: Published Papers(2017)
     <td>Mechanism underlying rapid responses to boron deprivation in Arabidopsis roots</td>
     <td>Soil Science and Plant Nutrition Volume 64, 2018 - Issue 1 Pages 106-115</td>
     <td>2017</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1080/00380768.2017.1416670</td>
 </tr>
 <tr>
@@ -865,8 +865,8 @@ title: Published Papers(2017)
     <td>Microbial diversity in methane hydrate-bearing deep marine sediments core preserved in the original pressure. (学会発表)</td>
     <td>American Geophysical Union, Fall Meeting 2017, abstract #OS53C-1225</td>
     <td>2017</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>86</td>
