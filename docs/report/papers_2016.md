@@ -133,8 +133,8 @@ title: 論文リスト(2016)
     <td>色素原料用サツマイモ品種の識別に利用可能なレトロトランスポゾンRtsp-1挿入箇所の選定</td>
     <td>DNA多型 24, p115-118 (2016)</td>
     <td>2016</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>13</td>
@@ -143,8 +143,8 @@ title: 論文リスト(2016)
     <td>レトロトランスポゾン挿入多型を利用したリンゴの品種識別マーカー開発</td>
     <td>DNA多型 24, 101-107 (2016)</td>
     <td>2016</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>14</td>
@@ -273,7 +273,7 @@ title: 論文リスト(2016)
     <td>Prediction of Gene Structures from RNA-seq Data Using Dual Decomposition.</td>
     <td>IPSJ Transactions on Bioinformatics, vol 9(2016), p1-6</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.2197/ipsjtbio.9.1</td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ title: 論文リスト(2016)
     <td>Application of Word Embedding to Drug Repositioning. </td>
     <td>Journal of Biomedical Science and Engineering, 9, 7-16.</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2016.91002.</td>
 </tr>
 <tr>
@@ -583,7 +583,7 @@ title: 論文リスト(2016)
     <td>DNA Sequence Classification by Convolutional Neural Networks.</td>
     <td>Journal of Biomedical Science and Engineering, 9, 280-286.</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2016.95021.</td>
 </tr>
 <tr>
@@ -613,7 +613,7 @@ title: 論文リスト(2016)
     <td>Origin of the Surfactant-Dependent Redox Chemistry of Single-Wall Carbon Nanotubes. </td>
     <td>ChemNanoMat 2016,Volume2, Issue9 Pages 911-920</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.1002/cnma.201600190</td>
 </tr>
 <tr>
@@ -673,7 +673,7 @@ title: 論文リスト(2016)
     <td>Genome-wide maps of nucleosomes of the trichostatin A treated and untreated archiascomycetous yeast Saitoella complicata. </td>
     <td>AIMS Microbiology, Volume 2, Issue 1: 69-91</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.3934/microbiol.2016.1.69</td>
 </tr>
 <tr>
@@ -813,7 +813,7 @@ title: 論文リスト(2016)
     <td>A genomic approach to selecting robust and versatile SNP sets from next-generation sequencing data for genome-wide association study in citrus cultivars.</td>
     <td>Acta Horticulturae,1135, p23-32</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.17660/ActaHortic.2016.1135.4</td>
 </tr>
 <tr>
@@ -823,8 +823,8 @@ title: 論文リスト(2016)
     <td>カンキツの高密度連鎖地図の構築と参照ゲノム配列との比較</td>
     <td>Acta Horticulturae, 2016, 育種学研究 18（別1）p68</td>
     <td>2016</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>82</td>
@@ -853,7 +853,7 @@ title: 論文リスト(2016)
     <td>Population history of Antarctic and common minke whales inferred from individual whole-genome sequences. Marine Mammal Science 2017, 33: 645-652</td>
     <td>Marine Mammal Science,Volume33, Issue2,Pages 645-652</td>
     <td>2016</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1111/mms.12369</td>
 </tr>
 </table>
