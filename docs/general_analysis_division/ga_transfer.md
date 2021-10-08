@@ -41,7 +41,6 @@ Asperaのダウンロードページにアクセスします。
 - https://www.ibm.com/aspera/connect/
 
 
-
 CLIENT SOFTWAREからAspera CLIをダウンロードします。
 WindowsやMacなど、環境に合わせたファイルをダウンロードしインストールしてください。
 インストール後実行ファイルにパスが通っていることを確認してください。
