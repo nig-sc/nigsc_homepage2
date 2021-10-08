@@ -60,7 +60,7 @@ function TOC({toc}) {
             <tr>
               <td class="tableBody">
               <a href="/news/N2021_1112_scheduledMaintainance">
-                【定期メンテナンス】11月12日～11月18日 定期メンテナンスのお知らせ</a><br /> <br />
+                11月12日～11月18日 定期メンテナンスのお知らせ</a><br /> <br />
 
               <a href="/news/2021_0512_shortQ">
                 2021年5月13日(木) 一般解析区画short.qの設定変更</a><br /><br />
@@ -75,6 +75,10 @@ function TOC({toc}) {
             </tr>
             <tr>
               <td class="tableBody">
+                <a href="/news2/M2021_1008_TS4500">
+                  (復旧)【障害】2021年10月7日（木）大容量アーカイブストレージアクセス障害
+                  </a><br /><br />
+
                <a href="/news2/M2021_1004_lustre6">
                  (終了)【メンテナンス】2021年10月04日(月)10:30～10:45 Lustre6障害対応によるアクセス不可</a><br /><br />
 
