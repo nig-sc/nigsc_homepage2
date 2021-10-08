@@ -1,6 +1,6 @@
 ---
 id: papers_2018
-title: 論文リスト(2018)
+title: Published Papers(2018)
 ---
 
 2018.01.01. -- 2018.12.31に発表された論文リスト
@@ -8,7 +8,6 @@ title: 論文リスト(2018)
 <table>
 <tr>
     <td></td>
-    <td>著者名</td>
     <td>Authors (Japanese)</td>
     <td>Authors</td>
     <td>Title</td>
