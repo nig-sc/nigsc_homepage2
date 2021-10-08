@@ -263,7 +263,7 @@ title: Published Papers(2014)
     <td>Expansion of specialized metabolism-related superfamily genes via whole genome duplications during angiosperm evolution</td>
     <td>Plant Biotechnology, Volume 31 Issue 5, p.579-584</td>
     <td>2014</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.5511/plantbiotechnology.14.0901a</td>
 </tr>
 <tr>
@@ -323,7 +323,7 @@ title: Published Papers(2014)
     <td>Application of iPBS in high-throughput sequencing for the development of retrotransposon-based molecular markers</td>
     <td>Current Plant Biology, Vol. 1, no. C, p. 40-44</td>
     <td>2014</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1016/j.cpb.2014.09.001</td>
 </tr>
 <tr>
@@ -333,8 +333,8 @@ title: Published Papers(2014)
     <td>新規活性型レトロトランスポゾンTriRe-1の挿入多型を利用したHigh-throughputなコムギ品種判定マーカーの開発</td>
     <td>DNA多型 = DNA polymorphism. vol. 22 no. 1, p.60-65</td>
     <td>2014</td>
-    <td>無し</td>
-    <td>無し</td>
+    <td>NULL</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>33</td>
@@ -413,7 +413,7 @@ title: Published Papers(2014)
     <td>D-IMPACT: A Data Preprocessing Algorithm to Improve the Performance of Clustering</td>
     <td>JSEA 2014, 7, p639-654</td>
     <td>2014</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jsea.2014.78059 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ title: Published Papers(2014)
     <td>Predicting residue contacts for protein-protein interactions by integration of multiple information</td>
     <td>JBiSE, 2014, 7, p28-37</td>
     <td>2014</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.4236/jbise.2014.71005 </td>
 </tr>
 <tr>
@@ -513,7 +513,7 @@ title: Published Papers(2014)
     <td>Genome-wide single nucleotide polymorphisms and insertion-deletions of Oryza sativa L. subsp. japonica cultivars grown near the northern limit of rice cultivation</td>
     <td>Mol Breeding (2014)</td>
     <td>2014</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1007/s11032-014-0093-4</td>
 </tr>
 <tr>

@@ -1,6 +1,6 @@
 ---
 id: papers_2020
-title: Published Papers (2020)
+title: 論文リスト(2020)
 ---
 
 List of papers published by users between 2020.01.01 -- 2020.12.31.
@@ -284,7 +284,7 @@ m dimers: Coarse-grained molecular dynamics simulation of disk membranes</td>
     <td>Classification of Brainwaves for Sleep Stages by High-Dimensional FFT Features from EEG Signals</td>
     <td>Appl. Sci. 2020, 10(5), 1797.</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.3390/app10051797</td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ m dimers: Coarse-grained molecular dynamics simulation of disk membranes</td>
     <td>Development of 22 Microsatellite Markers for Assessing Hybridization in the Genus Gekko (Squamata: Gekkonidae)</td>
     <td>Current Herpetology 39(1): 66-74, February 2020.</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.5358/hsj.39.66</td>
 </tr>
 <tr>
@@ -434,7 +434,7 @@ m dimers: Coarse-grained molecular dynamics simulation of disk membranes</td>
     <td>Mitochondrial Genomes of Hemiarma marina and Leucocryptos marina Revised the Evolution of Cytochrome c Maturation in Cryptista</td>
     <td>ORIGINAL RESEARCH  published: 02 June 2020.</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.3389/fevo.2020.00140</td>
 </tr>
 <tr>
@@ -464,7 +464,7 @@ m dimers: Coarse-grained molecular dynamics simulation of disk membranes</td>
     <td>Natal origin identification of green turtles in the North Pacific by genome-wide population analysis with limited DNA samples</td>
     <td>ORIGINAL RESEARCH  published: 07 August 2020.</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi.org/10.3389/fmars.2020.00658</td>
 </tr>
 <tr>
@@ -686,7 +686,7 @@ e in Japanese gentian with the CRISPR/Cas9 system</td>
     <td>QTL dissection of floral traits in Streptocarpus (Gesneriaceae)</td>
     <td>Netherlands Journal of Plant Breeding, 01 Jul 2020, 216(7):110</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1007/s10681-020-02647-1</td>
 </tr>
 <tr>
@@ -816,7 +816,7 @@ e in Japanese gentian with the CRISPR/Cas9 system</td>
     <td>Monitoring and mathematical modeling of mitochondrial ATP in myotubes at single-cell level reveals two distinct population with different kinetics</td>
     <td>Quantitative Biology 2020, 8(3): 228-237</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1007/s40484-020-0211-8</td>
 </tr>
 <tr>
@@ -967,7 +967,7 @@ n Pungitius sticklebacks</td>
     <td>A ddRAD-based population genetics and phylogenetics of an endangered freshwater fish from Japan</td>
     <td>Conservation Genetics (2020) 21:641-652</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi:10.1007/s10592-020-01275-5</td>
 </tr>
 <tr>
@@ -1237,7 +1237,7 @@ n Pungitius sticklebacks</td>
     <td>Induction of sexual reproduction reveals the presence of heterothallic Spirogyra strains (Zygnematophyceae, Streptophyta)</td>
     <td>Phycological Research 2020; 68: 263-268 </td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1111/pre.12436</td>
 </tr>
 <tr>
@@ -1257,7 +1257,7 @@ n Pungitius sticklebacks</td>
     <td>Oral RNAi of diap1 results in rapid reduction of damage to potatoes in Henosepilachna vigintioctopunctata</td>
     <td>Journal of Pest Science volume 94, pages505-515 (2021)</td>
     <td>2020</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi: 10.1007/s10340-020-01276-w</td>
 </tr>
 <tr>

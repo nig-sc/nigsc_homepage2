@@ -93,9 +93,8 @@ title: Published Papers(2012)
     <td>Stimulation of glucoamylase gene expression with starch in Pholiota microspora. </td>
     <td>Mushreom Science and Biotechnology, Vol. 20C2) 77-S4, 2012</td>
     <td>2012</td>
-    <td>無し</td>
+    <td>NULL</td>
     <td>doi:10.24465/msb.20.2_77</td>
-    <td>PDFあり　https://www.jstage.jst.go.jp/article/msb/20/2/20_KJ00008158018/_pdf/-char/en</td>
 </tr>
 <tr>
     <td>9</td>
