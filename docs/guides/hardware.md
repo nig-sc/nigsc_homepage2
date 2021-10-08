@@ -187,7 +187,7 @@ HPE Apollo 2000 Gen10
 | 構成要素 | 型番                                                    | 員数 | ノードあたりの性能など          |
 |----------|---------------------------------------------------------|------|---------------------------------|
 | CPU      | Intel Xeon Gold 6130 (16 cores) Base 2.1GHz, Max 3.7GHz |    2 | 合計 32コア                     |
-| Memory   | 32GB DDR4-2666                                          |   12 | 合計 386GB (CPUコアあたり 12GB) |
+| Memory   | 32GB DDR4-2666                                          |   12 | 合計 384GB (CPUコアあたり 12GB) |
 | Storage  | 1.6TB NVMe SSD x1, 3.2TB NVMe SSDx1                     |      |                                 |
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                         |
 
@@ -206,7 +206,7 @@ HPE Apollo 6500 Gen10
 | 構成要素 | 型番                                                    | 員数 | ノードあたりの性能など          |
 |----------|---------------------------------------------------------|------|---------------------------------|
 | CPU      | Intel Xeon Gold 6136 (12 cores) Base 3.0GHz, Max 3.7GHz |    2 | 合計 24コア                     |
-| Memory   | 32GB DDR4-2666                                          |   12 | 合計 386GB (CPUコアあたり 16GB) |
+| Memory   | 32GB DDR4-2666                                          |   12 | 合計 384GB (CPUコアあたり 16GB) |
 | GPU      | NVIDIA Tesla V100 SXM2                                  |    4 |                                 |
 | Storage  | 1.6TB NVMe SSD x1, 3.2TB NVMe SSDx1                     |      |                                 |
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                         |
