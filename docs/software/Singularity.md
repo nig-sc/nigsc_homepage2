@@ -64,7 +64,7 @@ alias sing="singularity exec $HOME/ubuntu18.sif
 Singularityのsandboxモードの代わりにDockerコンテナを使うことが出来ます。この方法を使うとスパコン上でSingularityイメージをビルド（作成）することが出来ます。(その際DockerコンテナイメージファイルはあらかじめDocker Hubに登録しておいてください。）
 
 
-Dockerコンテナイメージを用いたSingularityの利用例は以下の通り
+Dockerコンテナイメージを用いたSingularityの利用例は以下の通りです。
 ```
 # singularity build時にメモリが足りないというエラーが出るので、qlogin時にあらかじめメモリ量を指定する。
 $ qlogin -l s_vmem=20G -l mem_req=20G
@@ -136,11 +136,11 @@ $ singR --no-save < example.R
 
 ```
 
-（引用）上記コード例は以下のサイトを参考にした。
+（引用）上記コード例は以下のサイトを参考にしました。
 
 [R Tutorial For Beginners](https://www.statmethods.net/r-tutorial/index.html)
 
-実行結果(Rplots.pdf)は以下の通り。
+実行結果(Rplots.pdf)は以下の通りです。
 
 ![figure](singurarity.PNG)
 
