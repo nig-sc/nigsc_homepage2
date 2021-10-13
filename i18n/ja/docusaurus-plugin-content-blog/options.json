@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "News",
+    "message": "Blog",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "News",
+    "message": "Blog",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Recent News",
+    "message": "最近のお知らせ",
     "description": "The label for the left sidebar"
   }
 }

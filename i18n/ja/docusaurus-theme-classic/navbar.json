@@ -3,32 +3,28 @@
     "message": "NIG Supercomputer",
     "description": "The title in the navbar"
   },
-  "item.label.ホーム": {
-    "message": "Home",
-    "description": "Navbar item with label ホーム"
-  },
-  "item.label.利用申請等": {
-    "message": "Make Application",
-    "description": "Navbar item with label 利用申請等"
-  },
   "item.label.利用案内": {
-    "message": "User Guide",
+    "message": "利用案内",
     "description": "Navbar item with label 利用案内"
   },
+  "item.label.利用申請等": {
+    "message": "利用申請等",
+    "description": "Navbar item with label 利用申請等"
+  },
   "item.label.活用方法": {
-    "message": "Advanced Guides",
+    "message": "活用方法",
     "description": "Navbar item with label 活用方法"
   },
   "item.label.稼働状況": {
-    "message": "Operation Info",
+    "message": "稼働状況",
     "description": "Navbar item with label 稼働状況"
   },
   "item.label.成果報告": {
-    "message": "Reports",
+    "message": "成果報告",
     "description": "Navbar item with label 成果報告"
   },
   "item.label.お知らせ": {
-    "message": "News",
+    "message": "お知らせ",
     "description": "Navbar item with label お知らせ"
   }
 }
