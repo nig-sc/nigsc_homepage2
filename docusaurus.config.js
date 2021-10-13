@@ -32,31 +32,31 @@ module.exports = {
             items: [
                 {
                     to: "guides/overview",
-                    docId: 'overview',
+                    docid: 'overview',
                     position: 'left',
                     label: '利用案内',
-                }, 
+                },
                 {
                     to: 'application/application',
-                    docId: 'application',
+                    docid: 'application',
                     position: 'left',
                     label: '利用申請等',
                 },
                 {
                     to: 'advanced_guides/advanced_guide',
-                    docId: 'advanced_guide',
+                    docid: 'advanced_guide',
                     position: 'left',
                     label: '活用方法',
                 },
                 {
                     to: 'operation/operation',
-                    docId: 'operation',
+                    docid: 'operation',
                     position: 'left',
                     label: '稼働状況',
                 },
                 {
                     to: 'report/report',
-                    docId: 'report',
+                    docid: 'report',
                     position: 'left',
                     label: '成果報告',
                 },
