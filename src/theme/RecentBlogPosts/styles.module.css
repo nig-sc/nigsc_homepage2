@@ -1,0 +1,28 @@
+.recentBlogPosts {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  gap: 1rem;
+}
+
+.recentBlogPosts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recentBlogPosts__listItemLink {
+  display: block;
+}
+
+.recentBlogPosts__title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 0.75rem;
+}
