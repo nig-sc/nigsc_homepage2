@@ -108,20 +108,6 @@ module.exports = {
         ],
     },
     operationInfoSidebar: {
-        "お知らせ": [
-            "news/N2021_1112_scheduledMaintainance",
-            "news/2021_0512_shortQ",
-            "news/past_news"
-        ],
-        "障害情報": [
-            "news2/M2021_1008_TS4500",
-            "news2/M2021_1004_lustre6",
-            "news2/M2021_0915_lustre6-3",
-            "news2/M2021_0915_lustre6-2",
-            "news2/M2021_0917_lustre7",
-            "news2/M2021_0915_lustre6",
-            "news2/past_maintainance_info"
-        ],
         "稼働状況": [
             "operation/operation",
             "operation/qstatGC",

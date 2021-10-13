@@ -7,6 +7,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import useTOCHighlight from '@theme/hooks/useTOCHighlight';
+import RecentBlogPosts from '@theme/RecentBlogPosts';
 import styles from './styles.module.css';
 const LINK_CLASS_NAME = 'table-of-contents__link';
 const TOC_HIGHLIGHT_PARAMS = {
@@ -42,58 +43,12 @@ export function TOCHeadings({toc, isChild}) {
     );
 }
 
-
-
 function TOC({toc}) {
     useTOCHighlight(TOC_HIGHLIGHT_PARAMS);
     return (
         <div className={clsx(styles.tableOfContents, 'thin-scrollbar')}>
           <TOCHeadings toc={toc} />
-          <br /><br />
-
-          <table>
-            <tr>
-              <td class="tableHeader">
-                News / お知らせ
-              </td>
-            </tr>
-            <tr>
-              <td class="tableBody">
-              <a href="/news/N2021_1112_scheduledMaintainance">
-                11月12日～11月18日 定期メンテナンスのお知らせ</a><br /> <br />
-
-              <a href="/news/2021_0512_shortQ">
-                2021年5月13日(木) 一般解析区画short.qの設定変更</a><br /><br />
-               <a href="/news/past_news">■ 過去のお知らせ一覧</a><br />
-              </td>
-            </tr>
-
-            <tr>
-              <td class="tableHeader">
-                Failure Reports / 障害情報
-              </td>
-            </tr>
-            <tr>
-              <td class="tableBody">
-                <a href="/news2/M2021_1008_TS4500">
-                  (復旧)【障害】2021年10月7日（木）大容量アーカイブストレージアクセス障害
-                  </a><br /><br />
-
-               <a href="/news2/M2021_1004_lustre6">
-                 (終了)【メンテナンス】2021年10月04日(月)10:30～10:45 Lustre6障害対応によるアクセス不可</a><br /><br />
-
-                <a href="/news2/M2021_0915_lustre6-3">
-                Lustre6 ディスク障害のお詫び</a><br /><br />
-
-                <a href="/news2/M2021_0915_lustre6-2">
-                【障害】【続報】2021年9月15日(水) Lustre6のディスク障害のお知らせ</a><br />
-              <br />
-                <a href="/news2/past_maintainance_info">■ 過去の障害情報一覧</a>
-              </td>
-            </tr>
-
-          </table>
-
+          <RecentBlogPosts />
         </div>
     );
 }
