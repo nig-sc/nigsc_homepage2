@@ -1,9 +1,10 @@
 ---
 id: papers_2018
-title: 論文リスト(2018)
+title: Published Papers(2018)
 ---
 
-2018.01.01. -- 2018.12.31に発表された論文リスト
+List of papers published by users between 2018.01.01 -- 2018.12.31.
+
 
 <table>
 <tr>

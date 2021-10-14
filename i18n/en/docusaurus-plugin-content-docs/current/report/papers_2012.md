@@ -1,9 +1,9 @@
 ---
 id: papers_2012
-title: 論文リスト
+title: Published Papers (2012)
 ---
 
-2012.01.01 -- 2012.12.31に発表された論文リスト
+List of papers published by users between 2012.01.01 -- 2012.12.31.
 
 <table>
 <tr>
