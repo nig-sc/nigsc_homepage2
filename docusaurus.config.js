@@ -35,7 +35,7 @@ module.exports = {
                     docId: 'overview',
                     position: 'left',
                     label: '利用案内',
-                }, 
+                },
                 {
                     to: 'application/application',
                     docId: 'application',
