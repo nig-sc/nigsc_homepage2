@@ -3,7 +3,7 @@ id: papers_2019
 title: 論文リスト(2019)
 ---
 
-List of papers published by users between 2019.01.01 -- 2019.12.31.
+2019.01.01 -- 2019.12.31にユーザによって発表された論文リスト
 
 
 <table>
