@@ -99,7 +99,11 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 <th width="300">個人ゲノム解析区画</th>
 </tr>
 <tr>
-<td width="300">Aspera</td>
+<td width="300">
+
+[Aspera](aspera/aspera)
+
+</td>
 <td width="300">利用可能</td>
 <td width="300">☓</td>
 </tr>
