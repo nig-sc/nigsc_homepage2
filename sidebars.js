@@ -55,6 +55,7 @@ module.exports = {
     softwareSidebar: {
         "ジョブスケジューラ": [
             "software/univa_grid_engine",
+            "software/qsub_beta",
             "software/slurm"
         ],
         "コンテナ・解析パイプライン": [

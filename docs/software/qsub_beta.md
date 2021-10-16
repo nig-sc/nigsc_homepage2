@@ -13,7 +13,7 @@ title: qsub_beta の使い方
 
 ## 使い方
 
-### qsub wrapperを介したバッチジョブの実行
+### qsub_betaを介したバッチジョブの実行
 
 サブミット方法は以下の通りで、UGE オリジナルの qsub と同様です。
 
