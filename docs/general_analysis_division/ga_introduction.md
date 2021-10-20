@@ -65,7 +65,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
   (AMD EPYC7501, 64 CPU cores/node, <br />
   8GB memory/CPU core)<br />
   </td>
-  <td>36台・3904コア</td>
+  <td><p>1b 25台、3200コア<br>1a 11台、704コア</td>
 
 </tr>
 <tr>
