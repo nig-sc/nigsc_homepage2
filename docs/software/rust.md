@@ -12,11 +12,11 @@ Rustのインストールはユーザー権限で可能なので、各自必要�
 
 指示に従ってたった一行をコピーして端末に貼り付け実行すればインストールされます。
 
-- インストール先は` $HOME/.rustup, $HOME/.cargo `。
+- インストール先は` $HOME/.rustup, $HOME/.cargo `です。
 
-- Rustのツールにパス等を通し使えるようにするには、` source $HOME/.cargo/env `を実行せよとのこと。
+- Rustのツールにパス等を通し使えるようにするには、` source $HOME/.cargo/env `を実行してください。
 
-このスクリプトの実行については自動的に` .bashrc `に一行追加される。
+このスクリプトの実行については自動的に` .bashrc `に一行追加されます。
 
 ```
 user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/section02/p2021_0509_RustCompiler (2021-05-09 01:28:28)
@@ -111,7 +111,7 @@ user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/section02/p2021_0509
 $ 
 ```
 
-以下のツールがインストールされる。
+以下のツールがインストールされます。
 
 - ` cargo ` is Rust’s compilation manager, package manager, and general-purpose tool. You can use Cargo to start a new project, build and run your program, and manage any external libraries your code depends on.
 
