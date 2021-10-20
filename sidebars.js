@@ -55,10 +55,14 @@ module.exports = {
     softwareSidebar: {
         "ジョブスケジューラ": [
             "software/univa_grid_engine",
+            "software/qsub_beta",
             "software/slurm"
         ],
         "コンテナ・解析パイプライン": [
             "software/Singularity",
+        ],
+        "データ転送・データ共有": [
+            "software/aspera/aspera",
         ],
         "開発環境・ライブラリ": [
             "software/python",

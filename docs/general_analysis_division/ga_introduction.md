@@ -43,7 +43,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
   (AMD EPYC7702, 128 CPU cores/node,<br />
   4GB memory/CPU core)
   </td>
-  <td>3台</td>
+  <td>3台・384コア</td>
 </tr>
 <tr>
 
@@ -52,7 +52,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
    (Intel Xeon Gold 6136, 24 CPU cores/node, <br />
    16GB memory/CPU core)
    </td>
-  <td>1台</td>
+  <td>2台・48コア</td>
 </tr>
 
 <tr>
@@ -65,7 +65,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
   (AMD EPYC7501, 64 CPU cores/node, <br />
   8GB memory/CPU core)<br />
   </td>
-  <td>　</td>
+  <td>36台・3904コア</td>
 
 </tr>
 <tr>
@@ -74,7 +74,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
   (Intel Xeon Gold 6130, 32 CPU cores/node, <br />
   12GB memory/CPU core)
   </td>
-  <td> </td>
+  <td>21台・672コア</td>
 </tr>
 <tr>
   <td>gpu</td>
@@ -82,7 +82,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
    (Intel Xeon Gold 6136, 24 CPU cores/node, <br />
    16GB memory/CPU core)
    </td>
-  <td></td>
+  <td>7台・168コア</td>
 </tr>
 <tr>
   <td>short</td>
@@ -90,7 +90,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
    (Intel Xeon Gold 6136, 24 CPU cores/node, <br />
    16GB memory/CPU core)
    </td>
-  <td></td>
+  <td>7台・168コア</td>
 </tr>
 <tr>
   <td>medium</td>
@@ -98,7 +98,7 @@ UGEで管理されたノードはログインノードと計算ノードに大�
   (Intel Xeon Gold 6148, 80 CPU cores/node, <br />
   38.4GB moemory/CPU core)
   </td>
-  <td>9台</td>
+  <td>9台・720コア</td>
 </tr>
 
 </table>

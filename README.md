@@ -54,10 +54,14 @@ npm start -- --locale en
 実際のサービスに使うのはこちら。以下のコマンドで静的サイトとしてビルドする。英語版も含めてサイト全体が生成される。
 
 ```
-npm run build
+npm run build  # Markdown => HTML
+npm run serve  # HTML化されたサイトの表示 
 ```
 
-上記コマンドで出来たbuildディレクトリをApacheサーバなどで見せれば良い。以下は一例。
+上記のように`npm run serve`すれば検索や多言語の表示もできる。
+
+
+最終的には上記コマンドで出来たbuildディレクトリをApacheサーバなどで見せれば良い。以下は一例。
 
 ```
 sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html

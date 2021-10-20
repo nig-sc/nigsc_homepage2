@@ -96,11 +96,10 @@ title: "各種統計"
 <table>
 	<tbody>
 		<tr>
-			<th width="300" rowspan="2">1/1-12/31</th>
-			<th width="300" rowspan="2">総数</th>
+			<th width="300" rowspan="2">集計日</th>
 			<th width="300" colspan="3">国内</th>
 			<th width="300" colspan="3">海外</th>
-			<th width="300" rowspan="2">集計日</th>
+			<th width="300" rowspan="2">総数</th>
 		</tr>
 		<tr>
 			<td>教育・研究</td>
@@ -111,59 +110,54 @@ title: "各種統計"
 			<td>計</td>
 		</tr>
 		<tr>
-			<td>2016</td>
-			<td>159</td>
+			<td>2016.12.31</td>
 			<td>135</td>
 			<td>18</td>
 			<td>153</td>
 			<td>5</td>
 			<td>1</td>
 			<td>6</td>
-			<td>2016.12.31</td>
+			<td>159</td>
 		</tr>
 		<tr>
-			<td>2017</td>
-			<td>150</td>
-			<td>129</td>
-			<td>15</td>
-			<td>144</td>
-			<td>5</td>
-			<td>1</td>
-			<td>6</td>
 			<td>2017.12.31</td>
-		</tr>
-		<tr>
-			<td>2018</td>
-			<td>150</td>
 			<td>129</td>
 			<td>15</td>
 			<td>144</td>
 			<td>5</td>
 			<td>1</td>
 			<td>6</td>
-			<td>2018.12.31</td>
+			<td>150</td>
 		</tr>
 		<tr>
-			<td>2019</td>
-			<td>156</td>
+			<td>2018.12.31</td>
+			<td>129</td>
+			<td>15</td>
+			<td>144</td>
+			<td>5</td>
+			<td>1</td>
+			<td>6</td>
+			<td>150</td>
+		</tr>
+		<tr>
+			<td>2019.12.31</td>
 			<td>137</td>
 			<td>12</td>
 			<td>149</td>
 			<td>6</td>
 			<td>1</td>
 			<td>7</td>
-			<td>2019.12.31</td>
+			<td>156</td>
 		</tr>
 		<tr>
-			<td>2020</td>
-			<td>176</td>
+			<td>2020.12.31</td>
 			<td>148</td>
 			<td>14</td>
 			<td>162</td>
 			<td>14</td>
 			<td>0</td>
 			<td>14</td>
-			<td>2020.12.31</td>
+			<td>176</td>
 		</tr>
 	</tbody>
 </table>
