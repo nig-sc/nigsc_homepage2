@@ -17,7 +17,7 @@ title: "課金サービスの利用方法"
 
 ## 料金表
 料金表はこちらをご参照ください。
-[利用規程](application/use_policy)
+[利用規程](/application/use_policy)
  
 
 ## 課金サービス一覧
