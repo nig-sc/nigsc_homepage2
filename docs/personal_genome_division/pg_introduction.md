@@ -8,7 +8,7 @@ title: "概要（個人ゲノム解析区画）"
 遺伝研スパコンでは、個人ゲノムを取り扱うためにセキュリティーレベルを高めた、他のシステムとは独立した個人ゲノム解析区画を提供しています。
 
 
-遺伝研スパコン個人ゲノム解析区画は以下のセキュリティーガイドラインを遵守し[NBDCの機関外サーバに認定されております](https://humandbs.biosciencedbc.jp/off-premise-server)。
+遺伝研スパコン個人ゲノム解析区画は以下のセキュリティーガイドラインを遵守した[NBDCの機関外サーバです](https://humandbs.biosciencedbc.jp/off-premise-server)。
 
 - [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
 - [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
