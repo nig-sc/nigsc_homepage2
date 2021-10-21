@@ -10,41 +10,54 @@ title: "利用規定"
 
 
 別表１（第１２条関係）
+
 一般解析区画 大規模利用負担料金表（税抜）
 
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2">高速ストレージ<br />(Quota設定のみ：容量保証なし)</td>
-			<td>30TBまで無料　　　　　　　　　　　　　　　　　　　0円<br />
-			30TBを超えた場合10TBあたり　　　　　　　年間 27,778円<br />
-			例：30TB ＜ 使用容量 ≦ 40TB　　　　 　　　　　 111,112円<br />
-			    40TB ＜ 使用容量 ≦ 50TB　　　　　　　　　　　 138,890円</td>
+			<td colspan="2" rowspan="3">高速ストレージ<br />(Quota設定のみ：容量保証なし)</td>
+			<td>30TBまで無料</td>
+			<td>0円</td>
+		</tr>
+		<tr>
+			<td>30TBを超えた場合10TBあたり 年間</td>
+			<td>27,778円</td>
+		</tr>
+		<tr>
+			<td colspan="2">※ 30TBを超える場合は、30TB分の27,778円 + 10TBあたり追加料金となります。10TB単位で端数が出た場合は切り上げとなります。詳細は<a href="https://sc.ddbj.nig.ac.jp/general_analysis_division/largescale_storage">こちら</a>をご参照下さい。</td>
 		</tr>
 		<tr>
 			<td colspan="2">高速ストレージ<br />(容量保証)</td>
-			<td>10TBあたり 　　　　　　　　　　　　　　　年間 185,185円</td>
+			<td>10TBあたり 年間</td>
+			<td>185,185円</td>
 		</tr>
 		<tr>
 			<td colspan="2">アーカイブストレージ<br />(容量保証)</td>
-			<td>10TBあたり 　　　　　　　　　　　　　　　年間 108,333円</td>
+			<td>10TBあたり 年間</td>
+			<td>108,333円</td>
 		</tr>
 		<tr>
 			<td rowspan="4">計算ノード優先利用</td>
 			<td>Thinノード<br />(AMD)</td>
-			<td>1CPUコア、4GBメモリを1単位とし、1単位30日あたり<br />　　　　　　　　　　　　　　　　　　　　　　　　(*)448円</td>
+			<td>1CPUコア、4GBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)448円</td>
 		</tr>
 		<tr>
-			<td>Thinノード<br />(Intel)</td>
-			<td>1CPUコア、12GBメモリを1単位とし、1単位30日あたり<br />　　　　　　　　　　　　　　　　　　　　　　　　(*)448円</td>
+			<td>Thinノード
+(Intel)</td>
+			<td>1CPUコア、12GBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)448円</td>
 		</tr>
 		<tr>
 			<td>Thinノード<br />(Intel/NVIDIA GPU)</td>
-			<td>4CPUコア、1GPU、48GBメモリを1単位とし、1単位30日あたり<br />                  　　　　　　　　　　　　　　　　　　　　　　　(*)2，690円</td>
+			<td>4CPUコア、1GPU、48GBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)2,690円</td>
 		</tr>
 		<tr>
 			<td>Mediumノード</td>
-			<td>13CPUコア、512GBメモリを1単位とし、1単位30日あたり<br />　　　　　　　　　　　　　　　　　　　　　　　(*)29,155円<br /></td>
+			<td>13CPUコア、512GBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)29,155円</td>
 		</tr>
 	</tbody>
 </table>
@@ -61,38 +74,51 @@ title: "利用規定"
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2">高速ストレージ<br />(Quota設定のみ：容量保証なし)</td>
-			<td>基本料金　　　　　　　　　　　83,333円<br />10TBあたり　　　　　　　　年間 27,778円</td>
+			<td colspan="2" rowspan="2">高速ストレージ<br />(Quota設定のみ：容量保証なし)</td>
+			<td>基本料金</td>
+			<td>83,333円</td>
+		</tr>
+		<tr>
+			<td>10TBあたり 年間</td>
+			<td>27,778円</td>
 		</tr>
 		<tr>
 			<td colspan="2">高速ストレージ<br />(容量保証)</td>
-			<td>10TBあたり　　　　　　　　年間 185,185円</td>
+			<td>10TBあたり 年間</td>
+			<td>185,185円</td>
 		</tr>
 		<tr>
 			<td colspan="2">アーカイブストレージ<br />(容量保証)</td>
-			<td>10TBあたり　　　　　　　　年間 108,333円</td>
+			<td>10TBあたり 年間</td>
+			<td>108,333円</td>
 		</tr>
 		<tr>
 			<td>DDBJグループクラウド</td>
 			<td>基本料金</td>
-			<td>１プロジェクトあたり　　年額 15,481,480円</td>
+			<td>1プロジェクトあたり 年額</td>
+			<td>15,481,480円</td>
 		</tr>
 		<tr>
-			<td rowspan="4">アクセス制限データグループ共有<br />データベースサービス(*)</td>
+			<td rowspan="4">アクセス制限データグループ共有データベースサービス(*)</td>
 			<td>アーカイブストレージ(容量保証)</td>
-			<td>10TBあたり　　　　　　　　年間 108,333円</td>
+			<td>10TBあたり 年間</td>
+			<td>108,333円</td>
 		</tr>
 		<tr>
 			<td>要望対応開発</td>
-			<td>１人月　　　　　　　　　　　1,300,000円</td>
+			<td>１人月</td>
+			<td>1,300,000円</td>
 		</tr>
 		<tr>
 			<td>要望対応開発</td>
-			<td>１人月　　　　　　　　　　　　250,000円</td>
+			<td>１人月</td>
+			<td>250,000円</td>
 		</tr>
 		<tr>
 			<td>100TBまで大容量ディスクでのデータ輸送対応</td>
-			<td>１回あたり　　　　　　40,000円(送料別)</td>
+			<td>1回あたり</td>
+			<td>40,000円
+(送料別)</td>
 		</tr>
 	</tbody>
 </table>
@@ -109,23 +135,28 @@ title: "利用規定"
 		<tr>
 			<td rowspan="5">計算ノード占有利用</td>
 			<td>Thinノード<br />(AMD)</td>
-			<td>1CPUコア、8GBメモリを１単位とし、1単位30日あたり<br /> 　　　　　　　　　　　　　　　　　　　　　　　　　(*)448円</td>
+			<td>1CPUコア、8GBメモリを１単位とし、1単位30日あたり</td>
+			<td>(*)448円</td>
 		</tr>
 		<tr>
 			<td>Thinノード<br />(Intel)</td>
-			<td>1CPUコア、12GBメモリを１単位とし、1単位30日あたり<br /> 　　　　　　　　　　　　　　　　　　　　　　　　　(*)448円</td>
+			<td>1CPUコア、12GBメモリを１単位とし、1単位30日あたり</td>
+			<td>(*)448円</td>
 		</tr>
 		<tr>
-			<td>Thinノード<br />(Intel/NVIDIA<br />GPU)</td>
-			<td>4CPUコア、1GPU、48GBメモリを1単位とし、1単位30日あたり<br />　　　　　　　　　　　　　　　　　　　　　　　　(*)2,690円</td>
+			<td>Thinノード<br />(Intel/NVIDIA GPU)</td>
+			<td>4CPUコア、1GPU、48GBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)2,690円</td>
 		</tr>
 		<tr>
 			<td>Mediumノード</td>
-			<td>13CPUコア、512GBメモリを1単位とし、1単位30日あたり<br /> 　　　　　　　　　　　　　　　　　　　　　　　　(*)29,155円</td>
+			<td>13CPUコア、512GBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)29,155円</td>
 		</tr>
 		<tr>
 			<td>Fatノード</td>
-			<td>24CPUコア、1TBメモリを1単位とし、1単位30日あたり<br />　　　　　　　　　　　　　　　　　　　　　　　　(*)55,977円</td>
+			<td>24CPUコア、1TBメモリを1単位とし、1単位30日あたり</td>
+			<td>(*)55,977円</td>
 		</tr>
 	</tbody>
 </table>
