@@ -72,11 +72,11 @@
     "description": "The label for category 稼働状況 in sidebar operationInfoSidebar"
   },
   "sidebar.reportSidebar.category.各種統計": {
-    "message": "各種統計",
+    "message": "Statistics",
     "description": "The label for category 各種統計 in sidebar reportSidebar"
   },
   "sidebar.reportSidebar.category.論文リスト": {
-    "message": "論文リスト",
+    "message": "List of papers published by users",
     "description": "The label for category 論文リスト in sidebar reportSidebar"
   }
 }
