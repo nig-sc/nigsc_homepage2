@@ -5,11 +5,13 @@ title: "各種統計"
 
 
 
-## ユーザー数
+## 年ごとのユーザー数
+
+### 集計期間：1月1日〜12月31日
 
 <table>
 <tr>
-	<th width="300"></th>
+	<th width="300">year</th>
     <th width="300">login user (normal)</th>
 	<th width="300">login user (large scale)</th>
 	<th width="300">DDBJ</th>
@@ -17,7 +19,7 @@ title: "各種統計"
 	<th width="300">Total</th>
 </tr>
 <tr>
-	<td>Dec.2012</td>
+	<td>2012</td>
 	<td>165</td>
 	<td>69</td>
 	<td>70</td>
@@ -25,7 +27,7 @@ title: "各種統計"
 	<td>320</td>
 </tr>
 <tr>
-	<td>Dec.2013</td>
+	<td>2013</td>
 	<td>270</td>
 	<td>84</td>
 	<td>80</td>
@@ -33,7 +35,7 @@ title: "各種統計"
 	<td>453</td>
 </tr>
 <tr>
-	<td>Dec.2014</td>
+	<td>2014</td>
 	<td>380</td>
 	<td>105</td>
 	<td>82</td>
@@ -41,7 +43,7 @@ title: "各種統計"
 	<td>580</td>
 </tr>
 <tr>
-	<td>Dec.2015</td>
+	<td>2015</td>
 	<td>519</td>
 	<td>139</td>
 	<td>83</td>
@@ -49,7 +51,7 @@ title: "各種統計"
 	<td>756</td>
 </tr>
 <tr>
-	<td>Dec.2016</td>
+	<td>2016</td>
 	<td>549</td>
 	<td>165</td>
 	<td>88</td>
@@ -57,7 +59,7 @@ title: "各種統計"
 	<td>816</td>
 </tr>
 <tr>
-	<td>Dec.2017</td>
+	<td>2017</td>
 	<td>557</td>
 	<td>182</td>
 	<td>92</td>
@@ -65,7 +67,7 @@ title: "各種統計"
 	<td>846</td>
 </tr>
 <tr>
-	<td>Dec.2018</td>
+	<td>2018</td>
 	<td>616</td>
 	<td>199</td>
 	<td>88</td>
@@ -73,7 +75,7 @@ title: "各種統計"
 	<td>921</td>
 </tr>
 <tr>
-	<td>Dec.2019</td>
+	<td>2019</td>
 	<td>706</td>
 	<td>178</td>
 	<td>91</td>
@@ -81,7 +83,7 @@ title: "各種統計"
 	<td>990</td>
 </tr>
 <tr>
-	<td>Dec.2020</td>
+	<td>2020</td>
 	<td>949</td>
 	<td>165</td>
 	<td>100</td>
@@ -90,6 +92,100 @@ title: "各種統計"
 </tr>
 </table>
 
+## 年度ごとのユーザー数
+
+### 集計期間：4月1日〜3月31日
+
+<table>
+<tr>
+	<th width="300">fiscal year</th>
+    <th width="300">login user (normal)</th>
+	<th width="300">login user (large scale)</th>
+	<th width="300">DDBJ</th>
+    <th width="300">SE</th>
+	<th width="300">Total</th>
+</tr>
+<tr>
+	<td>2011</td>
+	<td>17</td>
+	<td>26</td>
+	<td>55</td>
+	<td>12</td>
+	<td>110</td>
+</tr>
+<tr>
+	<td>2012</td>
+	<td>184</td>
+	<td>85</td>
+	<td>75</td>
+	<td>18</td>
+	<td>362</td>
+</tr>
+<tr>
+	<td>2013</td>
+	<td>289</td>
+	<td>90</td>
+	<td>81</td>
+	<td>13</td>
+	<td>473</td>
+</tr>
+<tr>
+	<td>2014</td>
+	<td>444</td>
+	<td>115</td>
+	<td>84</td>
+	<td>13</td>
+	<td>656</td>
+</tr>
+<tr>
+	<td>2015</td>
+	<td>548</td>
+	<td>149</td>
+	<td>86</td>
+	<td>15</td>
+	<td>798</td>
+</tr>
+<tr>
+	<td>2016</td>
+	<td>577</td>
+	<td>177</td>
+	<td>88</td>
+	<td>14</td>
+	<td>856</td>
+</tr>
+<tr>
+	<td>2017</td>
+	<td>630</td>
+	<td>190</td>
+	<td>92</td>
+	<td>16</td>
+	<td>928</td>
+</tr>
+<tr>
+	<td>2018</td>
+	<td>774</td>
+	<td>205</td>
+	<td>95</td>
+	<td>21</td>
+	<td>1095</td>
+</tr>
+<tr>
+	<td>2019</td>
+	<td>816</td>
+	<td>178</td>
+	<td>92</td>
+	<td>16</td>
+	<td>1102</td>
+</tr>
+<tr>
+	<td>2020</td>
+	<td>1053</td>
+	<td>165</td>
+	<td>100</td>
+	<td>17</td>
+	<td>1335</td>
+</tr>
+</table>
 
 ## ユーザーの所属機関数
 
@@ -164,6 +260,9 @@ title: "各種統計"
 
 
 ## 論文数
+
+### 集計期間：公開年の1月1日〜12月31日
+
 <table>
 <tr>
 	<th width="300">公開年</th>

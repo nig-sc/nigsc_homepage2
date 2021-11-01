@@ -1,6 +1,6 @@
 ---
 id: report
-title: "各種統計"
+title: "Statistics"
 ---
 
 
