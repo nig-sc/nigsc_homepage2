@@ -31,7 +31,7 @@ function Layout(props: Props): JSX.Element {
 
       <AnnouncementBar />
 
-      <div class="topnav">
+      <div className="topnav">
           <a href="https://www.ddbj.nig.ac.jp/index.html"><img src="/img/ddbj_logo_mini.png" height="40"/></a>
           <a href="https://www.ddbj.nig.ac.jp/submission.html">Data Submission</a>
           <a href="https://www.ddbj.nig.ac.jp/services/index.html">Database</a>
