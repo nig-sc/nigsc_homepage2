@@ -1,5 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { default: pluginContentBlog } = require('@docusaurus/plugin-content-blog/lib');
+const { DEFAULT_OPTIONS } = require('@docusaurus/plugin-content-blog/lib/pluginOptionSchema');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -11,9 +13,24 @@ module.exports = {
         defaultLocale: 'ja',
         locales: ['ja', 'en'],
     },
-    plugins: [[require.resolve('docusaurus-lunr-search'), {
+    plugins: [
+      [require.resolve('docusaurus-lunr-search'), {
         languages: ['ja', 'en']
-    }]],
+      }],
+      [function pluginBlogGlobalData (context, options) {
+        const plugin = pluginContentBlog(context, options)
+
+        return {
+          name: 'plugin-blog-global-data',
+          loadContent: plugin.loadContent,
+          contentLoaded: async function contentLoaded ({ content, actions: { setGlobalData } }) {
+            setGlobalData(content)
+          }
+        }
+      }, {
+        ...DEFAULT_OPTIONS
+      }]
+    ],
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: '/img/favicon.ico',
@@ -59,6 +76,11 @@ module.exports = {
                     docId: 'report',
                     position: 'left',
                     label: '成果報告',
+                },
+                {
+                    to: 'blog',
+                    position: 'left',
+                    label: 'お知らせ',
                 },
                 {
                     type: 'localeDropdown',
@@ -128,23 +150,19 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
-        {
-            theme: {
-                customCss: [require.resolve('./src/css/custom.css')],
-            },
+      '@docusaurus/preset-classic', {
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
         docs: {
-            sidebarPath: require.resolve('./sidebars.js'),
-            showLastUpdateTime: true,
-            routeBasePath: '/',
-          // Please change this to your repo.
-          // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateTime: true,
+          routeBasePath: '/'
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+          blogSidebarTitle: "最近のお知らせ",
+          blogSidebarCount: 16
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
