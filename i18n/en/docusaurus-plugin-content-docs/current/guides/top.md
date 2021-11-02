@@ -7,14 +7,14 @@ sidebar_label: Top Page
 
 The National Institute of Genetics (NIG) provides state-of-the-art supercomputer system services equipped with large-scale clustered computers, large-scale memory-sharing computers, and large-capacity high-speed disk drives as a computational infrastructure for life and medical research.
 
- 
+
 ![top_image2](top_image2.png)
 
 
 
 <img src={require('./caution.png').default} />
-Due to disk space constraints, we do not back up the data in the user home directory. It is the responsibility of the user to back up the data in their own computing environment. 
-<div class="clearfix"></div>
+Due to disk space constraints, we do not back up the data in the user home directory. It is the responsibility of the user to back up the data in their own computing environment.
+<div className="clearfix"></div>
 
 
 
@@ -41,4 +41,3 @@ Example
 
 ==============================================
 ```
-
