@@ -54,7 +54,8 @@ function BlogTagsPostPage(props) {
         // assign unique search tag to exclude this page from search results!
         tag: 'blog_tags_posts',
       }}
-      sidebar={sidebar}>
+      // sidebar={sidebar}>
+      >
       <header className="margin-bottom--xl">
         <h1>{title}</h1>
 
