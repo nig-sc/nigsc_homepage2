@@ -14,22 +14,27 @@ module.exports = {
         locales: ['ja', 'en'],
     },
     plugins: [
-      [require.resolve('docusaurus-lunr-search'), {
-        languages: ['ja', 'en']
-      }],
-      [function pluginBlogGlobalData (context, options) {
-        const plugin = pluginContentBlog(context, options)
-
-        return {
-          name: 'plugin-blog-global-data',
-          loadContent: plugin.loadContent,
-          contentLoaded: async function contentLoaded ({ content, actions: { setGlobalData } }) {
-            setGlobalData(content)
-          }
-        }
-      }, {
-        ...DEFAULT_OPTIONS
-      }]
+        [
+            require.resolve('docusaurus-lunr-search'), {
+                languages: ['ja', 'en']
+            }
+        ],
+        [
+            function pluginBlogGlobalData (context, options) {
+                const plugin = pluginContentBlog(context, options);
+                
+                return {
+                    name: 'plugin-blog-global-data',
+                    loadContent: plugin.loadContent,
+                    contentLoaded: async function contentLoaded ({ content, actions: { setGlobalData } }) {
+                        setGlobalData(content);
+                    }
+                }
+            },
+            {
+                ...DEFAULT_OPTIONS
+            },
+        ],
     ],
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -77,11 +82,13 @@ module.exports = {
                     position: 'left',
                     label: '成果報告',
                 },
+                /*
                 {
                     to: 'blog',
                     position: 'left',
                     label: 'お知らせ',
                 },
+                */
                 {
                     type: 'localeDropdown',
                     position: 'right',

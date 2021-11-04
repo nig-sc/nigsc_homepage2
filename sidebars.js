@@ -111,13 +111,27 @@ module.exports = {
             "advanced_guides/commentary"
         ],
     },
-    operationInfoSidebar: {
-        "稼働状況": [
-            "operation/operation",
-            "operation/qstatGC",
-            "operation/gfree",
-        ],
-    },
+    operationInfoSidebar: [
+        {
+            type: "link",
+            label: "お知らせ",
+            href: "/blog/tags/news"
+        },
+        {
+            type: "link",
+            label: "障害情報",
+            href: "/blog/tags/troublereport"
+        },
+        {
+            type: "category",
+            label: "稼働状況",
+            items: [
+                "operation/operation",
+                "operation/qstatGC",
+                "operation/gfree",
+            ]
+        }
+    ],
     reportSidebar: {
         "各種統計": [
             "report/report",

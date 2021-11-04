@@ -48,3 +48,29 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .tableBody {
     background-color: white;
 }
+
+.recentBlogPosts__title_src-theme-RecentBlogPosts-styles-module {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    background-color: #fafad2;
+    border: 1px solid;
+    border-color: lightgray;
+}
+
+.recentBlogPosts__list_src-theme-RecentBlogPosts-styles-module {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
