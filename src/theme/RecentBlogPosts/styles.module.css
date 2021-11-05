@@ -24,5 +24,8 @@
   font-size: 0.9rem;
   font-weight: bold;
   font-weight: normal;
-  margin-bottom: 0.75rem;
+  margin: 0;
+  background-color: lightyellow;
+  border: solid 1px lightgray;
+  padding: 10px
 }

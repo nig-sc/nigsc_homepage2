@@ -169,66 +169,48 @@ title: "各種統計"
 
 集計期間：1月1日〜12月31日
 
+※ 原著論文発行済のみを数えることとする
+
 <table>
 <tr>
-	<th width="300">公開年</th>
-	<th width="300">論文(原著論文発行済)</th>
-	<th width="300">その他</th>
-	<th width="300">合計</th>
+	<th width="300">論文雑誌の出版年</th>
+	<th width="300">論文数</th>
 </tr>
 <tr>
 	<td>2012</td>
-	<td>9</td>
-	<td>0</td>
 	<td>9</td>
 </tr>
 <tr>
 	<td>2013</td>
 	<td>23</td>
-	<td>0</td>
-	<td>23</td>
 </tr>
 <tr>
 	<td>2014</td>
-	<td>53</td>
-	<td>0</td>
 	<td>53</td>
 </tr>
 <tr>
 	<td>2015</td>
 	<td>43</td>
-	<td>0</td>
-	<td>43</td>
 </tr>
 <tr>
 	<td>2016</td>
-	<td>83</td>
-	<td>0</td>
 	<td>83</td>
 </tr>
 <tr>
 	<td>2017</td>
 	<td>95</td>
-	<td>0</td>
-	<td>95</td>
 </tr>
 <tr>
 	<td>2018</td>
-	<td>115</td>
-	<td>4</td>
-	<td>119</td>
+	<td>112</td>
 </tr>
 <tr>
 	<td>2019</td>
 	<td>103</td>
-	<td>0</td>
-	<td>103</td>
 </tr>
 <tr>
 	<td>2020</td>
-	<td>126</td>
-	<td>3</td>
-	<td>129</td>
+	<td>124</td>
 </tr>
 </table>
 
