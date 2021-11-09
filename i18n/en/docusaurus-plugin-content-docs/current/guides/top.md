@@ -24,6 +24,9 @@ Only one scheduled maintenance is planned for this year.
 
 - Nov. 12 (Thu.) -- Nov. 18 (Thu.), 2021 : Scheduled maintenance due to the NIG's statutory inspection of electrical equipment.
 
+## Scheduled maintenance for FY2022
+
+Scheduled maintenance for the next fiscal year will be done twice, around the end of June and in November.
 
 
 ## About Acknowledgements
