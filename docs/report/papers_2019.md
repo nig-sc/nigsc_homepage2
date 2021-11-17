@@ -946,4 +946,13 @@ ted with Lotus japonicus in Natural Environments</td>
 	<td>30870453</td>
 	<td>doi: 10.1371/journal.pone.0213535.</td>
 </tr>
+<tr>
+    <td>104</td>
+	<td>平野 雅規</td>
+	<td>MasakiHirano </td>
+	<td>Aberrant active enhancers associated with downregulation of RET finger prote in overcomes chemoresistance in glioblastoma. (学会発表)</td>
+	<td>Cell Reports Volume 26, Issue 9, 26 February 2019, Pages 2274-2281.e5</td>
+	<td>NULL</td>
+	<td>doi.org/10.1016/j.celrep.2019.01.109</td>
+</tr>
 </table>
