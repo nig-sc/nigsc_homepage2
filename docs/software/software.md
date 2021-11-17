@@ -107,7 +107,11 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 <td width="300">☓</td>
 </tr>
 <tr>
-<td width="300">HCPtools</td>
+<td width="300">
+
+[HCPtools](HCPtools/hcptools)
+
+</td>
 <td width="300">☓</td>
 <td width="300">要申請</td>
 </tr>
