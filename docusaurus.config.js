@@ -7,7 +7,7 @@ const { DEFAULT_OPTIONS } = require('@docusaurus/plugin-content-blog/lib/pluginO
 module.exports = {
     title: 'NIG supercomputer',
     tagline: 'National Institute of Genetics, Japan',
-    url: 'https://your-docusaurus-test-site.com',
+    url: 'https://sc.ddbj.nig.ac.jp',
     baseUrl: '/',
     i18n:{
         defaultLocale: 'ja',
@@ -22,7 +22,7 @@ module.exports = {
         [
             function pluginBlogGlobalData (context, options) {
                 const plugin = pluginContentBlog(context, options);
-                
+
                 return {
                     name: 'plugin-blog-global-data',
                     loadContent: plugin.loadContent,
