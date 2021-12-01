@@ -1,0 +1,15 @@
+---
+id: hcptools
+title: HCPtoolsの使い方
+---
+
+
+## HCPtoolsのインストール
+
+
+### マニュアル
+
+- HCPtoolsコマンド導入ガイド [[日](/pdf/HCPtools_Guide_ja.pdf)・[英](/pdf/HCPtools_Guide_en.pdf)]
+- HCPtoolsコマンド概要説明 [[日](/pdf/HCPtools_overview_ja.pdf)・[英](/pdf/HCPtools_overview_en.pdf)]
+
+
