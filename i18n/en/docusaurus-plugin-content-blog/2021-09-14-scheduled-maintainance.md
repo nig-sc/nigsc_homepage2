@@ -1,6 +1,6 @@
 ---
 slug: 2021-09-14-scheduled-maintainance
-title: "(Ended)[Maintenance] November 12 - November 18: Scheduled Maintenance."
+title: "(Ended)[Maintenance] November 12 - November 18, 2021: Scheduled Maintenance."
 tags:
   - news
 authros:
@@ -9,17 +9,17 @@ authros:
 date: 2021-09-14
 ---
 
-Publication date: 14th September 2021
+Publication date: September 14, 2021
 
 
-The scheduled maintenance of the NIG supercomputer  is scheduled on the following date and time in accordance with the legal power outage of the NIG. The supercomputer will not be available during the scheduled maintenance.
+The scheduled maintenance of the NIG supercomputer is scheduled on the following date and time in accordance with the legal power outage of the NIG. The supercomputer will not be available during the scheduled maintenance.
 
 ## Period
 
-12th, 5 p.m. - 18th November 2021, 12 midnight
+November 12, 17:00 - November 18, 2021, 00:00(24h)
 
 
-※  The scheduled maintenance has ended on November 17, 18:00.
+※  The scheduled maintenance has ended on November 17, 18:00(24h).
 
 ## Notes
 
