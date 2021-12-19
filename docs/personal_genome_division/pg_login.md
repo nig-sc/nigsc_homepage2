@@ -22,20 +22,24 @@ SSL-VPN接続の際は二要素認証が行われます。セキュリティー�
 
 
 ### Windowsの場合
-1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)からWindows版のアプリをインストールする。
+1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)から［Product Downloads］［FortiClient VPN only］と順にクリックします。
 
-![figure](VPNwin_2.png)
+![figure](VPNwin_2_701_1.png)
 
-2. ダウンロードフォルダに保存されたインストールプログラムを実行します。
+2. Windows版のアプリをインストールします。
+
+![figure](VPNwin_2_701_1.png)
+
+3. ダウンロードフォルダに保存されたインストールプログラムを実行します。
 ユーザアカウント制御は「はい」で進んでください。
 
-![figure](VPNwin_3.png)
+![figure](VPNwin_3_701.png)
 
-3. 「Yes, I have read and accept the」にチェックを付け、「Next」をクリックします。
+4. 「Yes, I have read and accept the」にチェックを付け、「Next」をクリックします。
 
 ![figure](VPNwin_4.png)
 
-4. クライアントマシンにウィルスチェックソフトが入っているか否かで手順が異なります。
+5. クライアントマシンにウィルスチェックソフトが入っているか否かで手順が異なります。
 
 【クライアントマシンにウイルスチェックソフトが入っている場合】
 
@@ -57,31 +61,34 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 
 ![figure](VPNwin_6.png)
 
-5. Destination Folderではそのまま「Next」をクリックします。※通常、変更は不要です。
+6. Destination Folderではそのまま「Next」をクリックします。※通常、変更は不要です。
 
 ![figure](VPNwin_8.png)
 
-6. 「install」をクリックするとインストールが開始されます。
+7. 「install」をクリックするとインストールが開始されます。
 
 ![figure](VPNwin_9.png)
 
-7. 「Finish」をクリックするとインストール完了となります。
+8. 「Finish」をクリックするとインストール完了となります。
 
 ![figure](VPNwin_10.png)
 
 
 ### Macの場合
 
-1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)からアプリをインストールします。Macバージョンのインストーラをダウンロードします。
+1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)から［Product Downloads］［FortiClient VPN only］と順にクリックします。
 
-![figure](VPN_Mac_install_1.png)
+![figure](VPN_MAC_install_1_701_1.png)
 
+2. Macバージョンのインストーラをダウンロードします。
 
-2. ダウンロードしたインストーラを実行します。OKを押してください。
+![figure](VPN_MAC_install_1_701_2.png)
 
-![figure](VPN_Mac_install_2.png)
+3. ダウンロードしたインストーラを実行します。OKを押してください。
 
-3. FortiClientUpdateをダブルクリックします。
+![figure](VPN_MAC_install_2_701.png)
+
+4. FortiClientUpdateをダブルクリックします。
 
 ![figure](VPN_Mac_install_3.png)
 
@@ -95,7 +102,9 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 
 [install]を押します。
 
-![figure](VPN_Mac_install_6.png)
+![figure](VPN_MAC_install_6_701.png)
+
+![figure](VPN_MAC_install_6_701_2.png)
 
 [続ける]を押します。
 
@@ -105,7 +114,7 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 
 ![figure](VPN_Mac_install_8.png)
 
-4. 以下、クライアントマシンにウィルスチェックソフトが入っているか否かで手順が異なります。
+5. 以下、クライアントマシンにウィルスチェックソフトが入っているか否かで手順が異なります。
 
 【クライアントマシンにウイルスチェックソフトが入っている場合】
 
@@ -131,7 +140,7 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 ![figure](VPN_Mac_install_11.png)
 
 
-5. [閉じる]を押します。
+6. [閉じる]を押します。
 
 ![figure](VPN_Mac_install_12.png)
 
@@ -147,19 +156,19 @@ SSL-VPNクライアントソフトopenfortivpnをインストールします。
 例) centOSにインストール
 下記ページの RPMs -> x86_64 のリンクからopenfortivpnをインストールします。
 
-[https://koji.fedoraproject.org/koji/buildinfo?buildID=1418024](https://koji.fedoraproject.org/koji/buildinfo?buildID=1418024)(2020.06.03時点 最新版)
+[https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936](https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936)(2021.12.10時点 最新版)
 
 ```
 $ sudo yum -y install
-https://kojipkgs.fedoraproject.org//packages/openfortivpn/1.11.0/1.el7/x86_64/op
-enfortivpn-1.11.0-1.el7.x86_64.rpm
+https://kojipkgs.fedoraproject.org//packages/openfortivpn/1.17.0/3.el7/x86_64/op
+enfortivpn-1.17.0-3.el7.x86_64.rpm
 ```
 
 
 インストールされたことの確認
 ```
 $ sudo openfortivpn --version
-1.11.0
+1.17.0
 ```
 
 例) Ubuntuにインストール

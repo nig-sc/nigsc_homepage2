@@ -20,9 +20,9 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Scheduled maintenance in 2021
 
-Only one scheduled maintenance is planned for this year.
+The regular maintenance was held only once this year.
 
-- Nov. 12 (Thu.) -- Nov. 18 (Thu.), 2021 : Scheduled maintenance due to the NIG's statutory inspection of electrical equipment.
+- [EOM] Nov. 12 (Thu.) -- Nov. 18 (Thu.), 2021 : Scheduled maintenance due to the NIG's statutory inspection of electrical equipment.
 
 ## Scheduled maintenance in 2022
 

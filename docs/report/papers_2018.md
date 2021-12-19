@@ -586,7 +586,7 @@ title: 論文リスト(2018)
     <td>64</td>
     <td>谷澤 靖洋, 遠藤 明仁, 遠野 雅徳</td>
     <td>Yasuhiro Tanizawa,Akihito Endo,Masanori Tohno</td>
-    <td>Lactobacillus paragasseri sp. nov., a sister taxon of Lactobacillus gasseri, based on whole-genome sequence analyses"</td>
+    <td>Lactobacillus paragasseri sp. nov., a sister taxon of Lactobacillus gasseri, based on whole-genome sequence analyses</td>
     <td>Int J Syst Evol Microbiol. 2018 Nov;68(11):3512-3517.</td>
     <td>30226464</td>
     <td>doi: 10.1099/ijsem.0.003020.</td>
@@ -793,7 +793,7 @@ title: 論文リスト(2018)
     <td>87</td>
     <td>前田 太郎</td>
     <td>Taro Maeda</td>
-    <td>Genomic insight into symbiosis-induced insect color change by a facultative bacterial endosymbiont, “candidatus rickettsiella viridis"</td>
+    <td>Genomic insight into symbiosis-induced insect color change by a facultative bacterial endosymbiont, candidatus rickettsiella viridis</td>
     <td>mBio. 2018 Jun 12;9(3):e00890-18.</td>
     <td>29895637</td>
     <td>doi: 10.1128/mBio.00890-18.</td>
@@ -1023,4 +1023,13 @@ title: 論文リスト(2018)
     <td>28985356</td>
     <td>doi: 10.1093/dnares/dsx036.</td>
 </tr>
+<tr>
+    <td>113</td>
+    <td>花野 滋</td>
+    <td>Shigeru Hanano</td>
+    <td>Mechanism underlying rapid responses to boron deprivation in Arabidopsis roots</td>
+    <td>Soil Science and Plant Nutrition Volume 64, 2018 - Issue 1 Pages 106-115</td>
+    <td>NULL</td>
+    <td>doi.org/10.1080/00380768.2017.1416670</td>
+    </tr>
 </table>

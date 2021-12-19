@@ -53,19 +53,19 @@ qsub -cwd -V \
 	<th width="300">キューの名称</th><th width="300">計算ノードの種類</th><th width="300">ジョブ実行時間の最大値</th><th width="300">利用可能メモリ量の初期値</th>
 </tr>
 <tr>
-	<td>intel</td><td>Thinノード Type2a</td><td>62日</td><td>8GB</td>
+	<td>intel</td><td>Thinノード Type2a</td><td>124日</td><td>8GB</td>
 </tr>
 <tr>
-	<td>epyc</td><td>Thinノード Type1a, Type1b</td><td>62日</td><td>Type1bの場合4GB, Type1aの場合8GB</td>
+	<td>epyc</td><td>Thinノード Type1a, Type1b</td><td>124日</td><td>Type1bの場合4GB, Type1aの場合8GB</td>
 </tr>
 <tr>
-    <td>gpu</td><td>Thinノード Type2b (GPUノード)</td><td>62日</td><td>   </td>
+    <td>gpu</td><td>Thinノード Type2b (GPUノード)</td><td>124日</td><td>   </td>
 </tr>
 <tr>
     <td>short</td><td>Thinノード Type2b (GPUノード)</td><td>1時間</td><td>   </td>
 </tr>
 <tr>
-    <td>medium</td><td>mediumノード</td><td>62日</td><td>   </td>
+    <td>medium</td><td>mediumノード</td><td>124日</td><td>   </td>
 </tr>
 </table>
 
@@ -78,7 +78,7 @@ qsub -cwd -V \
 qsub -l d_rt=192:00:00 -l s_rt=192:00:00 test.sh
 ```
 
-ジョブはshortキュー（最大1時間）を除き、最大2ヶ月間実行を継続することが可能となっています。しかしジョブスケジューリングを円滑に行うために、 -l d_rt オプション、 -l s_rt オプションを指定しないとUGEはそのジョブは3日以内に終了するものと判断するよう遺伝研スパコンでは設定されています。したがって計算時間が3日を超える見込みである場合は必ず -l d_rt オプション、 -l s_rt オプションを指定してください。（正しいジョブスケジューリングのために、いつも-l d_rt オプション、 -l s_rt オプションを指定することを推奨します。実行上限時間が来るとプログラムの実行は強制終了されるので、見込みよりも少し長めに指定してください。)
+ジョブはshortキュー（最大1時間）を除き、最大4ヶ月間実行を継続することが可能となっています。しかしジョブスケジューリングを円滑に行うために、 -l d_rt オプション、 -l s_rt オプションを指定しないとUGEはそのジョブは3日以内に終了するものと判断するよう遺伝研スパコンでは設定されています。したがって計算時間が3日を超える見込みである場合は必ず -l d_rt オプション、 -l s_rt オプションを指定してください。（正しいジョブスケジューリングのために、いつも-l d_rt オプション、 -l s_rt オプションを指定することを推奨します。実行上限時間が来るとプログラムの実行は強制終了されるので、見込みよりも少し長めに指定してください。)
 
 
 4行目は使用するメモリ量の指定である。`-l s_vmem`,  `-l mem_req`に同じ値を指定すること。単位はG,M,K等が使えます。

@@ -198,21 +198,18 @@ title: "各種統計"
 </tr>
 <tr>
 	<td>2017</td>
-	<td>95</td>
+	<td>93</td>
 </tr>
 <tr>
 	<td>2018</td>
-	<td>112</td>
+	<td>113</td>
 </tr>
 <tr>
 	<td>2019</td>
-	<td>103</td>
+	<td>104</td>
 </tr>
 <tr>
 	<td>2020</td>
 	<td>124</td>
 </tr>
 </table>
-
-
-
