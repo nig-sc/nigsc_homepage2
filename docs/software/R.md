@@ -14,9 +14,9 @@ mkdir -p ~/local/src
 cd ~/local/src
 
 # Install PCRE2 (Perl-compatible regular expression library)
-wget https://ftp.pcre.org/pub/pcre/pcre2-10.36.tar.gz
-tar zxvf pcre2-10.36.tar.gz
-cd pcre2-10.36
+wget https://github.com/PhilipHazel/pcre2/releases/download/pcre2-10.39/pcre2-10.39.tar.gz
+tar zxvf pcre2-10.39.tar.gz
+cd pcre2-10.39
 ./configure --prefix=$HOME/local
 make
 make install
