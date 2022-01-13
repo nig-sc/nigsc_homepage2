@@ -90,6 +90,14 @@ title: "各種統計"
 	<td>17</td>
 	<td>1231</td>
 </tr>
+<tr>
+	<td>2021</td>
+	<td>1365</td>
+	<td>240</td>
+	<td>119</td>
+	<td>19</td>
+	<td>1662</td>
+</tr>
 </table>
 
 
@@ -160,6 +168,16 @@ title: "各種統計"
 			<td>0</td>
 			<td>14</td>
 			<td>176</td>
+		</tr>
+		<tr>
+			<td>2021.12.31</td>
+			<td>161</td>
+			<td>14</td>
+			<td>175</td>
+			<td>17</td>
+			<td>0</td>
+			<td>17</td>
+			<td>192</td>
 		</tr>
 	</tbody>
 </table>
