@@ -104,6 +104,9 @@ module.exports = {
             "advanced_guides/Rhelixa_RNAseq",
             "advanced_guides/Rhelixa_RNAseq_manual",
         ],
+        "Alphafold 2.1":[
+            "advanced_guides/Alphafold_2_1"
+        ],
         "講習会": [
             "advanced_guides/IIBMP",
         ],
