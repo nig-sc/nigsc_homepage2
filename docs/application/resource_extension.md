@@ -15,7 +15,7 @@ title: "利用リソースの拡張申請"
 - 「利用目的等」および「料金試算表」は、責任者あたりそれぞれ１つ作成して提出してください。リソースの拡張を申請するたびに別の申請書を作る必要はありません。申請内容が変更になったら、以前の申請書および計画表を変更して提出してください。作成にあたりましては研究責任者のもとでスパコンを使う全員について記載していただくようお願いいたします。
 
 
-#### 利用計画表をダウンロードする　=> [利用計画表](/files/usage_plan_table-ver2.3.0.xlsx)
+#### 利用計画表をダウンロードする　=> [利用料金表](/files/usage_plan_table-ver2.3.0-2021.xlsx)
 
 
 <font color="red"><b>！！</b></font> 申請の際には、<font color="red"><b>「利用目的等」と「料金試算表」の両方</b>に記入</font>し、ご提出下さい。<font color="red"><b>！！</b></font> 
@@ -23,7 +23,7 @@ title: "利用リソースの拡張申請"
 <tr>
 <td width="400" height="400" align="center">
 
-![](利用目的等.png)
+![](purpose_of_use_etc.png)
 利用目的等
 </td>
 <td valign="top">
@@ -33,7 +33,7 @@ title: "利用リソースの拡張申請"
 <tr>
 <td width="400" height="400" align="center">
 
-![](料金試算表.png)
+![](usageTB.png)
 料金試算表
 </td>
 <td valign="top">
