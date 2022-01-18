@@ -207,8 +207,7 @@ $ qsub example_job_script_gpu.sh
 
 出力ファイル
 
-[ranking_debug.txt](ranking_debug.txt)
-↑JSONファイルで出力されます
+[ranking_debug.txt](ranking_debug.txt)←JSONファイルで出力されます
 
 [ranked_4.pdb](ranked_4.pdb)
 
