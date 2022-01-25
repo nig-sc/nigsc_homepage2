@@ -78,7 +78,7 @@ Slurm
 
 BioContainers projectが作成したSingularityコンテナイメージ(2千種類を超える解析ソフトウェア、バージョンの違いを含め9万個を超えるSingularityイメージファイル）を、遺伝研スパコンの`/usr/local/biotools/`ディレクトリ以下に配置してあります。
 
-各ソフトウェアの内容、使い方については [BioContainersの公式サイト](https://biocontainers)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
+各ソフトウェアの内容、使い方については [BioContainersの公式サイト](https://biocontainers.pro)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
 
 </td>
 </tr>
