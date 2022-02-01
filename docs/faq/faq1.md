@@ -59,7 +59,23 @@ Host key verification failed.
 
 
 
-## 個人ゲノム解析区画に対するVPN接続ができません 
+## SSHのコネクションが頻繁に切れます。
+
+
+ ~/.ssh/configに以下を追記してください。
+```
+Host *
+    ServerAliveInterval 20
+    TCPKeepAlive no
+```
+
+詳しくは以下ご参照ください。
+
+https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset
+
+
+
+## 個人ゲノム解析区画に対するVPN接続ができません。
 
 
 Windows 10, 11のFortiClientで個人ゲノム解析区画にアクセスしたときに
