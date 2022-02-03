@@ -22,6 +22,17 @@ make
 make install
 cd ~/local/src
 
+# Install libcurl
+wget --no-check-certificate https://curl.se/download/curl-7.81.0.tar.gz
+tar zxvf curl-7.81.0.tar.gz
+cd curl-7.81.0
+./configure --prefix=$HOME/local --with-openssl
+make
+make install
+cd ~/local/src
+
+export PKG_CONFIG_PATH=$HOME/local/src/pcre2-10.39:$HOME/local/src/curl-7.81.0
+
 # Install R
 R_VERSION=4.0.5
 R_MAJOR=4
@@ -39,13 +50,11 @@ CPPFLAGS=-I$HOME/local/include LDFLAGS="-L$HOME/local/lib -Wl,-rpath=$HOME/local
         --enable-R-shlib
 
 make
-make check
-make install
-														
+# make check
+make install		
 ```
 
 遺伝研スパコンでmakeを並列化して高速化するには以下の例のように並列ジョブとして実行してください。
-
-` qsub -cwd -V -pe def_slot 8 -b y make -j 8 `
-
-***
+```
+qsub -cwd -V -pe def_slot 8 -b y make -j 8
+```
