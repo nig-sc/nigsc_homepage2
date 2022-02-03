@@ -15,9 +15,9 @@ HCPtools は、多数ファイルおよび大容量ファイル、またはそ�
 - HCPtoolsコマンドリファレンス ([日本語版](/pdf/HCPtools_CommandReference.pdf))
 
 
-# 2. VPN接続
+# 2. SSL-VPN接続を行う
 
-HCP toolsを利用する際、事前にFortiClient(SSL-VPNソフトウェア)をインストールしてSSL-VPN接続を行う必要があります。
+遺伝研スパコン個人ゲノム解析区画でHCP toolsを利用する際には、事前にFortiClient(SSL-VPNクライアントソフトウェア)をインストールしてSSL-VPN接続を行う必要があります。
 
 下記サイトに、<font color="blue">VPNクライアントのインストール</font>および<font color="blue">VPNへの接続方法</font>が掲載されています。
 
@@ -26,11 +26,11 @@ HCP toolsを利用する際、事前にFortiClient(SSL-VPNソフトウェア)を
 [ログイン方法（個人ゲノム解析区画）](/personal_genome_division/pg_login/)
 
 
-# 3. HCP toolsのインストール方法
+# 3. HCPtoolsクライアントソフトウェアのインストール方法
 
 ## 3.1. インストーラの入手
 
-以下のリンクから、HCP toolsコマンドのzipファイルを入手して下さい。
+以下のリンクから、HCPtoolsクライアントソフトウェアのzipファイルを入手して下さい。
 
 リンクは準備中です。順次掲載いたします。
 
@@ -66,6 +66,7 @@ HCP toolsを利用する際、事前にFortiClient(SSL-VPNソフトウェア)を
         </ul>
     </li>
 </ul>
+
 
 ## 3.2. Linuxの場合
 CentOS7を例に、説明します。
