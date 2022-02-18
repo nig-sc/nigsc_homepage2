@@ -6,8 +6,12 @@ title: HCPtoolsの使い方
 
 # 1. HCPtoolsとは
 
+遺伝研スパコンとユーザの計算機との間でファイル転送を行う場合は、ファイル転送ソフトウェアを使ってファイルを転送します。
+一般解析区画ではAspera、個人ゲノム解析区画ではHCPtoolsというファイル転送ソフトウェアを使います。
 HCPtools は、多数ファイルおよび大容量ファイル、またはその両方を安全にかつ極めて高い伝送効率で転送できるファイル転送・同期ツールです。海外拠点との不安定な回線や、広帯域高遅延ネットワーク (LFN：Long Fat Network) 等においても高速ファイル転送を実現します。
+
 スパコン間での大規模データのコピー、または海外にあるクラウドサーバからのデータコピーに効果を発揮します。
+
 
 #### マニュアル
 - HCPtoolsコマンド導入ガイド ([日本語版](/pdf/HCPtools_Guide_ja.pdf) / [英語版](/pdf/HCPtools_Guide_en.pdf))
@@ -15,20 +19,9 @@ HCPtools は、多数ファイルおよび大容量ファイル、またはそ�
 - HCPtoolsコマンドリファレンス ([日本語版](/pdf/HCPtools_CommandReference.pdf))
 
 
-# 2. SSL-VPN接続を行う
+# 2. HCPtoolsクライアントソフトウェアのインストール方法
 
-遺伝研スパコン個人ゲノム解析区画でHCP toolsを利用する際には、事前にFortiClient(SSL-VPNクライアントソフトウェア)をインストールしてSSL-VPN接続を行う必要があります。
-
-下記サイトに、<font color="blue">VPNクライアントのインストール</font>および<font color="blue">VPNへの接続方法</font>が掲載されています。
-
-「Windowsの場合」「Macの場合」「Linuxの場合」に分かれている箇所は、自分のOSにあった内容にしたがって下さい。
-
-[ログイン方法（個人ゲノム解析区画）](/personal_genome_division/pg_login/)
-
-
-# 3. HCPtoolsクライアントソフトウェアのインストール方法
-
-## 3.1. インストーラの入手
+## 2.1. インストーラの入手
 
 以下のリンクから、HCPtoolsクライアントソフトウェアのzipファイルを入手して下さい。
 
@@ -68,7 +61,7 @@ HCPtools は、多数ファイルおよび大容量ファイル、またはそ�
 </ul>
 
 
-## 3.2. Linuxの場合
+## 2.2. Linuxの場合
 CentOS7を例に、説明します。
 
 zipファイルを解凍します。
@@ -109,7 +102,7 @@ $ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
 $ ssh-keygen -t rsa
 ```
 
-## 3.3. Windowsの場合
+## 2.3. Windowsの場合
 インストーラ<font color="blue">HCP_Tools_Client.msi</font> をダブルクリックして起動します。
 
 「使用許諾契約書に同意します(A)」にチェックを入れ、「インストール(I)」ボタンをクリックして下さい。
@@ -151,9 +144,9 @@ HCP toolsに必要な設定ファイルを、<ホームディレクトリ>/_hcp/
 > ssh-keygen -t rsa
 ```
 
-# 4. 設定
+# 3. 設定
 
-## 4.1. 設定ファイル
+## 3.1. 設定ファイル
 
 (参考) HCP toolsのコマンドと設定ファイル(Linuxの場合)(注1)
 
@@ -184,7 +177,7 @@ DisableDataIntegrityChecking yes            # ダイジェスト方式なしを�
 $ echo "Include ${HOME}/.hcp/hcp-common.conf" >> ${HOME}/.hcp/hcp.conf
 ```
 
-## 4.2. 設定項目
+## 3.2. 設定項目
 
 confファイルに記述する設定項目を紹介します。
 
@@ -216,30 +209,64 @@ AcceptableDigestMethod NONE
 DisableDataIntegrityChecking yes
 ```
 
+
+# 4. SSL-VPN接続を行う
+
+遺伝研スパコン個人ゲノム解析区画でHCP toolsを利用する際には、事前にFortiClient(SSL-VPNクライアントソフトウェア)をインストールしてSSL-VPN接続を行う必要があります。
+
+下記サイトに、<font color="blue">VPNクライアントのインストール</font>および<font color="blue">VPNへの接続方法</font>が掲載されています。
+
+「Windowsの場合」「Macの場合」「Linuxの場合」に分かれている箇所は、自分のOSにあった内容にしたがって下さい。
+
+[ログイン方法（個人ゲノム解析区画）](/personal_genome_division/pg_login/)
+
+
+
 # 5. ファイル転送例
 
 ## 5.1. アップロード
 
-[例1] ユーザ「nig001」が、ローカルファイル「fileX」を、hcpdサーバ「gwa.ddbj.nig.ac.jp」にコピーします。
+[例1] ユーザー「nig001」が、ユーザーの計算機から、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリの下へ、ファイルをコピーします。
+
+- ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリ「/home/ユーザ名-pg/」の下へコピーしたい場合
 ```
-$ hcp --user nig001 fileX gwa.ddbj.nig.ac.jp:fileX
+$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:fileX.txt
 ```
+
+- コピー先のディレクトリを指定したい場合
+ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にある「/home/ユーザ名-pg/document/」の下にコピーしたい場合は、以下のように実行します。
+```
+$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/document/fileX.txt
+```
+
+ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にある「/home/ユーザ名-pg/study/」というディレクトリの下にコピー先を指定したい場合は、以下のように実行します。
+```
+$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/study/fileX.txt
+```
+
+
+- コピー元とコピー先の両方のディレクトリを指定したい場合
+ユーザーの計算機にあるファイル「/home/ユーザ名/download/file.X.txt」を、遺伝研スパコンの個人ゲノム解析区画の指定したディレクトリ/home/ユーザ名-pg/tools/」の下にコピーしたい場合は、以下のように実行します。
+```
+$ hcp --user nig001 /home/ユーザ名/download/fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/tools/fileX.txt
+```
+
 
 [例2] 「--udp D:D:D:D:D」オプションで、UDP(HpFP2)プロトコルによるコピーをします。
 ```
 $ hcp --user nig001 --udp D:D:D:D:D fileX gwa.ddbj.nig.ac.jp:fileX
 ```
 
-[例3] 「-R」オプションで、フォルダ配下を再帰的にコピーします。
+[例3] 「-R」オプションを付けると、フォルダ「/home/ユーザー名/dir/」配下が、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリ「/home/nig001/」配下に、再帰的にコピーされます。
 ```
-$ hcp --user nig001 -R dir/ gwa.ddbj.nig.ac.jp:/home/nig01/
+$ hcp --user nig001 -R dir/ gwa.ddbj.nig.ac.jp:/home/nig001/
 ```
 
 ## 5.2. ダウンロード
 
-[例1] ユーザ「nig001」が、hcpdサーバ「gwa.ddbj.nig.ac.jp」から、hcpdサーバ上のファイル「fileX」をローカルにコピーします。
+[例1] ユーザ「nig001」が、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリにあるfileX.txt「/home/ユーザ名-pg/fileX.txt」を、ユーザーの計算機のホームディレクトリ「/home/ユーザ名/」の下にコピーします。
 ```
-$ hcp --user nig001 gwa.ddbj.nig.ac.jp:fileX fileX
+$ hcp --user nig001 gwa.ddbj.nig.ac.jp:fileX.txt fileX.txt
 ```
 
 [例2] 「--udp D:D:D:D:D」オプションで、UDP(HpFP2)プロトコルによるコピーをします。
@@ -247,9 +274,9 @@ $ hcp --user nig001 gwa.ddbj.nig.ac.jp:fileX fileX
 $ hcp --user nig001 --udp D:D:D:D:D gwa.ddbj.nig.ac.jp:fileX fileX
 ```
 
-[例3] 「-R」オプションで、フォルダ配下を再帰的にコピーします。
+[例3] 「-R」オプションを付けると、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリの下にあるディレクトリdir「/home/nig001/dir/」配下を、ユーザーの計算機の「/home/ユーザー名/」配下に、再帰的にコピーされます。
 ```
-$ hcp --user nig01 -R gwa.ddbj.nig.ac.jp:/home/nig01/dir/ .
+$ hcp --user nig001 -R gwa.ddbj.nig.ac.jp:/home/nig001/dir/ .
 ```
 
 # 6. お問合せ先
