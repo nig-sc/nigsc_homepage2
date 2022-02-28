@@ -252,9 +252,9 @@ $ hcp --user nig001 /home/ユーザ名/download/fileX.txt gwa.ddbj.nig.ac.jp:/ho
 ```
 
 
-[例2] 「--udp D:D:D:D:D」オプションで、UDP(HpFP2)プロトコルによるコピーをします。
+[例2] 「--hpfp」オプションで、UDP(HpFP2)プロトコルによるコピーをします。コピー元とコピー先は「アップロード[例１]」と同じです。
 ```
-$ hcp --user nig001 --udp D:D:D:D:D fileX gwa.ddbj.nig.ac.jp:fileX
+$ hcp --user nig001 --hpfp fileX gwa.ddbj.nig.ac.jp:fileX
 ```
 
 [例3] 「-R」オプションを付けると、フォルダ「/home/ユーザー名/dir/」配下が、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリ「/home/nig001/」配下に、再帰的にコピーされます。
@@ -269,9 +269,9 @@ $ hcp --user nig001 -R dir/ gwa.ddbj.nig.ac.jp:/home/nig001/
 $ hcp --user nig001 gwa.ddbj.nig.ac.jp:fileX.txt fileX.txt
 ```
 
-[例2] 「--udp D:D:D:D:D」オプションで、UDP(HpFP2)プロトコルによるコピーをします。
+[例2] 「--hpfp」オプションで、UDP(HpFP2)プロトコルによるコピーをします。コピー元とコピー先は「ダウンロード[例１]」と同じです。
 ```
-$ hcp --user nig001 --udp D:D:D:D:D gwa.ddbj.nig.ac.jp:fileX fileX
+$ hcp --user nig001 --hpfp gwa.ddbj.nig.ac.jp:fileX fileX
 ```
 
 [例3] 「-R」オプションを付けると、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリの下にあるディレクトリdir「/home/nig001/dir/」配下を、ユーザーの計算機の「/home/ユーザー名/」配下に、再帰的にコピーされます。
