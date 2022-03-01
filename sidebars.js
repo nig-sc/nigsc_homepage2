@@ -108,7 +108,8 @@ module.exports = {
             "advanced_guides/Alphafold_2_1"
         ],
         "講習会": [
-            "advanced_guides/IIBMP",
+            "advanced_guides/IIBMP2021",
+            "advanced_guides/IIBMP2020",
         ],
         "利用方法解説": [
             "advanced_guides/commentary"
