@@ -63,6 +63,7 @@ module.exports = {
         ],
         "データ転送・データ共有": [
             "software/aspera/aspera",
+            "software/HCPtools/hcptools",
         ],
         "開発環境・ライブラリ": [
             "software/python",
