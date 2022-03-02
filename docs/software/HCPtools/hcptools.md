@@ -4,105 +4,77 @@ title: HCPtoolsの使い方
 ---
 
 
-# 1. HCPtoolsとは
+遺伝研スパコンに対してファイルのアップロード、ダウンロードを行うには、一般的に広く用いられているファイル転送ソフトウェアである`scp`や`sftp`をつかうことができます。
 
-遺伝研スパコンとユーザの計算機との間でファイル転送を行う場合は、ファイル転送ソフトウェアを使ってファイルを転送します。
-一般解析区画ではAspera、個人ゲノム解析区画ではHCPtoolsというファイル転送ソフトウェアを使います。
-HCPtools は、多数ファイルおよび大容量ファイル、またはその両方を安全にかつ極めて高い伝送効率で転送できるファイル転送・同期ツールです。海外拠点との不安定な回線や、広帯域高遅延ネットワーク (LFN：Long Fat Network) 等においても高速ファイル転送を実現します。
-
-スパコン間での大規模データのコピー、または海外にあるクラウドサーバからのデータコピーに効果を発揮します。
+一方、`scp`などでは遠距離間で大量のファイルを転送する際に転送速度が遅くなる性質があります。
+これを避けるために、遺伝研スパコンでは、一般解析区画ではAspera、個人ゲノム解析区画ではHCPtoolsというファイル転送ソフトウェアが利用可能となっています。
 
 
-#### マニュアル
+
+**公式マニュアル**
+
 - HCPtoolsコマンド導入ガイド ([日本語版](/pdf/HCPtools_Guide_ja.pdf) / [英語版](/pdf/HCPtools_Guide_en.pdf))
 - HCPtoolsコマンド概要説明 ([日本語版](/pdf/HCPtools_overview_ja.pdf) / [英語版](/pdf/HCPtools_overview_en.pdf))
 - HCPtoolsコマンドリファレンス ([日本語版](/pdf/HCPtools_CommandReference.pdf))
 
 
-# 2. HCPtoolsクライアントソフトウェアのインストール方法
 
-## 2.1. インストーラの入手
+HCP toolsを利用するためにはクライアントソフトウェアをユーザのクライアント計算機にインストールする必要があります。
+お使いのクライアント計算機の環境に応じて以下の文書をご参照ください。
 
-以下のリンクから、HCPtoolsクライアントソフトウェアのzipファイルを入手して下さい。
+- Windows 10/11 (PowerShell)の場合
+- Windows 10/11 (WSL2/WSLg)の場合
+- Windows 10/11 (TeraTerm)の場合
+- Mac OSの場合 : 現在クライアントソフトウェアの開発中のため、現時点では利用できません。
+- Linuxの場合(CentOS 7/Ubuntu Linux)
 
-リンクは準備中です。順次掲載いたします。
+
+
+
+## HCPtoolsクライアントソフトウェアのインストール方法
+
+### インストーラの入手
+
+以下のリンクから、HCP toolsクライアントソフトウェアのzipファイルを入手して下さい。
 
 <ul>
-    <li>CentOS 7 または Redhat Linux 7
-        <ul>
-            <li>hcp-tools-1.3.0-42.el7.centos.zip</li>
-            <li>hcp-tools-1.3.0-42.el7.centos.md5sum</li>
-        </ul>
-    </li>
-    <li>Ubuntus16.04
-        <ul>
-            <li>hcp_1.3.0-42_amd64.zip</li>
-            <li>hcp_1.3.0-42_amd64.md5sum</li>
-        </ul>
-    </li>
-    <li>Ubuntus18.04
-        <ul>
-            <li>hcp_1.3.0-42_amd64.zip</li>
-            <li>hcp_1.3.0-42_amd64.md5sum</li>
-        </ul>
-    </li>
-    <li>Ubuntus20.04
-        <ul>
-            <li>hcp_1.3.0-42_amd64.zip</li>
-            <li>hcp_1.3.0-42_amd64.md5sum</li>
-        </ul>
-    </li>
-<li>Windows
-        <ul>
-            <li>HCP_Tools_Client.msi</li>
-            <li>HCP_Tools_Client.md5sum</li>
-        </ul>
-    </li>
+    <li>Windows</li>
+    <ul>
+        <li>HCP_Tools_Client.msi</li>
+        <li>HCP_Tools_Client.md5sum</li>
+    </ul>
+    <li>Mac OS : 現在開発中</li>
+    <li>CentOS 7 または Redhat Linux 7</li>
+    <ul>
+        <li><a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/CentOS7/hcp-tools-1.3.0R_45.el7.centos.zip">hcp-tools-1.3.0R-45..el7.centos.zip</a></li>
+        <li>hcp-tools-1.3.0R-45.el7.centos.md5sum</li>
+    </ul>
+    <li>Ubuntus20.04LTS</li>
+    <ul>
+        <li>hcp_1.3.0R-45_amd64.zip</li>
+        <li>hcp_1.3.0R-45_amd64.md5sum</li>
+    </ul>
+    <li>Ubuntus18.04LTS</li>
+    <ul>
+        <li>hcp_1.3.0R-45_amd64.zip</li>
+        <li>hcp_1.3.0R-45_amd64.md5sum</li>
+    </ul>
+    <li>Ubuntus16.04LTS</li>
+    <ul>
+        <li>hcp_1.3.0R-45_amd64.zip</li>
+        <li>hcp_1.3.0R-45_amd64.md5sum</li>
+    </ul>
 </ul>
 
 
-## 2.2. Linuxの場合
-CentOS7を例に、説明します。
-
-zipファイルを解凍します。
-```
-$ unzip hcp-tools-1.3.0-42.el7.centos.zip
-```
-
-以下のファイルが同梱されています。
-```
-hcp-tools-1.3.0-42/
-├bin/*.rpm    # コマンドパッケージ
-├conf/*.conf  # 設定ファイル
-└license/*    # ライセンス文書
-```
+過去のバージョンなどは<a href="https://github.com/oogasawa/nigsc_HCPtools">こちらからダウンロード可能です。</a>
 
 
-hcpコマンドのパッケージ hcp-<バージョン>.rpmをインストールします。
-```
-$ cd hcp-tools-1.3.0-42/bin
-$ rpm -ivh hcp-1.3.0-42.el7.centos.x86_64.rpm
-$ hcp --version
-hcp client (hcp) 1.3.0_42 / Linux (HpFP2 2.0.0.91_16 WSAPI 0.0.1.23)
-```
+### クライアントソフトウェアのインストール
 
-HCP toolsに必要な設定ファイルを、ホームディレクトリにコピーします。
-```
-$ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
-```
+####  Windowsの場合
 
-公開鍵の登録
-公開鍵(~/.ssh/id_rsa.pub)を、サーバ(gwa.ddbj.nig.ac.jp)の「~/.ssh/authorized_keys」に登録して下さい。
-```
-[nig01@gw3 ~]$ cat ./id_rsa.pub >> ~/.ssh/authorized_keys
-```
 
-(参考) 公開鍵(*.pub)がない場合は、以下のコマンドで作成して下さい。
-```
-$ ssh-keygen -t rsa
-```
-
-## 2.3. Windowsの場合
 インストーラ<font color="blue">HCP_Tools_Client.msi</font> をダブルクリックして起動します。
 
 「使用許諾契約書に同意します(A)」にチェックを入れ、「インストール(I)」ボタンをクリックして下さい。
@@ -123,9 +95,8 @@ $ ssh-keygen -t rsa
 
 　　C:¥ProgramData¥Clealink¥HCP Tools\hcp.conf
 
-HCP toolsに必要な設定ファイルを、<ホームディレクトリ>/_hcp/配下にコピーします。
+HCP toolsに必要な設定ファイルを、`C:\Users\ユーザ名/_hcp/`配下にコピーします。
 
-※Windowsのホームディレクトリは、「C:\Users\<ユーザ名>」です。
 
 **コピー元**
 
@@ -133,9 +104,15 @@ HCP toolsに必要な設定ファイルを、<ホームディレクトリ>/_hcp/
 
 **コピー先**
 
-　<ホームディレクトリ(C:\Users\<ユーザ名>)>/_hcp/
+　C:\Users\ユーザ名/_hcp/
+
 
 公開鍵の登録
+
+遺伝研スパコンでは、HCP toolsはscpなどと同様に公開鍵暗号方式によりユーザ認証されます。
+その際、遺伝研スパコンにログインするときに利用するSSHの公開鍵をそのまま利用することが可能です。
+(SSH公開鍵暗号方式によるユーザ認証の説明はこちらをご覧ください。)
+
 
 公開鍵(<ホームディレクトリ>/.ssh/id_rsa.pub)を、サーバ(gwa.ddbj.nig.ac.jp)の「~/.hcp/authorized_keys」に登録して下さい。
 
@@ -143,6 +120,117 @@ HCP toolsに必要な設定ファイルを、<ホームディレクトリ>/_hcp/
  ```
 > ssh-keygen -t rsa
 ```
+
+
+動作確認
+
+遺伝研スパコン個人ゲノム解析区画に対してVPNの接続をした後、
+PowerShellを起動し、以下のコマンドを実行すると、ファイルのアップロードができます。
+
+
+PowerShellから以下のコマンドを実行すると、ファイルのダウンロードができます。
+
+
+
+
+#### CentOS 7の場合
+
+
+ユーザが使っているクライアント計算機がCentOS 7である場合、以下の手順に従ってTCP toolsのクライアントソフトウェアをインストールしてください。
+
+
+zipファイルを解凍します。
+
+```
+$ unzip hcp-tools-1.3.0R_45.el7.centos.zip
+```
+
+解凍すると以下のようなディレクトリが生成されます。
+
+```
+hcp-tools-1.3.0-45/
+├bin/*.rpm    # コマンドパッケージ
+├conf/*.conf  # 設定ファイル
+└license/*    # ライセンス文書
+```
+
+
+hcpコマンドのパッケージ hcp-<バージョン>.rpmをインストールします。
+
+```
+$ cd hcp-tools-1.3.0R-45/bin
+$ sudo rpm -ivh hcp-1.3.0R-45.el7.centos.x86_64.rpm
+$ hcp --version
+hcp client (hcp) 1.3.0R_45 / Linux (HpFP2 2.0.0.91_16 WSAPI 0.0.1.23)
+```
+
+HCP toolsに必要な設定ファイルを、ホームディレクトリにコピーします。
+
+```
+$ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
+```
+
+
+
+# 5. ファイル転送例
+
+## 5.1. アップロード
+
+[例1] ユーザー「nig001」が、ユーザーの計算機から、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリの下へ、ファイルをコピーします。
+
+- ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリ「/home/ユーザ名-pg/」の下へコピーしたい場合
+```
+$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:fileX.txt
+```
+
+- コピー先のディレクトリを指定したい場合
+ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にある「/home/ユーザ名-pg/document/」の下にコピーしたい場合は、以下のように実行します。
+```
+$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/document/fileX.txt
+```
+
+ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にある「/home/ユーザ名-pg/study/」というディレクトリの下にコピー先を指定したい場合は、以下のように実行します。
+```
+$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/study/fileX.txt
+```
+
+
+- コピー元とコピー先の両方のディレクトリを指定したい場合
+ユーザーの計算機にあるファイル「/home/ユーザ名/download/file.X.txt」を、遺伝研スパコンの個人ゲノム解析区画の指定したディレクトリ/home/ユーザ名-pg/tools/」の下にコピーしたい場合は、以下のように実行します。
+```
+$ hcp --user nig001 /home/ユーザ名/download/fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/tools/fileX.txt
+```
+
+
+[例2] 「--hpfp」オプションで、UDP(HpFP2)プロトコルによるコピーをします。コピー元とコピー先は「アップロード[例１]」と同じです。
+```
+$ hcp --user nig001 --hpfp fileX gwa.ddbj.nig.ac.jp:fileX
+```
+
+[例3] 「-R」オプションを付けると、フォルダ「/home/ユーザー名/dir/」配下が、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリ「/home/nig001/」配下に、再帰的にコピーされます。
+```
+$ hcp --user nig001 -R dir/ gwa.ddbj.nig.ac.jp:/home/nig001/
+```
+
+## 5.2. ダウンロード
+
+[例1] ユーザ「nig001」が、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリにあるfileX.txt「/home/ユーザ名-pg/fileX.txt」を、ユーザーの計算機のホームディレクトリ「/home/ユーザ名/」の下にコピーします。
+```
+$ hcp --user nig001 gwa.ddbj.nig.ac.jp:fileX.txt fileX.txt
+```
+
+[例2] 「--hpfp」オプションで、UDP(HpFP2)プロトコルによるコピーをします。コピー元とコピー先は「ダウンロード[例１]」と同じです。
+```
+$ hcp --user nig001 --hpfp gwa.ddbj.nig.ac.jp:fileX fileX
+```
+
+[例3] 「-R」オプションを付けると、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリの下にあるディレクトリdir「/home/nig001/dir/」配下を、ユーザーの計算機の「/home/ユーザー名/」配下に、再帰的にコピーされます。
+```
+$ hcp --user nig001 -R gwa.ddbj.nig.ac.jp:/home/nig001/dir/ .
+```
+
+
+
 
 # 3. 設定
 
@@ -222,62 +310,27 @@ DisableDataIntegrityChecking yes
 
 
 
-# 5. ファイル転送例
 
-## 5.1. アップロード
 
-[例1] ユーザー「nig001」が、ユーザーの計算機から、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリの下へ、ファイルをコピーします。
+公開鍵の登録
 
-- ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリ「/home/ユーザ名-pg/」の下へコピーしたい場合
+遺伝研スパコンでは、HCP toolsはscpなどと同様に公開鍵暗号方式によりユーザ認証されます。
+その際、遺伝研スパコンにログインするときに利用するSSHの公開鍵をそのまま利用することが可能です。
+(SSH公開鍵暗号方式によるユーザ認証の説明はこちらをご覧ください。)
+
+
+公開鍵(~/.ssh/id_rsa.pub)を、サーバ(gwa.ddbj.nig.ac.jp)の「~/.ssh/authorized_keys」に登録して下さい。
+
 ```
-$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:fileX.txt
-```
-
-- コピー先のディレクトリを指定したい場合
-ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にある「/home/ユーザ名-pg/document/」の下にコピーしたい場合は、以下のように実行します。
-```
-$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/document/fileX.txt
+[nig01@gw3 ~]$ cat ./id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
-ユーザーの計算機のホームディレクトリにあるfileX.txt「/home/ユーザ名/fileX.txt」を、遺伝研スパコンの個人ゲノム解析区画にある「/home/ユーザ名-pg/study/」というディレクトリの下にコピー先を指定したい場合は、以下のように実行します。
+(参考) 公開鍵(*.pub)がない場合は、以下のコマンドで作成して下さい。
 ```
-$ hcp --user nig001 fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/study/fileX.txt
+$ ssh-keygen -t rsa
 ```
 
 
-- コピー元とコピー先の両方のディレクトリを指定したい場合
-ユーザーの計算機にあるファイル「/home/ユーザ名/download/file.X.txt」を、遺伝研スパコンの個人ゲノム解析区画の指定したディレクトリ/home/ユーザ名-pg/tools/」の下にコピーしたい場合は、以下のように実行します。
-```
-$ hcp --user nig001 /home/ユーザ名/download/fileX.txt gwa.ddbj.nig.ac.jp:/home/ユーザー名-pg/tools/fileX.txt
-```
-
-
-[例2] 「--hpfp」オプションで、UDP(HpFP2)プロトコルによるコピーをします。コピー元とコピー先は「アップロード[例１]」と同じです。
-```
-$ hcp --user nig001 --hpfp fileX gwa.ddbj.nig.ac.jp:fileX
-```
-
-[例3] 「-R」オプションを付けると、フォルダ「/home/ユーザー名/dir/」配下が、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリ「/home/nig001/」配下に、再帰的にコピーされます。
-```
-$ hcp --user nig001 -R dir/ gwa.ddbj.nig.ac.jp:/home/nig001/
-```
-
-## 5.2. ダウンロード
-
-[例1] ユーザ「nig001」が、遺伝研スパコンの個人ゲノム解析区画にあるユーザーのホームディレクトリにあるfileX.txt「/home/ユーザ名-pg/fileX.txt」を、ユーザーの計算機のホームディレクトリ「/home/ユーザ名/」の下にコピーします。
-```
-$ hcp --user nig001 gwa.ddbj.nig.ac.jp:fileX.txt fileX.txt
-```
-
-[例2] 「--hpfp」オプションで、UDP(HpFP2)プロトコルによるコピーをします。コピー元とコピー先は「ダウンロード[例１]」と同じです。
-```
-$ hcp --user nig001 --hpfp gwa.ddbj.nig.ac.jp:fileX fileX
-```
-
-[例3] 「-R」オプションを付けると、遺伝研スパコンの個人ゲノム解析区画のユーザーのホームディレクトリの下にあるディレクトリdir「/home/nig001/dir/」配下を、ユーザーの計算機の「/home/ユーザー名/」配下に、再帰的にコピーされます。
-```
-$ hcp --user nig001 -R gwa.ddbj.nig.ac.jp:/home/nig001/dir/ .
-```
 
 # 6. お問合せ先
 お問い合わせ頂く前に、ページTOPにある[マニュアル](/software/HCPtools/hcptools#マニュアル)をご確認下さい。
