@@ -27,7 +27,8 @@ HCP toolsを利用するためにはクライアントソフトウェアをユ�
 
 個人ゲノム解析区画とのファイルの転送を行うために、まず最初にSSL-VPN接続を行う必要があります。
 
-接続方法は、<a href="https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login#windows%E3%81%BE%E3%81%9F%E3%81%AFmac%E3%81%AE%E5%A0%B4%E5%90%88-forticlient-gui">「ログイン方法(個人ゲノム解析区画)」の「VPNへの接続方法　WindowsまたはMacの場合 (FortiClient GUI)」</a>をご参照ください。
+接続方法は、[「ログイン方法(個人ゲノム解析区画)」の「VPNへの接続方法」](/personal_genome_division/pg_login#vpn%E3%81%B8%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95)をご参照ください。
+
 
 
 ### アップロード
