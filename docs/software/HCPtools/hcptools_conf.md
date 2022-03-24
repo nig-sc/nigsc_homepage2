@@ -4,71 +4,84 @@ title: 設定ファイルの書き方
 ---
 
 
-## 3.1. 設定ファイル
+## 設定ファイルの種類
 
-(参考) HCP toolsのコマンドと設定ファイル(Linuxの場合)(注1)
+HCP toolsの各コマンドのそれぞれに対し、設定ファイルがあります。
 
 ![](HCPtools_3.png)
 
-注1) Windowsの場合、設定ファイルの場所は~/_hcp/配下となります。
 
-以下、<font color="blue">hcp</font>コマンドの設定のみ、紹介します。
+設定ファイルがたくさんあるので、共通の設定を`~/.hcp/hcp-common.conf`に記述し、各設定ファイルからインクルードする方法を推奨します。`~/.hcp/hcp.conf`などの設定ファイルの冒頭に以下の一行を記載して下さい。
 
-※他のコマンドも、設定方法は同様です。
+Linuxの場合
 
-　詳細は、HCP tools コマンドリファレンスを参照して下さい。
-
-hcpコマンドの設定を、設定ファイル「~/.hcp/hcp.conf」に行います。
-
-設定したい内容を「hcp.conf」に書き込むことで有効となりますが、設定したい内容を書き込んだ共通設定ファイル「~/.hcp/hcp.conf」を作成し、「hcp.conf」にインクルードさせる方法を推奨します。以下は、共通設定ファイルによる設定例です。
-
-共通設定ファイル「~/.hcp/hcp-common.conf」に設定を記述します。
 ```
-PrivateKeyFile /home/nig01/.ssh/id_rsa     # 秘密鍵指定
-AcceptableCryptMethod   PLAIN              # 暗号化:なし
-AcceptableDigestMethod  NONE               # ダイジェスト方式:なし
-DisableDataIntegrityChecking yes            # ダイジェスト方式なしを許可
+Include /home/ユーザ名/.hcp/hcp-common.conf
 ```
 
-「~/.hcp/hcp.conf」に共通設定ファイル「~/.hcp/hcp-common.conf」をインクルードする設定を追記します。記述するファイル名は、フルパスにして下さい。
+Windowsの場合
+
 ```
-$ echo "Include ${HOME}/.hcp/hcp-common.conf" >> ${HOME}/.hcp/hcp.conf
-```
-
-## 3.2. 設定項目
-
-confファイルに記述する設定項目を紹介します。
-
-詳細は、HCP tools コマンドリファレンスを参照して下さい。
-
-AcceptableCryptMethod: 暗号化を行うための設定項目です。
-
-[例1] デフォルトの設定
-```
-AcceptableCryptMethod AES256/CBC AES128/CBC
+Include C:\Users\ユーザ名\.hcp\hcp-common.conf
 ```
 
-[例2] 暗号化通信を行わず、平文で通信する
+
+## 共通設定ファイル(`~/.hcp/hcp-common.conf`)の設定例
+
+HCP toolsは、公開鍵・秘密鍵によりユーザ認証を行います。
+
+この場合の公開鍵・秘密鍵は遺伝研スパコンのSSHログインに用いる公開鍵・秘密鍵ファイルで構いません。
+これらを用いる場合は、クライアントマシンのユーザディレクトリ(Windowsの場合は`C:\Users\ユーザ名\.ssh`)の下に秘密鍵ファイル(`id_rsa`)が置かれていることを確認してください。（[SSHの公開鍵の設定方法](/application/ssh_keys)に従うとすでに秘密鍵ファイルがここに置かれているはずです。）
+
+
+
+### 暗号化なし、ファイルの完全性のチェックあり or なしの場合
+
+
 ```
-AcceptableCryptMethod PLAIN
+PrivateKeyFile /home/ユーザ名/.ssh/id_rsa    # 秘密鍵指定
+AcceptableCryptMethod   PLAIN              　# 暗号化:なし
+AcceptableDigestMethod  SHA256               # ダイジェスト方式: SHA256
+DisableDataIntegrityChecking yes             # ダイジェスト方式なしを許可
 ```
 
-AcceptableDigestMethod: ダイジェストアルゴリズムを設定します。
+#### 例（ダウンロード）
 
-[例1] デフォルトの設定
-```
-AcceptableDigestMethod SHA256 SHA160
+ファイルの完全性のチェックを行う場合は`-y`オプションをつけて下さい。
+
+```bash
+hcp --user ユーザ名 --hpfp -y  \
+    gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt \
+    C:\Users\ユーザ名\your_file.txt
 ```
 
-[例2] 通信するメッセージ・ファイルやそのデータブロックの検証を行わない場合
-「DisableDataIntegrityChecking yes」も指定する必要があります。
-```
-AcceptableDigestMethod NONE
-DisableDataIntegrityChecking yes
+ファイルの完全性のチェックを行わない場合は場合は`-y`オプションを外して下さい。
+転送速度が速くなります。
+
+```bash
+hcp --user ユーザ名 --hpfp  \
+    gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt \
+    C:\Users\ユーザ名\your_file.txt
 ```
 
 
 
+### 暗号化あり、ファイルの完全性のチェックあり or なしの場合
 
+転送速度は遅くなります。
 
+```
+PrivateKeyFile /home/ユーザ名/.ssh/id_rsa    # 秘密鍵指定
+AcceptableCryptMethod   AES256/CTR/VMAC    　# 暗号化: AES256/CTR/VMAC
+AcceptableDigestMethod  SHA256               　# ダイジェスト方式: SHA256
+DisableDataIntegrityChecking yes             # ダイジェスト方式なしを許可
+```
+
+ダウンロード例は以下の通り。`-y`のありなしで完全性のチェックのありなしを切り替えられます。
+
+```bash
+hcp --user ユーザ名 --hpfp -y  \
+    gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt \
+    C:\Users\ユーザ名\your_file.txt
+```
 
