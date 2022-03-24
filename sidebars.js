@@ -63,8 +63,15 @@ module.exports = {
         ],
         "データ転送・データ共有": [
             "software/aspera/aspera",
-            "software/HCPtools/hcptools",
-            "software/HCPtools/powershell/install_HCPtools_001",
+            {
+                type: "category",
+                label: "HCP tools",
+                items: [ 
+                    "software/HCPtools/hcptools",
+                    "software/HCPtools/Windows/install_HCPtools_001",
+                    "software/HCPtools/hcptools_conf",
+                ],
+            }
 
         ],
         "開発環境・ライブラリ": [
@@ -95,7 +102,11 @@ module.exports = {
             "application/invoice",
         ],
         "お問い合わせ等": [
-            "faq/faq1",
+            {
+                type: "link",
+                label: "よくある質問(FAQ)",
+                href: "/faq/faq1"
+            },
             "application/reference"
         ],
     },
@@ -154,6 +165,12 @@ module.exports = {
             "report/papers_2013",
             "report/papers_2012",
         ],
-    }
+    },
+
+    faqSidebar: [
+        "faq/faq1",
+        "faq/faq_hcptools",
+    ]
+
 
 };
