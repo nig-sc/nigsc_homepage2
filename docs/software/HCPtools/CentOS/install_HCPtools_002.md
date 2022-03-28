@@ -1,5 +1,5 @@
 ---
-id: install_HCPtools
+id: install_HCPtools_002
 title: "HCPtoolsのインストール(CentOS 7の場合)"
 ---
 
@@ -41,9 +41,8 @@ $ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
 ```
 
 
-## 設定ファイルの編集 
+## 設定ファイルの編集
 
 HCP toolsの設定ファイルをユーザディレクトリに設置し、ユーザ認証のための公開鍵の設定を追記します。
 
 手順については[設定ファイルの書き方](/software/HCPtools/hcptools_conf)を参照して下さい。
-
