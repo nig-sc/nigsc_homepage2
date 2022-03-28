@@ -17,7 +17,7 @@ HCP toolsを利用するためにはクライアントソフトウェアをユ�
 
 - [Windowsの場合](/software/HCPtools/Windows/install_HCPtools_001)
 - Mac OSの場合 : 現在クライアントソフトウェアの開発中のため、現時点では利用できません。2022年6月頃提供開始予定です。
-- Linuxの場合([CentOS 7](/software/HCPtools/CentOS/install_HCPtools)/Ubuntu Linux)
+- Linuxの場合([CentOS 7](/software/HCPtools/CentOS/install_HCPtools_002)/[Ubuntu Linux](/software/HCPtools/Ubuntu/install_HCPtools_003))
 
 
 ## ファイル転送
