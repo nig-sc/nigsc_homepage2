@@ -7,13 +7,16 @@ title: "HCPtoolsのインストール(Ubuntu Linuxの場合)"
 
 ユーザが使っているクライアント計算機がUbuntu Linuxである場合、以下の手順に従ってTCP toolsのクライアントソフトウェアをインストールしてください。
 
-githubからUbuntu20.04用のzipファイルをダウンロードします。
+Ubuntu Linux 16.04, 18.04, 20.04に対応しています。お使いのUbuntu Linuxのバージョンに対応したzipファイルをzipファイルを[ここからダウンロードしてください。](https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Ubuntu_Linux)
+- 過去のバージョンなどは<a href="https://github.com/oogasawa/nigsc_HCPtools">こちらにあります。</a>
+
+
+以下ではUbuntu Linux 20.04の場合を例に説明します。
 
 ```
 $ git clone https://github.com/oogasawa/nigsc_HCPtools/blob/main/1.3.0R-45/Ubuntu_Linux/hcp-tools-1.3.0R_45.amd64.ubuntu2004.zip
 ```
 
-過去のバージョンなどは<a href="https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Ubuntu_Linux">こちらにあります。</a>
 
 zipファイルを解凍します。
 
