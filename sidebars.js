@@ -66,11 +66,11 @@ module.exports = {
             {
                 type: "category",
                 label: "HCP tools",
-                items: [ 
+                items: [
                     "software/HCPtools/hcptools",
                     "software/HCPtools/Windows/install_HCPtools_001",
-                    "software/HCPtools/CentOS/install_HCPtools_002",
                     "software/HCPtools/Ubuntu/install_HCPtools_003",
+                    "software/HCPtools/CentOS/install_HCPtools_002",
                     "software/HCPtools/hcptools_conf",
                 ],
             }
