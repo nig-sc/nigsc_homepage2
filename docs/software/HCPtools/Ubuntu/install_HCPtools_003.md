@@ -1,11 +1,11 @@
 ---
 id: install_HCPtools_003
-title: "HCPtoolsのインストール(Ubuntu20.04の場合)"
+title: "HCPtoolsのインストール(Ubuntu Linuxの場合)"
 ---
 
 ## クライアントソフトウェアのインストール
 
-ユーザが使っているクライアント計算機がUbuntuである場合、以下の手順に従ってTCP toolsのクライアントソフトウェアをインストールしてください。
+ユーザが使っているクライアント計算機がUbuntu Linuxである場合、以下の手順に従ってTCP toolsのクライアントソフトウェアをインストールしてください。
 
 githubからUbuntu20.04用のzipファイルをダウンロードします。
 
