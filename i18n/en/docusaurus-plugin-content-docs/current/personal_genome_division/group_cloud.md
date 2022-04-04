@@ -12,7 +12,7 @@ DDBJ Group Cloud is a service for sharing data that requires access restrictions
  
 ## How to apply for use
 
- When using the service, please check the Terms of Use and the separate table of Terms of Use (fee schedule), download the Extended Service Usage Plan, fill in the required information, and send it to ! [](sc-helpdesk.png) by e-mail.  After reviewing the purpose of use, we will send you an invitation to use the billing service. Please note that this service may not be available depending on the congestion of the NIH's supercomputer.
+ When using the service, please check the Terms of Use and the separate table of Terms of Use (fee schedule), download the Extended Service Usage Plan, fill in the required information, and send it to ![](sc-helpdesk.png) by e-mail.  After reviewing the purpose of use, we will send you an invitation to use the billing service. Please note that this service may not be available depending on the congestion of the NIH's supercomputer.
 
  
 ## Usage Fees
