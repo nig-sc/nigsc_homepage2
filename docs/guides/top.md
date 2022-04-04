@@ -23,9 +23,7 @@ sidebar_label: トップページ
 昨年度2021年度の年度末更新をしていないユーザについてはアカウントが一時的にロックされています。
 
 継続して利用したい方は、
-sc-helpdesk@nig.ac.jp にご一報の上、年度末更新をお願いします。
-
-URL : [年度末アカウント更新](/application/renewal)
+sc-helpdesk@nig.ac.jp にご一報の上、[年度末更新](/application/renewal)をお願いします。
 
 
 ## 2022年度の定期メンテナンス
