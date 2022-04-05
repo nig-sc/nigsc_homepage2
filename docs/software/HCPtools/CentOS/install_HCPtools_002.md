@@ -6,6 +6,9 @@ title: "HCPtoolsのインストール(CentOS 7の場合)"
 
 ユーザが使っているクライアント計算機がCentOS 7である場合、以下の手順に従ってTCP toolsのクライアントソフトウェアをインストールしてください。
 
+zipファイルを[ここからダウンロードしてください。](https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/CentOS7)
+- 過去のバージョンなどは<a href="https://github.com/oogasawa/nigsc_HCPtools">こちらにあります。</a>
+
 
 zipファイルを解凍します。
 

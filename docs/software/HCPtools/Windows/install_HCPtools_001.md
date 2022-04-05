@@ -40,19 +40,15 @@ title: "HCPtoolsのインストール(Windowsの場合)"
 - 実行コマンド : 'C:\Program Files\Clealink\HCP Tools\hcp.exe'
 - 設定ファイル: 'C:\ProgramData\Clealink\HCP Tools\hcp.conf'
 
-
-
 ## 設定ファイルの設置
 
-HCP toolsは、ユーザのクライアント計算機内のユーザディレクトリ直下の`.hcp`ディレクトリ（または`_hcp`ディレクトリ）の中にある設定ファイルを参照します。
+HCP toolsは、ユーザのクライアント計算機がWindowsの場合、ユーザディレクトリ(`C:\Users\your_name`)直下の`_hcp`ディレクトリの中にある設定ファイルを参照します。
 
-
-
-Windows PowerShellをご使用の場合は以下のコマンドで設定ファイルの雛形をコピーできます。
+Windows PowerShellで以下のコマンドを実行すると、設定ファイルの雛形をコピーできます。
 
 ```bash
-mkdir C:\Users\ユーザ名\.hcp
-cp "C:\ProgramData\Clealink\HCP Tools\*.conf" C:\Users\ユーザ名\.hcp
+mkdir C:\Users\your_name\_hcp
+cp "C:\ProgramData\Clealink\HCP Tools\*.conf" C:\Users\your_name\.hcp
 ```
 
 
