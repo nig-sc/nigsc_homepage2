@@ -90,11 +90,9 @@ hcp --user ユーザ名 --hpfp  \
 
 ## 参考資料
 
-- 公式マニュアル (vession 1.3.0R-45)
-    - HCPtoolsコマンド導入ガイド ([日本語版](/pdf/HCPtools_Guide_ja.pdf) / [英語版](/pdf/HCPtools_Guide_en.pdf))
-    - HCPtoolsコマンド概要説明 ([日本語版](/pdf/HCPtools_overview_ja.pdf) / [英語版](/pdf/HCPtools_overview_en.pdf))
-    - HCPtoolsコマンドリファレンス ([日本語版](/pdf/HCPtools_CommandReference.pdf))
+- 公式マニュアル (vession 1.3.0R_45)
+    - HCPtoolsコマンド導入ガイド (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">日本語版</a>)
+    - HCPtoolsコマンド概要説明 (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">日本語版</a>)
+    - HCPtoolsコマンドリファレンス (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">日本語版</a>)
 
 - [FAQ（よくある質問）: HCP tools](/faq/faq_hcptools)
-
-
