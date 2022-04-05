@@ -5,61 +5,23 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-html,
-body {
-  height: 100%;
-}
+ html,
+ body {
+   height: 100%;
+ }
 
-#__docusaurus {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+ #__docusaurus {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+ }
 
-.main-wrapper {
-  flex: 1 0 auto;
-}
+ .main-wrapper {
+   flex: 1 0 auto;
+ }
 
-/* Docusaurus-specific utility classes */
+ /* Docusaurus-specific utility classes */
 
-.docusaurus-mt-lg {
-  margin-top: 3rem;
-}
-
-
-/* topnav */
-
-
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    /* height: 50px; */
-}
-
-
-
-.topnav a {
-    float: left; 
-    color: #f2f2f2;
-    padding: 10px 16px ;
-  /*  margin-bottom: -20px;  */
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 17px; 
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    /* background-color: #04AA6D; */
-    background-color: darkorange;
-    color: white;
-}
-
-
+ .docusaurus-mt-lg {
+   margin-top: 3rem;
+ }

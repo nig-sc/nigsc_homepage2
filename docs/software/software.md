@@ -100,7 +100,7 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 <tr>
 <td width="300">
 
-[Aspera](aspera/aspera)
+[Aspera](./aspera/aspera.md)
 
 </td>
 <td width="300">利用可能</td>
@@ -109,7 +109,7 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 <tr>
 <td width="300">
 
-[HCPtools](HCPtools/hcptools)
+[HCPtools](./HCPtools/hcptools.md)
 
 </td>
 <td width="300">☓</td>
@@ -254,9 +254,3 @@ C/C++ (PGI Compiler)
 </tr>
 
 </table>
-
-
-
-
-
-

@@ -38,7 +38,7 @@ export default function RecentBlogPosts() {
           ))}
           <li className={styles.recentBlogPosts__listItem}>
             <Link to="/blog/tags/news" className={styles.recentBlogPosts__listItemLink}>
-              <Translate id="themes.recentBlogPosts.moreNewsPosts">■　すべてのお知らせを見る</Translate>
+              <Translate id="themes.recentBlogPosts.moreNewsPosts">すべてのお知らせを見る</Translate>
             </Link>
           </li>
         </ul>
@@ -53,7 +53,7 @@ export default function RecentBlogPosts() {
           ))}
           <li className={styles.recentBlogPosts__listItem}>
             <Link to="/blog/tags/troublereport" className={styles.recentBlogPosts__listItemLink}>
-              <Translate id="themes.recentBlogPosts.moreTroubleReportPosts">■ すべての障害報告を見る</Translate>
+              <Translate id="themes.recentBlogPosts.moreTroubleReportPosts">すべての障害報告を見る</Translate>
             </Link>
           </li>
         </ul>
