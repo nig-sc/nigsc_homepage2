@@ -1,1 +1,0 @@
-oogasawa@vivobook.140336:1648087842
