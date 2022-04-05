@@ -17,12 +17,11 @@ Due to disk space constraints, we do not back up the data in the user home direc
 <div className="clearfix"></div>
 
 
+## End-of-Year Account Renewal Requests
 
-## Scheduled maintenance in 2021
+For users who did not apply for account renewal requests at the end of the last fiscal year, 2021, their accounts have been temporarily locked.
 
-The regular maintenance was held only once this year.
-
-- [EOM] Nov. 12 (Thu.) -- Nov. 18 (Thu.), 2021 : Scheduled maintenance due to the NIG's statutory inspection of electrical equipment.
+If you wish to continue using the system, please inform us at sc-helpdesk@nig.ac.jp to renew your account at the end of the fiscal year.
 
 ## Scheduled maintenance in 2022
 
