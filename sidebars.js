@@ -62,7 +62,16 @@ module.exports = {
             "software/Singularity",
         ],
         "データ転送・データ共有": [
-            "software/aspera/aspera",
+            {
+                type: 'category',
+                label: 'Aspera',
+                items: [
+                    "software/aspera/aspera",
+                    "software/aspera/install_Aspera",
+                    "software/aspera/Aspera_adjust_path_windows_mac",
+                    "software/aspera/Aspera_adjust_path_Linux",
+                ],
+              },
             {
                 type: "category",
                 label: "HCP tools",
