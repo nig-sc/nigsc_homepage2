@@ -4,9 +4,8 @@ export const TAG_NEWS = "news"
 export const TAG_TROUBLEREPORT = "troublereport"
 
 export function usePosts() {
-  const { blogPosts } = usePluginData('plugin-blog-global-data')
-
-  return blogPosts
+  const { blogPosts: posts } = usePluginData("nigsc-plugin-blog-data")
+  return posts
 }
 
 export function usePostsByTag (tagLabel) {
