@@ -279,11 +279,6 @@ HPE Superdome Flex
 
 ### Large archive storage
 
-
-DRA等のDDBJデータベースを格納するなどDDBJの業務に利用しており、一般ユーザには公開していません。
-容量をかせぐため、高速なディスクシステムと容量単価の安いテープシステムを用いた階層ストレージシステムとなっています。
-
-
 This strage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
 To increase capacity, it is a hierarchical storage system that uses a high-speed disk system and a tape system with low per-capacity cost.
 
