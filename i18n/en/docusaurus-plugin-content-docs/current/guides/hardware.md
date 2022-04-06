@@ -109,7 +109,7 @@ title: Hardware
 </tr>
 <tr>
     <td colspan="2">
-    Large capacity high speed storage<br />
+    Large capacity archive storage<br />
 	Strage area for DB(※2)
     </td>
 	<td>SpectrumScale file system + tapes<br />
@@ -133,7 +133,7 @@ title: Hardware
 
 ### Thin computer node Type 1a (HPE ProLiant DL385 Gen10; 136 computers)
 
-This node is a computer nodes with AMD EPYC 7501 processor as CPU.
+Computer nodes with AMD EPYC 7501 processors.
 
 ![](Thin1a.png)
 <br />
@@ -153,7 +153,7 @@ HPE ProLiant DL385 Gen10
  
 ### Thin computer node Type 1b (DELL PowerEdge R6525; 28 computers)
 
-This node is a computer node with AMD EPYC 7702 processor as CPU.
+Computer nodes with AMD EPYC 7702 processors.
 
 ![](Thin1b.png)
 
@@ -171,7 +171,7 @@ DELL PowerEdge R6525
  
 ### Thin computer node Type 2a (HPE Apollo 2000 Gen10; 52 computers)
 
-This node is a computer node with Intel Xeon processor as CPU.
+Computer nodes with Intel Xeon processors.
 
 ![](Thin2a.png)
 
@@ -191,7 +191,7 @@ HPE Apollo 2000 Gen10
  
 ### Thin computer node Type 2b (HPE Apollo 6500 Gen10; 16 computers)
 
-This node is a computer node with four GPUs on each node.
+Computer nodes with four GPUs on each node.
 
 ![](Thin2b.png)
 
@@ -211,7 +211,7 @@ HPE Apollo 6500 Gen10
  
 #### (Reference) GPU Specifications
 
-|  属性名                                                    |  Value                  |
+| Properties                                                 |  Value                  |
 |------------------------------------------------------------|-------------------------|
 | name                                                       | NVIDIA Tesla V100 SXM2  |
 | number of core                                             | 640                     |
@@ -227,7 +227,7 @@ HPE Apollo 6500 Gen10
 
 ### Medium computer node (HPE ProLiant DL560 Gen10; 10 computers)
 
-This node is a compute node with 80 cores with 3 TB of physical memory, suitable for running large memory intensive programs such as De novo assembler, etc. You can use it by job submission under UGE.
+These nodes are compute nodes with 80 cores with 3 TB of physical memory, suitable for running large memory intensive programs such as de novo assembler, etc. You can use it by job submission under UGE.
 
 
 ![](Medium.png)
@@ -249,7 +249,7 @@ HPE ProLiant DL560 Gen10
 
 This compute node for the NUMA (Non Uniformed Memory Access) architecture, which connects multiple compute nodes to build a large shared memory type compute system. 
 
-You can use FAT nodes by application only, not not under UGE.
+You can use FAT nodes by application only.
 
 ![](Fat.png) 
 
@@ -266,7 +266,7 @@ HPE Superdome Flex
 
 ## Strage
 
-### High-speed storage Lustre file system
+### High-speed storages : Lustre file systems
 
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
