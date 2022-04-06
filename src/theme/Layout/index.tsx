@@ -7,54 +7,52 @@
 
 import React from 'react';
 import clsx from 'clsx';
+import ErrorBoundary from '@docusaurus/ErrorBoundary';
+import {
+  PageMetadata,
+  ThemeClassNames,
+  useKeyboardNavigation,
+} from '@docusaurus/theme-common';
 import SkipToContent from '@theme/SkipToContent';
 import AnnouncementBar from '@theme/AnnouncementBar';
 import Navbar from '@theme/Navbar';
 import Footer from '@theme/Footer';
 import LayoutProviders from '@theme/LayoutProviders';
-import LayoutHead from '@theme/LayoutHead';
-import type {Props} from '@theme/Layout';
-import useKeyboardNavigation from '@theme/hooks/useKeyboardNavigation';
-import {ThemeClassNames} from '@docusaurus/theme-common';
+import type { Props } from '@theme/Layout';
+import ErrorPageContent from '@theme/ErrorPageContent';
+import DDBJNav from '@theme/DDBJNav'
+
 import './styles.css';
 
-function Layout(props: Props): JSX.Element {
-  const {children, noFooter, wrapperClassName, pageClassName} = props;
+export default function Layout(props: Props): JSX.Element {
+  const {
+    children,
+    noFooter,
+    wrapperClassName,
+    // not really layout-related, but kept for convenience/retro-compatibility
+    title,
+    description,
+  } = props;
 
   useKeyboardNavigation();
 
   return (
     <LayoutProviders>
-      <LayoutHead {...props} />
+      <PageMetadata title={title} description={description} />
 
       <SkipToContent />
 
       <AnnouncementBar />
 
-      <div className="topnav">
-          <a href="https://www.ddbj.nig.ac.jp/index.html"><img src="/img/ddbj_logo_mini.png" height="40"/></a>
-          <a href="https://www.ddbj.nig.ac.jp/submission.html">Data Submission</a>
-          <a href="https://www.ddbj.nig.ac.jp/services/index.html">Database</a>
-          <a href="https://sc.ddbj.nig.ac.jp/">Supercomputer</a>
-          <a href="https://www.ddbj.nig.ac.jp/activities/index.html">Activities</a>
-          <a href="https://www.ddbj.nig.ac.jp/about/index.html">About Us</a>
-      </div>
-
+      <DDBJNav />
 
       <Navbar />
 
-      <div
-        className={clsx(
-          ThemeClassNames.wrapper.main,
-          wrapperClassName,
-          pageClassName,
-        )}>
-        {children}
+      <div className={clsx(ThemeClassNames.wrapper.main, wrapperClassName)}>
+        <ErrorBoundary fallback={ErrorPageContent}>{children}</ErrorBoundary>
       </div>
 
       {!noFooter && <Footer />}
     </LayoutProviders>
   );
 }
-
-export default Layout;

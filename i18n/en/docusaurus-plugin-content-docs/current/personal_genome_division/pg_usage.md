@@ -14,7 +14,7 @@ title: "使い方（個人ゲノム解析区画）"
 
 - ジョブスケジューラ Univa Grid Engine (UGE)の使い方については[システム構成 > ソフトウェア > Univa Grid Engine](/software/univa_grid_engine)をご参照ください。
 - ジョブスケジューラ Slurmの使い方については[システム構成 > ソフトウェア > Slurm](/software/slurm)をご参照ください。
-- その他、利用可能なソフトウェアについては[システム構成>ソフトウェア](/software/software)をご参照ください。
+- その他、利用可能なソフトウェアについては[システム構成>ソフトウェア](../software/software.md)をご参照ください。
 - 具体的な解析方法などについては[活用方法](/advanced_guides/advanced_guide)をご参照ください。
 
 
