@@ -1,21 +1,24 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.footer  {
-    background-image: url("/img/background.svg");
+.Footer {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.footerLogoLink {
-  opacity: 0.5;
-  transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+.Footer__Contents {
+  padding: 2rem;
+  background: url("/img/ddbj-footer-background.svg") repeat 50% 50%;
+  background-size: 65px;
+  background-attachment: fixed;
 }
 
-.footerLogoLink:hover {
-  opacity: 1;
+.Footer__CopyRight {
+  color: white;
+  background-color: rgba(28,27,25,.8);
+  padding: 1rem;
 }
 
+.Footer__CopyRightBody {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
