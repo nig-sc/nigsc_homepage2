@@ -4,6 +4,11 @@
         "es2021": true,
         "node": true
     },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+    },
     "extends": [
         "plugin:react/recommended",
         "standard"
@@ -22,7 +27,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "no-use-before-define": 0
     },
     "globals": {
         "JSX": true
