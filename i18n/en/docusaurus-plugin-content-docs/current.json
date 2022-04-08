@@ -59,14 +59,6 @@
     "message": "利用方法解説",
     "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
   },
-  "sidebar.operationInfoSidebar.category.お知らせ": {
-    "message": "お知らせ",
-    "description": "The label for category お知らせ in sidebar operationInfoSidebar"
-  },
-  "sidebar.operationInfoSidebar.category.障害情報": {
-    "message": "障害情報",
-    "description": "The label for category 障害情報 in sidebar operationInfoSidebar"
-  },
   "sidebar.operationInfoSidebar.category.稼働状況": {
     "message": "稼働状況",
     "description": "The label for category 稼働状況 in sidebar operationInfoSidebar"
@@ -78,5 +70,33 @@
   "sidebar.reportSidebar.category.論文リスト": {
     "message": "List of papers published by users",
     "description": "The label for category 論文リスト in sidebar reportSidebar"
+  },
+  "sidebar.softwareSidebar.category.データ転送・データ共有": {
+    "message": "データ転送・データ共有",
+    "description": "The label for category データ転送・データ共有 in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.Aspera": {
+    "message": "Aspera",
+    "description": "The label for category Aspera in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.HCP tools": {
+    "message": "HCP tools",
+    "description": "The label for category HCP tools in sidebar softwareSidebar"
+  },
+  "sidebar.applicationsSidebar.link.よくある質問(FAQ)": {
+    "message": "よくある質問(FAQ)",
+    "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq1"
+  },
+  "sidebar.advancedGuidesSidebar.category.Alphafold 2.1": {
+    "message": "Alphafold 2.1",
+    "description": "The label for category Alphafold 2.1 in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.operationInfoSidebar.link.お知らせ": {
+    "message": "お知らせ",
+    "description": "The label for link お知らせ in sidebar operationInfoSidebar, linking to /blog/tags/news"
+  },
+  "sidebar.operationInfoSidebar.link.障害情報": {
+    "message": "障害情報",
+    "description": "The label for link 障害情報 in sidebar operationInfoSidebar, linking to /blog/tags/troublereport"
   }
 }

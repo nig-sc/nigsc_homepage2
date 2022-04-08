@@ -11,6 +11,8 @@ import BlogPostItem from '@theme/BlogPostItem';
 import Translate, {translate} from '@docusaurus/Translate';
 import {ThemeClassNames, usePluralForm} from '@docusaurus/theme-common'; // Very simple pluralization: probably good enough for now
 
+import { useTagLabel } from '../hooks'
+
 function useBlogPostsPlural() {
   const {selectMessage} = usePluralForm();
   return (count) =>
@@ -34,17 +36,15 @@ function BlogTagsPostPage(props) {
   const {metadata, items, sidebar} = props;
   const {allTagsPath, name: tagName, count} = metadata;
   const blogPostsPlural = useBlogPostsPlural();
-  const title = translate(
-    {
-      id: 'theme.blog.tagTitle',
-      description: 'The title of the page for a blog tag',
-      message: '{nPosts} tagged with "{tagName}"',
-    },
-    {
-      nPosts: blogPostsPlural(count),
-      tagName: translate({ id: `theme.tag.${tagName}`, message: tagName }),
-    },
-  );
+  const tagLabel = useTagLabel(tagName)
+  const title = translate({
+    id: 'theme.blog.tagTitle',
+    description: 'The title of the page for a blog tag',
+    message: '{nPosts} tagged with "{tagLabel}"',
+  }, {
+    nPosts: blogPostsPlural(count),
+    tagLabel
+  });
   return (
     <BlogLayout
       title={title}

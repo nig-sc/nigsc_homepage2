@@ -1,12 +1,5 @@
 import React from 'react';
-// import clsx from 'clsx';
-// import Link from '@docusaurus/Link';
-
 import { useThemeConfig } from '@docusaurus/theme-common';
-// import useBaseUrl from '@docusaurus/useBaseUrl';
-// import isInternalUrl from '@docusaurus/isInternalUrl';
-// import ThemedImage from '@theme/ThemedImage';
-// import IconExternalLink from '@theme/IconExternalLink';
 
 import {
   ServiceGroupsContainer,
@@ -23,12 +16,12 @@ export default function Footer () {
     <footer className={s.Footer}>
       <div className={s.Footer__Contents}>
       <ServiceGroupsContainer>
-        {serviceGroups.map(serviceGroup => (
-          <ServiceGroup key={serviceGroup.title}>
+        {serviceGroups.map((serviceGroup, i) => (
+          <ServiceGroup key={i}>
             <ServiceGroupTitle>{serviceGroup.title}</ServiceGroupTitle>
             <ServiceList>
-              {serviceGroup.items.map(item => (
-                <ServiceListItem href={item.href}>{item.label}</ServiceListItem>
+              {serviceGroup.items.map((item, i) => (
+                <ServiceListItem key={i} href={item.href}>{item.label}</ServiceListItem>
               ))}
             </ServiceList>
           </ServiceGroup>

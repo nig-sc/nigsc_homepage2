@@ -7,12 +7,13 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
+
+import { useTagLabel } from '../hooks'
 
 function Tag(props) {
   const {permalink, name, count} = props;
-  const displayName = translate({ id: `theme.tag.${name}`, message: name })
+  const displayName = useTagLabel(name)
   return (
     <Link
       href={permalink}

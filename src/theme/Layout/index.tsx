@@ -20,7 +20,7 @@ import Footer from '@theme/Footer';
 import LayoutProviders from '@theme/LayoutProviders';
 import type { Props } from '@theme/Layout';
 import ErrorPageContent from '@theme/ErrorPageContent';
-import DDBJNav from '@theme/DDBJNav'
+import DDBJNavbar from './DDBJNavbar';
 
 import './styles.css';
 
@@ -44,7 +44,7 @@ export default function Layout(props: Props): JSX.Element {
 
       <AnnouncementBar />
 
-      <DDBJNav />
+      <DDBJNavbar />
 
       <Navbar />
 
