@@ -1,9 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -59,7 +53,7 @@ function Footer() {
   }
 
   return (
-    <footer 
+    <footer
       className={clsx('footer', {
            'footer--dark': footer.style === 'dark',
       })}>
@@ -126,4 +120,23 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default function Footer () {
+  const { footer } = useThemeConfig()
+
+  return (
+    <footer className={s.Footer}>
+      <div className={s.Footer__Contents}>
+        <Services>
+          <ServicesTitle></ServicesTitle>
+          <ServicesList>
+            Service
+          </ServicesList>
+        </Services>
+
+      </div>
+      <div className={s.Footer__CopyRight}>
+
+      </div>
+    </footer>
+  )
+};
