@@ -4,17 +4,17 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import Link from '@docusaurus/Link';
-import BlogLayout from '@theme/BlogLayout';
-import BlogPostItem from '@theme/BlogPostItem';
-import Translate, {translate} from '@docusaurus/Translate';
-import {ThemeClassNames, usePluralForm} from '@docusaurus/theme-common'; // Very simple pluralization: probably good enough for now
+import React from 'react'
+import Link from '@docusaurus/Link'
+import BlogLayout from '@theme/BlogLayout'
+import BlogPostItem from '@theme/BlogPostItem'
+import Translate, { translate } from '@docusaurus/Translate'
+import { ThemeClassNames, usePluralForm } from '@docusaurus/theme-common' // Very simple pluralization: probably good enough for now
 
 import { useTagLabel } from '../hooks'
 
-function useBlogPostsPlural() {
-  const {selectMessage} = usePluralForm();
+function useBlogPostsPlural () {
+  const { selectMessage } = usePluralForm()
   return (count) =>
     selectMessage(
       count,
@@ -23,28 +23,28 @@ function useBlogPostsPlural() {
           id: 'theme.blog.post.plurals',
           description:
             'Pluralized label for "{count} posts". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-          message: 'One post|{count} posts',
+          message: 'One post|{count} posts'
         },
         {
-          count,
-        },
-      ),
-    );
+          count
+        }
+      )
+    )
 }
 
-function BlogTagsPostPage(props) {
-  const {metadata, items, sidebar} = props;
-  const {allTagsPath, name: tagName, count} = metadata;
-  const blogPostsPlural = useBlogPostsPlural();
+function BlogTagsPostPage (props) {
+  const { metadata, items, sidebar } = props
+  const { allTagsPath, name: tagName, count } = metadata
+  const blogPostsPlural = useBlogPostsPlural()
   const tagLabel = useTagLabel(tagName)
   const title = translate({
     id: 'theme.blog.tagTitle',
     description: 'The title of the page for a blog tag',
-    message: '{nPosts} tagged with "{tagLabel}"',
+    message: '{nPosts} tagged with "{tagLabel}"'
   }, {
     nPosts: blogPostsPlural(count),
     tagLabel
-  });
+  })
   return (
     <BlogLayout
       title={title}
@@ -52,7 +52,7 @@ function BlogTagsPostPage(props) {
       pageClassName={ThemeClassNames.page.blogTagPostListPage}
       searchMetadatas={{
         // assign unique search tag to exclude this page from search results!
-        tag: 'blog_tags_posts',
+        tag: 'blog_tags_posts'
       }}
       sidebar={sidebar}>
       <header className="margin-bottom--xl">
@@ -67,7 +67,7 @@ function BlogTagsPostPage(props) {
         </Link>
       </header>
 
-      {items.map(({content: BlogPostContent}) => (
+      {items.map(({ content: BlogPostContent }) => (
         <BlogPostItem
           key={BlogPostContent.metadata.permalink}
           frontMatter={BlogPostContent.frontMatter}
@@ -78,7 +78,7 @@ function BlogTagsPostPage(props) {
         </BlogPostItem>
       ))}
     </BlogLayout>
-  );
+  )
 }
 
-export default BlogTagsPostPage;
+export default BlogTagsPostPage
