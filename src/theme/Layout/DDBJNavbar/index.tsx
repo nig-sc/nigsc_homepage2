@@ -1,9 +1,9 @@
 import React from 'react'
-import Translate from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate'
 
 import ServiceList, { ServiceListItem } from './ServiceList'
 
-import { default as s } from "./styles.module.css"
+import s from './styles.module.css'
 
 export default function DDBJNavbar (): JSX.Element {
   return (

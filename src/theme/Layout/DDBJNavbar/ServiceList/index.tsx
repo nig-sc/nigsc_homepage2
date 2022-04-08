@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { default as s } from './styles.module.css'
+import s from './styles.module.css'
 
 export function ServiceListItem ({ href, children }) {
   return (
