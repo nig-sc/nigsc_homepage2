@@ -22,9 +22,5 @@
   "item.label.成果報告": {
     "message": "成果報告",
     "description": "Navbar item with label 成果報告"
-  },
-  "item.label.お知らせ": {
-    "message": "お知らせ",
-    "description": "Navbar item with label お知らせ"
   }
 }
