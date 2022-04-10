@@ -3,23 +3,23 @@ id: software
 title: Software
 ---
 
-各ソフトウェアの使い方についてはソフトウェア名のリンク先を参照してください。
+For more information about how to use the software, please click the software name(link) below.
 
-## ジョブスケジューラ
+## Job scheduler
 
 <table>
 <tr>
-<th width="300">名称</th>
-<th width="300">一般解析区画</th>
-<th width="300">個人ゲノム解析区画</th>
+<th width="300">area name</th>
+<th width="300"> general analysis section</th>
+<th width="300">personal genome section</th>
 </tr>
 <tr>
 <td width="300">
 
 [Univa Grid Engine](univa_grid_engine)
 </td>
-<td width="300">インストール済み</td>
-<td width="300">要申請</td>
+<td width="300">installed</td>
+<td width="300">Application Required</td>
 </tr>
 <tr>
 <td width="300">
@@ -27,44 +27,43 @@ title: Software
 Slurm
 </td>
 <td width="300">☓</td>
-<td width="300">要申請</td>
+<td width="300">Application Required</td>
 </tr>
 </table>
 
 
 
-## コンテナ・解析パイプライン
-
+## Container and analysis pipeline
 <table>
 <tr>
-<th width="300">名称</th>
-<th width="300">一般解析区画</th>
-<th width="300">個人ゲノム解析区画</th>
+<th width="300">area name</th>
+<th width="300"> general analysis section</th>
+<th width="300">personal genome section</th>
 </tr>
 <tr>
 <td width="300">
 
 [Singularity](Singularity)
 </td>
-<td width="300">インストール済み</td>
-<td width="300">インストール済み</td>
+<td width="300">installed</td>
+<td width="300">installed</td>
 </tr>
 <tr>
-<td width="300">Rhelixa RNAseqパイプライン</td>
-<td width="300">インストール済み</td>
-<td width="300">要申請</td>
+<td width="300">Rhelixa RNAseq pipeline</td>
+<td width="300">installed</td>
+<td width="300">Application Required</td>
 </tr>
 
 <tr>
 <td width="300">DFAST</td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 
 </table>
 
 
-## バイオインフォマティックスツール
+## Bioinformatics Tools
 
 
 <table border="0">
@@ -77,9 +76,9 @@ Slurm
 <td>
 <h4>Biocontainers Singularity Images</h4>
 
-BioContainers projectが作成したSingularityコンテナイメージ(2千種類を超える解析ソフトウェア、バージョンの違いを含め9万個を超えるSingularityイメージファイル）を、遺伝研スパコンの`/user/local/biotools/`ディレクトリ以下に配置してあります。
+Singularity container images created by the BioContainers project (over 2,000 different analysis software and over 90,000 Singularity image files, including different versions) are available in `/user/local/biotools` directory.
 
-各ソフトウェアの内容、使い方については [BioContainersの公式サイト](https://biocontainers)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
+Please refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a href="https://biocontainers.pro/">BioContainers' official website</a> for the contents and how to use the software.
 
 </td>
 </tr>
@@ -90,41 +89,37 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 
 
 
-## データ転送・データ共有
+## Data transfer and data sharing
 
 <table>
 <tr>
-<th width="300">名称</th>
-<th width="300">一般解析区画</th>
-<th width="300">個人ゲノム解析区画</th>
+<th width="300">area name</th>
+<th width="300"> general analysis section</th>
+<th width="300">personal genome section</th>
 </tr>
 <tr>
 <td width="300">Aspera</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
 <td width="300">☓</td>
 </tr>
 <tr>
 <td width="300">HCPtools</td>
 <td width="300">☓</td>
-<td width="300">要申請</td>
+<td width="300">Application Required</td>
 </tr>
 </table>
 
 
 
-## 開発環境・ライブラリ
+## Development Environment and Libraries
 
-開発環境の多くはシステムにプリインストールされていますが、
-解析の再現などの目的で特定のバージョンが必要な場合、
-解析環境の多くはユーザー権限でインストール可能なのでユーザー自身でインストールするか、
-Singularityコンテナを利用してください。
-
+Many development environments are preinstalled on the system. But if you need a specific version for purposes such as reproducing an analysis, you can either install them yourself because Many analysis environments can be installed with user permission or you can use the Singularity container.
 
 <table>
 <tr>
-<th width="300">名称</th>
-<th width="300">一般解析区画</th>
-<th width="300">個人ゲノム解析区画</th>
+<th width="300">area name</th>
+<th width="300"> general analysis section</th>
+<th width="300">personal genome section</th>
 </tr>
 <tr>
 <td width="300">
@@ -132,8 +127,8 @@ Singularityコンテナを利用してください。
 [Python](python)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -141,8 +136,8 @@ Singularityコンテナを利用してください。
 [R](R)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -150,8 +145,8 @@ Singularityコンテナを利用してください。
 [Jupyter Notebook](jupyter_notebook)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -159,8 +154,8 @@ Singularityコンテナを利用してください。
 [Jupyter Lab](jupyter_lab)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -168,8 +163,8 @@ Singularityコンテナを利用してください。
 R Studio Server
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 
 <tr>
@@ -179,16 +174,16 @@ R Studio Server
 
 </td>
 
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
 
 [Node.JS, TypeScript](typescript)
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -196,8 +191,8 @@ R Studio Server
 [Rust](rust)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -205,8 +200,8 @@ R Studio Server
 C/C++ (GCC)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">
@@ -214,7 +209,7 @@ C/C++ (GCC)
 C/C++ (Intel Compiler)
 
 </td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
 <td width="300">☓</td>
 
 </tr>
@@ -224,7 +219,7 @@ C/C++ (Intel Compiler)
 C/C++ (PGI Compiler)
 
 </td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
 <td width="300">☓</td>
 </tr>
 <tr>
@@ -232,21 +227,22 @@ C/C++ (PGI Compiler)
 
 CUDA
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">OpenMP</td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 <tr>
 <td width="300">MPICH</td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">available</td>
+<td width="300">available</td>
 </tr>
 
 </table>
+
 
 
 
