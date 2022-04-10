@@ -1,24 +1,17 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+import React from 'react'
+import clsx from 'clsx'
+import type { Props } from '@theme/TOC'
+import TOCItems from '@theme/TOCItems'
 
- import React from 'react';
- import clsx from 'clsx';
- import type {Props} from '@theme/TOC';
- import TOCItems from '@theme/TOCItems';
- import RecentBlogPosts from '@theme/RecentBlogPosts';
- import styles from './styles.module.css';
+import RecentBlogPosts from './RecentBlogPosts'
 
- // Using a custom className
- // This prevents TOCInline/TOCCollapsible getting highlighted by mistake
- const LINK_CLASS_NAME = 'table-of-contents__link toc-highlight';
- const LINK_ACTIVE_CLASS_NAME = 'table-of-contents__link--active';
+import styles from './styles.module.css'
 
- export default function TOC({className, ...props}: Props): JSX.Element {
-   return (
+const LINK_CLASS_NAME = 'table-of-contents__link toc-highlight'
+const LINK_ACTIVE_CLASS_NAME = 'table-of-contents__link--active'
+
+export default function TOC ({ className, ...props }: Props): JSX.Element {
+  return (
      <div className={clsx(styles.tableOfContents, 'thin-scrollbar', className)}>
        <TOCItems
          {...props}
@@ -27,5 +20,5 @@
        />
        <RecentBlogPosts />
      </div>
-   );
- }
+  )
+}

@@ -1,14 +1,14 @@
 {
   "link.title.Search": {
-    "message": "Search",
+    "message": "検索",
     "description": "The title of the footer links column with title=Search in the footer"
   },
   "link.title.Database": {
-    "message": "Database",
+    "message": "データベース",
     "description": "The title of the footer links column with title=Database in the footer"
   },
   "link.title.Supercomputer": {
-    "message": "Supercomputer",
+    "message": "スパコン",
     "description": "The title of the footer links column with title=Supercomputer in the footer"
   },
   "link.item.label.getentry": {
