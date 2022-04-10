@@ -60,15 +60,15 @@
     "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
   },
   "sidebar.operationInfoSidebar.category.お知らせ": {
-    "message": "お知らせ",
+    "message": "News",
     "description": "The label for category お知らせ in sidebar operationInfoSidebar"
   },
   "sidebar.operationInfoSidebar.category.障害情報": {
-    "message": "障害情報",
+    "message": "Maintainance Info",
     "description": "The label for category 障害情報 in sidebar operationInfoSidebar"
   },
   "sidebar.operationInfoSidebar.category.稼働状況": {
-    "message": "稼働状況",
+    "message": "Operation Info",
     "description": "The label for category 稼働状況 in sidebar operationInfoSidebar"
   },
   "sidebar.reportSidebar.category.各種統計": {
