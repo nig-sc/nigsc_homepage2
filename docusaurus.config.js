@@ -82,7 +82,6 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Search',

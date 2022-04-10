@@ -11,7 +11,7 @@ import {
 
 const RECENT_POST_COUNT = 5
 
-function ListItem({ post }) {
+function ListItem ({ post }) {
   return (
     <li className={styles.recentBlogPosts__listItem}>
       <Link className={styles.recentBlogPosts__listItemLink} to={post.metadata.permalink}>{post.metadata.title}</Link>
@@ -19,7 +19,7 @@ function ListItem({ post }) {
   )
 }
 
-export default function RecentBlogPosts() {
+export default function RecentBlogPosts () {
   const newsPosts = useNewsPosts()
   const troubleReportPosts = useTroublereportPosts()
 

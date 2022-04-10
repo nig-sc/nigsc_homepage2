@@ -3,10 +3,6 @@
     "message": "NIG Supercomputer",
     "description": "The title in the navbar"
   },
-  "item.label.ホーム": {
-    "message": "Home",
-    "description": "Navbar item with label ホーム"
-  },
   "item.label.利用申請等": {
     "message": "Make Application",
     "description": "Navbar item with label 利用申請等"
@@ -26,9 +22,5 @@
   "item.label.成果報告": {
     "message": "Reports",
     "description": "Navbar item with label 成果報告"
-  },
-  "item.label.お知らせ": {
-    "message": "News",
-    "description": "Navbar item with label お知らせ"
   }
 }
