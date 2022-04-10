@@ -1,10 +1,10 @@
-import { usePluginData } from '@docusaurus/useGlobalData';
+import { usePluginData } from '@docusaurus/useGlobalData'
 
-export const TAG_NEWS = "news"
-export const TAG_TROUBLEREPORT = "troublereport"
+export const TAG_NEWS = 'news'
+export const TAG_TROUBLEREPORT = 'troublereport'
 
-export function usePosts() {
-  const { blogPosts: posts } = usePluginData("nigsc-plugin-blog-data")
+export function usePosts () {
+  const { blogPosts: posts } = usePluginData('nigsc-plugin-blog-data')
   return posts
 }
 

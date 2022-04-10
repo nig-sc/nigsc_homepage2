@@ -1,0 +1,27 @@
+.DDBJNavbar {
+  display: flex;
+  color: white;
+  background: linear-gradient(0deg, #000 0%, #333 100%);
+  font-size: 1.2rem;
+}
+
+.DDBJNavbar__Brand {
+  flex-shrink: 0;
+  display: block;
+  padding: 0.75rem;
+}
+
+.DDBJNavbar__Brand:hover {
+  opacity: 0.5;
+}
+
+.DDBJNavbar__BrandImage {
+  display: block;
+  width: auto;
+  height: 1.75rem;
+}
+
+.DDBJNavbar__Contents {
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
