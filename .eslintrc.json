@@ -32,5 +32,6 @@
     },
     "globals": {
         "JSX": true
-    }
+    },
+    "indent": ["error", 2]
 }
