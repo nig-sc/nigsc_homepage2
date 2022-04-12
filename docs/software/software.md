@@ -16,7 +16,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[Univa Grid Engine](univa_grid_engine)
+[Grid Engine](/software/grid_engine)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">要申請</td>
@@ -31,7 +31,7 @@ Slurm
 </tr>
 </table>
 
-ジョブスケジューラを利用する際に、リソース量の指定が不適当なためにジョブがいつまで経っても実行されないというケースが見受けられます。そのためUniva Grid Engineへのジョブ投入時に予め警告を表示する`qsub_beta`というツールを用意しました。[利用方法はこちらをご覧ください。](qsub_beta)
+ジョブスケジューラを利用する際に、リソース量の指定が不適当なためにジョブがいつまで経っても実行されないというケースが見受けられます。そのため Univa Grid Engine へのジョブ投入時に予め警告を表示する`qsub_beta`というツールを用意しました。[利用方法はこちらをご覧ください。](qsub_beta)
 
 
 ## コンテナ・解析パイプライン
@@ -51,7 +51,7 @@ Slurm
 <td width="300">インストール済み</td>
 </tr>
 <tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/Rhelixa_RNAseq">Rhelixa RNAseqパイプライン</a></td>
+<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/Rhelixa_RNAseq">Rhelixa RNAseq パイプライン</a></td>
 <td width="300">インストール済み</td>
 <td width="300">要申請</td>
 </tr>
@@ -76,9 +76,9 @@ Slurm
 <td>
 <h4>Biocontainers Singularity Images</h4>
 
-BioContainers projectが作成したSingularityコンテナイメージ(2千種類を超える解析ソフトウェア、バージョンの違いを含め9万個を超えるSingularityイメージファイル）を、遺伝研スパコンの`/usr/local/biotools/`ディレクトリ以下に配置してあります。
+BioContainers project が作成した Singularity コンテナイメージ(2 千種類を超える解析ソフトウェア、バージョンの違いを含め 9 万個を超える Singularity イメージファイル）を、遺伝研スパコンの`/usr/local/biotools/`ディレクトリ以下に配置してあります。
 
-各ソフトウェアの内容、使い方については [BioContainersの公式サイト](https://biocontainers.pro)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
+各ソフトウェアの内容、使い方については [BioContainers の公式サイト](https://biocontainers.pro)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
 
 </td>
 </tr>
@@ -124,7 +124,7 @@ BioContainers projectが作成したSingularityコンテナイメージ(2千種�
 開発環境の多くはシステムにプリインストールされていますが、
 解析の再現などの目的で特定のバージョンが必要な場合、
 解析環境の多くはユーザー権限でインストール可能なのでユーザー自身でインストールするか、
-Singularityコンテナを利用してください。
+Singularity コンテナを利用してください。
 
 
 <table>
