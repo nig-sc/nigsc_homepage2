@@ -85,8 +85,8 @@ module.exports = {
             type: 'category',
             label: 'パッケージマネージャ',
             items: [
-                "software/spack",
-                "software/nixpkgs"
+                "software/spack/spack",
+                "software/nixpkgs/nixpkgs"
             ]
         },
 
@@ -109,8 +109,6 @@ module.exports = {
                     items: [
                         "software/aspera/aspera",
                         "software/aspera/install_Aspera",
-                        "software/aspera/Aspera_adjust_path_windows_mac",
-                        "software/aspera/Aspera_adjust_path_Linux",
                     ],
                 },
                 {
@@ -230,6 +228,7 @@ module.exports = {
     faqSidebar: [
         "faq/faq1",
         "faq/faq_hcptools",
+         "faq/faq_aspera",
     ]
 
 

@@ -1,42 +1,26 @@
 ---
 id: install_Aspera
-title: Asperaのインストール
+title: Aspera のインストール
 ---
 
-## Asperaクライアントソフトウェアのインストール
+## Aspera クライアントソフトウェアのインストール
 
-クライアントソフトウェアにはWebインタフェイス版(aspera connect)とコマンドラインインタフェイス版(`ascp`)があり、
-バージョン4以降が必要です。（Asperaサーバとクライアントのバージョンの組み合わせの関係により3.9.xはMacでは動作せず、Windows, Linuxではパスフレーズを指定していない秘密鍵・公開鍵では動作しません。）このバージョン4をインストールするためには以下の手順でインストールします。
+クライアントソフトウェアには Web インタフェイス版(aspera connect)とコマンドラインインタフェイス版(`ascp`)があり、
+バージョン 4 以降が必要です。
 
-コマンドライン版クライアント`ascp`はWebインタフェイス版のaspera connectをインストールすると一緒にインストールされます。（また、Aspera connectのWebブラウザプラグインをインストールしないとこれらクライアントソフトウェアはダウンロードできません。)
+- Aspera サーバとクライアントのバージョンの組み合わせの関係により 3.9.x は Mac では動作せず、Windows, Linux ではパスフレーズを指定していない秘密鍵・公開鍵では動作しません。
+-  Aspera connect の Web ブラウザプラグインをインストールしないとバージョン 4 の `ascp` コマンドをダウンロードできないのでご注意下さい。
+
 
 インストール手順の概要は以下のとおりです。
 
 1. インストーラのダウンロード
-2. インストーラの実行
-3. `ascp`のパスの調整
+2. インストーラの実行と`ascp`のパスの調整
 
 
-### インストール手順の概要
+## インストーラのダウンロード
 
-Asperaを利用するには無料のクライアントソフトウェアをインストールする必要があります。
-
-
-クライアントソフトウェアにはWebインタフェイス版(aspera connect)とコマンドラインインタフェイス版(`ascp`)があり、
-バージョン4以降が必要です。（Asperaサーバとクライアントのバージョンの組み合わせの関係により3.9.xはMacでは動作せず、Windows, Linuxではパスフレーズを指定していない秘密鍵・公開鍵では動作しません。）このバージョン4をインストールするためには以下の手順でインストールします。
-
-コマンドライン版クライアント`ascp`はWebインタフェイス版のaspera connectをインストールすると一緒にインストールされます。（また、Aspera connectのWebブラウザプラグインをインストールしないとこれらクライアントソフトウェアはダウンロードできません。)
-
-インストール手順の概要は以下のとおりです。
-
-1. インストーラのダウンロード
-2. インストーラの実行
-3. `ascp`のパスの調整
-
-
-### インストーラのダウンロード
-
-Windows, Mac, Linuxとも同様の手順となります。
+Windows, Mac, Linux とも同様の手順となります。
 
 
 1, ウェブブラウザで https://www.ibm.com/aspera/connect/ を開き、「Aspera Connect のダウンロード」をクリックする。
@@ -44,12 +28,12 @@ Windows, Mac, Linuxとも同様の手順となります。
 ![](aspera01.png)
 
 
-2, 「アドオンのインストール」（Firefoxの場合）または「拡張機能のインストール」（Chromeの場合）をクリックする。
+2, 「アドオンのインストール」（Firefox の場合）または「拡張機能のインストール」（Chrome の場合）をクリックする。
 
 ![](aspera02.png)
 
 
-3, 「Add to Firefox」（Firefoxの場合）または「Chromeに追加」（Chromeの場合）をクリックしてIBM Aspera Connect アドオンをウェブブラウザにインストールする。
+3, 「Add to Firefox」（Firefox の場合）または「Chrome に追加」（Chrome の場合）をクリックして IBM Aspera Connect アドオンをウェブブラウザにインストールする。
 
 ![](aspera03a.png)
 
@@ -63,7 +47,33 @@ Windows, Mac, Linuxとも同様の手順となります。
 ![](aspera04b.png)
 
 
-### インストーラの実行とパスの調整
+## インストーラの実行とパスの調整
 
-- [windowsまたはMac OSの場合](/software/aspera/Aspera_adjust_path_windows_mac)
-- [Linuxの場合](/software/aspera/Aspera_adjust_path_Linux)
+
+### クライアント計算機が Windows または Mac の場合
+
+
+Windows と Mac の場合はダウンロードしたインストーラを実行してください。
+インストーラを実行するとパスも設定されます。
+
+![](aspera05.png)
+
+
+### クライアント計算機が Linux の場合 
+
+
+Linux の場合は上記の手順で
+`ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz`
+のようなファイルがダウンロードされてくるので、解凍して bash で実行します。ユーザー権限でインストール可能です。
+
+```
+tar zxvf ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
+bash ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
+```
+インストーラを実行すると、`$HOME/.aspera/connect/bin`の下に実行ファイルが展開されるのでここにパスを通します。
+
+```
+export PATH=$HOME/.aspera/connect/bin:$PATH
+```
+
+
