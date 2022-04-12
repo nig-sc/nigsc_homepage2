@@ -83,6 +83,16 @@ module.exports = {
         },
         {
             type: 'category',
+            label: 'パッケージマネージャ',
+            items: [
+                "software/spack",
+                "software/nixpkgs"
+            ]
+        },
+
+
+        {
+            type: 'category',
             label: 'コンテナ・解析パイプライン',
             items: [
                 "software/Singularity",
