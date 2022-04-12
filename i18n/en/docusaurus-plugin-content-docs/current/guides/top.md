@@ -25,7 +25,7 @@ If you wish to continue using the system, please inform us at sc-helpdesk@nig.ac
 
 ## Scheduled maintenance in 2022
 
-Scheduled maintenance for the next fiscal year will be done twice, around the end of June and in November.
+In FY2022, we plan to perform scheduled maintenance twice, around the end of June and in November.
 
 
 ## About Acknowledgements
