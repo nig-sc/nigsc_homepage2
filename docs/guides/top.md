@@ -23,6 +23,7 @@ sidebar_label: トップページ
 - [データ転送ソフト Aspera と HCP tools のページを追加しました](/blog/2022-04-12-news_Aspera_HCP) (2022.04.12)
 - [Grid Engine のページを更新しました](/blog/2022-04-12-news_Grid_Engine) (2022.04.12)
 - [ゲートウェイノードを追加しました](blog/2022-03-17-gateway_ga) (2022.03.17)
+- [パッケージマネージャspack, nixについてページを追加しました](/blog/2022-04-13-news_spack_nix) (2022.03.17)
 
 
 ## 年度末アカウント継続申請について
