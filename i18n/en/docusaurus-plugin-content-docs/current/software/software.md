@@ -82,6 +82,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <td width="300">
 
+
 [Singularity](Singularity)
 </td>
 <td width="300">installed</td>
@@ -137,16 +138,26 @@ Please refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a 
 <th width="300">personal genome section</th>
 </tr>
 <tr>
-<td width="300">[Aspera](./aspera/aspera.md)</td>
+<td width="300">
+
+[Aspera](./aspera/aspera.md)
+
+</td>
 <td width="300">available</td>
 <td width="300">☓</td>
 </tr>
 <tr>
-<td width="300">(./HCPtools/hcptools.md)</td>
+<td width="300">
+
+[HCPtools](./HCPtools/hcptools.md)
+
+</td>
 <td width="300">☓</td>
 <td width="300">Application Required</td>
 </tr>
 </table>
+
+
 
 
 
