@@ -32,8 +32,47 @@ Slurm
 </table>
 
 
+## Package managers
+
+
+The following package managers can be used only with user permission. They facilitate the construction of development and analysis environments.
+
+<table>
+<tr>
+<th width="300">area name</th>
+<th width="300"> general analysis section</th>
+<th width="300">personal genome section</th>
+</tr>
+<tr>
+<td width="300">
+
+[Spack](/software/spack)
+</td>
+<td width="300">available</td>
+<td width="300">available</td>
+</tr>
+<tr>
+<td width="300">
+
+[Nixpkgs (NixOS)](/software/nixpkgs)
+</td>
+<td width="300">available</td>
+<td width="300">available</td>
+</tr>
+
+<tr>
+<td width="300">
+
+[Environmental Modules](/software/environmental_modules)
+</td>
+<td width="300">available</td>
+<td width="300">available</td>
+</tr>
+
+</table>
 
 ## Container and analysis pipeline
+
 <table>
 <tr>
 <th width="300">area name</th>
@@ -49,13 +88,13 @@ Slurm
 <td width="300">installed</td>
 </tr>
 <tr>
-<td width="300">Rhelixa RNAseq pipeline</td>
+<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/Rhelixa_RNAseq">Rhelixa RNAseq pipeline</a></td>
 <td width="300">installed</td>
 <td width="300">Application Required</td>
 </tr>
 
 <tr>
-<td width="300">DFAST</td>
+<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/advanced_guide#dfast">DFAST</a></td>
 <td width="300">available</td>
 <td width="300">available</td>
 </tr>
@@ -98,12 +137,12 @@ Please refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a 
 <th width="300">personal genome section</th>
 </tr>
 <tr>
-<td width="300">Aspera</td>
+<td width="300">[Aspera](./aspera/aspera.md)</td>
 <td width="300">available</td>
 <td width="300">☓</td>
 </tr>
 <tr>
-<td width="300">HCPtools</td>
+<td width="300">(./HCPtools/hcptools.md)</td>
 <td width="300">☓</td>
 <td width="300">Application Required</td>
 </tr>
