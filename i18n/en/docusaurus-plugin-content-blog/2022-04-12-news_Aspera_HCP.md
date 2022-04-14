@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-12-news_Aspera_HCP
-title: April 12, 2022 (Thuesday) Added pages for Aspera and HCP tools
+title: April 12, 2022 (Thuesday) Added pages for high-speed data transfer software Aspera and HCP tools
 tags:
   - news
 authros:
