@@ -1,54 +1,52 @@
 ---
 id: spack
-title: spack の使い方
+title: How to use spack
 ---
 
-Spack はユーザ権限で利用できるパッケージマネージャです。
+Spack is a package manager available with user permission.
 
+References
 
-参考資料
+- [Spack Official Web Site](https://spack.readthedocs.io/en/latest/#)
+- [Spack github repository](https://github.com/spack/spack)
+- [Spack packages](https://spack.github.io/packages/) (search site for packages available in spack)
 
-- [Spack 公式ホームページ](https://spack.readthedocs.io/en/latest/#)
-- [Spack github リポジトリ](https://github.com/spack/spack)
-- [Spack packages](https://spack.github.io/packages/) (spack で利用可能なパッケージの検索サイト)
+## How to install spack
 
-
-## spack のインストール方法
-
-1, spack を github からユーザのホームディレクトリなどにクローンして下さい。
+1, You can clone spack from the github repository using the following commands to the user's home directory, etc.:
 
 ```
 cd $HOME
 git clone -c feature.manyFiles=true https://github.com/spack/spack.git
 ```
 
-ホームディレクトリ上に`spack`というディレクトリが作られます。
+A directory called `spack` is created in the home directory.
 
 
-2, 次に、以下を実行してください。（次回ログイン時に自動的に呼ばれるよう`~/.bashrc`にも追加してください。）
+2, Executing the following commands will set up your `PATH`.
+（To be called automatically when you log it in the next time, add these `~/bashrc`.)
 
 ```
 export SPACK_ROOT=/home/your_account/spack
 source $SPACK_ROOT/share/spack/setup-env.sh
 ```
 
-3, spack は python インタプリタ(version 3 系)を使います。
-spack でつかう python インタプリタを明示的に指定する場合は`SPACK_PYTHON`環境変数を設定して下さい。
+3, When the spack command is executed, it uses Python interpreter version 3. You can explicitly decide on Python interpreter for using spack commands by setting the 'SPACK_PYTHON' environment variable. 
 
 
-## spack で利用可能なパッケージを表示する
+## list available packages
 
-### `spack list`, `spack info`コマンド
+### `spack list`, `spack info`
 
-`spack list`コマンドにより利用可能なパッケージの一覧が表示できます。
-（初回実行時のみ表示に時間がかかります。）
+list available packages by `spack list`
+（It takes time to list only the first time when it is executed.）
 
 ```
 $ spack list | wc
    6348    6348   68228
 ```
 
-`spack info`コマンドで利用可能なパッケージの詳細を表示することができます。
+Get and list detailed information on a particular package by `spack info`
 
 ```
 $ spack info gcc
@@ -134,52 +132,61 @@ Run Dependencies:
 ```
 
 
-### "Spack packages" Web サイト
+### "Spack packages" website
 
-https://spack.github.io/packages/ Web サイトから spack で利用可能なパッケージを検索できます。
+On "<a href="https://spack.github.io/packages/">Spack packages</a>", you can search packages available spack command.
 
 ![](spack_220411.png)
 
 
-## パッケージをインストールする
+## Install packages
 
-`spack install`コマンドでパッケージをインストールします。（アンインストールは`spack unintall`）
+Install packages by `spack install`
 
-### 最も簡単な例
+Uninstall packages by `spack unintall`
+
+### The simplest example
 
 ```
 spack install tree
 ```
 
-### バージョンの指定
+### Specify version
 
-バージョンを指定してインストールするには以下のようにします。
+Install a specified version with optional arguments
 
 ```
 spack install -j 4 --fail-fast gcc@8.5.0
 ```
 
-- `--fail-fast` : インストール時にコンパイルエラーなどが発生したらその時点で実行を終了する。
-- `-j` : コンパイル時の並列数を指定する。
+- `--fail-fast` : stop all builds if any build fails 
+- `-j` : explicitly set number of parallel jobs
 
-その他のオプションについては、`spack help install`の出力を参照して下さい。
+Show help for other commands
+
+`spack help install`
 
 
-### インストール時のコンパイル条件の指定
 
-`spack info`コマンドの実行時に表示される Variants の項目を利用して、
-インストール時のコンパイル条件を指定することができます。
+
+### Specify compile conditions for installation
+
+You can specify the compile conditions for the installation by using Variants items listed detailed information on a particular package `spack info` command. 
+
 
 ```
 spack install -j 4 --fail-fast gcc@8.5.0 binutils=True
 ```
 
 
-## インストールしたパッケージを利用可能にする
+## Make installed packages available
 
-`spack load`コマンドでインストールしたパッケージを利用可能にします。（`spack unload`でロードの解除）
+Make installed packages available by `spack load` command.
 
-これにより複数のバージョンを切り替えることができます。
+Unload by `spack unload` command.
+
+
+You can switch between multiple versions by `spack load` command.
 
 ```
 spack load gcc@8.5.0
