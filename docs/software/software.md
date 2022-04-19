@@ -52,14 +52,6 @@ title: ソフトウェア
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
 </tr>
-<tr>
-<td width="300">
-
-[Nixpkgs (NixOS)](/software/nixpkgs)
-</td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
-</tr>
 
 <tr>
 <td width="300">

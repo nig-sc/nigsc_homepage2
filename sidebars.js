@@ -85,9 +85,20 @@ module.exports = {
             type: 'category',
             label: 'パッケージマネージャ',
             items: [
-                "software/spack/spack",
-                "software/nixpkgs/nixpkgs",
-                "software/environmental_modules/environmental_modules",
+                {
+                    type: 'category',
+                    label: 'Spack',
+                    items: [
+                        "software/spack/spack",
+                    ]
+                },
+                {
+                    type: 'category',
+                    label: 'Environmental modules',
+                    items: [
+                        "software/environmental_modules/environmental_modules",
+                    ]
+                },
             ]
         },
 

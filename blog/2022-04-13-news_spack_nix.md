@@ -9,11 +9,10 @@ authros:
 date: 2022-04-13
 ---
 
-ホームページに ユーザ権限で使えるパッケージマネージャspack, nixについてページを追加しました。
+ホームページに ユーザ権限で使えるパッケージマネージャ spack, nix についてページを追加しました。
 
 以下のパッケージマネージャはユーザ権限だけで利用可能です。開発・解析環境の構築が容易になります。
 
 - [spack](/software/spack/)
-- [nix](/software/nixpkgs/)
 - [Environmental Modules](/software/environmental_modules/)
 
