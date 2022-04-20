@@ -180,6 +180,9 @@ module.exports = {
         "Alphafold 2.1":[
             "advanced_guides/Alphafold_2_1"
         ],
+        "Alphafold 2.2":[
+            "advanced_guides/Alphafold_2_2"
+        ],
         "講習会": [
             "advanced_guides/IIBMP2021",
             "advanced_guides/IIBMP2020",
