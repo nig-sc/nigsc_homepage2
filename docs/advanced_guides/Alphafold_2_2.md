@@ -1,14 +1,14 @@
 ---
-id: Alphafold_2_1
-title: 遺伝研スパコンでのalphafold 2.1の実行
+id: Alphafold_2_2
+title: 遺伝研スパコンでのalphafold 2.2の実行
 ---
 
 
 ## 概略
-遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.1</a>（Yoshitaka Moriwaki氏の<a href="https://gist.github.com/YoshitakaMo/">パッチ</a>適用済み）をインストールしたsingularity imageとalphafold 2.1で使用するデータベースを /lustre7/software/alphafold/2.1.1/ に用意してあります。
+遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.2.0</a>をインストールしたsingularity imageとalphafold 2.2で使用するデータベースを /lustre7/software/alphafold/2.2.0/ に用意してあります。
 
 
-alphafold 2.1によるタンパク質の立体構造予測は以下のステップで実行されます。
+alphafold 2.2によるタンパク質の立体構造予測は以下のステップで実行されます。
 
 
 1. jackhmmerによるuniref90データベースを対象とした入力アミノ酸配列の検索（CPU使用）
@@ -20,27 +20,48 @@ alphafold 2.1によるタンパク質の立体構造予測は以下のステッ�
 7. 機械学習による立体構造予測（CPUまたはGPU使用）
 8. OpenMMによる構造最適化（CPUまたはGPU使用）
 
-
 入力アミノ酸配列が多量体の場合、ステップ1-6は多量体を構成するサブユニットのアミノ酸配列ごとに実行されます。
-
 
 デフォルトの設定では5つのモデルの構造予測を行うようになっており、ステップ7・8は5回実行されます。また、ステップ7・8はCPUの他にGPUを使用できるため、CPU用とGPU用のsingularity imageをそれぞれ用意してあります。
 
+また、2.2より複合体の構造予測はデフォルトの設定では1モデルに対して5個の予測を行うようになり、総計25個の構造予測が出力されます。
+
  
-（実行時間の目安）
+### 実行時間の目安
+
+- ステップ1: 10 min
+- ステップ2: 10 min
+- ステップ3: 5min
+- ステップ4: 5 hour
+- ステップ5: 1 min
+- ステップ6: 15 min
+- ステップ7: 200aaで1 hour, 900aaで3 hour（64CPUコア使用）, 200aaで2min, 900aaで6 min（GPU使用）
+- ステップ8: 200aaで0.5 min, 900aaで1 hour（64CPUコア使用）, 200aaで0.3min, 900aaで3 min（GPU使用）
 
 
 ## 入力ファイルの準備
 
 立体構造を予測するタンパク質のアミノ酸配列を1ファイルのfasta形式で用意してください。対象タンパク質が多量体の場合は、構成するサブユニットのアミノ酸配列をすべて1ファイルに入力してください。同じサブユニットを複数含む場合は、その数だけ該当するサブユニットのアミノ酸配列を入力してください。
 
+以下のfastaファイルはEcoRIホモ二量体の例となります。
 
-（入力ファイルのサンプル）
+```
+>EcoRI
+SNKKQSNRLTEQHKLSQGVIGIFGDYAKAHDLAVGEVSKLVKKALSNEYPQLSFRYRDSIKKTEINEALK
+KIDPDLGGTLFVSNSSIKPDGGIVEVKDDYGEWRVVLVAEAKHQGKDIINIRNGLLVGKRGDQDLMAAGN
+AIERSHKNISEIANFMLSESHFPYVLFLEGSNFLTENISITRPDGRVVNLEYNSGILNRLDRLTAANYGM
+PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
+>EcoRI
+SNKKQSNRLTEQHKLSQGVIGIFGDYAKAHDLAVGEVSKLVKKALSNEYPQLSFRYRDSIKKTEINEALK
+KIDPDLGGTLFVSNSSIKPDGGIVEVKDDYGEWRVVLVAEAKHQGKDIINIRNGLLVGKRGDQDLMAAGN
+AIERSHKNISEIANFMLSESHFPYVLFLEGSNFLTENISITRPDGRVVNLEYNSGILNRLDRLTAANYGM
+PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
+```
 
 
 ## ジョブスクリプトの準備
 
-/lustre7/software/alphafold/にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+/lustre7/software/alphafold/2.2.0/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
 
 
 ### example_job_script_cpu.sh
@@ -58,17 +79,22 @@ FASTAFILE="${HOME}/input/test.fasta"
 OUTPUTDIR="${HOME}/output"
 DATE="2021-11-12"
 MODEL="monomer"
+PRED=5
 
 export OPENMM_CPU_THREADS=16
+export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=16"
 
 singularity exec \
--B /lustre7/software/alphafold/database:/data1/database \
-/lustre7/software/alphafold/alphafold-2.1-CPU.sif \
+-B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
+-B /lustre7/software/alphafold/2.2.0/database:/data1/database \
+/lustre7/software/alphafold/2.2.0/alphafold-2.2.0-CPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
 --model_preset=${MODEL} \
---max_template_date=${DATE}
+--max_template_date=${DATE} \
+--use_gpu_relax=false \
+--num_multimer_predictions_per_model=${PRED}
 ```
 
 
@@ -80,9 +106,14 @@ singularity exec \
 ```
 export OPENMM_CPU_THREADS=16
 ```
-使用するCPUコア数を16以上128以下で入力してください。両方の行に同じ数値を入力してください。
+
+```
+export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=16"
+```
+使用するCPUコア数を16以上128以下で入力してください。3行に同じ数値を入力してください。
 
 この値はステップ8で使用するCPUコア数を決定します。この値が大きければ大きいほどステップ8の処理が速くなります。
+
 
 
 ``` 
@@ -120,8 +151,14 @@ DATE="2021-11-12"
 ```
 MODEL="monomer"
 ```
+
 入力ファイルの内容に従って単量体タンパク質の構造予測の場合はmonomer、多量体タンパク質の構造予測の場合はmultimerを入力してください。
 
+```
+PRED=5
+```
+
+MODEL=”multimer” を指定した際に、1モデルに対していくつ予測を実行するかを指定します。デフォルト値は5で、総計25個の予測結果が出力されます。この値はMODEL=”monomer” を指定した際は無視されます。
 
 ### example_job_script_gpu.sh
 
@@ -141,16 +178,19 @@ FASTAFILE="${HOME}/input/test.fasta"
 OUTPUTDIR="${HOME}/output"
 DATE="2021-11-12"
 MODEL="monomer"
+PRED=5
 
 singularity exec \
 --nv \
--B /lustre7/software/alphafold/database:/data1/database \
-/lustre7/software/alphafold/alphafold-2.1-GPU.sif \
+-B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
+-B /lustre7/software/alphafold/2.2.0/database:/data1/database \
+/lustre7/software/alphafold/2.2.0/alphafold-2.2.0-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
 --model_preset=${MODEL} \
---max_template_date=${DATE}
+--max_template_date=${DATE} \
+--num_multimer_predictions_per_model=${PRED}
 ```
 
 #### 修正箇所
@@ -158,38 +198,46 @@ singularity exec \
 ```
 #$ -l cuda=1
 ```
+
 構造予測するタンパク質の大きさが1000アミノ酸残基程度までは cuda=1 で実行可能です。GPUのメモリ不足でエラーになった場合、数を増やして実行してください。
 
- 
-```
+``` 
 FASTAFILE="${HOME}/input/test.fasta"
 ```
-入力ファイルのパスを入力してください。
 
+入力ファイルのパスを入力してください。
 
 ```
 OUTPUTDIR="${HOME}/output"
 ```
+
 結果を出力するディレクトリのパスを入力してください。
 
 このディレクトリ内に入力ファイル名から拡張子を除いた名前でディレクトリが作成され、結果が出力されます。同じ名前のディレクトリが既に存在し、その中に計算結果が入っていた場合、類縁配列の検索（ステップ1-6）は行われず立体構造の予測部分（ステップ7・8）のみ再計算されます。
 
- 
-```
+``` 
 DATE="2021-11-12"
 ```
+
 立体構造の予測に使用するPDBの構造データのリリース日の上限を指定してください。この日付よりリリース日が新しい構造データは使用されません。
 
-
-```
+``` 
 MODEL="monomer"
 ```
+
 入力ファイルの内容に従って単量体タンパク質の構造予測の場合はmonomer、多量体タンパク質の構造予測の場合はmultimerを入力してください。
+
+``` 
+PRED=5
+```
+
+MODEL=”multimer” を指定した際に、1モデルに対していくつ予測を実行するかを指定します。デフォルト値は5で、総計25個の予測結果が出力されます。この値はMODEL=”monomer” を指定した際は無視されます。
 
 
 ## ジョブの実行
 
 ジョブスクリプトをqsubコマンドでUGEに投入してください。
+
 ```
 $ qsub example_job_script_cpu.sh
 ```
@@ -197,7 +245,6 @@ $ qsub example_job_script_cpu.sh
 ```
 $ qsub example_job_script_gpu.sh
 ```
-
 
 ## 出力例
 
