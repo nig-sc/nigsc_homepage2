@@ -1,46 +1,44 @@
 ---
 id: ga_login
-title: "ログイン方法(一般解析区画)"
+title: "How to Login (A general analysis section)"
 ---
 
+[Register your SSH public key](/application/ssh_keys)  after your account registration.
 
-ユーザー登録後、まず最初に必ず[SSH公開鍵の登録](/application/ssh_keys)を行ってください。
+##  How to log in to the general analysis section with your account
 
-
-## ログインの手順
-
-
-1, ターミナルエミュレータを開き、`ssh ユーザ名@ゲートウェイノード名` を入力し、enter を押下します。
-（Windows PowerShellのSSHクライアントの場合も同じです。）
+1. Open a terminal emulator. On its screen, enter ssh `username@gatewaynodename`. Then press enter. (The same is true for the Windows PowerShell SSH client.)
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
 ```
 
-2, "Enter passphrase for key ..."のプロンプトに対し、SSH鍵ペアのパスフレーズを入力し、enter を押下します。
+2. In "Enter passphrase for key ...", enter the passphrase for the SSH key pair and press enter.
 
-※ 鍵のパスフレーズ入力後に以下のメッセージが出力された場合は、yes を入力してください。
+Enter "yes" to continue connecting after entering the key passphrase.
+
 ```
 Are you sure you want to continue connecting (yes/no)?
+
 ```
 
-
-3, `qlogin` コマンドを実行し、ログインノードにログインします。
+3, Execute 'qlogin' command to log in to the login node.
 
 ```
 $ qlogin
 ```
 
-パスワード入力後に以下のメッセージが出力された場合は、yes を入力してください。
+Enter "yes" to continue connecting after entering your password.
+
 ```
 Are you sure you want to continue connecting (yes/no)?
+
 ```
 
 
+### Execution example
 
-### 実行例
-
-以下のように表示されれば成功です。
+You can see the following message means success on your display.
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
@@ -60,34 +58,29 @@ Last login: Sun Sep 26 15:29:09 2021 from gw1
 $ 
 ```
 
-うまく行かない場合は、[よくある質問(FAQ)](/faq/faq1)を参照してください。
+If it does not work, refer to [FAQ](/faq/faq1).
 
 
+## Notes on available memory
 
-## 利用可能メモリに関する注意
-
-
-ログインノードで利用可能なメモリはデフォルトでは4GBです。
-これを増やすには以下のように`qlogin`時にメモリ量を指定してください。
+The default available memory for a login node is 4GB.
+Specify the amount of memory at `qlogin` as follows to increase this.
 
 ```
 qlogin -l s_vmem=10G -l mem_req=10G
 ```
 
-### 参考
+### Reference
 
-- [Javaの使い方](/software/java) > 注意事項 Javaプログラムを起動するとメモリが足りないとのエラーが出る
-- [Singularityの使い方](/software/Singularity) > スパコン上でのイメージのビルド : DockerコンテナイメージからSingularityイメージを生成する
-
-
+- [How to use Java](/software/java) > Notes: when the Java program launches, you get an error message saying out of memory.
+- [How to use Singularity](/software/singularity) > Building Images on Supercomputer : Generating Singularity Image from Docker Container Image
 
 
-## GPUノードの利用方法
+## How to use the GPU node
 
 
-GPUを用いたプログラムの開発や動作テストの目的で、GPUを搭載したログインノードを１台用意しています。
-このログインノードを使うには、`-l gpu`オプションを付けて`qlogin`してください。
-
+For the purpose of developing programs using GPUs and testing their operation, we have a login node equipped with a GPU.
+To use this login node, `qlogin` with the `-l gpu` option.
 
 ```
 qlogin -l gpu
