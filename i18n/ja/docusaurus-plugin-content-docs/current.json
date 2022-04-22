@@ -95,8 +95,8 @@
     "message": "お知らせ",
     "description": "The label for link お知らせ in sidebar operationInfoSidebar, linking to /blog/tags/news"
   },
-  "sidebar.operationInfoSidebar.link.障害情報": {
-    "message": "障害情報",
-    "description": "The label for link 障害情報 in sidebar operationInfoSidebar, linking to /blog/tags/troublereport"
+  "sidebar.operationInfoSidebar.link.メンテナンス情報": {
+    "message": "メンテナンス情報",
+    "description": "The label for link メンテナンス情報 in sidebar operationInfoSidebar, linking to /blog/tags/maintenance"
   }
 }

@@ -5,11 +5,11 @@
   "themes.recentBlogPosts.moreNewsPosts": {
     "message": "すべてのお知らせを見る"
   },
-  "themes.recentBlogPosts.recentTroubleReportPosts": {
-    "message": "最近の障害報告"
+  "themes.recentBlogPosts.recentMaintenancePosts": {
+    "message": "最近のメンテナンス情報"
   },
-  "themes.recentBlogPosts.moreTroubleReportPosts": {
-    "message": "すべての障害報告を見る"
+  "themes.recentBlogPosts.moreMaintenancePosts": {
+    "message": "すべてのメンテナンス情報を見る"
   },
   "theme.NotFound.title": {
     "message": "ページが見つかりません",
@@ -186,8 +186,8 @@
   "theme.tag.news": {
     "message": "お知らせ"
   },
-  "theme.tag.troublereport": {
-    "message": "障害報告"
+  "theme.tag.maintenance": {
+    "message": "メンテナンス情報"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
