@@ -3,13 +3,15 @@ import Translate from '@docusaurus/Translate'
 
 import ServiceList, { ServiceListItem } from './ServiceList'
 
+import DdbjBrand from '@site/static/img/ddbj-brand.svg';
+
 import s from './styles.module.css'
 
 export default function DDBJNavbar (): JSX.Element {
   return (
     <nav className={s.DDBJNavbar}>
-      <a className={s.DDBJNavbar__Brand} href="https://www.ddbj.nig.ac.jp/index.html">
-        <img className={s.DDBJNavbar__BrandImage} src="img/ddbj-brand.svg" alt="DDBJ" />
+      <a className={s.DDBJNavbar__Brand} href="https://www.ddbj.nig.ac.jp/index.html" title="DDBJ">
+        <DdbjBrand className={s.DDBJNavbar__BrandImage}  />
       </a>
       <div className={s.DDBJNavbar__Contents}>
         <ServiceList>
