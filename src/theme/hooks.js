@@ -4,8 +4,8 @@ export function useTagLabel (tagName) {
   switch (tagName) {
     case 'news':
       return translate({ id: 'theme.tag.news' })
-    case 'troublereport':
-      return translate({ id: 'theme.tag.troublereport' })
+    case 'maintenance':
+      return translate({ id: 'theme.tag.maintenance' })
     default:
       return tagName
   }

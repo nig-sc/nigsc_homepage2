@@ -59,14 +59,6 @@
     "message": "利用方法解説",
     "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
   },
-  "sidebar.operationInfoSidebar.category.お知らせ": {
-    "message": "News",
-    "description": "The label for category お知らせ in sidebar operationInfoSidebar"
-  },
-  "sidebar.operationInfoSidebar.category.障害情報": {
-    "message": "Maintainance Info",
-    "description": "The label for category 障害情報 in sidebar operationInfoSidebar"
-  },
   "sidebar.operationInfoSidebar.category.稼働状況": {
     "message": "Operation Info",
     "description": "The label for category 稼働状況 in sidebar operationInfoSidebar"
@@ -98,5 +90,37 @@
   "sidebar.advancedGuidesSidebar.category.Alphafold 2.1": {
     "message": "Alphafold 2.1",
     "description": "The label for category Alphafold 2.1 in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.softwareSidebar.category.Grid Engine": {
+    "message": "Grid Engine",
+    "description": "The label for category Grid Engine in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.Slurm": {
+    "message": "Slurm",
+    "description": "The label for category Slurm in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.パッケージマネージャ": {
+    "message": "パッケージマネージャ",
+    "description": "The label for category パッケージマネージャ in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.Spack": {
+    "message": "Spack",
+    "description": "The label for category Spack in sidebar softwareSidebar"
+  },
+  "sidebar.softwareSidebar.category.Environmental modules": {
+    "message": "Environmental modules",
+    "description": "The label for category Environmental modules in sidebar softwareSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.Alphafold 2.2": {
+    "message": "Alphafold 2.2",
+    "description": "The label for category Alphafold 2.2 in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.operationInfoSidebar.link.お知らせ": {
+    "message": "お知らせ",
+    "description": "The label for link お知らせ in sidebar operationInfoSidebar, linking to /blog/tags/news"
+  },
+  "sidebar.operationInfoSidebar.link.メンテナンス情報": {
+    "message": "メンテナンス情報",
+    "description": "The label for link メンテナンス情報 in sidebar operationInfoSidebar, linking to /blog/tags/maintenance"
   }
 }
