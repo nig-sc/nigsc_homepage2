@@ -7,38 +7,36 @@ title: "How to Login (A general analysis section)"
 
 ##  How to log in to the general analysis section with your account
 
-1. Open a terminal emulator. On its screen, enter ssh `username@gatewaynodename`. Then press enter. (The same is true for the Windows PowerShell SSH client.)
+1. Open a terminal emulator and enter ssh `username@gatewaynodename`. Then press enter. (The same way for the Windows PowerShell SSH client.)
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
 ```
 
-2. In "Enter passphrase for key ...", enter the passphrase for the SSH key pair and press enter.
+2. Enter the passphrase for the SSH key pair and press enter in "Enter passphrase for key ...".
 
-Enter "yes" to continue connecting after entering the key passphrase.
+Enter "yes" to continue connecting ig the following message is displayed after entering the key passphrase.
 
 ```
 Are you sure you want to continue connecting (yes/no)?
-
 ```
 
-3, Execute 'qlogin' command to log in to the login node.
+3.  Execute 'qlogin' command to log in to the login node.
 
 ```
 $ qlogin
 ```
 
-Enter "yes" to continue connecting after entering your password.
+Enter "yes" to continue connecting if the following message is displayed after entering your password.
 
 ```
 Are you sure you want to continue connecting (yes/no)?
-
 ```
 
 
 ### Execution example
 
-You can see the following message means success on your display.
+You will see the following message means success on your display.
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
@@ -72,8 +70,8 @@ qlogin -l s_vmem=10G -l mem_req=10G
 
 ### Reference
 
-- [How to use Java](/software/java) > Notes: when the Java program launches, you get an error message saying out of memory.
-- [How to use Singularity](/software/singularity) > Building Images on Supercomputer : Generating Singularity Image from Docker Container Image
+- [How to use Java](/software/java) : Notes - when the Java program launches, you get an error message saying out of memory.
+- [How to use Singularity](/software/singularity) : Building Images on Supercomputer - Generating Singularity Image from Docker Container Image
 
 
 ## How to use the GPU node
