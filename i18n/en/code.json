@@ -177,17 +177,17 @@
   "themes.recentBlogPosts.moreNewsPosts": {
     "message": "More News"
   },
-  "themes.recentBlogPosts.recentTroubleReportPosts": {
-    "message": "Recent Trouble Reports"
+  "themes.recentBlogPosts.recentMaintenancePosts": {
+    "message": "Recent Maintenance"
   },
-  "themes.recentBlogPosts.moreTroubleReportPosts": {
-    "message": "More Trouble Reports"
+  "themes.recentBlogPosts.moreMaintenancePosts": {
+    "message": "More Maintenance"
   },
   "theme.tag.news": {
     "message": "News"
   },
-  "theme.tag.troublereport": {
-    "message": "Trouble Report"
+  "theme.tag.maintenance": {
+    "message": "Maintenance"
   },
   "theme.DDBJNavbar.データ登録": {
     "message": "Data Submission"

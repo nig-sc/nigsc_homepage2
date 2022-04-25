@@ -210,8 +210,8 @@ module.exports = {
         },
         {
             type: "link",
-            label: "障害情報",
-            href: "/blog/tags/troublereport"
+            label: "メンテナンス情報",
+            href: "/blog/tags/maintenance"
         },
         {
             type: "category",
