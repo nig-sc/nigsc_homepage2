@@ -243,7 +243,8 @@ module.exports = {
     faqSidebar: [
         "faq/faq1",
         "faq/faq_hcptools",
-         "faq/faq_aspera",
+        "faq/faq_aspera",
+        "faq/faq_billing_service",
     ]
 
 
