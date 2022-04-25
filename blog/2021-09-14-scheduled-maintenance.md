@@ -1,8 +1,8 @@
 ---
-slug: 2021-09-14-scheduled-maintainance
+slug: 2021-09-14-scheduled-maintenance
 title: "(終了)【定期メンテナンス】11月12日～11月18日 定期メンテナンスのお知らせ"
 tags:
-  - news
+  - maintenance
 authros:
   - oogasawara
   - akatsumata
