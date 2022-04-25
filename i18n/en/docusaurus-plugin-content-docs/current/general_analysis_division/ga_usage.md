@@ -1,19 +1,19 @@
 ---
 id: ga_usage
-title: 使用方法（一般解析区画）
+title: Usage（A general analysis section）
 ---
 
+On the login node, you can do development work and perform analysis work as a normal Linux system.
+
+- As for the development environment, etc., refer to "[the Development Environment and Libraries](../software/software.md#development-environment-and-libraries)" on [Software page](../software/software.md).
+- You can work on the login node for up to 3 days. You will be forcibly logged out after qlogin.
+
+For calculations that take a long time or use a large CPU or memory, run them as batch jobs, parallel jobs, or array jobs on the computer node (compute node) with the qsub command.
 
 
-ログインノード上では通常のLinuxシステムとして開発作業や解析作業を行うことが可能です。
+### Reference
 
-- 開発環境などについては[ソフトウェア](../software/software.md)の「開発環境・ライブラリ」の項目を参考にしてください。
-- ログインノードでの作業は最長3日間です。qloginしてから3日経つと強制的にログアウトされます。
-
-
-長時間かかる計算、CPUやメモリを大規模に使う計算は、`qsub`コマンドにより計算ノード(compute node)上のバッチジョブ、並列ジョブ、アレイジョブとして実行してください。
-
-- ジョブスケジューラ Univa Grid Engine (UGE)の使い方については[システム構成 > ソフトウェア > Univa Grid Engine](../software/univa_grid_engine.md)をご参照ください。
-- 遺伝研スパコンで用意されているUGEキューについては[概要（一般解析区画) > UGEキューの種類](/general_analysis_division/ga_introduction)をご参照ください。
-- その他、利用可能なソフトウェアについては[システム構成>ソフトウェア](../software/software.md)をご参照ください。
-- 具体的な解析方法などについては[活用方法](../advanced_guides/advanced_guide.md)をご参照ください。
+- [System Configuration > Software > Univa Grid Engine](../software/univa_grid_engine.md) : how to use the job scheduler Univa Grid Engine (UGE)
+- [Overview (A General Analysis Section) > Types of UGE Queues](../general_analysis_division/ga_introduction.md) : the UGE queues available on the NIG supercomputer
+- [System Configuration > Software](../software/software.md) : other available softwares
+- [Advanced guide](../advanced_guides/advanced_guide.md) : specific analysis methods
