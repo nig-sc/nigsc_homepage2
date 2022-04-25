@@ -1,7 +1,7 @@
 import { usePluginData } from '@docusaurus/useGlobalData'
 
 export const TAG_NEWS = 'news'
-export const TAG_TROUBLEREPORT = 'troublereport'
+export const TAG_MAINTENANCE = 'maintenance'
 
 export function usePosts () {
   const { blogPosts: posts } = usePluginData('nigsc-plugin-blog-data')
@@ -16,8 +16,8 @@ export function usePostsByTag (tagLabel) {
   )
 }
 
-export function useTroublereportPosts () {
-  return usePostsByTag(TAG_TROUBLEREPORT)
+export function useMaintenancePosts () {
+  return usePostsByTag(TAG_MAINTENANCE)
 }
 
 export function useNewsPosts () {
