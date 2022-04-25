@@ -1,8 +1,8 @@
 ---
-slug: 2021-09-14-scheduled-maintainance
+slug: 2021-09-14-scheduled-maintenance
 title: "(Ended)[Maintenance] November 12 - November 18, 2021: Scheduled Maintenance."
 tags:
-  - news
+  - maintenance
 authros:
   - oogasawara
   - akatsumata

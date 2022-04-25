@@ -28,7 +28,9 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Scheduled maintenance in 2022
 
-In FY2022, we plan to perform scheduled maintenance twice, around the end of June and in November.
+In FY2022, we plan to perform scheduled maintenance twice.
+- June 28, 09:00 - July 1, 2022, 00:00(24h)
+- November
 
 
 ## About Acknowledgements
