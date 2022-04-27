@@ -1,86 +1,30 @@
 ---
 id: ga_transfer
-title: データ転送（一般解析区画）
+title: Data file transfer（A general analysis section）
 ---
 
-
-一般解析区画へのデータのアップロード・ダウンロードについては現在以下の2つの方法が利用可能です。
-
+For uploading and downloading data to a general analysis section of the NIG supercomputer, you can currently use the following two file transfer softwares.
 
 - scp, sftp
 - Aspera
 
+## To transfer files with SSH protocol (scp, sftp)
 
-##  SSHプロトコルによるファイル転送の方法 (scp, sftp)
+You can use scp, sftp, etc. to transfer files to the gateway server (`gw.ddbj.nig.ac.jp`) of a general analysis section of the NIG supercomputer.
 
-一般解析区画のゲートウェイサーバ(`gw.ddbj.nig.ac.jp`)に対してscp, sftp等を用いたファイル転送が可能です。
-
-例:
+Example :
 
 ```
 scp your_file.txt youraccount@gw.ddbj.nig.ac.jp:/home/youraccount/data
 ```
 
- 
-## Asperaの利用方法
+## To use Aspera
 
-Asperaは大容量ファイル転送を効率的に行う商用ソフトウェアです。
-遺伝研スパコンでは総帯域幅10GbpsのAsperaサーバーを導入し運用しています。
+Aspera is a commercial software that tranefers efficiently large file. 
+It is mainly characterized by low degradation of transfer speed when moving big files over long distances and the ability to achieve transfer rates very close to the theoretical bandwidth with properly tuning.
 
-Asperaを用いてデータ転送を行うには、ユーザー側の計算機にAsperaクライアントソフトウェアをインストールする必要があります。
-また、データ転送に複数のポートを用いるので大学・研究機関などのネットワーク設定でそのポートが空いている必要があります。
-<= どのポート？
+The NIG supercomputer introduces Aspera servers with a total bandwidth of up to 10 Gbps. (The total bandwidth of NIG is 30 Gbps.)
 
-問い合わせ窓口sc-help.pngまでご連絡ください。<= 本当？？何を連絡するの？？
+### Reference
 
-Asperaの通信経路は？
-
-
-### Asperaクライアントソフトウェアのインストール
-
-<= コマンドライン版以外にはどんなクライアントがあるの？
-
-
-Asperaのダウンロードページ（ https://downloads.asperasoft.com/ ）にアクセスします。
-
-CLIENT SOFTWAREからAspera CLIをダウンロードします。
-WindowsやMacなど、環境に合わせたファイルをダウンロードしインストールしてください。
-インストール後実行ファイルにパスが通っていることを確認してください。
-
-
-### Asperaでのアップロード、ダウンロード
-
-コマンドラインから`ascp`コマンドを利用して遺伝研スパコンへデータをアップロードする場合、下記のようにします。
-
-"："の後ろになにも指定しない場合、ユーザのホームディレクトリにコピーされます。
-
-```
- $ ascp -l 1G -Z 1500 -P 33001 -i (秘密鍵ファイル名) (送りたいファイル) ユーザーID@ascp.ddbj.nig.ac.jp:（指定ディレクトリ）
-```
-
- 例として、下記のようにします。
-
-```
-$ ascp -l 1G -Z 1500 -P 33001 -i ~/.ssh/DDBJ/id_rsa $HOME/test.txt user_id@ascp.ddbj.nig.ac.jp:/home/user_id/
-```
- 
-基本的なオプションは以下の通りです。
-
-<table>
-<tr>
-  <th width="150">オプション</th>
-  <th>説明</th>
-</tr>
-<tr>
-  <td>-T</td>
-  <td>データの暗号化を行いません。転送速度は向上しますがセキュリティは低下します。</td>
-</tr>
-<tr>
-  <td>-l </td>
-  <td>データ転送速度の上限を指定します。"値"の部分に上限値を指定しますが、"10M"など、英字による単位指定ができます。本システムでは"10G"が上限で、10Mが本オプションを指定しない場合のデフォルト値です。</td>
-</tr>
-</table>
-
-
-その他指定可能な詳細オプションについては、開発元のドキュメントサイト上のAspera Connectのドキュメントをご参照ください。
-
+[System Configuration > Software > Aspera](../software/aspera/aspera.md) : how to use Aspera.
