@@ -1,76 +1,73 @@
 ---
 id: install_Aspera
-title: Aspera のインストール
+title: Installing Aspera
 ---
 
-## Aspera クライアントソフトウェアのインストール
+## Installing Aspera Connect transfer client software
 
-クライアントソフトウェアには Web インタフェイス版(aspera connect)とコマンドラインインタフェイス版(`ascp`)があり、
-バージョン 4 以降が必要です。
+There are a web interface version (aspera connect) and a command line interface version (`ascp`) of Aspera Connect transfer client software.
+You need to install Aspera Connect transfer client software version 4 or later.
 
-- Aspera サーバとクライアントのバージョンの組み合わせの関係により 3.9.x は Mac では動作せず、Windows, Linux ではパスフレーズを指定していない秘密鍵・公開鍵では動作しません。
--  Aspera connect の Web ブラウザプラグインをインストールしないとバージョン 4 の `ascp` コマンドをダウンロードできないのでご注意下さい。
-
-
-インストール手順の概要は以下のとおりです。
-
-1. インストーラのダウンロード
-2. インストーラの実行と`ascp`のパスの調整
+- Due to the combination of Aspera server and client versions, 3.9.x does not work on Mac, and does not work on Windows and Linux with private/public keys which no passphrase is specified.
+- Note: You can't download the version 4 `ascp` command unless the Aspera connect web browser plug-in is installed. 
 
 
-## インストーラのダウンロード
+Procedure
 
-Windows, Mac, Linux とも同様の手順となります。
+1. Download the installer
+2. Run the installer and adjustment the path of `ascp`
 
 
-1, ウェブブラウザで https://www.ibm.com/aspera/connect/ を開き、「Aspera Connect のダウンロード」をクリックする。
+## Download the installer
+
+The procedure is the same for Windows, Mac and Linux.
+
+
+1, Open https://www.ibm.com/aspera/connect/ in your web browser and click on "Download Aspera Connect".
 
 ![](aspera01.png)
 
 
-2, 「アドオンのインストール」（Firefox の場合）または「拡張機能のインストール」（Chrome の場合）をクリックする。
+2, Click "Add extension" for Firefox or "Install Extension" for Chrome. 
 
 ![](aspera02.png)
 
 
-3, 「Add to Firefox」（Firefox の場合）または「Chrome に追加」（Chrome の場合）をクリックして IBM Aspera Connect アドオンをウェブブラウザにインストールする。
+3, Click "Add to Firefox" for Firefox or “Add to Chrome” for Chrome and install the IBM Aspera Connect add-on to your web browser. Click "Add". The “Add ‘IBM Aspera Connect?’” popup appears. Click "Add" for Firefox or "Add extension" fot Chrome. If successful, you will see the message “IBM Aspera Connect has been added to Firefox/Chrome”.
 
 ![](aspera03a.png)
 
 ![](aspera03b.png)
 
 
-4, 改めてウェブブラウザで https://www.ibm.com/aspera/connect/ を開き、「Aspera Connect のダウンロード」をクリックするとインストーラがダウンロードできるようになる。
+4, After Installing the installer, open https://www.ibm.com/aspera/connect/ in your web browser again and click "Download Aspera Coonect" You can download the installer.
 
 ![](aspera04a.png)
 
 ![](aspera04b.png)
 
 
-## インストーラの実行とパスの調整
+## Run the installer and adjustment the path
 
 
-### クライアント計算機が Windows または Mac の場合
+### Using Windows or Mac as the OS of the cliant computer
 
-
-Windows と Mac の場合はダウンロードしたインストーラを実行してください。
-インストーラを実行するとパスも設定されます。
+For Windows and Mac, run the downloaded installer.
+The path will also be set when you run it.
 
 ![](aspera05.png)
 
 
-### クライアント計算機が Linux の場合 
+### Using Linux as the OS of the cliant computer
 
-
-Linux の場合は上記の手順で
-`ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz`
-のようなファイルがダウンロードされてくるので、解凍して bash で実行します。ユーザー権限でインストール可能です。
+For Linux, follow the above steps, the file such as `ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz` will be downloaded. Unzip and run it with bash. You can install it with user permission.
 
 ```
 tar zxvf ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
 bash ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
 ```
-インストーラを実行すると、`$HOME/.aspera/connect/bin`の下に実行ファイルが展開されるのでここにパスを通します。
+
+When you run the installer, the executable file will be extracted under `$HOME/.aspera/connect/bin`, so pass the path here.
 
 ```
 export PATH=$HOME/.aspera/connect/bin:$PATH
