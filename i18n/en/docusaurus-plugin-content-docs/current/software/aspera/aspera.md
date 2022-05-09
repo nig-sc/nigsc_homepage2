@@ -1,35 +1,34 @@
 ---
 id: aspera
-title: Aspera の使い方
+title: How to use Aspera
 ---
 
-遺伝研スパコンに対してファイルのアップロード、ダウンロードを行うには、一般的に広く用いられているファイル転送ソフトウェアである scp や sftp をつかうことができますが、scp などでは遠距離間で大量のファイルを転送する際に転送速度が遅くなる性質があります。
+When you transfer files to and from the NIG supercomputer, you can use scp or sftp, which are widely used as the file transfer software. But their transfer speed is slow when a large numbers of files are transfered over long distances.
 
-遠距離の高速通信のために、遺伝研スパコンでは、一般解析区画では Aspera、個人ゲノム解析区画では HCP tools というファイル転送ソフトウェアが利用可能となっています。
+For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis section, and HCP tools is available on the personal genome analysis section on the NIG supercomputer.
+- The total speed for all users can be up to 10 Gbps.
 
-- ユーザー全員の合計で 10Gbps まで速度が出せます。
+Reference
+- [ascp4 official manual](https://www.ibm.com/docs/en/ahte/3.9.6?topic=solaris-ascp4-transferring-from-command-line-ascp)
 
-
-参考資料
-
-- [ascp4 公式マニュアル](https://www.ibm.com/docs/en/ahte/3.9.6?topic=solaris-ascp4-transferring-from-command-line-ascp)
-
-指定可能なオプションについては、`ascp --help`の出力なども参照してください。
-
-## クライアントソフトウェアのインストール
-
-Aspera を利用するためにはクライアントソフトウェアをユーザのクライアント計算機にインストールする必要があります。
-インストール方法は[Aspera のインストール](/software/aspera/install_Aspera)の項をご参照下さい。
-
-- クライアントソフトウェアはバージョン 4 以降が必要です。バージョン 4 以降をインストールするためには Aspera connect の Web ブラウザプラグインをインストールする必要があります。これをインストールしないとバージョン 4
-の`ascp`コマンドをダウンロードできないのでご注意下さい。
+For more useful options, see the output of `ascp --help`, etc..
 
 
-## ファイル転送
 
-### アップロード
+## Installing Aspera Connect transfer client software
 
-ユーザのクライアント計算機でターミナルエミュレータを起動し以下のコマンドを実行します。
+For using your Aspera, all user must install the Aspera Connect transfer client software on user's client computer.
+
+how to install Aspera Connect transfer client software：See [install Aspera](/software/aspera/install_Aspera) page
+
+- You need to install Aspera Connect transfer client software version 4 or later. To install version 4 or later, you must install the Aspera connect web browser plug-in. 
+- Note: You can't download the version 4 `ascp` command unless you install version 4 or later.
+
+## Transfer with Aspera Connect transfer client
+
+### Upload files to the NIG supercomputer
+
+Start a terminal emulator on the user's client computer and execute the following command.
 
 ```
 $ ascp -l 1G -P 33001 -i ~/.ssh/DDBJ/id_rsa \
@@ -37,22 +36,21 @@ $ ascp -l 1G -P 33001 -i ~/.ssh/DDBJ/id_rsa \
   youraccount@ascp.ddbj.nig.ac.jp:
 ```
 
-`youraccount@ascp.ddbj.nig.ac.jp:`の後ろにユーザのホームディレクトリからの相対パスを書きます。
+Write the path relative to the user's home directory after `youraccount@ascp.ddbj.nig.ac.jp:`.
 
-上記の例で、各コマンドライン引数の意味は以下のとおりです。
-
-- `-l` : データ転送速度の上限値を書きます。（単位は bits per second)
-    - "10M"など、英字による単位指定ができます。本システムでは"10G"が上限で 10M が本オプションを指定しない場合のデフォルト値です。
-- `-P` : aspera が使用するポートの番号です。
-- `-i` 秘密鍵ファイルのパスを指定します。（例では`~/.ssh/DDBJ/id_rsa`）
-- `$HOME/test.txt` アップロードしたいファイルのパス。
-- `youraccount@ascp.ddbj.nig.ac.jp:` アップロード先のパス
-
+Ascp Optins and meaning of each option in the above example
+- `-l` : transfer max_rate [bits per second]: transfer at rates up to the specified target rate.
+    - You can specify the unit of measure in alphabetic characters, such as "10M". On the NIG supercomputer system, "10G" is the upper limit and 10M is the default value when this option is not specified.
+- `-P` : ssh-port: the port number used by aspera.
+- `-i` : private_key_file: specify user's SSH private key file （In the example `~/.ssh/DDBJ/id_rsa`）.
+- `$HOME/test.txt`: the upload source file path
+- `youraccount@ascp.ddbj.nig.ac.jp:`: the upload destination file path
 
 
-### ダウンロード
 
-ユーザのクライアント計算機でターミナルエミュレータを起動し以下のコマンドを実行します。
+### Download files from the NIG supercomputer
+
+Start a terminal emulator on the user's client computer and execute the following command.
 
 ```
 $ ascp -l 1G -P 33001 -i ~/.ssh/DDBJ/id_rsa \
@@ -60,9 +58,5 @@ $ ascp -l 1G -P 33001 -i ~/.ssh/DDBJ/id_rsa \
   $HOME/tmp
 ```
 
-このコマンドを実行すると、スパコン上の`/home/youraccount/somedir/test.txt`がローカルマシン上の`$HOME/tmp/test.txt`としてダウンロードされます。
-
-
-
-
+When this command is executed, `/home/youraccount/somedir/test.txt` on the NIG supercomputer is downloaded as `$HOME/tmp/test.txt` on the local machine.
 
