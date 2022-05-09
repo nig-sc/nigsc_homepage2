@@ -3,7 +3,7 @@ id: software
 title: Software
 ---
 
-For more information about how to use the software, please click the software name(link) below.
+For more information about how to use the software, click the software name(link) below.
 
 ## Job scheduler
 
@@ -16,7 +16,7 @@ For more information about how to use the software, please click the software na
 <tr>
 <td width="300">
 
-[Univa Grid Engine](univa_grid_engine)
+[Grid Engine](/software/grid_engine)
 </td>
 <td width="300">installed</td>
 <td width="300">Application Required</td>
@@ -24,7 +24,7 @@ For more information about how to use the software, please click the software na
 <tr>
 <td width="300">
 
-Slurm
+[Slurm](/software/slurm)
 </td>
 <td width="300">☓</td>
 <td width="300">Application Required</td>
