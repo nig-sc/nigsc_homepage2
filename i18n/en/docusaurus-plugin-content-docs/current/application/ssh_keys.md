@@ -58,18 +58,20 @@ $
 <table>
 <tr>
 <td>
-直接入力フォーム
+
+[直接入力フォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
 
 ![](ssh_direct_form.jpg)
 </td>
 <td>
-画面下部（赤枠）部分に上記でコピーした鍵をペーストする。ベースト後、画面下部の公開鍵ボタンを押して登録を行う。
+画面下部（赤枠）部分に上記でコピーした鍵をペーストする。ペースト後、画面下部の公開鍵ボタンを押して登録を行う。
 </td>
 </tr>
 
 <tr>
 <td>
-ファイルのアップロードフォーム
+
+[ファイルのアップロードフォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
 
 ![](ssh_upload_form.jpg)
 </td>
