@@ -19,7 +19,7 @@ For more useful options, see the output of `ascp --help`, etc..
 
 For using your Aspera, all user must install the Aspera Connect transfer client software on user's client computer.
 
-how to install Aspera Connect transfer client software：See [install Aspera](/software/aspera/install_Aspera) page
+how to install Aspera Connect transfer client software：See [Installing Aspera](/software/aspera/install_Aspera) page
 
 - You need to install Aspera Connect transfer client software version 4 or later. To install version 4 or later, you must install the Aspera connect web browser plug-in. 
 - Note: You can't download the version 4 `ascp` command unless you install version 4 or later.
