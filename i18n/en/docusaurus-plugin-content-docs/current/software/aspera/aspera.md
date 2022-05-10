@@ -24,7 +24,7 @@ how to install Aspera Connect transfer client software：See [Installing Aspera]
 - You need to install Aspera Connect transfer client software version 4 or later. To install version 4 or later, you must install the Aspera connect web browser plug-in. 
 - Note: You can't download the version 4 `ascp` command unless you install version 4 or later.
 
-## Transfer with Aspera Connect transfer client
+## The file transfer with Aspera Connect transfer client
 
 ### Upload files to the NIG supercomputer
 
