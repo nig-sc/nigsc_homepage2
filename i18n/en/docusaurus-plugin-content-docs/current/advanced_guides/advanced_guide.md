@@ -1,16 +1,16 @@
 ---
 id: advanced_guide
-title: "最新のトピック"
+title: "Latest topic"
 ---
 
 ---
 ## PortablePipeline
 
-2022.05.10
+May 10, 2022
 
-東京大学大学院農学生命科学研究科水圏生物科学専攻水圏生物工学研究室の吉武和敏先生により、NGS解析パイプラインについて、PortablePipelineというツールが開発されました。
+For the NGS analysis pipeline, the tool called Portablepipeline has been developed  by Professor Kazutoshi Yoshitake of the Laboratory of Aquatic Molecular Biology and Biotechnology, Aquatic Bioscience, Graduate school of Agricultural and Life Sciences, The Univresity of Tokyo.
 
-ツールの実行手順は、水圏生物工学研究室のページ<a href="https://www.suikou.fs.a.u-tokyo.ac.jp/blog/2022/04/28/%e9%81%ba%e4%bc%9d%e7%a0%94%e3%81%ae%e3%82%b9%e3%83%91%e3%82%b3%e3%83%b3%e3%81%a7%e6%89%8b%e8%bb%bd%e3%81%abngs%e8%a7%a3%e6%9e%90%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/">「遺伝研のスパコンで手軽にNGS解析を実行する手順」</a>をご参照ください。
+For the procedure, etc., click <a href="https://www.suikou.fs.a.u-tokyo.ac.jp/blog/2022/04/28/%e9%81%ba%e4%bc%9d%e7%a0%94%e3%81%ae%e3%82%b9%e3%83%91%e3%82%b3%e3%83%b3%e3%81%a7%e6%89%8b%e8%bb%bd%e3%81%abngs%e8%a7%a3%e6%9e%90%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/">the Laboratory of Aquatic Molecular Biology and Biotechnology page</a>
 
 <table>
 <tr>
@@ -19,7 +19,7 @@ title: "最新のトピック"
 ![](portablepipeline.png)
 </td>
 <td valign="top">
-「WindowsやMacから遺伝研のスパコンにお手軽にNGS解析ジョブを投げるツールとしてPortablePipelineを開発しました。当研究室で使用頻度の高い解析パイプラインが実行できます。解析サーバとしてはpython3とdockerもしくはsingularityがインストールされていればスパコンでなくても実行できます。」（水圏生物工学研究室のページより）
+"PortablePipeline is software that allows Windows and Mac users to perform NGS analysis in a GUI on a local or remote server or supercomputer. The analysis pipeline that is frequently used in our laboratory can be run. The analysis server can be run without using the NIG supercomputer if python3 and docker or singularity are installed."（Referenced from the Laboratory of Aquatic Molecular Biology and Biotechnology）
 </td>
 </tr>
 </table>
