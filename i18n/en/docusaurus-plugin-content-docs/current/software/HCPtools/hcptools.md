@@ -1,99 +1,96 @@
 ---
 id: hcptools
-title: HCPtools の使い方
+title: How to use HCP tools
 ---
 
+When you transfer files to and from the NIG supercomputer, you can use `scp` or `sftp`, which are widely used as the file transfer software. But their transfer speed is slow when a large numbers of files are transfered over long distances.
 
-遺伝研スパコンに対してファイルのアップロード、ダウンロードを行うには、一般的に広く用いられているファイル転送ソフトウェアである`scp`や`sftp`をつかうことができますが、`scp`などでは遠距離間で大量のファイルを転送する際に転送速度が遅くなる性質があります。
-
-遠距離の高速通信のために、遺伝研スパコンでは、一般解析区画では Aspera、個人ゲノム解析区画では HCP tools というファイル転送ソフトウェアが利用可能となっています。
-
+For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis section, and HCP tools is available on the personal genome analysis section on the NIG supercomputer.
 
 
-参考資料
+Reference
 
-- 公式マニュアル (vession 1.3.0R_45)
-    - HCPtools コマンド導入ガイド (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">日本語版</a>)
-    - HCPtools コマンド概要説明 (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">日本語版</a>)
-    - HCPtools コマンドリファレンス (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">日本語版</a>)
+- The official manual (vession 1.3.0R_45)
+    - HCP tools Command Introduction Guide (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">Japanese edition</a>)
+    - HCP tools Command Overview (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">Japanese edition</a>)
+    - HCP tools Command Reference (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">Japanese edition</a>)
 
-- [FAQ（よくある質問）: HCP tools](/faq/faq_hcptools)
+- [FAQ (HCP tools)](/faq/faq_hcptools)
 
 
-## クライアントソフトウェアのインストール
+## Installing the HCP tools client software
 
-HCP tools を利用するためにはクライアントソフトウェアをユーザのクライアント計算機にインストールする必要があります。
-お使いのクライアント計算機の環境に応じて以下の文書をご参照ください。
+For using HCP tools, all user must install the HCP tools client software on user's client computer.
 
-- [Windows の場合](/software/HCPtools/Windows/install_HCPtools_001)
-- Mac OS の場合 : 現在クライアントソフトウェアの開発中のため、現時点では利用できません。2022 年 6 月頃提供開始予定です。
-- Linux の場合
+Refer to the following documents depending on the environment of your client computer.
+
+- [Windows](/software/HCPtools/Windows/install_HCPtools_001)
+- Mac OS : This Platform is not available because of under development, so the client software is currently under development and is not available at this time. The service is scheduled to be available around June 2022.
+- Linux
     - [Ubuntu Linux](/software/HCPtools/Ubuntu/install_HCPtools_003)
     - [CentOS 7](/software/HCPtools/CentOS/install_HCPtools_002)
 
 
-## ファイル転送
+## The file transfer with HCP tools
 
 
-### 個人ゲノム解析区画への SSL-VPN 接続
+### SSL-VPN connection to the personal genome analysis section
 
-個人ゲノム解析区画とのファイルの転送を行うために、まず最初に SSL-VPN 接続を行う必要があります。
+Establish the SSL-VPN connection for file transfer to and from the personal genome analysis section.
 
-接続方法は、[「ログイン方法(個人ゲノム解析区画)」の「VPN への接続方法」](/personal_genome_division/pg_login#vpn%E3%81%B8%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95)をご参照ください。
+How to establish it: [「How to Login (the personal genome analysis section)」>「How to establish the SSL-VPN connection」](/personal_genome_division/pg_login#vpn%E3%81%B8%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95)
 
 
+### Upload files to the NIG supercomputer
 
-### アップロード
-
-ユーザのクライアント計算機でターミナルエミュレータを起動し以下のコマンドを実行します。
+Start a terminal emulator on the user's client computer and execute the following command.
 
 
 ```
-hcp --user ユーザ名 --hpfp \
-    C:\Users\ユーザ名\your_file.txt \
+hcp --user username --hpfp \
+    C:\Users\username\your_file.txt \
     gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt
 ```
 
-### ダウンロード
+### Download files from the NIG supercomputer
 
-ユーザのクライアント計算機でターミナルエミュレータを起動し以下のコマンドを実行します。
+Start a terminal emulator on the user's client computer and execute the following command.。
 
 
 ```
-hcp --user ユーザ名 --hpfp  \
+hcp --user username --hpfp  \
     gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt \
-    C:\Users\ユーザ名\your_file.txt
+    C:\Users\username\your_file.txt
 ```
 
-## ファイル転送でよく使うオプション
+## Frequently used options for file transfer
 
-- `--hpfp` : UDP(HpFP2)通信の指定で、遠距離間の通信を高速化します。
-    - このオプションを省略すると、通常広く用いられている TCP 通信を行います。
-- `-p` : 転送元のパーミッションを保持します。
-- `-R` : ディレクトリごと再帰的にファイルを転送します。
-- `-r` : ファイル転送の再開処理（リジューム）を行う。
-- `-y` データの完全性（転送途中でエラーや改ざんがないか）の確認を行います。
-- `-z` : 転送時にデータの圧縮を行います。
-
-
-オプションの詳細については、公式マニュアルをご参照下さい。
+- `--hpfp` : Specify UDP (HpFP2) communication to speed up communication over long distances
+    - Without this option, TCP communication ehich uesd usually widely is performed.
+- `-p` : preserve information about file permission
+- `-R` : copy all files under each directory, recursively
+- `-r` : resume the previous copy
+- `-y` : verify blocks of data transfered by message digest
+- `-z` : compress blocks of data transfered
 
 
-## その他のコマンド
+For more information of options, refer to the official manual.
+
+## Other Commands
 
 
-| コマンド | 機能                                     |
-|----------|------------------------------------------|
-| `hrm`    | サーバ上のファイルを削除                 |
-| `hcp-ls` | サーバ上のファイル一覧を表示             |
-| `hmkdir` | サーバ上にディレクトリ作成               |
-| `hpwd`   | サーバ上のワーキングディレクトリ表示     |
-| `hmv`    | サーバ上のファイルを移動                 |
-| `hlm`    | サーバ上にシンボリックリンク等を作成     |
-| `hchmod` | サーバ上のファイルのパーミッションを変更 |
-| `hchown` | サーバ上のファイルの所有者を変更         |
-| `hsync`  | サーバ上のファイルと同期                 |
+| command  | feature                                          |
+|----------|--------------------------------------------------|
+| `hrm`    | delete files on the server                       |
+| `hcp-ls` | list files on the server                         |
+| `hmkdir` | create directories on the server                 |
+| `hpwd`   | retrieve the working directory on the server     |
+| `hmv`    | move files on the server                         |
+| `hlm`    | create symbolic links, etc. on the server        |
+| `hchmod` | change the file's permission on the server       |
+| `hchown` | change the file's owner on the server            |
+| `hsync`  | synchronize files on the server                  |
 
-詳細については、公式マニュアルをご参照下さい。
+For more information, refer to the official manual.
 
 

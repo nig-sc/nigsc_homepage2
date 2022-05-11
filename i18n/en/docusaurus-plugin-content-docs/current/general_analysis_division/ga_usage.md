@@ -1,6 +1,6 @@
 ---
 id: ga_usage
-title: Usage（A general analysis section）
+title: Usage（The general analysis section）
 ---
 
 On the login node, you can do development work and perform analysis work as a normal Linux system.
