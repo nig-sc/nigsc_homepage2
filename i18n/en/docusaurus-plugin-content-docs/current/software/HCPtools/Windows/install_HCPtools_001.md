@@ -1,50 +1,51 @@
 ---
 id: install_HCPtools_001
-title: "HCPtoolsのインストール(Windowsの場合)"
+title: "Installing HCP tools (Windows)"
 ---
 
-## インストーラの入手
+## Get the installer
 
-以下のリンクからインストーラがダウンロード可能です。
+Download the installer from the following link.
 
 - <a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/Windows/HCP_Tools_Client.msi">HCP_Tools_Client.msi</a>
 - <a href="https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Windows">HCP_Tools_Client.md5sum</a>
 
-
-過去のバージョンなどは<a href="https://github.com/oogasawa/nigsc_HCPtools">こちらからダウンロード可能です。</a>
-
+If you need past versions and others, <a href="https://github.com/oogasawa/nigsc_HCPtools">you can download here</a>.
 
 
-## HCP toolsクライアントソフトウェアのインストール
+## Installing the HCP tools client software
 
-`HCP_Tools_Client.msi`をダブルクリックします。
+Double click `HCP_Tools_Client.msi`.
 
 ![](HCPtools_p1.png)
 
 
-「使用許諾契約書に同意します(A)」にチェックを入れ、「インストール(I)」ボタンをクリックします。
+Check the box "I accept the license agreement(A)" and click "Install(I)".
 
 ![](HCPtools_1.png)
 
-デバイスの変更許可に「はい」と応えると、インストールが開始します。
+Click "Yes" to the permission to change the device.
+Installation will start.
 
 ![](HCPtools_2.png)
 
-インストールが完了すると、下記の画面が表示されるので、「完了」ボタンをクリックします。
+When installation is complete, the following screen will be displayed on the screen. Click "Finish(F)".
+
 
 ![](HCPtools_p3.png)
 
 
-インストール後、実行コマンドが`C:\Program Files`の下に、設定ファイルが`C:\ProgramData`の下に存在することを確認して下さい。
+After installation, make sure that the run command exists under `C:\Program Files` and the configuration file exists under `C:\ProgramData`.
 
-- 実行コマンド : 'C:\Program Files\Clealink\HCP Tools\hcp.exe'
-- 設定ファイル: 'C:\ProgramData\Clealink\HCP Tools\hcp.conf'
+- The run command : 'C:\Program Files\Clealink\HCP Tools\hcp.exe'
+- The configuration file: 'C:\ProgramData\Clealink\HCP Tools\hcp.conf'
 
-## 設定ファイルの設置
+## Location the configuration file
 
-HCP toolsは、ユーザのクライアント計算機がWindowsの場合、ユーザディレクトリ(`C:\Users\your_name`)直下の`_hcp`ディレクトリの中にある設定ファイルを参照します。
 
-Windows PowerShellで以下のコマンドを実行すると、設定ファイルの雛形をコピーできます。
+HCP tools refers to the configuration file in the `_hcp` directory directly under the user directory (`C:\Users\your_name`) when you use Windows as the OS of the user's client computer.
+
+When you run the following command in the Windows PowerShell, you can copy the configuration file template.
 
 ```bash
 mkdir C:\Users\your_name\_hcp
@@ -52,9 +53,9 @@ cp "C:\ProgramData\Clealink\HCP Tools\*.conf" C:\Users\your_name\.hcp
 ```
 
 
-## 設定ファイルの編集 
+## Editting the configuration file
 
-HCP toolsの設定ファイルをユーザディレクトリに設置し、ユーザ認証のための公開鍵の設定を追記します。
+Locate the HCP tools configuration file in the user directory and add the public key settings for user authentication.
 
-手順については[設定ファイルの書き方](/software/HCPtools/hcptools_conf)を参照して下さい。
+Refer to its procedure: [How to write the configuration file](/software/HCPtools/hcptools_conf)
 
