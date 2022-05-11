@@ -1,6 +1,6 @@
 ---
 id: ga_login
-title: "How to Login (A general analysis section)"
+title: "How to Login (The general analysis section)"
 ---
 
 [Register your SSH public key](/application/ssh_keys)  after your account registration.
