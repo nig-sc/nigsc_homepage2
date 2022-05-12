@@ -5,7 +5,7 @@ title: "Installing HCP tools (Windows)"
 
 ## Get the installer
 
-Download the installer from the following link.
+Download the HCP tools client software installer from the following link.
 
 - <a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/Windows/HCP_Tools_Client.msi">HCP_Tools_Client.msi</a>
 - <a href="https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Windows">HCP_Tools_Client.md5sum</a>
