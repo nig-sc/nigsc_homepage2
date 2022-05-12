@@ -1,11 +1,11 @@
 ---
 id: ga_application
-title: "Preparation for use (A general analysis section)"
+title: "Preparation for use (The general analysis section)"
 ---
 
 ## Preparation of user's computer
 
-A general analysis section of NIG supercomputer can be used with a computer running a SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
+The general analysis section of NIG supercomputer can be used with a computer running a SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
 
 - Mac and Linux computers can be accessed using a standard terminal emulator.
 - Windows computers can be accessed using PowerShell SSH client or Windows Subsystem for Linux version 2 (WSL2), etc.
