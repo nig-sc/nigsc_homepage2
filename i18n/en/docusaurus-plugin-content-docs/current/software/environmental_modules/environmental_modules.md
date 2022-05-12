@@ -3,21 +3,22 @@ id: environmental_modules
 title: "Environmental Modules"
 ---
 
-使用する C/C++コンパイラ等のバージョンをユーザ権限で切り替えるためのツールです。
+The Environment Modules package is a tool that lets users switch the version of the C/C++ compiler, etc. used with the user permission.
 
-遺伝研スパコンでは BCM 付属の Environmental Modules を使っており、Environmental Modules はシステムに最初からインストールされています。
+In the NIG supercomputer, we use it included in BCM and is pre-installed in our system.
 
-参考資料
+Reference
 
-- [Environmental Modules 公式サイト](http://modules.sourceforge.net/)
+- [The Environmental Modules - Official website](http://modules.sourceforge.net/)
 - [Bright Cluster Manager (BCM) Getting Started Guide](https://www.brightcomputing.com/bcm-getting-started-guide)
 
 
 
 
-## 利用可能なモジュールを表示する
+## Listing Available Modules
 
-`module avail`コマンドで、利用可能なパッケージの一覧を表示できます。
+List of available packages by using the `module avail` command.
+
 
 ```
 $ module avail
@@ -70,11 +71,11 @@ $
 
 ```
 
-## モジュールを利用する
+## Using Modules
 
 ### module load
 
-何もしていない状態では CentOS7 付属の gcc version 4 系が使える状態になっています。
+By default, the gcc version 4 series included in CentOS 7 is available.
 
 ```
 $ gcc --version
@@ -84,7 +85,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-`module load`コマンドを使うことで、例えば gcc version 8 系に切り替えることが可能です。
+When you use the `module load` command, for example, it is possible to switch to gcc version 8 series.
 
 ```
 $ module load gcc8
@@ -98,7 +99,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ### module unload
 
-`module unload`コマンドにより元の状態に戻すことができます。
+The `module unload` command can be used to restore the original state.
 
 ```
 $ module unload gcc8
