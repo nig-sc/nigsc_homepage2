@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-13-news_spack_nix
-title: April 13, 2022 (Wednessday) Added pages for package managers that can be run with user permissionx
+title: April 13, 2022 (Wednessday) Added pages for package managers that can be run with user permission
 tags:
   - news
 authros:

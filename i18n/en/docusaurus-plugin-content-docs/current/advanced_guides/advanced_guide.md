@@ -1,7 +1,29 @@
 ---
 id: advanced_guide
-title: "最新のトピック"
+title: "Latest topic"
 ---
+
+---
+## PortablePipeline
+
+May 10, 2022
+
+For the NGS analysis pipeline, the tool called Portablepipeline has been developed  by Professor Kazutoshi Yoshitake of the Laboratory of Aquatic Molecular Biology and Biotechnology, Aquatic Bioscience, Graduate school of Agricultural and Life Sciences, The Univresity of Tokyo.
+
+For the procedure, etc., click <a href="https://www.suikou.fs.a.u-tokyo.ac.jp/blog/2022/04/28/%e9%81%ba%e4%bc%9d%e7%a0%94%e3%81%ae%e3%82%b9%e3%83%91%e3%82%b3%e3%83%b3%e3%81%a7%e6%89%8b%e8%bb%bd%e3%81%abngs%e8%a7%a3%e6%9e%90%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/">the Laboratory of Aquatic Molecular Biology and Biotechnology page</a>
+
+<table>
+<tr>
+<td width="400">
+
+![](portablepipeline.png)
+</td>
+<td valign="top">
+"PortablePipeline is software that allows Windows and Mac users to perform NGS analysis in a GUI on a local or remote server or supercomputer. The analysis pipeline that is frequently used in our laboratory can be run. The analysis server can be run without using the NIG supercomputer if python3 and docker or singularity are installed."（Referenced from the Laboratory of Aquatic Molecular Biology and Biotechnology）
+</td>
+</tr>
+</table>
+
 ---
 
 ## DFAST
