@@ -16,8 +16,7 @@ title: "利用計画表の提出"
 
 
 ### 利用計画表をダウンロードする
-- [2021年度版](/files/usage_plan-ver2.3.1-2021.xlsx)
-- [2022年度版](/files/usage_plan-ver2.3.1-2022.xlsx) 
+- [2022年度版](/files/usage_plan-ver2.3.3-2022.xlsx) 
 
 <font color="red"><b>！！</b></font> 申請の際には、<font color="red"><b>「利用目的等」と「料金試算表」の両方</b>に記入</font>し、ご提出下さい。<font color="red"><b>！！</b></font> 
 <table>
