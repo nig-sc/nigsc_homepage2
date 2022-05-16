@@ -18,6 +18,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 
 ## Recent News
+- &#x26A0;[Suspend acceptance of new user registrations for large-scale strages](/en/blog/2022-05-13-suspension-of-applications) (2022.05.10)
 - &#x1F9EC; [Added the introduction page of PortablePipeline developed by Professor Yoshitake of the University of Tokyo](/en/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
 - [Added pages for package managers that can be run with user permission](/en/blog/2022-04-13-news_spack_nix) (2022.04.13)
 - [Added pages for high-speed data transfer software Aspera and HCP tools](/en/blog/2022-04-12-news_Aspera_HCP) (2022.04.12)
