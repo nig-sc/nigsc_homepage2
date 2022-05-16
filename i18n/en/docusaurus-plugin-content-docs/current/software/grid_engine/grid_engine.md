@@ -1,63 +1,60 @@
 ---
 id: grid_engine
-title: Grid Engine の概要
+title: Grid Engine Overview
 ---
 
-Grid Engine はジョブスケジューラあるいはリソーススケジューラと呼ばれるプログラムの一種で、
-多数のユーザーが利用している環境で、各ユーザに自動的に計算リソース（CPU コアやメモリ）を割り当てるものです。
-クラスタ計算機全体を一つの計算機と見たときの Operating System に相当する働きをします。
+Grid Engine is a type of program called a job scheduler or resource scheduler. It automatically allocates computer resources (CPU cores and memory) to each user in environments using many users.
+It functions as the Operating System when the entire cluster computer is considered as one computer.
 
-- 一般解析区画では、Grid Engine を用いています。
-- 個人ゲノム解析区画では、Grid Engine または Slurm が利用可能です。
+- In the general analysis section, the Grid Engine is used.
+- In the personal genome analysis section, Grid Engine or Slurm is available.
 
-バイオインフォマティックス系では伝統的に Sun Grid Engine(SGE)が広く用いられてきました。SGE は Univa 社の Univa Grid Engine (UGE)を経て、現在は Altair 社がサポートしており Altair Grid Engine(AGE)となっています。（こういった経緯で、現在の AGE 公式マニュアルの中でも SGE, UGE, AGE, さらには総称としての Grid Engine という書き方が混在しています。）
+In bioinformatics, traditionally, Sun Grid Engine (SGE) has been widely used. SGE was replaced by Univa's Univa Grid Engine (UGE), which is now supported by Altair and has become Altair Grid Engine (AGE). (For this reason, the current AGE oddicial manual has a mixture of SGE, UGE, AGE and the generic term "Grid Engine".)
 
-参考資料
+Reference
 
 - [Sun Grid Engine for Dummies (2009)](http://web.archive.org/web/20151011170032/https://blogs.oracle.com/templedf/entry/sun_grid_engine_for_dummies)
-- [「遺伝研スパコンを使った解析の並列化・高速化」 (IIBMP2021 データサイエンティスト養成セッション資料)](https://www.slideshare.net/oogasawa/pptx-251567866)
-- [Altair Grid Engine 公式サイト](https://www.altair.com/grid-engine/)
+- ["Parallelization and acceleration of analysis using the NIG supercomputer" (IIBMP2021 the handout for the Data Scientist Training Session )](https://www.slideshare.net/oogasawa/pptx-251567866)
+- [Altair Grid Engine official website](https://www.altair.com/grid-engine/)
     - [Introuctory Guide](https://2021.help.altair.com/2021.1/AltairGridEngine/8.7.0/IntroductionGE.pdf)
     - [User's Guide](https://2021.help.altair.com/2021.1/AltairGridEngine/8.7.0/UsersGuideGE.pdf)
     - [Administrator's Guide](https://2021.help.altair.com/2021.1/AltairGridEngine/8.7.0/AdminsGuideGE.pdf)
 
 
+For Grid Engine commands(qsub, qlogin, qstat, qalter, qdel, qacct), refer to the `man` page.
 
-Grid Engine 各種コマンド(qsub, qlogin, qstat, qalter, qdel, qacct)の man ページもご参照ください。
 
+## Job Types
 
-## ジョブの種類
+The following four types of jobs are mainly used by Grid Engine.
 
-Grid Engine では以下の４種類のジョブが主に使われます。
+- [Interactive Jobs (interactive job)](/software/grid_engine/interactive_jobs)
+    - To use the supercomputer interactively.
+- [Batch Jobs (batch job)](/software/grid_engine/batch_jobs)
+    - To run a small number of programs that use only one CPU core
+- [Pallalel Jobs (parallel job)](/software/grid_engine/parallel_jobs)
+    - To run a small number of programs that use multiple CPU cores at the same time
+- [Array Jobs (array job)](/software/grid_engine/array_jobs)
+    - To run a large number of batch jobs or parallel jobs sequentially
 
-- [インタラクティブジョブ (interactive job)](/software/grid_engine/interactive_jobs)
-    - スパコンを対話的に利用する場合に用いる。
-- [バッチジョブ (batch job)](/software/grid_engine/batch_jobs)
-    - CPU コアを 1 コアだけ使用するプログラムを少数実行する場合に用いる。
-- [パラレルジョブ (parallel job)](/software/grid_engine/parallel_jobs)
-    - CPU コアを複数同時に使用するプログラムを少数実行する場合に用いる。
-- [アレイジョブ (array job)](/software/grid_engine/array_jobs)
-    - バッチジョブまたはパラレルジョブを多数順次実行する場合に用いる。
+You can find other job descriptions, etc. in the official manual.
 
-（その他のジョブについての説明など詳細については公式のマニュアルをご参照下さい。）
+## Other Commands
 
-## その他のコマンド
-
-主に使うコマンドは以下のとおりです。
+Mainly used commands
 
 - qstat
-    - ジョブの現在の状況を確認する。
+    - Show job states
 - qdel
-    - ジョブを削除する。
+    - Delete job
 - qalter
-    - ジョブの設定を変更する。
+    - Change job settings
 
-詳細は[その他のコマンド](/software/grid_engine/other_commands)の項および公式マニュアルをご参照下さい。
+For more information, see the [Other Commands](/software/grid_engine/other_commands) page and the official manual.
 
-## ジョブの実行が開始されない場合
+## If the job does not start running
 
-1. ジョブの設定が間違っていないか確認する。
-    - 設定が適切化チェックするプログラムを提供しています。[qsub_beta の使い方](/software/qsub_beta)をご参照下さい。
-2. スパコンの混雑状況を確認する。
-    - [稼働状況概要](/operation)の項で現在の稼働状況と混み具合が確認できます。
-
+1. Check if the job settings are correct.
+    - We provide a program to check if the settings are appropriate. Refer to the [How to use qsub_beta](/software/qsub_beta) page. 
+2. Check the congestion status of the supercomputer.
+    - You can check the current operation status and congestion in the [Operation Status Overview](/operation) page.
