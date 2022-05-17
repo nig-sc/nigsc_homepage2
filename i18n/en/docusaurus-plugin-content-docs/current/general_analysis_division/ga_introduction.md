@@ -1,6 +1,6 @@
 ---
 id: ga_introduction
-title: "Overview（The General Analysis Section)"
+title: "Introduction（The General Analysis Section)"
 ---
 
 
