@@ -1,14 +1,17 @@
 ---
 id: batch_jobs
-title: バッチジョブ
+title: Batch Jobs (batch job)
 ---
 
 
-## バッチジョブの使い方
+## How to use the batch job
 
-CPU コアを 1 コアだけ使用し長時間実行するプログラムを少数実行する場合は、バッチジョブとして実行してください。（多数実行する場合は後述するアレイジョブを使ってください。）
+When you run a small number of programs that use only one CPU core and run for a long time, run them as the batch job. (When you execute many jobs, use the array job described later.)
 
-例えば以下のようなシェルスクリプト(example.sh)を実行したいとします。（このシェルスクリプトは遺伝研スパコンにインストールされている biotools Singularity コンテナのリストを生成します。）
+
+Example: to execute the following shell script(example.sh)
+
+This shell script will generate a list of biotools Singularity containers installed on the NIG Supercomputer.
 
 ```bash
 #!/bin/bash
@@ -16,9 +19,8 @@ CPU コアを 1 コアだけ使用し長時間実行するプログラムを少�
 ls /usr/local/biotools > $1
 ```
 
-
-以下のような`job_script.sh` を用意し、` qsub job_script.sh `を実行して下さい。
-すると Grid Engine の待ち行列（キュー）にバッチジョブが投入（サブミット）されます。
+Prepare `job_script.sh` as follows and execute ` qsub job_script.sh `.
+Then the batch job will be submitted to the queue of Grid Engine.
 
 ```
 #!/bin/bash
@@ -37,22 +39,26 @@ ls /usr/local/biotools > $1
 example.sh biotools_list.txt
 ```
 
-- `-cwd`: バッチジョブを現在のディレクトリ上で実行します。（指定しないと`$HOME` ディレクトリ上で実行されます。）
-- `-V` : `qsub` を実行した際の環境変数を全てバッチジョブ(を実行する計算ノード）に引き継ぎます。
-- `l short` : バッチジョブを投入する待ち行列(キュー Queue)の種類を指定します。
-    - 一般解析区画は計算機の種類ごとに`epyc`, `intel`, `gpu`, `short`, `medium`などのキューがあります。詳細は[AGEキューの種類](/general_analysis_division/ga_introduction#uge%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E7%A8%AE%E9%A1%9E)の項を参照下さい。
-    - 個人ゲノム区画の場合は構成によります。特に何も指定しなければ`all`キューのみ存在しますので`-l all`を指定して下さい。
-- `-l d_rt`, `-l s_rt`  : バッチジョブの実行上限時間。
-    - バッチジョブの実行開始からこの実行上限時間をすぎるとバッチジョブは強制終了させられます。
-    - したがって実行時間の上限は少し長めに書いたほうが安全ですが、長すぎるとジョブがなかなか実行されなくなるがあります。
-    - この例`00:10:00`では 10分を指定しています。
-    - 例えば 8 日以内にジョブが終了する見込みであるから最大 8 日間のジョブ実行枠を指定する、といった場合には、オプションに 192 時間(8 日×24 時間) `192:00:00`を指定して下さい。
-    - 最大は 2976 時間=約 4 ヶ月です。(ただし`short`キューは 1 時間。)
-    - このオプションを指定しないと（デフォルト値） 72 時間=3 日が指定されます。
-    - `-l d_rt` オプションと`-l s_rt` オプションには同じ値を指定する必要があります。
-- `-l s_vmem`, `-l mem_req` : 使用するメモリ量の指定です。通常は`-l s_vmem`,  `-l mem_req`に同じ値を指定してください。単位は G,M,K 等が使えます。
-- `-N` : ジョブ名の指定です。
-- `-S` : スクリプト（この例の場合`example.sh`)を実行する際に使われるインタプリタの指定です。
+- `-cwd`: The batch job will be executed in the same directory as the current. Without this option, the job will be executed in `$HOME` directory.
+- `-V` : All environment variables when you execute `qsub` are inherited to the computer node that executes the batch job.
+- `l short` : Specifies the type of queue that submits the batch job.
+    - The general analysis section has queues such as `epyc`,` intel`, `gpu`,` short`, `medium` and etc. for each computer type. For details, see the [UGE Queue Type](/general_analysis_division/ga_introduction#uge%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E7%A8%AE%E9%A1%9E) page.
+    - On the personal genome section, it depends on the configuration. When you specify nothing, only the `all` queue exists, so specify `-l all`.
+
+
+- `-l d_rt`, `-l s_rt`  : the maximum execution time for the batch job.
+    -The batch job will be forcibly terminated when the maximum execution time has passed from the start of the batch job.
+    - Therefore, it is safer to specify the upper limit of the execution time a little longer, but when it is too long, the job may not be executed easily.
+    - In this example, `00:10:00` specifies 10 minutes.
+    - For example, when you specify a job execution frame of up to 8 days because the job is expected to be completed within 8 days, specify 192 hours (8 days x 24 hours) `192:00:00` for the option.
+    - The maximum time is 2976 hours(= about 4 months). (However, the `short` queue is 1 hour.)
+    - When this option is not specified, 72 hours = 3 days (default value) is specified.
+    - The `-l d_rt` and `-l s_rt` options must have the same value.
+
+- `-l s_vmem`,` -l mem_req`: Specify the amount of memory to use. Normally, specify the same value for `-l s_vmem` and` -l mem_req`. You can use G, M, K, etc. as the unit.
+- `-N`: Specify the job name.
+- `-S`: Specify the interpreter used to execute the script (`example.sh` in this example).
+
 
 
 
