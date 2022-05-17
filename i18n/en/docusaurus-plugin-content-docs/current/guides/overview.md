@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Overview of the System Configuration
+title: System Architecture
 ---
 
 

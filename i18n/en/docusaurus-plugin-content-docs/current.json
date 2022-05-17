@@ -8,7 +8,7 @@
     "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
   },
   "sidebar.topSidebar.category.システム構成": {
-    "message": "System Structure",
+    "message": "System Overview",
     "description": "The label for category システム構成 in sidebar topSidebar"
   },
   "sidebar.topSidebar.category.一般解析区画の使い方": {
