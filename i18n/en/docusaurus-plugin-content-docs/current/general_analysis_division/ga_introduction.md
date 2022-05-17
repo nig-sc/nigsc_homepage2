@@ -16,7 +16,7 @@ All nodes managed by UGE mounts a Large capacity high speed storage system (Lust
 ![](GA_division_EN.png)
 
 
-## Types of UGE queues
+## UGE Queue Type
 
 Compute nodes managed by the UGE are broadly devided into login nodes and compute nodes.
 
@@ -34,7 +34,7 @@ In the general analysis section of the NIG supercomputer, there is a UGE queue f
 
 <table>
 <tr>
-  <th>Types of compute nodes</th>
+  <th>Compute nodes Type</th>
   <th>UGE queue name</th>
   <th>Hardware type</th>
   <th>Number of computers and total cores</th>
