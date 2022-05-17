@@ -1,5 +1,5 @@
 ---
-slug: 2022-04-12-suspension-of-applications
+slug: 2022-05-13-suspension-of-applications
 title: 2022 年 5 月 13 日(金) 個人ゲノム解析区画および一般解析区画大規模ユーザの新規登録の一時停止
 tags:
   - news
