@@ -14,6 +14,6 @@ For calculations that take a long time or use a large CPU or memory, run them as
 ### Reference
 
 - [System Configuration > Software > Grid Engine](../software/grid_engine) : how to use the job scheduler Grid Engine
-- [Overview (A General Analysis Section) > Types of UGE Queues](../general_analysis_division/ga_introduction.md) : the UGE queues available on the NIG supercomputer
+- [Overview (A General Analysis Section) > UGE Queue Type](../general_analysis_division/ga_introduction.md) : the UGE queues available on the NIG supercomputer
 - [System Configuration > Software](../software/software.md) : other available softwares
 - [Advanced guide](../advanced_guides/advanced_guide.md) : specific analysis methods
