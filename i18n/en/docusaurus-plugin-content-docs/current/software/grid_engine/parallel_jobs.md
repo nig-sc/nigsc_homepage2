@@ -1,55 +1,47 @@
 ---
 id: parallel_jobs
-title: パラレルジョブ
+title: Pallalel Jobs (parallel job)
 ---
 
- 
- CPU コアを複数使用し長時間実行するプログラムを少数実行する場合は、並列ジョブ(parallel job)として実行してください。（多数実行する場合は並列ジョブのアレイジョブを使ってください。）
- 
-  
-  
-  並列ジョブ機能を利用するには（バッチジョブの項で説明したオプションに加えて）-pe オプションを用いて parallel environment を指定します。
-  
-  遺伝研スパコンで用意されている parallel environment の種類を以下に示します。
+When you run a small number of programs that use multiple CPU cores and run for a long time, run them as parallel jobs. (When you execute many jobs, use the array job of parallel jobs.)
+
+To use the parallel job function in addition to the options described in the [Batch Jpbs (batch job)](/software/grid_engine/batch_jobs) page, specify the parallel environment with the -pe option.
+
+Parallel environment types provided by the NIG supercomputer are as follows.
   
 <table>
 <tr>
-<th width="300">parallel environment</th><th width="300">意味</th>
+<th width="300">parallel environment</th><th width="300">meaning</th>
 </tr>
 <tr>
   <td>def_slot N</td>
-  <td>同一計算ノード上に N 個の CPU コアを確保する。(N が計算ノード上の CPU コア数を超えている場合はジョブが始まらない。）</td>
+  <td>  N CPU cores are reserved on the same computer node. (When N exceeds the number of CPU cores on the computer node, the job will not start.)</td>
  </tr>
  <tr>
   <td>mpi N</td>
-  <td>複数の計算ノードにわたって N 個の CPU コアを確保する。その際に計算ノードは round-robin 方式で選択される。結果としてなるべく多数の計算ノードに散った形でコアが確保される。</td>
+  <td>  N CPU cores are reserved across multiple computer nodes. At that time, the computer nodes are selected by the round-robin method. As a result, the cores are secured in a form scattered among as many computing nodes as possible.
+  </td>
 </tr>
 <tr>
-  <td>mpi-fillup N</td><td>複数の計算ノードにわたって N 個の CPU コアを確保する。その際に計算ノードの台数がなるべく少なくなるようコアが確保される。</td>
+  <td>mpi-fillup N</td><td>  N CPU cores are reserved across multiple computation nodes. At that time, the core is secured so that the number of calculation nodes is as small as possible.</td>
 </tr>
 <tr>
-  <td>mpi_n N
-  
-  定義されている parallel environment は以下の通り。
-  
-  mpi_4, mpi_8, mpi_16, mpi_32, mpi_64,
-  
-  mpi_5, mpi_10, mpi_20</td>
-  <td>複数の計算ノードにわたって N 個のコアを確保する。その際各計算ノード上に n=4,8,16, … コアを確保する。</td>
+  <td><p>mpi_n N</p><p>The defined parallel environment is as follows.</p><p>mpi_4, mpi_8, mpi_16, mpi_32, mpi_64, mpi_5, mpi_10, mpi_20</p></td>
+  <td>N cores are reserved across multiple computation nodes. At that time, n = 4,8,16,… cores are secured on each compute node.</td>
 </tr>
 </table>
-		
-コア数は数値を一つ指定するほか、範囲の指定もできます。
+
+The number of cores can be specified a range besides a single number.
 
 - ` qsub -pe mpi-fillup 100 -S /bin/bash job_script.sh `
 - ` qsub -pe def_slot 20-100 -S /bin/bash job_script.sh `
 - ` qsub -pe mpi 20- -S /bin/bash job_script.sh `
 
-### 並列ジョブに対して、メモリ要求量を指定する際の注意事項
+### Notes on specifying memory requirements for parallel jobs
 
-並列ジョブに対して-l s_vmem、-l mem_req を指定する場合、並列環境で指定した並列数と指定したメモリ量が掛け合わされた容量のメモリをシステム に要求してジョブが投入されます。
+When -l s_vmem or -l mem_req is specified for the parallel job, the job is submitted by requesting memory, which is multiplied by the number of parallels specified in the parallel environment and specified memory from the system.
 
-例えば、下記のように指定した場合、並列ジョブが使用するメモリ総量として 16×8=128GB を指定したことになります。 その点について注意した上で指定する要求メモリ量を決定してください。
+For example, when you specify as below, it means that you have specified 16 × 8 = 128GB as the total memory used by the parallel jobs. Remember this point and decide requested memory to be specify.
 
 ```
 -pe def_slot 16 -l s_vmem=8G -l mem_req=8G
