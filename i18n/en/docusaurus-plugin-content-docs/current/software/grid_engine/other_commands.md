@@ -1,6 +1,6 @@
 ---
 id: other_commands
-title: その他のコマンド
+title: Othe Commands
 ---
 
 

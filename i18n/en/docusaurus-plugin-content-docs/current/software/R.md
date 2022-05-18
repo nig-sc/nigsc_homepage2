@@ -1,6 +1,6 @@
 ---
 id: R
-title: "Rの使い方"
+title: "R manual"
 ---
 
 The R processor can be installed with user permission, so you should install the necessary version in your own home directory by yourself.

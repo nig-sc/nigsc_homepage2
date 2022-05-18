@@ -1,6 +1,6 @@
 ---
 id: java
-title: "Javaの使い方"
+title: "Java manual"
 ---
 
 ### Java処理系のインストール
