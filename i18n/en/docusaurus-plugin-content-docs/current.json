@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.applicationsSidebar.category.利用規定等": {
-    "message": "利用規定等",
+    "message": "Terms of use, etc.",
     "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
   },
   "sidebar.topSidebar.category.システム構成": {
@@ -20,31 +20,31 @@
     "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar topSidebar"
   },
   "sidebar.softwareSidebar.category.ジョブスケジューラ": {
-    "message": "ジョブスケジューラ",
+    "message": "Job schedulers",
     "description": "The label for category ジョブスケジューラ in sidebar softwareSidebar"
   },
   "sidebar.softwareSidebar.category.コンテナ・解析パイプライン": {
-    "message": "コンテナ・解析パイプライン",
+    "message": "Container and Analysis pipeline",
     "description": "The label for category コンテナ・解析パイプライン in sidebar softwareSidebar"
   },
   "sidebar.softwareSidebar.category.開発環境・ライブラリ": {
-    "message": "開発環境・ライブラリ",
+    "message": "Development Environment and Libraries",
     "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
   },
   "sidebar.applicationsSidebar.category.ユーザー登録・変更": {
-    "message": "ユーザー登録・変更",
+    "message": "User Registration/Change",
     "description": "The label for category ユーザー登録・変更 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.課金サービス利用方法": {
-    "message": "課金サービス利用方法",
+    "message": "How to use billing services",
     "description": "The label for category 課金サービス利用方法 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.お問い合わせ等": {
-    "message": "お問い合わせ等",
+    "message": "FAQ and Contact us",
     "description": "The label for category お問い合わせ等 in sidebar applicationsSidebar"
   },
   "sidebar.advancedGuidesSidebar.category.活用方法概要": {
-    "message": "活用方法概要",
+    "message": "Advances Guides Overview",
     "description": "The label for category 活用方法概要 in sidebar advancedGuidesSidebar"
   },
   "sidebar.advancedGuidesSidebar.category.Rhelixa RNAseq": {
@@ -52,11 +52,11 @@
     "description": "The label for category Rhelixa RNAseq in sidebar advancedGuidesSidebar"
   },
   "sidebar.advancedGuidesSidebar.category.講習会": {
-    "message": "講習会",
+    "message": "Training course",
     "description": "The label for category 講習会 in sidebar advancedGuidesSidebar"
   },
   "sidebar.advancedGuidesSidebar.category.利用方法解説": {
-    "message": "利用方法解説",
+    "message": "Explanation of Usage",
     "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
   },
   "sidebar.operationInfoSidebar.category.稼働状況": {
@@ -72,7 +72,7 @@
     "description": "The label for category 論文リスト in sidebar reportSidebar"
   },
   "sidebar.softwareSidebar.category.データ転送・データ共有": {
-    "message": "データ転送・データ共有",
+    "message": "Data transfer / data sharing",
     "description": "The label for category データ転送・データ共有 in sidebar softwareSidebar"
   },
   "sidebar.softwareSidebar.category.Aspera": {
@@ -84,7 +84,7 @@
     "description": "The label for category HCP tools in sidebar softwareSidebar"
   },
   "sidebar.applicationsSidebar.link.よくある質問(FAQ)": {
-    "message": "よくある質問(FAQ)",
+    "message": "FAQ",
     "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq1"
   },
   "sidebar.advancedGuidesSidebar.category.Alphafold 2.1": {
@@ -100,7 +100,7 @@
     "description": "The label for category Slurm in sidebar softwareSidebar"
   },
   "sidebar.softwareSidebar.category.パッケージマネージャ": {
-    "message": "パッケージマネージャ",
+    "message": "Package Managers",
     "description": "The label for category パッケージマネージャ in sidebar softwareSidebar"
   },
   "sidebar.softwareSidebar.category.Spack": {
@@ -116,11 +116,11 @@
     "description": "The label for category Alphafold 2.2 in sidebar advancedGuidesSidebar"
   },
   "sidebar.operationInfoSidebar.link.お知らせ": {
-    "message": "お知らせ",
+    "message": "News",
     "description": "The label for link お知らせ in sidebar operationInfoSidebar, linking to /blog/tags/news"
   },
   "sidebar.operationInfoSidebar.link.メンテナンス情報": {
-    "message": "メンテナンス情報",
+    "message": "Maintenance Info",
     "description": "The label for link メンテナンス情報 in sidebar operationInfoSidebar, linking to /blog/tags/maintenance"
   }
 }

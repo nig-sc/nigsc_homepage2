@@ -1,6 +1,6 @@
 ---
 id: advance_reservation
-title: アドバンスリザベーション
+title: Advance Reservation
 ---
 
 ## 概要
