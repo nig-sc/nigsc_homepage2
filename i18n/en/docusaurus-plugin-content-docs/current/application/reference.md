@@ -1,6 +1,6 @@
 ---
 id: reference
-title: "問い合わせ先"
+title: "Contact us"
 ---
 
 リソース拡張申請、課金サービスの申請のほか

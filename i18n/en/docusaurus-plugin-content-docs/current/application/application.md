@@ -1,6 +1,6 @@
 ---
 id: application
-title: "ユーザーアカウント発行基準"
+title: "Issuance criteria for user accounts"
 ---
 
 ## 遺伝研スパコンの対象ユーザー

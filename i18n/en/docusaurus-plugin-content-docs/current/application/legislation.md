@@ -1,6 +1,6 @@
 ---
 id: legislation
-title: "関連法規等"
+title: "Related laws and regulations, etc."
 ---
 
 ## 外為法関係

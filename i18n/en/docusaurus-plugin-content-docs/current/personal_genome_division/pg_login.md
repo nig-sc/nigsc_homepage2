@@ -1,6 +1,6 @@
 ---
 id: pg_login
-title: "ログイン方法（個人ゲノム解析区画）"
+title: "How to Login（The Personal Genome Section）"
 ---
 
 ## 概要

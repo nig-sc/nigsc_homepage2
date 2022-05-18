@@ -1,6 +1,6 @@
 ---
 id: pg_introduction
-title: "概要（個人ゲノム解析区画）"
+title: "Introduction（The Personal Genome Section）"
 ---
 
 ## 個人ゲノム解析区画について
