@@ -1,6 +1,6 @@
 ---
 id: billing_service
-title: "課金サービスの利用方法"
+title: "How to use billing services"
 ---
 
 ## 概要

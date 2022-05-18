@@ -1,6 +1,6 @@
 ---
 id: resource_extension
-title: "利用計画表の提出"
+title: "Submission of Your Usage Plan"
 ---
 
 ## 利用計画表
