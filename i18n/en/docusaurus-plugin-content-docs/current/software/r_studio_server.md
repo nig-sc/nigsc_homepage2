@@ -1,6 +1,6 @@
 ---
 id: r_studio_server
-title: "RStudio Serverの使い方"
+title: "RStudio Server manual"
 ---
 
 ### 参考資料

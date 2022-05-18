@@ -1,6 +1,6 @@
 ---
 id: jupyter_notebook
-title: "Jupyter Notebookの使い方"
+title: "Jupyter Notebook manual"
 ---
 
 ### Jupyter Notebookサーバーの起動
