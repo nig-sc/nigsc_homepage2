@@ -1,14 +1,13 @@
 ---
 id: array_jobs
-title: アレイジョブ
+title: Array Jobs(array job)
 ---
 
+When you submit many jobs(batch jobs or parallel jobs) to the system at once, use the array job. 
 
-一度に多数のジョブ（バッチジョブまたは並列ジョブ）をシステムに投入したい場合はアレイジョブ機能を利用してください。
+Never submit many jobs as it is. It may overload the system.
 
-決して、多数のジョブをそのまま投入しようとしないでください。システムを過負荷を与える場合があります。
-
-アレイジョブとして実行するには以下のように-t オプションを指定して qsub を実行します。 "-t 1-6:2"は、最小インデックス番号を 1、最大インデックス番号を 6 とし、それに対して":2"を付加することで、1つ飛ばしのインデックス 番号を付けることを指定しています。この為、インデックス番号としては、1,3,5 が指定されたことになります。これは qstat の出力の 各行の末尾に、タスク ID として参照が可能となっています。
+"-t 1-6: 2" specifies that the minimum index number is 1 and the maximum index number is 6, and by adding ": 2" to that, the index number is skipped by one. increase. Therefore, 1,3,5 are specified as the index number. It can be referenced as a task ID at the end of each line of qstat output.
 
 ```
 [username@at027 ~]$ qsub -t 1-6:2 arraytest.sh
@@ -21,26 +20,23 @@ job-ID     prior   name       user         state submit/start at     queue      
 	80430 0.25000 arraytest. username     r     03/04/2019 20:31:57 epyc.q@at095                                 1 5
 ```
 
-タスク ID は、ジョブスクリプト内で、SGE_TASK_ID という環境変数によって参照可能です。これを使って「アレイジョブ内の各タスクは SGE_TASK_ID の値を確認して、それぞれ異なる処理を行う。」ことが可能です。
+The task ID can be referenced in the job script by an environment variable called SGE_TASK_ID. 
+It is possible that "each task in the array job checks the value of SGE_TASK_ID and execute the different process." by using it.
 
+Each task is executed as soon as it finds the free computer. (It is not necessarily executed in parallel.)
+When the computer is free, each task is executed in parallel, but the upper limit can be limited by the -tc option.
 
-各タスクは計算機の空きが見つかり次第それぞれ実行されます。（並列に実行されるとは限りません。）計算機が空いていれば各タスクは並列に実行されますが、その上限を-tc オプションで制限することが出来ます。
-
- その他の例：
+Other examples:
  
 - ` qsub -t 1-10 -tc 5 job_script.sh `
-  - $SGE_TASK_ID が 1 から 10 の合計 10 個のタスクをサブミットします。計算機が空いていれば最大 5 並列で順次実行します。
-
+  - Submit a total of 10 tasks with $ SGE_TASK_ID from 1 to 10. When the computer is free, the task will be executed sequentially in up to 5 parallels.
 - ` qsub -t 10 job_script.sh `
-  - $SGE_TASK_ID が 10 であるタスクを 1 つサブミットします。
- 
+  - Submit one task whose $ SGE_TASK_ID is 10.
 - ` qsub -t 2-10:2 job_script.sh ` 
-  - 最小インデックス番号を 2、最大インデックス番号を 10 とし、それに対して":2"を付加することで、1つ飛ばしのインデックス 番号を付けることを指定しています。
-(task-ids 2,4,6,8,10).
- 
-  
-アレイジョブ内から参照可能な環境変数 (Pseudo environment variable)は以下の通りです。
+  - The minimum index number is 2, the maximum index number is 10, and ":2" is added to specify that the index number is skipped by one. (task-ids 2,4,6,8,10).
 
+
+The environment variables (Pseudo environment variables) that can be referenced from within the array job are as follows.
 
 <table>
 <tr>

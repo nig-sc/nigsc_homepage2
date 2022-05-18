@@ -1,6 +1,6 @@
 ---
 id: cuda
-title: "CUDAの使い方"
+title: "CUDA manual"
 ---
 
 Hello
