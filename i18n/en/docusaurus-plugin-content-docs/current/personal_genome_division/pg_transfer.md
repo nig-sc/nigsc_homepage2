@@ -1,6 +1,6 @@
 ---
 id: pg_transfer
-title: "データ転送（個人ゲノム解析区画）"
+title: "Data file transfer（The Personal Genome Section）"
 ---
 
 

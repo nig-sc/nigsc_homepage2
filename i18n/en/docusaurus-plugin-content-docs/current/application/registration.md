@@ -1,6 +1,6 @@
 ---
 id: registration
-title: "ユーザー登録・変更申請"
+title: "User Registration/Change Request"
 ---
 
 

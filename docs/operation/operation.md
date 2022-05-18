@@ -1,6 +1,6 @@
 ---
 id: operation
-title: "稼働状況概要"
+title: 稼働状況概要
 ---
 
 ## 概要
