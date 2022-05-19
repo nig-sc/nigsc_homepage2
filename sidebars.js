@@ -85,9 +85,29 @@ module.exports = {
             type: 'category',
             label: 'パッケージマネージャ',
             items: [
-                "software/guix/guix",
-                "software/spack/spack",
-                "software/environmental_modules/environmental_modules",
+                {
+                    type: "category",
+                    label: "Guix",
+                    items: [
+                        "software/guix/guix",
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "spack",
+                    items: [
+                        "software/spack/install_spack",
+                        "software/spack/use_spack",
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "Environmental Modules",
+                    items: [
+                        "software/environmental_modules/environmental_modules",
+                    ],
+                },
+
             ]
         },
 

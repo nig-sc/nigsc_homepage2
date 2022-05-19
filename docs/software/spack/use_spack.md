@@ -1,5 +1,5 @@
 ---
-id: spack
+id: use_spack
 title: spack の使い方
 ---
 
@@ -12,25 +12,6 @@ Spack はユーザ権限で利用できるパッケージマネージャです�
 - [Spack github リポジトリ](https://github.com/spack/spack)
 - [Spack packages](https://spack.github.io/packages/) (spack で利用可能なパッケージの検索サイト)
 
-
-## spack のインストール方法
-
-1, spack を github からユーザのホームディレクトリなどにクローンして下さい。
-
-```
-cd $HOME
-git clone -c feature.manyFiles=true https://github.com/spack/spack.git
-```
-
-ホームディレクトリ上に`spack`というディレクトリが作られます。
-
-
-2, 次に、以下を実行してください。（次回ログイン時に自動的に呼ばれるよう`~/.bashrc`にも追加してください。）
-
-```
-export SPACK_ROOT=/home/your_account/spack
-source $SPACK_ROOT/share/spack/setup-env.sh
-```
 
 
 ## spack で利用可能なパッケージを表示する
@@ -181,12 +162,3 @@ spack install -j 4 --fail-fast gcc@8.5.0 binutils=True
 ```
 spack load gcc@8.5.0
 ```
-
-## spack 自体のアンインストール
-
-以下のコマンドで spack 自体をアンインストールできます。
-
-```
-spack uninstall --all
-```
-

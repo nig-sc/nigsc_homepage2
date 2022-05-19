@@ -98,7 +98,7 @@ spack はユーザー権限だけで使えるパッケージマネージャの�
 
 ### 基本的な手順
 
-[spacke の使い方](/software/spack)の手順に従って spack パッケージマネージャをインストールしてください。
+[spacke 自体のインストール手順](/software/spack/install_spack)の手順に従って spack パッケージマネージャをインストールしてください。
 
 以下のコマンドを実行すると R 処理系が使えるようになります。
 
@@ -296,4 +296,4 @@ spack install r@4.0.5 X=True
 
 `spack uninstall r`
 
-spack 自体のアンインストールについては[spack の使い方](/software/spack)をご参照ください。
+spack 自体のアンインストールについては[spack 自体のインストール手順](/software/spack/install_spack)をご参照ください。

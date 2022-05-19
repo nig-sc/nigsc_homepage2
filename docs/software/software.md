@@ -58,7 +58,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[Spack](/software/spack)
+[Spack](/software/spack/install_spack)
 </td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>

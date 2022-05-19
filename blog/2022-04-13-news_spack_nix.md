@@ -13,6 +13,6 @@ date: 2022-04-13
 
 以下のパッケージマネージャはユーザ権限だけで利用可能です。開発・解析環境の構築が容易になります。
 
-- [spack](/software/spack/)
+- [spack](/software/spack/install_spack)
 - [Environmental Modules](/software/environmental_modules/)
 
