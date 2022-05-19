@@ -46,7 +46,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <td width="300">
 
-[Spack](/software/spack)
+[Spack](/software/spack/install_spack)
 </td>
 <td width="300">available</td>
 <td width="300">available</td>
