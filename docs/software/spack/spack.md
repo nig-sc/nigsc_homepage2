@@ -32,9 +32,6 @@ export SPACK_ROOT=/home/your_account/spack
 source $SPACK_ROOT/share/spack/setup-env.sh
 ```
 
-3, spack は python インタプリタ(version 3 系)を使います。
-spack でつかう python インタプリタを明示的に指定する場合は`SPACK_PYTHON`環境変数を設定して下さい。
-
 
 ## spack で利用可能なパッケージを表示する
 
@@ -183,5 +180,13 @@ spack install -j 4 --fail-fast gcc@8.5.0 binutils=True
 
 ```
 spack load gcc@8.5.0
+```
+
+## spack 自体のアンインストール
+
+以下のコマンドで spack 自体をアンインストールできます。
+
+```
+spack uninstall --all
 ```
 

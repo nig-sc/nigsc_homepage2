@@ -175,7 +175,7 @@ module.exports = {
             {
                 type: "link",
                 label: "よくある質問(FAQ)",
-                href: "/faq/faq1"
+                href: "/faq/faq_login"
             },
             "application/reference"
         ],
@@ -240,12 +240,33 @@ module.exports = {
         ],
     },
 
-    faqSidebar: [
-        "faq/faq1",
-        "faq/faq_hcptools",
-        "faq/faq_aspera",
-        "faq/faq_billing_service",
-    ]
 
+    faqSidebar: [
+        {
+            type: 'category',
+            label: "FAQ : software",
+            items: [
+                "faq/faq_software",
+                "faq/faq_hcptools",
+                "faq/faq_aspera",
+                "faq/faq_grid_engine",
+            ]
+        },
+        {
+            type: 'category',
+            label: "FAQ : Login",
+            items: [
+                "faq/faq_login",
+            ]
+        },
+        {
+            type: 'category',
+            label: "FAQ : 申請・課金",
+            items: [
+                "faq/faq_billing_service",
+            ]
+        },
+
+    ],
 
 };
