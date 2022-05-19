@@ -4,20 +4,20 @@ title: "ログイン方法(一般解析区画)"
 ---
 
 
-ユーザーのアカウント登録後、まず最初に必ず[SSH公開鍵の登録](/application/ssh_keys)を行ってください。
+ユーザーのアカウント登録後、まず最初に必ず[SSH 公開鍵の登録](/application/ssh_keys)を行ってください。
 
 
 ## ログインの手順
 
 
 1, ターミナルエミュレータを開き、`ssh ユーザ名@ゲートウェイノード名` を入力し、enter を押下します。
-（Windows PowerShellのSSHクライアントの場合も同じです。）
+（Windows PowerShell の SSH クライアントの場合も同じです。）
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
 ```
 
-2, "Enter passphrase for key ..."のプロンプトに対し、SSH鍵ペアのパスフレーズを入力し、enter を押下します。
+2, "Enter passphrase for key ..."のプロンプトに対し、SSH 鍵ペアのパスフレーズを入力し、enter を押下します。
 
 ※ 鍵のパスフレーズ入力後に以下のメッセージが出力された場合は、yes を入力してください。
 ```
@@ -60,14 +60,14 @@ Last login: Sun Sep 26 15:29:09 2021 from gw1
 $ 
 ```
 
-うまく行かない場合は、[よくある質問(FAQ)](/faq/faq1)を参照してください。
+うまく行かない場合は、[よくある質問(FAQ)](/faq/faq_login)を参照してください。
 
 
 
 ## 利用可能メモリに関する注意
 
 
-ログインノードで利用可能なメモリはデフォルトでは4GBです。
+ログインノードで利用可能なメモリはデフォルトでは 4GB です。
 これを増やすには以下のように`qlogin`時にメモリ量を指定してください。
 
 ```
@@ -76,16 +76,16 @@ qlogin -l s_vmem=10G -l mem_req=10G
 
 ### 参考
 
-- [Javaの使い方](/software/java) > 注意事項 Javaプログラムを起動するとメモリが足りないとのエラーが出る
-- [Singularityの使い方](/software/Singularity) > スパコン上でのイメージのビルド : DockerコンテナイメージからSingularityイメージを生成する
+- [Java の使い方](/software/java) > 注意事項 Java プログラムを起動するとメモリが足りないとのエラーが出る
+- [Singularity の使い方](/software/Singularity) > スパコン上でのイメージのビルド : Docker コンテナイメージから Singularity イメージを生成する
 
 
 
 
-## GPUノードの利用方法
+## GPU ノードの利用方法
 
 
-GPUを用いたプログラムの開発や動作テストの目的で、GPUを搭載したログインノードを１台用意しています。
+GPU を用いたプログラムの開発や動作テストの目的で、GPU を搭載したログインノードを１台用意しています。
 このログインノードを使うには、`-l gpu`オプションを付けて`qlogin`してください。
 
 

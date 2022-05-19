@@ -1,17 +1,17 @@
 ---
 id: ssh_keys
-title: SSH公開鍵の登録
+title: SSH 公開鍵の登録
 ---
 
 ## 公開鍵・秘密鍵の生成
 
-安全なユーザー認証のために必要となるSSH公開鍵・秘密鍵をユーザーの計算機上で作成します。
-作成にはMac, Linuxの場合ターミナルエミュレータ(Windowsの場合はPowerShellなど)を使います。
+安全なユーザー認証のために必要となる SSH 公開鍵・秘密鍵をユーザーの計算機上で作成します。
+作成には Mac, Linux の場合ターミナルエミュレータ(Windows の場合は PowerShell など)を使います。
 
-作業前にユーザーの計算機にOpenSSHがインストールされていることを確認して下さい。Windows PowerShellへのOpenSSHのインストール方法はたとえば[Microsoft社の該当ページ](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)などを参照してください。
+作業前にユーザーの計算機に OpenSSH がインストールされていることを確認して下さい。Windows PowerShell への OpenSSH のインストール方法はたとえば[Microsoft 社の該当ページ](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)などを参照してください。
 
 
-SSH公開鍵・秘密鍵を生成するには、`ssh-keygen`コマンドを使用します。
+SSH 公開鍵・秘密鍵を生成するには、`ssh-keygen`コマンドを使用します。
 
 ```
 $ cd ~/.ssh
@@ -26,13 +26,13 @@ The key fingerprint is:
 e5:23:f0:fc:b7:60:70:80:79:91:f2:f1:6d:a8:ae:90 temp@host
 ```
 
-- (1) RSAバージョン2で、2048ビットの鍵を生成する。
-- (2) 公開鍵・秘密鍵の保存先：変更する場合のみここでパスを指定する。変更しない場合はEnterを押す。
+- (1) RSA バージョン 2 で、2048 ビットの鍵を生成する。
+- (2) 公開鍵・秘密鍵の保存先：変更する場合のみここでパスを指定する。変更しない場合は Enter を押す。
 - (3) パスフレーズを入力する。
 - (4) パスフレーズを再入力する。
 
 
-SSHでは秘密鍵ファイルを所有していることが本人であることの根拠として扱われます。
+SSH では秘密鍵ファイルを所有していることが本人であることの根拠として扱われます。
 秘密鍵ファイルを盗まれてしまうとなりすましが可能となります。
 パスフレーズの設定は省略することが可能ですが秘密鍵の盗難時の被害を軽減するため設定することを強く推奨します。
 
@@ -87,7 +87,7 @@ $
 
 ## 遺伝研スパコンゲートウェイへの接続確認
 
-sshコマンドにてスーパーコンピュータシステムに接続します。
+ssh コマンドにてスーパーコンピュータシステムに接続します。
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
@@ -110,7 +110,7 @@ This node is in use for login service only. Please use 'qlogin'.
 ssh -i ~/yourpath/id_rsa youraccount@gw.ddbj.nig.ac.jp
 ```
 
-うまく接続できない場合は[よくある質問(FAQ)](/faq/faq1)もご参照ください。
+うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
 
 
 

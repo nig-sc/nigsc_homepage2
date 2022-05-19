@@ -44,6 +44,17 @@ title: ソフトウェア
 <th width="300">一般解析区画</th>
 <th width="300">個人ゲノム解析区画</th>
 </tr>
+
+<tr>
+<td width="300">
+
+[Guix](/software/guix)
+</td>
+<td width="300">インストール済み</td>
+<td width="300">☓</td>
+</tr>
+
+
 <tr>
 <td width="300">
 
@@ -58,8 +69,8 @@ title: ソフトウェア
 
 [Environmental Modules](/software/environmental_modules)
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">インストール済み</td>
+<td width="300">インストール済み</td>
 </tr>
 
 </table>
@@ -243,8 +254,8 @@ R Studio Server
 C/C++ (GCC)
 
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">インストール済み</td>
+<td width="300">インストール済み</td>
 </tr>
 <tr>
 <td width="300">
@@ -252,7 +263,7 @@ C/C++ (GCC)
 C/C++ (Intel Compiler)
 
 </td>
-<td width="300">利用可能</td>
+<td width="300">インストール済み</td>
 <td width="300">☓</td>
 
 </tr>
@@ -262,7 +273,7 @@ C/C++ (Intel Compiler)
 C/C++ (PGI Compiler)
 
 </td>
-<td width="300">利用可能</td>
+<td width="300">インストール済み</td>
 <td width="300">☓</td>
 </tr>
 <tr>
@@ -270,8 +281,8 @@ C/C++ (PGI Compiler)
 
 [CUDA](/software/cuda)
 </td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
+<td width="300">インストール済み</td>
+<td width="300">インストール済み</td>
 </tr>
 <tr>
 <td width="300">OpenMP</td>
