@@ -19,9 +19,9 @@ sidebar_label: トップページ
 
 
 ## 最近のお知らせ
+- [ユーザ権限で使えるパッケージマネージャについてページを追加しました](/blog/2022-05-19-news_guix_spack_nix) (2022.05.19更新)
 - &#x26A0;[大規模ユーザ新規登録の一時停止](/blog/2022-05-13-suspension-of-applications) (2022.05.13)
 - &#x1F9EC; [東大 吉武先生が開発したPortablePipelineの紹介を追加しました](/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
-- [ユーザ権限で使えるパッケージマネージャについてページを追加しました](/blog/2022-04-13-news_spack_nix) (2022.04.13)
 - [高速データ転送ソフト Aspera と HCP tools のページを追加しました](/blog/2022-04-12-news_Aspera_HCP) (2022.04.12)
 - [Grid Engine のページを更新しました](/blog/2022-04-12-news_Grid_Engine) (2022.04.12)
 - &#x2714; [DDBJ グループクラウドの料金を値下げしました](/blog/2022-04-05-news_DGC) (2022.04.05)
