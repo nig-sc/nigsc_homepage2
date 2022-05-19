@@ -56,7 +56,7 @@ Last login: Sun Sep 26 15:29:09 2021 from gw1
 $ 
 ```
 
-If it does not work, refer to [FAQ](/faq/faq1).
+If it does not work, refer to [FAQ](/faq/faq_login).
 
 
 ## Notes on available memory
