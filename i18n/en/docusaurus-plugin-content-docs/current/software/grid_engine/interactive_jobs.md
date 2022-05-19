@@ -1,10 +1,9 @@
 ---
 id: interactive_jobs
-title: インタラクティブジョブ
+title: Interactive Jobs (interactive job)
 ---
 
-
-ゲートウェイノード上で`qlogin`コマンドを実行すると、空いているログインノードが割り当てられます。
+When you execute the `qlogin` command on the gateway node, a free login node will be allocated.
 
 
 ```
@@ -26,11 +25,8 @@ Establishing /home/geadmin/UGER/utilbin/lx-amd64/qlogin_wrapper session to host 
 $
 ```
 
-この例では at137 というログインノードがユーザに割り当てられ、最後に at137 のプロンプトが表示されています。
-このプロンプトから対話的にコマンドを実行できます。
+In this example, the login node at137 is allocated to the user, and you will see the prompt for at137 at the end.
+You can execute commands interactively from this prompt.
 
-- `qlogin`コマンドに`-l s_vmem`, `-l mem_req`オプションをつけると、利用可能なメモリ量を指定できます。（一般解析区画の場合、オプション無指定の場合は 4GB のメモリが割り当てられます。個人ゲノム解析区画の場合は利用する構成に依存します。）
-- ここで指定可能なメモリ用の上限は XXXGB としています。これ以上のメモリ量を必要とする場合は XXXX して下さい。
-
-
-
+- You can specify the amount of memory available by adding the `-l s_vmem`,` -l mem_req` options to the `qlogin` command. (On the general analysis section, 4GB memory will be allocated when you specify no options. On the personal genome analysis section, allocated memory depend on the configuration to use.)
+- The upper limit for memory that can be specified here is XXXGB. If you need more memory , specify XXXX.

@@ -1,6 +1,6 @@
 ---
 id: IIBMP
-title: IIBMP データサイエンティスト養成セッション
+title: "IIBMP - the Data Scientist Traning Session"
 ---
 
 

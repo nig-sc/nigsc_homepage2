@@ -1,6 +1,6 @@
 ---
 id: ga_lustre
-title: Lustre FSの使い方
+title: Using Lustre FS
 ---
 
 遺伝研スパコンの一般解析区画、個人ゲノム解析区画ともホーム領域はLustre File Systemで構成されています。

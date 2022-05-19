@@ -1,6 +1,6 @@
 ---
 id: Singularity
-title: "Singularityの使い方"
+title: "Singularity Tutorial"
 ---
 
 ## 概要

@@ -1,5 +1,5 @@
 ---
-slug: 2022-04-12-suspension-of-applications
+slug: 2022-05-13-suspension-of-applications
 title: May 13, 2022(Friday) - Suspend acceptance of new user registrations for the personal genome section and  large-scale strages on the general analysis section
 tags:
   - news
