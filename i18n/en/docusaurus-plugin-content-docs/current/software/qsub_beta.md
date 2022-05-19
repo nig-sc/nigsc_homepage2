@@ -1,6 +1,6 @@
 ---
 id: qsub_beta
-title: qsub_beta の使い方
+title: How to use qsub_beta
 ---
 
 ## ツールの概要

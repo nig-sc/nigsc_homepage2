@@ -1,6 +1,6 @@
 ---
 id: use_policy
-title: "利用規定"
+title: "Use Policy"
 ---
 
 

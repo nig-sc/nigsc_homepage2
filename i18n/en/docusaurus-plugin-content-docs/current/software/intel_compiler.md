@@ -1,6 +1,6 @@
 ---
 id: intel_compiler
-title: "C/C++の使い方 (Intel Compiler)"
+title: "C/C++ manual (Intel Compiler)"
 ---
 
 Hello

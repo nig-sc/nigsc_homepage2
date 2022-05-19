@@ -1,6 +1,6 @@
 ---
 id: commentary
-title: ユーザーによる解説
+title: "User commentary"
 ---
 
 
