@@ -3,15 +3,13 @@ id: resource_extension
 title: "Submission of Your Usage Plan"
 ---
 
-## 利用計画表
+## Usage plan
 
 
-- 利用可能な高速ストレージ領域の拡張を希望する場合、および、課金サービスの利用を希望する場合は、利用計画表をダウンロードし、「利用目的等」と「料金試算表」へご記入頂いた上、[問い合わせ先](/application/reference)までご送付ください。
+- When you expand your available high-speed storage, or when you use the billing service, download the usage plan table, fill in the "Purpose of use, etc." and "Usage TB" and send to [Contact] (/ application / reference).
 
 
-
-
-### 利用計画表をダウンロードする
+### Download the usage plan table
 
 <table>
 <tr>
@@ -23,61 +21,61 @@ title: "Submission of Your Usage Plan"
 
 </td>
 <td valign="top">
-以下をクリックして、利用計画表をダウンロードしてください。
+Click here and download the usage plan table.
 
-[<ul><li><font size="+1.5">利用計画表(2022年度版)</font></li></ul>](/files/usage_plan-ver2.3.3-2022.xlsx)
+[<ul><li><font size="+1.5">the usage plan(2022)</font></li></ul>](/files/usage_plan-ver2.3.3-2022.xlsx)
+<p>&#x26A0; Currently, we are not accepting new user registration application of largescale storages. For more information, refer to <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">"May 13, 2022(Friday) - Suspend acceptance of new user registrations for the personal genome section and large-scale strages on the general analysis section"</a></p>
 </td>
 </tr>
 </table>
 
-<font color="red"><b>！！</b></font> 申請の際には、<font color="red"><b>「利用目的等」と「料金試算表」の両方</b>に記入</font>し、ご提出下さい。<font color="red"><b>！！</b></font> 
+
+<font color="red"><b>！！</b></font> When applying,<font color="red"><b> fill in both the "Purpose of use, etc." and "Usage TB"</b></font> and submit that.<font color="red"><b>！！</b></font>  
+
 <table>
 <tr>
 <td width="400" height="400" align="center">
+Purpose of use, etc.
 
 ![](purpose_of_use_etc.png)
-利用目的等
+
 </td>
 <td valign="top">
-ダウンロードした利用計画表の1シート目に、「利用目的等」があります。
+"Purpose of use, etc." is on the first sheet of the downloaded usage plan.
 
-1〜6について、必要事項をご記入ください。
+Fill in the required information for 1-6.
 </td>
 </tr>
 <tr>
 <td width="400" height="400" align="center">
+Usage TB
 
 ![](usageTB.png)
-料金試算表
+
 </td>
 <td valign="top">
-ダウンロードした利用計画表の2シート目に、「料金試算表」があります。
+"Usage TB" is on the second sheet of the downloaded usage plan.
 </td>
 
 </tr>
 </table>
 
+- For details on billing services, such as the use of high-speed storage exceeding 30TB and the personal genome analysis environment, refer to the "[How to use the billing service](/application/billing_service)" page.
 
-- 30TBを超える高速ストレージの利用、個人ゲノム解析環境など、課金サービスの詳細については「[課金サービスの利用方法](/application/billing_service)」のページをご参照ください。
+- Prepare and submit one "purpose of use, etc." and "Usage TB" for each responsible person. You don't need to create and submit a separate application every time you apply for resource expansion. When your application changes, change and submit your previous application and plan. When creating it, describe everyone who uses the supercomputer under the principal investigator.
 
+## Group quotas for storage
 
-- 「利用目的等」および「料金試算表」は、責任者あたりそれぞれ１つ作成して提出してください。リソースの拡張を申請するたびに別の申請書を作る必要はありません。申請内容が変更になったら、以前の申請書および計画表を変更して提出してください。作成にあたりましては研究責任者のもとでスパコンを使う全員について記載していただくようお願いいたします。
+The total amount of high-speed storage under 30TB for each responsible person is free, and a group are created for each responsible person. When you wish to set the quota for each responsible person, let us know.
 
-
-## ストレージに対するグループクォータについて
-
-責任者単位の合計で高速ストレージ30TB以下は無料であり、 責任者単位でグループが作られます。その際クォータの設定を責任者単位で設定することを希望される場合はその旨をお知らせください。
-
-
-### アカウント別の利用計画表の書き方
+### How to write the usage plan table for each account
 ![](usage_plan_table1.png)
 
-### グループクォータ別の利用計画表の書き方
+### How to write the usage plan table for each group quota
 ![](usage_plan_table2.png)
 
 
+## Sharing data between groups by setting up secondary groups, etc.
 
-## 2次グループの設定等によるグループ間のデータ共有について
-
-グループ間でのデータ共有を可能にする設定についてもご要望を承ります。その際、束ねたグループの合計で30TBを超えると課金対象となります。料金は責任者間においてクォータ量で按分となります。（この場合には請求金額は利用計画表では計算出来ませんのでご注意願います。）
+We accept requests for settings that allow data sharing among groups. In this case, when the total of the bundled groups exceeds 30TB, you are charged. The fee is apportioned by the quota amount among the responsible persons. (Note: In this case, the billing amount cannot be calculated using the usage plan.)
 
