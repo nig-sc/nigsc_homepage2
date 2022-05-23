@@ -7,11 +7,13 @@ For more information about how to use the software, click the software name(link
 
 ## Job scheduler
 
+Job scheduler automatically allocates computer resources (CPU core and memory) to each user in an environment used by many users. It works as the Operating System when the entire cluster computer is viewed as one computer.
+
 <table>
 <tr>
 <th width="300">area name</th>
-<th width="300"> general analysis section</th>
-<th width="300">personal genome section</th>
+<th width="300">the general analysis section</th>
+<th width="300">the personal genome section</th>
 </tr>
 <tr>
 <td width="300">
@@ -40,9 +42,20 @@ The following package managers can be used only with user permission. They facil
 <table>
 <tr>
 <th width="300">area name</th>
-<th width="300"> general analysis section</th>
-<th width="300">personal genome section</th>
+<th width="300">the general analysis section</th>
+<th width="300">the personal genome section</th>
 </tr>
+
+<tr>
+<td width="300">
+
+[Guix](/software/guix)
+</td>
+<td width="300">installed</td>
+<td width="300">☓</td>
+</tr>
+
+
 <tr>
 <td width="300">
 
@@ -57,8 +70,8 @@ The following package managers can be used only with user permission. They facil
 
 [Environmental Modules](/software/environmental_modules)
 </td>
-<td width="300">available</td>
-<td width="300">available</td>
+<td width="300">installed</td>
+<td width="300">installed</td>
 </tr>
 
 </table>
@@ -68,8 +81,8 @@ The following package managers can be used only with user permission. They facil
 <table>
 <tr>
 <th width="300">area name</th>
-<th width="300"> general analysis section</th>
-<th width="300">personal genome section</th>
+<th width="300">the general analysis section</th>
+<th width="300">the personal genome section</th>
 </tr>
 <tr>
 <td width="300">
@@ -85,13 +98,11 @@ The following package managers can be used only with user permission. They facil
 <td width="300">installed</td>
 <td width="300">Application Required</td>
 </tr>
-
 <tr>
 <td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/advanced_guide#dfast">DFAST</a></td>
 <td width="300">available</td>
 <td width="300">available</td>
 </tr>
-
 </table>
 
 
@@ -110,7 +121,7 @@ The following package managers can be used only with user permission. They facil
 
 Singularity container images created by the BioContainers project (over 2,000 different analysis software and over 90,000 Singularity image files, including different versions) are available in `/user/local/biotools` directory.
 
-Please refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a href="https://biocontainers.pro/">BioContainers' official website</a> for the contents and how to use the software.
+For the contents and how to use the software, refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a href="https://biocontainers.pro/">the BioContainers' official website</a>.
 
 </td>
 </tr>
@@ -126,8 +137,8 @@ Please refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a 
 <table>
 <tr>
 <th width="300">area name</th>
-<th width="300"> general analysis section</th>
-<th width="300">personal genome section</th>
+<th width="300">the general analysis section</th>
+<th width="300">the personal genome section</th>
 </tr>
 <tr>
 <td width="300">
@@ -160,8 +171,8 @@ Many development environments are preinstalled on the system. But if you need a 
 <table>
 <tr>
 <th width="300">area name</th>
-<th width="300"> general analysis section</th>
-<th width="300">personal genome section</th>
+<th width="300">the general analysis section</th>
+<th width="300">the personal genome section</th>
 </tr>
 <tr>
 <td width="300">
@@ -242,8 +253,8 @@ R Studio Server
 C/C++ (GCC)
 
 </td>
-<td width="300">available</td>
-<td width="300">available</td>
+<td width="300">installed</td>
+<td width="300">installed</td>
 </tr>
 <tr>
 <td width="300">
@@ -251,7 +262,7 @@ C/C++ (GCC)
 C/C++ (Intel Compiler)
 
 </td>
-<td width="300">available</td>
+<td width="300">installed</td>
 <td width="300">☓</td>
 
 </tr>
@@ -261,7 +272,7 @@ C/C++ (Intel Compiler)
 C/C++ (PGI Compiler)
 
 </td>
-<td width="300">available</td>
+<td width="300">installed</td>
 <td width="300">☓</td>
 </tr>
 <tr>
@@ -269,8 +280,8 @@ C/C++ (PGI Compiler)
 
 CUDA
 </td>
-<td width="300">available</td>
-<td width="300">available</td>
+<td width="300">installed</td>
+<td width="300">installed</td>
 </tr>
 <tr>
 <td width="300">OpenMP</td>
