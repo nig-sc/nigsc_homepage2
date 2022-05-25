@@ -1,22 +1,23 @@
 ---
 id: other_commands
-title: Othe Commands
+title: Other Commands
 ---
 
 
 
-## GPU の使い方
+## Using GPU
 
-[CUDA の使い方](/software/cuda)をご参照ください。
-
-
+Click [CUDA manual](/software/cuda).
 
 
-## ジョブの実行状態の確認 (qstat)
 
-### ジョブの投入状況の確認
 
-qsub で投入したジョブがジョブとして投入されたかを確認します。投入したジョブの状態確認には qstat コマンドを利用します。例えばジョブが 投入されていたとすれば以下のように表示されます。
+## Checking the job execution status (qstat)
+
+### Checking the job submission status
+
+qstate checks whether the submitted job by using qsub was submitted as a job. To check the status of the submitted job, use the qstat command. For example, when the job is submitted, qstate shows as follows.
+
 ```
 [username@at027 ~]$ qstat
 job-ID     prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
@@ -27,30 +28,36 @@ job-ID     prior   name       user         state submit/start at     queue      
      80315 0.25000 jobname    username     r     02/27/2019 17:44:40 epyc.q@at040                                                      1
 					
 ```
-この時、"state"欄の文字の意味は以下のようになります。
+
+The meanings of the characters in the "state" colum at this time are as follows.
+
+
 
 <table>
 <tr>
-<th width="300">文字</th><th width="300">意味</th>
+<th width="300">state</th><th width="300">meaning</th>
 </tr>
 <tr>
-  <td>r</td><td>ジョブ実行中</td>
+  <td>r</td><td>running</td>
 </tr>
 <tr>
-  <td>qw</td><td>ジョブはキューで待機中</td>
+  <td>qw</td><td>queued, waiting</td>
 </tr>
 <tr>
-  <td>t</td><td>ジョブは実行ホストへ転送処理中</td>
+  <td>t</td><td>transferring to the execution host</td>
 </tr>
 <tr>
- <td>E</td><td>ジョブにエラーが発生</td>
+ <td>E</td><td>error in the job</td>
 </tr>
 <tr>
- <td>d</td><td>ジョブは削除処理中</td>
+ <td>d</td><td>the job is in the process of being deleted</td>
 </tr>
 </table>
 
-また、キューの利用状況を確認したい場合は、"qstat -f"と入力します。以下のような出力が出力されます。
+
+The "qstat -f" command shows the queue usage status like this output result.
+
+
 
 ```
 [username@at027 ~]$ qstat -f
@@ -84,12 +91,10 @@ intel.q@it006                  BP    0/0/32         0.00     lx-amd64
 
 ```
 
-これにより、どのノード(キュー)にジョブが投入されているかを判別することができます。
+This makes it possible to determine which node (queue) the job is submitted to.
 
- 
- 
- "qstat -j ジョブ ID"とすることで、ジョブの詳細情報を取得することができます。
- 
+"qstaus -j jobID" prints information about the job with a list.
+
  ```
  [username@at027 ~]$ qstat -j 199666
  ==============================================================
@@ -136,10 +141,11 @@ intel.q@it006                  BP    0/0/32         0.00     lx-amd64
  ```
  
  
-## クラスタ全体の混雑状況の確認方法
- 
- 各キューのジョブの投入状況、キューの負荷状況等、全体を把握するのには、"qstat -g c"として確認することが 出来ます。
- 
+## Checking the status of all cluster queues
+
+To get a grasp on the job submission status of each queue, the queue load status, etc., type and execute "qstat -g c".
+You can also get the overall status with it.
+
  ```
  [username@at027 ~]$ qstat -g c
  CLUSTER QUEUE                   CQLOAD   USED    RES  AVAIL  TOTAL aoACDS  cdsuE  
@@ -152,23 +158,21 @@ intel.q@it006                  BP    0/0/32         0.00     lx-amd64
  medium.q                          0.00      0      0    800    800      0      0 
  short.q                           0.00      0      0    128    224      0     96 
 ```
+
+The meanings of the numbers are as follows
+
+- USED: Number of slots currently in use 
+- RES: Number of Advance Reservation slots
+- AVAIL: Number of available slots
+- TOTAL: Total number of slots
+- aoACDS: Number of slots which the computer node is in one of the aoACDS states
+- cdsuE: Number of slots which the computer node is in one of the cdsuE states
+
+You can find more details with `man qstat`.
  
-数値の意味は以下のとおりです。
+## Deleting jobs(qdel)
 
-- USED :現在使用中のスロット数 
-- RES  :事前予約(Advance Reservation)のスロット数
-- AVAIL :使用可能なスロット数
-- TOTAL :スロット総数
-- aoACDS:計算ノードが aoACDS のいずれかの状態にあるスロット数
-- cdsuE :計算ノードが cdsuE のいずれかの状態にあるスロット数 
-
-詳細は`man qstat`で確認できます。
-
-
- 
-## ジョブの削除(qdel)
-
-ジョブの終了を待たずにジョブを削除したい場合は qdel コマンドを使用します。 "qdel ジョブ ID"とします。自分が投入しているジョブをすべて削除したい場合は、"qdel -u ユーザ名"とすることで実行可能です。
+The qdel command is used to delete a job without waiting for the job to finish. Use "qdel jobID". "qdel -u username" enables to delete all jobs that you have submitted.
 
 <table>
 <tr>
@@ -191,15 +195,17 @@ a specific range of array jobs.
 </table>
 
 
-## ジョブの実行条件の変更 (qalter)
+## Changing the job execution condition(qalter)
 
 
-## ジョブの結果の確認
+## Checking the result of jobs
 
-ジョブの結果は、qsub のコマンドラインオプションで特に何も指定しなければ、ファイル名がジョブ名.o ジョブ ID のファイルににジョブの標準出力、ホームディレクトリ上の下記のファイル名でジョブの標準エラー出力 が出力されています。ファイルをご確認ください。
-` ジョブ名.e ジョブ ID `
+About the result, if you don't specify any options in the qsub command line, the standard output is output to the file named job name.o job ID and the standard error output is output with the following file name in the home directory. 
 
-実行したジョブがどのぐらいのリソースを利用したか等の詳細情報については、qreport コマンドで確認することができます。
+`job name.e jobID`
+
+You can use the qreport command to check detailed information such as how much resources the executed job used.
+
 ```
 [username@at137 ~]$ qreport -j 110488
 ==============================================================
@@ -227,16 +233,14 @@ r_cpu                NONE
 
 ```
 
-## Grid Engine 実行に必要な環境変数などのセットアップ
+## Setup of environment variables required for running Grid Engine 
 
-Grid Engine の qsub などのコマンドを実行できるようになるためには一連の環境変数のセットアップが必要である。一般解析区画のゲートウェイノードにログインするとこれらの環境変数が自動的に設定されるので通常は自分で設定する必要はありません。
+To be able to execute commands such as qsub of Grid Engine, a series of environment variables must be set up. Normally, you do not need to set up these environment variables yourself because they are automatically set up when you login to the gateway node of the general analysis section.
 
-Singularity コンテナから qsub する場合など特殊なケースでは明示的なセットアップが必要な場合があります。その場合には以下のコマンドを実行してください。
+Explicit setup may be required in special cases, such as when you use qsub from the Singularity container. In this case, execute the following command.
 
- 
- 
- User’s Manual にあるとおり、以下のように Grid Engine が提供しているシェルスクリプトを実行すると必要な環境変数がセットアップされます。
- 
+As in the User’s Manual, the necessary environment variables are set up by executing the shell script provided by Grid Engine as follows: 
+
  ```
  export SGE_ROOT=/home/geadmin/UGER
  export SGE_CELL=uger
