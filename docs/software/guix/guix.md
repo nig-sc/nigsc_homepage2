@@ -26,7 +26,8 @@ GNU Guix はユーザ権限で利用できるパッケージマネージャで�
 以下を`~/.bashrc`に書きます。
 
 ```
-export GUIX_PROFILE="/home/your_account/.guix-profile"
+export GUIX_DAEMON_SOCKET=guix://at111
+export GUIX_PROFILE="$HOME/.guix-profile"
 source "$GUIX_PROFILE/etc/profile"
 ```
 

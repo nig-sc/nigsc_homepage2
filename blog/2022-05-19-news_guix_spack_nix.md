@@ -14,7 +14,7 @@ date: 2022-05-19
 以下のパッケージマネージャはユーザ権限だけで利用可能です。開発・解析環境の構築が容易になります。
 
 - [Guix](/software/guix) (&#x2728;5/19 更新)
-- [spack](/software/spack/install_spack) (4/13)
+- [spack](/software/spack/install_spack) (&#x2728;5/19 更新)
 - [Environmental Modules](/software/environmental_modules/) (4/13)
 
 
