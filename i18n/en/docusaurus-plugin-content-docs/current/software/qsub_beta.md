@@ -3,32 +3,33 @@ id: qsub_beta
 title: How to use qsub_beta
 ---
 
-## ツールの概要
+## Tool Introduction
 
-`qsub_beta` は [Univa Grid Engine](/software/univa_grid_engine) でバッチジョブを実行する際に、ジョブの要求リソースに誤りがないか、事前にチェックし UGE にサブミットするツールです。
+`qsub_beta` is a tool to check in advance the requested resource of the job if there are any error and submit it to UGE when the batch job is executed using [Univa Grid Engine](/software/univa_grid_engine).
 
-要求リソースをどの計算ノードでも満たせない値を指定しサブミットした場合、そのジョブは qw 状態 (待ち状態) となりますが、実行可能な計算ノードがないため要求リソースを修正しない限り実行されません。
+If you submit the request resource with a value that cannot be satisfied by any computer node, the job will be in the qw state (waiting), but it will not execute unless you modify the request resource because there are no executable compute nodes.
 
-`qsub_beta` を介してジョブを UGE にサブミットすることで、バッチジョブ実行時点で要求リソース指定の誤りに気が付くことができ、無用な待ち時間を減らすことができます。
+By Submitting the job to the UGE via `qsub_beta`, you can notice the error in specifying the requested resource at the time the batch job is executed, reducing unnecessary waiting time.
 
-## 使い方
+## How to use qsub_beta
 
-### qsub_betaを介したバッチジョブの実行
+### Running the batch job via qsub_beta
 
-サブミット方法は以下の通りで、UGE オリジナルの qsub と同様です。
+The method of submitting with qsub_beta is as follows and is the same as for the UGE original qsub.
 
 ```
 $ qsub_beta –l intel,s_vmem=8G,mem_req=8G job.sh
 Your job XXXXXXX ("job.sh") has been submitted
 ```
 
-### エラー時の出力
+### Output in case of error
 
-要求リソースに誤りがあった場合は、エラー原因と要求リソースを修正する際に参考となるURLを表示します。
-この時、終了ステータスは `1` でエラー終了します。
+If there is an error in the requested resource, URL that can be used as a reference when correcting the cause of the error and the requested resource is displayed.
+At this time, the exit status is `1` and the process ends with error.
 
-以下の例では、オプション `-pe def_slot 40` で同一計算ノード上に 40 個の CPU コアを確保するよう指定し、オプション `-l intel.q` で intel.q の計算ノードでジョブを実行するよう指定しています。
-しかし、 intel.q の計算ノードのCPUコア数は32コアであるため、ジョブは実行されず、エラーとなります。
+In the following example, the option `-pe def_slot 40` specifies to reserve 40 CPU cores on the same computer node, and the option` -l intel.q` specifies to execute the job on the computer node of intel.q.
+
+However, since the number of CPU cores on the computer node of intel.q is 32 cores, the job is not executed and error occurs.
 
 ```
 $ qsub_beta -pe def_slot 40 -l intel job_script.sh
@@ -37,37 +38,38 @@ Refer to : https://sc.ddbj.nig.ac.jp/ja/guide/usage-for-general-analysis-environ
 Exiting.
 ```
 
-### チェック対象のリソース
+### Resources to be checked
 
-要求リソースのチェック対象は以下の通りです。なお、現在は mpi ジョブのチェックには対応していません。
+Request resources to be checked are as follows. Currently, checking for mpi job is not supported.
 
 <table>
 	<tr>
-		<th width="300">チェック対象</th>
-		<th width="300">説明</th>
+		<th width="300">target to be checked</th>
+		<th width="300">explanation</th>
 	</tr>
 	<tr>
-		<td>スロット数</td>
-		<td>指定されたスロット数が各ノードで許容された範囲内か判定する。</td>
+		<td>Number of slots</td>
+		<td>Determines if the specified number of slots is within the allowed range for each node.</td>
 	</tr>
 	<tr>
-		<td>メモリサイズ</td>
-		<td>指定された要求メモリサイズが許容された範囲内か判定する。</td>
+		<td>Memory size</td>
+		<td>Determines if the specified requested memory size is within the allowed range.</td>
 	</tr>
 	<tr>
-		<td>実行可能時間</td>
-		<td>指定された実行可能時間が許容された範囲内か判定する。</td>
+		<td>Executable time</td>
+		<td>Determines if the specified executable time is within the allowed range.</td>
 	</tr>
 	<tr>
-		<td>GPU数</td>
-		<td>指定されたGPU数が許容された範囲内か判定する。</td>
+		<td>Number of GPU</td>
+		<td>Determine if the specified number of GPU is within the allowed range.</td>
 	</tr>
 	<tr>
-		<td>メモリサイズ不整合</td>
-		<td>要求メモリサイズ（mem_req）とメモリサイズ上限値（s_vmem）が一致するか確認する。</td>
+		<td>Memory size discrepancy</td>
+		<td>Check if the requested memory size (mem_req) and the memory size upper limit (s_vmem) match.</td>
 	</tr>
 	<tr>
-		<td>キュー指定</td>
-		<td>qsubのhardオプションに複数のキューが指定されていないか、また、hardおよびsoftの何れにもキューが指定されていないか判定する。</td>
+		<td>Specify queue</td>
+		<td>Determine if multiple queues are specified for the hard option of qsub, and whether no queue is specified for either hard or soft.</td>
 	</tr>
 </table>
+
