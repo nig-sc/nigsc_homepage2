@@ -26,7 +26,8 @@ References:
 Write the following in `~/.bashrc`.
 
 ```
-export GUIX_PROFILE="/home/your_account/.guix-profile"
+export GUIX_DAEMON_SOCKET=guix://at111
+export GUIX_PROFILE="$HOME/.guix-profile"
 source "$GUIX_PROFILE/etc/profile"
 ```
 
