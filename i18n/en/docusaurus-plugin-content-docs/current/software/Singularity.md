@@ -3,70 +3,68 @@ id: Singularity
 title: "Singularity Tutorial"
 ---
 
-## 概要
+## Introduction
 
-遺伝研スパコンでは様々な解析ソフトウェアをユーザー権限でインストール出来るようにするためSingularityコンテナが利用可能です。
+Singularity containers are available on the NIG supercomputer to install various analysis software with user permission.
 
-Singularityを使うことによって例えば遺伝研スパコン(CentOS7.5)の上で、Ubuntu Linuxのapt-get等でインストールした解析ソフトウェアを動作させることが可能になります。
-
-
-
-## 参考資料
-
-- [Singularityの公式ホームページ](https://singularity.hpcng.org/)
+By using Singularity, for example, it is possible to run analysis software installed by Ubuntu Linux apt-get etc. on the NIG supercomputer (CentOS 7.5).
 
 
-## Singularityイメージ作成の基本的手順
+## Reference
 
-Singularityコンテナは一般に以下の手順で用います。
+- [Singularity official website](https://singularity.hpcng.org/)
 
-- (i)root権限を持つローカルのサーバー上でsandboxモードで解析環境を作成する。
-- (ii)それをsingularity buildしてコンテナイメージファイル(*.sif)に固める
-- (iii)このファイルをスパコンなど共用計算機にコピーする。1
-- (iv)スパコン上ではユーザー権限でコンテナの中のプログラムを実行する。
 
-このときコンテナイメージファイル(*.sif)は元々書き込み禁止となっており、これにより共用計算機上にコンテナを持ち込んだ際のセキュリティーの問題を回避しています。
+## Creating images with Singularity - The basic procedures
 
-Singularity Definition Fileを用いた利用例は以下の通りです。
+The Singularity container is generally used in the following procedure.
 
-まず、ユーザー自身のLinux環境でSingularityコンテナイメージファイルを作成します。(Singularity自体のインストールについては公式ページ[Quick Start — Singularity container 3.5 documentation ](https://sylabs.io/guides/3.5/user-guide/quick_start.html)を参照ください。）
+- (i) Create an analysis environment in sandbox mode on a local server with root privileges.
+- (ii) singularity build it and create archive Singularity container image file (*.sif)
+- (iii) Copy this file to a shared computer such as a supercomputer. 1
+- (iv) Execute the program in the container with user permission on the supercomputer.
+
+The container image file (*.sif) is originally write-protected to avoid security issues when the container is brought onto the shared computer.
+
+Here's the example of using the Singularity Definition File.
+
+First, create a Singularity container image file in the user's own Linux environment. (For information on installing Singularity itself, read the official page [Quick Start — Singularity container 3.5 documentation ](https://sylabs.io/guides/3.5/user-guide/quick_start.html).
 
 
 ```
-# 例えば以下のサイトからSingularity Definition Fileをユーザーのlinuxサーバにクローンする。
+# For example, clone the Singularity Definition File from the following site to the user's linux server.
 git clone https://github.com/oogasawa/singularity-ubuntu18
 
-# このDefinitionファイルをビルドしてSingularityコンテナイメージファイルを作る。
-# (ビルド方法の詳細は上記githubリポジトリREADME.md参照.)
+# Build this Definition file to create a Singularity container image file.
+# (For more information about building, See above README.md of the github repository)
 cd singularity-ubuntu18
 sudo apt-get debootstrap
 sudo singularity build ubuntu18.sif Singularity
 ```
 
-上記のようにして作ったSingularityコンテナイメージファイルを遺伝研スパコン上にコピーします。
+Copy the Singularity container image file created as described above onto the NIG supercomputer.
 
-（あるいは、上記のビルドには1時間以上かかるので、あらかじめsingularity-hubに登録しすることでバックグラウンドでビルドしておいて、singularity-hubからSingularityコンテナイメージファイルを遺伝研スパコンにダウンロードします。）
+(Or, the above build process takes more than an hour, so build it in the background by registering it on the singularity-hub in advance, and download the Singularity container image file from the singularity-hub to the NIG supercomputer. )
 
-遺伝研スパコン上で以下のようにします。
-
+Execute the following on the NIG supercomputer.
 
 ```
-# singularity-hubからコンテナイメージファイルを取得。
+# Get the Singularity container image from singularity-hub
 singularity pull shub://oogasawa/singularity-ubuntu18
-# コマンドが長くなるのを防ぐためaliasを設定する。
+# Set alias to prevent long commands
 alias sing="singularity exec $HOME/ubuntu18.sif
-# 使ってみる
+# Use it
 ```
 
 
-## スパコン上でのイメージのビルド : DockerコンテナイメージからSingularityイメージを生成する
+## Building images on the supercomputer : Generating Singularity images from Docker container images
 
-Singularityのsandboxモードの代わりにDockerコンテナを使うことが出来ます。この方法を使うとスパコン上でSingularityイメージをビルド（作成）することが出来ます。(その際DockerコンテナイメージファイルはあらかじめDocker Hubに登録しておいてください。）
+You can use a Docker container instead of Singularity's sandbox mode. Using this method, you can build (create) a Singularity image on the supercomputer. (The Docker container image file must be registered in the Docker Hub in advance.)
 
+The example of using Singularity with the Docker container image is as follows:
 
-Dockerコンテナイメージを用いたSingularityの利用例は以下の通り
 ```
-# singularity build時にメモリが足りないというエラーが出るので、qlogin時にあらかじめメモリ量を指定する。
+# Specify the amount of memory in advance when qlogin because the error saying there is not enough memory occurs when building singularity.
 $ qlogin -l s_vmem=20G -l mem_req=20G
 Your job 5083922 ("QLOGIN") has been submitted
 waiting for interactive job to be scheduled ...
@@ -78,7 +76,7 @@ to the list of known hosts.
 Last login: Sun Jan 26 20:55:09 2020 from gw1
 
 
-# Docker Hub上のDockerコンテナをユーザー権限でSingularityビルドする。
+# Singularity build the Docker container on Docker Hub with user permission.
 $ singularity build lolcow.sif docker://godlovedc/lolcow
 INFO:    Starting build...
 Getting image source signatures
@@ -101,7 +99,7 @@ Storing signatures
 INFO:    Creating SIF file...
 INFO:    Build complete: lolcow.sif
 
-# Singularityコンテナを実行してみる。
+# Execute the Singularity container
 $ singularity run lolcow.sif
  ________________________________________
 / Don't let your mind wander -- it's too \
@@ -116,15 +114,14 @@ o
 ```
 
 
-## スパコン上に設置してあるSingularityイメージを使う
+## Use the Singularity image installed on the supercomputer
 
-遺伝研スパコンでは、解析ソフトウェアのインストールの手間を軽減するために、biocontainersが提供している3万4千個以上のSingularityコンテナイメージファイルを/usr/local/biotools/ディレクトリ以下に置いています。
-
+For reducing the time and effort of installing analysis software, there are more than 34,000 Singularity container image files provided by biocontainers under the /usr/local/biotools/ directory on the NIG supercomputer.
  
 
-使用例は以下の通りです。
+The usage example is as follows:
 ```
-# コマンドが長くなるのを防ぐためaliasを設定するとよい。
+# It's good to set alias to prevent the command from becoming too long.
 $ alias singR="singularity exec /usr/local/biotools/r/r-base:3.5.1 R"
 
 $ singR --no-save < example.R
@@ -136,12 +133,15 @@ $ singR --no-save < example.R
 
 ```
 
-（引用）上記コード例は以下のサイトを参考にした。
+
+(Citation) The above code example is based on the following website.
+
 
 [R Tutorial For Beginners](https://www.statmethods.net/r-tutorial/index.html)
 
-実行結果(Rplots.pdf)は以下の通り。
+The execution result(Rplots.pdf)
 
 ![figure](singurarity.PNG)
+
 
 
