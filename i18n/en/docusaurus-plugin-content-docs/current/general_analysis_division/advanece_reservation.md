@@ -1,127 +1,110 @@
 ---
 id: advance_reservation
-title: Advance Reservation
+title: advance reservation
 ---
 
-## 概要
+## Overview
 
+Advance Reservation is a service that users reserve a certain range of resources in the UGE queue before using and can use exclusively the reserved area.
 
-アドバンスリザベーションは予めUGEキューのある範囲のリソースを予約しておき、その予約領域を専有して利用できるサービスです。
-なお、本サービスは課金サービスであり、使用には事前に利用計画書の提出が必要です。
+Note: this service is a billing service, so you must submit a usage plan before you use it.
+
 
 ![](advance_reservation.png)
 
+The red dotted square shows the resources taken by the advance reservation (number of slots on the computer nodes ✕ usage time) and the other squares show the resources occupied by the job (number of slots used on compute nodes ✕ calculation time). The user who reserved the area can submit the job to the red square area.
 
-赤い点線の四角がアドバンスリザベーションで取られたリソース（計算ノードのスロット数✕利用時間）
-他の四角がジョブが専有するリソース（計算ノードの利用スロット数✕計算時間）となっています。
-領域を予約したユーザーは赤い四角の領域に対してジョブを投入することが出来ます。
-
-（アドバンスリザベーションサービスを使用しているユーザも、アドバンスリザベーションサービスを使用していないユーザと同様に、
-普通に`qsub`コマンドを利用することにより計算資源の予約枠を利用せずにジョブを投入することは可能です。）
+(Users using the Advance Reservation Service can submit as usual jobs without using the reserved quota for computational resources by using the `qsub` command as well as users not using the Advance Reservation Service.)
 
 
-
-課金対象期間について
-
-- 計算資源の予約枠を取得し、予約枠の開始時刻後、予約枠の終了時刻前までに予約枠の削除を行った場合、計算資源の予約枠の開始時刻から予約枠の削除を実施した時刻までが課金対象となります。（通常はこのパターン）
-- 予約枠の削除を実施しなかった場合、計算資源の予約枠の開始時刻から予約枠の終了時刻まですべてが課金対象となります。
-    - 予約枠の終了時間が来るとジョブが実行中であっても強制終了されます。
-    - 予約枠の中でジョブを実行しなかったとしても予約枠の全てが課金の対象となります。
-- 計算資源の予約枠を取得し、予約枠の開始時刻前までに予約枠の削除を実施した場合、計算資源の予約枠は無効となり、課金対象外となります。
+About the billing period
+- When you get the reserved quota for computational resources and delete it before the end time after start using, the time from the start time to the delet time of it is subject to billing.(Normally this pattern)
+- When you didn't delet the reserved quota, all the time from the start time to the end time is subject to billing.
+    - When it is the end time of the reserved quota, the job is forcibly terminated even if the job is running.
+    - All the reserved quota is subject to billing even if you don't execute the job on the reserved quota. 
+- When you get the reserved quota for computational resources and delete it before the start time of it, it becomes invalid and is not subject to billing.
 
 
 
 
-## アドバンスリザベーションサービス使用手順
+## Instruction for using Advance Reservation Service
 
-アドバンスリザベーションサービスを使用する場合は、以下の手順で実施してください。
+To use the Advance Reservation Service, follow the steps below.
 
-1. 利用申請書および利用計画書の提出
-    - 本サービスは課金サービスであり、使用には事前に利用計画書の提出が必要です。手続きの詳細は[課金サービスの利用方法](/application/billing_service)をご参照ください。
-2. 計算資源の予約枠の取得
-    - 計算資源の予約枠の取得は`QRSUB`コマンドで実施します。
-3. 計算資源の予約枠の確認
-    - 取得した計算資源の予約枠の確認は`qrstat`コマンドで実施します。
-4. ジョブの実行
-    - 計算資源の予約枠の取得後のジョブ実行は、`qsub`コマンドに`-ar`オプションで`ar-id`(予約番号)を指定して実施します。
-5. 計算資源の予約枠の削除
-    - 取得した計算資源の予約枠の削除は`QRDEL`コマンドで実施します。
-
-`QRSUB`コマンドおよび`QRDEL`コマンドは遺伝研スパコン上での課金金額の計算のために作成した、UGEの`qrsub`, `qrdel`コマンドのラッパープログラムです。
-`QRSUB`,`QRDEL`ともコマンドオプションは、それぞれ`qrsub`コマンド、`qrdel`コマンドのオプションが使用可能です。
-各コマンドのオプションについては、Univa Grid Engineユーザーズマニュアル(英語のみ)を参照してください。
+1. Submit the usage plan
+    - This service is a billing service and you must submit a usage plan before you start using it. Refer to "[How to use billing service](/application/billing_service)" for more information on its process.
+2. Get the reserved quota for computational resources
+    - To get the reserved quota for computational resources using the `QRSUB` command. 
+3. Confirm the reserved quota for computational resources
+    - To confirm the reserved quota of computational resources using the `qrstat` command. 
+4. Execute jobs
+    - To execute jobs after getting the reserved quota for computational resources using the `qsub` command by specifying `ar-id` (reservation number) with the `-ar` option.
+5. Delet the reserved quota for computational resources
+    - To delet the reserved quota for computational resources using the `QRDEL` command.
 
 
-  
- 
-## 計算資源の予約枠の取得方法
+The `QRSUB` and `QRDEL` commands are wrapper programs for UGE's `qrsub` and `qrdel` commands created to calculate billing on the NIG supercomputer.
+Both `QRSUB` and `QRDEL` command options are available for the `qrsub` and `qrdel` commands, respectively.
+for the options of each command, refer to the Univa Grid Engine User's Manual (English only).
 
+## How to get the reserved quota for computational resources
 
-予約枠は、スパコンSEに依頼して確保することも出来ますし、コマンドを使ってユーザー地震で確保することも可能です。
+When you get the reserved quota, you can ask supercomputer SE to reserve it, or you can reserve it yourself with the command.
 
+It may not be possible to get it with `QRSUB` because there are no available resources depending on the running job.
+In such a case, move the date and time to be reserved it to a future date and time, and execute the `QRSUB` command again.
 
-実行中のジョブによりリソースに空きがなく`QRSUB`で計算資源の予約枠の取得ができないことがあります。
-その場合は、確保する日時をさらに未来の日時にずらしていただき、再度`QRSUB`コマンドを実施していただくようお願いいたします。
- 
+For the meaning of the following example, click "[How to use Grid Engine](/software/grid_engine)".
 
-下記の実行例の意味については[Univa Grid Engineの使い方](/software/univa_grid_engine)もご参照ください。
+### Execution example (1)
 
-
-### 実行例(1)
-
-medium.qを1ノードで、メモリ量4GB、スロット数3、使用期間2020年4月2日13時15分から2020年5月4日10時00分までの
-予約枠を取得する場合
-この場合に確保されるメモリ量は12GB(メモリ4GB×3スロット)となり、計算資源の予約枠を取得する際は
-その分の空き容量が必要となります。
+When you get the reserved quota for computer resorces using medium.q with one node, 4GB of memory, 3 slots, from April 2, 13:15, 2020 to May 4, 10:00, 2020, the memory is allocated 12GB (GB of memory x 3 slots). In getting it, you need available memory for it.
 
 ```
 QRSUB -l medium -l mem_req=4G -l s_vmem=4G -pe def_slot 3 -a 202004021315 -e 202005041000
 ```
 
-- `-l medium`：medium.qを指定
-- `-l mem_req=4G -l s_vmem=4G`：メモリ量4Gを指定
-- `-pe def_slot 3`：スロット数3を指定(要求スロット数は1ノードで確保される) 
-- `-a 202004021315`：使用開始時刻2020年4月2日13時15分を指定
-- `-e 202005041000`：使用終了時刻2020年5月4日10時00分を指定
- 
+- `-l medium`：Specify medium.q
+- `-l mem_req=4G -l s_vmem=4G`：Specify 4GB of memory
+- `-pe def_slot 3`：Specify 3 slots (Number of slots requested is reserved by 1 node)
+- `-a 202004021315`：Specify the start using time at 13:15 on April 2, 2020
+- `-e 202005041000`：Specify the end to use time at 10:00 on May 4, 2020
 
-### 実行例(2)
 
-medium.qを複数ノードに跨るmpiジョブ(並列数は2~5)で、使用期間10月10日00時00分から10月20日7時5分までの予約枠を取得する場合
-この場合に確保される最大メモリ量は、40GB（8GB(デフォルト値)×10スロット）となり、計算資源の予約枠を取得する際はその分の空き容量が必要となります。
+### Execution example (2)
+
+When you get the reserved quota for computer resorces using medium.q with the mpi job (parallel number is 2~5) that spans multiple nodes, 4GB of memory, 3 slots, from October 10, 00:00 to October 20, 7:05, the memory is allocated 12GB (GB of memory x 3 slots). In getting it, you need available memory for it.
 
 ```
 QRSUB -l medium -pe mpi 2-10 -a 10100000 -e 10200705
 ```
 
-- `-pe mpi 2-5`  : mpiジョブで最小並列数2、最大並列数5を指定
-- `-a 10100000`  : 使用開始時刻10月10日00時00分を指定
--  `-e 10200705` : 使用終了時刻10月20日7時5分を指定
+- `-pe mpi 2-5`  : Specify minimum number of parallelism 2, maximum number of parallelism 5 on the mpi job
+- `-a 10100000`  : Specify the start using time at 13:15 on October 10
+- `-e 10200705` : Specify the end to use time at 7:05 on October 20
 
-＊メモリ量は指定されていないので、デフォルト値が指定されたとみなされます。
+＊The memory is not specified, so the specified memory is considered the default value.
  
-### 実行結果
+### Execution Result
 
-QRSUBコマンドが正常終了した場合は、以下のメッセージが出力され、ar-id(4桁の予約番号)が発行されます。
+When the `QRSUB` command completes successfully, you will get the following message and a ar-id (4-digit reservation number) is issued.
 
 ```
 Your advance reservation XXXX has been granted
 ```
 
-ここでXXXXにはar-id(予約番号)が入ります。
- 
+XXXX : ar-id(reservation number).
 
-`QRSUB`コマンドが正常終了しなかった場合は、指定オプションを見直し、再度実行してください。
+When the `QRSUB` command does not complete successfully, check the specified options and try again.
 
-### 予約開始時刻、予約終了時刻の指定方法
+### How to specify the reservation start time and end time
 
-`QRSUB`コマンドの以下の引数で予約開始時刻、終了時刻を指定します。
+Specify the reservation start time and end time using the following arguments with the `QRSUB` command.
 
-- `-a start-time` 	予約開始時刻を指定します。 	start-timeを以下の形式で指定します。
-- ``-e end-time` 	予約終了時刻を指定します。 	end-timeを以下の形式で指定します。
+- `-a start-time` Specifies the reservation start time. Specify "start-time" in the following format.
+- `-e end-time` Specifies the end time which reserved. 	Specify "end-time" in the following format.
 
-時刻は以下の形式で指定できます。
-
+To specify the time, use in the following format.
 - CCYYMMDDhhmm.SS
 - CCYYMMDDhhmm
 - YYMMDDhhmm.SS
@@ -129,19 +112,18 @@ Your advance reservation XXXX has been granted
 - MMDDhhmm.SS
 - MMDDhhmm 	-
 
-＊CC：西暦の上2桁　YY：西暦の下2桁　MM：月　DD：日　hh：時　mm：分　SS：秒
+＊CC：the first two digits of the year　YY：the last two digits of the year　MM：Month　DD：Date　hh：Time　mm：Min　SS：Sec
 
- 
-## 予約枠取得状況の確認方法
+## How to check the status that you got the reserved quota
 
 
-### 予約枠取得状況の一覧表示
+### List the status that you got the reserved quota
 
 ```
 qrstat
 ```
 
-実行結果
+Execution result
 
 ```
 ar-id      name       owner        state start at             end at               duration
@@ -150,24 +132,24 @@ ar-id      name       owner        state start at             end at            
       0002            test-user　  r     01/10/2017 00:00:00  10/20/2017 00:00:00  6792:00:00
 ```
 
-- ar-id：予約番号
-- state：予約枠の状態 
-    - w：エラーなしで待機中、W：警告(エラー付きで待機中)、r：実行中、E：エラー(エラー状態で実行中)
-- start at：予約枠開始時刻
-- end at：予約枠終了時刻
-- duration：予約時間
+- ar-id：the reservation number
+- state：the status of the reserved quota 
+    - w: waiting without error, W: warning (waiting with error), r: running, E: error (running with error)
+- start at：the start using time of the reserved quota
+- end at：the end to use time of the reserved quota
+- duration：the reservation time
  
  
-### 予約枠取得状況の詳細表示
+### Display details of the status that you got the reserved quota
 
 ```
 qrstat -ar ar-id[,ar-id,ar-id・・・・]
 ```
 
-- ar-id：予約番号
-    - 複数の計算資源の予約枠の取得状況を確認する場合は、予約番号をカンマ(,)で区切って指定する。
+- ar-id：the reservation number
+    - To check the acquisition status of reserved slots for multiple computing resources, specify reservation numbers separated by commas (,).
  
-実行結果
+Execution Result
 
 ```
 --------------------------------------------------------------------------------
@@ -225,47 +207,37 @@ granted_slots_list             month_ssd.q@nt060i=3
 granted_parallel_environment   def_slot slots
 ```
 
-- id：ar-id(予約番号)
-- state：予約枠の状態
-    - w：エラーなしで待機中、W：警告(エラー付きで待機中)、r：実行中、E：エラー(エラー状態で実行中)
-- start_time：予約枠開始時刻
-- end_time：予約枠終了時刻
-- duration：予約時間
-- message：エラーメッセージ(steteがWおよびEの場合のみ表示される)
-- resource_list ：予約取得キュー名、メモリ量など
-- granted_slots_list：予約済みのキュー名、ノード名およびスロット数
-- granted_parallel_environment：スロット数(-peオプション指定時のみ表示される)
- 
- 
+- ar-id：the reservation number
+- state：the status of the reserved quota 
+    - w: waiting without error, W: warning (waiting with error), r: running, E: error (running with error)
+- start at：the start using time of the reserved quota
+- end at：the end to use time of the reserved quota
+- duration：the reservation time
+- message: Error message (displayed only if state is W and E)
+- resource_list: reserved acquisition queue names, amount of memory, etc.
+- granted_slots_list: the reserved queue name, the node name and number of slots
+- granted_parallel_environment: number of slots (displayed only when -pe option is specified)
 
- 
-## ジョブの実行方法
+## How to execute the job
 
-`qsub`コマンドに`-ar`オプションで`ar-id`（予約番号）を指定し、ジョブを実行してください。
+Specify `ar-id` (reservation number) with the` -ar` option of the `qsub` command, and execute the job.
 
-それ以外のオプションについては[Univa Grid Engineの使い方](/software/univa_grid_engine)と同様です。
- 
+Other options are the same as [How to use Univa Grid Engine](/software/univa_grid_engine).
 
-計算資源の予約枠の開始時刻前にar-idを指定してqsubコマンドを実行しジョブ投入を行った場合、
-予約枠の開始時刻になり次第ジョブが実行されます。
+If you execute the qsub command with `ar-id` before the start time of the reserved slot of the computational resource and submit the job, the job is executed as soon as the start time of the reserved slot comes.
 
-なお、取得した予約枠の終了時刻を過ぎた時点で実行中のジョブは強制終了されますので、ご注意ください。
+Note that the executing job will be forced quit when the end time of the acquired reserved slot has passed.
 
 
  
-## 計算資源の予約枠の削除
+## Delete the reserved slot for computational resources
 
-計算資源の予約枠の削除するには、`QRDEL`コマンドに`ar-id`(予約番号)を指定して実行してください。
+Execute the `QRDEL` command with `ar-id` (reserved number) to delete the reserved slot for computational resources.
 
- 
-実行例
+Example:
 
 ```
 QRDEL ar-id
 ```
 
- 
-ジョブ実行中に⑤計算資源の予約枠の削除(QRDELコマンド)を実施した場合は、
-実行中のジョブも終了しますので、ご注意ください。
-	
-
+Note: If "⑤ delet the reserved quota for computational resources (QRDEL command)" is executed while a job is running, the running job will also be terminated.
