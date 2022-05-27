@@ -1,6 +1,6 @@
 ---
 id: Singularity
-title: "Singularity Tutorial"
+title: "Singularity"
 ---
 
 ## Introduction

@@ -1,6 +1,6 @@
 ---
 id: python
-title: "Python manual"
+title: "Python"
 ---
 
 Python処理系のインストールはユーザー権限で可能なので、各自必要なバージョンを自分のホームディレクトリにインストールしてください。

@@ -1,6 +1,6 @@
 ---
 id: pgi_compiler
-title: "C/C++ manual(PGI Compiler)"
+title: "C/C++ (PGI Compiler)"
 ---
 
 Hello

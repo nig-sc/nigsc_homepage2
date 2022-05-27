@@ -1,6 +1,6 @@
 ---
 id: typescript
-title: "Node.js, TypeScript manual"
+title: "Node.js, TypeScript"
 ---
 
 ## TypeScriptの使い方
