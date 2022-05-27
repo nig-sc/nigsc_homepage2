@@ -3,15 +3,16 @@ id: ssh_keys
 title: SSH public key registration
 ---
 
-## 公開鍵・秘密鍵の生成
+## Generating public and private key
 
-安全なユーザー認証のために必要となる SSH 公開鍵・秘密鍵をユーザーの計算機上で作成します。
-作成には Mac, Linux の場合ターミナルエミュレータ(Windows の場合は PowerShell など)を使います。
+Create the SSH public and private key required for secure user authentication on the user's computer.
+To create them, use a terminal emulator for Mac or Linux (PowerShell for Windows).
 
-作業前にユーザーの計算機に OpenSSH がインストールされていることを確認して下さい。Windows PowerShell への OpenSSH のインストール方法はたとえば[Microsoft 社の該当ページ](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)などを参照してください。
+make sure OpenSSH is installed on the user's computer before starting the process. For information on how to install OpenSSH on Windows PowerShell, read, for example, [Microsoft's corresponding page](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse).
+
+To generate SSH public and private keys, use the `ssh-keygen` command.
 
 
-SSH 公開鍵・秘密鍵を生成するには、`ssh-keygen`コマンドを使用します。
 
 ```
 $ cd ~/.ssh
@@ -26,20 +27,17 @@ The key fingerprint is:
 e5:23:f0:fc:b7:60:70:80:79:91:f2:f1:6d:a8:ae:90 temp@host
 ```
 
-- (1) RSA バージョン 2 で、2048 ビットの鍵を生成する。
-- (2) 公開鍵・秘密鍵の保存先：変更する場合のみここでパスを指定する。変更しない場合は Enter を押す。
-- (3) パスフレーズを入力する。
-- (4) パスフレーズを再入力する。
+- (1) Generate a 2048-bit key with RSA version 2.
+- (2) Saving Public and private key: Specify the path here only if you want to change it. If not, press the Enter key.
+- (3) Enter the passphrase.
+- (4) Re-enter the passphrase.
+
+SSH treats possession of the private key file as evidence of identity.
+If the private key file is stolen, identity theft is possible.
+It is possible to omit the passphrase setting, but it is strongly recommended to set it to reduce damage when the private key is stolen.
 
 
-SSH では秘密鍵ファイルを所有していることが本人であることの根拠として扱われます。
-秘密鍵ファイルを盗まれてしまうとなりすましが可能となります。
-パスフレーズの設定は省略することが可能ですが秘密鍵の盗難時の被害を軽減するため設定することを強く推奨します。
-
-
-
-## 遺伝研スパコンゲートウェイへの公開鍵の設置
-
+## Installation of public key on the NIG supercomputer gateway
 
 ```
 $ ls ~/.ssh
@@ -49,34 +47,32 @@ ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAznOdmkDHzjDpsNIhkl2VNjUXBlC3QePKDAzmu3FDCMgB
 $ 
 ```
 
-
-鍵ペアの保存先を確認すると、`id_rsa`, `id_rsa.pub`の２つのファイルが作成されています。
-`id_rsa.pub`が公開鍵になりますので、ファイルの内容をコピーし下記の「直接入力フォーム」にペーストすることで、公開鍵の登録が出来ます。
-もしくは、ファイルのアップロードフォームで`id_rsa.pub`をアップロードして下さい。
-
+When you check the save location of the key pair, you will find two files, `id_rsa` and `id_rsa.pub`, are created.
+`id_rsa.pub` is the public key, so you can register the public key by copying the contents of the file and pasting it into the "the direct input form" below.
+Or, upload `id_rsa.pub` using from the file upload form.
 
 <table>
 <tr>
 <td>
 
-[直接入力フォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
+[the direct input form](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
 
 ![](ssh_direct_form.jpg)
 </td>
 <td>
-画面下部（赤枠）部分に上記でコピーした鍵をペーストする。ペースト後、画面下部の公開鍵ボタンを押して登録を行う。
+Paste the key copied above on the bottom of the screen (red frame). After pasting, press the public key button on the bottom of the screen to register the key.
 </td>
 </tr>
 
 <tr>
 <td>
 
-[ファイルのアップロードフォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
+[the file upload form](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
 
 ![](ssh_upload_form.jpg)
 </td>
 <td>
-画面下部（赤枠）の【選択】を押し、ファイル選択画面寄り、アップロードするファイルを選択後、画面下部（赤枠）の【公開鍵登録】ボタンを押して登録を行う。
+Click "Select" on the bottom of the screen (red frame), select the file to upload from the file selection screen, and press the "Register Public Key" button on the bottom of the screen (red frame) to register the file.
 </td>
 </tr>
 
@@ -85,9 +81,9 @@ $
 
  
 
-## 遺伝研スパコンゲートウェイへの接続確認
+## Confirmation of connection to the NIG supercomputer gateway
 
-ssh コマンドにてスーパーコンピュータシステムに接続します。
+Connect to the supercomputer system using the ssh command.
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
@@ -100,18 +96,15 @@ This node is in use for login service only. Please use 'qlogin'.
 [youraccount@gw ~]$
 ```
 
-パスフレーズの入力プロンプトが表示されたら鍵生成に指定したパスフレーズを入力します。
-
-認証後、スーパーコンピュータシステムへのログインが完了します。
-
-秘密鍵の格納場所が`~/.ssh/id_rsa`以外の場合は以下のように秘密鍵のパスを指定します。
+When prompted for the passphrase, enter the passphrase that you specified for key generation.
+After authentication, it is complete to login to the supercomputer system.
+If your private key is stored in a location other than `~/.ssh/id_rsa`, specify the private key path as shown below.
 
 ```
 ssh -i ~/yourpath/id_rsa youraccount@gw.ddbj.nig.ac.jp
 ```
 
-うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
-
+If you have trouble connecting, refer to [FAQ](/faq/faq_login).
 
 
 
