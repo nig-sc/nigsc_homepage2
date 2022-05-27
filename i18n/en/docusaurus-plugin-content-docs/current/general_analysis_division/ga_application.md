@@ -25,9 +25,11 @@ The general analysis section of NIG supercomputer can be used with a computer ru
     - It takes longer time if the examination is required by the Organization such as foreign exchange law.
 
 4. Confirm the initial password with your account registration certidicate. Start using the system.
+    - In the next step 5) Register the SSH public key, you will be asked for your initial password and your user name, so enter them on the screens below.
 
-5. Register an SSH public key. [more information](../application/ssh_keys.md)
-
+    ![](4_enter_username_pw_en.png)
+    
+5. Register the SSH public key. [more information](../application/ssh_keys.md)
 6. If you have a request to expand the resources or use billing services, [download the Usage Plan Form](../application/resource_extension.md), fill it out, and submit it.
     - [Contact information](../application/reference.md) for Submission e-mail adress.
 
