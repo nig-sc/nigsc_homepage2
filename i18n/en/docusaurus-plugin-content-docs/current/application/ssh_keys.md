@@ -55,7 +55,8 @@ Or, upload `id_rsa.pub` using from the file upload form.
 <tr>
 <td>
 
-[the direct input form](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
+[the direct input form(Japanese)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
+[the direct input form(English)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application)
 
 ![](ssh_direct_form.jpg)
 </td>
@@ -67,7 +68,8 @@ Paste the key copied above on the bottom of the screen (red frame). After pastin
 <tr>
 <td>
 
-[the file upload form](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
+[the file upload form(Japanese)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
+[the file upload form(English)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application-2)
 
 ![](ssh_upload_form.jpg)
 </td>
