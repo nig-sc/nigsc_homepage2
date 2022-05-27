@@ -18,7 +18,7 @@ Lustreはスパコンで広く用いられている並列分散共有ファイ�
 
 ![](lustre.png)
 
-考：https://ddn.co.jp/issue/lustre.html
+参考：https://ddn.co.jp/issue/lustre.html
 
 
 ## Quotaの確認方法
