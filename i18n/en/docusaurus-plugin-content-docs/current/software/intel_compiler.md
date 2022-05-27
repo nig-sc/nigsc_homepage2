@@ -1,6 +1,6 @@
 ---
 id: intel_compiler
-title: "C/C++ manual (Intel Compiler)"
+title: "C/C++ (Intel Compiler)"
 ---
 
 Hello
