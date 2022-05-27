@@ -60,6 +60,7 @@ $
 <td>
 
 [直接入力フォーム(日本語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
+
 [直接入力フォーム(英語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application)
 
 ![](ssh_direct_form.jpg)
@@ -73,6 +74,7 @@ $
 <td>
 
 [ファイルのアップロードフォーム(日本語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
+
 [ファイルのアップロードフォーム(英語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application-2)
 
 ![](ssh_upload_form.jpg)
