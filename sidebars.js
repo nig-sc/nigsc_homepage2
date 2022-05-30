@@ -173,6 +173,7 @@ module.exports = {
         "ユーザー登録・変更": [
             "application/registration",
             "application/resource_extension",
+            "application/change_loginpwd",
             "application/ssh_keys",
             "application/renewal",
         ],

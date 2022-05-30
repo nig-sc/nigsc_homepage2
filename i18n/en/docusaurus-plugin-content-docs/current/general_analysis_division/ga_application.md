@@ -23,14 +23,24 @@ The general analysis section of NIG supercomputer can be used with a computer ru
 3. Wait for your account registration certificate to arrive.
     - It takes about a week to mail your account registration certidicate by post after you sent the pledge(PDF).
     - It takes longer time if the examination is required by the Organization such as foreign exchange law.
+4. When you get your account registration card, click the "Login Page" below.
 
-4. Confirm the initial password with your account registration certidicate. Start using the system.
-    - In the next step 5) Register the SSH public key, you will be asked for your initial password and your user name, so enter them on the screens below.
+<a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-change-passwd-application-sc"> <font size = "4"> Login page </ font> </ a>
 
-    ![](4_enter_username_pw_en.png)
-    
-5. Register the SSH public key. [more information](../application/ssh_keys.md)
-6. If you have a request to expand the resources or use billing services, [download the Usage Plan Form](../application/resource_extension.md), fill it out, and submit it.
+Login screen
+Click "EN" on the upper left of the screen to switch to the English display.
+
+![](login_ToEN.png)
+
+the screen after switching to the English display
+
+![](login_en.png)
+
+5. After login, the password change screen will be displayed. Change the initial password.
+    - We strongly recommend to change the initial password to prevent unauthorized access and to use it more safely.
+    - Follow ["Procedure" on the "Changing your login password" page](../application/change_loginpwd.md)" to change the password.
+6. Register your SSH public key while you are logged in. For more information, see ["SSH public key registration"](../application/ssh_keys.md).
+7. If you have a request to expand the resources or use billing services, [download the Usage Plan Form](../application/resource_extension.md), fill it out, and submit it.
     - [Contact information](../application/reference.md) for Submission e-mail adress.
 
 
