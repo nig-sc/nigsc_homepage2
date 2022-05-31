@@ -3,30 +3,30 @@ id: ga_lustre
 title: Using Lustre FS
 ---
 
-遺伝研スパコンの一般解析区画、個人ゲノム解析区画ともホーム領域はLustre File Systemで構成されています。
+The home area of both the general analysis section and the personal genome analysis section of the NIG supercomputer is composed of the Lustre File System.
 
-## Lustre File Systemの構造
+## Structure of Luster File System
 
+Luster is a parallel and distributed shared file system widely used in supercomputers.
+The file system consists of multiple servers and disk array devices.
 
-Lustreはスパコンで広く用いられている並列分散共有ファイルシステムです。
-複数のサーバとディスクアレイ装置からファイルシステムが構成されています。
-
-- MDS (Meta Data Serve)：ファイルのメタ情報、ファイル名・サイズ・所有者・実際のデータの在処等へのアクセスを管理するサーバー。MDTをマウントしている。
-- MDT(Meta Data Target)：ファイルシステムメタデータを保持しているストレージ領域。
-- OSS (Object Storage Server)：ファイルデータへのアクセスを管理するサーバー。OSTをマウントしている。
-- OST(Object Storage Target)：ファイルシステム内のデータの実体を保持しているストレージ領域。
+- MDS (Meta Data Serve): A server that manages access to file meta information, file name, size, owner, actual data location, etc. MDT is mounted.
+- MDT (Meta Data Target): A storage area that holds file system metadata.
+- OSS (Object Storage Server): Servers that manages access to file data. OST is mounted.
+- OST (Object Storage Target): A storage area that holds the actual data in the file system.
 
 ![](lustre.png)
 
-考：https://ddn.co.jp/issue/lustre.html
+Reference：https://ddn.co.jp/issue/lustre.html
 
 
-## Quotaの確認方法
-
-各ユーザに対して使用可能なストレージ容量の制限(quota)が掛かっています。
+## Checking Quota
 
 
-ユーザの現在のホーム領域の使用状況およびquota設定は”lfs quota”コマンドで確認することができます。
+Each user has a limit on the available storage capacity for each user.
+
+You can check the user's current home space usage and quota settings with the "lfs quota" command.
+
 
 ```bash
 [username@at027 ~]$ lfs quota -u username /lustre7
@@ -35,18 +35,26 @@ Disk quotas for usr username (uid ****):
    /lustre7    1840       0  1000000000     -      23       0       0       -
 ```
 
-
-| 項目     | 意味・説明                                   |
+| Item | Meaning and Explanation |
 |----------|----------------------------------------------|
-|kbytes    | 使用中のファイル容量(KB)                     |
-|quota 	   | ファイル容量/数の制限値（ソフトリミット）    |
-|limit 	   | ファイル容量/数の絶対制限値(ハードリミット)  |
-|grace 	   | 制限値超えの許容期間(本システムでは未設定)   |
-|files 	   | 使用中のファイル数                           |
+|kbytes | file sizes in use (KB) |
+|quota | file sizes/number limit (soft limit)
+|limit | absolute file sizes/number limit (hard limit) |
+|grace | the allowable period for exceeding the limit (not set in this system)
+|files | number of files in use
+                        |
  
 上記のコマンド例ではユーザはLustre7において1TBのquota設定がされており、現在の使用量は1,840KBです。
 使用量が1TBを超えると新規書き込みが出来なくなります。必要に応じて大規模利用申請をしてください。
 なお、ファイル数に対しては今のところ制限を設けておりません。
+ 
+In the above command example, the user has a 1TB quota set in Luster 7, and the current usage is 1,840KB.
+If the usage exceeds 1TB, new writing will not be possible. Please apply for large-scale use if necessary.
+There is no limit on the number of files so far.
+
+In the above command example, the user has a quota setting of 1TB on Lustre7, and the current usage is 1,840KB.
+If the usage exceeds 1TB, new writes will not be allowed. Please apply for large-scale use if necessary.
+There is currently no limit on the number of files.
 
 
  
