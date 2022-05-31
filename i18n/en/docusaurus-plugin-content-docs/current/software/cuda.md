@@ -1,6 +1,6 @@
 ---
 id: cuda
-title: "CUDA manual"
+title: "CUDA"
 ---
 
 Hello
