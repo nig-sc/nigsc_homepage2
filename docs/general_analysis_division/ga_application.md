@@ -16,22 +16,19 @@ title: "利用の準備(一般解析区画)"
 
 ユーザーアカウント発行基準につきましては、[こちら](../application/application.md)をご参照下さい。
 
-1. [新規ユーザ登録申請フォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-new-application)をご入力ください。
+1. [新規ユーザ登録申請フォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-new-application)から申請登録をしてください。
     - 事前に「[ユーザーアカウント発行基準](../application/application.md)」及び「[利用規定](/application/use_policy)」をご確認ください。
     - メールアドレスは、フリーメールアドレスではなく、所属機関のメールアドレスをご入力ください。(特別な場合を除く)
     - 遺伝研スパコンでは利用申請時に外為法の定める国内居住者でありかつ大学あるいは国公立研究機関の教員を責任者として指名する必要があります。責任者のアカウント毎にUNIXグループが作られます。
-2. [責任者](../application/application.md#責任者について)にメールが送信されるので、それに沿って、誓約書PDFをご返信ください。
+2. ご本人様確認のため、[責任者](../application/application.md#責任者について)にメールが送信されるので、それに沿って、誓約書PDFをご返信ください。
     - 受付後、数日程度でメールを送信いたします。
 3. アカウント登録証の到着をお待ちください。
     - 受付後、 1週間程度で発送いたします。
     - 外為法関係など機構にて審査が必要な場合はもう少し時間がかかります。
 4. アカウント登録証で初期パスワードを確認し、利用を開始してください。
-    - 次の5)SSH公開鍵の登録の作業で、初期パスワードとユーザ名を聞かれるので、以下の画面にそれぞれご入力ください。
-
-    ![](4_enter_username_pw_jp.png)
-    
-5. SSH公開鍵をご登録ください。詳細は[SSH公開鍵の登録](../application/ssh_keys.md)をご参照ください。
-6. 利用リソースの拡張や[課金サービスの利用](../application/billing_service.md)を希望する場合は[利用計画表をダウンロード](../application/resource_extension.md)し、記入の上ご提出ください。
+    - 利用開始の際は、最初にSSH公開鍵を登録してください。登録方法については[SSH公開鍵の登録](../application/ssh_keys.md)をご参照ください。
+    - 利用方法については、[ログイン方法(一般解析区画)](/general_analysis_division/ga_login)以降のページをご参照ください。
+5. 利用リソースの拡張や[課金サービスの利用](../application/billing_service.md)を希望する場合は[利用計画表をダウンロード](../application/resource_extension.md)し、記入の上ご提出ください。
     -  提出先は[問い合わせ先](../application/reference.md)をご参照ください。
 
 
