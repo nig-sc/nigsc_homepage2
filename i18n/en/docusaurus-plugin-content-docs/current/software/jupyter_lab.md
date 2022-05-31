@@ -1,6 +1,6 @@
 ---
 id: jupyter_lab
-title: "Jupyter Lab manual"
+title: "Jupyter Lab"
 ---
 
 ### Jupyter Labのインストール

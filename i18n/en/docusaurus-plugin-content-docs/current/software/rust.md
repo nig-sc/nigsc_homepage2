@@ -1,6 +1,6 @@
 ---
 id: rust
-title: "Rust manual"
+title: "Rust"
 ---
 
 ## Rust処理系のインストール
