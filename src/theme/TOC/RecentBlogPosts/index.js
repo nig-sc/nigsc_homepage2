@@ -30,21 +30,6 @@ export default function RecentBlogPosts () {
     <div className={styles.recentBlogPosts}>
       <section className={styles.recentBlogPosts__section}>
         <h2 className={styles.recentBlogPosts__title}>
-          <Translate id="themes.recentBlogPosts.recentNewsPosts">最近のお知らせ</Translate>
-        </h2>
-        <ul className={styles.recentBlogPosts__list}>
-          {recentNewsPosts.map(post => (
-            <ListItem key={post.id} post={post} />
-          ))}
-          <li className={styles.recentBlogPosts__listItem}>
-            <Link to="/blog/tags/news" className={styles.recentBlogPosts__listItemLink}>
-              <Translate id="themes.recentBlogPosts.moreNewsPosts">すべてのお知らせを見る</Translate>
-            </Link>
-          </li>
-        </ul>
-      </section>
-      <section className={styles.recentBlogPosts__section}>
-        <h2 className={styles.recentBlogPosts__title}>
           <Translate id="themes.recentBlogPosts.recentMaintenancePosts">メンテナンス情報</Translate>
         </h2>
         <ul className={styles.recentBlogPosts__list}>
@@ -54,6 +39,21 @@ export default function RecentBlogPosts () {
           <li className={styles.recentBlogPosts__listItem}>
             <Link to="/blog/tags/maintenance" className={styles.recentBlogPosts__listItemLink}>
               <Translate id="themes.recentBlogPosts.moreMaintenancePosts">すべてのメンテナンス情報を見る</Translate>
+            </Link>
+          </li>
+        </ul>
+      </section>
+      <section className={styles.recentBlogPosts__section}>
+        <h2 className={styles.recentBlogPosts__title}>
+          <Translate id="themes.recentBlogPosts.recentNewsPosts">最近のお知らせ</Translate>
+        </h2>
+        <ul className={styles.recentBlogPosts__list}>
+          {recentNewsPosts.map(post => (
+            <ListItem key={post.id} post={post} />
+          ))}
+          <li className={styles.recentBlogPosts__listItem}>
+            <Link to="/blog/tags/news" className={styles.recentBlogPosts__listItemLink}>
+              <Translate id="themes.recentBlogPosts.moreNewsPosts">すべてのお知らせを見る</Translate>
             </Link>
           </li>
         </ul>
