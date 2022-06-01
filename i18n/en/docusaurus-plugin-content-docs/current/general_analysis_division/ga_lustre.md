@@ -43,30 +43,20 @@ Disk quotas for usr username (uid ****):
 |grace | the allowable period for exceeding the limit (not set in this system)
 |files | number of files in use
                         |
- 
-上記のコマンド例ではユーザはLustre7において1TBのquota設定がされており、現在の使用量は1,840KBです。
-使用量が1TBを超えると新規書き込みが出来なくなります。必要に応じて大規模利用申請をしてください。
-なお、ファイル数に対しては今のところ制限を設けておりません。
- 
-In the above command example, the user has a 1TB quota set in Luster 7, and the current usage is 1,840KB.
-If the usage exceeds 1TB, new writing will not be possible. Please apply for large-scale use if necessary.
-There is no limit on the number of files so far.
 
 In the above command example, the user has a quota setting of 1TB on Lustre7, and the current usage is 1,840KB.
-If the usage exceeds 1TB, new writes will not be allowed. Please apply for large-scale use if necessary.
+If the usage exceeds 1TB, new writing will not be allowed. Apply for large-scale use if necessary.
 There is currently no limit on the number of files.
 
 
  
-## ストライピング設定方法
+## How to set up striping
 
-Lustreの特長は、1つのファイルを複数のセグメントに分割し、これを複数のOST上に分散して格納できることです。この機能をファイルストライピング(file striping)と呼びます。 ファイルストライピングのメリットは、一つのファイルが複数のOST上に分割して格納される為、それに対してクライアントから並列にread/writeを実行可能で、大容量のファイルについては 高速にread/writeができることです。 一方でファイルストライピングをすると複数のOST上に分散される為、分散したデータのハンドリングのオーバーヘッドが増大します。 この為、ストライピング設定は、対象となるファイルサイズが1GB以上のときに設定して頂くと高速化が期待できます。ストライピング設定はディレクトリ毎にユーザ自身で実施いただけます。設定するとそのディレクトリ以下への新規ファイルの書き込みが指定したOST数に分散されるようになります。
+The feature of Luster is that single file can be divided into multiple segments and stored on multiple OSTs in a distributed manner. This feature is called file striping. The advantage of file striping is that since single file is divided and stored on multiple OSTs, read/write operations can be performed on them in parallel from the client, and large files can be read/write at high speed. On the other hand, file striping increases the overhead of handling distributed data because it is distributed over multiple OSTs. For this reason, a higher speed can be expected when the target file size is 1 GB or larger. You can set the striping settings for each directory by yourself. If set, the writing of new files under that directory will be distributed to the specified number of OSTs.
 
- 
+### Example
 
-### ストライピング設定例
-
-テスト用のディレクトリを作成します。デフォルトではストライピングが掛かっておらずstripe_count: 1になっています。lfs getstripeコマンドで確認します。
+Create a test directory. By default, stripe_count: 1 is set without striping.  To determine the stripe settings for a file or directory, use the lfs getstripe command:
 
 ```bash
 [username@at027 ~]$ mkdir stripe_test
@@ -75,7 +65,7 @@ stripe_test
 stripe_count:  1 stripe_size:   1048576 stripe_offset: -1
 ```
 
-この場合に該当ディレクトリ下でファイルを作成すると1つのOSTのみを使用しています。
+In this example, only single OST is used when a file created under the directory.
 
 ```bash
 [username@at027 ~]$ cd stripe_test
@@ -91,14 +81,15 @@ lmm_stripe_offset: 37
             37        47983333      0x2dc2ae5                0
 ```
 
-ディレクトリにストライピングの設定をします(4 or 8を推奨します)。lfs setstripeコマンドで設定します。
+To set the striping, 4 or 8 is recommended, use the lfs setstripe command:
 
 ```bash
 [username@at027 stripe_test]$ cd ..
 [username@at027 ~]$ lfs setstripe -c 8 stripe_test
 ```
 
-ストライピング設定が入り`stripe_count: 8`となっています。
+The striping setting is changed `stripe_count: 8`.
+
 
 ```bash
 [username@at027 ~]$ lfs getstripe stripe_test
@@ -114,7 +105,7 @@ lmm_stripe_offset: 37
             37        47983333      0x2dc2ae5                0
 ```
 
-ディレクトリ下でファイルを作成すると8つのOSTに分散して書き込まれています。
+When you create a file under the directory, it is written in 8 OSTs distributed across the directory.
 
 ```bash
 [username@at027 ~]$ cd stripe_test
@@ -137,28 +128,28 @@ lmm_stripe_offset: 7
             27        47862271      0x2da51ff                0
 ```
  
+## Tips for using Luster
+
+The Luster file system is generally suitable for accessing large files, sequential access, and parallel access to different files. Depending on how you use it, the expected performance may not be achieved. Keep the following in mind.
 
 
-## Lustre利用時のTips
+### If you want to handle many files
 
-Lustreファイルシステムは一般的にファイルサイズの大きいファイルへのアクセスやシーケンシャルアクセス、異なるファイルへの並列アクセスに適しています。使い方によっては期待する性能が出ない場合があります。以下に該当する際は留意ください。
-
-### 大量のファイルを扱いたい場合
-
-Lustreはメタデータは、MDSで一元管理される為、メタデータ操作(ls -lや大量の小サイズファイルの作成等)を伴うファイル操作は、MDSに負荷が 集中し、ローカルファイルシステム上の同等操作に比較して高速ではありません。その点に注意し、同一ディレクトリ上に数万の 小サイズのファイルを置くなどの操作は避け、複数のディレクトリに分けて格納することを推奨します。1ディレクトリあたり5,000ファイル以下を目安としてください。
-
-### 特定ファイルに集中アクセスをするジョブの場合
-
-容量がGB単位以上のファイルの場合はストライピング設定をして頂くことでアクセス性能が向上します。または、ファイルを各計算ノードのローカルディスク(/data1)に計算時にコピーし、ローカルディスクに対してアクセスするようにして下さい。
+In Luster, metadata is centrally managed by MDS, so file operations involving metadata operations (such as ls -l and creating many small files) concentrate  the load on MDS and are not as fast as equivalent operations on the local file system. Note that. We recommend that you avoid operations such as creating tens of thousands of small files in the same directory, and store them in multiple directories. As a guide, use 5,000 files or less per directory.
 
 
-## Lustre on demand(LustreOD)サービス
+### For jobs with intensive access to specific files
 
-特定ファイルに集中アクセスする必要がある場合、各計算ノード内に取り付けられているNVMe SSDを束ねてLustre FSを構成することにより処理速度を大幅に向上させることが出来ます。
+For files with a capacity of GB or more, access performance can be improved by setting striping. Or, copy the file to the local disk (/data1) of each compute node when calculating and access to the local disk.
+
+## Lustre on demand (LustreOD) service
 
 
-各計算ノードのローカルディスク(/data1の場合3.2TBのNVMe SSD)をMDTまたはOSTとして利用し、各計算ノードでMDS,OSSのサービスを起動することで専用のLustreファイルシステムを構成することが可能です。この専用Lustreを占有利用することで共有Lustreとは独立して計算処理をして頂けます。
+If you need centralized access to specific files, you can significantly improve the processing speed by bundling NVMe SSDs installed in each compute node to configure Lustre FS.
 
-ご利用になるためには計算ノードを占有利用する課金サービスの申請をしてください。占有利用した計算ノードのローカルディスクを使用してLustreファイルシステムを構成させて頂きます。
+It is possible to configure a dedicated Lustre file system by using the local disk of each compute node (3.2TB NVMe SSD in the case of /data1) as MDT or OST and starting the MDS and OSS services on each compute node. is. By occupying this dedicated Luster, you can perform calculation processing independently of the shared Lustre.
 
-LustreODの性能ですが、構成にも左右されますが計算ノード3台構成(MDS1台+OSS2台)においてIORで測定した場合、Readが4.1GB/sec、Writeが1.9GB/sec程度でした。
+To use it, apply for a billing service that occupies the calculation node. We will configure the Lustre file system using the local disk of the occupied compute node.
+
+About the performance of LustreOD depends on the configuration, when measured by IOR in a configuration of 3 computing nodes (1 MDS + 2 OSS), 
+About the performance of LustreOD depends on the configuration, when measured with IOR on 3 compute nodes (1 MDS + 2 OSS), Read was about 4.1GB / sec and Write was about 1.9GB / sec.
