@@ -32,3 +32,5 @@ New user registration application screen
     - When your affiliation and othes changes, register it as soon as possible.
 - [Password change application](https://sc2.ddbj.nig.ac.jp/index.php/ja-change-passwd-application-sc)
     - change your password here.
+    - For the change procedure, refer to [How to apply for login password change](/application/change_loginpwd).
+    
