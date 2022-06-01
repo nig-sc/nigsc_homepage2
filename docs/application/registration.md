@@ -33,3 +33,4 @@ title: "ユーザ登録・変更申請"
     - 所属などが変更になった場合は速やかに変更内容の登録をお願いいたします。
 - [パスワード変更申請](https://sc2.ddbj.nig.ac.jp/index.php/ja-change-passwd-application-sc)
     - パスワードの変更はこちらからお願いします。
+    - 変更手順は[ログインパスワード変更申請方法](/application/change_loginpwd)をご参照ください。
