@@ -3,7 +3,7 @@ id: largescale_storage
 title: ストレージの大規模利用
 ---
 
-サービス利用の際は、[利用規定](../application/use_policy.md)および[利用規程別表（料金表）](../application/use_policy.md)をご確認いただき、[利用計画表をダウンロード](../application/resource_extension.md)し必要事項を記入の上、![](sc-helpdesk.png)までメールにてお送りください。利用目的を審査の上、課金サービス利用許可の案内をお送りします。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。
+サービス利用の際は、[利用規程](../application/use_policy.md)および[利用規程別表（料金表）](../application/use_policy.md)をご確認いただき、[利用計画表をダウンロード](../application/resource_extension.md)し必要事項を記入の上、![](sc-helpdesk.png)までメールにてお送りください。利用目的を審査の上、課金サービス利用許可の案内をお送りします。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。
 
 
 
