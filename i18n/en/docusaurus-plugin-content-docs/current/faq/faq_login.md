@@ -1,0 +1,94 @@
+---
+id: faq_login
+title: "FAQ(ログインについて)"
+---
+
+
+
+## 公開鍵による認証ができません。
+
+ホームディレクトリの group,other に write 権限が付与されている場合、公開鍵による認証は失敗します。
+また、`~/.ssh`および`~/.ssh/authorized_keys`に、owner 以外の権限が付与されている場合も公開鍵認証に失敗します。
+以下の 3 つのディレクトリ・ファイルのパーミッションをご確認願います。
+
+パーミッションは chmod コマンドで変更できます。
+
+```
+（例）
+chmod 750 ~/
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
+
+
+
+## 新スパコンに SSH ログインできない場合の対応
+
+
+遺伝研スパコンにログインしようとした際、下記のようなメッセージが表示されてログインできない場合があります。
+
+```
+$ ssh gw.ddbj.nig.ac.jp
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The RSA host key for gw.ddbj.nig.ac.jp has changed,
+and the key for the corresponding IP address 133.39.228.101
+is unknown. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:xkyH37QZowWjidMSCIbOZa7Vw1p46Dxt4nF9nFJG+hk.
+Please contact your system administrator.
+Add correct host key in /home/username/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/username/.ssh/known_hosts:X
+RSA host key for gw.ddbj.nig.ac.jp has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+
+その場合は、`.ssh/known_hosts`ファイルの該当行を削除、もしくは`.ssh/known_hosts`ファイル自体を削除する。
+また、`ssh-keygen -R gw.ddbj.nig.ac.jp` を使用して該当行を削除してください。
+
+
+
+## SSH のコネクションが頻繁に切れます。
+
+
+ ~/.ssh/config に以下を追記してください。
+```
+Host *
+    ServerAliveInterval 20
+    TCPKeepAlive no
+```
+
+詳しくは以下ご参照ください。
+
+https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset
+
+
+
+## 個人ゲノム解析区画に対する VPN 接続ができません。
+
+
+Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスしたときに
+`Credential or ssl vpn configuration is wrong (-7200)`というエラーが出る場合
+
+コントロールパネル => インターネットオプション => セキュリティータブ => 信頼済みサイト
+
+ここに SSL-VPN のアドレスを登録する。
+
+![](faq_pg-vpn.png)
+
+
+
+
+
+
+

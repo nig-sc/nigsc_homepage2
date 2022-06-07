@@ -17,7 +17,7 @@ There are the following methods to use the version of R processing system requir
 The R processing system can be installed with user permission, so you can install the necessary version in your own home directory by yourself.
 
 The R processing system will be installed under `$ HOME / local /` by executing the following.
-For the latest source code of R, please refer to [The Comprehensive R Archive Network](https://cran.ism.ac.jp/) etc..
+For the latest source code of R, refer to [The Comprehensive R Archive Network](https://cran.ism.ac.jp/) etc..
 
 ```
 mkdir -p ~/local/src
@@ -71,7 +71,7 @@ qsub -cwd -V -pe def_slot 8 -b y make -j 8
 ```
 
 To execute the R processing system installed in this way, set paths of the executable file and library as follows and start R.
-(Please also write the settings of these environment variables in `.bashrc`.)
+(Also write the settings of these environment variables in `.bashrc`.)
 
 ```bash
 export PATH=$HOME/local/bin:$PATH
@@ -144,7 +144,7 @@ Description:
     statistical computing and graphics which provides a wide variety of
     statistical and graphical techniques: linear and nonlinear modelling,
     statistical tests, time series analysis, classification, clustering,
-    etc. Please consult the R project homepage for further information.
+    etc. Consult the R project homepage for further information.
 
 Homepage: https://www.r-project.org
 

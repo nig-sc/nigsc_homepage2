@@ -5,9 +5,9 @@ title: Using Lustre FS
 
 The home area of both the general analysis section and the personal genome analysis section of the NIG supercomputer is composed of the Lustre File System.
 
-## Structure of Luster File System
+## Structure of Lustre File System
 
-Luster is a parallel and distributed shared file system widely used in supercomputers.
+Lustre is a parallel and distributed shared file system widely used in supercomputers.
 The file system consists of multiple servers and disk array devices.
 
 - MDS (Meta Data Serve): A server that manages access to file meta information, file name, size, owner, actual data location, etc. MDT is mounted.
@@ -52,7 +52,7 @@ There is currently no limit on the number of files.
  
 ## How to set up striping
 
-The feature of Luster is that single file can be divided into multiple segments and stored on multiple OSTs in a distributed manner. This feature is called file striping. The advantage of file striping is that since single file is divided and stored on multiple OSTs, read/write operations can be performed on them in parallel from the client, and large files can be read/write at high speed. On the other hand, file striping increases the overhead of handling distributed data because it is distributed over multiple OSTs. For this reason, a higher speed can be expected when the target file size is 1 GB or larger. You can set the striping settings for each directory by yourself. If set, the writing of new files under that directory will be distributed to the specified number of OSTs.
+The feature of Lustre is that single file can be divided into multiple segments and stored on multiple OSTs in a distributed manner. This feature is called file striping. The advantage of file striping is that since single file is divided and stored on multiple OSTs, read/write operations can be performed on them in parallel from the client, and large files can be read/write at high speed. On the other hand, file striping increases the overhead of handling distributed data because it is distributed over multiple OSTs. For this reason, a higher speed can be expected when the target file size is 1 GB or larger. You can set the striping settings for each directory by yourself. If set, the writing of new files under that directory will be distributed to the specified number of OSTs.
 
 ### Example
 
@@ -128,14 +128,14 @@ lmm_stripe_offset: 7
             27        47862271      0x2da51ff                0
 ```
  
-## Tips for using Luster
+## Tips for using Lustre
 
-The Luster file system is generally suitable for accessing large files, sequential access, and parallel access to different files. Depending on how you use it, the expected performance may not be achieved. Keep the following in mind.
+The Lustre file system is generally suitable for accessing large files, sequential access, and parallel access to different files. Depending on how you use it, the expected performance may not be achieved. Keep the following in mind.
 
 
 ### If you want to handle many files
 
-In Luster, metadata is centrally managed by MDS, so file operations involving metadata operations (such as ls -l and creating many small files) concentrate  the load on MDS and are not as fast as equivalent operations on the local file system. Note that. We recommend that you avoid operations such as creating tens of thousands of small files in the same directory, and store them in multiple directories. As a guide, use 5,000 files or less per directory.
+In Lustre, metadata is centrally managed by MDS, so file operations involving metadata operations (such as ls -l and creating many small files) concentrate  the load on MDS and are not as fast as equivalent operations on the local file system. Note that. We recommend that you avoid operations such as creating tens of thousands of small files in the same directory, and store them in multiple directories. As a guide, use 5,000 files or less per directory.
 
 
 ### For jobs with intensive access to specific files
@@ -147,7 +147,7 @@ For files with a capacity of GB or more, access performance can be improved by s
 
 If you need centralized access to specific files, you can significantly improve the processing speed by bundling NVMe SSDs installed in each compute node to configure Lustre FS.
 
-It is possible to configure a dedicated Lustre file system by using the local disk of each compute node (3.2TB NVMe SSD in the case of /data1) as MDT or OST and starting the MDS and OSS services on each compute node. is. By occupying this dedicated Luster, you can perform calculation processing independently of the shared Lustre.
+It is possible to configure a dedicated Lustre file system by using the local disk of each compute node (3.2TB NVMe SSD in the case of /data1) as MDT or OST and starting the MDS and OSS services on each compute node. is. By occupying this dedicated Lustre, you can perform calculation processing independently of the shared Lustre.
 
 To use it, apply for a billing service that occupies the calculation node. We will configure the Lustre file system using the local disk of the occupied compute node.
 

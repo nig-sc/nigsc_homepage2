@@ -13,7 +13,7 @@ The general analysis section of NIG supercomputer can be used with a computer ru
 
 ## Steps from user account application to start of use
 1. Apply for <a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-new-application">the application form of new user registration to register your application</a>.
-    - Before you fill it in, please ensure "[User Account Issuance Criteria](../application/application.md)" and "[Acceptable Use Policy](/application/use_policy)".
+    - Before you fill it in, ensure "[User Account Issuance Criteria](../application/application.md)" and "[Acceptable Use Policy](/application/use_policy)".
     - You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)
     - When applying to use the NIG supercomputer, you must designate a faculty member of a university or national/public research institution who is a resident of Japan under the Foreign Exchange and Foreign Trade Control Law as the responsible person. A UNIX group is created for each account of the responsible person.
 
@@ -32,7 +32,7 @@ The general analysis section of NIG supercomputer can be used with a computer ru
 
 ## Application for use by a group
 
-If you would like to register many users, such as for using in a workshop or consortium, please follow the steps below.
+If you would like to register many users, such as for using in a workshop or consortium, follow the steps below.
 
-1. If the person in charge does not yet have an account for NIG supercomputer, please create an account by following the steps above.
-2. [Download the usage plan](../application/resource_extension.md) and submit it with all information. At that time, please fill in the purpose of use and the amount of resources to be used.
+1. If the person in charge does not yet have an account for NIG supercomputer, create an account by following the steps above.
+2. [Download the usage plan](../application/resource_extension.md) and submit it with all information. At that time, fill in the purpose of use and the amount of resources to be used.
