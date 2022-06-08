@@ -3,123 +3,108 @@ id: application
 title: "Issuance criteria for user accounts"
 ---
 
-## 遺伝研スパコンの対象ユーザー
+## Target users of the NIG supercomputer
 
-国立遺伝学研究所は大学共同利用機関の一員として遺伝学を中心としたライフサイエンス系の研究・教育のためのリソース提供を目的としてスーパーコンピュータシステムの運営を行っています。
+As a member of the Inter-University Research Institute Corporation, National Institute of Genetics operates a supercomputer system for the purpose of providing resources for life science research and education focusing on genetics.
 
+As a general rule, users can use the NIG supercomputer for free. But from the viewpoint of business continuity and promotion of efficient use of computational resources, we provides billing services for storage of especially large-scale data and using additional services.
 
-ユーザーは遺伝研スパコンを無料で利用できることを原則としていますが、事業継続性、計算資源の効率的利用の促進の観点から特に大規模データの保存、付加的なサービスの利用に対して課金によるサービスを行っています。
+On the other hand, the supercomputer system is subject to Export Administration Regulations under the Foreign Exchange and Foreign Trade Act (FEFTA), and are subject to punishment if used for weapons manufacturing purposes. In the context of these circumstances, in the NIG supercomputer, we issue login user accounts for the following people.
 
-一方、スーパーコンピュータシステムは外国為替及び外国貿易法(外為法)の輸出管理規制の対象となっており、兵器製造目的などで使用すると処罰の対象となります。このような背景から、遺伝研スパコンでは以下の方々を対象にログインユーザーアカウントの発行を行っております。
+1. A domestic resident as prescribed in FEFTA, and  a faculty member of a university or a public research institute
+2. A collaborative researcher of 1. or a researcher, a student, a researcher of contractors, etc. under the guidance of 1. (including international students, overseas job transfer, overseas researchers)
 
-1. 外為法の定める国内居住者でありかつ大学あるいは国公立研究機関の教員
-2. 1.の共同研究者、あるいは1.の指導の下にある研究者、学生、委託企業の研究者など (留学生、海外への転任、海外の研究者を含む)
+In principle, the purpose of use and results are open to the public. However, if you want to postpone the release date, contact us.
 
-利用目的・成果については原則として公開となっております。ただし公開時期の延期を希望される場合はその旨承ります。
+## Precautions for FEFTA
 
+If your nationality or current residence stipulated by FEFTA is a region other than Appended Table 3 of the Export Order of Catch-All Controls, provide us with the following information a)b)c) for the examination when applying for an account. (Refer to the section of [related laws and regulations](/application/legislation). )
 
-## 外為法に関する注意事項
+- a) Education, Professional experience and research content
+- b) Current Employment status (full-time or part-time)
+- c) Whether or not you maintain your continuous residence overseas
 
-国籍または外為法が定める現在の居住地がキャッチオール規制の「輸出令別表第３の地域」以外の場合、
-審査のためアカウント申請時に以下a)b)c)の情報をお願い致します。（[関連法規等](/application/legislation))の項をご参照ください。）
-
-- a) 過去における、大学・研究機関・企業への所属歴、研究内容
-- b) 現在の、勤務形態 (フルタイム、パートタイム）
-- c) 現在も、海外での身分が継続されているかどうか。
-
-
-
-記入例
+Example
 
 ```
-#  外為法の定める国内居住者であるか否か。（居住期間６ヶ月以上か否か） 
+# Whether or not the applicant is a domestic resident stipulated by FEFTA. (Whether or not the period of residence in Japan is for six months or more.) 
 
-申請者 OOOは 国内居住6ヶ月以内 / 海外居住中 / 海外に所属先が存在　ですので非居住者に該当します。
-申請者 OOOは 現在xxx大学に所属しスパコンアカウントを所有していますが、xx年xx月より下記海外研究機関に
-所属変更となります。
+The applicant OOO is a non-resident. The reason is that they have been in Japan for less than six months, reside overseas or foreign employees.
 
-# 下記についてご回答をお願いいたします。
+The applicant OOO currently belongs to xxx university and has a supercomputer account, but will be changed to the following overseas research institutes from MM 20YY.
 
-a) 過去における　大学・研究機関・企業への所属歴、研究内容
-(例）
-20xx年xx月-20xx年xx月　
-    xxx大学 (日本)　   博士課程大学院生
-    タンパク質配列解析
-20xx年xx月-20xx年xx月　
-    xxx大学 (フランス) ポスドク研究員
-    xxゲノムデータに関するNGSデータ解析
-20xx年xx月- 現在　     
-    xx大学　 (日本)    現在の職名
-    xxゲノムシーケンスやRNAシーケンス情報の解析
 
-b) 現在の、勤務形態
-フルタイム / パートタイム
+# Answer each question as below.
 
-c) 現在まで、海外での身分が継続されているかどうか。
-海外での身分が継続されています。
-xxx大学　（国名)  職名
+a) Education, Professional experience and research content
+
+(Example）
+Education
+Sep 2014 - Jul 2016　
+    xxx University, Paris, France
+    Postdoctoral Researcher in NGS Data Analysis related of xx genomic data
+Apr 2009 - Mar 2014　
+    xxx University, Tokyo, Japan
+    Ph.D. in Protein sequence analysis
+Aug 2016 - Present　     
+    xxx University, Tokyo, Japan    
+    Assistant Professor of analysis of xx genome sequence and RNA sequence information
+
+b) Current Employment status
+full-time or part-time
+
+c) Whether or not you maintain your continuous residence overseas
+resided continuously
+xxx University, Tokyo, Japan    Assistant Professor
 ```
 
 
-## 責任者について
+## The responsible person
+
+From the viewpoint of security traceability, specify the responsible person when applying for use.
+
+- The responsible person must be the above "A domestic resident as prescribed in FEFTA, and  a faculty member of a university or a public research institute".
+- A UNIX group is created for each responsible person.
+- Resource usage is calculated for each group under the responsible person and is subject to billing.
+    - To use the billing service, the responsible person must submit a usage plan table. Therefore, you will not be unintentionally charged without the consent of the responsible person.
 
 
-セキュリティー上のトレーサビリティーの観点から利用申請に際して責任者を指定していただいております。
+The responsible person must agree to the following.
+
+1. Research results using the supercomputer will be basically published, but at that time, the responsible person is a public decision maker.
+2. The responsible person belongs to an institution that has no problem in use in light of the purpose of the Inter-University Research Institute Corporation.
+3. To guide the user not to use the NIG supercomputer for purposes other than those applied by the user, and from the perspective of traceability of the cause and responsibility when something unexpected happens, the user and the responsible person must be able to verify the identity, identification, and contact information can be done at your institution.
+4. When a bill is issued to the responsible person when a charge is incurred, the billing must be able to handled by the office work in your institution. Consider this regardless of whether or not a bill is actually issue at this time.
 
 
-- 責任者は上記の「外為法の定める国内居住者でありかつ大学あるいは国公立研究機関の教員」である必要があります。
-- 責任者単位でUNIXグループが作成されます。
-- 責任者配下のグループ毎にリソース使用量が計算され、課金などの対象となります。
-    - 課金サービスの利用には責任者からの利用計画表の提出が必要です。したがって責任者の了承なしに意図せず課金の対象になることはありません。
+If there is no problem with these, the user themselves can be the responsible person.
 
-責任者の方には以下について同意していただく必要があります。
+We ask the responsible person to submit a written pledge when applying for use of the user. Download the template below and email it to [contact us](/application/reference).
 
-1. スパコンを用いた研究成果は基本的には公開になりますが、その際に公開の意思決定者であること。
-2. 大学共同利用機関の目的と照らして利用に問題のない機関に所属されていること。
-3. 利用者が申請した利用目的以外に遺伝研スーパーコンピュータを利用しないよう指導し、何か不測の事態が発生した際の原因及び責任関係の追跡可能性の観点から、ユーザーおよび責任者の本人確認、身分証明、連絡先の把握を所属機関にて行っていただけること。
-4. 課金が発生した時に責任者宛に請求書を発行しますがその時に所属機関の事務に扱っていただけること。これに関しましては現時点で課金が実際に発生するかしないかに関わらず考慮願います。
+### PLEDGE template
 
-
-これらに関して問題なければユーザー本人が責任者ということでも構いません。
-
-また、責任者の方にはユーザーの利用申請に際して、誓約書の提出をお願いしています。雛形を以下からダウンロードし[問い合わせ先](/application/reference)までメールしてください。
-
-
-### 誓約書の雛形
-
-- [誓約書①「申請者と責任者が同一の場合」](/files/seiyakusho_1.docx)
-- [誓約書②「申請者と責任者が異なる場合」](/files/seiyakusho_2.docx)（申請者が共同研究者・学生などの場合）
-
+-[Pledge ① "The applicant and the responsible person is the same"](/files/seiyakusho_1.docx)
+-[Pledge ② "The applicant and the responsible person is different"](/files/seiyakusho_2.docx) (a collaborator or student, etc.)
 
 ```
-誓約書
+Written Pledge 
 
-国立遺伝学研究所 
-所長 
-花岡　文雄　殿 
+To: Fumio Hanaoka, the Director-General of National Institute of Genetics
 
-
-管理責任者として申請者 ＊＊＊＊＊＊＊ 様 の利用内容を把握し、適切に管理・指導いたします。 
-計算機の利用の結果、不適切な利用(アカウントの共用利用、申請内容と異なる目的での利用、
-外国為替及び 外国貿易法に反する行為など)等の問題が発生した場合には
-その責任を負うことを了承し不正利用はおこないません。 
+As the person in charge of management, I understood the usage details of the applicant ＊＊＊＊＊＊＊ and make sure I manage and guide the applicant appropriately. 
+I pledge that I do not use the NIG supercomputer for any inappropriate purpose, such as sharing an account, using it for a purpose different from the application content, violating the Foreign Exchange and Foreign Trade Law, etc. 
 
 
-年    月    日 
+Date:        /     /
+      (yyyy)  (mm)  (dd)
 
-所属 
+Affiliation:
 
-氏名　　　　　　　　　　 印 (またはサイン) 
+Name and Signature: 
 
-
-以上
 ```
 
+## Note:
 
-## その他注意事項
-
-- セキュリティー上のトレーサビリティーの観点から、ユーザーアカウントを複数の人で共用する行為、および申請した目的以外での遺伝研スパコンの利用は固く禁止します。
-- 違反した場合はアカウントの停止などの措置を取らせていただく場合があります。
-
-
-
+- From the viewpoint of security traceability, it is strictly prohibited to share the user account with multiple people and to use the NIG supercomputer for purposes other than the purpose for which you have applied.
+- If you violate it, we may take measures such as suspending your account.
