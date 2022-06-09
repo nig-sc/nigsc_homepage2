@@ -7,7 +7,7 @@ title: How to use qsub_beta
 
 `qsub_beta` is a tool to check in advance the requested resource of the job if there are any error and submit it to UGE when the batch job is executed using [Univa Grid Engine](/software/univa_grid_engine).
 
-If you submit the request resource with a value that cannot be satisfied by any computer node, the job will be in the qw state (waiting), but it will not execute unless you modify the request resource because there are no executable compute nodes.
+If you submit the request resource with a value that cannot be satisfied by any compute node, the job will be in the qw state (waiting), but it will not execute unless you modify the request resource because there are no executable compute nodes.
 
 By Submitting the job to the UGE via `qsub_beta`, you can notice the error in specifying the requested resource at the time the batch job is executed, reducing unnecessary waiting time.
 
@@ -27,9 +27,9 @@ Your job XXXXXXX ("job.sh") has been submitted
 If there is an error in the requested resource, URL that can be used as a reference when correcting the cause of the error and the requested resource is displayed.
 At this time, the exit status is `1` and the process ends with error.
 
-In the following example, the option `-pe def_slot 40` specifies to reserve 40 CPU cores on the same computer node, and the option` -l intel.q` specifies to execute the job on the computer node of intel.q.
+In the following example, the option `-pe def_slot 40` specifies to reserve 40 CPU cores on the same compute node, and the option` -l intel.q` specifies to execute the job on the compute node of intel.q.
 
-However, since the number of CPU cores on the computer node of intel.q is 32 cores, the job is not executed and error occurs.
+However, since the number of CPU cores on the compute node of intel.q is 32 cores, the job is not executed and error occurs.
 
 ```
 $ qsub_beta -pe def_slot 40 -l intel job_script.sh

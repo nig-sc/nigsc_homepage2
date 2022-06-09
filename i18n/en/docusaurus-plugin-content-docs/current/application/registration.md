@@ -21,7 +21,7 @@ New user registration application screen
 </ul>
 <ul>
   <li><a href="https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_application#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E7%94%B3%E8%AB%8B%E3%81%8B%E3%82%89%E5%88%A9%E7%94%A8%E9%96%8B%E5%A7%8B%E3%81%BE%E3%81%A7%E3%81%AE%E6%B5%81%E3%82%8C">The personal genome section</a>
-  <p>&#x26A0;  Currently, we are not accepting new user registration application of the personal genomic analysis section. For more information, refer to <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">"May 13, 2022(Friday) - Suspend acceptance of new user registrations for the personal genome section and large-scale strages on the general analysis section"</a></p>
+  <p>&#x26A0;  Currently, we are not accepting new user registration application of the personal genomic analysis section. For more information, refer to <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">"May 13, 2022(Friday) - Suspend acceptance of new user registrations for the personal genome section and large-scale storage on the general analysis section"</a></p>
   </li>
 </ul>
 </td>

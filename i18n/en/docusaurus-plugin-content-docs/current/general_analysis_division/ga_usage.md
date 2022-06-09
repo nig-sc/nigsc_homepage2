@@ -8,7 +8,7 @@ On the login node, you can do development work and perform analysis work as a no
 - As for the development environment, etc., refer to "[the Development Environment and Libraries](../software/software.md#development-environment-and-libraries)" on [Software page](../software/software.md).
 - You can work on the login node for up to 3 days. You will be forcibly logged out after qlogin.
 
-For calculations that take a long time or use a large CPU or memory, run them as batch jobs, parallel jobs, or array jobs on the computer node (compute node) with the qsub command.
+For calculations that take a long time or use a large CPU or memory, run them as batch jobs, parallel jobs, or array jobs on the compute node (compute node) with the qsub command.
 
 
 ### Reference

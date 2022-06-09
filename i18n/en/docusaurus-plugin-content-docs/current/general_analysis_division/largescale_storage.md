@@ -1,16 +1,17 @@
 ---
 id: largescale_storage
-title: Using largescale storages
+title: Using large-scale storage
 ---
 
-サービス利用の際は、[利用規程](../application/use_policy.md)および[利用規程別表（料金表）](../application/use_policy.md)をご確認いただき、[利用計画表をダウンロード](../application/resource_extension.md)し必要事項を記入の上、![](sc-helpdesk.png)までメールにてお送りください。利用目的を審査の上、課金サービス利用許可の案内をお送りします。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。
+When you start using this service, check the [Acceptable Use Policy](../application/use_policy.md) and [Appendix for Rules of Use (table of charges)](./application/use_policy.md), [Download the usage plan table](./application/resource_extension.md), fill out the required information, and send an email to ![](sc-helpdesk.png). After examining the purpose of use, we will send you a guide to permission to use the billing service.
+
+Note: Depending on the crowded situation of the NIG supercomputer, you may not be able to use.
 
 
+The compute nodes and storage of the NIG supercomputer are roughly divided into two sections, the general analysis section and the personal genome analysis section. The following storage services are available in both sections.
 
-遺伝研スパコンの計算ノード及びストレージは一般解析区画と個人ゲノム解析区画 の２つの区画に大別されます。以下のストレージ大規模利用サービスは両方の区画から利用可能です。
 
-
-##  高速ストレージの大規模利用(Quota設定のみ)
+## Large-scale use of high-speed storage (Quota setting only)
 
 
 
@@ -18,31 +19,30 @@ title: Using largescale storages
 
 
 
-◯赤点が個人ゲノム解析区画の価格　◆青点が一般解析区画の価格です。
+◯ Red dots: the price of the personal genomic analysis section  ◆Blue dots: the price of the general analysis section
 
-- 遺伝研スパコンの一般解析区画では責任者単位のquota設定量の合計で30TBまで無料です。30TBまでは各ユーザは1TB単位で申請可能です。30TBを超える場合は10TB単位で申請してください。
-- 10TB単位で申請してください。10TB単位で端数が出た場合は切り上げとなります。
-- 利用可能容量はクオータ設定のみのベストエフォートです。
-
-
-
-## アーカイブストレージの大規模利用（容量保証）
-
-![](storage3.png)
+- In the general analysis section of the NIG supercomputer, the total amount of quota setting per responsible person is free up to 30TB. Each user can apply in increments of 1TB up to 30T
+- Apply in 10TB units. If a fraction appears in units of 10TB, it will be rounded up.
+- Available capacity is best-effort only for quarter setting.
 
 
-- 遺伝研スパコンの一般解析区画、個人ゲノム解析区画の両方とも同じ価格です。
-- 10TB単位で申請してください。10TB単位で端数が出た場合は切り上げとなります。
+## Large-scale use of archive storage
+
+![](storage3_2.png)
 
 
-## その他特記事項
+- The price is the same for both the general analysis section and the individual genome analysis section of the NIG supercomputer.
+- Apply in 10TB increments; any fractions of 10TB will be rounded up to the nearest 10TB.
 
-### ストレージに対するグループクォータについて
+## Note:
 
- 責任者単位の合計で高速ストレージ30TB以下は無料であり、 責任者単位でグループが作られるためクォータの設定を責任者単位で設定して欲しいという要望があります。その際にはその旨を ![](sc-helpdesk.png)までご連絡ください。
+### About group quotas for storage
 
-### 2次グループの設定等によるグループ間のデータ共有について
+ For each responsible person, the total amount of high-speed storage 30TB or less is free. And groups are created for each responsible person. So there is a request to set quotas for each responsible person. If you wish, contact ![](sc-helpdesk.png).
 
-グループ間でのデータ共有を可能にする設定についてもご要望を承ります。その際、束ねたグループの合計で30TBを超えたら課金対象となります。料金はグループのクォータ量で按分となります。（この場合には請求金額は、利用計画表の「料金試算表」では計算出来ませんのでご注意願います。）
 
-- 課金の金額は例えばグループAの高速ストレージクォータ設定が25TB, グループBの高速ストレージクォータ設定が10TBなら、35TBは40TBに切り上げられるため40TBの料金 11万1112円（税抜き)を25:10に按分します。
+### About data sharing between groups by setting secondary groups, etc.
+
+We also accept requests for settings that allow data sharing between groups. In that case, if the total of the bundled groups exceeds 30TB, you will be charged. Fees will be prorated according to the group quota. (In this case, note that the billing amount cannot be calculated using the "Usage TB" in the usage plan table.)
+
+- For example, if Group A's high-speed storage quota setting is 25TB and Group B's high-speed storage quota setting is 10TB, 35TB will be rounded up to 40TB, so the 40TB fee of 111,112 yen (excluding tax) will be prorated 25:10.
