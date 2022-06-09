@@ -10,7 +10,7 @@ The general analysis section of NIG supercomputer is a cluster configuration of 
 
 A job scheduler is a program that assigns an appropriate computer on a cluster computer system to a computation request from a user. The NIG supercomputer uses the Univa Grid Engine (UGE), the successor to Sun Grid Engine, which has been widely used in bioinformatics, as a job scheduler.
 
-All nodes managed by UGE mounts a Large capacity high speed storage system (Lustre FS) and users' home directories are equally accessible from all nodes.
+All nodes managed by UGE mounts a Large capacity high-speed storage system (Lustre FS) and users' home directories are equally accessible from all nodes.
 
 
 ![](GA_division_EN.png)

@@ -12,7 +12,7 @@ Note: this service is a billing service, so you must submit a usage plan before 
 
 ![](advance_reservation.png)
 
-The red dotted square shows the resources taken by the advance reservation (number of slots on the computer nodes ✕ usage time) and the other squares show the resources occupied by the job (number of slots used on compute nodes ✕ calculation time). The user who reserved the area can submit the job to the red square area.
+The red dotted square shows the resources taken by the advance reservation (number of slots on the compute nodes ✕ usage time) and the other squares show the resources occupied by the job (number of slots used on compute nodes ✕ calculation time). The user who reserved the area can submit the job to the red square area.
 
 (Users using the Advance Reservation Service can submit as usual jobs without using the reserved quota for computational resources by using the `qsub` command as well as users not using the Advance Reservation Service.)
 

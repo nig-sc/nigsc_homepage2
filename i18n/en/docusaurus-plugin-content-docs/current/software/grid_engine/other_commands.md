@@ -165,8 +165,8 @@ The meanings of the numbers are as follows
 - RES: Number of Advance Reservation slots
 - AVAIL: Number of available slots
 - TOTAL: Total number of slots
-- aoACDS: Number of slots which the computer node is in one of the aoACDS states
-- cdsuE: Number of slots which the computer node is in one of the cdsuE states
+- aoACDS: Number of slots which the compute node is in one of the aoACDS states
+- cdsuE: Number of slots which the compute node is in one of the cdsuE states
 
 You can find more details with `man qstat`.
  

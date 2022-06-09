@@ -15,11 +15,11 @@ Parallel environment types provided by the NIG supercomputer are as follows.
 </tr>
 <tr>
   <td>def_slot N</td>
-  <td>  N CPU cores are reserved on the same computer node. (When N exceeds the number of CPU cores on the computer node, the job will not start.)</td>
+  <td>  N CPU cores are reserved on the same compute node. (When N exceeds the number of CPU cores on the compute node, the job will not start.)</td>
  </tr>
  <tr>
   <td>mpi N</td>
-  <td>  N CPU cores are reserved across multiple computer nodes. At that time, the computer nodes are selected by the round-robin method. As a result, the cores are secured in a form scattered among as many computing nodes as possible.
+  <td>  N CPU cores are reserved across multiple compute nodes. At that time, the compute nodes are selected by the round-robin method. As a result, the cores are secured in a form scattered among as many computing nodes as possible.
   </td>
 </tr>
 <tr>
