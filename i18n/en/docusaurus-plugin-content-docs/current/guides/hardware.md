@@ -101,8 +101,8 @@ title: Hardware
     Total storage capacity: 43.8PB
     </td>
 	<td colspan="2">
-    Large capacity high speed storage<br />
-	Strage area for analysis(※1)
+    Large capacity high-speed storage<br />
+	Storage area for analysis(※1)
     </td>
 	<td>Lustre file system<br />
 	16.8PB</td>
@@ -110,7 +110,7 @@ title: Hardware
 <tr>
     <td colspan="2">
     Large capacity archive storage<br />
-	Strage area for DB(※2)
+	Storage area for DB(※2)
     </td>
 	<td>SpectrumScale file system + tapes<br />
 	30PB (Disk Capacity 15PB、Hierarchical tape storage 15PB)
@@ -120,7 +120,7 @@ title: Hardware
 			<td colspan="3">Inter-node interconnect network</td>
 			<td>
             InfiniBand 4×EDR 100Gbps fat tree<br />
-            (For storage, full bi-section; for computer nodes, connection bandwidth to upstream SW : connection bandwidth to downstream SW = 1:4)
+            (For storage, full bi-section; for compute nodes, connection bandwidth to upstream SW : connection bandwidth to downstream SW = 1:4)
             </td>
 		</tr>
 	</tbody>
@@ -129,11 +129,11 @@ title: Hardware
 - ※1. Storage area for analysis: This area contains user home area in general analysis area and personal genome analysis area
 - ※2. Storage area for DB: This area contains DDBJ databases such as DRA. These databases can be accessed from general analysis area.
 
-## Computer nodes
+## Compute nodes
 
-### Thin computer node Type 1a (HPE ProLiant DL385 Gen10; 136 computers)
+### Thin compute node Type 1a (HPE ProLiant DL385 Gen10; 136 computers)
 
-Computer nodes with AMD EPYC 7501 processors.
+Compute nodes with AMD EPYC 7501 processors.
 
 ![](Thin1a.png)
 <br />
@@ -151,9 +151,9 @@ HPE ProLiant DL385 Gen10
 
 
  
-### Thin computer node Type 1b (DELL PowerEdge R6525; 28 computers)
+### Thin compute node Type 1b (DELL PowerEdge R6525; 28 computers)
 
-Computer nodes with AMD EPYC 7702 processors.
+Compute nodes with AMD EPYC 7702 processors.
 
 ![](Thin1b.png)
 
@@ -169,9 +169,9 @@ DELL PowerEdge R6525
 | Network   | InfiniBand 4xEDR                                   |                     1 | 100Gbps                            |
 
  
-### Thin computer node Type 2a (HPE Apollo 2000 Gen10; 52 computers)
+### Thin compute node Type 2a (HPE Apollo 2000 Gen10; 52 computers)
 
-Computer nodes with Intel Xeon processors.
+Compute nodes with Intel Xeon processors.
 
 ![](Thin2a.png)
 
@@ -189,9 +189,9 @@ HPE Apollo 2000 Gen10
 
 
  
-### Thin computer node Type 2b (HPE Apollo 6500 Gen10; 16 computers)
+### Thin compute node Type 2b (HPE Apollo 6500 Gen10; 16 computers)
 
-Computer nodes with four GPUs on each node.
+Compute nodes with four GPUs on each node.
 
 ![](Thin2b.png)
 
@@ -225,7 +225,7 @@ HPE Apollo 6500 Gen10
 | connection bandwidth                                       | 8 (PCIe2.0 x16)GB/sec   |
 
 
-### Medium computer node (HPE ProLiant DL560 Gen10; 10 computers)
+### Medium compute node (HPE ProLiant DL560 Gen10; 10 computers)
 
 These nodes are compute nodes with 80 cores with 3 TB of physical memory, suitable for running large memory intensive programs such as de novo assembler, etc. You can use it by job submission under UGE.
 
@@ -245,7 +245,7 @@ HPE ProLiant DL560 Gen10
 | Network   | InfiniBand 4xEDR                                        |                     1 | 100Gbps                             |
 
  
-### Fat computer node (HPE Superdome Flex; one computer)
+### Fat compute node (HPE Superdome Flex; one computer)
 
 This compute node for the NUMA (Non Uniformed Memory Access) architecture, which connects multiple compute nodes to build a large shared memory type compute system. 
 
@@ -264,9 +264,9 @@ HPE Superdome Flex
 | Network   | InfiniBand 4xEDR                                        |                     1 | 100Gbps                              |
 
 
-## Strage
+## Storage
 
-### High-speed storages : Lustre file systems
+### High-speed storage : Lustre file systems
 
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
@@ -279,13 +279,13 @@ HPE Superdome Flex
 
 ### Large archive storage
 
-This strage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
+This storage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
 To increase capacity, it is a hierarchical storage system that uses a high-speed disk system and a tape system with low per-capacity cost.
 
 | Components                 | Model number                      | Effective capacity, performance, etc. |
 |----------------------------|-----------------------------------|---------------------------------------|
-| Large Strage Disk System   | IBM Elastic Storage Server GL6S   | 12.9PB, read 36.6GB/s, write 29.0GB/s |
-| Large Strage Tape System   | IBM TS4500 Tape Libraries         | 15PB (uncompressed)                   |
+| Large Storage Disk System   | IBM Elastic Storage Server GL6S   | 12.9PB, read 36.6GB/s, write 29.0GB/s |
+| Large Storage Tape System   | IBM TS4500 Tape Libraries         | 15PB (uncompressed)                   |
 | Tape Cartridge  	         | IBM 3592JD Cartridges             |                                       |
 | Tape Drive	             | IBM TS1155 (x8 tape drivers)      | 360MB/s per drive for R/W             |
 |  Hierarchical Storage Management System | SpectrumScale Server |                                       |
