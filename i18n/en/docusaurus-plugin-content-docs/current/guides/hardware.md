@@ -102,7 +102,7 @@ title: Hardware
     </td>
 	<td colspan="2">
     Large capacity high-speed storage<br />
-	Strage area for analysis(※1)
+	Storage area for analysis(※1)
     </td>
 	<td>Lustre file system<br />
 	16.8PB</td>
@@ -110,7 +110,7 @@ title: Hardware
 <tr>
     <td colspan="2">
     Large capacity archive storage<br />
-	Strage area for DB(※2)
+	Storage area for DB(※2)
     </td>
 	<td>SpectrumScale file system + tapes<br />
 	30PB (Disk Capacity 15PB、Hierarchical tape storage 15PB)
@@ -279,13 +279,13 @@ HPE Superdome Flex
 
 ### Large archive storage
 
-This strage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
+This storage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
 To increase capacity, it is a hierarchical storage system that uses a high-speed disk system and a tape system with low per-capacity cost.
 
 | Components                 | Model number                      | Effective capacity, performance, etc. |
 |----------------------------|-----------------------------------|---------------------------------------|
-| Large Strage Disk System   | IBM Elastic Storage Server GL6S   | 12.9PB, read 36.6GB/s, write 29.0GB/s |
-| Large Strage Tape System   | IBM TS4500 Tape Libraries         | 15PB (uncompressed)                   |
+| Large Storage Disk System   | IBM Elastic Storage Server GL6S   | 12.9PB, read 36.6GB/s, write 29.0GB/s |
+| Large Storage Tape System   | IBM TS4500 Tape Libraries         | 15PB (uncompressed)                   |
 | Tape Cartridge  	         | IBM 3592JD Cartridges             |                                       |
 | Tape Drive	             | IBM TS1155 (x8 tape drivers)      | 360MB/s per drive for R/W             |
 |  Hierarchical Storage Management System | SpectrumScale Server |                                       |

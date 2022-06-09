@@ -4,169 +4,170 @@ title: "Use Policy"
 ---
 
 
-- [情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程 (令和4年4月5日改正）](/pdf/nigsc_use_policy_2204.pdf)
-- [情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程　別表１〜３ (令和4年改正）](/pdf/tables_of_nigsc_use_policy_20220221.pdf)
-- [情報・システム研究機構情報セキュリティポリシー](/pdf/ROIS_security_policy.pdf)
+- [Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems (Revised on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
+- [Appendix 1-3 for the Rules of Use (Revised on 2022)](/pdf/tables_of_nigsc_use_policy_20220221.pdf)
+- [Information security at the Research Organization of Information and Systems](/pdf/ROIS_security_policy.pdf)
 
 ---
 
-料金表(令和4年改正)
+Price list (Revised on 2022)
 
-情報・システム研究機構　国立遺伝学研究所スーパーコンピュータシステム利用規程
+Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems
 
-**別表１（第１２条関係）**
+**Appendix 1（Pertaining to Article 12）**
 
-一般解析区画 大規模利用負担料金表（税抜）
+Price for the Use for the general analysis section large-scale(excluding tax)
 
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2" rowspan="3">高速ストレージ<br />(Quota設定のみ ※1)</td>
-			<td>30TBまで無料</td>
-			<td>0円</td>
+			<td colspan="2" rowspan="3">high-speed storage<br />(only Quota settings ※1)</td>
+			<td>Free 30TB or less</td>
+			<td>0 yen</td>
 		</tr>
 		<tr>
-			<td>30TBを超えた場合10TBあたり 年間</td>
-			<td>27,778円</td>
+			<td>If it exceeds 30TB, per 10TB a year</td>
+			<td>27,778 yen</td>
 		</tr>
 		<tr>
-			<td colspan="2">例 : 使用容量が30TB以上40TB未満  111,112円<br />使用容量が40TB以上50TB未満　138,890円</td>
+			<td colspan="2">Example: Used capacity is 30TB or more and less than 40TB 111,112 yen<br /> Used capacity is 40TB or more and less than 50TB 138,890 yen </td>
 		</tr>
 		<tr>
-			<td colspan="2">アーカイブストレージ</td>
-			<td>10TBあたり 年間</td>
-			<td>108,333円</td>
+			<td colspan="2">archive storage</td>
+			<td>per 10TB a year</td>
+			<td>108,333 yen</td>
 		</tr>
 		<tr>
-			<td rowspan="4">計算ノード優先利用 (※2)</td>
-			<td>Thinノード<br />(AMD)</td>
-			<td>1CPUコア、4GBメモリを1単位とし、1単位30日あたり</td>
-			<td>448円</td>
+			<td rowspan="4">priority use of compute nodes  (※2)</td>
+			<td>Thin node<br />(AMD)</td>
+			<td>One CPU core, 4GB memory as a single unit, a single unit per 30 days</td>
+			<td>448 yen</td>
 		</tr>
 		<tr>
-			<td>Thinノード
-(Intel)</td>
-			<td>1CPUコア、12GBメモリを1単位とし、1単位30日あたり</td>
-			<td>448円</td>
+			<td>Thin node(Intel)</td>
+			<td>One CPU core, 12GB memory as a single unit, a single unit per 30 days</td>
+			<td>448 yen</td>
 		</tr>
 		<tr>
-			<td>Thinノード<br />(Intel/NVIDIA GPU)</td>
-			<td>4CPUコア、1GPU、48GBメモリを1単位とし、1単位30日あたり</td>
-			<td>2,690円</td>
+			<td>Thin node<br />(Intel/NVIDIA GPU)</td>
+			<td>4 CPU cores, 1GPU, 48GB memory as a single unit, a single unit per 30 days</td>
+			<td>2,690 yen</td>
 		</tr>
 		<tr>
-			<td>Mediumノード</td>
-			<td>13CPUコア、512GBメモリを1単位とし、1単位30日あたり</td>
-			<td>29,155円</td>
+			<td>Medium node</td>
+			<td>13 CPU cores, 512GB memory as a single unit, a single unit per 30 days</td>
+			<td>29,155 yen</td>
 		</tr>
 	</tbody>
 </table>
 
-請求額は利用した日数で按分する。
+The billing amount is prorated based on the number of days used.
 
-(※1)ユーザまたはグループの利用可能上限値(クォータ)の設定を行う。ストレージが非常に混雑しているときには上限値に達する前にストレージの容量上限に達する場合もある。
+(※1) Set the maximum available limit (quota) for a user or group. When storage is extremely congested, the storage capacity limit may be reached before the upper limit is reached.
 
-(※2)計算ノード優先利用サービスは、グリッドエンジンのアドバンスドリザベーション機能を用いて実行予約を行うサービスである。
+(※1) The compute node priority use service is a service that reserves execution using the advanced reservation function of the grid engine.
 
+**Appendix 2（Pertaining to Article 12）**
 
-**別表２（第１２条関係）**
-
-個人ゲノム解析区画 大規模利用負担料金表（税抜）
+Price for the Use for the personal genome analysis section large-scale(excluding tax)
 
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2" rowspan="2">高速ストレージ<br />(Quota設定のみ ※1)</td>
-			<td>基本料金</td>
-			<td>83,333円</td>
+			<td colspan="2" rowspan="2">high-speed storage<br />(only Quota settings ※1)</td>
+			<td>Basic Bill</td>
+			<td>83,333 yen</td>
 		</tr>
 		<tr>
-			<td>10TBあたり 年間</td>
-			<td>27,778円</td>
+			<td>per 10TB a year</td>
+			<td>27,778 yen</td>
 		</tr>
 		<tr>
-			<td colspan="2">アーカイブストレージ</td>
-			<td>10TBあたり 年間</td>
-			<td>108,333円</td>
+			<td colspan="2">archive storage</td>
+			<td>per 10TB a year</td>
+			<td>108,333 yen</td>
 		</tr>
 		<tr>
-			<td>DDBJグループクラウド</td>
-			<td>基本料金</td>
-			<td>1プロジェクトあたり 年額</td>
-			<td>3,500,000円</td>
+			<td>DDBJ Group Cloud</td>
+			<td>Basic Bill</td>
+			<td>per project Annual amount</td>
+			<td>3,500,000 yen</td>
 		</tr>
 		<tr>
-			<td rowspan="4">アクセス制限データグループ共有データベースサービス(※2)</td>
-			<td>アーカイブストレージ(容量保証)</td>
-			<td>10TBあたり 年間</td>
-			<td>108,333円</td>
+			<td rowspan="4">Access Restricted Data Group Shared Database Service(※2)</td>
+			<td>archive storage (Capacity Guarantee)</td>
+			<td>per 10TB a year</td>
+			<td>108,333 yen</td>
 		</tr>
 		<tr>
-			<td>要望対応開発</td>
-			<td>１人月</td>
-			<td>1,300,000円</td>
+			<td>The Request and Response Development</td>
+			<td>one man-month</td>
+			<td>1,300,000 yen</td>
 		</tr>
 		<tr>
-			<td>要望対応開発</td>
-			<td>１人月</td>
-			<td>250,000円</td>
+			<td>The Request and Response Development</td>
+			<td>one man-month</td>
+			<td>250,000 yen</td>
 		</tr>
 		<tr>
-			<td>100TBまで大容量ディスクでのデータ輸送対応</td>
-			<td>1回あたり</td>
-			<td>40,000円
-(送料別)</td>
+			<td> Supports data transportation with high capacity disks up to 100TB </td>
+			<td>Per transaction</td>
+			<td>40,000 yen
+(postage excluded)</td>
 		</tr>
 	</tbody>
 </table>
 
-請求額は利用した日数で按分する。
+The billing amount is prorated based on the number of days used.
 
-(※1)ユーザまたはグループの利用可能上限値(クォータ)の設定を行う。ストレージが非常に混雑しているときには上限値に達する前にストレージの容量上限に達する場合もある。
+(※1) Set the maximum available limit (quota) for a user or group. When storage is extremely congested, the storage capacity limit may be reached before the upper limit is reached.
 
-(※2)データをクラウド上にアップロードし、データアクセスが許可された研究者間で共有するサービス。初期導入費用、セキュリティー監視、運用の人件費を含む。異なるデータ構造への対応など追加開発が必要な場合については基本料金の他に別途開発費が必要。状況の変化により次年度以降の価格が変更になる場合があり得る。
+(※2) A service that uploads data to the cloud and shares it among researchers who are permitted to access the data. Includes initial installation costs, security monitoring, and personnel costs for operation. 
+If additional development is required, such as support for different data structures, a separate development fee is required in addition to the basic fee. Prices may change from the next fiscal year onward due to changes in circumstances.
 
 
-**別表３（第１２条関係）**
 
-一般解析区画、個人ゲノム解析区画 計算ノード占有利用負担金表 （税抜）
+**Appendix 3（Pertaining to Article 12）**
+
+Price for the Use for the occupancy compute node of the general analysis section and the personal genome analysis section(excluding tax)
 
 <table>
 	<tbody>
 		<tr>
-			<td rowspan="5">計算ノード占有利用 (※)</td>
-			<td>Thinノード<br />(AMD)</td>
-			<td>1CPUコア、8GBメモリを１単位とし、1単位30日あたり</td>
-			<td>448円</td>
+			<td rowspan="5">the occupancy compute node (※)</td>
+			<td>Thin node<br />(AMD)</td>
+			<td>One CPU core, 8GB memory as a single unit, a single unit per 30 days</td>
+			<td>448 yen</td>
 		</tr>
 		<tr>
 			<td>Thinノード<br />(Intel)</td>
-			<td>1CPUコア、12GBメモリを１単位とし、1単位30日あたり</td>
-			<td>448円</td>
+			<td>One CPU core, 12GB memory as a single unit, a single unit per 30 days</td>
+			<td>448 yen</td>
 		</tr>
 		<tr>
-			<td>Thinノード<br />(Intel/NVIDIA GPU)</td>
-			<td>4CPUコア、1GPU、48GBメモリを1単位とし、1単位30日あたり</td>
-			<td>2,690円</td>
+			<td>Thin node<br />(Intel/NVIDIA GPU)</td>
+			<td>4 CPU cores, 1GPU, 48GB memory as a single unit, a single unit per 30 days</td>
+			<td>2,690 yen</td>
 		</tr>
 		<tr>
-			<td>Mediumノード</td>
-			<td>13CPUコア、512GBメモリを1単位とし、1単位30日あたり</td>
-			<td>29,155円</td>
+			<td>Medium node</td>
+			<td>13 CPU cores, 512GB memory as a single unit, a single unit per 30 days</td>
+			<td>29,155 yen</td>
 		</tr>
 		<tr>
-			<td>Fatノード</td>
-			<td>24CPUコア、1TBメモリを1単位とし、1単位30日あたり</td>
-			<td>55,977円</td>
+			<td>Fat node</td>
+			<td>24 CPU cores, 1TB memory as a single unit, a single unit per 30 days</td>
+			<td>55,977 yen</td>
 		</tr>
 	</tbody>
 </table>
 
-請求額は利用した日数で按分する。
+The billing amount is prorated based on the number of days used.
 
-(※)計算ノード占有利用サービスは、計算機全体または仮想マシンを用いて区切られた領域を一定期間占有するサービスである。
+(※) Computational node occupancy service is a service that occupies the entire computer or the area separated by using a virtual machine for a certain period of time.
 
 ---
-(旧)別表1〜3は以下をご参照下さい
 
-[情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程　別表１〜３ (令和2年5月1日改正）](/pdf/tables_of_nigsc_use_policy_2.pdf)
+Refer to the following for previous Appendix 1-3.
+
+[Appendix 1-3 for the Rules of Use (Revised on May 1, 2020)](/pdf/tables_of_nigsc_use_policy_2.pdf)
