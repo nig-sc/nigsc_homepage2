@@ -3,36 +3,36 @@ id: legislation
 title: "Related laws and regulations, etc."
 ---
 
-## 外為法関係
+## Foreign Exchange and Foreign Trade Act
 
-1. [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) 第二十五条
-2. [キャッチオール規制の範囲](https://www.meti.go.jp/policy/anpo/anpo03.html)
-    - 輸出令別表第３の地域(2021年10月01日現在) : アルゼンチン、オーストラリア、オーストリア、ベルギー、ブルガリア、カナダ、チェコ、デンマーク、フィンランド、フランス、ドイツ、ギリシャ、ハンガリー、アイルランド、イタリア、ルクセンブルク、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、スペイン、スウェーデン、スイス、英国、アメリカ合衆国
-3. 居住者 非居住者の定義
-    - [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  第六条
-    - 居住者 非居住者の判定(財務省通達「[外国為替法令の解釈及び運用について（抄）蔵国第2345号 平成12年12月28日](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)」より)
-
-
-
-## 個人ゲノム関係
+1. [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) Article 25
+2. [The scope of Catch-all control](https://www.meti.go.jp/policy/anpo/anpo03.html)
+    - the areas listed in appended table 3 of the Export Trade Control Order, as of October 1, 2021 : Argentina, Australia, Austria, Belgium, Bulgaria, Canada, Czech Republic, Denmark, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, Spain, Sweden, Switzerland, United Kingdom, the United States.
+3. Definition of Residents and Non-Residents
+    - [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  Article 6
+    - Assessment of Residents and Non-Residents(Extracted from the Ministry of Finance circular, [Interpretation and Enforcement of the Foreign Exchange and Foreign Trade Act (Excerpt), Zokoku No. 2345, December 28, 2000](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)) 
 
 
-- [個人情報の保護に関する法律（平成15年５月30日法律第57号、平成28年5月27日公布（平成28年法律第五十一号）改正）](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
-- [人を対象とする生命科学・医学系研究に関する倫理指針（令和３年６月３０日）](https://www.meti.go.jp/press/2020/03/20210323004/20210323004.html)
+
+## The personal genome
 
 
-遺伝研スパコン個人ゲノム解析区画は以下のセキュリティーガイドラインを遵守しております。
-
-- [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
-- [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
+- [Act on the Protection of Personal Information（Act No. 57 of May 30, 2003, Revised and promulgated on May 27, 2016（Act No. 51 of 2016））](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
+- [Ethical Guidelines for Medical and Biological Research Involving Human Subjects（Enforced in June 30, 2021）](https://www.meti.go.jp/press/2020/03/20210323004/20210323004.html)
 
 
--  [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+The personal genomic analysis section in the NIG supercomputer complies with the following security guidelines.
+
+- [NBDC Guidelines for Human Data Sharing ](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
+- [NBDC Security Guidelines for Human Data](https://humandbs.biosciencedbc.jp/en/guidelines)
 
 
-## セキュリティ基準
+-  [Checklist for the NBDC Guidelines for Human Data Sharing and the NBDC Security Guidelines for Human Data（for “Off-Premise-Server” Operation Managers）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
 
 
-- [医療情報システムの安全管理に関するガイドライン　第5.1版（令和3年1月）](https://www.mhlw.go.jp/stf/shingi/0000516275.html)
-- [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
-- [政府機関等の情報セキュリティ対策のための統一基準群（令和3年度版）](https://www.nisc.go.jp/active/general/kijunr3.html)
+## Security standards
+
+
+- [Guideline for the Security Management of Medical Information Systems version 5.1 (Jan, 2021)](https://www.mhlw.go.jp/stf/shingi/0000516275.html)
+- [Guidelines for Safety Management of Medical Information by Providers of Information Systems and Services Handling Medical Information](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
+- [Common Standards for Cybersecurity Measures for Government Agencies and Related Agencies（FY2021）](https://www.nisc.go.jp/eng/pdf/kijyunr3-en.pdf)
