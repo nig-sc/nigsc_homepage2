@@ -55,4 +55,3 @@ Grid Engine の各キューに対するジョブの蓄積状況と、
 - 3 CPU cores, 2GB memory を要求したジョブの要求スロット数は 3 と計算されます。
 - 1 CPu core, 12 GB memory を 一般解析区画の AMD キュー(Thin Type 1a) で要求すると、要求スロット数は 2 と計算されます。
 
-
