@@ -140,7 +140,7 @@ Price for the Use for the occupancy compute node of the general analysis section
 			<td>448 yen</td>
 		</tr>
 		<tr>
-			<td>Thinノード<br />(Intel)</td>
+			<td>Thin node<br />(Intel)</td>
 			<td>One CPU core, 12GB memory as a single unit, a single unit per 30 days</td>
 			<td>448 yen</td>
 		</tr>
