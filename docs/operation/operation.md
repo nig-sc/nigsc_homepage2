@@ -19,14 +19,35 @@ Grid Engine の各キューに対するジョブの蓄積状況と、
 
 データは 1 時間おきに更新されます。
 
-参考: スロットの定義
+
+### 参考: スロットの定義
 
 <table>
 <tr>
-<th>計算ノードの種類</th><th>1 スロットの定義</th>
+<th>Compute node type</th><th>Definition of 1 slot</th>
+</tr>
 <tr>
 <td>Thin Type 1a</td><td>1 CPU core, 8GB memory</td>
 </tr>
-
+<tr>
+<td>Thin Type 1b</td><td>1 CPU core, 4GB memory</td>
+</tr>
+<tr>
+<td>Thin Type 2a</td><td>1 CPU core, 12GB memory</td>
+</tr>
+<tr>
+<td>Thin Type 2b</td><td>1 CPU core, 16GB memory</td>
+</tr>
+<tr>
+<td>Medium</td><td>1 CPU core, 38.4GB memory</td>
+</tr>
+<tr>
+<td>Fat</td><td>1 CPU core, 47.2GB memory</td>
+</tr>
 
 </table>
+
+
+CPU またはメモリのどちらかが上限値に達した場合は、「free」の状態になります。
+
+
