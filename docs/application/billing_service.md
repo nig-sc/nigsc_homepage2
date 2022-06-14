@@ -78,7 +78,7 @@ title: "課金サービスの利用方法"
 <td>
 
 [高速ストレージ](/general_analysis_division/largescale_storage)<br />
-(Quota設定のみ。容量保証なし。)<br />
+(Quota設定のみ)<br />
 <br />
 高速ストレージに対して利用可能な容量を指定するサービスです。アカウント申請直後はQuotaが1TBに指定されていますがこれを拡張することができます。
 </td>
@@ -95,8 +95,7 @@ title: "課金サービスの利用方法"
 <tr>
 <td>
 
-[アーカイブストレージ](/general_analysis_division/largescale_storage)<br />
-（容量保証）<br />
+[アーカイブストレージ](/general_analysis_division/largescale_storage)
 <br />
 アーカイブストレージに一定容量を確保するサービスです。
 </td>
