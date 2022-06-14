@@ -3,48 +3,48 @@ id: operation
 title: 稼働状況概要
 ---
 
-## 概要
+
+## ジョブの蓄積状況と予想される待ち時間
+
+Grid Engine の各キューに対するジョブの蓄積状況と、
+そこから予想される、ジョブの待ち時間(今投入したジョブが実行開始されるまで待ち時間の予測値)を示しています。
+
+- 左図（折れ線グラフ）: キューの中で待ち状態にあったジョブのうち、実行開始したジョブの一時間あたりの数。
+- 中央図（棒グラフ）：現在実行中のジョブの数(赤色)、および、キューの中で待ち状態にあるジョブの数（青色）。
+- 右図 : 予測される待ち時間 = 待ち状態にあるジョブの数 / 実行開始したジョブの一時間あたりの数
+
+ジョブの数は、ジョブが占めるスロットの数として計算しています。
+
+<img alt="job accumlation status" src="https://sc2.ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
+
+データは 1 時間おきに更新されます。
+
+### 参考: スロットの定義
 
 <table>
 <tr>
-<td width="300">
-
-
-![](/img/2021-09-05_22-35.png)
-
-</td>
-<td>
-<a href="https://sc2.ddbj.nig.ac.jp">
-UGEキュー毎の実行状況
-</a>
-<br />
-<br />
-UGEキュー毎に現在どの程度実行スロットが埋まっているかを表示しています。
-データは10分おきに更新されます。
-
-</td>
+<th>Compute node type</th><th>Definition of 1 slot</th>
 </tr>
-
 <tr>
-<td>
-
-![](/img/2021-10-18_12-04.png)
-
-</td>
-<td>
-
-<a href="https://sc2.ddbj.nig.ac.jp">
-UGEキュー毎のジョブの蓄積状況 
-</a>
-<br />
-<br />
-
-
-各UGEキューのにどの程度ジョブが溜まっているか、
-またどの程度の速さでジョブがキューから捌けているかを表示しています。
-データは1時間おきに更新されます。
-</td>
-
-
+<td>Thin Type 1a</td><td>1 CPU core, 8GB memory</td>
 </tr>
+<tr>
+<td>Thin Type 1b</td><td>1 CPU core, 4GB memory</td>
+</tr>
+<tr>
+<td>Thin Type 2a</td><td>1 CPU core, 12GB memory</td>
+</tr>
+<tr>
+<td>Thin Type 2b</td><td>1 CPU core, 16GB memory</td>
+</tr>
+<tr>
+<td>Medium</td><td>1 CPU core, 38.4GB memory</td>
+</tr>
+<tr>
+<td>Fat</td><td>1 CPU core, 47.2GB memory</td>
+</tr>
+
 </table>
+
+CPUまたはメモリのどちらかが上限値に達した場合は、「free」の状態になります。
+
