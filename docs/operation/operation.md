@@ -13,9 +13,20 @@ Grid Engine の各キューに対するジョブの蓄積状況と、
 - 中央図（棒グラフ）：現在実行中のジョブの数(赤色)、および、キューの中で待ち状態にあるジョブの数（青色）。
 - 右図 : 予測される待ち時間 = 待ち状態にあるジョブの数 / 実行開始したジョブの一時間あたりの数
 
+ジョブの数は、ジョブが占めるスロットの数として計算しています。
 
 <img alt="job accumlation status" src="https://sc2.ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
 
 データは 1 時間おきに更新されます。
 
+参考: スロットの定義
 
+<table>
+<tr>
+<th>計算ノードの種類</th><th>1 スロットの定義</th>
+<tr>
+<td>Thin Type 1a</td><td>1 CPU core, 8GB memory</td>
+</tr>
+
+
+</table>
