@@ -19,6 +19,7 @@ sidebar_label: トップページ
 
 
 ## 最近のお知らせ
+- &#x26A0;[新規ユーザ登録の一時停止](/blog/2022-06-17-UserRegistration) (2022.06.15)
 - [ユーザ権限で使えるパッケージマネージャについてページを追加しました](/blog/2022-05-19-news_guix_spack_nix) (2022.05.19更新)
 - &#x26A0;[大規模ユーザ新規登録の一時停止](/blog/2022-05-13-suspension-of-applications) (2022.05.13)
 - &#x1F9EC; [東大 吉武先生が開発したPortablePipelineの紹介を追加しました](/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
