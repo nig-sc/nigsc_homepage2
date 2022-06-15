@@ -47,4 +47,14 @@ The data is updated every hour.
 
 </table>
 
-If either CPU or memory reaches the upper limit, it will be in the "free" state.
+The number of slots consumed by a job is calculated based on the number of CPU cores requested or the amount of memory, whichever is greater.
+
+Example:
+
+- A job requesting 3 CPU cores and 2 GB memory will request 3 slots. 
+- If one CPU core, 12 GB memory is requested in the AMD queue (Thin Type 1a) of the general analysis section, the number of slots requested is calculated to be 2.
+
+
+
+
+
