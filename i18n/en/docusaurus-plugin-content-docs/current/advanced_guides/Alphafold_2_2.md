@@ -5,7 +5,7 @@ title:  "Running AlphaFold 2.2 using the NIG supercomputer"
 
 
 ## 概略
-遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.2.0</a>をインストールしたsingularity imageとalphafold 2.2で使用するデータベースを /lustre7/software/alphafold/2.2.0/ に用意してあります。
+遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.2.2</a>をインストールしたsingularity imageとalphafold 2.2で使用するデータベースを /lustre7/software/alphafold/2.2.2/ に用意してあります。
 
 
 alphafold 2.2によるタンパク質の立体構造予測は以下のステップで実行されます。
@@ -61,7 +61,7 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 
 ## ジョブスクリプトの準備
 
-/lustre7/software/alphafold/2.2.0/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+/lustre7/software/alphafold/2.2.2/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
 
 
 ### example_job_script_cpu.sh
@@ -86,8 +86,8 @@ export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_thread
 
 singularity exec \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.2.0/database:/data1/database \
-/lustre7/software/alphafold/2.2.0/alphafold-2.2.0-CPU.sif \
+-B /lustre7/software/alphafold/2.2.2/database:/data1/database \
+/lustre7/software/alphafold/2.2.2/alphafold-2.2.2-CPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
@@ -183,8 +183,8 @@ PRED=5
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.2.0/database:/data1/database \
-/lustre7/software/alphafold/2.2.0/alphafold-2.2.0-GPU.sif \
+-B /lustre7/software/alphafold/2.2.2/database:/data1/database \
+/lustre7/software/alphafold/2.2.2/alphafold-2.2.2-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
