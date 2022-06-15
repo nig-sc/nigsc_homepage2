@@ -1,17 +1,13 @@
 ---
 id: operation
-title: Operation Status Overview
+title: Job accumulation status and estimated waiting time
 ---
-
-## Job accumulation status and estimated waiting time
-
-
 
 The figure below shows the status of job accumulation for each queue of Grid Engine and the estimated job wait time (the wait time prediction value of the job from just submitted to start running).
 
 - Left (the line graph): The number of jobs per hour that have started running out of the jobs waiting in the queue.
-- Center (the bar graph): The number of jobs currently running (red) and the number of jobs waiting in the queue (blue).
-- Right: Estimated wait time = number of jobs waiting / number of jobs per hour that have started running.
+- Center (the bar graph): The number of jobs currently running (red) and waiting in the queue (blue).
+- Right: Estimated wait time = The number of jobs currently waiting / number of jobs per hour that have started running.
 
 
 The number of jobs is calculated as the number of slots occupied by jobs.
