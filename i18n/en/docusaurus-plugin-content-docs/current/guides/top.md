@@ -53,7 +53,7 @@ However, please note that availability is not guaranteed and we may not be able 
 
 In FY2022, we plan to perform scheduled maintenance twice.
 - June 28, 09:00 - July 1, 2022, 00:00(24h)
-- November
+- December 2 - next Thursday (prediction)
 
 
 ## About Acknowledgements
