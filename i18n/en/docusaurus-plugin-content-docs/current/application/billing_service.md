@@ -3,105 +3,93 @@ id: billing_service
 title: "How to use billing services"
 ---
 
-## 概要
+## Overview
 
-遺伝研スパコンは大学共同利用機関の事業として運営されておりユーザーは遺伝研スパコンを基本的には無料で利用できることを原則としていますが、事業継続性、計算資源の効率的利用の促進の観点から特に下記の大規模データの保存、付加的なサービスの利用に対して課金によるサービスを行っています。
+The NIG supercomputer is operated as a business of the Inter-University Research Institute Corporation, and in principle, users can use the NIG supercomputer for free. But from the viewpoint of business continuity and promotion of efficient use of computational resources, we provide billing services for storage of the following large-scale data and the use of additional services in particular. 
 
-- ストレージの大規模利用
-- 計算ノードの優先･占有利用
-- 個人ゲノム解析区画の利用
- 
+- Large-scale use of storage
+- Priority/occupied use of compute nodes
+- Use of the personal genome section
 
-課金サービス利用の際は、[利用計画表をダウンロード](/application/resource_extension)しご記入頂いた上、[問い合わせ先](/application/reference)までご送付ください。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。（原則として遺伝研スパコンで貸し出し可能な全リソースの1/2以上を無料サービスに割り当てております。）
+When using the billing service, fill in [Download the usage plan](/application/resource_extension) and send it to [Contact us](/application/reference).
+
+Note: Depending on the congestion status of the NIG supercomputer, you may not be able to use this service. (In principle, more than half of all resources that can be rented in the NIG supercomputer are allocated for the free service.)
 
 
-## 料金表
-料金表は[利用規程](/application/use_policy)をご参照ください。
+## Price list
+Click and check [Use Policy](/application/use_policy)
 
- 
+## Billing service list
 
-## 課金サービス一覧
+The compute nodes and storage of the NIG supercomputer are roughly divided into two sections, the general analysis section and the personal genome analysis section. The services available in each section are as shown in the table below. For details of each service, refer to the links in the table below.
 
-遺伝研スパコンの計算ノード及びストレージは一般解析区画と個人ゲノム解析区画 の２つの区画に大別されます。各区画で利用可能なサービスは下表の通りです。各サービスの詳細については下表のリンク先をご参照ください。
+- The Fat compute nodes are only available in the form of nodes rental by the billing service.
 
-- Fat計算ノードにつきましては、課金サービスによるノード貸しの形態のみとなっております。
+
+
+
+
 
 <table>
 <tr>
-<th width="350">サービス名称</th>
-<th>一般解析区画</th>
-<th>個人ゲノム解析区画</th>
+<th width="350">Service Name</th>
+<th>The general analysis section</th>
+<th>The personal genome section</th>
 </tr>
 
 <tr>
 <td>
 
-[計算ノード 優先利用 （アドバンスリザベーション）](/general_analysis_division/advance_reservation)
+[priority use of compute nodes (advance reservation)](/general_analysis_division/advance_reservation)
 <br />
 
 <br />
-一定期間一定台数の計算機に対してUGEで自分以外のジョブが入らないように予約する機能です。
+It is a function to reserve a certain number of computers for a certain period of time so that jobs other than your own will not be entered UGE.
 </td>
 <td>
 ○
 <br />
-(Thin, Mediumノード) 
+(Thin, Medium nodes) 
 </td>
 <td>
-なし
+None
 </td>
 </tr>
 
 <tr>
 <td>
-計算ノード 占有利用<br />
-（ノード貸し)<br />
+the occupancy compute nodes<br />
+（Nodes lending)<br />
 <br />
-計算ノードをUGE管理下から外して占有利用するサービスです。
+It is a service that removes the compute nodes from UGE management and occupies it.
 </td>
 <td>
 ○
 <br/>
-(Thin, Medium, Fatノード) 	
+(Thin, Medium, Fat nodes) 	
 </td>
 <td>
 ○ 
 <br />
-(Thin, Mediumノード)
+(Thin, Medium nodes)
 <br />
 
-[個人ゲノム解析環境の利用方法](/personal_genome_division/pg_introduction) 
+[Introduction（The Personal Genome Section）](/personal_genome_division/pg_introduction) 
 </td>
 </tr>
 
 <tr>
 <td>
 
-[高速ストレージ](/general_analysis_division/largescale_storage)<br />
-(Quota設定のみ。容量保証なし。)<br />
+[high-speed storage](/general_analysis_division/largescale_storage)<br />
+(only Quota settings)<br />
 <br />
-高速ストレージに対して利用可能な容量を指定するサービスです。アカウント申請直後はQuotaが1TBに指定されていますがこれを拡張することができます。
+It is a service that specifies the available capacity for high-speed storage. The quota is specified as 1TB immediately after account application, but it can be expanded.
 </td>
 <td>
 ○
 <br />
-(責任者単位の合計で30TBまで無料)
-</td>
-<td>
-○
-</td>
-</tr>
-
-<tr>
-<td>
-
-[アーカイブストレージ](/general_analysis_division/largescale_storage)<br />
-（容量保証）<br />
-<br />
-アーカイブストレージに一定容量を確保するサービスです。
-</td>
-<td>
-○
+(For each responsible person, the total amount of high-speed storage 30TB or less is free.)
 </td>
 <td>
 ○
@@ -111,12 +99,27 @@ title: "How to use billing services"
 <tr>
 <td>
 
-[DDBJグループクラウド](/personal_genome_division/group_cloud)<br />
+[archive storage](/general_analysis_division/largescale_storage)
 <br />
-JGAに準じたデータ構造を持つデータをクラウド上にアップロードし、データアクセスが許可された研究者間で共有するサービスです。
+It is a service that a certain amount of memory space is allocated on archive storage.
 </td>
 <td>
-なし
+○
+</td>
+<td>
+○
+</td>
+</tr>
+
+<tr>
+<td>
+
+[DDBJ Group Cloud](/personal_genome_division/group_cloud)<br />
+<br />
+It is a service that uploads data with a data structure conform to JGA to the cloud and shares it among researchers who are permitted to access the data.
+</td>
+<td>
+None
 </td>
 <td>
 ○
