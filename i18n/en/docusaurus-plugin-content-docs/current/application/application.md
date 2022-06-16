@@ -22,7 +22,7 @@ If your nationality or current residence stipulated by FEFTA is the areas other 
 
 - a) Education, Professional experience and research content
 - b) Current Employment status (full-time or part-time)
-- c) Whether or not you maintain your continuous residence overseas
+- c) whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
 
 Example
 
@@ -53,9 +53,7 @@ Aug 2016 - Present　
 b) Current Employment status
 full-time or part-time
 
-c) Whether or not you maintain your continuous residence overseas
-resided continuously
-xxx University, Tokyo, Japan    Assistant Professor
+c) whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
 ```
 
 
