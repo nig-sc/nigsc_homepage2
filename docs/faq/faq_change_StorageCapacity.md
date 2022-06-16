@@ -13,5 +13,16 @@ title: FAQ (ストレージ容量変更について)
 
 ## 現在どのような配分でストレージ容量を割り当てられているのでしょうか。
 
-![](sc-helpdesk.png)までメールにてご連絡ください。
+以下のように`quota`コマンドを実行してご確認ください。
+
+```
+$ lfs quota -u your_account /lustre7
+Disk quotas for usr your_account (uid ****):
+      Filesystem  kbytes   quota   limit   grace   files   quota limit  
+grace
+        /lustre7 982177580       0 1000000000       - 443208230 0      
+0       -
+uid **** is using default file quota setting
+$
+```
 
