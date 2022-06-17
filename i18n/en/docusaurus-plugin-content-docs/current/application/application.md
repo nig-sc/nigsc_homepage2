@@ -16,6 +16,12 @@ On the other hand, the supercomputer system is subject to Export Administration 
 
 In principle, the purpose of use and results are open to the public. However, if you want to postpone the release date, contact us.
 
+#### Application for use
+
+- [New User Registration Application](/application/registration)
+- Check [Issuance criteria for user accounts](/application/), [Use Policy](/application/use_policy) and [the following "The responsible person"](/application/#the-responsible-person) in advance.
+- For foreign nationals and those residing abroad, read [the following "Precautions for FEFTA"](/application/#precautions-for-fefta).
+
 ## Precautions for FEFTA
 
 If your nationality or current residence stipulated by FEFTA is the areas other than listed in appended table 3 of the Export Trade Control Order of Catch-All Controls, provide us with the following information a)b)c) for the examination when applying for an account. (Refer to the section of [related laws and regulations](/application/legislation). )
@@ -77,7 +83,7 @@ The responsible person must agree to the following.
 
 If there is no problem with these, the user themselves can be the responsible person.
 
-We ask the responsible person to submit a written pledge when applying for use of the user. Download the template below and email it to [contact us](/application/reference).
+We ask the responsible person to submit a written pledge when applying for use of the user. 
 
 ### PLEDGE template
 
