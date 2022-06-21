@@ -13,7 +13,7 @@ title: ジョブの蓄積状況と予想される待ち時間
 
 ジョブの数は、ジョブが占めるスロットの数として計算しています。
 
-<img alt="job accumlation status" src="https://sc2.ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
+<img alt="job accumlation status" src="https://ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
 
 データは 1 時間おきに更新されます。
 

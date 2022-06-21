@@ -12,7 +12,7 @@ The figure below shows the status of job accumulation for each queue of Grid Eng
 
 The number of jobs is calculated as the number of slots occupied by jobs.
 
-<img alt="job accumlation status" src="https://sc2.ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
+<img alt="job accumlation status" src="https://ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
 
 The data is updated every hour.
 
