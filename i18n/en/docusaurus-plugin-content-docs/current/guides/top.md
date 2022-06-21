@@ -18,7 +18,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 
 ## Recent News
-- &#x26A0;[Renewal of user registration system](/en/blog/2022-06-21-UserRegistration_Extend) (2022.06.21 Updated)
+- &#x26A0;[Renewal of user registration system (Extension of suspension period)](/en/blog/2022-06-17-UserRegistration) (2022.06.21)
 - [Added pages for package managers that can be run with user permission](/en/blog/2022-05-19-news_guix_spack_nix) (2022.05.19 Updated)
 - &#x26A0;[Suspend acceptance of new user registrations for large-scale storage](/en/blog/2022-05-13-suspension-of-applications) (2022.05.10)
 - &#x1F9EC; [Added the introduction page of PortablePipeline developed by Professor Yoshitake of the University of Tokyo](/en/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
