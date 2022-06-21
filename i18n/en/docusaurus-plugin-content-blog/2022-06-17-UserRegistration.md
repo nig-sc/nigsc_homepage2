@@ -1,6 +1,6 @@
 ---
 slug: 2022-06-17-UserRegistration
-title: "Suspend acceptance of new user registrations due to renewal of user registration system (Extension of suspension period)"
+title: "(Extension of suspension period) Suspend acceptance of new user registrations due to renewal of user registration system"
 tags:
   - maintenance
 authros:

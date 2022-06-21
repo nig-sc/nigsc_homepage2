@@ -1,6 +1,6 @@
 ---
 slug: 2022-06-17-UserRegistration
-title: "ユーザ登録システムの刷新に伴う新規ユーザ登録の一時停止のお知らせ（期間延長）"
+title: "（期間延長）ユーザ登録システムの刷新に伴う新規ユーザ登録の一時停止のお知らせ"
 tags:
   - maintenance
 authros:
