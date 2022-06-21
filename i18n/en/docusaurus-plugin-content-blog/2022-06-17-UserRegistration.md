@@ -1,6 +1,6 @@
 ---
 slug: 2022-06-17-UserRegistration
-title: "Suspend acceptance of new user registrations due to renewal of user registration system"
+title: "Suspend acceptance of new user registrations due to renewal of user registration system (Extension of suspension period)"
 tags:
   - maintenance
 authros:
@@ -20,7 +20,8 @@ Therefor, we will suspend the acceptance of new user application registration du
 
 ## Suspension period
 
-Friday, June 17th - Tuesday, 21th, 2022
+Friday, June 17th - ~~Tuesday, 21th, 2022~~   <font color="red">Tuesday, 28th, 2022 (until <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-04-25-scheduled-maintenance/">regular maintenance</a>))</font>
+
 
 
 ## Scope of Impact
