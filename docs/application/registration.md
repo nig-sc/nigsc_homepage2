@@ -5,14 +5,14 @@ title: "ユーザ登録・変更申請"
 
 
 
-- [新規ユーザ登録申請](https://sc2.ddbj.nig.ac.jp/index.php/ja-new-application)
+- [新規ユーザ登録申請](/blog/2022-06-17-UserRegistration)　<font color="red"><b>現在、受付を一時停止しております。</b></font>
     - ユーザー登録は随時受け付けています。新規ユーザー登録を行うと高速ストレージ1TBが利用可能となります。
 
 <table>
 <tr>
 <td width="400" align="center">
 
-![](registration.png)
+![](new_registration_JP.png)
 新規ユーザ登録申請画面
 </td>
 <td valign="top">
