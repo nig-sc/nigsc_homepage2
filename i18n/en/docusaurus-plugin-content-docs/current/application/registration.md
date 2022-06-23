@@ -4,14 +4,14 @@ title: "User Registration/Change Request"
 ---
 
 
-- [New User Registration Application](https://sc2.ddbj.nig.ac.jp/index.php/ja-new-application)
+- [New User Registration Application](/blog/2022-06-17-UserRegistration/)　<font color="red"><b>We are currently suspending the acceptance of applications.</b></font>
     - User registration is accepted at any time. 1TB of high-speed storage is available after new user registration.
 
 <table>
 <tr>
 <td width="400" align="center">
 
-![](registration.png)
+![](new_registration_EN.png)
 New user registration application screen
 </td>
 <td valign="top">
