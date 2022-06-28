@@ -20,7 +20,7 @@ Therefor, we will suspend the acceptance of new user application registration du
 
 ## Suspension period
 
-Friday, June 17th - ~~Tuesday, 21th, 2022~~   <font color="red">Tuesday, 28th, 2022 (until <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-04-25-scheduled-maintenance/">regular maintenance</a>))</font>
+Friday, June 17th - ~~Tuesday, 21th, 2022~~   <font color="red">TMonday, July 4th, 2022</font>
 
 
 
