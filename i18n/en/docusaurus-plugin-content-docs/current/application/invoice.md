@@ -1,29 +1,37 @@
 ---
 id: invoice
-title: "Payment method of usage fees"
+title: "Payment method of fees"
 ---
 
 
-## 請求書の発行
+## Issuing invoices
 
-請求につきましては４ヶ月ごと計３期、各期末日締めで翌月初旬に請求書を発行し、使用責任者あてに送付します。
+### Invoices
 
-    第１期：４月〜７月
-    第２期：８月〜１１月
-    第３期：１２月〜３月
+Invoices will be issued at the beginning of the following month at the end of each term, a total of three terms a year every 4 months and sent to the person responsible for use.
 
-第３期につきましては、１２月最終日にて金額確定、年度内に請求書発行予定です。1月1日以降、金額の変更を伴う計画変更は受付いたしませんのでご了承願います。
+```
+1st period: April - July
+2nd period: August - November
+3rd period: December - March
+```
 
-- 支払いは請求書発送月の翌月末となります。
-- ただし希望される方につきましては、年度末前払い請求が可能です。この場合は2月初旬に請求書を発行し3月末日に支払いとなります。
-- 請求書には税込み価格と消費税金額が記載されます。
-- 請求金額を、複数の組織それぞれに分割する事が可能です。必要な場合には、請求先と振り分け割合などを問い合わせ窓口までメールでお知らせください。
-- その他、見積書の発行や支払い手続き方法についてのご要望は[問い合わせ窓口](/application/reference)までご相談ください。
+### 3rd period
 
-## 支払方法 
+The amount will be finalized on the last day of December and invoices will be issued by the end of the fiscal year.
 
-請求書に記載された金額を、すみやかに指定口座までお振込みをお願いいたします
+Please note that any plan changes with price changes will be not accepted after January 1st.
 
-振込手数料につきましては、利用者負担にてお願いいたします。
 
- 
+- The date of payment is  the end of the month following the month in which the invoice is sent.
+- However, please contact us if you would like to request and make a prepayment before the end of the year. In this case, the invoice will be issued in early February and payment will be made at the end of March.
+- The price including tax and Consumption tax will be written in the invoice.
+- If necessary, contact us with the billing address and the percentage of allocation..
+- If you have any other requests concerning the issuance of Quote, payment procedures or method and etc., please [contact us](/application/reference).
+
+
+## Payment Method 
+
+Please pay the amount in the invoice by bank transfer to the designated account immediately.
+
+Remitter must cover bank transfer fee.
