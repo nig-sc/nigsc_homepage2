@@ -100,14 +100,14 @@ title: "ハードウェア"
     <td rowspan="2">
     ストレージ
     <br /><br />
-    総ストレージ容量 43.8PB
+    総ストレージ容量 47.1PB
     </td>
 	<td colspan="2">
     大容量高速ストレージ<br />
 	解析用ストレージ領域(※1)
     </td>
 	<td>Lustre ファイルシステム<br />
-	合計容量：16.8PB</td>
+	合計容量：17.1PB</td>
 </tr>
 <tr>
     <td colspan="2">
@@ -277,7 +277,7 @@ HPE Superdome Flex
 |--------------|----------|--------------------------------|------------|--------------------------------------------------|
 | /lustre6     | 3.8PB    | DDBJ 業務                       | 35GB/sec   | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
 | /lustre7     | 8.0PB    | 一般解析区画のホーム領域       | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre8     | 5.0PB    | 個人ゲノム解析区画のホーム領域 | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre8     | 5.3PB    | 個人ゲノム解析区画のホーム領域 | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
 
 
 
