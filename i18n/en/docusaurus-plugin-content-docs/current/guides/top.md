@@ -18,12 +18,13 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 
 ## Recent News
+
+The system is currently under regular maintenance. The power consumption is reduced by about 9% compared to before maintenance. (2022.06.29)
+
+
 - &#x26A0;[(Extension of suspension period) Renewal of user registration system](/en/blog/2022-06-17-UserRegistration) (2022.06.21)
-- [Added pages for package managers that can be run with user permission](/en/blog/2022-05-19-news_guix_spack_nix) (2022.05.19 Updated)
-- &#x26A0;[Suspend acceptance of new user registrations for large-scale storage](/en/blog/2022-05-13-suspension-of-applications) (2022.05.10)
+- &#x26A0;[Suspend acceptance of new user registrations for large-scale storage](/en/blog/2022-05-13-suspension-of-applications) (2022.05.13)
 - &#x1F9EC; [Added the introduction page of PortablePipeline developed by Professor Yoshitake of the University of Tokyo](/en/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
-- [Added pages for high-speed data transfer software Aspera and HCP tools](/en/blog/2022-04-12-news_Aspera_HCP) (2022.04.12)
-- [Updated Grid Engine page](/en/blog/2022-04-12-news_Grid_Engine) (2022.04.12)
 - &#x2714; [Reducesed DDBJ Group Cloud fees](/blog/2022-04-05-news_DGC) (2022.04.05)
 - [Added gateway nodes](/en/blog/2022-03-16-gateway) (2022.03.17)
 
