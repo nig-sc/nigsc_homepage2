@@ -98,14 +98,14 @@ title: Hardware
     <td rowspan="2">
     Storage
     <br /><br />
-    Total storage capacity: 43.8PB
+    Total storage capacity: 47.1PB
     </td>
 	<td colspan="2">
     Large capacity high-speed storage<br />
 	Storage area for analysis(※1)
     </td>
 	<td>Lustre file system<br />
-	16.8PB</td>
+	17.1PB</td>
 </tr>
 <tr>
     <td colspan="2">
@@ -273,7 +273,7 @@ HPE Superdome Flex
 |-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
 | /lustre6    | 3.8PB              | DDBJ work                                  | 35GB/sec         | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
 | /lustre7    | 8.0PB              | Home area of general analysis area         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre     | 5.0PB              | Home area of personal genome analysis area | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre     | 5.3PB              | Home area of personal genome analysis area | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
 
 
 
