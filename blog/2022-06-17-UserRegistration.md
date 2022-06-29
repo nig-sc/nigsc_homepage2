@@ -20,7 +20,7 @@ date: 2022-06-15
 
 ## 停止期間
 
-2022年6月17日(金)～~~2022年6月21日(火)~~　<font color="red">2022年6月28日 (<a href="https://sc.ddbj.nig.ac.jp/blog/2022-04-25-scheduled-maintenance/">定期メンテナンス</a>まで))</font>
+2022年6月17日(金)～~~2022年6月21日(火)~~　<font color="red">2022年7月4日(月)</font>
 
 
 ## 影響の範囲
