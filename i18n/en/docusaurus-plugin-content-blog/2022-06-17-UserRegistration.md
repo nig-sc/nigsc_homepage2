@@ -20,7 +20,7 @@ Therefor, we will suspend the acceptance of new user application registration du
 
 ## Suspension period
 
-Friday, June 17th - ~~Tuesday, 21th, 2022~~   <font color="red">TMonday, July 4th, 2022</font>
+Friday, June 17th - ~~Tuesday, 21th, 2022~~   <font color="red">Monday, July 4th, 2022</font>
 
 
 
