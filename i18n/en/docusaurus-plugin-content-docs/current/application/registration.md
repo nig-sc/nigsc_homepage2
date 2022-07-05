@@ -3,9 +3,13 @@ id: registration
 title: "User Registration/Change Request"
 ---
 
-
-- [New User Registration Application](/blog/2022-06-17-UserRegistration/)　<font color="red"><b>We are currently suspending the acceptance of applications.</b></font>
-    - User registration is accepted at any time. 1TB of high-speed storage is available after new user registration.
+<ul>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">New User Registration Application</a>
+  <ul>
+  <li>User registration is accepted at any time. 1TB of high-speed storage is available after new user registration.</li>
+  </ul>
+</li>
+</ul>
 
 <table>
 <tr>
@@ -28,9 +32,18 @@ New user registration application screen
 </tr>
 </table>
 
-- [Request to change user registration details](https://sc2.ddbj.nig.ac.jp/index.php/ja-application-mod)
-    - When your affiliation and othes changes, register it as soon as possible.
-- [Password change application](https://sc2.ddbj.nig.ac.jp/index.php/ja-change-passwd-application-sc)
-    - change your password here.
-    - For the change procedure, refer to [How to apply for login password change](/application/change_loginpwd).
+<ul>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Request to change user registration details</a>
+  <ul>
+  <li>When your affiliation and othes changes, register it as soon as possible.</li>
+  </ul>
+</li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Password change application</a>
+  <ul>
+  <li>change your password here.</li>
+  <li>For the change procedure, refer to <a href="https://sc.ddbj.nig.ac.jp/application/change_loginpwd">How to apply for login password change</a>.</li>
+  </ul>
+</li>
+</ul>
+
     

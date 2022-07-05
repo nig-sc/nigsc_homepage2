@@ -7,26 +7,23 @@ We strongly recommend that you change your initial password or your password reg
 
 ## Procedure
 
-1. Click "Password change application" on the ["User Registration/Change Request" page](/application/registration)。
+1. Click "Password change application" on the ["User Registration/Change Request" page](/application/registration).
 
 ![](change_pwd_click_en.png)
 
-2. Enter your user name and your password (initial or currently in use). Click the login button.
+2. Click "Log in" and login your account page.
 
-![](../general_analysis_division/login_en.png)
+![](login_en.png)
 
-3. Enter your initial password or your password currently in the "Current Password" field.
+3. Register the new password.
 
-![](currentPWD_en.png)
+① Click "Password".
 
-4. Enter the password you want to use in the "New Password" field.
+② Enter the new password.
 
-![](newPWD_en.png)
+③ Click "Update".
 
-5. Re-enter the same password that you entered in step 4 in the "Re enter Password" field.
+![](change_pwd_en.png)
 
-![](REnewPWD_en.png)
+Completed.
 
-6. Click "Submit"
-
-![](PWDsubmit_en.png)
