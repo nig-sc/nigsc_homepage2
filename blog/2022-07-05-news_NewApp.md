@@ -9,8 +9,10 @@ authros:
 date: 2022-07-05
 ---
 
+- 利用登録申請フォームのURLはこちらです。=><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">利用登録申請</a>
+- 申請についての説明はこちらです。=>[ユーザ登録・変更申請](/application/registration)
 
-URLはこちらです。　「<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">利用登録申請</a>」
+新規ユーザ登録申請フォームの画面
 
 ![](new_registration_JP.png)
 
@@ -24,3 +26,6 @@ URLはこちらです。　「<a href="https://sc-account.ddbj.nig.ac.jp/applica
 
 (sc2.ddbj.nig.ac.jpサーバは閉鎖しました。)
 
+ログイン後の最初の画面
+
+![](login_JP.png)

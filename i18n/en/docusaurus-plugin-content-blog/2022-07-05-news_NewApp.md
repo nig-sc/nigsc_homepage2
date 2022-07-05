@@ -10,7 +10,10 @@ date: 2022-07-05
 ---
 
 
-New URL　"<a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration"> the application form of new user registration</a>"
+- The URL for the application form => <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Registration</a>
+- The URL for application instructions => [User Registration/Change Request](/en/application/registration/)
+
+The screen for New User Registration Application Form
 
 ![](new_registration_EN.png)
 
@@ -24,3 +27,6 @@ New URL　"<a href="https://sc-account.ddbj.nig.ac.jp/en/application/registratio
 
 (The sc2.ddbj.nig.ac.jp server has been closed.)
 
+The first screen after login
+
+![](login_EN.png)
