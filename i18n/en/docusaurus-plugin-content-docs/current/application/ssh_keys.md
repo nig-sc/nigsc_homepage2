@@ -48,41 +48,26 @@ $
 ```
 
 When you check the save location of the key pair, you will find two files, `id_rsa` and `id_rsa.pub`, are created.
-`id_rsa.pub` is the public key, so you can register the public key by copying the contents of the file and pasting it into the "the direct input form" below.
-Or, upload `id_rsa.pub` using from the file upload form.
+`id_rsa.pub` is the public key, so you can register the public key by copying all contents of the file and pasting it into the "SSH Key" below.
 
+The entry field of your SSH public key
 <table>
 <tr>
 <td>
 
-[the direct input form(Japanese)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
+[the application form of new user registration(Japanese)](https://sc-account.ddbj.nig.ac.jp/application/registration)
 
-[the direct input form(English)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application)
+[the application form of new user registration(English)](https://sc-account.ddbj.nig.ac.jp/en/application/registration)
 
-![](ssh_direct_form.jpg)
+![](reg_ssh.png)
 </td>
 <td>
-Paste the key copied above on the bottom of the screen (red frame). After pasting, press the public key button on the bottom of the screen to register the key.
-</td>
-</tr>
-
-<tr>
-<td>
-
-[the file upload form(Japanese)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
-
-[the file upload form(English)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application-2)
-
-![](ssh_upload_form.jpg)
-</td>
-<td>
-Click "Select" on the bottom of the screen (red frame), select the file to upload from the file selection screen, and press the "Register Public Key" button on the bottom of the screen (red frame) to register the file.
+Paste the key copied above on the bottom of the screen (red frame). 
+Fill in the required fields and press the "Next" button at the bottom of the screen to register the public key.
 </td>
 </tr>
 
 </table>
-
-
  
 
 ## Confirmation of connection to the NIG supercomputer gateway
