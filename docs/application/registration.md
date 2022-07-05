@@ -4,9 +4,13 @@ title: "ユーザ登録・変更申請"
 ---
 
 
-
-- [新規ユーザ登録申請](/blog/2022-06-17-UserRegistration)　<font color="red"><b>現在、受付を一時停止しております。</b></font>
-    - ユーザー登録は随時受け付けています。新規ユーザー登録を行うと高速ストレージ1TBが利用可能となります。
+<ul>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規ユーザ登録申請</a>
+  <ul>
+  <li>ユーザー登録は随時受け付けています。新規ユーザー登録を行うと高速ストレージ1TBが利用可能となります。</li>
+  </ul>
+</li>
+</ul>
 
 <table>
 <tr>
@@ -29,8 +33,16 @@ title: "ユーザ登録・変更申請"
 </tr>
 </table>
 
-- [ユーザ登録内容変更申請](https://sc2.ddbj.nig.ac.jp/index.php/ja-application-mod)
-    - 所属などが変更になった場合は速やかに変更内容の登録をお願いいたします。
-- [パスワード変更申請](https://sc2.ddbj.nig.ac.jp/index.php/ja-change-passwd-application-sc)
-    - パスワードの変更はこちらからお願いします。
-    - 変更手順は[ログインパスワード変更申請方法](/application/change_loginpwd)をご参照ください。
+<ul>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">ユーザ登録内容変更申請</a>
+  <ul>
+  <li>所属などが変更になった場合は速やかに変更内容の登録をお願いいたします。</li>
+  </ul>
+</li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">パスワード変更申請</a>
+  <ul>
+  <li>パスワードの変更はこちらからお願いします。</li>
+  <li>変更手順は<a href="https://sc.ddbj.nig.ac.jp/application/change_loginpwd">ログインパスワード変更申請方法</a>をご参照ください。</li>
+  </ul>
+</li>
+</ul>
