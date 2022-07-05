@@ -274,7 +274,8 @@ module.exports = {
             label: "FAQ : 申請・課金",
             items: [
                 "faq/faq_billing_service",
-                "faq/faq_change_StorageCapacity"
+                "faq/faq_change_StorageCapacity",
+                "faq/faq_NewUser_registration",
             ]
         },
 
