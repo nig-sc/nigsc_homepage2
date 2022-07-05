@@ -51,41 +51,25 @@ $
 
 
 鍵ペアの保存先を確認すると、`id_rsa`, `id_rsa.pub`の２つのファイルが作成されています。
-`id_rsa.pub`が公開鍵になりますので、ファイルの内容をコピーし下記の「直接入力フォーム」にペーストすることで、公開鍵の登録が出来ます。
-もしくは、ファイルのアップロードフォームで`id_rsa.pub`をアップロードして下さい。
+`id_rsa.pub`が公開鍵になりますので、ファイルの内容を全部コピーし下記の「SSH公開鍵」にペーストすることで、公開鍵の登録が出来ます。
 
-
+SSH公開鍵の入力箇所
 <table>
 <tr>
 <td>
 
-[直接入力フォーム(日本語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
+[新規登録申請フォーム(日本語ページ)](https://sc-account.ddbj.nig.ac.jp/application/registration)の中にて
 
-[直接入力フォーム(英語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application)
+[新規登録申請フォーム(英語ページ)](https://sc-account.ddbj.nig.ac.jp/en/application/registration)の中にて
 
-![](ssh_direct_form.jpg)
+![](reg_ssh.png)
 </td>
 <td>
-画面下部（赤枠）部分に上記でコピーした鍵をペーストする。ペースト後、画面下部の公開鍵ボタンを押して登録を行う。
-</td>
-</tr>
-
-<tr>
-<td>
-
-[ファイルのアップロードフォーム(日本語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
-
-[ファイルのアップロードフォーム(英語ページ)](https://sc2.ddbj.nig.ac.jp/index.php/en/en-form-ssh-application-2)
-
-![](ssh_upload_form.jpg)
-</td>
-<td>
-画面下部（赤枠）の【選択】を押し、ファイル選択画面寄り、アップロードするファイルを選択後、画面下部（赤枠）の【公開鍵登録】ボタンを押して登録を行う。
+画面下部（赤枠）部分に上記でコピーした鍵をペーストする。ペースト後、必要な項目を埋め、画面下部の「次へ」ボタンを押して登録を行う。
 </td>
 </tr>
 
 </table>
-
 
  
 
