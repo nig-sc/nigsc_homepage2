@@ -41,7 +41,7 @@ New user registration application screen
 <li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Password change application</a>
   <ul>
   <li>change your password here.</li>
-  <li>For the change procedure, refer to <a href="https://sc.ddbj.nig.ac.jp/application/change_loginpwd">How to apply for login password change</a>.</li>
+  <li>For the change procedure, refer to <a href="https://sc.ddbj.nig.ac.jp/en/application/change_loginpwd">How to apply for login password change</a>.</li>
   </ul>
 </li>
 </ul>

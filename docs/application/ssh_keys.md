@@ -58,14 +58,20 @@ SSH公開鍵の入力箇所
 <tr>
 <td>
 
-[新規登録申請フォーム(日本語ページ)](https://sc-account.ddbj.nig.ac.jp/application/registration)の中にて
-
-[新規登録申請フォーム(英語ページ)](https://sc-account.ddbj.nig.ac.jp/en/application/registration)の中にて
-
 ![](reg_ssh.png)
 </td>
 <td>
-画面下部（赤枠）部分に上記でコピーした鍵をペーストする。ペースト後、必要な項目を埋め、画面下部の「次へ」ボタンを押して登録を行う。
+<p>SSH公開鍵の入力箇所は、新規登録申請フォームの「アカウント」のページに表示される。</p>
+<p>〔登録手順〕
+<ol>
+<li>画面下部（赤枠）部分に上記でコピーした鍵をペーストする。</li>
+<li>ペーストしたら、必要な項目を埋める。</li>
+<li>画面下部の「次へ」ボタンを押して登録を行う。</li></ol></p>
+新規登録申請フォームは下記をクリックすると表示される。
+<ul>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規登録申請フォーム(日本語ページ)</a></li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">新規登録申請フォーム(英語ページ)</a></li>
+</ul>
 </td>
 </tr>
 
