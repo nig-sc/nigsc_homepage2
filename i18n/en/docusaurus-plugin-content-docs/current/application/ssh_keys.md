@@ -51,19 +51,25 @@ When you check the save location of the key pair, you will find two files, `id_r
 `id_rsa.pub` is the public key, so you can register the public key by copying all contents of the file and pasting it into the "SSH Key" below.
 
 The entry field of your SSH public key
+
 <table>
 <tr>
 <td>
 
-[the application form of new user registration(Japanese)](https://sc-account.ddbj.nig.ac.jp/application/registration)
-
-[the application form of new user registration(English)](https://sc-account.ddbj.nig.ac.jp/en/application/registration)
-
 ![](reg_ssh.png)
 </td>
 <td>
-Paste the key copied above on the bottom of the screen (red frame). 
-Fill in the required fields and press the "Next" button at the bottom of the screen to register the public key.
+<p>The entry field of your SSH public key is displayed on the "Account" page of the new user registration application form. </p>
+<p>〔Registration procedure〕
+<ol>
+<li>Paste the key copied above on the bottom of the screen (red frame).</li>
+<li>Fill in the required fields.</li>
+<li>Press the "Next" button at the bottom of the screen to register the public key.</li></ol></p>
+Click below to display the new user registration application form.
+<ul>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">the application form of new user registration(Japanese)</a></li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">the application form of new user registration(English)</a></li>
+</ul>
 </td>
 </tr>
 
