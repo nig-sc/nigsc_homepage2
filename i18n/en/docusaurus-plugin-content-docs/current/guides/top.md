@@ -54,7 +54,11 @@ However, please note that availability is not guaranteed and we may not be able 
 ## Scheduled maintenance in 2022
 
 In FY2022, we plan to perform scheduled maintenance twice.
+<<<<<<< HEAD
 - (Ended)June 28, 09:00 - July 1, 2022, 00:00(24h)
+=======
+- (Ended) June 28, 09:00 - July 1, 2022, 00:00(24h)
+>>>>>>> 9d2c5740b9f591b714fb258974f4f7e217b212e5
 - December 2 - next Thursday (prediction)
 
 

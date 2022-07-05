@@ -15,8 +15,8 @@ spack load r@4.0.5
 参考資料
 
 - [Spack 公式ホームページ](https://spack.readthedocs.io/en/latest/#)
-- [Spack github リポジトリ](https://github.com/spack/spack)
-- [Spack packages](https://spack.github.io/packages/) (spack で利用可能なパッケージの検索サイト)
+- [Spack github リポジトリ](https://spack.github.io/packages/)
+- [Spack packages](https://spack.readthedocs.io/ja/latest/package_list.html#package-list) (spack で利用可能なパッケージの検索サイト)
 
 
 ## spack のインストール手順概要
