@@ -12,22 +12,34 @@ The general analysis section of NIG supercomputer can be used with a computer ru
 
 
 ## Steps from user account application to start of use
-1. Apply for <a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-new-application">the application form of new user registration to register your application</a>.
-    - Before you fill it in, ensure "[User Account Issuance Criteria](../application/application.md)" and "[Acceptable Use Policy](/application/use_policy)".
-    - You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)
-    - When applying to use the NIG supercomputer, you must designate a faculty member of a university or national/public research institution who is a resident of Japan under the Foreign Exchange and Foreign Trade Control Law as the responsible person. A UNIX group is created for each account of the responsible person.
 
-2. To confirm your identity, the person in charge of the NIG supercomputer send email to [the responsible person](../application/application.md#責任者について). The pleage(PDF) should be signed and sent back by them.
-    - The email will be sent in a few days After completing the application form
-
-3. Wait for your account registration certificate to arrive.
-    - It takes about a week to mail your account registration certidicate by post after you sent the pledge(PDF).
-    - It takes longer time if the examination is required by the Organization such as foreign exchange law.
-4. Confirm your initial password with your account registration card and start using the service.
-    - When you start using, register your SSH public key first. For details, see ["SSH public key registration"](../application/ssh_keys.md).
-    - For how to login the general analysis section, refer to the pages after [How to Login (The general analysis section)](/general_analysis_division/ga_login).
-5. If you have a request to expand the resources or use billing services, [download the Usage Plan Form](../application/resource_extension.md), fill it out, and submit it.
-    - [Contact information](../application/reference.md) for Submission e-mail adress.
+<ol>
+<li>Apply for <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">the application form of new user registration to register your application</a>.</li>
+    <ul>
+    <li>Before you fill it in, ensure <a href="https://sc.ddbj.nig.ac.jp/en/application/">"User Account Issuance Criteria"</a> and <a href="https://sc.ddbj.nig.ac.jp/en/application/use_policy">"Acceptable Use Policy"</a>.</li>
+    <li>You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)</li>
+    <li>In the registration form, there is a page to register the SSH public key, so create your SSH public key in advance. For details, see <a href="https://sc.ddbj.nig.ac.jp/en/application/ssh_keys">SSH public key registration</a>.</li>
+    <li>When applying to use the NIG supercomputer, you must designate a faculty member of a university or national/public research institution who is a resident of Japan under the Foreign Exchange and Foreign Trade Control Law as the responsible person. A UNIX group is created for each account of the responsible person.</li>
+    </ul>
+<li>To confirm your identity, the person in charge of the NIG supercomputer send email to <a href="https://sc.ddbj.nig.ac.jp/en/application/#the-responsible-person">the responsible person</a>. The pleage(PDF) should be signed and sent back by them.</li>
+    <ul>
+    <li>The email will be sent in a few days After completing the application form</li>
+    </ul>
+<li>Wait for your account registration certificate to arrive.
+    <ul>
+    <li>It takes about a week to mail your account registration certidicate by post after you sent the pledge(PDF)</li>
+    <li>It takes longer time if the examination is required by the Organization such as foreign exchange law.</li>
+    </ul>
+</li>
+<li>Confirm your initial password with your account registration card and start using the service</li>
+    <ul>
+    <li>For how to login the general analysis section, refer to the pages after <a href="https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_login/">How to Login (The general analysis section)</a>.</li>
+    </ul>
+<li>If you have a request to expand the resources or use billing services, <a href="https://sc.ddbj.nig.ac.jp/en/application/resource_extension">download the Usage Plan Form</a>, fill it out, and submit it.</li>
+    <ul>
+    <li><a href="https://sc.ddbj.nig.ac.jp/en/application/reference/">Contact information</a> for Submission e-mail adress.</li>
+    </ul>
+</ol>
 
 
 ## Application for use by a group

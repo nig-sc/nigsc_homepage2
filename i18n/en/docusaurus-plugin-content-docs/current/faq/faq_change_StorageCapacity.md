@@ -26,3 +26,6 @@ uid **** is using default file quota setting
 $
 ```
 
+詳細は[「Lustre FSの使い方」の「quotaの確認方法」](/general_analysis_division/ga_lustre#quotaの確認方法)をご参照ください。
+
+
