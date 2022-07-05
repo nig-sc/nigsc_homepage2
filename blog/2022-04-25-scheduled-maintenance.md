@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-25-scheduled-maintenance
-title: "【定期メンテナンス】6月28日～7月1日 定期メンテナンスのお知らせ"
+title: "(終了)【定期メンテナンス】6月28日～7月1日 定期メンテナンスのお知らせ"
 tags:
   - maintenance
 authros:

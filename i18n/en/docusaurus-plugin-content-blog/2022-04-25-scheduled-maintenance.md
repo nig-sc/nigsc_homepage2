@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-25-scheduled-maintenance
-title: "[Maintenance] June 28 - July 1, 2022: Scheduled Maintenance."
+title: "(Ended)[Maintenance] June 28 - July 1, 2022: Scheduled Maintenance."
 tags:
   - maintenance
 authros:
