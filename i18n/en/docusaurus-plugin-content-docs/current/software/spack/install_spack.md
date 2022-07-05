@@ -16,7 +16,7 @@ References
 
 - [Spack Official Web Site](https://spack.readthedocs.io/en/latest/#)
 - [Spack github repository](https://github.com/spack/spack)
-- [Spack packages](https://spack.github.io/packages/) (search site for packages available in spack)
+- [Spack packages](https://spack.readthedocs.io/en/latest/package_list.html) (search site for packages available in spack)
 
 
 ## spack installation procedure Overview
