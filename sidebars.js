@@ -116,7 +116,8 @@ module.exports = {
             type: 'category',
             label: 'コンテナ・解析パイプライン',
             items: [
-                "software/Singularity",
+                "software/BioContainers/BioContainers",
+                "software/Apptainer/Apptainer",
             ]
         },
 
@@ -198,11 +199,9 @@ module.exports = {
             "advanced_guides/Rhelixa_RNAseq",
             "advanced_guides/Rhelixa_RNAseq_manual",
         ],
-        "Alphafold 2.1":[
-            "advanced_guides/Alphafold_2_1"
-        ],
-        "Alphafold 2.2":[
-            "advanced_guides/Alphafold_2_2"
+        "Alphafold":[
+            "advanced_guides/Alphafold_2_1",
+            "advanced_guides/Alphafold_2_2",
         ],
         "講習会": [
             "advanced_guides/IIBMP2021",
