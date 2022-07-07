@@ -3,6 +3,8 @@ id: Apptainer
 title: "Apptainer (Singularity)の使い方"
 ---
 
+[(Singularity は Apptainer と改称されました。)](https://github.com/apptainer/singularity)
+
 ## 概要
 
 遺伝研スパコンでは様々な解析ソフトウェアをユーザー権限でインストール出来るようにするため Apptainer (Sigularity) コンテナが利用可能です。
@@ -40,8 +42,9 @@ git clone https://github.com/oogasawa/singularity-ubuntu18
 # (ビルド方法の詳細は上記 github リポジトリ README.md 参照.)
 cd singularity-ubuntu18
 sudo apt-get debootstrap
-sudo singularity build ubuntu18.sif Apptainer (Sigularity)
+sudo singularity build ubuntu18.sif Singularity
 ```
+
 
 上記のようにして作った Apptainer (Sigularity) コンテナイメージファイルを遺伝研スパコン上にコピーします。
 
