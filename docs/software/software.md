@@ -79,6 +79,8 @@ title: ソフトウェア
 
 ## コンテナ・解析パイプライン
 
+
+
 <table>
 <tr>
 <th width="300">名称</th>
@@ -88,7 +90,18 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[Singularity](Singularity)
+[BioContainers Apptainer (Singularity) Images](BioContainers)
+
+</td>
+<td width="300">インストール済み</td>
+<td width="300">インストール済み</td>
+</tr>
+
+
+<tr>
+<td width="300">
+
+[Apptainer (Singularity)](Apptainer)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">インストール済み</td>
@@ -104,31 +117,6 @@ title: ソフトウェア
 <td width="300">利用可能</td>
 </tr>
 </table>
-
-
-## バイオインフォマティックスツール
-
-
-<table border="0">
-<tr>
-<td width="300">
-
-![](biocontainers_top.png)
-
-</td>
-<td>
-<h4>Biocontainers Singularity Images</h4>
-
-BioContainers project が作成した Singularity コンテナイメージ(2 千種類を超える解析ソフトウェア、バージョンの違いを含め 9 万個を超える Singularity イメージファイル）を、遺伝研スパコンの`/usr/local/biotools/`ディレクトリ以下に配置してあります。
-
-各ソフトウェアの内容、使い方については [BioContainers の公式サイト](https://biocontainers.pro)の[Registory](https://biocontainers.pro/registry )のページをご参照ください。
-
-</td>
-</tr>
-</table>
-
-
-
 
 
 
