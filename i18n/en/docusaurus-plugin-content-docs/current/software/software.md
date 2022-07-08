@@ -88,7 +88,15 @@ The following package managers can be used only with user permission. They facil
 <td width="300">
 
 
-[Singularity](Singularity)
+[BioContainers Apptainer (Singularity) Images](BioContainers)
+</td>
+<td width="300">installed</td>
+<td width="300">installed</td>
+</tr>
+<tr>
+<td width="300">
+
+[Apptainer (Singularity)](Apptainer)
 </td>
 <td width="300">installed</td>
 <td width="300">installed</td>
@@ -104,32 +112,6 @@ The following package managers can be used only with user permission. They facil
 <td width="300">available</td>
 </tr>
 </table>
-
-
-## Bioinformatics Tools
-
-
-<table border="0">
-<tr>
-<td width="300">
-
-![](biocontainers_top.png)
-
-</td>
-<td>
-<h4>Biocontainers Singularity Images</h4>
-
-Singularity container images created by the BioContainers project (over 2,000 different analysis software and over 90,000 Singularity image files, including different versions) are available in `/user/local/biotools` directory.
-
-For the contents and how to use the software, refer to <a href="https://biocontainers.pro/registry">Registry</a> of <a href="https://biocontainers.pro/">the BioContainers' official website</a>.
-
-</td>
-</tr>
-</table>
-
-
-
-
 
 
 ## Data transfer and data sharing
@@ -278,7 +260,7 @@ C/C++ (PGI Compiler)
 <tr>
 <td width="300">
 
-CUDA
+[CUDA](/software/cuda)
 </td>
 <td width="300">installed</td>
 <td width="300">installed</td>
