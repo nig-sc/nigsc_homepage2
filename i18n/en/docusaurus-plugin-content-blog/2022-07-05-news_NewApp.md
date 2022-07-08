@@ -13,9 +13,26 @@ date: 2022-07-05
 - The URL for the application form => <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Registration</a>
 - The URL for application instructions => [User Registration/Change Request](/en/application/registration/)
 
-The screen for New User Registration Application Form
+
+<table>
+<tr>
+<td valign="top">
+
+initial screen
 
 ![](new_registration_EN.png)
+
+</td>
+<td valign="top">
+
+The first screen after login
+
+![](login_EN.png)
+
+</td>
+</tr>
+</table>
+
 
 - User registration has been made more simple.
 - SSH public key registration is now available on the new user registration application form.
@@ -24,9 +41,9 @@ The screen for New User Registration Application Form
 - Renewal at the end of the year has beem made more simple.
   - It is no longer necessary to manually enter all the items one by one, and the article information can be obtained and automatically entered by simply entering the PubMedID.
 
+### Note
 
-(The sc2.ddbj.nig.ac.jp server has been closed.)
+- Please login from `gw2.ddbj.nig.ac.jp` immediately after setting up your public key etc.
+  - We are currently in the process of migrating to a new user registration system. Therefore, public key registrations to the new gateway `gw2.ddbj.nig.ac.jp` will be reflected immediately, but it will take about one day for the settings to be reflected in the old gateway `gw.ddbj.nig.ac.jp`. The system will be modified at the next scheduled maintenance in December so that the old gateway will also reflect the setting immediately.
+- The `sc2.ddbj.nig.ac.jp` server has been closed.
 
-The first screen after login
-
-![](login_EN.png)

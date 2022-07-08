@@ -71,7 +71,7 @@ qlogin -l s_vmem=10G -l mem_req=10G
 ### Reference
 
 - [How to use Java](/software/java) : Notes - when the Java program launches, you get an error message saying out of memory.
-- [How to use Singularity](/software/singularity) : Building Images on Supercomputer - Generating Singularity Image from Docker Container Image
+- [How to use Singularity](/software/Apptainer/) : [Building Images on Supercomputer - Generating Singularity Image from Docker Container Image](/software/Apptainer/#Building images on the supercomputer : Generating Apptainer (Sigularity) images from Docker container images)
 
 
 ## How to use the GPU node

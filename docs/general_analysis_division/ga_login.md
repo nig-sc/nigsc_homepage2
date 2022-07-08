@@ -77,7 +77,7 @@ qlogin -l s_vmem=10G -l mem_req=10G
 ### 参考
 
 - [Java の使い方](/software/java) > 注意事項 Java プログラムを起動するとメモリが足りないとのエラーが出る
-- [Singularity の使い方](/software/Singularity) > スパコン上でのイメージのビルド : Docker コンテナイメージから Singularity イメージを生成する
+- [Singularity の使い方](/software/Apptainer/) > [スパコン上でのイメージのビルド : Docker コンテナイメージから Singularity イメージを生成する](/software/Apptainer/#スパコン上でのイメージのビルド--docker-コンテナイメージから-apptainer-sigularity-イメージを生成する)
 
 
 
