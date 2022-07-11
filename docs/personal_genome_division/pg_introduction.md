@@ -12,8 +12,6 @@ title: "概要（個人ゲノム解析区画）"
 
 - [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
 - [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
-
-
 -  [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
 
 
@@ -24,7 +22,7 @@ title: "概要（個人ゲノム解析区画）"
 
 現時点では、個人ゲノム解析区画は全て課金によるサービスでありノード貸しとなっています。
 
-ノードに対してジョブスケジューラとしてUniva Grid EngineまたはSlurmをインストールしてお渡しすることも可能です。
+ノードに対してジョブスケジューラとしてGrid EngineまたはSlurmをインストールしてお渡しすることも可能です。
 
 
 
