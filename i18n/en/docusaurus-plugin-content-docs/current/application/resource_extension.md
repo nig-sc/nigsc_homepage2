@@ -6,7 +6,7 @@ title: "Submission of Your Usage Plan"
 ## Usage plan
 
 
-- When you expand your available high-speed storage, or when you use the billing service, download the usage plan table, fill in the "Purpose of use, etc." and "Usage TB" and send to [Contact] (/ application / reference).
+- When you expand your available high-speed storage, or when you use the billing service, download the usage plan table, fill in the "Purpose of use, etc." and "Usage TB" and send to [Contact](/application/reference).
 
 
 ### Download the usage plan table
