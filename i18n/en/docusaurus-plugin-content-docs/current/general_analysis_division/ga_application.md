@@ -1,6 +1,6 @@
 ---
 id: ga_application
-title: "Preparation for use (The general analysis section)"
+title: "Preparation for use (The General Analysis Section)"
 ---
 
 ## Preparation of user's computer
@@ -35,9 +35,9 @@ The general analysis section of NIG supercomputer can be used with a computer ru
     <ul>
     <li>For how to login the general analysis section, refer to the pages after <a href="https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_login/">How to Login (The general analysis section)</a>.</li>
     </ul>
-<li>If you have a request to expand the resources or use billing services, <a href="https://sc.ddbj.nig.ac.jp/en/application/resource_extension">download the Usage Plan Form</a>, fill it out, and submit it.</li>
+<li>If you have a request to expand the resources or use billing services, <a href="https://sc.ddbj.nig.ac.jp/en/application/resource_extension">download the Usage Plan Form</a>, fill it out and submit it.</li>
     <ul>
-    <li><a href="https://sc.ddbj.nig.ac.jp/en/application/reference/">Contact information</a> for Submission e-mail adress.</li>
+    <li><a href="https://sc.ddbj.nig.ac.jp/en/application/reference/">Contact us</a> for Submission.</li>
     </ul>
 </ol>
 
