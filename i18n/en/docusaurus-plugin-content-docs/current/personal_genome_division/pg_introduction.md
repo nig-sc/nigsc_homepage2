@@ -3,29 +3,22 @@ id: pg_introduction
 title: "Introduction（The Personal Genome Section）"
 ---
 
-## 個人ゲノム解析区画について
+## About the Personal Genome Section
 
-遺伝研スパコンでは、個人ゲノムを取り扱うためにセキュリティーレベルを高めた、他のシステムとは独立した個人ゲノム解析区画を提供しています。
+The NIG supercomputer delivers the personal genome analysis section that is independent of other systems and has an a high level of security for handling personal genomes.
 
-
-遺伝研スパコン個人ゲノム解析区画は以下のセキュリティーガイドラインを遵守し[NBDCの機関外サーバに認定されております](https://humandbs.biosciencedbc.jp/off-premise-server)。
-
-- [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
-- [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
+The Personal Genome Analysis of the NIG supercomputer is [an NBDC Off-premise-server](https://humandbs.biosciencedbc.jp/en/off-premise-server) that adheres to the following security guidelines.
 
 
--  [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+- [NBDC Guidelines for Human Data Sharing](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
+- [NBDC Security Guidelines for Human Data](https://humandbs.biosciencedbc.jp/en/guidelines)
+- [Checklist for the NBDC Guidelines for Human Data Sharing and the NBDC Security Guidelines for Human Data（for “Off-Premise-Server” Operation Managers）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+
+Also, please read [Related laws and regulations, etc.](/application/legislation).
 
 
-また、[関連法規等](/application/legislation)についてもご一読願います。
+# Introduction of how to use the personal genome section
 
+At present, all personal genome analysis sections are billing services and nodes are rented.
 
-## 個人ゲノム解析区画の利用方法概要
-
-現時点では、個人ゲノム解析区画は全て課金によるサービスでありノード貸しとなっています。
-
-ノードに対してジョブスケジューラとしてUniva Grid EngineまたはSlurmをインストールしてお渡しすることも可能です。
-
-
-
-
+It is also possible to install and provide the Grid Engine or Slurm as a job scheduler on the node.
