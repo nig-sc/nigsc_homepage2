@@ -3,183 +3,199 @@ id: pg_login
 title: "How to Login（The Personal Genome Section）"
 ---
 
-## 概要
+## Introduction
 
-遺伝研スパコンの個人ゲノム解析環境へのログイン及びファイル転送にはSSL-VPN接続を用います。SSL-VPN接続を行うためにはユーザーのクライアントマシンに専用のソフトウェアをインストールする必要があります。
+SSL-VPN connection is used for login and file transfer to the personal genome analysis section of the NIG supercomputer. For SSL-VPN connection, dedicated software called SSL-VPN Client software must be installed on the user's client machine. Two-factor authentication is used for SSL-VPN connection. For the purpose of improving security, the client machine is set to block access to the Internet when it is connected using SSL-VPN. At this time, communication within the local network to which the client machine belongs is not blocked. Therefore, for example, if the client machine is connected to a file server in the local network, it is possible to send data from that file server to the personal genome analysis section without any problem. On the other hand, if you are working by connecting to the client machine with ssh from outside the local network, the ssh connection will be cut off.
 
-SSL-VPN接続の際は二要素認証が行われます。セキュリティー向上の目的で、SSL-VPNで接続している時にはクライアントマシンのインターネットへのアクセスは遮断される設定としています。このとき、クライアントマシンが属するローカルネットワーク内への通信は遮断されません。したがって例えばクライアントマシンがローカルネットワーク内のファイルサーバーに接続されていて、そのファイルサーバーからデータを個人ゲノム解析環境に送るといった操作は問題なく可能です。一方、ローカルネットワークの外側からsshでクライアントマシンに接続して作業を行っていた場合はそのssh接続は遮断されるので注意が必要です。
+But it is possible to use only HTTPS on the Internet from the personal genome analysis section due to the settings on the firewall of the NIG supercomputer.
 
 
 ![figure](sslvpn.png)
 
 
-接続の手順の概要は以下の図のとおりです。
+
+The outline of the connection procedure is shown in the figure below.
 
 ![figure](howto.png)
 
-## VPNクライアントのインストール 
+## Installing FortiClient VPN Client software
 
 
-### Windowsの場合
-1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)からWindows版のアプリをインストールする。
+### Windows
 
-![figure](VPNwin_2.png)
+1. Click the URL below. You can see the FortiClient official website page. On that page, click "Product Downloads" and then "FortiClient VPN only" as shown below.
+	-  ForiClient official site: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
 
-2. ダウンロードフォルダに保存されたインストールプログラムを実行します。
-ユーザアカウント制御は「はい」で進んでください。
+![figure](VPNwin_2_701_1.png)
 
-![figure](VPNwin_3.png)
+2. Download the installation program of FortiClient VPN installer for Windows.
 
-3. 「Yes, I have read and accept the」にチェックを付け、「Next」をクリックします。
+![figure](VPNwin_2_701_2.png)
+
+3. Run the installation program saved in the download folder.
+If "User Account Control" is displayed, select "Yes" to allow it.
+
+![figure](VPNwin_3_701.png)
+
+4. Check the box for "Yes, I have read and accept the" and click "Next".
 
 ![figure](VPNwin_4.png)
 
-4. クライアントマシンにウィルスチェックソフトが入っているか否かで手順が異なります。
+5. Select the set-up type of the user's computer. The type to select depends on whether virus checking software is installed on the user's computer or not.
 
-【クライアントマシンにウイルスチェックソフトが入っている場合】
+Notes.
+- Always ensure that the checkboxes are ticked as shown in the image below.
+- If other unchecked items are ticked, the system may not work properly.
 
-Choose Setup Typeで「Secure Remote Access」にチェックが入っていることを確認し、「Next」をクリックします。
+【If virus checking software is installed on the user's computer】
 
-必ず下記のスクリーンショットの通りにチェックされていることを確認してください。
+Ensure "Secure Remote Access" is checked on the "Choose Setup Type" screen and click "Next".
 
-その他の項目にチェックが入っていると、正常に動作しない恐れがあります。
 
 ![figure](VPNwin_5.png)
 
-【クライアントマシンにウイルスチェックソフトが入っていない場合】
+【If virus checking software is not installed on the user's computer】
 
-Choose Setup Typeで「Secure Remote Access」と「Additional Security Features」と「AntiVirus」にチェックが入っていることを確認し、「Next」をクリックします。
-
-必ず下記のスクリーンショットの通りにチェックされていることを確認してください。
-
-その他の項目にチェックが入っていると、正常に動作しない恐れがあります。
+Ensure "Secure Remote Access", "Additional Security Features" and "AntiVirus" are checked on the "Choose Setup Type" screen and click "Next".
 
 ![figure](VPNwin_6.png)
 
-5. Destination Folderではそのまま「Next」をクリックします。※通常、変更は不要です。
+6. On the "Destination Folder" screen, just click "Next". *Normally, no changes are required.
+
 
 ![figure](VPNwin_8.png)
 
-6. 「install」をクリックするとインストールが開始されます。
+7. Click "install". Installation will start.
 
 ![figure](VPNwin_9.png)
 
-7. 「Finish」をクリックするとインストール完了となります。
+8. Click 'Finish'. Installation is completed.
 
 ![figure](VPNwin_10.png)
 
 
-### Macの場合
+### Mac
 
-1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)からアプリをインストールします。Macバージョンのインストーラをダウンロードします。
+1. Click the URL below. You can see the FortiClient official website page. On that page, click "Product Downloads" and then "FortiClient VPN only" as shown below.
+	- ForiClient official site: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
 
-![figure](VPN_Mac_install_1.png)
 
+![figure](VPN_MAC_install_1_701_1.png)
 
-2. ダウンロードしたインストーラを実行します。OKを押してください。
+2. Download the FortiClient VPN installer for Mac.
 
-![figure](VPN_Mac_install_2.png)
+![figure](VPN_MAC_install_1_701_2.png)
 
-3. FortiClientUpdateをダブルクリックします。
+3. Click "OK" to run it.
+
+![figure](VPN_MAC_install_2_701.png)
+
+4. Double click on "FortiClientUpdate".
 
 ![figure](VPN_Mac_install_3.png)
 
-[開く]を押します。
+CLick "Open".
 
 ![figure](VPN_Mac_install_4.png)
 
-ダウンロードが始まります。このまましばらくお待ち下さい。
+Downloading will start. Please wait for a minute.
 
 ![figure](VPN_Mac_install_5.png)
 
-[install]を押します。
+Click "install".
 
-![figure](VPN_Mac_install_6.png)
+![figure](VPN_MAC_install_6_701.png)
 
-[続ける]を押します。
+![figure](VPN_MAC_install_6_701_2.png)
+
+Click "Continue".
 
 ![figure](VPN_Mac_install_7.png)
 
-[続ける]を押します。
+Click "Continue".
 
 ![figure](VPN_Mac_install_8.png)
 
-4. 以下、クライアントマシンにウィルスチェックソフトが入っているか否かで手順が異なります。
+5. Select the installing type of the user's computer. The type to select depends on whether virus checking software is installed on the user's computer or not.
 
-【クライアントマシンにウイルスチェックソフトが入っている場合】
+【If the user's computer has virus checking software】
 
-そのまま[インストール]を押します。
+Click "Install".
 
-![figure](VPN_Mac_install_10.png)
+![figure](VPN_Mac_install_10_1.png)
 
 
-【クライアントマシンにウイルスチェックソフトが入っていない場合】
+【If the user's computer does not have virus checking software】
 
-[カスタマイズ]を押します。
+Click "Customize".
 
-![figure](VPN_Mac_install_10.png)
+![figure](VPN_Mac_install_10_2.png)
 
  
+Under "Package name", check "Secure Remote Access" and "AntiVirus" and click "Install".
 
-以下の通り、「Secure Remote Access」と「AntiVirus」にチェックを入れます。
-
-必ず以下のスクリーンショット通りのチェックとなっているか確認してください。
-
-その他の項目にチェックが入っていると正常に動作しない恐れがあります。
+Notes.
+- Always ensure that the checkboxes are ticked as shown in the image below.
+- If other unchecked items are ticked, the system may not work properly.
 
 ![figure](VPN_Mac_install_11.png)
 
 
-5. [閉じる]を押します。
+6. Click "Close". Installation is completed.
 
 ![figure](VPN_Mac_install_12.png)
 
 
-### Linuxの場合
+### Linux
 
-Linuxの場合やWindows Subsystem for Linux 2(WSL2)を使う場合はCUIのopenfortivpnを使うことでVPNにアクセスできます。
+If using Linux or Windows Subsystem for Linux 2(WSL2), you can access the VPN by using the CUI openfortivpn.
 
-1. openfortivpnパッケージをインストール
+1. Install openfortivpn package.
 
-SSL-VPNクライアントソフトopenfortivpnをインストールします。
+Install the SSL-VPN client software openfortivpn.
 
-例) centOSにインストール
-下記ページの RPMs -> x86_64 のリンクからopenfortivpnをインストールします。
+Example 1: Installing on centOS
 
-[https://koji.fedoraproject.org/koji/buildinfo?buildID=1418024](https://koji.fedoraproject.org/koji/buildinfo?buildID=1418024)(2020.06.03時点 最新版)
+Install openfortivpn from the RPMs -> x86_64 link on the following page.
+
+[https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936](https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936)(latest version as of 10.Dec.2021)
 
 ```
 $ sudo yum -y install
-https://kojipkgs.fedoraproject.org//packages/openfortivpn/1.11.0/1.el7/x86_64/op
-enfortivpn-1.11.0-1.el7.x86_64.rpm
+https://kojipkgs.fedoraproject.org//packages/openfortivpn/1.17.0/3.el7/x86_64/op
+enfortivpn-1.17.0-3.el7.x86_64.rpm
 ```
 
 
-インストールされたことの確認
+Ensure that it has been installed.
 ```
 $ sudo openfortivpn --version
-1.11.0
+1.17.0
 ```
 
-例) Ubuntuにインストール
+Example 2: Installing on Ubuntu
+
+Execute the following command to install openfortivpn.
+
 ```
 $ sudo apt-get install -y openfortivpn
 ```
 
-インストールされたことの確認
+Ensure that it has been installed.
 ```
 $ sudo openfortivpn --version
 1.6.0
 ```
 
 
-2. 設定ファイル作成
+2. creating a configuration file
 
-configファイルを以下の内容で保存します。configファイルの名前、配置場所は任意です。
+Save a configuration file with the following content: configration file name and location are optional.
 
-usernameとpasswordには事前に取得したVPNアカウント情報を入力ください。
+For username and password, enter the VPN account information obtained in advance.
 
-trusted-certには、以下の固定値(SSL-VPNサーバの証明書のハッシュ値)を指定する必要があります。
+For trusted-cert, the following fixed value (hash value of the SSL-VPN server's certificate) must be specified.
+
 ```
 $ sudo vi /path/to/config
 host = 133.39.24.254
@@ -190,86 +206,91 @@ trusted-cert = 860101b1dbaff15fa35da3f6ed643b3cae434234c9bd866d86f67948d07a7f94
 ```
 
 
-## VPNへの接続方法 
+## How to connect to the VPN 
 
-### WindowsまたはMacの場合 (FortiClient GUI)
+### Windows or Mac (FortiClient GUI)
 
-1. SSL-VPNクライアントの設定
 
-1.1. FortiClientを起動し、メニューからリモートアクセスを選択し、[VPN設定]をクリックします。
+1. Configuring SSL-VPN client setting
+
+1.1. Start FortiClient, select Remote Access from the menu and click "VPN Setting".
+
 
 ![figure](VPNwin_11.png)
 
-1.2. 新規VPN接続画面にて下表の通り入力し、「保存」をクリックします。
+1.2. On the New VPN Connection screen, enter the information as shown in the table below and click 'Save'.
 
 <table>
 <tr>
-	<td>VPN</td><td>「SSL-VPN」を選択</td>
+	<td>VPN</td><td> Select "SSL-VPN"</td>
 </tr>
 <tr>
-	<td>接続名</td><td>任意の文字列</td>
+	<td>Connection name</td><td>Any string</td>.
 </tr>
 <tr>
-	<td>リモートGW</td><td>133.39.24.254</td>
+	<td>Remote GW</td><td>133.39.24.254</td>
 </tr>
 <tr>
-	<td>ポート番号</td><td>443(チェックボックスrにチェックを入れる)</td>
+	<td>Port number</td><td>443 (check box r)</td>
 </tr>
 <tr>
-	<td>認証</td><td>「ユーザ名入力」を選択</td>
+	<td>Authentication</td><td>Select "Enter username"</td>.
 </tr>
 </table>
 
 ![figure](sslvpn-win-443.png)
 
-2. SSL-VPNへの接続
 
-2.1. ユーザ名とパスワードを入力します。
+2. Connecting to VPN
+
+2.1. You should be asked for your credentials. Enter a username and password.
 
 ![figure](VPNwin_13.png) 
 
-Macの場合は、さらに以下のように[証明書を検証]というメッセージが表示されます。
+If you use Mac, a further message "Validate certificate" is displayed as follows.
 
-[続ける]を押します。
+
+Click "Continue"
 
 ![figure](VPN_Mac_install_17.png)
 
-2.2. セキュリティの警告は「はい」を押します。
+2.2. If you see a Security Alert pop-up message, click Yes. 
 
 ![figure](VPNwin_14.png)
 
-2.3. SSL-VPNアカウントに紐付くメールアドレスへ以下のようなワンタイムパスワードが送信されます。
+2.3. A one-time password will be sent to the email address linked to the SSL-VPN account as follows.
 
 ![figure](VPNwin_15.png)
 
-送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/faq/faq_login#個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません)をご参照ください。
+If the message is not sent, see [FAQ:Login > FAQ(Login)](/faq/faq_login/#個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません).
 
-- Windowsの場合
+- Windows
 
-「トークン」へワンタイムパスワード(上記の例の場合、269274)を入力し、「OK」をクリックします。
+Enter the one-time password (269274 in the example above) in the "Token" field and click "OK".
 
 ![figure](VPNwin_16.png)
 
-- Macの場合
+- Mac
 
-[答え]にワンタイムパスワード(上記の例の場合、269274)を入力し、[OK]を押します。
+Enter the one-time password (269274 in the example above) in "Answer" and click "OK".
 
 ![figure](VPN_Mac_install_19.png)
 
-2.4. 以下の画面となり、VPN接続中となります。
+2.4. When the following screen appears, VPN connection is established.
 
 ![figure](VPNwin_17.png)
 
 
-### Linuxの場合 (openfortivpn CUI)
+### Linux (openfortivpn CUI)
 
-1. 設定ファイル作成
+1. Configuring SSL-VPN client setting
 
-configファイルを以下の内容で保存します。configファイルの名前、配置場所は任意です。
+Save a configuration file with the following content: configration file name and location are optional.
 
-usernameとpasswordには事前に取得したVPNアカウント情報を入力ください。
+For username and password, enter the VPN account information obtained in advance.
 
-trusted-certには、以下の固定値(SSL-VPNサーバの証明書のハッシュ値)を指定する必要があります。
+For trusted-cert, the following fixed value (hash value of the SSL-VPN server's certificate) must be specified.
+
 ```
 $ sudo vi /path/to/config
 host = 133.39.24.254
@@ -279,27 +300,31 @@ password = ********
 trusted-cert = 860101b1dbaff15fa35da3f6ed643b3cae434234c9bd866d86f67948d07a7f94
 ```
 
-2. VPN接続コマンド実行
+2. Executing commands for VPN connection
 
-設定ファイルを引数に指定して下記の通りコマンドを実行します。
+Specify the configuration file as an argument and execute the command as follows.
+
 ```
 $ sudo openfortivpn -c /path/to/config
 ```
 
-コマンドを実行すると、VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送信されます。
-
-送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/faq/faq_login#個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません)をご参照ください。
+2.3. After executing the command, a one-time password will be sent to the email address linked to the SSL-VPN account as follows.
 
 ![figure](VPNwin_15.png)
 
-以下の通り対話式でワンタイムパスワード(上記の例の場合、269274)を入力し、Enterキーを押してください。
+If the message is not sent, see [FAQ:Login > FAQ(Login)](/faq/faq_login/#個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません).
+
+
+Enter the one-time password (269274 in the example above) interactively as shown below and press the Enter key.
+
 ```
 $ sudo openfortivpn -c /path/to/config
 INFO: Connected to gateway.
-Two-factor authentication token:ワンタイムパスワードを入力し、Enter
+Two-factor authentication token: Enter the ont-time password and press the Enter key
 ```
 
-ワンタイムパスワード認証に成功し、下記の通りログが表示されればVPN接続状態となります。
+When the one-time password authentication is successful, the log is displayed as follows. When the following log is displayed, VPN connection is established. At this point, no prompt is returned. VPN connection will be disconnected by pressing Ctrl+C.
+
 ```
 $ sudo openfortivpn -c config
 INFO: Connected to gateway.
@@ -318,22 +343,18 @@ INFO: Setting new routes...
 INFO: Adding VPN nameservers...
 INFO: Tunnel is up and running.
 ```
-プロンプトが返ってこない状態となります。（Ctrl+Cを押すことでVPN接続状態が解除されます。）
 
 
+## Logging in to the gateway using SSH
 
-## SSHによるゲートウェイへのログイン
-
-SSL-VPN接続状態を保持したままで、ターミナルエミュレータを立ち上げ、
-以下のようにコマンドを実行すると個人ゲノム解析環境のゲートウェイにログインできます。
+After connecting to the SSL-VPN, launch a terminal emulator and execute the following command to log in to the gateway of the personal genome analysis section.
 
 ```
-ssh [ユーザ名]@gwa.ddbj.nig.ac.jp 
+ssh [username]@gwa.ddbj.nig.ac.jp 
 ```
 
 
-## SSHによる解析サーバへのログイン
+## Logging in to the analysis server using SSH
 
-個人ゲノム解析区画はノード貸しなので、ユーザーの借りたノードにはゲートウェイ上からSSHすることによりログインします。
-該当のノードの名前は利用開始時にお知らせします。
-
+The personal genome analysis section is a node rental, so the user logs in to the borrowed node by SSH from the gateway.
+The name of the relevant node will be provided at the start of use.

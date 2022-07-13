@@ -4,16 +4,17 @@ title: "Data file transfer（The Personal Genome Section）"
 ---
 
 
-## SSHプロトコルによるファイル転送の方法 (scp, sftp)
 
-個人ゲノム解析区画のゲートウェイサーバ(gwa.ddbj.nig.ac.jp)に対してscp, sftp等を用いたファイル転送が可能です。
+## How to transfer files using SSH protocol (scp, sftp)
 
-例:
+You can transfer files using scp, sftp, etc. to the gateway server (gwa.ddbj.nig.ac.jp) of the personal genome analysis section.
+
+Example :
 
 ```
 scp your_file.txt youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount/data
 ```
 
-## HCPtoolsによるファイル転送の方法
+## How to transfer files using HCPtools
 
-準備中
+Refer to [How to use HCP tools](./software/HCPtools/hcptools.md).
