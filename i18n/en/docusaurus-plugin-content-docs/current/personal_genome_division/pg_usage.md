@@ -4,20 +4,21 @@ title: "Usage（The Personal Genome Section）"
 ---
 
 
-## 概要
+## Introduction
 
-現時点では、個人ゲノム解析区画は全て課金によるサービスでありノード貸しとなっています。
-ノード上では通常のLinuxシステムとして開発作業や解析作業を行うことが可能です。
+At present, all services of the personal genome analysis section are charged for and the nodes are rented.
+Development and analysis work can be performed on the node as a normal Linux system.
 
-ノードに対してジョブスケジューラとしてUniva Grid EngineまたはSlurmをインストールしてお渡しすることも可能です。
-
-
-- ジョブスケジューラ Univa Grid Engine (UGE)の使い方については[システム構成 > ソフトウェア > Univa Grid Engine](/software/univa_grid_engine)をご参照ください。
-- ジョブスケジューラ Slurmの使い方については[システム構成 > ソフトウェア > Slurm](/software/slurm)をご参照ください。
-- その他、利用可能なソフトウェアについては[システム構成>ソフトウェア](../software/software.md)をご参照ください。
-- 具体的な解析方法などについては[活用方法](/advanced_guides/advanced_guide)をご参照ください。
+Grid Engine or Slurm can be installed and delivered as a job scheduler for the node.
 
 
-## NVIDIA Parabricksの利用方法
+- For information on how to use the job scheduler Grid Engine, refer to [System Configuration > Software > Grid Engine](/software/grid_engine/grid_engine.md).
+- For information on how to use the job scheduler Slurm, refer to [System configuration > Software > Slurm](/software/slurm).
+- For information on other available software, see [System configuration > Software](./software/software.md) for available software.
+- You can get infotmation about specific analysis methods, etc. on the "[Advances Guides](/advanced_guides/advanced_guide)" page.
 
-準備中
+
+## How to use NVIDIA Parabricks
+
+In preparation.
+

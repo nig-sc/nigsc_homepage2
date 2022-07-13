@@ -22,16 +22,17 @@ SSL-VPN接続の際は二要素認証が行われます。セキュリティー�
 
 
 ### Windowsの場合
-1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)から［Product Downloads］［FortiClient VPN only］と順にクリックします。
+1. 以下のURLをクリックし、ForiClientの公式サイトのページにいきます。公式サイトのページで、［Product Downloads］、［FortiClient VPN only］の順にクリックします。
+	- FortiClient公式サイト: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
 
 ![figure](VPNwin_2_701_1.png)
 
-2. Windows版のアプリをインストールします。
+2. Windows版のFortiClient VPNインストーラのインストールプログラムをダウンロードします。
 
-![figure](VPNwin_2_701_1.png)
+![figure](VPNwin_2_701_2.png)
 
 3. ダウンロードフォルダに保存されたインストールプログラムを実行します。
-ユーザアカウント制御は「はい」で進んでください。
+「ユーザーアカウント制御」が表示された場合は［はい］を選択して許可します。
 
 ![figure](VPNwin_3_701.png)
 
@@ -39,25 +40,21 @@ SSL-VPN接続の際は二要素認証が行われます。セキュリティー�
 
 ![figure](VPNwin_4.png)
 
-5. ユーザの計算機にウィルスチェックソフトが入っているか否かで手順が異なります。
+5. ユーザの計算機のセットアップの種類を選択します。選択する種類は、ユーザの計算機にウィルスチェックソフトが入っているか否かで異なります。
+
+注意事項
+- 必ず以下の画像の通りにチェックボックスにチェックされていることを確認してください。
+- その他のチェックされていない項目にチェックが入っていると、正常に動作しない恐れがあります。
 
 【ユーザの計算機にウイルスチェックソフトが入っている場合】
 
 Choose Setup Typeで「Secure Remote Access」にチェックが入っていることを確認し、「Next」をクリックします。
-
-必ず下記のスクリーンショットの通りにチェックされていることを確認してください。
-
-その他の項目にチェックが入っていると、正常に動作しない恐れがあります。
 
 ![figure](VPNwin_5.png)
 
 【ユーザの計算機にウイルスチェックソフトが入っていない場合】
 
 Choose Setup Typeで「Secure Remote Access」と「Additional Security Features」と「AntiVirus」にチェックが入っていることを確認し、「Next」をクリックします。
-
-必ず下記のスクリーンショットの通りにチェックされていることを確認してください。
-
-その他の項目にチェックが入っていると、正常に動作しない恐れがあります。
 
 ![figure](VPNwin_6.png)
 
@@ -76,15 +73,17 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 
 ### Macの場合
 
-1. [ForiClientの公式サイト](https://www.forticlient.com/downloads)から［Product Downloads］［FortiClient VPN only］と順にクリックします。
+1. 以下のURLをクリックし、ForiClientの公式サイトのページにいきます。公式サイトのページで、［Product Downloads］、［FortiClient VPN only］の順にクリックします。
+	- FortiClient公式サイト: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
+
 
 ![figure](VPN_MAC_install_1_701_1.png)
 
-2. Macバージョンのインストーラをダウンロードします。
+2. Mac版のFortiClient VPNインストーラをダウンロードします。
 
 ![figure](VPN_MAC_install_1_701_2.png)
 
-3. ダウンロードしたインストーラを実行します。OKを押してください。
+3. ダウンロードしたインストーラを実行します。OKをクリックします。
 
 ![figure](VPN_MAC_install_2_701.png)
 
@@ -92,7 +91,7 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 
 ![figure](VPN_Mac_install_3.png)
 
-[開く]を押します。
+[開く]をクリックします。
 
 ![figure](VPN_Mac_install_4.png)
 
@@ -100,47 +99,48 @@ Choose Setup Typeで「Secure Remote Access」と「Additional Security Features
 
 ![figure](VPN_Mac_install_5.png)
 
-[install]を押します。
+[install]をクリックします。
 
 ![figure](VPN_MAC_install_6_701.png)
 
 ![figure](VPN_MAC_install_6_701_2.png)
 
-[続ける]を押します。
+[続ける]をクリックします。
 
 ![figure](VPN_Mac_install_7.png)
 
-[続ける]を押します。
+[続ける]をクリックします。
 
 ![figure](VPN_Mac_install_8.png)
 
-5. 以下、ユーザの計算機にウィルスチェックソフトが入っているか否かで手順が異なります。
+5. ユーザの計算機のインストールの種類を選択します。選択する種類は、ユーザの計算機にウィルスチェックソフトが入っているか否かで異なります。
+
 
 【ユーザの計算機にウイルスチェックソフトが入っている場合】
 
-そのまま[インストール]を押します。
+[インストール]をクリックします。
 
-![figure](VPN_Mac_install_10.png)
+![figure](VPN_Mac_install_10_1.png)
 
 
 【ユーザの計算機にウイルスチェックソフトが入っていない場合】
 
-[カスタマイズ]を押します。
+[カスタマイズ]をクリックします。
 
-![figure](VPN_Mac_install_10.png)
+![figure](VPN_Mac_install_10_2.png)
 
  
+『パッケージ名』で「Secure Remote Access」と「AntiVirus」にチェックを入れ、[インストール]をクリックします。
 
-以下の通り、「Secure Remote Access」と「AntiVirus」にチェックを入れます。
+必ず以下の画像の通りにチェックボックスにチェックされていることを確認してください。
 
-必ず以下のスクリーンショット通りのチェックとなっているか確認してください。
+その他のチェックされていない項目にチェックが入っていると、正常に動作しない恐れがあります。
 
-その他の項目にチェックが入っていると正常に動作しない恐れがあります。
 
 ![figure](VPN_Mac_install_11.png)
 
 
-6. [閉じる]を押します。
+6. [閉じる]をクリックすると、インストールが完了します。
 
 ![figure](VPN_Mac_install_12.png)
 
@@ -153,7 +153,7 @@ Linuxの場合やWindows Subsystem for Linux 2(WSL2)を使う場合はCUIのopen
 
 SSL-VPNクライアントソフトopenfortivpnをインストールします。
 
-例) centOSにインストール
+例) centOSにインストールする場合
 下記ページの RPMs -> x86_64 のリンクからopenfortivpnをインストールします。
 
 [https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936](https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936)(2021.12.10時点 最新版)
@@ -165,18 +165,21 @@ enfortivpn-1.17.0-3.el7.x86_64.rpm
 ```
 
 
-インストールされたことの確認
+インストールされたことを確認します。
 ```
 $ sudo openfortivpn --version
 1.17.0
 ```
 
-例) Ubuntuにインストール
+例) Ubuntuにインストールする場合
+
+以下のコマンドを実行してopenfortivpnをインストールします。
+
 ```
 $ sudo apt-get install -y openfortivpn
 ```
 
-インストールされたことの確認
+インストールされたことを確認します。
 ```
 $ sudo openfortivpn --version
 1.6.0
@@ -240,11 +243,11 @@ trusted-cert = 860101b1dbaff15fa35da3f6ed643b3cae434234c9bd866d86f67948d07a7f94
 
 Macの場合は、さらに以下のように[証明書を検証]というメッセージが表示されます。
 
-[続ける]を押します。
+[続ける]をクリックします。
 
 ![figure](VPN_Mac_install_17.png)
 
-2.2. セキュリティの警告は「はい」を押します。
+2.2. セキュリティの警告は「はい」をクリックします。
 
 ![figure](VPNwin_14.png)
 
@@ -262,11 +265,11 @@ Macの場合は、さらに以下のように[証明書を検証]というメッ
 
 - Macの場合
 
-[答え]にワンタイムパスワード(上記の例の場合、269274)を入力し、[OK]を押します。
+[答え]にワンタイムパスワード(上記の例の場合、269274)を入力し、[OK]をクリックします。
 
 ![figure](VPN_Mac_install_19.png)
 
-2.4. 以下の画面となり、VPN接続中となります。
+2.4. 以下の画面が表示されましたら、VPN接続が開始されます。
 
 ![figure](VPNwin_17.png)
 
@@ -296,20 +299,21 @@ trusted-cert = 860101b1dbaff15fa35da3f6ed643b3cae434234c9bd866d86f67948d07a7f94
 $ sudo openfortivpn -c /path/to/config
 ```
 
-コマンドを実行すると、VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送信されます。
-
-送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/faq/faq_login#個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません)をご参照ください。
+コマンドを実行すると、SSL-VPNアカウントに紐付くメールアドレスへ以下のようなワンタイムパスワードが送信されます。
 
 ![figure](VPNwin_15.png)
+
+送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/faq/faq_login#個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません)をご参照ください。
 
 以下の通り対話式でワンタイムパスワード(上記の例の場合、269274)を入力し、Enterキーを押してください。
 ```
 $ sudo openfortivpn -c /path/to/config
 INFO: Connected to gateway.
-Two-factor authentication token:ワンタイムパスワードを入力し、Enter
+Two-factor authentication token:ワンタイムパスワードを入力し、Enterキーを押す
 ```
 
-ワンタイムパスワード認証に成功し、下記の通りログが表示されればVPN接続状態となります。
+ワンタイムパスワード認証に成功すると、以下の通りログが表示されます。以下の通り表示されましたら、VPN接続が開始されます。このとき、プロンプトは返ってきません。Ctrl+Cを押すことでVPN接続が解除されます。
+
 ```
 $ sudo openfortivpn -c config
 INFO: Connected to gateway.
@@ -328,13 +332,11 @@ INFO: Setting new routes...
 INFO: Adding VPN nameservers...
 INFO: Tunnel is up and running.
 ```
-プロンプトが返ってこない状態となります。（Ctrl+Cを押すことでVPN接続状態が解除されます。）
-
 
 
 ## SSHによるゲートウェイへのログイン
 
-SSL-VPN接続状態を保持したままで、ターミナルエミュレータを立ち上げ、
+SSL-VPN接続後、ターミナルエミュレータを起動し、
 以下のようにコマンドを実行すると個人ゲノム解析環境のゲートウェイにログインできます。
 
 ```
