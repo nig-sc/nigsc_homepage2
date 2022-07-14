@@ -3,24 +3,24 @@ id: reference
 title: "Contact us"
 ---
 
-リソース拡張申請、課金サービスの申請のほか
-国立遺伝学研究所スーパーコンピュータシステム利用に関する質問、ソフトウェアインストールなどのご要望をメールで受け付けています。
 
-- メールの送信先： ![](sc-helpdesk.png)
+Applications for resource expansion and billing services, questions about the use of the NIG supercomputer system, software installation and other requests can be sent by email.
 
-メールでお問い合わせいただく際には、以下の項目を明記してください。
+- E-mail: ![](sc-helpdesk.png)
+
+When contacting us by email, specify the following information
 
 
-- お名前
-- 所属
-- ログインアカウント
-- お問い合わせ件名
-- お問い合わせ内容（問題が再現する手順など、なるべく詳細に）
+- Your name
+- Affiliation
+- Your login account
+- Subject of your request
+- Details of your request (as detailed as possible, such as steps to reproduce the problem).
 
 
 ---
 
 
-    〒411-8540 静岡県三島市谷田1111
-    大学共同利用機関法人　情報・システム研究機構　国立遺伝学研究所　スパコンチーム
+    1111 Yata, Mishima, Shizuoka 411-8540, Japan
+    Supercomputer Team, National Institute of Genetics, Research Organization of Information and Systems, Inter-University Research Institute Corporation
     TEL: 055-981-9461

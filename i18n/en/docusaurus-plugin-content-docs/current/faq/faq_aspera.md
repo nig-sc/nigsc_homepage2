@@ -4,12 +4,12 @@ title: FAQ (Aspera)
 ---
 
 
+## Unable to communicate.
 
-## 通信ができません
+Since multiple ports (e.g. port 33001 in addition to the ssh port) are used for data transfer, these ports must be free in the network settings of the university/research institute, etc.
 
-データ転送に複数のポート(ssh のポートの他に 33001 番ポート等)を用いるので大学・研究機関などのネットワーク設定でそのポートが空いている必要があります。
+## Communication speed is not fast enough
 
-## 通信速度が十分に出ません
+To actually achieve a transfer rate of several Gbps, the server and network equipment need to be tuned on the local machine side.
 
-数 Gbps の転送速度を実際に出すには、ローカルマシン側でもサーバやネットワーク機器のチューニングが必要です。
 

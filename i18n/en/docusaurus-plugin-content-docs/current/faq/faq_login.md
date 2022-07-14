@@ -1,17 +1,16 @@
 ---
 id: faq_login
-title: "FAQ(ログインについて)"
+title: "FAQ(Login)"
 ---
 
 
+## Public key authentication failed.
 
-## 公開鍵による認証ができません。
+Public key authentication fails if write permission is granted to group, other in the home directory.
+Also if any permission other than owner is granted to `~/.ssh` and `~/.ssh/authorised_keys`, public key authentication fails.
+You need to check the permission of the following three directories and files.
 
-ホームディレクトリの group,other に write 権限が付与されている場合、公開鍵による認証は失敗します。
-また、`~/.ssh`および`~/.ssh/authorized_keys`に、owner 以外の権限が付与されている場合も公開鍵認証に失敗します。
-以下の 3 つのディレクトリ・ファイルのパーミッションをご確認願います。
-
-パーミッションは chmod コマンドで変更できます。
+You can change the permission using the `chmod` command.
 
 ```
 （例）
@@ -21,11 +20,9 @@ chmod 600 ~/.ssh/authorized_keys
 ```
 
 
+## What to do if you cannot log in to the NIG supercomputer via SSH
 
-## 新スパコンに SSH ログインできない場合の対応
-
-
-遺伝研スパコンにログインしようとした際、下記のようなメッセージが表示されてログインできない場合があります。
+When you try to log in to the NIG supercomputer, the following message may appear and you may not be able to log in.
 
 ```
 $ ssh gw.ddbj.nig.ac.jp
@@ -52,51 +49,49 @@ RSA host key for gw.ddbj.nig.ac.jp has changed and you have requested strict che
 Host key verification failed.
 ```
 
-
-その場合は、`.ssh/known_hosts`ファイルの該当行を削除、もしくは`.ssh/known_hosts`ファイル自体を削除する。
-また、`ssh-keygen -R gw.ddbj.nig.ac.jp` を使用して該当行を削除してください。
-
+In this case, delete the relevant line in the `.ssh/known_hosts` file or the `.ssh/known_hosts` file itself.
+Also use `ssh-keygen -R gw.ddbj.nig.ac.jp` to delete the relevant line.
 
 
-## SSH のコネクションが頻繁に切れます。
+## SSH connections frequently disconnected.
 
 
- ~/.ssh/config に以下を追記してください。
+Add the following to `~/.ssh/config`.
+
 ```
 Host *
     ServerAliveInterval 20
     TCPKeepAlive no
 ```
 
-詳しくは以下ご参照ください。
+For more information, click the link below.
 
 https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset
 
 
 
-## 個人ゲノム解析区画に対する VPN 接続ができません。
+## VPN connection to the personal genome analysis section cannot be established.
 
+If you got the error `Credential or ssl vpn configuration is wrong (-7200)` when accessing the personal genome analysis section with FortiClient on Windows 10 or 11,
 
-Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスしたときに
-`Credential or ssl vpn configuration is wrong (-7200)`というエラーが出る場合
+Control Panel => Internet Options => Security tab => Trusted Sites
 
-コントロールパネル => インターネットオプション => セキュリティータブ => 信頼済みサイト
-
-ここに SSL-VPN のアドレスを登録する。
+Register the SSL-VPN address here.
 
 ![](faq_pg-vpn.png)
 
 
-## 個人ゲノム解析区画に対してSSL-VPN接続を行うために、FortiClientにユーザ名をパスワードを入力しても、VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません。
 
-- Googleが今年の3/1からセキュリティを強化した影響により、gmailに遺伝研スパコンVPNからのワンタイムパスワードのメールが飛ばない事象が発生しています。
-- メール誤送信を防ぐためにも、フリーメールではなく所属機関のメールアドレスのご登録を推奨しています。
+## When entering your username and password for FortiClient for an SSL-VPN connection to the personal genome analysis section, the one-time password is not sent to the email address associated with your VPN account.
+
+- Google has tightened the security since 1 March this year, therefore there have been incidents that the email with one-time password from the NIG supercomputer VPN is not sent to gmail.
+- We recommend that you register your institution's email address instead of a free email to sent the e-mail to the wrong person.
 
 
-## ssh公開鍵を再度設定し直したのですが、`Permission denied`のエラーが出て接続できません。
+## I have reconfigured my ssh public key again, but I get a error message `Permission denied` and cannot connect.
 
-2022年7月7日現在、新しいユーザ登録システムへの移行作業を行っております。(「[2022 年 7 月 5 日(火) 新規ユーザシステムが新しくなりました](https://sc.ddbj.nig.ac.jp/blog/2022-07-05-news_NewApp)」)
-そのため、新しいゲートウェイ`gw2.ddbj.nig.ac.jp`への公開鍵登録については即時設定が反映されますが、古い方のゲートウェイ`gw.ddbj.nig.ac.jp`へ設定が反映されるまでに１日程度かかります。
-次回の定期メンテナンス（12月）の際に、古いゲートウェイにも即時設定が反映されるようシステムを改修する予定です。
+As of 7 July 2022, we move the data to a new user registration system ("[July 5, 2022(Monday) New user system is new](/en/blog/2022-07-05-news_NewApp)").
+Therefore, public key registrations to the new gateway `gw2.ddbj.nig.ac.jp` will be reflected immediately, but it will take about one day for the settings to be reflected to the old gateway `gw.ddbj.nig.ac.jp`.
+At the next scheduled maintenance (December), the system will be modified so that the settings will be reflected immediately on the old gateway.
 
-つきましては、公開鍵などの設定直後は`gw2.ddbj.nig.ac.jp`からログインしてください。
+Please login from `gw2.ddbj.nig.ac.jp` immediately after setting your public key etc.
