@@ -3,34 +3,34 @@ id: gfree
 title: How to check the GPU nodes operation status
 ---
 
-## gfreeコマンドの説明
+## Description of the `gfree` command
 
-遺伝研スパコンではGPUノードの利用状況を表示するために`gfree`というコマンドを提供しています。
-
+The NIG supercomputer provides a command `gfree` to list the usage status of GPU node.
 
 ![figure](gfree.png)
 
-出力内容の説明は以下の通りです。
+The description of the output is as follows.
 
 <table>
 <tr>
-	<th width="300">項目</th><th width="300">説明</th>
+	<th width="300">Item</th><th width="300">Description</th>
 </tr>
 <tr>
-	<td>qname</td><td>キューの名前</td>
+	<td>qname</td><td>queue name</td>
 </tr>
 <tr>
-    <td>node</td><td>ノード名</td>
+    <td>node</td><td>node name</td>
 </tr>
 <tr>
-	<td>used</td><td>現在使用されているGPUスロット数</td>
+	<td>used</td><td>Number of GPU slots currently used</td>
 </tr>
 <tr>
-	<td>all</td><td>ノードの搭載するGPUスロット数</td>
+	<td>all</td><td>Number of GPU slots mounted on the node</td>
 </tr>
 <tr>
-	<td>executable jobnums</td><td>要求GPUスロット数(1GPU、4GPU)ごとの実行可能なジョブ数</td>
+	<td>executable jobnums</td><td>Number of executable jobs per number of requested GPU slots (1 GPU, 4 GPU)</td>
 </tr>
 </table>
 
-GPUノードの場合GPUスロット数 = GPUの本数です。各GPUノードにGPUが4本ずつ搭載されています。
+On GPU nodes, the number of GPU slots is the number of GPUs. Each GPU node has 4 GPUs.
+

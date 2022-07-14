@@ -4,33 +4,28 @@ title: "FAQ (Grid Engine)"
 ---
 
 
-## 計算ノードの障害等によりジョブが再実行された際に、注意する点はありますか。
+## Is there anything I should be careful about when the job is re-run, e.g. due to a failure of the compute node?
 
-ジョブが再実行された場合は、
+When the job is re-run, then.
 
-１．ジョブの標準出力、標準エラー出力は再実行前のファイルに追記されます。
-２．投入しているジョブによっては 1 度目の実行で出力されたファイルの存在により、
-　　2 度目の実行がエラーもしくは不適切になる場合があります。問題の発生が
-　　懸念される場合は、中間ファイルや結果ファイルを削除した上で、ジョブを
-　　再投入して頂けるよう、お願いします。
-３．必要に応じてジョブ内で再実行に備えた処置を加えて頂けるようお願いします。
-　　例えばシェルスクリプトの場合ですと以下のような処理を加えることで問題を回避できます。
+1. the standard output and standard error output of the job are appended to the file before re-run.
+2. Depending on the submitted job, the existence of the file output in the first run may cause an error or make the second run inappropriate. If you are concerned that a problem may occur,  delete the intermediate and result files and resubmit the job.
+3. if necessary, add a procedure in the job to prepare for re-run. For example, in the case of shell scripts, you can avoid problems by adding the following processing.
 
- 
 
-例（一つの中間ファイルを出力し、それを入力として結果ファイルを出力するジョブの場合）
+Example: for a job that outputs an intermediate file and uses it as input to output a result file)
 
 ```bash
 #!/bin/sh
 #$ -S /bin/sh
-tmpfile=/home/user/tmpdir/tmpfile.txt　                        #中間ファイルを指定
-outfile=/home/user/outdir/outfile.txt                                #結果ファイルを指定
+tmpfile=/home/user/tmpdir/tmpfile.txt　                        #Specify an intermediate file
+outfile=/home/user/outdir/outfile.txt                                #Specify a result file
 
 ###追記内容##########################
-if [ -ｆ ${tmpfile} ] ; then　　　　　　　　    　             #中間ファイルが存在すれば削除
+if [ -ｆ ${tmpfile} ] ; then　　　　　　　　    　             #If an intermediate file exists, delet it
 rm ${tmpfile}
 fi
-if [ -ｆ ${outfile} ] ; then　　　　　　　　　   　           #結果ファイルが存在すれば削除
+if [ -ｆ ${outfile} ] ; then　　　　　　　　　   　           #If a result file exists, delet it
 rm ${outfile}
 fi
 #####################################

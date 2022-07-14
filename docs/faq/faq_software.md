@@ -5,8 +5,7 @@ title: "FAQ(ソフトウェア一般)"
 
 ## 環境を初期状態に戻したい
 
-アカウント作成直後の`.bashrc`, `.bash_profile`は以下のとおりですので、
-環境を初期状態に戻すには`.bashrc`, `.bashr_profile`をこの状態に戻してログインし直してください。
+アカウント作成直後の`.bashrc`, `.bash_profile`は以下のとおりですので、環境を初期状態に戻すには`.bashrc`, `.bashr_profile`をこの状態に戻してログインし直してください。
 
 **.bashrc**
 

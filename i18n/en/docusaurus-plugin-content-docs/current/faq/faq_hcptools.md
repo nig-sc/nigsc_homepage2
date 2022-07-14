@@ -4,90 +4,97 @@ title: FAQ (HCP tools)
 ---
 
 
-## ファイル転送のとき、転送元と転送先は、必ず絶対パスで指定しなければいけないのでしょうか。
+## When transferring files, do I always have to specify the transfer source and transfer destination with absolute paths?
 
-ユーザの計算機のパスには、絶対パスでも相対パスでも、指定することができます。
+The path on the user's computer can be specified as either an absolute or relative path.
 
-しかし、個人ゲノム解析区画のパスには、相対パスで指定することはできません。絶対パスで指定してください。
+However, the path of the personal genome analysis section cannot be specified as a relative path.It must be specified as an absolute path.
+
+Below are input examples for the user's computer path.
+
+Both input examples 1 and 2 mean the same thing, so you can execute them whichever you prefer.
 
 
-下記は、ユーザの計算機のパスの入力例です。
+- Upload the file `upload_ex1.txt` in the home directory of the user's computer to the user's home directory in the personal genome analysis section.
 
-入力例1と2は、どちらも同じ意味ですので、お好きな方で実行できます。
-
-
-- ユーザの計算機のホームディレクトリにあるファイル`upload_ex1.txt`を、個人ゲノム解析区画のユーザのホームディレクトリにアップロードする
-
-入力例1：絶対パスで指定する場合
+Input example 1: When specifying by absolute path
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
-```
-
-入力例2：相対パスで指定する場合
-```
-hcp --user ユーザ名 upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
+hcp --user uesrname C:\Users\uesrname\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
 ```
 
-- ディレクトリを指定してファイルをアップロードする
-
-入力例1：絶対パスで指定する場合
+Input example 2: When specifying by relative path
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt
+hcp --user uesrname upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
 ```
 
-入力例2：相対パスで指定する場合
+
+- Upload files by specifying a directory.
+
+Input example 1: When specifying by absolute path
 ```
-hcp --user ユーザ名 .\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt
+hcp --user uesrname C:\Users\uesrname\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/uesrname/HCP_upload/upload_ex1.txt
 ```
 
-- 個人ゲノム解析区画のユーザのホームディレクトリにあるファイル`download_ex1.txt`を、ユーザの計算機のホームディレクトリの下にダウンロードする
-
-入力例1：絶対パスで指定する場合
+Input example 2: When specifying by relative path
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:download_ex1.txt C:\Users\ユーザ名\download_ex1.txt
+hcp --user uesrname .\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/uesrname/HCP_upload/upload_ex1.txt
 ```
 
-入力例2：相対パスで指定する場合
+
+- Download the file `download_ex1.txt` from the user's home directory in the personal genome analysis section to the home directory of the user's computer.
+
+Input example 1: When specifying by absolute path
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:download_ex1.txt .\download_ex1.txt
+hcp --user uesrname gwa.ddbj.nig.ac.jp:download_ex1.txt C:\Users\uesrname\download_ex1.txt
 ```
 
-- ディレクトリを指定してファイルをダウンロードする
-
-入力例1：絶対パスで指定する場合
+Input example 2: When specifying by relative path
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt C:\Users\ユーザ名\HCP_upload\upload_ex1.txt
+hcp --user uesrname gwa.ddbj.nig.ac.jp:download_ex1.txt .\download_ex1.txt
 ```
 
-入力例2：相対パスで指定する場合
+- Download files by specifying the directory.
+
+Input example 1: When specifying by absolute path
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt .\HCP_upload\upload_ex1.txt
-```
-
-## ディレクトリを指定してファイル転送をしたいのですが、可能でしょうか。
-
-はい、可能です。下記はディレクトリを指定した場合のアップロードの実行例です。
-
-ダウンロードの場合も、アップロードの時と同じように指定すれば、ディレクトリを指定してファイル転送ができます。
-
-- 送信元のディレクトリを指定したい場合
-```
-hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
+hcp --user uesrname gwa.ddbj.nig.ac.jp:/home/uesrname/HCP_upload/upload_ex1.txt C:\Users\uesrname\HCP_upload\upload_ex1.txt
 ```
 
-- アップロード先のディレクトリを指定したい場合
+Input example 2: When specifying by relative path
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCPtools_upload/upload_ex1.txt
-```
-
-- 送信元とアップロード先の両方でディレクトリを指定したい場合
-```
-hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCPtools_upload/upload_ex1.txt
+hcp --user uesrname gwa.ddbj.nig.ac.jp:/home/uesrname/HCP_upload/upload_ex1.txt .\HCP_upload\upload_ex1.txt
 ```
 
-## アップロード先またはダウンロード先を指定する時、ファイル名の指定は不要なのではないでしょうか。
 
-必要です。ファイル名を指定しない場合、下記のようなエラーメッセージが出力され、ファイル転送できません。
+## Is it possible to specify a directory for file transfer?
+
+Yes.
+
+You can see an example of an upload executed when a directory is specified below.
+
+For downloads, you can also specify a directory for file transfer by specifying it in the same way as for uploads.
+
+- If you want to specify the source directory.
+```
+hcp --user username C:\Users\username\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
+```
+
+- If you want to specify the directory to upload.
+```
+hcp --user username C:\Users\username\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/username/HCPtools_upload/upload_ex1.txt
+```
+
+- If you want to specify a directory for both the source and the upload.
+```
+hcp --user username C:\Users\username\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/username/HCPtools_upload/upload_ex1.txt
+```
+
+
+## When specifying the upload or download destination, is it necessary to specify the file name?
+
+Yes.
+
+If you do not specify a file name, the following error message will be output and the file cannot be transferred.
 
 ```
 2022/03/11 14:28:54 00006070:INFO :Negotiation error is set (A001).
@@ -96,9 +103,8 @@ hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.tx
 2022/03/11 14:28:54 00006070:INFO :File is not found.hcp::node:HcpnException @ hcp::node::HcpnEndPointTransfer:L454 :  > hcp::proto::HcppException @ hcp::proto::HcppSession:L1209 :
 ```
 
-## [コマンド概要説明 p.12](/pdf/HCPtools_overview_ja.pdf)には、Windows 10しか対応していないと書いてあります。Windows 11では利用できないのでしょうか。
 
-Windows 11でも、ご利用になれます。
+## [HCP tools Command Overview p.10](/pdf/HCPtools_overview_en.pdf) says that only Windows 10 is supported. Is it not available for Windows 11?
 
-
+Yes, it can be used on Windows 11.
 

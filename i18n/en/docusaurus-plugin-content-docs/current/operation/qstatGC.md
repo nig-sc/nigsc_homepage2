@@ -2,8 +2,11 @@
 id: qstatGC
 title: How to check the congestion status of the general analysis section
 ---
- 
- 各キューのジョブの投入状況、キューの負荷状況等、全体を把握するのには、"qstat -g c"として確認することが 出来ます。
+
+
+You can check the overall status such as the job submission status of each queue, the load status of the queue, etc. using the `qstat -g c` command.
+
+
  
  ```
  [username@at027 ~]$ qstat -g c
@@ -18,13 +21,14 @@ title: How to check the congestion status of the general analysis section
  short.q                           0.00      0      0    128    224      0     96 
 ```
  
-数値の意味は以下のとおりです。
+The meanings of the numbers are as follows.
 
-- USED :現在使用中のスロット数 
-- RES  :事前予約(Advance Reservation)のスロット数
-- AVAIL :使用可能なスロット数
-- TOTAL :スロット総数
-- aoACDS:計算ノードが aoACDSのいずれかの状態にあるスロット数
-- cdsuE :計算ノードが cdsuEのいずれかの状態にあるスロット数 
+- USED: Number of slots currently in use 
+- RES: Number of slots reserved in advance(Advance Reservation)
+- AVAIL: Number of slots available
+- TOTAL: Total number of slots
+- aoACDS: Number of slots in which the compute node is in one of the aoACDS states
+- cdsuE: Number of slots in which the compute node is in one of the cdsuE states. 
 
-詳細は`man qstat`で確認できます。
+You can find using the `man qstat` command for more information.
+

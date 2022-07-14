@@ -11,7 +11,7 @@ title: "FAQ(ログインについて)"
 また、`~/.ssh`および`~/.ssh/authorized_keys`に、owner 以外の権限が付与されている場合も公開鍵認証に失敗します。
 以下の 3 つのディレクトリ・ファイルのパーミッションをご確認願います。
 
-パーミッションは chmod コマンドで変更できます。
+パーミッションは `chmod` コマンドで変更できます。
 
 ```
 （例）
@@ -60,7 +60,7 @@ Host key verification failed.
 ## SSH のコネクションが頻繁に切れます。
 
 
- ~/.ssh/config に以下を追記してください。
+`~/.ssh/config` に以下を追記してください。
 ```
 Host *
     ServerAliveInterval 20
@@ -76,8 +76,7 @@ https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-
 ## 個人ゲノム解析区画に対する VPN 接続ができません。
 
 
-Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスしたときに
-`Credential or ssl vpn configuration is wrong (-7200)`というエラーが出る場合
+Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスしたときに、`Credential or ssl vpn configuration is wrong (-7200)`というエラーが出る場合、
 
 コントロールパネル => インターネットオプション => セキュリティータブ => 信頼済みサイト
 
