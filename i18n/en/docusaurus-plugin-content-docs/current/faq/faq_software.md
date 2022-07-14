@@ -1,12 +1,12 @@
 ---
 id: faq_software
-title: "FAQ(ソフトウェア一般)"
+title: "FAQ(Software General)"
 ---
 
-## 環境を初期状態に戻したい
 
-アカウント作成直後の`.bashrc`, `.bash_profile`は以下のとおりですので、
-環境を初期状態に戻すには`.bashrc`, `.bashr_profile`をこの状態に戻してログインし直してください。
+## I want to restore my computer environment to its initial state.
+
+The state of `.bashrc` and `.bash_profile` immediately after account creation are as follows, so to restore the environment to its initial state, restore the `.bashrc` and `.bashr_profile` to this state and login again.
 
 **.bashrc**
 

@@ -3,17 +3,16 @@ id: faq_change_StorageCapacity
 title: FAQ (Change Storage Capacity)
 ---
 
+## I want to change the allocated storage
 
-## 割り当てられているストレージ容量を変更したいです。
+You need to apply for using large-scale storage.
 
-ストレージの大規模利用申請が必要です。
-
-申請に関しては[一般解析区画の使い方 > ストレージの大規模利用](/general_analysis_division/largescale_storage)をご参照ください。
+Refer to [General Analysis Section > Using large-scale storage](/general_analysis_division/largescale_storage) for application details.
 
 
-## 現在どのような配分でストレージ容量を割り当てられているのでしょうか。
+## How is storage currently allocated?
 
-以下のように`quota`コマンドを実行してご確認ください。
+Execute the `quota` command as shown below to check.
 
 ```
 $ lfs quota -u your_account /lustre7
@@ -26,6 +25,6 @@ uid **** is using default file quota setting
 $
 ```
 
-詳細は[「Lustre FSの使い方」の「quotaの確認方法」](/general_analysis_division/ga_lustre#quotaの確認方法)をご参照ください。
+For more information, see ["Checking Quota" in the "Using Lustre FS" page](/general_analysis_division/ga_lustre/#checking-quota).
 
 

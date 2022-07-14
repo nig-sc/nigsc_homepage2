@@ -270,7 +270,7 @@ module.exports = {
         },
         {
             type: 'category',
-            label: "FAQ : 申請・課金",
+            label: "FAQ : Application/Billing",
             items: [
                 "faq/faq_billing_service",
                 "faq/faq_change_StorageCapacity",
