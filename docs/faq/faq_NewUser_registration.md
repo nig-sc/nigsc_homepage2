@@ -11,3 +11,36 @@ title: "FAQ(新規ユーザ登録申請)"
 
 ![](logout_button.png)
 
+## 責任者のアカウント名とグループ名に何を入力したら良いのかわかりません。
+
+責任者のアカウント名やグループ名が分からない場合は、以下の手順で入力を行ってください。 
+
+<table>
+<tr>
+<td>1.</td>
+<td width="300">「申請者が責任者である、または責任者のアカウント名がわからない」にチェックを入れます。</td>
+<td height="400">
+
+![](ResponsiblePerson_1.png)
+
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td width="300">責任者の情報を入力します。</td>
+<td height="400">
+
+![](ResponsiblePerson_2.png)
+
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td width="300">「次へ」ボタンをクリックします。クリックすると、次ページの「確認」に進みます。</td>
+<td height="400">
+
+![](ResponsiblePerson_3.png)
+
+</td>
+</tr>
+</table>
