@@ -24,34 +24,56 @@ module.exports = {
       ],
     */
 
-    topSidebar: {
-        "システム構成": [
-            "guides/top",
-            "guides/overview",
-            "guides/hardware",
-            "software/software"
-        ],
-        "一般解析区画の使い方": [
-            "general_analysis_division/ga_introduction",
-            "general_analysis_division/ga_application",
-            "general_analysis_division/ga_login",
-            "general_analysis_division/ga_usage",
-            "general_analysis_division/ga_transfer",
-            "general_analysis_division/advance_reservation",
-            "general_analysis_division/ga_lustre",
-            "general_analysis_division/largescale_storage",
-        ],
-        "個人ゲノム解析区画の使い方": [
-            "personal_genome_division/pg_introduction",
-            "personal_genome_division/pg_application",
-            "personal_genome_division/pg_login",
-            "personal_genome_division/pg_usage",
-            "personal_genome_division/pg_transfer",
-            "general_analysis_division/ga_lustre",
-            "general_analysis_division/largescale_storage",
-            "personal_genome_division/group_cloud",
-        ],
-    },
+    topSidebar: [  
+        {
+            type: "link",
+            label: "お知らせ",
+            href: "/blog/tags/news"
+        },
+        {
+            type: "link",
+            label: "メンテナンス情報",
+            href: "/blog/tags/maintenance"
+        },
+        {
+            type: "category",
+            label: "システム構成",
+            items: [
+                "guides/top",
+                "guides/overview",
+                "guides/hardware",
+                "software/software"
+            ]
+        },
+        {
+            type: "category",
+            label: "一般解析区画の使い方",
+            items: [
+                "general_analysis_division/ga_introduction",
+                "general_analysis_division/ga_application",
+                "general_analysis_division/ga_login",
+                "general_analysis_division/ga_usage",
+                "general_analysis_division/ga_transfer",
+                "general_analysis_division/advance_reservation",
+                "general_analysis_division/ga_lustre",
+                "general_analysis_division/largescale_storage",
+            ]
+        },
+        {
+            type: "category",
+            label: "個人ゲノム解析区画の使い方",
+            items: [
+                "personal_genome_division/pg_introduction",
+                "personal_genome_division/pg_application",
+                "personal_genome_division/pg_login",
+                "personal_genome_division/pg_usage",
+                "personal_genome_division/pg_transfer",
+                "general_analysis_division/ga_lustre",
+                "general_analysis_division/largescale_storage",
+                "personal_genome_division/group_cloud",
+            ]
+        }
+    ],
     softwareSidebar: [
         {
             type: 'category',
@@ -182,7 +204,7 @@ module.exports = {
             "application/billing_service",
             "application/invoice",
         ],
-        "お問い合わせ等": [
+        "問い合わせ先・FAQ": [
             {
                 type: "link",
                 label: "よくある質問(FAQ)",
