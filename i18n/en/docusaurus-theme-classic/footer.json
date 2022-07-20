@@ -1,8 +1,4 @@
 {
-  "copyright": {
-    "message": "Copyright © 2021 National Institute of Genetics.",
-    "description": "The footer copyright"
-  },
   "link.title.Search": {
     "message": "Search",
     "description": "The title of the footer links column with title=Search in the footer"
