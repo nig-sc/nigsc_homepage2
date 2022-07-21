@@ -19,9 +19,6 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
-The system is currently under regular maintenance. The power consumption is reduced by about 9% compared to before maintenance. (2022.06.29)
-
-
 - &#x26A0;[Renewal of user registration system](/en/blog/2022-07-05-news_NewApp) (Update 2022.07.05)
 - [Added 300TB of storage for analysis of Luster8](/en/blog/2022-07-05-Lustre8_300TB_add)
 - &#x26A0;[Suspend acceptance of new user registrations for large-scale storage](/en/blog/2022-05-13-suspension-of-applications) (2022.05.13)
