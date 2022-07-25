@@ -37,6 +37,7 @@ function BlogTagsPostPage (props) {
   const { allTagsPath, name: tagName, count } = metadata
   const blogPostsPlural = useBlogPostsPlural()
   const tagLabel = useTagLabel(tagName)
+  console.log({ tagLabel, tagName })
   const title = translate({
     id: 'theme.blog.tagTitle',
     description: 'The title of the page for a blog tag',
