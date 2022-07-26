@@ -34,12 +34,12 @@ title: "ユーザ登録・変更申請"
 </table>
 
 <ul>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">ユーザ登録内容変更申請</a>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256">ユーザ登録内容変更申請</a>
   <ul>
   <li>所属などが変更になった場合は速やかに変更内容の登録をお願いいたします。</li>
   </ul>
 </li>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">パスワード変更申請</a>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256">パスワード変更申請</a>
   <ul>
   <li>パスワードの変更はこちらからお願いします。</li>
   <li>変更手順は<a href="https://sc.ddbj.nig.ac.jp/application/change_loginpwd">ログインパスワード変更申請方法</a>をご参照ください。</li>
