@@ -23,7 +23,7 @@ title: "利用計画表の提出"
 <td valign="top">
 以下をクリックして、利用計画表をダウンロードしてください。
 
-[<ul><li><font size="+1.5">利用計画表(2022年度版)</font></li></ul>](/files/usage_plan-ver2.3.3-2022.xlsx)
+[<ul><li><font size="+1.5">利用計画表(2022年度版)</font></li></ul>](/files/usage_plan-ver2.3.4-2022.xlsx)
 <p>&#x26A0;現在、大規模利用ユーザの新規登録申請の受付を停止しております。詳細は<a href="https://sc.ddbj.nig.ac.jp/blog/2022-05-13-suspension-of-applications">「2022 年 5 月 13 日(金) 個人ゲノム解析区画および一般解析区画大規模ユーザの新規登録の一時停止」</a>をご参照ください。</p>
 </td>
 </tr>
