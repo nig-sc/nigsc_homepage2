@@ -23,7 +23,7 @@ title: "Submission of Your Usage Plan"
 <td valign="top">
 Click here and download the usage plan table.
 
-[<ul><li><font size="+1.5">the usage plan(2022)</font></li></ul>](/files/usage_plan-ver2.3.3-2022.xlsx)
+[<ul><li><font size="+1.5">the usage plan(2022)</font></li></ul>](/files/usage_plan-ver2.3.4-2022.xlsx)
 <p>&#x26A0; Currently, we are not accepting new user registration application of large-scale storage. For more information, refer to <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">"May 13, 2022(Friday) - Suspend acceptance of new user registrations for the personal genome section and large-scale storage on the general analysis section"</a></p>
 </td>
 </tr>
