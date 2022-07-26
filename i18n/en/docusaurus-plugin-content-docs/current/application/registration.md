@@ -33,12 +33,12 @@ New user registration application screen
 </table>
 
 <ul>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Request to change user registration details</a>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256">Request to change user registration details</a>
   <ul>
   <li>When your affiliation and othes changes, register it as soon as possible.</li>
   </ul>
 </li>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Password change application</a>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256">Password change application</a>
   <ul>
   <li>change your password here.</li>
   <li>For the change procedure, refer to <a href="https://sc.ddbj.nig.ac.jp/en/application/change_loginpwd">How to apply for login password change</a>.</li>
