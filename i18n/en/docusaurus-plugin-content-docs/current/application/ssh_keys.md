@@ -1,6 +1,6 @@
 ---
 id: ssh_keys
-title: SSH public key registration
+title: Registering or changing SSH public keys
 ---
 
 ## Generating public and private key
