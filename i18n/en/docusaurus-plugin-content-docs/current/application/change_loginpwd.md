@@ -1,6 +1,6 @@
 ---
 id: change_loginpwd
-title: "Changing your login password"
+title: "Change password"
 ---
 
 We strongly recommend that you change your initial password or your password regularly to prevent unauthorized access and to use it more securely.
