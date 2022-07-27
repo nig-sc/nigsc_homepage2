@@ -1,6 +1,6 @@
 ---
 id: registration
-title: "User Registration/Change Request"
+title: "Application for use/change"
 ---
 
 <ul>

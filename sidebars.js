@@ -193,12 +193,14 @@ module.exports = {
             "application/use_policy",
             "application/legislation",
         ],
-        "ユーザー登録・変更": [
+        "利用申請等": [
             "application/registration",
             "application/resource_extension",
-            "application/change_loginpwd",
-            "application/ssh_keys",
             "application/renewal",
+        ],
+        "パスワード・公開鍵の設定方法": [
+            "application/ssh_keys",
+            "application/change_loginpwd",
         ],
         "課金サービス利用方法": [
             "application/billing_service",
