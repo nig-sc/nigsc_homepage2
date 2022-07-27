@@ -39,9 +39,13 @@
     "message": "Development Environment and Libraries",
     "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
   },
-  "sidebar.applicationsSidebar.category.ユーザー登録・変更": {
-    "message": "User Registration/Change",
-    "description": "The label for category ユーザー登録・変更 in sidebar applicationsSidebar"
+  "sidebar.applicationsSidebar.category.利用申請等": {
+    "message": "Use Application, etc.",
+    "description": "The label for category 利用申請等 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.パスワード・公開鍵の設定方法": {
+    "message": "Set up password and public key",
+    "description": "The label for category パスワード・公開鍵の設定方法 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.課金サービス利用方法": {
     "message": "How to use billing services",

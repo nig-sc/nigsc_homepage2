@@ -1,6 +1,6 @@
 ---
 id: ssh_keys
-title: SSH 公開鍵の登録
+title: SSH公開鍵の登録・変更
 ---
 
 ## 公開鍵・秘密鍵の生成
