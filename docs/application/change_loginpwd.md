@@ -7,7 +7,7 @@ title: "パスワード変更"
 
 ## 手順
 
-1. [ユーザー登録・変更 > ユーザ登録・変更申請](/application/registration)のページで「パスワード変更申請」をクリックします。
+1. [利用申請・変更 > 利用申請](/application/registration)のページで「パスワード変更申請」をクリックします。
 
 ![](change_pwd_click_jp.png)
 

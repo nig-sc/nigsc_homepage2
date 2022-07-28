@@ -18,7 +18,7 @@ In principle, the purpose of use and results are open to the public. However, if
 
 #### Application for use
 
-- [New User Registration Application](/application/registration)
+- [New Use Application](/application/registration)
 - Check [Issuance criteria for user accounts](/application/), [Use Policy](/application/use_policy) and [the following "The responsible person"](/application/#the-responsible-person) in advance.
 - For foreign nationals and those residing abroad, read [the following "Precautions for FEFTA"](/application/#precautions-for-fefta).
 

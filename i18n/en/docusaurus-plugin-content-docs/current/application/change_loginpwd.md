@@ -7,7 +7,7 @@ We strongly recommend that you change your initial password or your password reg
 
 ## Procedure
 
-1. Click "Password change application" on the ["User Registration/Change Request" page](/application/registration).
+1. Click "Password change application" on the ["Use Application, etc. > Application for use/change" page](/application/registration).
 
 ![](change_pwd_click_en.png)
 

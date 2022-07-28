@@ -17,7 +17,7 @@ title: "利用の準備(一般解析区画)"
 ユーザーアカウント発行基準につきましては、[こちら](../application/application.md)をご参照下さい。
 
 <ol>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規登録申請フォーム</a>から申請登録をしてください。</li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">利用申請フォーム</a>から申請登録をしてください。</li>
     <ul>
     <li>事前に「<a href="https://sc.ddbj.nig.ac.jp/application/">ユーザーアカウント発行基準</a>」及び「<a href="https://sc.ddbj.nig.ac.jp/application/use_policy">利用規程</a>」をご確認ください。</li>
     <li>メールアドレスは、フリーメールアドレスではなく、所属機関のメールアドレスをご入力ください。(特別な場合を除く)</li>

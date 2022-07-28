@@ -14,7 +14,7 @@ The general analysis section of NIG supercomputer can be used with a computer ru
 ## Steps from user account application to start of use
 
 <ol>
-<li>Apply for <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">the application form of new user registration to register your application</a>.</li>
+<li>Apply for <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">the use application form to register your application</a>.</li>
     <ul>
     <li>Before you fill it in, ensure <a href="https://sc.ddbj.nig.ac.jp/en/application/">"User Account Issuance Criteria"</a> and <a href="https://sc.ddbj.nig.ac.jp/en/application/use_policy">"Acceptable Use Policy"</a>.</li>
     <li>You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)</li>
