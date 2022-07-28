@@ -20,7 +20,7 @@ title: "利用申請・変更"
 <tr>
 <td width="400" valign="top">
 
-![](new_registration_JP.png)
+![](Registration_JP_1.png)
 
 </td>
 <td width="400" valign="top">
@@ -38,7 +38,11 @@ title: "利用申請・変更"
 
 
 <tr>
-<td>所属機関</td>
+<td>
+
+![](Registration_JP_2.png)
+
+</td>
 <td>
 
 - 本人確認のために所属機関に郵送でアカウント証をお送りします。所属機関の住所を記入してください。
@@ -48,6 +52,9 @@ title: "利用申請・変更"
 
 <tr>
 <td>
+
+![](Registration_JP_3.png)
+
 </td>
 <td>
 
@@ -62,7 +69,9 @@ title: "利用申請・変更"
 
 <tr>
 <td>
-責任者の情報のフォーム
+
+![](Registration_JP_4.png)
+
 </td>
 <td>
 
@@ -81,6 +90,9 @@ title: "利用申請・変更"
 
 <tr>
 <td>
+
+![](Registration_JP_5.png)
+
 </td>
 <td>
 利用登録申請完了後、通常一週間以内に DDBJ から申請者本人と責任者にメールで連絡差し上げます。
@@ -100,11 +112,11 @@ title: "利用申請・変更"
 
 申請内容の変更ページにアクセスすると、最初にページへのログイン画面が表示されます。
 
-![がぞう](??)
+![](Change_login.png)
 
 
 申請内容の変更ページから、所属、SSH 公開鍵、パスワードなどの変更やアカウントの利用終了の申請などができます。
 
-![がぞう](??)
+![](Change_App_JP.png)
 
 

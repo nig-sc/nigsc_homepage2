@@ -15,7 +15,7 @@ title: "Application for use/change"
 <tr>
 <td width="400" align="center">
 
-![](new_registration_EN.png)
+![](Registration_EN_1.png)
 New user registration application screen
 </td>
 <td valign="top">
