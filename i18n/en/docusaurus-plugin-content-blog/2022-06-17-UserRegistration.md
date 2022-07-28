@@ -1,6 +1,6 @@
 ---
 slug: 2022-06-17-UserRegistration
-title: "(Ended)(Extension of suspension period) Suspend acceptance of new user registrations due to renewal of user registration system"
+title: "(Ended)(Extension of suspension period) Suspend acceptance of new use application due to renewal of the use application system"
 tags:
   - maintenance
 authros:
@@ -14,8 +14,8 @@ Publication date: 2022年6月15日
 
 ## Overview
 
-Currently, we are working on the renewal of the user registration system of the NIG supercomputer.
-Therefor, we will suspend the acceptance of new user application registration during the following period in order to perform the data migration.
+Currently, we are working on the renewal of the use application system of the NIG supercomputer.
+Therefor, we will suspend the acceptance of new use application during the following period in order to perform the data migration.
 
 
 ## Suspension period

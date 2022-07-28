@@ -59,16 +59,16 @@ The entry field of your SSH public key
 ![](reg_ssh.png)
 </td>
 <td>
-<p>The entry field of your SSH public key is displayed on the "Account" page of the new user registration application form. </p>
+<p>The entry field of your SSH public key is displayed on the "Account" page of the [Registration page](https://sc-account.ddbj.nig.ac.jp/en/application/registration). </p>
 <p>〔Registration procedure〕
 <ol>
 <li>Paste the key copied above on the bottom of the screen (red frame).</li>
 <li>Fill in the required fields.</li>
 <li>Press the "Next" button at the bottom of the screen to register the public key.</li></ol></p>
-Click below to display the new user registration application form.
+Click below to display the new use application form.
 <ul>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">the application form of new user registration(Japanese)</a></li>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">the application form of new user registration(English)</a></li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">the new use application form (Japanese)</a></li>
+<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">the new use application form (English)</a></li>
 </ul>
 </td>
 </tr>

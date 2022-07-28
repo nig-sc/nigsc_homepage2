@@ -1,9 +1,9 @@
 ---
 id: faq_NewUser_registration
-title: "FAQ(New User Registration Application)"
+title: "FAQ(New Use Application)"
 ---
 
-##  I want to logout from the application form of new user registration, but I cannot find the logout button.
+##  I want to logout from the use application form, but I cannot find the logout button.
 
 
 The red frame below is the logout button.
