@@ -31,9 +31,9 @@
     "message": "利用規定等",
     "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
   },
-  "sidebar.applicationsSidebar.category.ユーザー登録・変更": {
-    "message": "ユーザー登録・変更",
-    "description": "The label for category ユーザー登録・変更 in sidebar applicationsSidebar"
+  "sidebar.applicationsSidebar.category.利用申請・変更": {
+    "message": "利用申請・変更",
+    "description": "The label for category 利用申請・変更 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.課金サービス利用方法": {
     "message": "課金サービス利用方法",
