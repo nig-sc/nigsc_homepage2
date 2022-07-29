@@ -19,7 +19,7 @@ title: "ユーザーアカウント発行基準"
 
 #### 利用申込
 
-- 新規ユーザ登録申請は[こちら](/application/registration)。
+- 新規利用申請は[こちら](/application/registration)。
 - 事前に[ユーザーアカウント発行基準](/application/)、[利用規定](/application/use_policy)、[下記「責任者について」](/application/#責任者について)をご確認ください。
 - 外国人および海外在住者については、[下記「外為法に関する注意事項」](/application/#外為法に関する注意事項)をお読みください。
 
