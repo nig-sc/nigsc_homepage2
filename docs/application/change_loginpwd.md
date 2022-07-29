@@ -3,26 +3,24 @@ id: change_loginpwd
 title: "パスワード変更"
 ---
 
-不正なアクセスを防ぎ、より安全にご利用いただくために、初期パスワードの変更と定期的なパスワードの変更を強くお勧めします。
-
 ## 手順
 
-1. [利用申請・変更 > 利用申請](/application/registration)のページで「パスワード変更申請」をクリックします。
+1. [こちらのページをクリックし、ログインページに移動します。](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256)
 
-![](change_pwd_click_jp.png)
+2. 以下のログイン画面が表示されますので、アカウント名とパスワードを入力し、「Sign In」をクリックします。
 
-2. 「ログイン」をクリックし、ログインします。
+![](Change_login.png)
 
-![](login.png)
+「Sign In」をクリックすると、以下の画面になります。
+「パスワード」をクリックします。
+
+![](after_login_JP.png)
 
 
 3. 新しいパスワードを登録します。
 
-① 「パスワード」をクリックします。
-
-② 新しいパスワードを入力します。
-
-③ 「パスワードを変更する」をクリックします。
+「パスワード」をクリックすると、以下の画面になります。
+新しいパスワードを入力し、「パスワードを変更する」をクリックします。
 
 ![](change_pwd.png)
 

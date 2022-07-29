@@ -3,25 +3,25 @@ id: change_loginpwd
 title: "Change password"
 ---
 
-We strongly recommend that you change your initial password or your password regularly to prevent unauthorized access and to use it more securely.
-
 ## Procedure
 
-1. Click "Password change application" on the ["Use Application, etc. > Application for use/change" page](/application/registration).
+1. [Click here to go to the login page.](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256)
 
-![](change_pwd_click_en.png)
+2. The following login screen will de displayed, enter your account name and password. Click 'Sign In'.
 
-2. Click "Log in" and login your account page.
+![](Change_login.png)
 
-![](login_en.png)
+You can see the following screen after clicking 'Sign In'.
+Click 'Password'.
+
+![](after_login_EN.png)
+
 
 3. Register the new password.
 
-① Click "Password".
+After clicking 'Password', the following screen is displayed.
+Enter your new password and click 'Update'.
 
-② Enter the new password.
-
-③ Click "Update".
 
 ![](change_pwd_en.png)
 
