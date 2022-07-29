@@ -51,31 +51,9 @@ $
 
 
 鍵ペアの保存先を確認すると、`id_rsa`, `id_rsa.pub`の２つのファイルが作成されています。
-`id_rsa.pub`が公開鍵になりますので、ファイルの内容を全部コピーし下記の「SSH公開鍵」にペーストすることで、公開鍵の登録が出来ます。
+`id_rsa.pub`が公開鍵になりますので、ファイルの内容を全部コピーし下記の赤枠部分「SSH鍵」にペーストすることで、公開鍵の登録が出来ます。
 
-SSH公開鍵の入力箇所
-<table>
-<tr>
-<td>
-
-![](reg_ssh.png)
-</td>
-<td>
-<p>SSH公開鍵の入力箇所は、[利用登録申請のページ](https://sc-account.ddbj.nig.ac.jp/application/registration)の「アカウント」のページに表示される。</p>
-<p>〔登録手順〕
-<ol>
-<li>画面下部（赤枠）部分に上記でコピーした鍵をペーストする。</li>
-<li>ペーストしたら、必要な項目を埋める。</li>
-<li>画面下部の「次へ」ボタンを押して登録を行う。</li></ol></p>
-新規利用申請フォームは下記をクリックすると表示される。
-<ul>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規利用申請フォーム(日本語ページ)</a></li>
-<li><a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">新規利用申請フォーム(英語ページ)</a></li>
-</ul>
-</td>
-</tr>
-
-</table>
+![](reg_ssh_JP.png)
 
  
 
