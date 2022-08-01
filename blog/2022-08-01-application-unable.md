@@ -1,6 +1,6 @@
 ---
 slug: 2022-08-01-application-unable
-title: "利用申請システムが一時使用できなくなります"
+title: "2022年8月1日 利用申請システムが一時使用できなくなります"
 tags:
   - maintenance
 authros:
