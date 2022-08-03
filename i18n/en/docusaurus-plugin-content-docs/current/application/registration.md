@@ -116,7 +116,7 @@ If your affiliation or other details change, immediately [change your applicatio
 ![](Change_App_EN.png)
 
 
-If the screen below is displayed, not the one above, click on 'Sing in with Keycload'.
-After clicking, the screen above is displayed.
+If the following screen appears instead of the Change of application details page above, click "Sing in with Keycloak".
+After clicking, you can see the Change of application details page above.
 
 ![](Keycload.png)
