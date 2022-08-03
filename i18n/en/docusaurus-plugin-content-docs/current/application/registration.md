@@ -106,13 +106,17 @@ The DDBJ will normally contact the applicant and the responsible person by email
 If your affiliation or other details change, immediately [change your application details here](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256).
 
 
-When accessing the page to change the application details, you can see first a login screen to the page.
+1. When accessing the page to change the application details, you can see first a login screen to the page.
 
 ![](Change_login.png)
 
 
-From the page to change the application details, you can change your affiliation, SSH public key, password, etc., or request for termination of account use.
+2. From the page to change the application details, you can change your affiliation, SSH public key, password, etc., or request for termination of account use.
 
 ![](Change_App_EN.png)
 
 
+If the screen below is displayed, not the one above, click on 'Sing in with Keycload'.
+After clicking, the screen above is displayed.
+
+![](Keycload.png)
