@@ -29,7 +29,7 @@ title: "利用申請・変更"
 
 - メールアドレスは誤送信対策のためフリーメールではなく所属機関のメールアドレスを記載してください。
 - 利用目的は正確に記載してください。ここで記載した利用目的以外でのスパコンの利用は禁止しています。
-    
+
 
 
 </td>
@@ -106,7 +106,7 @@ title: "利用申請・変更"
 ## 申請内容の変更
 
 
-所属などが変更になった場合は速やかに[こちらのページから申請内容の変更](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256)をお願いいたします。
+所属などが変更になった場合は速やかに[こちらのページから申請内容の変更](https://sc-account.ddbj.nig.ac.jp/login)をお願いいたします。
 
 
 1. 申請内容の変更ページにアクセスすると、最初にページへのログイン画面が表示されます。
@@ -118,7 +118,9 @@ title: "利用申請・変更"
 
 ![](Change_App_JP.png)
 
+
 もしも上記の画面ではなく、下記の画面が表示されてしまった場合は、「Sing in with Keycload」をクリックします。
 クリックすると、上記の画面になります。
 
 ![](Keycload.png)
+
