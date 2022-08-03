@@ -106,7 +106,7 @@ title: "利用申請・変更"
 ## 申請内容の変更
 
 
-所属などが変更になった場合は速やかに[こちらのページから申請内容の変更](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=Av6hKK0XEXq76U8bg5_qxIDSJTQ-MfUqwTsXbeaPcKo&code_challenge=1kc_gNQQE2ySHJt9Kzh-jdY6c1yxKx4uFfGApkWRWFc&code_challenge_method=S256)をお願いいたします。
+所属などが変更になった場合は速やかに[こちらのページから申請内容の変更](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256)をお願いいたします。
 
 
 1. 申請内容の変更ページにアクセスすると、最初にページへのログイン画面が表示されます。
