@@ -7,10 +7,9 @@ The figure below shows the status of job accumulation for each queue of Grid Eng
 
 - Left (the line graph): The number of jobs per hour that have started running out of the jobs waiting in the queue.
 - Center (the bar graph): The number of jobs currently running (red) and waiting in the queue (blue).
-- Right: Estimated wait time = The number of jobs currently waiting / number of jobs per hour that have started running.
+- Right: Estimated waiting time [hours] = The quantity of jobs currently waiting [slots] / The quantity per hour of jobs that have started running [slots/hour].
 
-
-The number of jobs is calculated as the number of slots occupied by jobs.
+The quantity of jobs is calculated as the number of slots occupied by jobs.
 
 <img alt="job accumlation status" src="https://ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
 
