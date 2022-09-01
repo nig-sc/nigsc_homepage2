@@ -253,6 +253,7 @@ module.exports = {
                 "operation/operation",
                 "operation/qstatGC",
                 "operation/gfree",
+                "operation/Total_PowerConsumption",
             ]
         }
     ],
