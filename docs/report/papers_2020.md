@@ -497,8 +497,8 @@ m dimers: Coarse-grained molecular dynamics simulation of disk membranes</td>
 </tr>
 <tr>
     <td>54</td>
-    <td>西原 昌宏</td>
-    <td>Masahiro Nishihara</td>
+    <td>西原 昌宏, 田崎 啓介</td>
+    <td>Masahiro Nishihara, Keisuke Tasaki</td>
     <td>Molecular characterization of an anthocyanin-related glutathione S- transferase gen
 e in Japanese gentian with the CRISPR/Cas9 system</td>
     <td>BMC Plant Biol. 2020 Aug 6;20(1):370. </td>

@@ -4,7 +4,7 @@ title: Published Papers(2021)
 ---
 
 
-## List of papers published by users between 2021.01.01 -- 2021.12.31.
+## List of papers published by users January 1st, 2021 -- December 31st, 2021
 
 ### Papers compiled at the end-of-year renewal in 2021
 
