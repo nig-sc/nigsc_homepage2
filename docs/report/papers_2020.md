@@ -1,15 +1,17 @@
 ---
 id: papers_2020
-title: 論文リスト(2020)
+title: 論文のリスト(2020)
 ---
 
-2020.01.01 -- 2020.12.31にユーザによって発表された論文リスト
+## 2020.01.01 -- 2020.12.31にユーザによって発表された論文のリスト
+
+### 2020年度の年度末更新時に集計した論文
 
 <table>
 <tr>
     <td></td>
-    <td>Authors (Japanese)</td>
-    <td>Authors</td>
+    <td>Supercomputer users in authors list (Japanese)</td>
+    <td>Supercomputer users in authors list</td>
     <td>Title</td>
     <td>Journal, Volume, Number, Pages</td>
     <td>PMID</td>
@@ -1133,5 +1135,30 @@ e in Japanese gentian with the CRISPR/Cas9 system</td>
 	<td>Insect Sci. 2020 Apr;27(2):202-211.</td>
 	<td>30203565</td>
 	<td>doi: 10.1111/1744-7917.12640.</td>
+</tr>
+</table>
+
+### 2020年度の年度末更新時の後に追加で申請があった論文
+
+<table>
+<tr>
+    <td></td>
+    <td>Supercomputer users in authors list(Japanese)</td>
+    <td>Supercomputer users in authors list</td>
+    <td>Title</td>
+    <td>Journal, Volume, Number, Pages</td>
+    <td>PMID</td>
+    <td>DOI</td>
+    <td>
+</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>鈴木 郁夫</td>
+    <td>Ikuo K Suzuki</td>
+    <td>Molecular drivers of human cerebral cortical evolution</td>
+    <td>Neuroscience research. 2020 Feb;151:1-14.</td>
+    <td>31175883</td>
+    <td>doi: 10.1016/j.neures.2019.05.007</td>
 </tr>
 </table>
