@@ -3,7 +3,7 @@ id: papers_2018
 title: Published Papers(2018)
 ---
 
-## List of papers published by users between 2018.01.01 -- 2018.12.31.
+## List of papers published by users January 1st, 2018 -- December 31st, 2018
 
 ### Papers compiled at the end-of-year renewal in 2018
 
