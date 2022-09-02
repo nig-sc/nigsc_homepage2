@@ -20,6 +20,7 @@ sidebar_label: トップページ
 
 ## 最近のお知らせ
 
+- [電力使用状況のページを追加しました](/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
 - &#x26A0;[利用申請システムの刷新](/blog/2022-07-05-news_NewApp) (2022.07.05更新)
 - [Lustre8の解析用ストレージを追加しました](/blog/2022-07-05-Lustre8_300TB_add) (2022.07.05)
 - &#x26A0;[大規模ユーザ新規利用申請の一時停止](/blog/2022-05-13-suspension-of-applications) (2022.05.13)

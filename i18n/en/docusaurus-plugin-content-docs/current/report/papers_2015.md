@@ -3,7 +3,7 @@ id: papers_2015
 title: Published Papers(2015)
 ---
 
-## List of papers published by users between 2015.01.01 -- 2015.12.31.
+## List of papers published by users January 1st, 2015 -- December 31st, 2015
 
 ### Papers compiled at the end-of-year renewal in 2015
 
