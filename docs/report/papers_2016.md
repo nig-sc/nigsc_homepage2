@@ -1,15 +1,18 @@
 ---
 id: papers_2016
-title: 論文リスト(2016)
+title: 論文のリスト(2016)
 ---
 
-2016.01.01 -- 2016.12.31にユーザによって発表された論文リスト
+## 2016.01.01 -- 2016.12.31にユーザによって発表された論文のリスト
+
+### 2016年度の年度末更新時に集計した論文
+
 
 <table>
 <tr>
     <td></td>
-    <td>Authors (Japanese)</td>
-    <td>Authors</td>
+    <td>Supercomputer users in authors list (Japanese)</td>
+    <td>Supercomputer users in authors list</td>
     <td>Title</td>
     <td>Journal, Volume, Number, Pages</td>
     <td>PMID</td>

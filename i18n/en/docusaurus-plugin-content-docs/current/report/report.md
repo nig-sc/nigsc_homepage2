@@ -165,51 +165,64 @@ title: "Statistics"
 </table>
 
 
-## 論文数
+## 発行済み査読付き論文数
 
 集計期間：1月1日〜12月31日
-
-※ 原著論文発行済のみを数えることとする
 
 <table>
 <tr>
 	<th width="300">論文雑誌の出版年</th>
-	<th width="300">論文数</th>
+	<th width="300">各年度末更新時に集計した論文数</th>
+	<th width="300">各年度末更新時の後に追加で申請があった論文数</th>
 </tr>
 <tr>
 	<td>2012</td>
 	<td>9</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2013</td>
 	<td>23</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2014</td>
 	<td>53</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2015</td>
 	<td>43</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2016</td>
 	<td>83</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2017</td>
 	<td>93</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2018</td>
 	<td>113</td>
+	<td>0</td>
 </tr>
 <tr>
 	<td>2019</td>
 	<td>104</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>2020</td>
 	<td>124</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>2021</td>
+	<td>167</td>
+	<td>0</td>
 </tr>
 </table>
