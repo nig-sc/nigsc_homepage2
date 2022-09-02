@@ -3,7 +3,7 @@ id: papers_2017
 title: Published Papers(2017)
 ---
 
-## List of papers published by users between 2017.01.01 -- 2017.12.31.
+## List of papers published by users January 1st, 2017 -- December 31st, 2017
 
 ### Papers compiled at the end-of-year renewal in 2017
 

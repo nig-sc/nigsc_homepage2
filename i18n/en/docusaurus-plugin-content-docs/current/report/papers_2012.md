@@ -3,7 +3,7 @@ id: papers_2012
 title: Published Papers(2012)
 ---
 
-## List of papers published by users between 2012.01.01 -- 2012.12.31.
+## List of papers published by users January 1st, 2012 -- December 31st, 2012
 
 ### Papers compiled at the end-of-year renewal in 2021
 
