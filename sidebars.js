@@ -3,9 +3,7 @@
  - create an ordered group of docs
  - render a sidebar for each doc of that group
  - provide next/previous navigation
-
  The sidebars can be generated from the filesystem, or explicitly defined here.
-
  Create as many sidebars as you want.
 */
 
@@ -253,6 +251,7 @@ module.exports = {
                 "operation/operation",
                 "operation/qstatGC",
                 "operation/gfree",
+                "operation/Total_PowerConsumption",
             ]
         }
     ],
@@ -261,6 +260,7 @@ module.exports = {
             "report/report",
         ],
         "論文リスト": [
+            "report/papers_2021",
             "report/papers_2020",
             "report/papers_2019",
             "report/papers_2018",

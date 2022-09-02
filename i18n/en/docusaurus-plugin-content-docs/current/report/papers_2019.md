@@ -1,15 +1,17 @@
 ---
 id: papers_2019
-title: Published Papers (2019)
+title: Published Papers(2019)
 ---
 
-List of papers published by users between 2019.01.01 -- 2019.12.31.
+## List of papers published by users between 2019.01.01 -- 2019.12.31.
+
+### Papers compiled at the end-of-year renewal in 2019
 
 <table>
 <tr>
     <td></td>
-    <td width="150">Authors (Japanese)</td>
-    <td>Authors</td>
+    <td width="150">Supercomputer users in authors list (Japanese)</td>
+    <td>Supercomputer users in authors list</td>
     <td>Title</td>
     <td>Journal, Volume, Number, Pages</td>
     <td>PMID</td>
@@ -953,5 +955,28 @@ ted with Lotus japonicus in Natural Environments</td>
 	<td>Cell Reports Volume 26, Issue 9, 26 February 2019, Pages 2274-2281.e5</td>
 	<td>NULL</td>
 	<td>doi.org/10.1016/j.celrep.2019.01.109</td>
+</tr>
+</table>
+
+### Additional papers submitted after the end-of-year renewal in 2019.
+
+<table>
+<tr>
+    <td></td>
+    <td width="150">Supercomputer users in authors list (Japanese)</td>
+    <td>Supercomputer users in authors list</td>
+    <td>Title</td>
+    <td>Journal, Volume, Number, Pages</td>
+    <td>PMID</td>
+    <td>DOI</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Yassouf Mhd Yousuf</td>
+    <td>M Yousuf Yassouf</td>
+    <td>Compliance with Deferoxamine Therapy and Thyroid Dysfunction of Patients with β-Thalassemia Major in Syria</td>
+    <td>Hemoglobin. 2019 May;43(3):218-221.</td>
+    <td>31373517</td>
+    <td>doi: 10.1080/03630269.2019.1639517</td>
 </tr>
 </table>

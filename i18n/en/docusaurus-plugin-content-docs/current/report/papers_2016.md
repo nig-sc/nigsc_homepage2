@@ -3,13 +3,15 @@ id: papers_2016
 title: Published Papers(2016)
 ---
 
-List of papers published by users between 2016.01.01 -- 2016.12.31.
+## List of papers published by users between 2016.01.01 -- 2016.12.31.
+
+### Papers compiled at the end-of-year renewal in 2016
 
 <table>
 <tr>
     <td></td>
-    <td>Authors (Japanese)</td>
-    <td>Authors</td>
+    <td>Supercomputer users in authors list (Japanese)</td>
+    <td>Supercomputer users in authors list</td>
     <td>Title</td>
     <td>Journal, Volume, Number, Pages</td>
     <td>PMID</td>
