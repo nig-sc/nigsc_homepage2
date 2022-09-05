@@ -1,6 +1,6 @@
 ---
 slug: 2022-05-10-news_PortablePipeline
-title: 2022 年 5 月 10 日(火) 東大 吉武先生が開発したPortablePipelineの紹介を追加しました
+title: 2022 年 5 月 10 日(火) 東大 吉武先生が開発したPortablePipelineの紹介ページの追加
 tags:
   - news
 authros:

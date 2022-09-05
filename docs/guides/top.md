@@ -21,10 +21,10 @@ sidebar_label: トップページ
 ## 最近のお知らせ
 
 - [電力使用状況のページを追加しました](/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
-- &#x26A0;[利用申請システムの刷新](/blog/2022-07-05-news_NewApp) (2022.07.05更新)
-- [Lustre8の解析用ストレージを追加しました](/blog/2022-07-05-Lustre8_300TB_add) (2022.07.05)
-- &#x26A0;[大規模ユーザ新規利用申請の一時停止](/blog/2022-05-13-suspension-of-applications) (2022.05.13)
-- &#x1F9EC; [東大 吉武先生が開発したPortablePipelineの紹介を追加しました](/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
+- &#x26A0;[利用申請システムを刷新しました](/blog/2022-07-05-news_NewApp) (2022.07.05更新)
+- [Lustre8の解析用ストレージを増強しました](/blog/2022-07-05-Lustre8_300TB_add) (2022.07.05)
+- &#x26A0;[大規模ユーザ新規利用申請を一時停止しました](/blog/2022-05-13-suspension-of-applications) (2022.05.13)
+- &#x1F9EC; [東大 吉武先生が開発したPortablePipelineの紹介ページを追加しました](/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
 - &#x2714; [DDBJ グループクラウドの料金を値下げしました](/blog/2022-04-05-news_DGC) (2022.04.05)
 - [ゲートウェイノードを追加しました](blog/2022-03-17-gateway_ga) (2022.03.17)
 

@@ -7,11 +7,10 @@ title: "Statistics"
 
 ## number of users
 
-Aggregation period: January 1st -- December 31st
 
 <table>
 <tr>
-	<th width="300">year</th>
+	<th width="300">Aggredated date</th>
     <th width="300">login user (normal)</th>
 	<th width="300">login user (large scale)</th>
 	<th width="300">DDBJ</th>
@@ -19,7 +18,7 @@ Aggregation period: January 1st -- December 31st
 	<th width="300">Total</th>
 </tr>
 <tr>
-	<td>2012</td>
+	<td>12-31-2012</td>
 	<td>165</td>
 	<td>69</td>
 	<td>70</td>
@@ -27,7 +26,7 @@ Aggregation period: January 1st -- December 31st
 	<td>320</td>
 </tr>
 <tr>
-	<td>2013</td>
+	<td>12-31-2013</td>
 	<td>270</td>
 	<td>84</td>
 	<td>80</td>
@@ -35,7 +34,7 @@ Aggregation period: January 1st -- December 31st
 	<td>453</td>
 </tr>
 <tr>
-	<td>2014</td>
+	<td>12-31-2014</td>
 	<td>380</td>
 	<td>105</td>
 	<td>82</td>
@@ -43,7 +42,7 @@ Aggregation period: January 1st -- December 31st
 	<td>580</td>
 </tr>
 <tr>
-	<td>2015</td>
+	<td>12-31-2015</td>
 	<td>519</td>
 	<td>139</td>
 	<td>83</td>
@@ -51,7 +50,7 @@ Aggregation period: January 1st -- December 31st
 	<td>756</td>
 </tr>
 <tr>
-	<td>2016</td>
+	<td>12-31-2016</td>
 	<td>549</td>
 	<td>165</td>
 	<td>88</td>
@@ -59,7 +58,7 @@ Aggregation period: January 1st -- December 31st
 	<td>816</td>
 </tr>
 <tr>
-	<td>2017</td>
+	<td>12-31-2017</td>
 	<td>557</td>
 	<td>182</td>
 	<td>92</td>
@@ -67,7 +66,7 @@ Aggregation period: January 1st -- December 31st
 	<td>846</td>
 </tr>
 <tr>
-	<td>2018</td>
+	<td>12-31-2018</td>
 	<td>616</td>
 	<td>199</td>
 	<td>88</td>
@@ -75,7 +74,7 @@ Aggregation period: January 1st -- December 31st
 	<td>921</td>
 </tr>
 <tr>
-	<td>2019</td>
+	<td>12-31-2019</td>
 	<td>706</td>
 	<td>178</td>
 	<td>91</td>
@@ -83,7 +82,7 @@ Aggregation period: January 1st -- December 31st
 	<td>990</td>
 </tr>
 <tr>
-	<td>2020</td>
+	<td>12-31-2020</td>
 	<td>949</td>
 	<td>165</td>
 	<td>100</td>
@@ -173,7 +172,7 @@ Aggregation period: January 1st -- December 31st
 <tr>
 	<th width="300">Journal published year</th>
 	<th width="300">Number of papers compiled at each end-of-year renewal</th>
-	<th width="300">Number of additional papers submitted after each end-of-year renewal</th>
+	<th width="300">Number of additional papers submitted after the end-of-year renewal tally for each year</th>
 </tr>
 <tr>
 	<td>2012</td>
