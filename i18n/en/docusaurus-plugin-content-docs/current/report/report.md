@@ -10,7 +10,7 @@ title: "Statistics"
 
 <table>
 <tr>
-	<th width="300">Aggredated date</th>
+	<th width="300">Aggregate date</th>
     <th width="300">login user (normal)</th>
 	<th width="300">login user (large scale)</th>
 	<th width="300">DDBJ</th>
@@ -97,7 +97,7 @@ title: "Statistics"
 <table>
 	<tbody>
 		<tr>
-			<th width="150" rowspan="2">Aggregated date</th>
+			<th width="150" rowspan="2">Aggregate date</th>
 			<th width="300" colspan="3">Domestic</th>
 			<th width="300" colspan="3">Outside the country</th>
 			<th width="100" rowspan="2">Total</th>
