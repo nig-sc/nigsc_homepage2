@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-12-news_Grid_Engine
-title: 2022 年 4 月 12 日(火) Grid Engine のページを更新しました
+title: 2022 年 4 月 12 日(火) Grid Engine のページの更新
 tags:
   - news
 authros:
