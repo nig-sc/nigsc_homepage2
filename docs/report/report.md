@@ -7,11 +7,9 @@ title: "各種統計"
 
 ## ユーザー数
 
-集計期間：1月1日〜12月31日
-
 <table>
 <tr>
-	<th width="300">year</th>
+	<th width="300">Aggredated date</th>
     <th width="300">login user (normal)</th>
 	<th width="300">login user (large scale)</th>
 	<th width="300">DDBJ</th>
@@ -19,7 +17,7 @@ title: "各種統計"
 	<th width="300">Total</th>
 </tr>
 <tr>
-	<td>2012</td>
+	<td>2012.12.31</td>
 	<td>165</td>
 	<td>69</td>
 	<td>70</td>
@@ -27,7 +25,7 @@ title: "各種統計"
 	<td>320</td>
 </tr>
 <tr>
-	<td>2013</td>
+	<td>2013.12.31</td>
 	<td>270</td>
 	<td>84</td>
 	<td>80</td>
@@ -35,7 +33,7 @@ title: "各種統計"
 	<td>453</td>
 </tr>
 <tr>
-	<td>2014</td>
+	<td>2014.12.31</td>
 	<td>380</td>
 	<td>105</td>
 	<td>82</td>
@@ -43,7 +41,7 @@ title: "各種統計"
 	<td>580</td>
 </tr>
 <tr>
-	<td>2015</td>
+	<td>2015.12.31</td>
 	<td>519</td>
 	<td>139</td>
 	<td>83</td>
@@ -51,7 +49,7 @@ title: "各種統計"
 	<td>756</td>
 </tr>
 <tr>
-	<td>2016</td>
+	<td>2016.12.31</td>
 	<td>549</td>
 	<td>165</td>
 	<td>88</td>
@@ -59,7 +57,7 @@ title: "各種統計"
 	<td>816</td>
 </tr>
 <tr>
-	<td>2017</td>
+	<td>2017.12.31</td>
 	<td>557</td>
 	<td>182</td>
 	<td>92</td>
@@ -67,7 +65,7 @@ title: "各種統計"
 	<td>846</td>
 </tr>
 <tr>
-	<td>2018</td>
+	<td>2018.12.31</td>
 	<td>616</td>
 	<td>199</td>
 	<td>88</td>
@@ -75,7 +73,7 @@ title: "各種統計"
 	<td>921</td>
 </tr>
 <tr>
-	<td>2019</td>
+	<td>2019.12.31</td>
 	<td>706</td>
 	<td>178</td>
 	<td>91</td>
@@ -83,7 +81,7 @@ title: "各種統計"
 	<td>990</td>
 </tr>
 <tr>
-	<td>2020</td>
+	<td>2020.12.31</td>
 	<td>949</td>
 	<td>165</td>
 	<td>100</td>
@@ -91,7 +89,7 @@ title: "各種統計"
 	<td>1231</td>
 </tr>
 <tr>
-	<td>2021</td>
+	<td>2021.12.31</td>
 	<td>1365</td>
 	<td>240</td>
 	<td>119</td>
@@ -106,18 +104,18 @@ title: "各種統計"
 <table>
 	<tbody>
 		<tr>
-			<th width="150" rowspan="2">集計日</th>
-			<th width="300" colspan="3">国内</th>
-			<th width="300" colspan="3">海外</th>
-			<th width="100" rowspan="2">総数</th>
+			<th width="150" rowspan="2">Aggregated date</th>
+			<th width="300" colspan="3">Domestic</th>
+			<th width="300" colspan="3">Outside the country</th>
+			<th width="100" rowspan="2">Total</th>
 		</tr>
 		<tr>
-			<td>大学・国公立研究機関</td>
-			<td>企業</td>
-			<td>計</td>
-			<td>大学・国公立研究機関</td>
-			<td>企業</td>
-			<td>計</td>
+			<td>Universities and public research institutes</td>
+			<td>company</td>
+			<td>Total</td>
+			<td>Universities and public research institutes</td>
+			<td>company</td>
+			<td>Total</td>
 		</tr>
 		<tr>
 			<td>2016.12.31</td>
@@ -192,7 +190,7 @@ title: "各種統計"
 <tr>
 	<th width="300">論文雑誌の出版年</th>
 	<th width="300">各年度末更新時に集計した論文数</th>
-	<th width="300">各年度末更新時の後に追加で申請があった論文数</th>
+	<th width="300">各年度末更新の集計後に追加で申請があった論文数</th>
 </tr>
 <tr>
 	<td>2012</td>
