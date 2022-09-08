@@ -16,4 +16,4 @@ A page about power consumption of the NIG supercomputer has been added to this h
 
 You can see a real-time graph of power consumption of the NIG supercomputer for the past week by clicking the link below.
 
-- 「&#x1f517;<a href="https://sc2.ddbj.nig.ac.jp/grafana/dashboard/snapshot/nugLTnQVa9KnAbKdrgInlU0MQkVMXqj7?orgId=1&kiosk">Power consumption of the NIG supercomputer</a>」
+- 「&#x1f517;<a href="https://sc2.ddbj.nig.ac.jp/grafana/dashboard/snapshot/U6A0L1zFSnyoNHaEAGDwfTNNDKQi4Edj?orgId=1&kiosk">Power consumption of the NIG supercomputer</a>」
