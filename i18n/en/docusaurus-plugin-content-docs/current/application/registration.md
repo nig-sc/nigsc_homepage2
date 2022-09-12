@@ -71,7 +71,7 @@ If you do not have one, do not enter anything.
 <td>
 
 For security traceability reasons, we ask you to designate a responsible person when applying for use.
-[For more information on how to designate a responsible person, see here](http://133.39.114.45:53000/application/#%E8%B2%AC%E4%BB%BB%E8%80%85%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6).
+[For more information on how to designate a responsible person, see here](/en/application/#the-responsible-person).
 
 - If you know both the account name and the group name of the responsible person, enter them in the form at the top.
 This allows you to omit entering the detailed data about the responsible person.

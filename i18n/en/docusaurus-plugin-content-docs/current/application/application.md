@@ -87,8 +87,8 @@ We ask the responsible person to submit a written pledge when applying for use o
 
 ### PLEDGE template
 
--[Pledge ① "The applicant and the responsible person is the same"](/files/seiyakusho_1.docx)
--[Pledge ② "The applicant and the responsible person is different"](/files/seiyakusho_2.docx) (a collaborator or student, etc.)
+- [Pledge ① "The applicant and the responsible person is the same"](/files/seiyakusho_1.docx)
+- [Pledge ② "The applicant and the responsible person is different"](/files/seiyakusho_2.docx) (a collaborator or student, etc.)
 
 ```
 Written Pledge 
