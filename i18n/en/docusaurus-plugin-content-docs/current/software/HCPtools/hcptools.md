@@ -25,7 +25,7 @@ For using HCP tools, all user must install the HCP tools client software on user
 Refer to the following documents depending on the environment of your client computer.
 
 - [Windows](/software/HCPtools/Windows/install_HCPtools_001)
-- Mac OS : This Platform is not available because of under development, so the client software is currently under development and is not available at this time. The service is scheduled to be available around June 2022.
+- Mac OS : This Platform is not available because of under development, so the client software is currently under development and is not available at this time.
 - Linux
     - [Ubuntu Linux](/software/HCPtools/Ubuntu/install_HCPtools_003)
     - [CentOS 7](/software/HCPtools/CentOS/install_HCPtools_002)
