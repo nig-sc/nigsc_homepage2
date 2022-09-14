@@ -3,16 +3,16 @@ id: registration
 title: "利用申請・変更"
 ---
 
-&#x26A0;現在、個人ゲノム解析区画の新規利用申請の受付を停止しております。詳細は<a href="https://sc.ddbj.nig.ac.jp/blog/2022-05-13-suspension-of-applications">「2022 年 5 月 13 日(金) 個人ゲノム解析区画および一般解析区画大規模ユーザの新規登録の一時停止」</a>をご参照ください。
+&#x26A0;現在、個人ゲノム解析区画および一般解析区画大規模ユーザの新規利用申請の受付を停止しております。詳細は<a href="https://sc.ddbj.nig.ac.jp/blog/2022-05-13-suspension-of-applications">こちらのお知らせをご参照ください</a>。
 
 
 ## 利用申請
 
-利用申請は[利用登録申請のページ](https://sc-account.ddbj.nig.ac.jp/application/registration)から随時受け付けています。
+[利用申請はこちらのページから](https://sc-account.ddbj.nig.ac.jp/application/registration)随時受け付けています。
 利用申請が受理されると高速ストレージ 1TB が利用可能となります。
 
 - 利用可能なストレージ領域を拡張したい場合や課金サービスを利用したい場合は、
-  利用申請が受理されたあとで利用計画表を提出してください。
+  利用申請が受理されたあとで[利用計画表を提出](/application/resource_extension)してください。
 
 
 <table>
@@ -24,8 +24,7 @@ title: "利用申請・変更"
 </td>
 <td width="400" valign="top">
 
-[利用登録申請のページ](https://sc-account.ddbj.nig.ac.jp/application/registration)にアクセスすると
-左図のような画面が表示されます。
+[利用登録申請のページ](https://sc-account.ddbj.nig.ac.jp/application/registration)にアクセスすると左図のような画面が表示されます。
 
 - メールアドレスは誤送信対策のためフリーメールではなく所属機関のメールアドレスを記載してください。
 - 利用目的は正確に記載してください。ここで記載した利用目的以外でのスパコンの利用は禁止しています。
@@ -109,19 +108,42 @@ title: "利用申請・変更"
 所属などが変更になった場合は速やかに[こちらのページから申請内容の変更](https://sc-account.ddbj.nig.ac.jp/login)をお願いいたします。
 
 
-1. 申請内容の変更ページにアクセスすると、最初にページへのログイン画面が表示されます。
+<table>
+<tr>
+<td width="400" valign="top">
 
 ![](Change_login.png)
 
+</td>
+<td width="400" valign="top">
 
-2. 申請内容の変更ページから、所属、SSH 公開鍵、パスワードなどの変更やアカウントの利用終了の申請などができます。
+申請内容の変更ページにアクセスすると、最初にページへのログイン画面が表示されます。
+
+</td>
+</tr>
+
+
+<tr>
+<td>
 
 ![](Change_App_JP.png)
 
+</td>
+<td>
 
-もし上記の申請内容の変更ページではなく、以下の画面が表示された場合は、「Sing in with Keycloak」をクリックします。
-クリックすると、上記の申請内容の変更ページが表示されます。
+申請内容の変更ページから、所属、SSH 公開鍵、パスワードなどの変更やアカウントの利用終了の申請などができます。
+
+
+もし、左図の申請内容の変更ページではなく、以下の画面が表示された場合は、「Sing in with Keycloak」をクリックします。
+
+
+</td>
+</tr>
+</table>
+
+「Sing in with Keycloak」をクリックすると、2.の申請内容の変更ページが表示されます。
 
 
 ![](Keycload.png)
+
 

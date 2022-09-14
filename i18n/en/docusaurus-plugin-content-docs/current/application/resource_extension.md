@@ -6,8 +6,8 @@ title: "Submission of Your Usage Plan"
 ## Usage plan
 
 
-- When you expand your available high-speed storage, or when you use the billing service, download the usage plan table, fill in the "Purpose of use, etc." and "Usage TB" and send to [Contact](/application/reference).
-
+- When you expand your available high-speed storage, or when you use the billing service, download the usage plan table, fill in and send to [Contact](/application/reference).
+- For details on billing services, such as the use of high-speed storage exceeding 30TB and the personal genome analysis environment, refer to the "[How to use the billing service](/application/billing_service)" page.
 
 ### Download the usage plan table
 
@@ -17,20 +17,21 @@ title: "Submission of Your Usage Plan"
 
 ![](usageTB_plain.png)
 
-![](purpose_of_use_etc_plain.png)
 
 </td>
 <td valign="top">
-Click here and download the usage plan table.
+Click here and download the usage plan table. (Downloaded as Excel)
 
 [<ul><li><font size="+1.5">the usage plan(2022)</font></li></ul>](/files/usage_plan-ver2.3.4-2022.xlsx)
-<p>&#x26A0; Currently, we are not accepting application for new use of large-scale storage. For more information, refer to <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">"May 13, 2022(Friday) - Suspend acceptance of new user registrations for the personal genome section and large-scale storage on the general analysis section"</a></p>
+<p>&#x26A0; Currently, we are not accepting application for new use of the personal genomic analysis section and large-scale storage on the general analysis section. For more information, <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">refer to this announcement page</a>.</p>
 </td>
 </tr>
 </table>
 
+### How to fill in the usage plan table 
 
-<font color="red"><b>！！</b></font> When applying,<font color="red"><b> fill in both the "Purpose of use, etc." and "Usage TB"</b></font> and submit that.<font color="red"><b>！！</b></font>  
+- The usage plan table contains <font color="red"><b>two sheets: "Purpose of Use, etc." and "Usage TB". Please fill in both sheets</b></font> and submit that.
+- Prepare and submit one usage plan table per responsible person. 
 
 <table>
 <tr>
@@ -60,9 +61,7 @@ Usage TB
 </tr>
 </table>
 
-- For details on billing services, such as the use of high-speed storage exceeding 30TB and the personal genome analysis environment, refer to the "[How to use the billing service](/application/billing_service)" page.
-
-- Prepare and submit one "purpose of use, etc." and "Usage TB" for each responsible person. You don't need to create and submit a separate application every time you apply for resource expansion. When your application changes, change and submit your previous application and plan. When creating it, describe everyone who uses the supercomputer under the principal investigator.
+You don't need to create and submit a separate application every time you apply for resource expansion. When your application changes, change and submit your previous usage plan table. When creating it, describe everyone who uses the supercomputer under the principal investigator.
 
 ## Group quotas for storage
 

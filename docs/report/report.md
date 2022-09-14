@@ -9,12 +9,12 @@ title: "各種統計"
 
 <table>
 <tr>
-	<th width="300">Aggregate date</th>
+	<th width="300">集計日</th>
     <th width="300">login user (normal)</th>
 	<th width="300">login user (large scale)</th>
 	<th width="300">DDBJ</th>
     <th width="300">SE</th>
-	<th width="300">Total</th>
+	<th width="300">合計</th>
 </tr>
 <tr>
 	<td>2012.12.31</td>
@@ -104,18 +104,18 @@ title: "各種統計"
 <table>
 	<tbody>
 		<tr>
-			<th width="150" rowspan="2">Aggregate date</th>
-			<th width="300" colspan="3">Domestic</th>
-			<th width="300" colspan="3">Outside the country</th>
-			<th width="100" rowspan="2">Total</th>
+			<th width="150" rowspan="2">集計日</th>
+			<th width="300" colspan="3">国内</th>
+			<th width="300" colspan="3">海外</th>
+			<th width="100" rowspan="2">総数</th>
 		</tr>
 		<tr>
-			<td>Universities and public research institutes</td>
-			<td>company</td>
-			<td>Total</td>
-			<td>Universities and public research institutes</td>
-			<td>company</td>
-			<td>Total</td>
+			<td>大学・国公立研究機関</td>
+			<td>企業</td>
+			<td>計</td>
+			<td>大学・国公立研究機関</td>
+			<td>企業</td>
+			<td>計</td>
 		</tr>
 		<tr>
 			<td>2016.12.31</td>
