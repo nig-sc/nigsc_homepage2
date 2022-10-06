@@ -1,6 +1,6 @@
 ---
 slug: 2022-05-10-news_PortablePipeline
-title: May 10, 2022(Tuesday) Added the introduction page of PortablePipeline developed by Professor Yoshitake of the University of Tokyo
+title: "May 10, 2022: Added the introduction page of PortablePipeline developed by Professor Yoshitake of the University of Tokyo"
 tags:
   - news
 authros:

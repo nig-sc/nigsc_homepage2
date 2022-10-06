@@ -1,6 +1,6 @@
 ---
 slug: 2022-03-17-gateway_ga
-title: March 17, 2022 (Thursday) Addition of New General Analysis Gateway
+title: "March 17, 2022: Addition of New General Analysis Gateway"
 tags:
   - news
 authros:
