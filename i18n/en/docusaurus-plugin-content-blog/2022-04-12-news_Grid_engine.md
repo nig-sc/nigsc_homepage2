@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-12-news_Grid_Engine
-title: April 12, 2022 (Thuesday) Updated Grid Engine page
+title: "April 12, 2022: Updated Grid Engine page"
 tags:
   - news
 authros:

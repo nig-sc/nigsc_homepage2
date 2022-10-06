@@ -1,6 +1,6 @@
 ---
 slug: 2022-07-05-news_NewApp
-title: 2022 年 7 月 5 日(火) 新規利用申請システムの刷新
+title: 2022年7月5日(火) 新規利用申請システムの刷新
 tags:
   - news
 authros:
