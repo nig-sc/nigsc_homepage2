@@ -1,6 +1,6 @@
 ---
 slug: 2022-10-06-Lustre8_maintenance
-title: "October 6, 2022: Emergency maintenance of Lustre8"
+title: "(Ended) October 6, 2022: Emergency maintenance of Lustre8"
 tags:
   - maintenance
 authros:
@@ -14,6 +14,9 @@ Publication date: October 6, 2022
 
 
 Following several incidents of poor performance of the Lustre8 high-speed storage system for the personal genome analysis section, the MDS of Lustre8 will be upgraded to prevent this.
+
+- The update was completed at around 10:40.
+- I/O suspension occurred between 10:19 and 10:23 due to this work.
 
 
 ## Date
