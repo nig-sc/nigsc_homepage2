@@ -1,6 +1,6 @@
 ---
 slug: 2022-06-17-UserRegistration
-title: "(Ended)(Extension of suspension period) Suspend acceptance of application for new use due to renewal of the application for use system"
+title: "(Ended)(Extension of suspension period) June 15, 2022: Suspend acceptance of application for new use due to renewal of the application for use system"
 tags:
   - maintenance
 authros:

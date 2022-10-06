@@ -1,6 +1,6 @@
 ---
 slug: 2022-07-05-news_NewApp
-title: July 5, 2022(Monday) Application system for new use is new
+title: "July 5, 2022: Application system for new use is new"
 tags:
   - news
 authros:

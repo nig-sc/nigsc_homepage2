@@ -1,6 +1,6 @@
 ---
 slug: 2022-04-12-news_Aspera_HCP
-title: 2022 年 4 月 12 日(火) 高速データ転送ソフトAsperaとHCP toolsのページの追加
+title: 2022年4月12日(火) 高速データ転送ソフトAsperaとHCP toolsのページの追加
 tags:
   - news
 authros:
