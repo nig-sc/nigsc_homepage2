@@ -1,6 +1,6 @@
 ---
 slug: 2022-09-02-news_PowerConsumption
-title: 2022 年 9 月 2 日(金) 電力使用状況のページの追加
+title: 2022年9月2日(金) 電力使用状況のページの追加
 tags:
   - news
 authros:

@@ -1,6 +1,6 @@
 ---
 slug: 2022-09-02-news_PowerConsumption
-title: September 2, 2022 (Friday) Added the power consumption page
+title: "September 2, 2022: Added the power consumption page"
 tags:
   - news
 authros:

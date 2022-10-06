@@ -1,6 +1,6 @@
 ---
 slug: 2022-08-01-application-unable
-title: "(Ended) August 1, 2022 (Monday) The application system for use will be temporarily unavailable"
+title: "(Ended) August 1, 2022: The application system for use will be temporarily unavailable"
 tags:
   - maintenance
 authros:

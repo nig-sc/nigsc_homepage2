@@ -1,6 +1,6 @@
 ---
 slug: 2022-05-19-news_guix_spack_nix
-title: May 19, 2022 (Thursday) Added pages for package managers that can be run with user permission
+title: "May 19, 2022: Added pages for package managers that can be run with user permission"
 tags:
   - news
 authros:
