@@ -3,7 +3,7 @@ id: ga_login
 title: "How to Login (The general analysis section)"
 ---
 
-[Register your SSH public key](/application/ssh_keys)  after your account registration.
+[First of all, you need to complete application for new use](/application/registration)
 
 ##  How to log in to the general analysis section with your account
 
@@ -11,6 +11,12 @@ title: "How to Login (The general analysis section)"
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
+```
+
+If your private key is stored in a location other than `~/.ssh/id_rsa`, specify the private key path as shown below.
+
+```
+ssh -i ~/yourpath/id_rsa youraccount@gw.ddbj.nig.ac.jp
 ```
 
 2. Enter the passphrase for the SSH key pair and press enter in "Enter passphrase for key ...".

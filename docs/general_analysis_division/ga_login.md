@@ -3,8 +3,7 @@ id: ga_login
 title: "ログイン方法(一般解析区画)"
 ---
 
-
-ユーザーのアカウント登録後、まず最初に必ず[SSH 公開鍵の登録](/application/ssh_keys)を行ってください。
+[まず最初に、新規利用申請を行ってください。](/application/registration)
 
 
 ## ログインの手順
@@ -15,6 +14,12 @@ title: "ログイン方法(一般解析区画)"
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
+```
+
+秘密鍵の格納場所が`~/.ssh/id_rsa`以外の場合は以下のように秘密鍵のパスを指定します。
+
+```
+ssh -i ~/yourpath/id_rsa youraccount@gw.ddbj.nig.ac.jp
 ```
 
 2, "Enter passphrase for key ..."のプロンプトに対し、SSH 鍵ペアのパスフレーズを入力し、enter を押下します。
