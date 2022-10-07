@@ -54,7 +54,7 @@ When you access [the page of registration application for use](https://sc-accoun
 <td>
 
 - Create an SSH public key, copy and paste it into the form.
-[For more information on how to create an SSH public key, see here](ssh_keys).
+[For more information on how to create an SSH public key, see here](ssh_keys_mac).
 - Enter here if you already have a JGA or AGD account.
 If you do not have one, do not enter anything.
 - If you use the personal genome analysis section, tick the box at the bottom.

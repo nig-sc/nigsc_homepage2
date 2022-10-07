@@ -57,7 +57,7 @@ DisableDataIntegrityChecking yes             # Allow no digest format
 HCP tools authenticates users using the public/private keys.
 
 In this case, you can use the public/private key files used for SSH login to the NIG supercomputer as the public/private keys.
-If you use them, make sure that the private key file (`id_rsa`) addresses under the user directory in the client computer (`C:\Users\username\.ssh` for Windows). (When you follow [how to set up the public key for SSH](/application/ssh_keys), the private key file should already be here.)
+If you use them, make sure that the private key file (`id_rsa`) addresses under the user directory in the client computer (`C:\Users\username\.ssh` for Windows). (When you follow [how to set up the public key for SSH](/application/ssh_keys_mac), the private key file should already be here.)
 
 
 ### Encryption
