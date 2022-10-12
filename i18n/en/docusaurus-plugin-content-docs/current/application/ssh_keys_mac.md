@@ -1,6 +1,6 @@
 ---
 id: ssh_keys_mac
-title: Registering or changing SSH public keys
+title: Registering or changing SSH public keys (mac)
 ---
 
 
@@ -66,6 +66,8 @@ If the version information is output, then it is installed and you can move on t
 ![](/img/ssh_keys/mac/ssh_mac_11.png)
 
 If the following screen appears, it is not yet installed. [Click here to refer to the FAQ and install openSSH client.](/faq/faq_sshkeys)
+
+![](/img/ssh_keys/mac/Openssh_none.png)
 
 
 ### Create SSH public key and private key
