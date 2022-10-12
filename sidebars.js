@@ -197,6 +197,7 @@ module.exports = {
             "application/renewal",
         ],
         "パスワード・公開鍵の設定方法": [
+            "application/ssh_keys",
             "application/ssh_keys_mac",
             "application/change_loginpwd",
         ],
