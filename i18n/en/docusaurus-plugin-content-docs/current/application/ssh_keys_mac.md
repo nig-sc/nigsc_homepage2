@@ -65,7 +65,7 @@ If the version information is output, then it is installed and you can move on t
 
 ![](/img/ssh_keys/mac/ssh_mac_11.png)
 
-It is recommended to use the latest version. <a href="http://www.openssh.com/">You can check more information about the latest version on the official OpehSSH website.
+It is recommended to use the latest version. <a href="http://www.openssh.com/">You can check more information about the latest version on the official OpehSSH website.</a>
 
 If the following screen appears, it is not yet installed. [Click here to refer to the FAQ and install openSSH client.](/faq/faq_sshkeys)
 
