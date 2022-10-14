@@ -53,16 +53,18 @@ title: SSH公開鍵の登録(Macの場合)
 
 
 ```
-$ ssh -V
+ssh -V
 ```
 
 ![](/img/ssh_keys/mac/ssh_mac_10.png)
 
-すると、以下のようにOpensSSHクライアントのバージョン情報が出力されます。
+すると、以下のようにOpensSSHクライアントのバージョン情報が出力されます。macOS Monterey 12.6では、デフォルトで、バージョン8.6p1がインストールされています。(2022年10月13日現在)
 
 バージョン情報が出力されていれば、インストールされている状態ですので、次の「SSH公開鍵と秘密鍵を作る」の作業に移ります。
 
 ![](/img/ssh_keys/mac/ssh_mac_11.png)
+
+最新バージョンの使用をおすすめいたします。<a href="http://www.openssh.com/">最新バージョンについての詳細は、OpehSSHの公式Webサイトで確認することができます。</a>
 
 もしも以下のような画面が表示された場合は、まだOpenSSHクライアントソフトウェアがインストールされていない状態です。[ここをクリックしてFAQを参照し、OpenSSHクライアントをインストールしてください。](/faq/faq_sshkeys)
 
@@ -77,7 +79,7 @@ $ ssh -V
 以下のコマンドを入力して、「enter」キーまたは「return」キーを押します。
 
 ```
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 3072
 ```
 
 ![](/img/ssh_keys/mac/ssh_mac_13.png)
