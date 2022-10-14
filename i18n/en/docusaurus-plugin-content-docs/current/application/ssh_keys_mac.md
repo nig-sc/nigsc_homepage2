@@ -53,17 +53,19 @@ OpenSSH client is a software, which is used to create SSH public key and private
 Enter the following command and press the 'enter' or 'return' key.
 
 ```
-$ ssh -V
+ssh -V
 ```
 
 ![](/img/ssh_keys/mac/ssh_mac_10.png)
 
 
-The version information of opensSSH client will then be output as follows.
+The version information of opensSSH client will then be output as follows. Version 8.6p1 is installed by default in macOS Monterey 12.6. (as of 13 Oct 2022).
 
 If the version information is output, then it is installed and you can move on to the next step of 'Create SSH public key and private key'.
 
 ![](/img/ssh_keys/mac/ssh_mac_11.png)
+
+It is recommended to use the latest version. <a href=”http://www.openssh.com/”>You can check more information about the latest version on the official OpehSSH website.
 
 If the following screen appears, it is not yet installed. [Click here to refer to the FAQ and install openSSH client.](/faq/faq_sshkeys)
 
