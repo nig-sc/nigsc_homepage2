@@ -16,7 +16,7 @@ To generate SSH public and private keys, use the `ssh-keygen` command.
 
 ```
 $ cd ~/.ssh
-$ ssh-keygen -t rsa -b 2048                                                      (1)
+$ ssh-keygen -t rsa -b 3072                                                      (1)
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/temp/.ssh/id_rsa):                    (2)
 Enter passphrase (empty for no passphrase):                                      (3)
@@ -27,7 +27,7 @@ The key fingerprint is:
 e5:23:f0:fc:b7:60:70:80:79:91:f2:f1:6d:a8:ae:90 temp@host
 ```
 
-- (1) Generate a 2048-bit key with RSA version 2.
+- (1) Generate a 3072-bit key with RSA version 2.
 - (2) Saving Public and private key: Specify the path here only if you want to change it. If not, press the Enter key.
 - (3) Enter the passphrase.
 - (4) Re-enter the passphrase.
