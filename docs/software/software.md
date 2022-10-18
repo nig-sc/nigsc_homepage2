@@ -116,6 +116,12 @@ title: ソフトウェア
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
 </tr>
+<tr>
+<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server">NBDC-DDBJインピュテーションサーバ (beta)</a></td>
+<td width="300">利用不可(※デモ利用機能準備中)</td>
+<td width="300">要申請</td>
+</tr>
+
 </table>
 
 
