@@ -226,6 +226,11 @@ module.exports = {
             "advanced_guides/Alphafold_2_1",
             "advanced_guides/Alphafold_2_2",
         ],
+        "NBDC-DDBJインピュテーションサーバ (beta)": [
+            "advanced_guides/imputation_server",
+            "advanced_guides/imputation_server_install",
+            "advanced_guides/imputation_server_tutorial",
+        ],
         "講習会": [
             "advanced_guides/IIBMP2021",
             "advanced_guides/IIBMP2020",
