@@ -16,7 +16,7 @@ To generate SSH public and private keys, use the `ssh-keygen` command.
 
 ```
 $ cd ~/.ssh
-$ ssh-keygen -t rsa -b 2048                                                      (1)
+$ ssh-keygen -t rsa -b 3072                                                      (1)
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/temp/.ssh/id_rsa):                    (2)
 Enter passphrase (empty for no passphrase):                                      (3)
@@ -27,7 +27,7 @@ The key fingerprint is:
 e5:23:f0:fc:b7:60:70:80:79:91:f2:f1:6d:a8:ae:90 temp@host
 ```
 
-- (1) Generate a 2048-bit key with RSA version 2.
+- (1) Generate a 3072-bit key with RSA version 2.
 - (2) Saving Public and private key: Specify the path here only if you want to change it. If not, press the Enter key.
 - (3) Enter the passphrase.
 - (4) Re-enter the passphrase.
@@ -48,7 +48,7 @@ $
 ```
 
 When you check the save location of the key pair, you will find two files, `id_rsa` and `id_rsa.pub`, are created.
-`id_rsa.pub` is the public key, so you can register the public key by copying all contents of the file and pasting it into the "SSH Key" below(red frame).
+`id_rsa.pub` is the public key, so you can register the public key by copying all character strings from "ssh-rsa" of the file and pasting it into the "SSH Key" below(red frame).
 
 ![](reg_ssh_EN.png)
  
@@ -58,14 +58,14 @@ When you check the save location of the key pair, you will find two files, `id_r
 Connect to the supercomputer system using the ssh command.
 
 ```
-$ ssh youraccount@gw.ddbj.nig.ac.jp
+$ ssh youraccount@gw2.ddbj.nig.ac.jp
 Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
-Last login: Fri Sep 19 13:28:19 2014 from gw.ddbj.nig.ac.jp
+Last login: Fri Sep 19 13:28:19 2014 from gw2.ddbj.nig.ac.jp
 ---------------------------------------------------------------------
 Thank you for using supercomputer system.
 This node is in use for login service only. Please use 'qlogin'.
 ---------------------------------------------------------------------
-[youraccount@gw ~]$
+[youraccount@gw2 ~]$
 ```
 
 When prompted for the passphrase, enter the passphrase that you specified for key generation.
@@ -73,8 +73,13 @@ After authentication, it is complete to login to the supercomputer system.
 If your private key is stored in a location other than `~/.ssh/id_rsa`, specify the private key path as shown below.
 
 ```
-ssh -i ~/yourpath/id_rsa youraccount@gw.ddbj.nig.ac.jp
+ssh -i ~/yourpath/id_rsa youraccount@gw2.ddbj.nig.ac.jp
 ```
+
+Please login from `gw2.ddbj.nig.ac.jp` immediately after setting your public key etc.
+
+As of 7 July 2022, we move the data to a new application system for use ("[July 5, 2022(Monday) Application system for new use is new](/en/blog/2022-07-05-news_NewApp)"). Therefore, public key registrations to the new gateway `gw2.ddbj.nig.ac.jp` will be reflected immediately, but it will take about one day for the settings to be reflected to the old gateway `gw.ddbj.nig.ac.jp`. At the next scheduled maintenance (December), the system will be modified so that the settings will be reflected immediately on the old gateway.
+
 
 If you have trouble connecting, refer to [FAQ](/faq/faq_login).
 
