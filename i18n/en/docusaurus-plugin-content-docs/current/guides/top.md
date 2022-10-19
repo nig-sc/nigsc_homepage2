@@ -19,6 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
+- &#x1F9EC; [Added the introduction page of the Imputation Server developed by Genome Analytics Japan Inc.](/en/blog/2022-10-18-news_Imputation-Server) (2022.10.18)
 - [Added the power consumption page](/en/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
 - &#x26A0;[Renewal of application system for use](/en/blog/2022-07-05-news_NewApp) (Update 2022.07.05)
 - [300TB more storage for analysis of Luster8](/en/blog/2022-07-05-Lustre8_300TB_add) (2022.07.05)
