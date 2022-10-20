@@ -76,7 +76,10 @@ DFASTは、国立遺伝学研究所 情報研究系中村研究室・大量遺�
 ![](dfast.png)
 </td>
 <td valign="top">
+
 スタンドアローン版をスパコンで実行する場合、<a href="https://github.com/nigyta/dfast_core/">https://github.com/nigyta/dfast_core/ </a>からソースコードを取得してインストールする方法 (Python 3.6 以降 + Biopython が必要) とスパコンで提供されている singularity コンテナを利用する方法 (参考: <a href="https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d">https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d</a>) があります。
+
+
 </td>
 </tr>
 </table>
