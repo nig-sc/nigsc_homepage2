@@ -1,6 +1,6 @@
 ---
 slug: 2022-10-20-Lustre7_maintenance
-title: "2022年10月21日(金) Lustre7の緊急メンテナンス"
+title: "(終了) 2022年10月21日(金) Lustre7の緊急メンテナンス"
 tags:
   - maintenance
 authros:
