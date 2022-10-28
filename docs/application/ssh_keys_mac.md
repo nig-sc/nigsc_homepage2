@@ -66,7 +66,7 @@ ssh -V
 
 最新バージョンの使用をおすすめいたします。<a href="http://www.openssh.com/">最新バージョンについての詳細は、OpehSSHの公式Webサイトで確認することができます。</a>
 
-もしも以下のような画面が表示された場合は、まだOpenSSHクライアントソフトウェアがインストールされていない状態です。[ここをクリックしてFAQを参照し、OpenSSHクライアントをインストールしてください。](/faq/faq_sshkeys)
+もしも以下のような画面が表示された場合は、まだOpenSSHクライアントソフトウェアがインストールされていない状態です。[ここをクリックしてFAQを参照し、OpenSSHクライアントをインストールしてください。](/faq/faq_sshkeys_mac)
 
 ![](/img/ssh_keys/mac/Openssh_none.png)
 
