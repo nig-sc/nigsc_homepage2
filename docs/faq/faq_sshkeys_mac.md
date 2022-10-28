@@ -1,6 +1,6 @@
 ---
-id: faq_sshkeys
-title: "FAQ(SSH公開鍵の登録について)"
+id: faq_sshkeys_mac
+title: "FAQ(SSH公開鍵の登録(macの場合))"
 ---
 
 ## `ssh -V`と入力して実行すると、`-bash: ssh: command not found`と出力された。

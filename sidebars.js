@@ -199,6 +199,7 @@ module.exports = {
         "パスワード・公開鍵の設定方法": [
             "application/ssh_keys",
             "application/ssh_keys_mac",
+            "application/ssh_keys_windows",
             "application/change_loginpwd",
         ],
         "課金サービス利用方法": [
@@ -305,7 +306,8 @@ module.exports = {
                 "faq/faq_billing_service",
                 "faq/faq_change_StorageCapacity",
                 "faq/faq_NewUser_registration",
-                "faq/faq_sshkeys",
+                "faq/faq_sshkeys_mac",
+                "faq/faq_sshkeys_windows",
             ]
         },
 
