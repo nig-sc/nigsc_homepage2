@@ -40,7 +40,7 @@ Windowsマークをクリックします。
 
 ![](/img/ssh_keys/windows/ssh_win_7.png)
 
-もし以下の画面のように、検索結果に実行ファイルが表示されない場合は、まだ最新バージョンのPowerShellがインストールされていない状態ですので、インストールが必要です。[FAQの「最新バージョンのPowerShellをインストールする方法」を参照して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
+もし以下の画面のように、検索結果に実行ファイルが表示されない場合は、まだ最新バージョンのPowerShellがインストールされていない状態ですので、インストールを推奨します。[FAQの「最新バージョンのPowerShellをインストールする方法」を参照して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
 
 ![](/img/ssh_keys/windows/ssh_win_7_nonpwsh.png)
 
