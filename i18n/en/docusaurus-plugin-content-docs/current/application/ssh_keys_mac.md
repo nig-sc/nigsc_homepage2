@@ -1,56 +1,56 @@
 ---
 id: ssh_keys_mac
-title: SSH公開鍵の登録(Macの場合)
+title: Registering or changing SSH public keys (mac)
 ---
 
-以下の順番で作業を行います。
+
+Procedure is as follows.
 
 ![](/img/ssh_keys/mac/ssh_mac_1.png)
 
 
-## ①SSH公開鍵と秘密鍵を作る
+## ①Create SSH public key and private key
 
 ![](/img/ssh_keys/mac/ssh_mac_2.png)
 
-### 「ターミナル」を起動する
+### Open Terminal on Mac
 
-まず、「Finder」をクリックします。
+First, click 'Finder'.
 
 ![](/img/ssh_keys/mac/ssh_mac_3.png)
 
-次に、「アプリケーション」をクリックします。
+Next, click 'Applications'.
 
 ![](/img/ssh_keys/mac/ssh_mac_4.png)
 
-次に、「ユーティリティ」をダブルクリックします。
+Then, double-click 'Utilities'.
 
 ![](/img/ssh_keys/mac/ssh_mac_5.png)
 
-最後に、「ターミナル」をダブルクリックします。
+And Finally, double-click 'Terminal'.
 
 ![](/img/ssh_keys/mac/ssh_mac_6.png)
 
-すると、「ターミナル」が起動します。
+Terminal will be opened.
 
 ![](/img/ssh_keys/mac/ssh_mac_7.png)
 
-このとき、「ターミナル」の画面は、以下のように表示されます。
+At this point, the Terminai screan appears as follows.
 
 ![](/img/ssh_keys/mac/ssh_mac_8.png)
 
-「ターミナル」の画面が表示されると、プロンプトが表示されます。プロンプトの最後には「$」が表示されています。プロンプトが表示されると、コマンドを入力できる状態になります。プロンプトの後ろの四角い箱は、カーソルといい、ここにコマンドを入力していきます。
+When the Terminal screan appears, you can see a prompt. The prompt ends with '$'. When the prompt appears, you are ready to enter commands. The square box after the prompt is called Cursor, where you enter commands.
 
-- コマンドを入力するときは、「$」は入力しないでください。「$」は「ターミナル」が自動で表示するので、ユーザが入力する必要はありません。
-- マウスで「$」やカーソルをクリックする必要はありません。カーソルが表示されたら、そのままの状態でコマンドを入力し、「enter」キーまたは「return」キーを押します。マウスは使いません。
+- When entering commands, do not type '$'. It is automatically displayed on the Terminal. You don't need to enter it.
+- You don't need to click '$' or Cursor using the mouse. When Cursor appears, enter the command as it is and press the 'enter' or 'return' key. The mouse is not used.
 
 ![](/img/ssh_keys/mac/ssh_mac_9.png)
 
-プロンプトとカーソルが表示されたことを確認したら、SSH公開鍵と秘密鍵を作る前に、OpenSSHクライアントソフトウェアがインストールされているか確認します。
+Once you have verified that the prompt and cursor appear, check that openSSH client is installed before creating the SSH public key and private key.
 
-このソフトウェアは、SSH公開鍵と秘密鍵を作ったり、遺伝研スパコンにSSHを用いて通信するためのコマンドを実行するときに使われるソフトウェアです。インストールされていないと、これ以降の作業ができないので、ここで確認しておきましょう。
+OpenSSH client is a software, which is used to create SSH public key and private key, and to execute commands to communicate with NIG supercomputer using SSH. If it is not installed, you will not be able to do any further work, so check here.
 
-以下のコマンドを入力し、「enter」キーまたは「return」キーを押します。
-
+Enter the following command and press the 'enter' or 'return' key.
 
 ```
 ssh -V
@@ -58,87 +58,90 @@ ssh -V
 
 ![](/img/ssh_keys/mac/ssh_mac_10.png)
 
-すると、以下のようにOpensSSHクライアントのバージョン情報が出力されます。macOS Monterey 12.6では、デフォルトで、バージョン8.6p1がインストールされています。(2022年10月13日現在)
 
-バージョン情報が出力されていれば、インストールされている状態ですので、次の「SSH公開鍵と秘密鍵を作る」の作業に移ります。
+The version information of opensSSH client will then be output as follows. Version 8.6p1 is installed by default in macOS Monterey 12.6. (as of 13 Oct 2022).
+
+If the version information is output, then it is installed and you can move on to the next step of 'Create SSH public key and private key'.
 
 ![](/img/ssh_keys/mac/ssh_mac_11.png)
 
-最新バージョンの使用をおすすめいたします。<a href="http://www.openssh.com/">最新バージョンについての詳細は、OpehSSHの公式Webサイトで確認することができます。</a>
+It is recommended to use the latest version. <a href="http://www.openssh.com/">You can check more information about the latest version on the official OpehSSH website</a>.
 
-もしも以下のような画面が表示された場合は、まだOpenSSHクライアントソフトウェアがインストールされていない状態です。[ここをクリックしてFAQを参照し、OpenSSHクライアントをインストールしてください。](/faq/faq_sshkeys_mac)
+If the following screen appears, it is not yet installed. [Click here to refer to the FAQ and install openSSH client.](/faq/faq_sshkeys_mac)
 
 ![](/img/ssh_keys/mac/Openssh_none.png)
 
-### SSH公開鍵と秘密鍵を作る
 
-バージョン情報が表示された行の次の行に、新たにプロンプトとカーソルが表示され、再び、コマンドを入力できる状態になります。
+### Create SSH public key and private key
+
+When a new prompt and cursor appear on the line following the line with version information, you can type the command again.
 
 ![](/img/ssh_keys/mac/ssh_mac_12.png)
 
-以下のコマンドを入力して、「enter」キーまたは「return」キーを押します。
+Type the following command and press the 'enter' or 'return' key.
 
 ```
-ssh-keygen -t rsa -b 3072
+ssh-keygen -t rsa -b 2048
 ```
 
 ![](/img/ssh_keys/mac/ssh_mac_13.png)
 
-すると、以下の画面のように、2行表示されます。
+Then, two lines are output as the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_14.png)
 
-`Enter file in which to save the key (/Users/your_username/.ssh/id_rsa):`と聞かれます。これは、「作ったSSH公開鍵と秘密鍵をあなたのPCの中のどこに保存しますか。」という意味です。
+You are asked to `Enter file in which to save the key (/Users/your_username/.ssh/id_rsa):`. This means: `Where in your PC do you want to save the SSH public key and private key you created?'.
 
-通常は何も入力しないで、そのまま「enter」キーまたは「return」キーを押します。
+Normally, do not type anything and just press the 'enter' or 'return' key.
 
 ![](/img/ssh_keys/mac/ssh_mac_15.png)
 
-すると、以下の画面のように、２行表示されます。
+Two lines will then be displayed, as shown in the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_16.png)
 
-`Enter passphrase (empty for no passphrase):`というメッセージが表示されます。ここにパスフレーズを入力してください。
+The message `Enter passphrase (empty for no passphrase):` is displayed. Enter your passphrase here.
 
-パスフレーズは遺伝研スパコンのパスワードとは違うものです。長い文字列を自由に設定することが出来ます。
-パスフレーズは、ランダムに本を開いた際のページの一行目など、スペースを含む長いランダムな文字列を設定することが想定されています。
+The passphrase is different from the NIG supercomputer password. It can be any long string of characters.
+The passphrase is supposed to be a long random string of characters, including spaces, such as the first line of a page when you open random a book.
 
 <table>
 	<tbody>
 		<tr>
-			<td>SSH では秘密鍵ファイルを所有していることが本人であることの根拠として扱われます。 秘密鍵ファイルを盗まれてしまうとなりすましが可能となります。 パスフレーズの設定は省略することが可能ですが、秘密鍵の盗難時の被害を軽減するために設定することを強く推奨します。</td>
+			<td>SSH treats possession of a private key file as evidence of identity. If the private key file is stolen, impersonation is possible. Although it is possible to omit the passphrase setting, it is strongly recommended to set it to reduce the damage in the event of private key theft.</td>
 		</tr>
 	</tbody>
 </table>
 
-パスフレーズを入力して、「enter」キーまたは「return」キーを押します。
+Enter the passphrase and press the 'enter' or 'return' key.
 
-&#x2757; パスフレーズを入力しても、画面は以下の状態のまま何も変化しません。入力している最中も、以下の画面のまま何も変化しませんが、気にせずそのまま入力していきます。入力が終わったら、「enter」キーまたは「return」キーを押します。
+&#x2757; After entering the passphrase, the screen remains as shown below and nothing changes. While entering the passphrase, the screen also remains as shown below and nothing changes, but do not worry about it and continue entering. When you have finished typing, press the 'enter' or 'return' key.
 
 ![](/img/ssh_keys/mac/ssh_mac_17.png)
 
-すると、以下の画面のように表示されます。
+You will then see the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_18.png)
 
-`Enter same passphrase again: `というメッセージが表示されます。上記で入力したパスフレーズと同じパスフレーズを入力して、「enter」キーまたは「return」キーを押します。
+The message `Enter same passphrase again: ` will be displayed. Enter the same passphrase as entered above and press the `enter' or `return' key.
 
 
-&#x2757; パスフレーズを入力しても、画面は以下の状態のまま何も変化しません。入力している最中も、以下の画面のまま何も変化しませんが、気にせずそのまま入力していきます。入力が終わったら、「enter」キーまたは「return」キーを押します。
+&#x2757; After entering the passphrase, the screen remains as shown below and nothing changes. While entering the passphrase, the screen also remains as shown below and nothing changes, but do not worry about it and continue entering. When you have finished typing, press the 'enter' or 'return' key.
 
 ![](/img/ssh_keys/mac/ssh_mac_19.png)
 
-すると、以下の画面のように表示されます。
+You will then see the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_20.png)
 
 
-#### &#x2666;**作ったSSH公開鍵と秘密鍵の存在を確認する**
-/Users/your_username/.ssh/というディレクトリの中に、SSH公開鍵と秘密鍵が本当に作られているかどうか確認していきます。
+#### &#x2666;**Check the existence of the SSH public key and private key you created**
+
+Check that the SSH public key and private key are indeed created in the directory /Users/your_username/.ssh/.
 
 ![](/img/ssh_keys/mac/ssh_mac_21.png)
 
-まず、.sshというディレクトリが本当にできているかを確認するために、以下のコマンドを入力して、「enter」キーまたは「return」キーを押します。
+First, to check that the directory named .ssh has really been created, type the following command and press the 'enter' or 'return' key.
 
 ```
 ls -la
@@ -146,19 +149,21 @@ ls -la
 
 ![](/img/ssh_keys/mac/ssh_mac_22.png)
 
-すると、以下の画面のように表示され、/Users/your_usernameのディレクトリの中に、.sshという名前のディレクトリが存在していることが確認できます。
+
+Then, you can confirm the existence of a directory named .ssh in the directory /Users/your_username as the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_23.png)
 
-次に、.sshというディレクトリの中に移動して、SSH公開鍵と秘密鍵が本当に作られているかどうか確認していきます。
+Then, move into the directory named .ssh to check that the SSH public key and private key have indeed been created.
 
-.sshの中に移動するために、以下のコマンドを入力して、「enter」キーまたは「return」キーを押します。
+To move into .ssh, type the following command and press the 'enter' or 'return' key.
 
 ```
 cd .ssh
 ```
 
-続けて、SSH公開鍵と秘密鍵が本当に作られているかどうか確認するために、以下のコマンドを入力して、「enter」キーまたは「return」キーを押します。
+Continue by typing the following command and pressing the 'enter' or ``return' key to check that the SSH public and private keys have indeed been created.
+
 
 ```
 ls -l
@@ -166,44 +171,39 @@ ls -l
 
 ![](/img/ssh_keys/mac/ssh_mac_24.png)
 
-すると、以下の画面のように表示され、SSH公開鍵と秘密鍵が本当に作られていることが確認できます。
+you can confirm that the SSH public and private keys have indeed been created as the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_25.png)
 
 
-#### &#x2666;**作ったSSH公開鍵を確認する**
+#### &#x2666;**Check the SSH public key you created**
 
-以下のコマンドを打ち込んで、「enter」キーまたは「return」キーを押して、作ったSSH公開鍵の中身を確認します。
+Type the following command and press the 'enter' or 'return' key to check the contents of the SSH public key you created.
 
 ```
 cat id_rsa.pub
 ```
 
-すると、以下の画面のように、作ったSSH公開鍵の中身が表示されます。文字列で書かれているのがわかります。
+Then, the contents of the SSH public key you created are output, as shown in the following screen. It is written in the string.
 
-![](/img/ssh_keys/mac/ssh_mac_26.png)
-
-
-## ②遺伝研スパコンにSSH公開鍵を登録する
+## ②Register the SSH public key with the NIG supercomputer
 
 ![](/img/ssh_keys/mac/ssh_mac_27.png)
 
-作ったSSH公開鍵の中身が表示されたら、表示された中身を全て選択し、command + Cを押して、コピーします。
+When the contents of the SSH public key you created are displayed, select all the contents displayed and press Command + C to copy them.
 
-
-範囲を選択する方法: 先頭文字「s」のすぐ左でクリックし、そのまま末尾(ここでは、"your_username@your_usernamenoMacBook-Pro.local" の「l」(小文字のエル))までドラックすると、選択できます。
+To select a range: click just to the left of the leading letter 's' and drag it to the end (In this case, 'l' (lowercase el) in "your_username@your_usernamenoMacBook-Pro.local").
 
 ![](/img/ssh_keys/mac/ssh_mac_28.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規利用申請のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、command + V を押して、貼り付けます。
+On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Application for new use page</a>, click in the 'SSH key' frame on the 'Account' page, press command + V to paste them.
 
 ![](/img/ssh_keys/mac/ssh_mac_29.png)
 
-貼り付けたら、「次へ」ボタンを押して、[利用登録申請フォームへの入力を続けます](/application/registration#利用申請)。
+After pasting, press the 'Next' button and continue filling in the [continue filling in the application form for use](/application/registration/#application-for-use).
 
 ![](/img/ssh_keys/mac/ssh_mac_30.png)
 
-
-[「利用申請・変更」のページの「利用申請」で利用申請が完了し、以下の画面のように、"利用申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します。](/application/registration#利用申請)
+[The SSH public key registration is completed when you conpletedd the registration of the application for use on the "Application for use" of the "Application for use/change" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
 
 ![](/img/ssh_keys/mac/ssh_mac_31.png)
