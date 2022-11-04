@@ -1,73 +1,73 @@
 ---
 id: ssh_keys_windows
-title: SSH公開鍵の登録(Windowsの場合)
+title: Registering or changing SSH public keys (Windows)
 ---
 
 
-Windowsに標準搭載されているPowerShellを使ってSSH公開鍵の登録を行う手順をご説明します。
+This section explains the procedure for registering an SSH public key using PowerShell, which is standard in Windows.
 
 ![](/img/ssh_keys/windows/ssh_win_1.png)
 
-PowerShellを起動すると、以下の画像のようにPowerShellのバージョンが古くなっていることを示すメッセージが表示される場合があります。その場合は本ページの作業に入る前に、PowerShellのバージョンアップを行うことを推奨します。方法については[FAQの「最新バージョンのPowerShellをインストールする方法」](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)をご参照ください。
+When you start PowerShell, you may see a message indicating that the version of PowerShell is out of date, as shown in the image below. In that case, it is recommended to upgrade the version of PowerShell before starting the work on this page. For instructions, see ["How to install the latest version of PowerShell" on the FAQ page](/faq/faq_sshkeys_windows#How to install the latest version of powershell).
 
 ![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
 
 
-## ①SSH公開鍵と秘密鍵を作る
+## ①Create SSH public key and private key
 
 ![](/img/ssh_keys/windows/ssh_win_2.png)
 
 
-### PowerShellを起動する
+### Open PowerShell
 
-Windowsマークをクリックします。
+First, click the Windows symbol.
 
 ![](/img/ssh_keys/windows/ssh_win_3.png)
 
-検索ボックスが表示されますので、「&#x1F50D; 検索するには、ここに入力します」をクリックします。クリックする場所は、検索ボックスの中であればどこでも構いません。
+A search box appears. Click on "&#x1F50D; Type here to search". You can click anywhere in the search box.
 
 ![](/img/ssh_keys/windows/ssh_win_4.png)
 
-クリックすると、以下の画像のように表示されます。
+When clicked, the following image is displayed.
 
 ![](/img/ssh_keys/windows/ssh_win_5.png)
 
-「pwsh」と入力します。
+Enter 'pwsh'.
 
 ![](/img/ssh_keys/windows/ssh_win_6.png)
 
-入力すると、以下の画面のように検索結果に実行ファイルが表示されます。
+When entered, the executable file appears in the search results, as shown in the screen below.
 
 ![](/img/ssh_keys/windows/ssh_win_7.png)
 
-もし以下の画面のように、検索結果に実行ファイルが表示されない場合は、まだ最新バージョンのPowerShellがインストールされていない状態ですので、インストールが必要です。[FAQの「最新バージョンのPowerShellをインストールする方法」を参照して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
+If the executable file does not appear in the search results as in the screen below, the latest version of PowerShell is not yet installed and installation is recommended. [Refer to the FAQ "How to install the latest version of PowerShell" to install the latest version of PowerShell](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法).
 
 ![](/img/ssh_keys/windows/ssh_win_7_nonpwsh.png)
 
-検索結果に実行ファイルが表示されたら、「管理者として実行」をクリックします。
+When the executable file appears in the search results, click "Run as administrator".
 
 ![](/img/ssh_keys/windows/ssh_win_8.png)
 
-「はい」をクリックします。
+Click 'Yes'.
 
 ![](/img/ssh_keys/windows/ssh_win_9.png)
 
-クリックすると、PowerShellが起動します。
+PowerShell will be opened.
 
 ![](/img/ssh_keys/windows/ssh_win_10.png)
 
-このとき、PowerShellの画面は、以下のように表示されます。この画面は、2022年10月19日時点での最新バージョン PowerShell 7.2.6を起動したときのPowerShellの画面です。
+At this point, the PowerShell screan appears as follows. This screen shows the PowerShell screen when PowerShell 7.2.6, the latest version as of 19 October 2022, is launched.
 
 ![](/img/ssh_keys/windows/ssh_win_11.png)
 
-PowerShellの画面が表示されると、コマンドプロンプトが表示されます。コマンドプロンプトの最後には「>」が表示されています。コマンドプロンプトが表示されると、コマンドを入力できる状態になります。コマンドプロンプトの後ろで点滅している四角い箱「_」は、カーソルといい、ここにコマンドを入力していきます。
+When the Terminal screan appears, you can see a command prompt. It ends with '>'. When it appears, you are ready to enter commands. The blinking square box after this prompt is called Cursor, where you enter commands.
 
-- コマンドを入力するときは、「>」は入力しないでください。「>」はPowerShell 7.2.6が自動で表示するので、ユーザが入力する必要はありません。
-- マウスで「>」やカーソルや黒い画面の中をクリックする必要はありません。クリックしても操作できません。カーソルが表示されたら、そのままの状態でコマンドを入力し、[Enter]キーを押します。マウスは使いません。
+- When entering commands, do not type '>'. It is automatically displayed on PowerShell 7.2.6. You don't need to enter it.
+- You don't need to click '>', Cursor or its black screen using the mouse. When Cursor appears, enter the command as it is and press the Enter key. The mouse is not used.
 
 ![](/img/ssh_keys/windows/ssh_win_12.png)
 
-もしこの時に、画面に以下のメッセージが表示される場合は、「さらに最新バージョンが発表されているのでアップグレードしてください。」と言われています。[ここをクリックして、FAQの「最新バージョンのPowerShellをインストールする方法」のページに移動して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
+If the following message appears on your screen: you are told "A more up-to-date version has been released, you should upgrade." . [Click here to go to the FAQ "How to install the latest version of PowerShell" page to install the latest version of PowerShell](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
 
 ```
  A new PowerShell stable release is available: v7.2.7
@@ -75,13 +75,11 @@ PowerShellの画面が表示されると、コマンドプロンプトが表示�
      https://aka.ms/PowerShell-Release?tag=v7.2.7
 ```
 
-コマンドプロンプトが表示されたことを確認したら、SSH公開鍵と秘密鍵を作る前に、OpenSSHクライアントソフトウェアがインストールされているか確認します。
+Once you have verified that the command prompt and cursor appear, check that openSSH client is installed before creating the SSH public key and private key.
 
-このソフトウェアは、SSH公開鍵と秘密鍵を作ったり、遺伝研スパコンにSSHを用いて通信するためのコマンドを実行するときに使われるソフトウェアです。
+OpenSSH client is a software, which is used to create SSH public key and private key, and to execute commands to communicate with NIG supercomputer using SSH. If it is not installed, you will not be able to do any further work, so check here.
 
-インストールされていないと、これ以降の作業ができないので、ここで確認しておきましょう。
-
-以下のコマンドを入力し、[Enter]キーを押します。
+Enter the following command and press the Enter key.
 
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
@@ -89,7 +87,7 @@ Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 
 ![](/img/ssh_keys/windows/ssh_win_13.png)
 
-すると、以下のように、OpensSSHクライアントがインストールされている状態かどうかが表示されます。
+Then, you will see whether the OpensSSH client is installed on users PC or not, as follows.
 
 ![](/img/ssh_keys/windows/ssh_win_14.png)
 
@@ -98,18 +96,20 @@ Name  : OpenSSH.Client~~~~0.0.1.0
 State : Installed
 ```
 
-このように、「OpenSSH.Client~~~~0.0.1.0」の「State」が "Installed" になっていたら、OpensSSHクライアントがインストールされている状態です。[次の「SSH公開鍵と秘密鍵を作る」に進みます](/application/ssh_keys_windows#ssh公開鍵と秘密鍵を作る-1)。
+If 'State' of "OpenSSH.Client~~~~0.0.1.0" is 'Installed', the OpensSSH client is installed. [Continue to the next "Create SSH public key and private key"](/application/ssh_keys_windows#ssh公開鍵と秘密鍵を作る-1).
 
-もし「State」が "NotPresent" になっている場合は、まだOpenSSHクライアントソフトウェアがインストールされていない状態です。[「参考文献」を参照してインストール](/application/ssh_keys_windows#参考文献)してから、次の「SSH公開鍵と秘密鍵を作る」に進んでください。
+If it is 'NotPresent', the OpenSSH client is not yet installed. [See References and install this software](/application/ssh_keys_windows#参考文献), and then proceed to the next section "Create SSH public key and private key".
+
+![](/img/ssh_keys/windows/ssh_win_14.png)
 
 
-### SSH公開鍵と秘密鍵を作る
+### Create SSH public key and private key
 
-OpensSSHクライアントのインストールの状態が表示された行の次の行に、新たにコマンドプロンプトとカーソルが表示され、再び、コマンドを入力できる状態になります。
+When a new command prompt and cursor appear on the line following the line showing the status of the OpensSSH client installation, you can type the command again.
 
 ![](/img/ssh_keys/windows/ssh_win_15.png)
 
-以下のコマンドを入力して、[Enter]キーを押します。
+Type the following command and press the Enter key.
 
 ```
 ssh-keygen -t rsa -b 3072
@@ -117,62 +117,63 @@ ssh-keygen -t rsa -b 3072
 
 ![](/img/ssh_keys/windows/ssh_win_16.png)
 
-すると、以下の画面のように、2行表示されます。
+Then, two lines are output as the following screen.
 
 ![](/img/ssh_keys/windows/ssh_win_17.png)
 
-`Enter file in which to save the key (/Users/your_username/.ssh/id_rsa):`と聞かれます。これは、「作ったSSH公開鍵と秘密鍵をあなたのPCの中のどこに保存しますか。」という意味です。
+You are asked to `Enter file in which to save the key (C:\Users\your_username/.ssh/id_rsa):`. This means: "Where in your PC do you want to save the SSH public key and private key you created?".
 
-通常は何も入力しないで、そのまま[Enter]キーを押します。
+Normally, do not type anything and just press the Enter key.
 
 ![](/img/ssh_keys/windows/ssh_win_18.png)
 
-すると、以下の画面のように、２行表示されます。
+Two lines will then be displayed, as shown in the following screen.
 
 ![](/img/ssh_keys/windows/ssh_win_19.png)
 
-`Enter passphrase (empty for no passphrase):`というメッセージが表示されます。ここにパスフレーズを入力してください。
+The message `Enter passphrase (empty for no passphrase):` is displayed. Enter your passphrase here.
 
-パスフレーズは遺伝研スパコンのパスワードとは違うものです。長い文字列を自由に設定することが出来ます。
-パスフレーズは、ランダムに本を開いた際のページの一行目など、スペースを含む長いランダムな文字列を設定することが想定されています。
+The passphrase is different from the NIG supercomputer password. It can be any long string of characters.
+The passphrase is supposed to be a long random string of characters, including spaces, such as the first line of a page when you open random a book.
 
 <table>
 	<tbody>
 		<tr>
-			<td>SSH では秘密鍵ファイルを所有していることが本人であることの根拠として扱われます。 秘密鍵ファイルを盗まれてしまうとなりすましが可能となります。 パスフレーズの設定は省略することが可能ですが、秘密鍵の盗難時の被害を軽減するために設定することを強く推奨します。</td>
+			<td>SSH treats possession of a private key file as evidence of identity. If the private key file is stolen, impersonation is possible. Although it is possible to omit the passphrase setting, it is strongly recommended to set it to reduce the damage in the event of private key theft.</td>
 		</tr>
 	</tbody>
 </table>
 
 
-パスフレーズを入力して、[Enter]キーを押します。
+Enter the passphrase and press the Enter key.
 
-&#x2757; パスフレーズを入力しても、画面は以下の状態のまま何も変化しません。入力している最中も、以下の画面のまま何も変化しませんが、気にせずそのまま入力していきます。入力が終わったら、[Enter]キーを押します。
+&#x2757; After entering the passphrase, the screen remains as shown below and nothing changes. While entering the passphrase, the screen also remains as shown below and nothing changes, but do not worry about it and continue entering. When you have finished typing, press the Enter key.
 
 ![](/img/ssh_keys/windows/ssh_win_20.png)
 
-すると、以下の画面のように表示されます。
+You will then see the following screen.
 
 ![](/img/ssh_keys/windows/ssh_win_21.png)
 
-`Enter same passphrase again: `というメッセージが表示されます。上記で入力したパスフレーズと同じパスフレーズを入力して、[Enter]キーを押します。
+The message `Enter same passphrase again: ` will be displayed. Enter the same passphrase as entered above and press the Enter key.
 
-&#x2757; パスフレーズを入力しても、画面は以下の状態のまま何も変化しません。入力している最中も、以下の画面のまま何も変化しませんが、気にせずそのまま入力していきます。入力が終わったら、[Enter]キーを押します。
+&#x2757; After entering the passphrase, the screen remains as shown below and nothing changes. While entering the passphrase, the screen also remains as shown below and nothing changes, but do not worry about it and continue entering. When you have finished typing, press the Enter key.
 
 ![](/img/ssh_keys/windows/ssh_win_22.png)
 
-すると、以下の画面のように表示されます。
+You will then see the following screen.
 
 ![](/img/ssh_keys/windows/ssh_win_23.png)
 
 
-#### &#x2666;**作ったSSH公開鍵と秘密鍵の存在を確認する**
+#### &#x2666;**Check the existence of the SSH public key and private key you created**
 
-C:\Users\your_username/.sshというフォルダの中に、SSH公開鍵と秘密鍵が本当に作られているかどうか確認していきます。
+
+Check that the SSH public key and private key are indeed created in the directory C:\Users\your_username/.ssh.
 
 ![](/img/ssh_keys/windows/ssh_win_24.png)
 
-まず、.sshというフォルダが本当にできているかを確認するために、以下のコマンドを入力して、[Enter]キーを押します。
+First, to check that the directory named .ssh has really been created, type the following command and press the Enter key.
 
 ```
 Get-ChildItem -Directory C:\Users\your_username
@@ -180,19 +181,20 @@ Get-ChildItem -Directory C:\Users\your_username
 
 ![](/img/ssh_keys/windows/ssh_win_25.png)
 
-すると、以下の画面のように表示され、C:\Users\your_usernameのフォルダの中に、.sshという名前のフォルダが存在していることが確認できます。
+Then, you can confirm the existence of a directory named .ssh in the directory C:\Users\your_username as the following screen.
 
 ![](/img/ssh_keys/windows/ssh_win_26.png)
 
-次に、.sshというフォルダの中に移動して、SSH公開鍵と秘密鍵が本当に作られているかどうか確認していきます。
 
-.sshの中に移動するために、以下のコマンドを入力して、[Enter]キーを押します。
+Then, move into the directory named .ssh to check that the SSH public key and private key have indeed been created.
+
+To move into .ssh, type the following command and press the Enter key.
 
 ```
 Set-Location C:\Users\your_username\.ssh
 ```
 
-続けて、SSH公開鍵と秘密鍵が本当に作られているかどうか確認するために、以下のコマンドを入力して、[Enter]キーを押します。
+Continue by typing the following command and pressing the Enter key to check that the SSH public and private keys have indeed been created.
 
 ```
 Get-ChildItem
@@ -200,14 +202,14 @@ Get-ChildItem
 
 ![](/img/ssh_keys/windows/ssh_win_27.png)
 
-すると、以下の画面のように表示され、SSH公開鍵と秘密鍵が本当に作られていることが確認できます。
+you can confirm that the SSH public and private keys have indeed been created as the following screen.
 
 ![](/img/ssh_keys/windows/ssh_win_28.png)
 
 
-#### &#x2666;**作ったSSH公開鍵を確認する**
+#### &#x2666;**Check the SSH public key you created**
 
-以下のコマンドを打ち込んで、[Enter]キーを押して、作ったSSH公開鍵の中身を確認します。
+Type the following command and press the Enter key to check the contents of the SSH public key you created.
 
 ```
 cat .\id_rsa.pub
@@ -215,34 +217,34 @@ cat .\id_rsa.pub
 
 ![](/img/ssh_keys/windows/ssh_win_29.png)
 
-すると、以下の画面のように、作ったSSH公開鍵の中身が表示されます。文字列で書かれているのがわかります。
+Then, the contents of the SSH public key you created are output, as shown in the following screen. It is written in the string.
 
 ![](/img/ssh_keys/windows/ssh_win_30.png)
 
 
-## ②遺伝研スパコンにSSH公開鍵を登録する
+## ②Register the SSH public key with the NIG supercomputer
 
 ![](/img/ssh_keys/windows/ssh_win_31.png)
 
-作ったSSH公開鍵の中身が表示されたら、表示された中身を全て選択してコピーします。
+When the contents of the SSH public key you created are displayed, select all the contents displayed and copy them.
 
-範囲を選択してコピーする方法：先頭文字列「ssh-rsa」の先頭文字「s」のすぐ左でマウスを左クリックし、そのまま末尾(ここでは、「your_username@LAPTOP-USERS」の「S」(大文字のエス))までドラックします。ドラッグすると、以下の画面のように、選択された文字列に灰色にハイライトがかかった状態になります。そうしたら一度マウスから手を離します。次に、灰色にハイライトがかかった文字列の上で、マウスを右クリックします。右クリックすると、ハイライトが消えます。そうなりましたら、コピーは完了です。右クリックする場所は、灰色にハイライトがかかった部分であれば、どこでも良いです。Ctl + Cをしてもコピーはされませんので、ご注意ください。
+To select a range and copy that: Left-click the mouse just to the left of the first letter 's' of the first string 'ssh-rsa' and drag it straight to the end (in this case, the "S" (capital s) of "your_username@LAPTOP-USERS"). When dragged, the selected string is highlighted in gray, as shown in the screen below. Then release your hand from the mouse. On the gray highlighted string, right-click the mouse. After right-clicking, the highlight disappears. The copying is then complete. Right-clicking can be anywhere the gray highlighted area. Note that Ctrl + C will not make a copy.
 
 ![](/img/ssh_keys/windows/ssh_win_32.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規利用申請のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
+On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Application for new use page</a>, click in the 'SSH key' frame on the 'Account' page, press Ctrl + V to paste them.
 
 ![](/img/ssh_keys/windows/ssh_win_33.png)
 
-貼り付けたら、「次へ」ボタンを押して、[利用登録申請フォームへの入力を続けます](/application/registration#利用申請)。
+After pasting, press the 'Next' button and continue filling in the [continue filling in the application form for use](/application/registration/#application-for-use).
 
 ![](/img/ssh_keys/windows/ssh_win_34.png)
 
-[「利用申請・変更」のページの「利用申請」で、以下の画面のように、"利用申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します](/application/registration#利用申請)。
+[The SSH public key registration is completed when you conpletedd the registration of the application for use on the "Application for use" of the "Application for use/change" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
 
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
 
-## 参考文献
+## Reference
 
-- <a href="https://learn.microsoft.com/ja-jp/windows-server/administration/openssh/openssh_install_firstuse?source=recommendations">OpenSSHのインストール方法</a>
+- <a href="https://learn.microsoft.com/en-gb/windows-server/administration/openssh/openssh_install_firstuse?source=recommendations&tabs=gui">Get started with OpenSSH for Windows</a>

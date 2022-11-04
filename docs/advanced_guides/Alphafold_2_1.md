@@ -5,7 +5,7 @@ title: 遺伝研スパコンでのalphafold 2.1の実行
 
 
 ## 概略
-遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.1</a>（Yoshitaka Moriwaki氏の<a href="https://gist.github.com/YoshitakaMo/">パッチ</a>適用済み）をインストールしたsingularity imageとalphafold 2.1で使用するデータベースを /lustre7/software/alphafold/2.1.1/ に用意してあります。
+遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.1</a>（Yoshitaka Moriwaki氏の<a href="https://gist.github.com/YoshitakaMo/">パッチ</a>適用済み）をインストールしたsingularity imageとalphafold 2.1で使用するデータベースを /lustre7/software/alphafold/2.1.1/ に用意しています。
 
 
 alphafold 2.1によるタンパク質の立体構造予測は以下のステップで実行されます。
@@ -24,7 +24,7 @@ alphafold 2.1によるタンパク質の立体構造予測は以下のステッ�
 入力アミノ酸配列が多量体の場合、ステップ1-6は多量体を構成するサブユニットのアミノ酸配列ごとに実行されます。
 
 
-デフォルトの設定では5つのモデルの構造予測を行うようになっており、ステップ7・8は5回実行されます。また、ステップ7・8はCPUの他にGPUを使用できるため、CPU用とGPU用のsingularity imageをそれぞれ用意してあります。
+デフォルトの設定では5つのモデルの構造予測を行うため、ステップ7・8は5回実行されます。また、ステップ7・8はCPUの他にGPUを使用できるため、CPU用とGPU用のsingularity imageをそれぞれ用意しています。
 
  
 （実行時間の目安）
@@ -40,7 +40,7 @@ alphafold 2.1によるタンパク質の立体構造予測は以下のステッ�
 
 ## ジョブスクリプトの準備
 
-/lustre7/software/alphafold/にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+/lustre7/software/alphafold/にジョブスクリプトのサンプルを用意しています。こちらを自分のホームにダウンロードして適宜修正して使用してください。
 
 
 ### example_job_script_cpu.sh
@@ -172,7 +172,7 @@ OUTPUTDIR="${HOME}/output"
 ```
 結果を出力するディレクトリのパスを入力してください。
 
-このディレクトリ内に入力ファイル名から拡張子を除いた名前でディレクトリが作成され、結果が出力されます。同じ名前のディレクトリが既に存在し、その中に計算結果が入っていた場合、類縁配列の検索（ステップ1-6）は行われず立体構造の予測部分（ステップ7・8）のみ再計算されます。
+このディレクトリ内に入力ファイル名から拡張子を除いた名前でディレクトリが作成され、結果が出力されます。同じ名前のディレクトリが既に存在し、その中に計算結果が入っていた場合、類縁配列の検索（ステップ1-6）は行われず立体構造を予測する処理（ステップ7・8）のみ再計算されます。
 
  
 ```
