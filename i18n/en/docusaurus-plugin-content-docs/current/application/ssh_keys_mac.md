@@ -81,7 +81,7 @@ When a new prompt and cursor appear on the line following the line with version 
 Type the following command and press the 'enter' or 'return' key.
 
 ```
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 3072
 ```
 
 ![](/img/ssh_keys/mac/ssh_mac_13.png)
@@ -90,7 +90,7 @@ Then, two lines are output as the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_14.png)
 
-You are asked to `Enter file in which to save the key (/Users/your_username/.ssh/id_rsa):`. This means: `Where in your PC do you want to save the SSH public key and private key you created?'.
+You are asked to `Enter file in which to save the key (/Users/your_username/.ssh/id_rsa):`. This means: "Where in your PC do you want to save the SSH public key and private key you created?".
 
 Normally, do not type anything and just press the 'enter' or 'return' key.
 
@@ -123,7 +123,7 @@ You will then see the following screen.
 
 ![](/img/ssh_keys/mac/ssh_mac_18.png)
 
-The message `Enter same passphrase again: ` will be displayed. Enter the same passphrase as entered above and press the `enter' or `return' key.
+The message `Enter same passphrase again: ` will be displayed. Enter the same passphrase as entered above and press the 'enter' or 'return' key.
 
 
 &#x2757; After entering the passphrase, the screen remains as shown below and nothing changes. While entering the passphrase, the screen also remains as shown below and nothing changes, but do not worry about it and continue entering. When you have finished typing, press the 'enter' or 'return' key.
