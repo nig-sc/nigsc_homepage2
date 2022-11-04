@@ -91,13 +91,13 @@ Windowsマークをクリックして、検索ボックスの中をクリック�
 
 さらに最新バージョンへアップグレードする方法は、[本ページ内にアップグレード方法の説明があります](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールしたのにa-new-powershell-stable-release-is-availableというメッセージが表示される)ので、ご参照ください。
 
-- 時間差について：
-2022年10月19日　この時点で最新の7.2.6をインストールした。
-2022年10月20日　さらに最新の7.2.7がリリースされた。
-2022年10月21日　確認したところGithubに実行ファイルがアップロードされていたが、まだ`winget`コマンドに反映されていない状態であった。
-2022年10月26日　`winget search Microsoft.PowerShell`コマンドを実行したところ、最新バージョンが更新されており、7.2.7が最新であると表示された。
+&#x1F4D6; 時間差について
+- 2022年10月19日　この時点で最新の7.2.6をインストールした。
+- 2022年10月20日　さらに最新の7.2.7がリリースされた。
+- 2022年10月21日　確認したところGithubに実行ファイルがアップロードされていたが、まだ`winget`コマンドに反映されていない状態であった。
+- 2022年10月26日　`winget search Microsoft.PowerShell`コマンドを実行したところ、最新バージョンが更新されており、7.2.7が最新であると表示された。
 
-- 確認したGithubのページ：https://github.com/PowerShell/PowerShell/releases/
+&#x1F4D6; 確認したMicrosoftの公式WebサイトにあるGithubのURL: https://github.com/PowerShell/PowerShell/releases/
 
 
 ### 参考資料
@@ -160,7 +160,7 @@ winget search Microsoft.PowerShell
 
 ![](/img/ssh_keys/windows/FAQ/win_ps_inst_20.png)
 
-インストールする時は、正式にリリースされている安定版リリースをインストールします。末尾に`.Preview`がついていない方です。
+インストールする時は、正式にリリースされている安定版リリースをインストールします。末尾に'.Preview'がついていない方です。
 
 
 ## 最新バージョンのPowerShellをインストールしたのに、`A new PowerShell stable release is available`というメッセージが表示される
