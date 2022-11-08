@@ -1,6 +1,6 @@
 ---
 id: IIBMP2021
-title: "IIBMP2021  The Data Scientist Training Session"
+title: IIBMP2021  データサイエンティスト養成セッション
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 id: pg_login
-title: "How to Login（The Personal Genome Section）"
+title: "How to Login（The Personal Genome Analysis Section）"
 ---
 
 ## Introduction

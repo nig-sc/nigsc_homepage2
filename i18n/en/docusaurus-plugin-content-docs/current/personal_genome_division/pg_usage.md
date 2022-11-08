@@ -1,6 +1,6 @@
 ---
 id: pg_usage
-title: "Usage（The Personal Genome Section）"
+title: "Usage（The Personal Genome Analysis Section）"
 ---
 
 
