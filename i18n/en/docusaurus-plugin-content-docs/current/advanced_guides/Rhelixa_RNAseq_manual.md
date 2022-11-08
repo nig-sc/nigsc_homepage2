@@ -1,6 +1,6 @@
 ---
 id: Rhelixa_RNAseq_manual
-title: Rhelixa RNAseq pipeline manual
+title: Rhelixa RNAseq解析パイプライン使用マニュアル
 ---
 
 株式会社Rhelixa <br />

@@ -1,6 +1,6 @@
 ---
 slug: 2022-05-13-suspension-of-applications
-title: "May 13, 2022: Suspend acceptance of the application for new use of the personal genome section and  large-scale storage on the general analysis section"
+title: "May 13, 2022: Suspend acceptance of the application for new use of the personal genome anaysis section and  large-scale storage on the general analysis section"
 tags:
   - news
 authros:

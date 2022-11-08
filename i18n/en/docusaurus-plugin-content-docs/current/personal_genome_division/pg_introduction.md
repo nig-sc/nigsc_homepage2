@@ -1,9 +1,9 @@
 ---
 id: pg_introduction
-title: "Introduction（The Personal Genome Section）"
+title: "Introduction（The Personal Genome Analysis Section）"
 ---
 
-## About the Personal Genome Section
+## About the Personal Genome Analysis Section
 
 The NIG supercomputer delivers the personal genome analysis section that is independent of other systems and has an a high level of security for handling personal genomes.
 
@@ -17,7 +17,7 @@ The Personal Genome Analysis of the NIG supercomputer is [an NBDC Off-premise-se
 Also, please read [Related laws and regulations, etc.](/application/legislation).
 
 
-# Introduction of how to use the personal genome section
+# Introduction of how to use the personal genome analysis section
 
 At present, all personal genome analysis sections are billing services and nodes are rented.
 
