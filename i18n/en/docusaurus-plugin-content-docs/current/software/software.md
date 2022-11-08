@@ -13,7 +13,7 @@ Job scheduler automatically allocates computer resources (CPU core and memory) t
 <tr>
 <th width="300">area name</th>
 <th width="300">the general analysis section</th>
-<th width="300">the personal genome section</th>
+<th width="300">the personal genome analysis section</th>
 </tr>
 <tr>
 <td width="300">
@@ -43,7 +43,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <th width="300">area name</th>
 <th width="300">the general analysis section</th>
-<th width="300">the personal genome section</th>
+<th width="300">the personal genome analysis section</th>
 </tr>
 
 <tr>
@@ -82,7 +82,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <th width="300">area name</th>
 <th width="300">the general analysis section</th>
-<th width="300">the personal genome section</th>
+<th width="300">the personal genome analysis section</th>
 </tr>
 <tr>
 <td width="300">
@@ -120,7 +120,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <th width="300">area name</th>
 <th width="300">the general analysis section</th>
-<th width="300">the personal genome section</th>
+<th width="300">the personal genome analysis section</th>
 </tr>
 <tr>
 <td width="300">
@@ -154,7 +154,7 @@ Many development environments are preinstalled on the system. But if you need a 
 <tr>
 <th width="300">area name</th>
 <th width="300">the general analysis section</th>
-<th width="300">the personal genome section</th>
+<th width="300">the personal genome analysis section</th>
 </tr>
 <tr>
 <td width="300">

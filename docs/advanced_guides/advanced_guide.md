@@ -20,7 +20,9 @@ title: "最新のトピック"
 <tr>
 <td width="400">
 
-![](imputationserver.Fig1-work.png)
+
+![](/img/advanced_guides/imputationserver.Fig1-work.png)
+
 </td>
 <td valign="top">
 
@@ -52,7 +54,7 @@ NBDC-DDBJ インピュテーションサーバ（ベータ版）（以下、本�
 <tr>
 <td width="400">
 
-![](portablepipeline.png)
+![](/img/advanced_guides/portablepipeline.png)
 </td>
 <td valign="top">
 「Windows や Mac から遺伝研のスパコンにお手軽に NGS 解析ジョブを投げるツールとして PortablePipeline を開発しました。当研究室で使用頻度の高い解析パイプラインが実行できます。解析サーバとしては python3 と docker もしくは singularity がインストールされていればスパコンでなくても実行できます。」（水圏生物工学研究室のページより）
@@ -73,7 +75,7 @@ DFASTは、国立遺伝学研究所 情報研究系中村研究室・大量遺�
 <tr>
 <td width="400">
 
-![](dfast.png)
+![](/img/advanced_guides/dfast.png)
 </td>
 <td valign="top">
 スタンドアローン版をスパコンで実行する場合、<a href="https://github.com/nigyta/dfast_core/">https://github.com/nigyta/dfast_core/ </a>からソースコードを取得してインストールする方法 (Python 3.6 以降 + Biopython が必要) とスパコンで提供されている singularity コンテナを利用する方法 (参考: <a href="https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d">https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d</a>) があります。
