@@ -1,34 +1,41 @@
 ---
 id: advanced_guide
-title: "最新のトピック"
+title: "Latest Topics"
 ---
+
 
 ---
 
 ## NBDC-DDBJ Imputation Server (beta)
 
-2022.10.18
+18 Oct 2022.
 
-**インピュテーションサーバ（Imputation Server）** は、SNP アレイデータのインピュテーション解析を支援するサービスです。**[ミシガン大学のインピュテーションサーバ](https://imputationserver.sph.umich.edu/)** や **[TOPMed プロジェクトのインピュテーションサーバ](https://imputation.biodatacatalyst.nhlbi.nih.gov/)** が公開されています。これらのサーバは日本国外に設置されており、利用のためにゲノムデータ（SNP アレイデータ）を国外のサーバにアップロードする必要がありました。
+The **Imputation Server** is a service to support imputation analysis of SNP array data. **[Michigan Imputation Server](https://imputationserver.sph.umich.edu/)** and **[TOPMed Project Imputation Server](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-そこで、**[国立研究開発法人科学技術振興機構 NBDC 事業推進部](https://biosciencedbc.jp)** では日本の研究者が利用しやすい日本版インピュテーションサーバとして、**NBDC-DDBJ インピュテーションサーバ**のシステムを開発しました。現在このシステムは、**[国立遺伝学研究所スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp)** の **[個人ゲノム解析区画](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction/)** で利用可能です。
+Therefore, **[the Department of NBDC Program of the Japan Science and Technology Agency](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis Section](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
+The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
 
-本サーバで使用しているインピュテーションのワークフローは、以下の AMED 事業において国立国際医療研究センターが検討した情報（インピュテーションソフトウェアの選定・パラメータの設定）の提供を受け、その情報を参考に NBDC 事業推進部がウェブサービスとして改変・実装したものです。 事業名：ゲノム医療実現推進プラットフォーム事業（国際的データシェアリングに関する課題解決のための調査研究及び開発研究） 課題名：「クラウド計算環境を利用したゲノム医科学研究の倫理・技術課題の調査と実践」
+Project name: Platform Program for Promotion of Genome Medicine (Research and development research to resolve issues related to international data sharing) 
+
+Subject name: "Investigation and practice of ethical and technical issues in genomic medical science research using cloud computing environment".
 
 <table>
 <tr>
 <td width="400">
 
-![](imputationserver.Fig1-work.png)
+
+![](/img/advanced_guides/imputationserver.Fig1-work.png)
+
 </td>
 <td valign="top">
 
-NBDC-DDBJ インピュテーションサーバ（ベータ版）（以下、本システム）は、遺伝研スパコンの個人ゲノム解析区画で利用可能です。研究者（利用者）はご自身のゲノムデータをサーバにアップロードし、Web ユーザインターフェースを介してインピュテーション解析ワークフローを実行することができます。
+The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this system') is available in the Personal Genome Analysis section of the NIG supercomputer. Researchers(users) can upload their own genome data to the server and execute the imputation analysis workflow via the web user interface.
 
-- [NBDC-DDBJ Imputation Server の概要](/advanced_guides/imputation_server)
-- [インストールマニュアル](/advanced_guides/imputation_server_install)
-- [チュートリアル](/advanced_guides/imputation_server_tutorial)
+
+- [NBDC-DDBJ Imputation Server](/advanced_guides/imputation_server)
+- [install manual](/advanced_guides/imputation_server_install)
+- [tutorial](/advanced_guides/imputation_server_tutorial)
 
 
 </td>
@@ -42,20 +49,20 @@ NBDC-DDBJ インピュテーションサーバ（ベータ版）（以下、本�
 ---
 ## PortablePipeline
 
-2022.05.10
+10 May 2022.
 
-東京大学大学院農学生命科学研究科水圏生物科学専攻水圏生物工学研究室の吉武和敏先生により、NGS 解析パイプラインについて、PortablePipeline というツールが開発されました。
+For the NGS analysis pipeline, the tool called Portablepipeline has been developed by Professor Kazutoshi Yoshitake of the Laboratory of Aquatic Molecular Biology and Biotechnology, Aquatic Bioscience, Graduate school of Agricultural and Life Sciences, The Univresity of Tokyo.
 
-ツールの実行手順等は、<a href="https://www.suikou.fs.a.u-tokyo.ac.jp/blog/2022/04/28/%e9%81%ba%e4%bc%9d%e7%a0%94%e3%81%ae%e3%82%b9%e3%83%91%e3%82%b3%e3%83%b3%e3%81%a7%e6%89%8b%e8%bb%bd%e3%81%abngs%e8%a7%a3%e6%9e%90%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/">水圏生物工学研究室のページ</a>をご参照ください。
+For instructions on how to run the tool, refer <a href="https://www.suikou.fs.a.u-tokyo.ac.jp/blog/2022/04/28/%e9%81%ba%e4%bc%9d%e7%a0%94%e3%81%ae%e3%82%b9%e3%83%91%e3%82%b3%e3%83%b3%e3%81%a7%e6%89%8b%e8%bb%bd%e3%81%abngs%e8%a7%a3%e6%9e%90%e3%82%92%e5%ae%9f%e8%a1%8c%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/"> Laboratory of Aquatic Molecular Biology and Biotechnology page</a>.
 
 <table>
 <tr>
 <td width="400">
 
-![](portablepipeline.png)
+![](/img/advanced_guides/portablepipeline.png)
 </td>
 <td valign="top">
-「Windows や Mac から遺伝研のスパコンにお手軽に NGS 解析ジョブを投げるツールとして PortablePipeline を開発しました。当研究室で使用頻度の高い解析パイプラインが実行できます。解析サーバとしては python3 と docker もしくは singularity がインストールされていればスパコンでなくても実行できます。」（水圏生物工学研究室のページより）
+"PortablePipeline is software that allows Windows and Mac users to perform NGS analysis in a GUI on a local or remote server or supercomputer. If python3 and docker or singularity are installed as an analysis server,  you run it instead of the supercomputer."（Referenced from the Laboratory of Aquatic Molecular Biology and Biotechnology）
 </td>
 </tr>
 </table>
@@ -65,20 +72,18 @@ NBDC-DDBJ インピュテーションサーバ（ベータ版）（以下、本�
 
 ## DFAST
 
-2021.10.02
+2 Oct 2022.
 
-DFASTは、国立遺伝学研究所 情報研究系中村研究室・大量遺伝情報研究室の谷澤靖洋先生により作られた原核生物ゲノムの自動アノテーションツールです。DDBJ へのゲノム塩基配列登録用のファイルを生成することもできます。ファイルをアップロードするだけで利用可能なウェブ版 https://dfast.ddbj.nig.ac.jp とコマンド操作で実行するスタンドアローン版があります。
+DFAST is an automated annotation tool for prokaryotic genome created by Assistant Professor, Yasuhiro Tanizawa of the Nakamura Group・Genome Informatics Laboratory at the National Institute of Genetics. This tool can also generate files for genome sequence registration to DDBJ. There is a web version available at https://dfast.ddbj.nig.ac.jp that can be used simply by uploading files, and a stand-alone version that can be run by command operation.
 
 <table>
 <tr>
 <td width="400">
 
-![](dfast.png)
+![](/img/advanced_guides/dfast.png)
 </td>
 <td valign="top">
-
-スタンドアローン版をスパコンで実行する場合、<a href="https://github.com/nigyta/dfast_core/">https://github.com/nigyta/dfast_core/ </a>からソースコードを取得してインストールする方法 (Python 3.6 以降 + Biopython が必要) とスパコンで提供されている singularity コンテナを利用する方法 (参考: <a href="https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d">https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d</a>) があります。
-
+To run the stand-alone version on the NIG supercomputer, there are two ways: get the source code from <a href="https://github.com/nigyta/dfast_core/">https://github.com/nigyta/dfast_core/ </a> and install it (requires Python 3.6 or later and Biopython) or use the singularity container provided by the NIG supercomputer (ref: <a href="https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d">https://qiita.com/nigyta/items/e1de21f6ece65d69ec1d</a>).
 
 </td>
 </tr>
@@ -86,29 +91,28 @@ DFASTは、国立遺伝学研究所 情報研究系中村研究室・大量遺�
 
 ---
 
-## Rhelixa RNAseq パイプライン
+## Rhelixa RNAseq pipeline
 
-2020.09.08
+08 Sep 2020.
 
-国立遺伝学研究所と包括連携協定を結ぶ[株式会社 Rhelixa](https://www.rhelixa.com/)（代表取締役：仲木 竜）より、RNA-seq 解析パイプラインが提供され、スーパーコンピュータシステムに実装されました。
+The RNA-seq analysis pipeline has been provided by [Rhelixa Corporation](https://www.rhelixa.com/) (CTO: Ryu Nakaki), which has a comprehensive collaboration agreement with the National Institute of Genetics, and implemented on the NIG supercomputer system.
 
-本パイプラインは、RNA-seq アプリケーションにより得られた単一サンプルのシーケンスリードデータを参照ゲノムにマッピングし、遺伝子領域ごとに集計し、全遺伝子の発現量を計算するものです。
+This pipeline maps the Sequence Read Archive of a single sample obtained by the RNA-seq application to a reference genome, aggregates them by gene region and calculates the expression levels of all genes.
 
 <table>
 <tr>
 <td width="400">
 
-![](Rhelixa_RNAseq1.png)
+![](/img/advanced_guides/Rhelixa_RNAseq1_EN.png)
 
 </td>
 <td valign="top">
-Rhelixa RNAseq パイプラインは Singularity コンテナイメージとしての形で遺伝研スパコン上にインストールされています。
-Singularity コンテナイメージの遺伝研スパコン外での利用はできません。
-利用方法は下記リンクをご参照ください。<br />
+
+The RNAseq pipeline of Rhelixa is installed on the NIG supercomputer in the form of the Singularity container image. The Singularity container image cannot be used outside the NIG supercomputer. Check to the link below for instructions on how to use it.<br />
 <br />
 
-- [Rhelixa RNAseq パイプラインの紹介](/advanced_guides/Rhelixa_RNAseq)
-- [Rhelixa RNAseq パイプライン 利用マニュアル](/advanced_guides/Rhelixa_RNAseq_manual)
+- [Rhelixa RNAseq > Introduction](/advanced_guides/Rhelixa_RNAseq)
+- [Rhelixa RNAseq > How to use](/advanced_guides/Rhelixa_RNAseq_manual)
 
 </td>
 </tr>

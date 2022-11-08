@@ -28,7 +28,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 - &#x2714; [Reducesed DDBJ Group Cloud fees](/blog/2022-04-05-news_DGC) (2022.04.05)
 - [Added gateway nodes](/en/blog/2022-03-16-gateway) (2022.03.17)
 
-## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome section and  large-scale storage on the general analysis section 
+## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome analysis section and  large-scale storage on the general analysis section 
 
 Thank you very much for using the NIG supercomputer.
 

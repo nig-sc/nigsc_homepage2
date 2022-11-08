@@ -9,7 +9,7 @@ The NIG supercomputer is operated as a business of the Inter-University Research
 
 - Large-scale use of storage
 - Priority/occupied use of compute nodes
-- Use of the personal genome section
+- Use of the personal genome analysis section
 
 When using the billing service, fill in [Download the usage plan](/application/resource_extension) and send it to [Contact us](/application/reference).
 
@@ -34,7 +34,7 @@ The compute nodes and storage of the NIG supercomputer are roughly divided into 
 <tr>
 <th width="350">Service Name</th>
 <th>The general analysis section</th>
-<th>The personal genome section</th>
+<th>The personal genome analysis section</th>
 </tr>
 
 <tr>
@@ -74,7 +74,7 @@ It is a service that removes the compute nodes from UGE management and occupies 
 (Thin, Medium nodes)
 <br />
 
-[Introduction（The Personal Genome Section）](/personal_genome_division/pg_introduction) 
+[Introduction（The Personal Genome Analysis Section）](/personal_genome_division/pg_introduction) 
 </td>
 </tr>
 

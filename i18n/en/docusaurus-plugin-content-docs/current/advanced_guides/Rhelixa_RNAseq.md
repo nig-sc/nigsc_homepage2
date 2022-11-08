@@ -1,6 +1,6 @@
 ---
 id: Rhelixa_RNAseq
-title: Rhelixa RNAseq pipeline
+title: Rhelixa RNAseqパイプライン
 ---
 
 国立遺伝学研究所と包括連携協定を結ぶ株式会社Rhelixa（代表取締役：仲木 竜）より、RNA-seq※1解析パイプラインが提供され、スーパーコンピュータシステムに実装されました。
@@ -23,7 +23,7 @@ title: Rhelixa RNAseq pipeline
 ※2 ：参照ゲノムはヒト（hg19、hg38）およびマウス（mm9、mm10）のみ対応しております。
 
  
-![](Rhelixa_RNAseq1.png)
+![](/img/advanced_guides/Rhelixa_RNAseq1_EN.png)
 
 
 ## 解析パイプラインの利用方法

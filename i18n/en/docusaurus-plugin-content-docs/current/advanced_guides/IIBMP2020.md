@@ -1,6 +1,6 @@
 ---
 id: IIBMP2020
-title: "IIBMP2020  The Data Scientist Training Session"
+title: IIBMP2020  データサイエンティスト養成セッション
 ---
 
 
