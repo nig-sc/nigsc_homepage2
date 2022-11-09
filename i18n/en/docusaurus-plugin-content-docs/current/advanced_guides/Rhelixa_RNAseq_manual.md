@@ -1,28 +1,29 @@
 ---
 id: Rhelixa_RNAseq_manual
-title: Rhelixa RNAseq解析パイプライン使用マニュアル
+title: User manual
 ---
 
-株式会社Rhelixa <br />
-2020.8.13　初版
+Rhelixa Co., Ltd. <br />
+13 Aug 2020 First edition.
 
 
-## 1. 構成・使用方法
+## 1. Configuration and Use
 
-### 1. 1 実行について
+### 1. 1 Execution
 
-コマンドライン上で本解析パイプラインを実行するにあたり、以下の４つの引数を指定します。
+Specify the following four arguments to execute this analysis pipeline with the command line.
 
-- 引数１：出力データ名（出力先のディレクトリ名とファイル名の先頭文字列に使用されます）
-- 引数２：参照ゲノム（hg19、hg38、mm9、mm10の４種類が選択できます）
-- 引数３：リード１のfastqファイル
-- 引数４：（オプション）リード２のfastqファイル
+- Argument 1: Output data name (used for the directory name of the output destination and the first string of the file name)
+- Argument 2: Reference genome (hg19, hg38, mm9 and mm10 can be selected)
+- Argument 3: fastq file for read 1
+- Argument 4: (Optional) fastq file for read 2
 
-※ single-endデータの場合は引数３のみ、paired-endデータの場合は引数３と引数４の両方を指定する必要があります。
+* Only Argument 3 must be specified for single-end data, and both Arguments 3 and 4 must be specified for paired-end data.
 
-#### 1.1.1 コマンド実行
 
-下記の手順でコマンドを実行します。ターミナルを閉じると処理が終了することに留意ください。
+#### 1.1.1 Command Execution
+
+Follow the steps below to execute the command. Note that closing the terminal terminates the process.
 
 ```bash
 $ export GEA_HOME=/lustre7/singularity/images/gene_expression_analysis
@@ -33,7 +34,7 @@ ${GEA_HOME}/gene_expression_analysis.sif \
 GeneExpressionAnalysisSingle.sh [引数]
 ```
 
-（例）
+For example,
 
 ```bash
 $ export GEA_HOME=/lustre7/singularity/images/gene_expression_analysis
@@ -48,19 +49,21 @@ Sample_R1.fastq.gz \
 Sample_R2.fastq.gz
 ```
 
- ※ 本コマンドは、出力先ディレクトリにファイルがある場合も、確認メッセージなしでファイルを上書きしますので、実行前に問題ないか確認ください。
+*This command overwrites the file without a confirmation message even if the file exists in the output directory, so check that there are no problems before executing it.
 
-※Rhelixa RNA-seq解析パイプラインは、singularityコンテナの形で提供されています。Rhelixa RNA-seq解析パイプラインは商用ソフトウェアであるため、遺伝研スパコン内の特定のsingularityバイナリでしか実行出来ないようにしております。そのためsingularityコマンドは、/lustre7/singularity/3.7.1/bin/singularity とフルパスで指定してください。通常のsingularityコマンドではRhelixa RNA-seq解析パイプラインが実行できませんのでご注意ください。
+*The Rhelixa's RNA-seq analysis pipeline is provided in the form of a singularity container. Therefore, the singularity command can only be executed with a specific singularity binary on the NIG supercomputer. Therefore, the singularity command should be specified with the full path /lustre7/singularity/3.7.1/bin/singularity. 
 
-#### 1.1.2 qsubでのコマンド実行（バッチ実行する場合）
-
-処理に長時間かかる場合は、qsubを利用し、バッチ実行することが推奨されます。
-事前に実行用のシェルを作成し、qsubで実行します。実行キューを指定する場合は、-l epyc や -l short 等のオプションを4行目に追加してください。
+Note: The Rhelixa's RNA-seq analysis pipeline cannot be executed with the normal singularity command.
 
 
-（例）
+#### 1.1.2 Executing commands with qsub (for batch execution)
 
-gene_expression_analysis.shの内容
+If the process takes a long time, it is recommended to use qsub and execute the commands in batch.
+Create a shell for execution in advance and execute it with qsub. To specify an execution queue, add an option such as -l epyc or -l short to line 4.
+
+Example:
+
+gene_expression_analysis.sh
 
 ```bash
 #!/bin/sh
@@ -83,31 +86,33 @@ Sample_R1.fastq.gz \
 Sample_R2.fastq.gz
 ```
 
-下記の要領でバッチ処理を登録します。
+Register the batch process according to the following instructions.
 
 ```bash
 $ qsub gene_expression_analysis.sh
 ```
 
-## 2. 処理内容について
 
-本パイプラインでは以下のプログラムが実行されます。
+## 2. Process
 
-- FastQC (v0.11.7)：fastqファイルに含まれるシーケンスリードのクオリティを評価する。
-- Trimmomatic (v0.38)：クオリティ情報に基づきfastqファイルのトリミングを行う。
-- RSeQC (v3.0.1)：fastqファイルよりライブラリのストランド情報を取得する。
-- HISAT2 (v2.1.0)：fastqファイルに含まれるシーケンスリードを参照ゲノムにマップする。
-- Samtools (v1.9)：マップ後に得られるsamファイルをbamファイルに変換する。
-- featureCounts (v1.6.3)：遺伝子ごとにマップされたリードのカウントを計算する。
+In this pipeline, the following processes can be executed collectively by simple command line operations.
 
-## 3. 結果
+- FastQC: Assess the quality of sequence reads contained in fastq files.
+- Trimmomatic: Trim fastq files based on quality information.
+- RSeQC: Get library strand information from fastq files.
+- Hisat2: maps sequence reads in the fastq file to a reference genome*2.
+- Samtools: Convert sam files obtained after mapping to bam files.
+- featureCounts: Calculates the counts of the mapped reads for each gene.
 
-以下の引数を指定して計算を実行した場合、[ファイル構成] 以降のフォルダおよびファイルが生成されます。
 
-- 引数１：Sample
-- 引数２：hg19
-- 引数３：Sample_R1.fastq.gz
-- 引数４：Sample_R2.fastq.gz
+## 3. Result
+
+When a calculation is performed with the following arguments, the folders and files after [File structure] are generated.
+
+- Argument１：Sample
+- Argument２：hg19
+- Argument３：Sample_R1.fastq.gz
+- Argument４：Sample_R2.fastq.gz
 
 ```bash
 $ export GEA_HOME=/lustre7/singularity/images/gene_expression_analysis
@@ -121,71 +126,74 @@ Sample_R1.fastq.gz \
 Sample_R2.fastq.gz
 ```
 
-[ファイル構成]
+[File structure]
 
 ```
-Sample  ## 出力データフォルダ
-├── analysis_summary.txt  ## 解析内容のサマリー
-├── fastqc  ## FastQCの出力データフォルダ
-│   ├── Sample_R1_fastqc.html  ## Read1 fastqデータのクオリティ情報
-│   ├── Sample_R1_fastqc.zip  ## Sample_R1_fastqc.html中の画像データ
-│   ├── Sample_R2_fastqc.html  ## Read2 fastqデータのクオリティ情報
-│   └── Sample_R2_fastqc.zip  ## Sample_R2_fastqc.html中の画像データ
-├── featureCounts  ## featureCountsの出力データフォルダ
-│   ├── Sample_count.txt  ## 各遺伝子に対するリードカウント
-│   ├── Sample_count.txt.summary  ## 遺伝子へのマッピング情報
-│   └── Sample.featureCounts.log  ## featureCountsの実行ログ
-├── hisat2  ## HISAT2の出力データフォルダ
-│   ├── Sample.bam  ## マップ後シーケンスリードのbamデータ
-│   ├── Sample.hisat2.log  ## 参照ゲノムへのマッピング情報
-│   ├── Sample.sam  ## マップ後シーケンスリードのsamデータ
-│   ├── Sample.sort.bam  ## ソート後のbamデータ
-│   └── Sample.sort.bam.bai  ## Sample.sort.bamのインデックス
-└── trimmomatic  ## Trimmomaticの出力データフォルダ
-    ├── Sample_R1_paired.fastq  ## ペアのあるRead1のシーケンスリード
-    ├── Sample_R1_unpaired.fastq  ## ペアのないRead1のシーケンスリード
-    ├── Sample_R2_paired.fastq  ## ペアのあるRead2のシーケンスリード
-    ├── Sample_R2_unpaired.fastq  ## ペアのないRead2のシーケンスリード
-    └── Sample.trimmomatic.log  ## Trimmomaticの実行ログ
+Sample ## Output data folder
+├── analysis_summary.txt ## Summary of analysis contents
+├── fastqc ## FastQC output data folder
+│ ├── Sample_R1_fastqc.html ## Read1 fastq data quality information
+│ ├── Sample_R1_fastqc.zip ## Image data in Sample_R1_fastqc.html
+│ ├── Sample_R2_fastqc.html ## Read2 fastq data quality information
+│ └── Sample_R2_fastqc.zip ## Image data in Sample_R2_fastqc.html
+├── featureCounts ## Output data folder for featureCounts
+│ ├── Sample_count.txt ## Read counts for each gene
+│ ├── Sample_count.txt.summary ## Mapping information to genes
+│ └── Sample.featureCounts.log ## Execution log of featureCounts
+├── hisat2 ## HISAT2 output data folder
+│ ├── Sample.bam ## bam data of sequence reads after mapping
+│ ├── Sample.hisat2.log ## Mapping information to the reference genome
+│ ├── Sample.sam ## Sam data of post-mapped sequence reads
+│ ├── Sample.sort.bam ## bam data after sorting
+│ └── Sample.sort.bam.bai ## Index of Sample.sort.bam
+└── trimmomatic ## Trimmomatic output data folder
+    ├── Sample_R1_paired.fastq ## Read1 sequence read with pairs
+    ├── Sample_R1_unpaired.fastq ## Sequence read of Read1 without pairs
+    ├── Sample_R2_paired.fastq ## Sequence read of Read2 with pairs
+    ├── Sample_R2_unpaired.fastq ## Sequence read of Read2 without pairs
+    └── Sample.trimmomatic.log ## Trimmomatic execution log
 ```
 
-- 「##」以降はフォルダまたはファイルの内容
+- After "##" are the contents of the folder or file.
 
-analysis_summary.txtにおいて、[使用ツールのバージョン]には本解析パイプラインで使用されるプログラムのバージョン情報、[Phase.1~6]には各フェーズで実行されたコマンドの内容、[データ情報]には参照データ及び処理段階ごとのリード数情報が記載されています。
+In analysis_summary.txt, [Version of tool used] contains the version information of the programme used in this analysis pipeline, [Phase.1~6] contains the commands executed in each phase and [Data information] contains reference data and the number of reads per processing phase. 
 
-[analysis_summary.txtの内容]
+[Contents of analysis_summary.txt]
 
 ```
-[使用ツールのバージョン]
+[Version of tool used]
  - FastQC v0.11.7
  - Trimmomatic v0.38
  - HISAT2 v2.1.0
  - Samtool v1.9
  - RSeQC (infer_experiment.py) v3.0.1
  - featureCounts v1.6.3
- 
-[Phase.1] FastQCによるシーケンスデータのクオリティチェック
+
+[Phase.1] Quality check of sequence data with FastQC
 fastqc --nogroup -o Sample/fastqc/ Sample_Fr-firststrand_R1.fq.gz
 fastqc --nogroup -o Sample/fastqc/ Sample_Fr-firststrand_R2.fq.gz
  
-[Phase.2] Trimmomaticによるシーケンスデータのトリミング
+[Phase.2] Trimming sequence data with Trimmomatic
 java -jar /usr/local/bioinfo_tools/src/Trimmomatic-0.38/trimmomatic-0.38.jar PE -threads 4 Sample_Fr-firststrand_R1.fq.gz Sample_Fr-firststrand_R2.fq.gz Sample/trimmomatic/Sample_R1_paired.fastq Sample/trimmomatic/Sample_R1_unpaired.fastq Sample/trimmomatic/Sample_R2_paired.fastq Sample/trimmomatic/Sample_R2_unpaired.fastq ILLUMINACLIP:/usr/local/bioinfo_tools/src/Trimmomatic-0.38/adapters/paired_end.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:15 MINLEN:36
- 
-[Phase.3] RSeQC (infer_experiment.py) によるストランド情報の取得...
+
+[Phase.3] Getting strand information by RSeQC (infer_experiment.py)...
 infer_experiment.py -r /data/share/reference/hg19/ucsc/refGene_hg19.bed -i Sample/hisat2/Sample.sort.bam
  
-[Phase.4] HISAT2によるシーケンスデータのマッピング...
+[Phase.4] Mapping sequence data with HISAT2...
 hisat2 --rna-strandness RF --dta -p 4 -x /data/share/reference/hg19/Hisat2/hg19 -1 Sample/trimmomatic/Sample_R1_paired.fastq -2 Sample/trimmomatic/Sample_R2_paired.fastq -S Sample/hisat2/Sample.sam
  
-[Phase.5] SAMtoolsによるbamファイルの作成...
+[Phase.5] Creating bam files with SAMtools...
 samtools view -bS Sample/hisat2/Sample.sam > Sample/hisat2/Sample.bam
 samtools sort Sample/hisat2/Sample.bam > Sample/hisat2/Sample.sort.bam
 samtools index Sample/hisat2/Sample.sort.bam
  
 [Phase.6] featureCountsによる遺伝子にマッピングされるシーケンスリードの集計...
 featureCounts -p -s 2 -T 4 -F GTF -t exon -g gene_id -a /data/share/reference/hg19/gtf/Homo_sapiens.GRCh37.87.processed.gtf -o Sample/featureCounts/Sample_count.txt Sample/hisat2/Sample.sort.bam
+
+[Phase.6] Aggregation of sequence reads mapped to genes by featureCounts...
+featureCounts -p -s 2 -T 4 -F GTF -t exon -g gene_id -a /data/share/reference/hg19/gtf/Homo_sapiens.GRCh37.87.processed.gtf -o Sample/featureCounts/Sample_count.txt Sample/hisat2/Sample.sort.bam
  
-[データ情報]
+[data info].
  - Reference genome: hg19
  - Reference gene: Homo_sapiens.GRCh37.87.gtf
  - Library type: fr-firststrand
@@ -193,50 +201,47 @@ featureCounts -p -s 2 -T 4 -F GTF -t exon -g gene_id -a /data/share/reference/hg
  - Num. of trimmed read pairs: 981403
  - Num. of mapped reads: 1928834
  
-[提供元：株式会社Rhelixa (https://www.rhelixa.com/)]
-パイプラインの使用方法に関するご質問、または発展的な解析のご相談につきましては、 customer-service@rhelixa.com までご連絡ください。
+[Source: Rhelixa Corporation (https://www.rhelixa.com/)]
+For questions on how to use the pipeline or to discuss further analysis, please contact customer-service@rhelixa.com.
  
-株式会社Rhelixaでは多様なバイオインフォマティクスニーズにお応えする受託サービスを実施しています。
- - スピーディな図版付き基本解析（ベーシックプラン）
- - オーダーメイドの高次比較解析（スタンダードプラン）
- - IPAによるパスウェイ解析
- - シークエンスのみのご依頼も格安で
+Rhelixa Inc. offers contract services to meet diverse bioinformatics needs.
+ - Speedy, illustrated basic analysis (Basic Plan)
+ - Tailor-made higher-order comparative analysis (Standard Plan)
+ - Pathway analysis by IPA
+ - Sequence-only requests are also available at a reasonable price.
  
-▼サービスの詳細・お問い合わせはこちらまで▼
+▼ For more information and enquiries about our services, contact here ▼
 https://www.rhelixa.com/service/
 ```
 
-## 4. 免責事項
 
-本パイプラインは、すべて研究目的のために使われることを前提として開発しております。本パイプラインを用いて得られた解析結果を研究目的以外へご使用された場合、これに起因する損失・損害等については、弊社では責任を負いかねますので、あらかじめご了承ください。
+## 4. Disclaimer
 
-## 5. 謝辞について
+This pipeline has been developed on the assumption that it will be used entirely for research purposes. Note that we cannot be held responsible for any loss or damage resulting from the use of analysis results obtained using this pipeline for any purpose other than research purposes.
 
-本解析パイプラインを利用した論文が採択された際には、以下の記載例を参考に謝辞への記載をお願いします。
 
-（記載例）
+## 5. About Acknowledgements
 
-＜謝辞 英語＞
+When your paper using this analysis pipeline is accepted, include in the acknowledgements with the following example.
+
+Example:
+
 ```
 RNA-seq analyses were performed by the pipeline provided by Rhelixa, Inc.
 ```
- 
 
-＜謝辞 日本語＞
 
-```
-本研究は、株式会社Rhelixaの提供するRNA-seq解析パイプラインを利用しました。
-```
+## 6. Contact Rhelixa
 
-## 6. 連絡先
+If you questions on how to use this pipeline or to discuss a developmental analysis, contact `customer-service@rhelixa.com`.
 
-本パイプラインの使用方法に関するご質問、または発展的な解析のご相談につきましては、 customer-service@rhelixa.com までご連絡ください。
 
-## 株式会社Rhelixaについて
+## About Rhelixa Co., Ltd.
 
-| 会社名     | 株式会社Rhelixa（レリクサ）                            |
-|------------|--------------------------------------------------------|
-|設立年月日  |	2015年2月                                             |
-|本社 	     | 東京都千代田区神田三崎町2-2-14 BRICK GATE 水道橋 2階   |
-|代表者      | 仲木 竜                                                |
-|主な事業内容| 	ゲノミクス・エピジェネティクス研究のコンサルティングサービスおよびエピゲノムデータを活用した事業開発。|
+|Company Name            |Rhelixa Co., Ltd.                                        |
+|------------------------|---------------------------------------------------------|
+|Date of Establishment   |February 2015                                            |
+|Head Office             |KDX Ginza East Building 5F, 3-7-2 Irifune, Chuo-ku, Tokyo|
+|Representative          |Ryu Nakaki                                               |
+|Main Business Activities|Consulting services for genomics and epigenetics research and business development using epigenomic data. |
+
