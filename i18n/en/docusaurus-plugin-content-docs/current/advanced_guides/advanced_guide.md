@@ -112,7 +112,7 @@ The RNAseq pipeline of Rhelixa is installed on the NIG supercomputer in the form
 <br />
 
 - [Rhelixa RNAseq > Introduction](/advanced_guides/Rhelixa_RNAseq)
-- [Rhelixa RNAseq > How to use](/advanced_guides/Rhelixa_RNAseq_manual)
+- [Rhelixa RNAseq > User manual](/advanced_guides/Rhelixa_RNAseq_manual)
 
 </td>
 </tr>

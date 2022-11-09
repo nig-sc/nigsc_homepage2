@@ -1,48 +1,50 @@
 ---
 id: Rhelixa_RNAseq
-title: Rhelixa RNAseqパイプライン
+title: Introduction
 ---
 
-国立遺伝学研究所と包括連携協定を結ぶ株式会社Rhelixa（代表取締役：仲木 竜）より、RNA-seq※1解析パイプラインが提供され、スーパーコンピュータシステムに実装されました。
+The RNA-seq*1 analysis pipeline has been provided by Rhelixa Corporation (CTO: Ryu Nakaki), which has a comprehensive collaboration agreement with the National Institute of Genetics, and implemented on the NIG supercomputer system.
 
-※1 RNA-seq：次世代シーケンサーを用いた遺伝子発現の網羅的解析手法です。特定のRNA配列をキャプチャーするマイクロアレイとは異なり、RNA-seqは転写産物を網羅的に検出することができます。転写産物全体の配列を調べることで未知のmRNAアイソフォームやスプライシングを含めた多くのRNA情報を得られる方法として汎用性が高く、比較可能な公共データが豊富に存在することから、特定の組織・細胞における遺伝子プロファイルの同定や、特異的に発現が変動する遺伝子の絞り込みにおいて、幅広い研究分野で利用されています。
+*1: RNA-seq is a method for comprehensive analysis of gene expression using next generation sequencers. Unlike microarrays, which capture specific RNA sequences, RNA-seq can detect transcripts comprehensively. It is highly versatile as a method to obtain a large amount of RNA information, including unknown mRNA isoforms and splicing, by examining the sequence of the entire transcript. Therefor, it is used in a wide range of research fields to identify gene profiles in cells and narrow down genes with specific changes in expression.
 
-## 解析パイプラインの概要
 
-本パイプラインは、RNA-seqアプリケーションにより得られた単一サンプルのシーケンスリードデータを参照ゲノムにマッピングし、遺伝子領域ごとに集計し、全遺伝子の発現量を計算するものです。
+## What is the Rhelixa's RNA-seq analysis pipeline
 
-本パイプラインにおいては、簡便なコマンドライン操作により、以下の処理を一括で実行できます。
+This pipeline maps the Sequence Read Archive of a single sample obtained by the RNA-seq application to a reference genome, aggregates them by gene region and calculates the expression levels of all genes.
 
-- FastQC：fastqファイルに含まれるシーケンスリードのクオリティを評価します。
-- Trimmomatic：クオリティ情報に基づきfastqファイルのトリミングを行います。
-- RSeQC：fastqファイルよりライブラリのストランド情報を取得します。
-- Hisat2：fastqファイルに含まれるシーケンスリードを参照ゲノム※2にマップします。
-- Samtools：マップ後に得られるsamファイルをbamファイルに変換します。
-- featureCounts：遺伝子ごとにマップされたリードのカウントを計算します。
+In this pipeline, the following processes can be executed collectively by simple command line operations.
 
-※2 ：参照ゲノムはヒト（hg19、hg38）およびマウス（mm9、mm10）のみ対応しております。
+- FastQC: Assess the quality of sequence reads contained in fastq files.
+- Trimmomatic: Trim fastq files based on quality information.
+- RSeQC: Get library strand information from fastq files.
+- Hisat2: maps sequence reads in the fastq file to a reference genome*2.
+- Samtools: Convert sam files obtained after mapping to bam files.
+- featureCounts: Calculates the counts of the mapped reads for each gene.
 
- 
+*2: Only human (hg19, hg38) and mouse (mm9, mm10) reference genomes are supported.
+
 ![](/img/advanced_guides/Rhelixa_RNAseq1_EN.png)
 
 
-## 解析パイプラインの利用方法
+## How to use this analysis pipeline
 
-遺伝研スーパーコンピュータシステムの利用者であれば、どなたでも本パイプラインを無償で利用することが可能です。より発展的な解析を必要とされる際は、株式会社Rhelixaまでご相談ください。
+Any user of the NIG supercomputer system can use this pipeline free of charge. If you require more advanced analysis, contact Rhelixa Co., Ltd.
 
-## 使用について
 
-[使用マニュアル](/advanced_guides/Rhelixa_RNAseq_manual)
+## About use
 
-## Rhelixa相談窓口
+[User manual](/advanced_guides/Rhelixa_RNAseq_manual)
+
+## Contact Rhelixa
 
 customer-service@rhelixa.com
 
-## 株式会社Rhelixaについて
+## About Rhelixa Co., Ltd.
 
-| 会社名     | 株式会社Rhelixa（レリクサ）                            |
-|------------|--------------------------------------------------------|
-|設立年月日  |	2015年2月                                             |
-|本社 	     | 東京都千代田区神田三崎町2-2-14 BRICK GATE 水道橋 2階   |
-|代表者      | 仲木 竜                                                |
-|主な事業内容| 	ゲノミクス・エピジェネティクス研究のコンサルティングサービスおよびエピゲノムデータを活用した事業開発。|
+|Company Name            |Rhelixa Co., Ltd.                                        |
+|------------------------|---------------------------------------------------------|
+|Date of Establishment   |February 2015                                            |
+|Head Office             |KDX Ginza East Building 5F, 3-7-2 Irifune, Chuo-ku, Tokyo|
+|Representative          |Ryu Nakaki                                               |
+|Main Business Activities|Consulting services for genomics and epigenetics research and business development using epigenomic data. |
+
