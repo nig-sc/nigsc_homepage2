@@ -5,8 +5,8 @@ title: "Installing HCP tools (CentOS 7)"
 
 When you use CentOS 7 as the OS of the user's client computer, install the HCP tools client software installer from the following link.
 
-Download the zip file [from here](https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/CentOS7).
-- <a href="https://github.com/oogasawa/nigsc_HCPtools">Here</a> are past versions and others.
+Download the zip file [from here](https://github.com/nig-sc/HCPtools/tree/main/1.3.0R-45/CentOS7).
+- <a href="https://github.com/nig-sc/HCPtools">Here</a> are past versions and others.
 
 
 Unzip the zip file.
