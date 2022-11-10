@@ -8,14 +8,14 @@ title: "Installing HCP tools (Ubuntu Linux)"
 When you use Ubuntu Linux as the OS of the user's client computer, install the HCP tools client software installer from the following link.
 
 HCP tools addesses Ubuntu Linux 16.04, 18.04, 20.04.
-Download the zip file for your version [from here](https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Ubuntu_Linux).
-- <a href="https://github.com/oogasawa/nigsc_HCPtools">Here</a> are past versions and others.
+Download the zip file for your version [from here](https://github.com/nig-sc/HCPtools/tree/main/1.3.0R-45/Ubuntu_Linux).
+- <a href="https://github.com/oogasawa/Ptools">Here</a> are past versions and others.
 
 
 The following steps are an example of Ubuntu Linux 20.04.
 
 ```
-$ git clone https://github.com/oogasawa/nigsc_HCPtools/blob/main/1.3.0R-45/Ubuntu_Linux/hcp-tools-1.3.0R_45.amd64.ubuntu2004.zip
+$ git clone https://github.com/oogasawa/Ptools/blob/main/1.3.0R-45/Ubuntu_Linux/hcp-tools-1.3.0R_45.amd64.ubuntu2004.zip
 ```
 
 Unzip the zip file.

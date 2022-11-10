@@ -7,10 +7,10 @@ title: "Installing HCP tools (Windows)"
 
 Download the HCP tools client software installer from the following link.
 
-- <a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/Windows/HCP_Tools_Client.msi">HCP_Tools_Client.msi</a>
-- <a href="https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Windows">HCP_Tools_Client.md5sum</a>
+- <a href="https://github.com/oogasawa/Ptools/raw/main/1.3.0R-45/Windows/HCP_Tools_Client.msi">HCP_Tools_Client.msi</a>
+- <a href="https://github.com/oogasawa/Ptools/tree/main/1.3.0R-45/Windows">HCP_Tools_Client.md5sum</a>
 
-If you need past versions and others, <a href="https://github.com/oogasawa/nigsc_HCPtools">you can download here</a>.
+If you need past versions and others, <a href="https://github.com/oogasawa/Ptools">you can download here</a>.
 
 
 ## Installing the HCP tools client software

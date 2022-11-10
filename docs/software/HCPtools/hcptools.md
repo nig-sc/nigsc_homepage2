@@ -13,9 +13,9 @@ title: HCPtools の使い方
 参考資料
 
 - 公式マニュアル (vession 1.3.0R_45)
-    - HCPtools コマンド導入ガイド (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">日本語版</a>)
-    - HCPtools コマンド概要説明 (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">日本語版</a>)
-    - HCPtools コマンドリファレンス (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">日本語版</a>)
+    - HCPtools コマンド導入ガイド (<a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">日本語版</a>)
+    - HCPtools コマンド概要説明 (<a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">日本語版</a>)
+    - HCPtools コマンドリファレンス (<a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">日本語版</a>)
 
 - [FAQ（よくある質問）: HCP tools](/faq/faq_hcptools)
 
