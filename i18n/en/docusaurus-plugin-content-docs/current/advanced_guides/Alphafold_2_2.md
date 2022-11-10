@@ -1,49 +1,47 @@
 ---
 id: Alphafold_2_2
-title: 遺伝研スパコンでのalphafold 2.2の実行
+title: alphafold 2.2
 ---
 
 
-## 概略
-遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.2.2</a>をインストールしたsingularity imageとalphafold 2.2で使用するデータベースを /lustre7/software/alphafold/2.2.2/ に用意しています。
+## Introduction
 
+The NIG supercomputer provides the singularity image with alphafold 2.2.2 installed and the database for <a href="https://github.com/deepmind/alphafold">alphafold 2.2</a> on /lustre7/software/alphafold/2.2.2/.
 
-alphafold 2.2によるタンパク質の立体構造予測は以下のステップで実行されます。
+Protein structure prediction by alphafold 2.2 is performed in the following steps.
 
+1. Input amino acid sequence search for uniref90 database by jackhmmer (using CPU)
+2. Input amino acid sequence search for mgnify database by jackhmmer (using CPU)
+3. Input amino acid sequences search for the pdb70 database (for monomers) or the pdb_seqres database (for multimers) by hhsearch (using CPU)
+4. Input amino acid sequence search for bfd database and uniclust30 database by hhblits (using CPU)
+5. Structure templates search from the pdb_mmcif database (using CPU)
+6. Input amino acid sequence search for uniprot database (for multimers) by jackhmmer (using CPU)
+7. Predict 3D structure by machine learning (using CPU or GPU)
+8. Structure optimisation with OpenMM (using CPU or GPU)
 
-1. jackhmmerによるuniref90データベースを対象とした入力アミノ酸配列の検索（CPU使用）
-2. jackhmmerによるmgnifyデータベースを対象とした入力アミノ酸配列の検索（CPU使用）
-3. hhsearchによるpdb70データベース（単量体の場合）またはpdb_seqresデータベース（多量体の場合）を対象とした入力アミノ酸配列の検索（CPU使用）
-4. hhblitsによるbfdデータベース・uniclust30データベースを対象とした入力アミノ酸配列の検索（CPU使用）
-5. 構造テンプレートをpdb_mmcifデータベースより検索（CPU使用）
-6. jackhmmerによるuniprotデータベース（多量体の場合）を対象とした入力アミノ酸配列の検索（CPU使用）
-7. 機械学習による立体構造予測（CPUまたはGPU使用）
-8. OpenMMによる構造最適化（CPUまたはGPU使用）
+If the input amino acid sequence is a multimer, steps 1-6 are executed for each amino acid sequence of the subunits that make up the multimer.
 
-入力アミノ酸配列が多量体の場合、ステップ1-6は多量体を構成するサブユニットのアミノ酸配列ごとに実行されます。
+Steps 7 and 8 are executed five times because the default setting is to predict the structure of five models.  In addition, steps 7 and 8 can use GPUs in addition to CPUs, so singularity images for CPUs and GPUs are prepared respectively.
 
-デフォルトの設定では5つのモデルの構造予測を行うため、ステップ7・8は5回実行されます。また、ステップ7・8はCPUの他にGPUを使用できるため、CPU用とGPU用のsingularity imageをそれぞれ用意しています。
-
-また、2.2より複合体の構造予測はデフォルトの設定では1つの配列に対して5個の構造予測を行うため、最大5つのサブユニットの配列に対して総計25個の予測構造が出力されます。
-
+And, from 2.2, the structure prediction for complexes is set to 5 structure predictions per sequence by default, so a total of 25 predicted structures are output for sequences of up to 5 subunits.
  
-### 実行時間の目安
+### Approximate execution time
 
-- ステップ1: 10 min
-- ステップ2: 10 min
-- ステップ3: 5min
-- ステップ4: 5 hour
-- ステップ5: 1 min
-- ステップ6: 15 min
-- ステップ7: 200aaで1 hour, 900aaで3 hour（64CPUコア使用）, 200aaで2min, 900aaで6 min（GPU使用）
-- ステップ8: 200aaで0.5 min, 900aaで1 hour（64CPUコア使用）, 200aaで0.3min, 900aaで3 min（GPU使用）
+- Step 1: 10 min
+- Step 2: 10 min
+- Step 3: 5min
+- Step 4: 5 hour
+- Step 5: 1 min
+- Step 6: 15 min
+- Step 7: 1 hour with 200aa, 3 hour with 900aa（using 64CPU core）, 2min with 200aa, 6 min with 900aa（using GPU）
+- Step 8: 0.5 min with 200aa, 1 hour with 900aa（using 64CPU core）, 0.3min with 200aa, 3 min with 900aa（using GPU）
 
 
-## 入力ファイルの準備
+## Prepare input files
 
-立体構造を予測するタンパク質のアミノ酸配列を1ファイルのfasta形式で用意してください。対象タンパク質が多量体の場合は、構成するサブユニットのアミノ酸配列をすべて1ファイルに入力してください。同じサブユニットを複数含む場合は、その数だけ該当するサブユニットのアミノ酸配列を入力してください。
+Prepare the amino acid sequence of the protein for which the 3D structure is to be predicted in fasta format in a single file. If the target protein is a multimer, enter the amino acid sequences of all its constituent subunits in a single file. If the same subunit is included multiple times, enter the amino acid sequences of the corresponding subunits for that number.
 
-以下のfastaファイルはEcoRIホモ二量体の例となります。
+The fasta file below is an example of an EcoRI homodimer.
 
 ```
 >EcoRI
@@ -59,14 +57,14 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 ```
 
 
-## ジョブスクリプトの準備
+## Prepare job scripts
 
-/lustre7/software/alphafold/2.2.2/ にジョブスクリプトのサンプルを用意しています。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+There are sample job scripts on /lustre7/software/alphafold/2.2.2/. Download this to your own home directory and use it, modifying it accordingly.
 
 
 ### example_job_script_cpu.sh
 
-GPUを使用しない場合のジョブスクリプトです。
+Job scripts without GPU
 ```
 #!/bin/sh
 #$ -S /bin/sh
@@ -98,7 +96,8 @@ singularity exec \
 ```
 
 
-#### 修正箇所
+#### Modification place
+
 ```
 #$ -pe def_slot 16
 ```
@@ -110,59 +109,56 @@ export OPENMM_CPU_THREADS=16
 ```
 export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=16"
 ```
-使用するCPUコア数を16以上128以下で入力してください。3行に同じ数値を入力してください。
+Enter the number of CPU cores to be used between 16 and 128. Enter the same number in both lines.
 
-この値はステップ8で使用するCPUコア数を決定します。この値が大きければ大きいほどステップ8の処理が速くなります。
-
-
+This value determines the number of CPU cores to use in step 8. The higher this value, the faster step 8 will be processed.
 
 ``` 
 #$ -l s_vmem=160G
 ```
-2560G / def_slotの値 を入力してください。
+Enter a value of 2560G / def_slot.
 
 
 ```
 #$ -l mem_req=8G
 ```
-128G / def_slotの値 を入力してください。
+Enter a value of 128G / def_slot.
 
 
 ``` 
 FASTAFILE="${HOME}/input/test.fasta"
 ```
-入力ファイルのパスを入力してください。
+Enter the path of the input file.
 
 
 ``` 
 OUTPUTDIR="${HOME}/output"
 ```
-結果を出力するディレクトリのパスを入力してください。
+Enter the path of the directory where the results will be output.
 
-このディレクトリ内に入力ファイル名から拡張子を除いた名前でディレクトリが作成され、結果が出力されます。同じ名前のディレクトリが既に存在し、その中に計算結果が入っていた場合、類縁配列の検索（ステップ1-6）は行われず立体構造の予測部分（ステップ7・8）のみ再計算されます。
+A directory will be created in this directory with the name of the input file name excluding the extension, and the results will be output. If a directory with the same name already exists and contains the calculation results, the search for similar sequences (steps 1-6) will not be performed and only the prediction part of the 3D structure (steps 7 and 8) will be recalculated.
 
 
 ```
 DATE="2021-11-12"
 ```
-立体構造の予測に使用するPDBの構造データのリリース日の上限を指定してください。この日付よりリリース日が新しい構造データは使用されません。
+Specify an upper limit for the release date of the PDB structural data used for 3D structure prediction. Structural data released later than this date will not be used.
 
 
 ```
 MODEL="monomer"
 ```
-
-入力ファイルの内容に従って単量体タンパク質の構造予測の場合はmonomer、多量体タンパク質の構造予測の場合はmultimerを入力してください。
+According to the contents of the input file, enter monomer for monomeric protein structure prediction or multimer for multimeric protein structure prediction.
 
 ```
 PRED=5
 ```
 
-MODEL=”multimer” を指定した際に、1つの配列に対して出力する予測構造の数を指定します。デフォルト値は5で、最大5つのサブユニットの配列に対して総計25個の予測結果が出力されます。この値はMODEL=”monomer” を指定した際は無視されます。
+When MODEL="multimer" is specified, this specifies the number of prediction structures to be output for a single array. The default value is 5, which outputs a total of 25 predictions for an array of up to 5 subunits. This value is ignored when MODEL="monomer" is specified.
 
 ### example_job_script_gpu.sh
 
-GPUを使用する場合のジョブスクリプトです。gpu.qでジョブを実行します。
+You can use this job script for using a GPU. Run the job with gpu.q.
 
 ```
 #!/bin/sh
@@ -193,50 +189,50 @@ singularity exec \
 --num_multimer_predictions_per_model=${PRED}
 ```
 
-#### 修正箇所
+#### Modification place
 
 ```
 #$ -l cuda=1
 ```
 
-構造予測するタンパク質の大きさが1000アミノ酸残基程度までは cuda=1 で実行可能です。GPUのメモリ不足でエラーになった場合、数を増やして実行してください。
+Up to a protein size of about 1000 amino acid residues for structure prediction can be run with cuda=1. If an error occurs due to insufficient memory on the GPU, increase the number.
 
 ``` 
 FASTAFILE="${HOME}/input/test.fasta"
 ```
 
-入力ファイルのパスを入力してください。
+Enter the path of the input file.
 
 ```
 OUTPUTDIR="${HOME}/output"
 ```
 
-結果を出力するディレクトリのパスを入力してください。
+Enter the path of the directory where the results will be output.
 
-このディレクトリ内に入力ファイル名から拡張子を除いた名前でディレクトリが作成され、結果が出力されます。同じ名前のディレクトリが既に存在し、その中に計算結果が入っていた場合、類縁配列の検索（ステップ1-6）は行われず立体構造を予測する処理（ステップ7・8）のみ再計算されます。
+A directory will be created in this directory with the name of the input file name excluding the extension, and the results will be output. If a directory with the same name already exists and contains the calculation results, the search for similar sequences (steps 1-6) will not be performed and only the prediction part of the 3D structure (steps 7 and 8) will be recalculated.
 
 ``` 
 DATE="2021-11-12"
 ```
 
-立体構造の予測に使用するPDBの構造データのリリース日の上限を指定してください。この日付よりリリース日が新しい構造データは使用されません。
+Specify an upper limit for the release date of the PDB structural data used for 3D structure prediction. Structural data released later than this date will not be used.
 
 ``` 
 MODEL="monomer"
 ```
 
-入力ファイルの内容に従って単量体タンパク質の構造予測の場合はmonomer、多量体タンパク質の構造予測の場合はmultimerを入力してください。
+According to the contents of the input file, enter monomer for monomeric protein structure prediction or multimer for multimeric protein structure prediction.
 
 ``` 
 PRED=5
 ```
 
-MODEL=”multimer” を指定した際に、1つの配列に対して出力する予測構造の数を指定します。デフォルト値は5で、最大5つのサブユニットの配列に対して総計25個の予測結果が出力されます。この値はMODEL=”monomer” を指定した際は無視されます。
+When MODEL="multimer" is specified, this specifies the number of prediction structures to be output for a single array. The default value is 5, which outputs a total of 25 predictions for an array of up to 5 subunits. This value is ignored when MODEL="monomer" is specified.
 
 
-## ジョブの実行
+## Running a job
 
-ジョブスクリプトをqsubコマンドでUGEに投入してください。
+Submit the job script to the UGE using the qsub command.
 
 ```
 $ qsub example_job_script_cpu.sh
@@ -246,15 +242,15 @@ $ qsub example_job_script_cpu.sh
 $ qsub example_job_script_gpu.sh
 ```
 
-## 出力例
+## Output Example
 
-入力ファイル
+the input file
 
 [test.fasta](test.fasta)
 
-出力ファイル
+output files
 
-[ranking_debug.txt](ranking_debug.txt)←JSONファイルで出力されます
+[ranking_debug.txt](ranking_debug.txt)← Output in JSON files
 
 [ranked_4.pdb](ranked_4.pdb)
 
@@ -270,8 +266,7 @@ $ qsub example_job_script_gpu.sh
 
 [ranked_0.pdb](ranked_0.pdb)
 
-
-入力ファイルと同一アミノ酸配列（近縁種）のタンパク質のPDBエントリー
+PDB entries for proteins of the input file and the same amino acid sequence (closely related species).
 
 <a href="https://www.rcsb.org/structure/3AS4"></a>
 
