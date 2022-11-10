@@ -7,11 +7,11 @@ title: "HCPtoolsのインストール(Windowsの場合)"
 
 以下のリンクからインストーラがダウンロード可能です。
 
-- <a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/Windows/HCP_Tools_Client.msi">HCP_Tools_Client.msi</a>
-- <a href="https://github.com/oogasawa/nigsc_HCPtools/tree/main/1.3.0R-45/Windows">HCP_Tools_Client.md5sum</a>
+- <a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/Windows/HCP_Tools_Client.msi">HCP_Tools_Client.msi</a>
+- <a href="https://github.com/nig-sc/HCPtools/tree/main/1.3.0R-45/Windows">HCP_Tools_Client.md5sum</a>
 
 
-過去のバージョンなどは<a href="https://github.com/oogasawa/nigsc_HCPtools">こちらからダウンロード可能です。</a>
+過去のバージョンなどは<a href="https://github.com/nig-sc/HCPtools">こちらからダウンロード可能です。</a>
 
 
 

@@ -11,9 +11,9 @@ For high-speed file transfer over long distances, the file transfer software Asp
 Reference
 
 - The official manual (vession 1.3.0R_45)
-    - HCP tools Command Introduction Guide (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">Japanese edition</a>)
-    - HCP tools Command Overview (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">Japanese edition</a>)
-    - HCP tools Command Reference (<a href="https://github.com/oogasawa/nigsc_HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">Japanese edition</a>)
+    - HCP tools Command Introduction Guide (<a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_Guide.pdf">Japanese edition</a>)
+    - HCP tools Command Overview (<a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_overview.pdf">Japanese edition</a>)
+    - HCP tools Command Reference (<a href="https://github.com/nig-sc/HCPtools/raw/main/1.3.0R-45/manual/HCPtools_command_reference.pdf">Japanese edition</a>)
 
 - [FAQ (HCP tools)](/faq/faq_hcptools)
 
