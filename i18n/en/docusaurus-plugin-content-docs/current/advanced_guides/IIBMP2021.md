@@ -1,54 +1,55 @@
 ---
 id: IIBMP2021
-title: IIBMP2021  データサイエンティスト養成セッション
+title: IIBMP2021 Data Scientist Training Session
 ---
 
 
 
-[2021年日本バイオインフォマティックス学会年会　第10回生命医薬情報学連合大会 (IIBMP2021) 9月27日 データサイエンティスト養成セッション](https://www.jsbi.org/iibmp2021/ddbj_session/)
+[2021 Annual Meeting of the Japanese Society for Bioinformatics, 10th Annual  Conference of the Informatics In Biology, Medicine and Pharmacology (IIBMP2021) 27 Sept Sponsored session](https://www.jsbi.org/iibmp2021/ddbj_session/)
 
   <table>
   <tr>
-  <td>9/27（月）<br />13:30〜15:00</td> 
+  <td>9/27（Mon）<br />13:30〜15:00</td> 
   <td>
-  <h4>スパコンが可能にするデータ解析　〜スパコンを用いた効率よい解析のノウハウを伝えます〜</h4>
-  座長：小笠原理（国立遺伝学研究所）
+  <h4>Data analysis made possible by supercomputers - Teaching expertise on efficient analysis using supercomputers -</h4>
+  Chairperson: Osamu Ogasawara (the National Institute of Genetics)
   <br />
-  1. 奥田喜弘（DDBJ）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEqpnyqPlXxwZTpjmrNsPy50">「無料ではじめる遺伝研スパコン基本の基」</a>
+  1. Yoshihiro Okuda（DDBJ）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEqpnyqPlXxwZTpjmrNsPy50">"Getting started for free: the basics of the NIG supercomputer"</a>
   <br />
-  2. 小笠原理（DDBJ）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOErzUIYuBu_4DSQCv-X3pARC">「遺伝研スパコンを使った解析の並列化・高速化」</a>
+  2. Osamu Ogasawara（DDBJ）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOErzUIYuBu_4DSQCv-X3pARC">"The parallelizing and fast analysis using the NIG supercomputer"</a>
   <br />
-  3. 仲木竜（㈱レリクサ）<br />「難しい操作を全て無くしたRNA-seq解析パイプライン」
+  3. Ryu Nakagi (Rhelixa Co., Ltd.)<br /> "RNA-seq analysis pipeline without all difficult operations".
   </td>
   </tr>
   
   <tr>
-  <td>9/27（月）<br />15:15〜16:45</td>
+  <td>9/27（Mon）<br />15:15〜16:45</td>
   <td>
-　<h4>新型コロナゲノム解析の実際　〜ゲノム解析の着眼点を国内の実データを使って紹介します〜</h4>
-  座長：浅野さとみ（国立遺伝学研究所）
+　<h4>New corona genome analysis in practice - Introduction of the focus of genome analysis using actual domestic data</h4>
+  Chairperson: Satomi ASANO (National Institute of Genetics)
   <br />
-  1. 森宙史（遺伝研）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEoFmjuLCs5yqTV01RcNGqNQ">「SARS-CoV-2ゲノムシーケンシングの実際」</a>
+  1. Hiroshi Mori (the National Institute of Genetics)<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEoFmjuLCs5yqTV01RcNGqNQ">"SARS-CoV-2 genome sequencing in practice"</a>
   <br />
-  2. 谷澤靖洋（遺伝研）<br />「DDBJにおけるSARS-Cov-2ゲノムのデータ登録・公開への取り組み」
+  2. Yasuhiro Tanizawa (the National Institute of Genetics)<br />"Efforts to register and publish data on the SARS-Cov-2 genome in the DDBJ"
   <br />
-  3. 中川草（東海大）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOErw9z5bzxrM0psq_HaBeslU">「ゲノム解析から見えてくる日本の新型コロナウイルスの感染動向」</a>
+  3. So Nakagawa (Tokai University)<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOErw9z5bzxrM0psq_HaBeslU">
+  "Genomic analysis reveals trends in transmission of novel coronaviruses in Japan"</a>
   <br />
-  4. 阿部貴志（新潟大）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEpKA5dWTiHIkLTKefc0yqLt">「SARS-CoV-2ゲノムのネットワーク解析」</a>
+  4. Takashi Abe (Niigata University)<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEpKA5dWTiHIkLTKefc0yqLt">"Network analysis of the SARS-CoV-2 genome"</a>
   </td>
   </tr>
   
   <tr>
-  <td>9/28（火）<br />8:45〜10:15</td>
+  <td>9/28（Tues）<br />8:45〜10:15</td>
   <td>
-  <h4>現場におけるビッグデータの利用　〜クラウド技術から主分類まで、生命科学データの活用事例を紹介します〜</h4>
-  座長：有田正規（国立遺伝学研究所）
+  <h4>Using big data in the field - from cloud technology to key classifications, the introduction to the use of life science data -</h4>
+  Chairperson: Masanori Arita (the National Institute of Genetics)
   <br />
-  1. 丹生智也（遺伝研・情報研）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEorgG4AHl5ws_y_JFhELLPh">「解析の再現性を担保するインタークラウド技術」</a>
+  1. Tomoya Tanjo（the National Institute of Genetics / the National Institute of Informatics）<br /><a href="https://www.youtube.com/playlist?list=PL_dbAF_dbOEorgG4AHl5ws_y_JFhELLPh">"Inter-cloud technology to ensure reproducibility of analysis"</a>
   <br />
-  2. 秦千比呂（DDBJ）<br />「個人ゲノム解析が可能にした乳癌のhypomorph変異検出」
+  2. Chihiro Hata（DDBJ）<br />"Detection of hypomorphic mutations in breast cancer enabled by Personal genome analysis"
   <br />
-  3. 飯塚朋代（DDBJ）<br />「伝統アプローチ×NGS解析で探る真菌類の形態進化」
+  3. Tomoyo Iizuka（DDBJ）<br />"Morphological evolution of fungi explored by traditional approach and NGS data analysis"
   </td>
   </tr>
   </table>

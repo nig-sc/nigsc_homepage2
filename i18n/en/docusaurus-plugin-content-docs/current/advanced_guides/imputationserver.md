@@ -1,92 +1,106 @@
 ---
 id: imputation_server
-title: NBDC-DDBJインピュテーションサーバ (beta)
+title: NBDC-DDBJ Imputation Server
 ---
 
-**インピュテーションサーバ（Imputation Server）** は、SNPアレイデータのインピュテーション解析を支援するサービスです。**[ミシガン大学のインピュテーションサーバ](https://imputationserver.sph.umich.edu/)** や **[TOPMed プロジェクトのインピュテーションサーバ](https://imputation.biodatacatalyst.nhlbi.nih.gov/)** が公開されています。これらのサーバは日本国外に設置されており、利用のためにゲノムデータ（SNPアレイデータ）を国外のサーバにアップロードする必要がありました。
+The **Imputation Server** is a service to support imputation analysis of SNP array data. **[Michigan Imputation Server](https://imputationserver.sph.umich.edu/)** and **[TOPMed Project Imputation Server](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-そこで、**[国立研究開発法人科学技術振興機構 NBDC事業推進部](https://biosciencedbc.jp)** では日本の研究者が利用しやすい日本版インピュテーションサーバとして、**NBDC-DDBJインピュテーションサーバ**のシステムを開発しました。現在このシステムは、**[国立遺伝学研究所スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp)** の **[個人ゲノム解析区画](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction/)** で利用可能です。
+Therefore, **[the Department of NBDC Program of the Japan Science and Technology Agency](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis Section](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
-本サーバで使用しているインピュテーションのワークフローは、以下のAMED事業において国立国際医療研究センターが検討した情報（インピュテーションソフトウェアの選定・パラメータの設定）の提供を受け、その情報を参考にNBDC事業推進部がウェブサービスとして改変・実装したものです。
-事業名：**ゲノム医療実現推進プラットフォーム事業（国際的データシェアリングに関する課題解決のための調査研究及び開発研究）**
-課題名：**「クラウド計算環境を利用したゲノム医科学研究の倫理・技術課題の調査と実践」**
+The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
 
+Project name: **Platform Program for Promotion of Genome Medicine (Research and development research to resolve issues related to international data sharing)**
 
-## NBDC-DDBJインピュテーションサーバ（ベータ版）の概要
-NBDC-DDBJインピュテーションサーバ（ベータ版）（以下、本システム）は、遺伝研スパコンの個人ゲノム解析区画で利用可能です。研究者（利用者）はご自身のゲノムデータをサーバにアップロードし、Webユーザインターフェースを介してインピュテーション解析ワークフローを実行することができます。ワークフローの計算が完了した後に、計算結果であるインピュテーションされたゲノムデータをダウンロードすることができます。通信を暗号化したバーチャルプライベートネットワーク(SSL-VPN)を用いることで、本システムをセキュアに利用することが可能です。
+Subject name: **"Investigation and practice of ethical and technical issues in genomic medical science research using cloud computing environment"**
+
+## Introduction
+
+The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this system') is available in the Personal Genome Analysis section of the NIG supercomputer. Researchers(users) can upload their own genomic data to the server and execute the imputation analysis workflow via the web user interface. After the workflow calculations are completed, the imputed genomic data, which are the results of the calculations, can be downloaded. This system can be used securely by using a virtual private network (SSL-VPN) with encrypted communication.
 
 ![](/img/advanced_guides/imputationserver.Fig1-work.png)
 
-**NBDC-DDBJインピュテーションサーバのシステム構成図** 
-研究者のイラストは TogoTV (©2016 DBCLS TogoTV / CC-BY-4.0) によって作成されたものを用いました。
 
-### 利用可能なインピュテーションアルゴリズム
-本システムでは、以下のプログラムを用いてインピュテーション解析を行います。
-- **[conform-gt (version 24May16)](https://faculty.washington.edu/browning/conform-gt.html)** を用いて、入力となる SNP アレイデータの reference / alternative allele がリファレンスパネルデータと一致するように変換します
-- **[Beagle 5.2 (version 21Apr21.304)](https://faculty.washington.edu/browning/beagle/b5_2.html)** を用いてフェージングおよびインピュテーション解析を実施します
-- **[bcftools (version 1.9)](http://samtools.github.io/bcftools/bcftools.html)** を用いてインピュテーション後のゲノムデータ(VCF file)のインデックスを作成します
+**System Diagram of the NBDC-DDBJ Imputation Server**
+Researcher illustration were created by TogoTV (©2016 DBCLS TogoTV / CC-BY-4.0).
 
-一連のワークフローは **[Common Workflow Language (CWL)](https://www.commonwl.org)** で実装され、**[imputation-server workflow](https://github.com/ddbj/imputation-server-wf)** として公開されています。
 
-### 主な入力ファイル
-インピュテーションワークフローの入力となるのは次の2つのデータセットです。
-- **Target genotype dataset:** SNPマイクロアレイでジェノタイプされたデータセットです。ご自身でサーバにアップロードいただくことを想定しています。ファイル形式はVCFをサポートしています。（PLINK形式は現在サポートしていません）
-- **Reference panel dataset:** フェーズされたハプロタイプを含むデータセットです。すぐに利用可能なリファレンスパネルが6種類用意されています。
+### Available Imputation Algorithms
+This system uses the following programmes for imputation analysis.
 
-### 主な出力ファイル
-- **Imputed genotype dataset:** インピュテーション後のジェノタイプデータセットです。ファイル形式は VCF です。インピュテーション結果である allele dosage データは、DS tag に出力されます。推定アリル頻度 (estimated allele frequency) とインピュテーション品質 (dosage R2) は INFO カラムに出力されます。
+- Use **[conform-gt (version 24May16)](https://faculty.washington.edu/browning/conform-gt.html)** to convert the reference / alternative allele of the input SNP array data to match the reference panel data.
+- Use **[Beagle 5.2 (version 21Apr21.304)](https://faculty.washington.edu/browning/beagle/b5_2.html)** for fading and imputation analysis.
+- Index the genomic data (VCF file) after imputation using **[bcftools (version 1.9)](http://samtools.github.io/bcftools/bcftools.html)**.
 
-### 利用可能なリファレンスパネルの種類
-本システムでは、現在6種類のリファレンスパネルが利用可能です。非制限公開データのリファレンスパネル利用には、データ利用申請の必要はありません。制限公開データのリファレンスパネルを利用いただくためには、**リファレンスパネルデータのNBDCへのデータ利用申請** が必要です。
+A series of workflows are implemented in **[Common Workflow Language (CWL)](https://www.commonwl.org)** and published as an **[input-server workflow](https://github.com/ddbj/imputation-server-wf)**.
+
+
+### Main input files
+The following two datasets are inputs to the imputation workflow.
+- **Target genotype dataset:** A dataset genotyped with SNP microarrays. It is assumed that you upload the data yourself to the server. The file format VCF is supported. (PLINK format is currently not).
+- **Reference panel dataset:** A dataset containing phased haplotypes. Six ready-to-use reference panels are available.
+
+
+### Main input files
+- **Imputed genotype dataset:** Post-imputation genotype dataset. The file format is VCF. The allele dosage data resulting from imputation is output to a DS tag. The estimated allele frequency and imputation quality (dosage R2) are output in the INFO column.
+
+
+### Available reference panel types.
+In this system, six types of reference panels are currently available. If you use a reference panel for unrestricted data, it is not necessary to apply to use the data. But for restricted public data, you need to **apply to NBDC for data usage** of the reference panel data.
 
 | リファレンスパネルの名前 | 概要 | アクセスレベル | アセンブリバージョン |
+| Reference Panel Name | Overview | Access Level | Assembly Version |
 | --- | --- | --- | --- |
-| **GRCh37.1KGP** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。複数のancestryに属する 2,504 名のサンプルを含みます | 非制限公開 | hg19, GRCh37 |
-| **GRCh37.1KGP_EAS** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 504 名のサンプルを含みます | 非制限公開 | hg19, GRCh37 |
-| **GRCh38.1KGP** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。複数のancestryに属する 2,548 名のサンプルを含みます | 非制限公開 | GRCh38 |
-| **GRCh38.1KGP_EAS** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 508 名のサンプルを含みます | 非制限公開 | GRCh38 |
-| **BBJ1K+GRCh37.1KGP** | [BioBank Japanプロジェクト](https://biobankjp.org)のリファレンスパネルと[The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の複数の ancestryに属する 2,504 名のサンプル（合計 3,541名）を含みます | 制限公開 | hg19, GRCh37 |
-| **BBJ1K+GRCh37.1KGP_EAS** | [BioBank Japanプロジェクト](https://biobankjp.org)のリファレンスパネルと[The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の東アジアancestryに属する 504 名のサンプル（合計 1,541名）を含みます | 制限公開 | hg19, GRCh37 |
+| **GRCh37.1KGP** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 2,504 samples belonging to several ancestries | Unrestricted publication | hg19, GRCh37 |
+| **GRCh37.1KGP_EAS** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 504 samples belonging to East Asian ancestry | Unrestricted publication | hg19, GRCh37 |
+| **GRCh38.1KGP** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 2,548 samples belonging to several ancestries | Unrestricted publication | GRCh38 |
+| **GRCh38.1KGP_EAS** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 508 samples belonging to East Asian ancestry | Unrestricted publication | GRCh38 |
+| **BBJ1K+GRCh37.1KGP** | Reference panel obtained by cross-imputing the reference panel '[BioBank Japan project](https://biobankjp.org)' with the reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 2,504 samples from several ancestries of the 10,000 Genomes Project (3,541 in total) | restricted publication | hg19, GRCh37 |
+| **BBJ1K+GRCh37.1KGP_EAS** | Reference panel obtained by cross-imputing the reference panel '[BioBank Japan project](https://biobankjp.org)' with the reference panel '[1000 Genomes Project](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 504 samples belonging to the East Asian ancestry of the 10,000 Genomes Project (1,541 in total) | restricted publication | hg19, GRCh37 |
 
-リファレンスパネルごとのインピュテーション精度を比較した結果、制限公開データである **BBJ1K+GRCh37.1KGP reference panel** の精度が最も高いと評価されました。詳細は投稿中の論文に記載しています。論文が公開されたら本ページを更新します。
+A result comparing the imputation accuracy of different reference panels showed that the restricted public data, **BBJ1K+GRCh37.1KGP reference panel**, was rated as the most accurate. Details are given in the paper under submission. This page will be updated when the paper is published.
 
-### 本システムを利用して論文を作成する際のお願い
-- 本システムの論文を引用してください。
+
+### Notes on using this system to prepare papers.
+- Cite the paper in this system.
     - Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. *submitted*. 
-- 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)）。
-- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[記載文例](https://humandbs.biosciencedbc.jp/faq#faq-23)の内容を記述して下さい。
+- Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)).
+- If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [the example text](https://humandbs.biosciencedbc.jp/faq#faq-23) as an acknowledgement.
 
 
-## NBDC-DDBJインピュテーションサーバ（ベータ版）の利用方法
-本システムは、個人ゲノム解析区画のユーザを対象としています。個人ゲノム解析区画の利用申込については、**[個人ゲノム解析区画のユーザアカウント申請から利用開始までの流れ](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_application#ユーザーアカウント申請から利用開始までの流れ)** をご参照ください。個人ゲノム解析区画のユーザは、次の手順で本システムをご利用いただけます。本システムを利用吸う場合1ユーザにつき1つのguacamoleを利用した仮想環境をしようすることを強く推奨いたします。
+## How to use the NBDC-DDBJ Imputation Server (beta)
 
-1. 本システム利用申請窓口（**imputation-server@ddbj.nig.ac.jp**）に、利用申込メールを送ってください
-2. **スパコン管理者**が計算ノードの一部を切り出し本システムのバーチャルマシンを起動します。また、リモートデスクトップ環境利用マニュアルを送付します。
-3. リモートデスクトップ環境利用マニュアルに従って、リモートデスクトップ環境にログインしてください
-4. **[NBDC-DDBJインピュテーションサーバ（ベータ版）インストールマニュアル](./imputation_server_install)** に従って、セットアップを行なってください
-5. **[NBDC-DDBJインピュテーションサーバ（ベータ版）チュートリアル](./imputation_server_tutorial)** に従って、公開されているゲノムデータとリファレンスデータを用いて、インピュテーションサーバの利用方法を習得してください
-6. 以上のステップを完了すると、ご自身のゲノムデータ（SNPアレイデータ）をアップロードした後、インピュテーション解析の実施、および、インピュテーション解析結果のダウンロードを行うことができます
+This system is for users who use the Personal Genome Analysis Section. For information on how to apply for use of it, refer to the **[Steps from user account application to start of use](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_application/#steps-from-user-account-application-to-start-of-use)** page in the Personal Genome Analysis Section. Users of the personal genome analysis section can use this system according to the following procedure. It is strongly recommended to use a virtual environment with one guacamole per user when using the system.
 
-```{text:NBDC-DDBJインピュテーションサーバ利用申請メールの記載例}
-NBDC-DDBJインピュテーションサーバ（ベータ版）の利用を希望します。
-新たにguacamoleを利用した仮想マシン環境の構築をお願いできますと幸いです。
+1. Send an application email to the application desk for the use of this system (**imputation-server@ddbj.nig.ac.jp**)
+2. The **supercomputer administrator** will cut out a part of the computer node and start a virtual machine of this system. The remote desktop environment user manual will also be sent to you.
+3. Log in to the Remote Desktop Environment according to the Remote Desktop Environment User Manual.
+4. **[Install Manual](./imputation_server_install)** to complete the setup.
+5. Use **[Tutorial](./imputation_server_tutorial)** to learn how to use the Imputation Server with publicly available genomic and reference data
+6. After completing the above steps, you can upload your genomic data (SNP array data), perform an imputation analysis and download the results of the imputation analysis.
 
-個人ゲノム解析区画のアカウント名： ________ （例：youraccount-pg)
-guacamleを起動するマシン名：　________ (例：at001)
-コア数：　______ (推奨: 16以上)
-RAM： ______ (推奨： 128GB以上)
-マウントするディレクトリ：　__________ （例： /home/ddbjshare-pg [必須], /home/youraccount-pg [必須])
 
-どうぞよろしくお願いいたします。
+text:Example of NBDC-DDBJ Imputation Server usage application email
+```
+I request the use of the NBDC-DDBJ Imputation Server (beta version).
+I would appreciate it if you could create a new virtual machine environment using guacamole.
+
+Account name for the personal genome analysis section: ________ （e.g. youraccount-pg)
+Machine name to start guacamle: ________ (e.g. at001)
+Number of cores: ______ (recommended: 16 or more)
+RAM: ______ (recommended: 128 GB or more)
+Directory to mount: __________ (e.g. /home/ddbjshare-pg [required], /home/youraccount-pg [required])
 ```
 
-## 制限公開データのデータ利用申請
-制限公開リファレンスパネルは **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)** に登録されています。JGAデータの利用申請方法は **[NBDCヒトデータベース データの利用](https://humandbs.biosciencedbc.jp/data-use)** をご参照ください。申請時に必要となるアクセッションcode は次表を参照してください。
 
-| リファレンスパネルの名前 | リサーチID | データセットID |
+## Applying for data use of restricted public data
+Restricted Public Reference Panels are registered in the **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)**. For how to apply for use of JGA data, see **[NBDC Human Database - Data Usage](https://humandbs.biosciencedbc.jp/data-use)**. Refer to the following table for the accession code required when applying.
+
+| Reference Panel Name | Research ID | Dataset ID |
 | --- | --- | --- |
 | **BBJ1K+GRCh37.1KGP** | hum0014 | JGAD000679 |
 | **BBJ1K+GRCh37.1KGP_EAS** | hum0014 | JGAD000679 |
 
-## 問合せ窓口
-本システムに関する問合せは **imputation-server@ddbj.nig.ac.jp** にご連絡ください。
+## Contact us
+
+For any queries regarding this system, contact **imputation-server@ddbj.nig.ac.jp**.
+
