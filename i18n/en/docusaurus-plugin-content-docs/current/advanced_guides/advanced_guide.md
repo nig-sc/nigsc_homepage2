@@ -18,7 +18,7 @@ The imputation workflow used in this server was modified and implemented as a we
 
 Project name: Platform Program for Promotion of Genome Medicine (Research and development research to resolve issues related to international data sharing) 
 
-Subject name: "Investigation and practice of ethical and technical issues in genomic medical science research using cloud computing environment".
+Subject name: "Investigation and practice of ethical and technical issues in genomic medical science research using cloud computing environment"
 
 <table>
 <tr>
@@ -34,8 +34,8 @@ The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this s
 
 
 - [NBDC-DDBJ Imputation Server](/advanced_guides/imputation_server)
-- [install manual](/advanced_guides/imputation_server_install)
-- [tutorial](/advanced_guides/imputation_server_tutorial)
+- [Install Manual](/advanced_guides/imputation_server_install)
+- [Tutorial](/advanced_guides/imputation_server_tutorial)
 
 
 </td>

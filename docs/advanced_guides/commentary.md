@@ -8,7 +8,7 @@ title: ユーザーによる解説
 <tr>
 <td width="400">
 
-![](commentary.jpeg)
+![](/img/advanced_guides/commentary.jpeg)
 </td>
 <td>
 
