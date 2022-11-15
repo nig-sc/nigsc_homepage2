@@ -1,194 +1,193 @@
 ---
 id: imputation_server_tutorial
-title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル
+title: Tutorial
 ---
 
-## システム利用方法
 
-本システムでは、以下の流れでワークフローを実行します。
+## Procedures for using this system
 
-1. テストデータの準備
-1. Imputation Workflow用の設定ファイルの生成
-1. Imputation Workflowの実行
+This system executes workflows in the following steps.
 
-## テストデータの準備
+1. Prepare test data
+2. Generate a configuration file for the Imputation Workflow
+3. Execute the Imputation Workflow
 
-チュートリアルをすすめるにあたって、使用するテストデータをダウンロードし、遺伝研スパコン個人ゲノム解析区画へコピーします。
 
-### テスト用データのダウンロード
+## 1. Prepare test data
 
-[Test data for Imputation Workflow](https://zenodo.org/record/6650681#.YrD-HOxBykr)にアクセスします。以下の２つのファイルがおいてあります。
+To proceed with the tutorial, download the test data to be used and copy it to the Personal Genome Analysis section of the NIG supercomputer.
+
+
+### Download the test data
+
+Access [Test data for Imputation Workflow](https://zenodo.org/record/6650681#.YrD-HOxBykr). You can find the following two files.
 
 - `test-data.GRCh37.vcf.gz`
 - `test-data.GRCh38.vcf.gz`
 
-今回は、`test-data.GRCh37.vcf.gz`を使うので、これをダウンロードします。
+This time, we will use `test-data.GRCh37.vcf.gz`, so download it.
 
-`test-data.GRCh38.vcf.gz`であっても、操作の流れは同じで、必要に応じて、GRCh38を選択していただければ問題なく進めていただけます。
+Even if you use `test-data.GRCh38.vcf.gz`, the steps of procedure are the same and you can proceed without any problems if you select GRCh38 if necessary.
 
 ![](./imputationserver.tutorial.Fig1.png)
 
-### 遺伝研スパコン個人ゲノム解析区画へコピーします。
 
-さきほどダウンロードしたテストデータをコピーします。
 
-遺伝研スパコンへ接続するためのVPNを接続してください。
 
-次に、さきほどダウンロードしたテストデータを次のコマンドでコピーします
+### Copy it to the Personal Genome Analysis section of the NIG supercomputer
 
-以下の例では、コピーしたいテストデータは、ダウンロードフォルダの中にあり、コピー先は、遺伝研スパコン個人ゲノム解析区画のお使いのアカウントのホームディレクトリになります。
+Copy the test data just downloaded.
+
+First, connect the VPN for connecting to the NIG supercomputer.
+
+Next, use the following command to copy the test data that you have just downloaded.
+
+In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the Personal Genome Analysis section of the NIG supercomputer.
 
 ```
-scp -i 秘密鍵ファイル ~/ダウンロード/test-data.GRCh37.vcf.gz (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/
+scp -i [your private key file] ~/download/test-data.GRCh37.vcf.gz ([your account name])@gwa.ddbj.nig.ac.jp:~/
 ```
 
-これでテストデータの準備は終了です。
+Test data is now prepared.
 
-## Imputation Workflow用の設定ファイルの生成
+## 2. Generate a configuration file for the Imputation Workflow
 
-遺伝研スパコンのguacamole 経由で以下のアドレスにアクセスします。
+Access the following address via guacamole on the NIG supercomputer.
 
 ```text
 http://localhost:5000
 ```
 
-実際にアクセスすると、次のような画面になる。
+When you actually access it, you will see the following screen.
 
 ![](./imputationserver.tutorial.Fig2.png)
 
-以下の項目について設定を行います。
+Configure the following items.
 
 - Target VCF file
 - Reference panel preset config or other
 - Output genotype probability
 - Number of threads
 
-Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル) のフルパスを指定します。
-ここでは先程アップロードした、ファイルを使います。
-具体的なフルパスは `/home/ユーザ名/test-data.GRCh37.vcf.gz`のようになります。
+For the target VCF file, specify the full path of the VCF file (\*.vcf.gz file) to be parsed.
+Here, the file that you uploaded is used.
+The specific full path will be `/home/username/test-data.GRCh37.vcf.gz`.
 
-次にReference panel preset config orを選択します。
-デフォルトで以下の４つについて、選択が可能です。
+Select the 'Reference panel preset config or'.
+By default, you can choose for the following four.
 
 - GRCh37.1KGP
 - GRCh37.1KGP-EAS
 - GRCh38.1KGP
 - GRCh38.1KGP-EAS
 
-それぞれについては[利用可能なリファレンスパネルの種類](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E)を参照ください。
+For more information on each of them, see [Types of Reference Panels available](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E).
 
-上記以外のものをReference Panelとして使いたいときは
-other を選択し、Reference panel config fileに使いたいものを指定しま
-す。
+If you want to use other than the above as a Reference Panel, select 'other' and specify the one you want to use for the Reference panel config file.
 
-Output genotyhpe probabilityを選択します。
-選択可能は以下の２種類で、デフォルトでは false が選択されています。
+Select 'Output genotyhpe probability'.
+You can select the following two types. By default, false is selected.
 
 - false
 - true
 
-Number of threadsは、ワークフローを実行する際のジョブのスレッド数を指定します。
+For 'Number of threads', specify the number of threads for the job when running the workflow.
 
-デフォルトでは、16 が指定されています。
+By default, 16 is specified.
 
-パラメータの指定が終わったら、Set up job ボタンを押します。
-画面下部に、生成されたパラメータが表示されます。これをsapporo-web で使います。
+After specifying the parameters, press the Set up job button.
+The generated parameters are displayed at the bottom of the screen. Use this in sapporo-web.
 
 ![](./imputationserver.tutorial.Fig3.png)
 
-赤く塗りつぶされているところは、お使いのアカウント名になります。
+The red filled area is your account name.
 
-## Imputation Workflowの実行
+## 3. Execute the Imputation Workflow
 
-guacamole 経由で、以下のアドレスにアクセスします。
+Via guacamole, access the following address.
 
 ```text
 http://localhost:1121
 ```
 
-以下のような画面が表示されます
+When accessed, the following screen is displayed.
 
 ![](./imputationserver.tutorial.Fig4.png)
 
-次に、デフォルトで使用可能になっている Sapporo Service on localhost を選択します。
+Select 'Sapporo Service on localhost', which is available by default.
 
-クリックすると以下のような画面がでてきます
+When clicked, you can see the following screen.
 
 ![](./imputationserver.tutorial.Fig5.png)
 
-次にバックエンドワークフローを使用するために少し下にスクロールし、
-Workflows という項目から beagle をクリックします。
+Scroll down a little to use the backend workflows and select 'beagle' from the Workflows item and click it.
 
 ![](./imputationserver.tutorial.Fig6.png)
 
-Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選択します。
+Select `cwltool 3.1` from the Workflow Engine item of Compose Run.
 
 ![](./imputationserver.tutorial.Fig7.png)
 
-Workflow Parameters に先程、 imputationserver-web-uio で生成したパラメータを入力します。
-このとき、最初から書かれている `{}` を消して、生成したパラメータを入力します。
+In Workflow Parameters, enter the parameters generated by imputationserver-web-uio.
+In this case, delete the `{}` written from the beginning and enter the generated parameters.
 
 ![](./imputationserver.tutorial.Fig8.png)
 
-一番下にあるExecute ボタンを押して、ワークフローを実行します。
-ジョブの状態がRunning になります。
+Press the Execute button at the bottom to run the workflow.
+The status of the job will be Running.
 
 ![](./imputationserver.tutorial.Fig9.png)
 
-正常にワークフローの実行が開始されるとcwltoolでワークフローが実行されます。
+If the workflow is started successfully, the workflow will be run by cwltool.
 
-正常に終了すると `COMPLETE` になります。
+If successfully completed, `COMPLETE`.
 
 ![](./imputationserver.tutorial.Fig10.png)
 
-結果ファイルは、ブラウザから取得が可能です。
-Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されま
-す。
+You can get the result file from your browser.
+Click on Outputs in the Run log to list the result files.
 
-ダウンロードしたいファイルをクリックするとダイアログが表示され、
-デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
-
-### 処理内容について
-
-処理内容については、[NBDC-DDBJインピュテーションサーバ (beta)](https://genome-analytics-japan.docbase.io/posts/2437858)を参照ください。
-特に、具体的なプログラムについては、[利用可能なインピュテーションアルゴリズム](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%A4%E3%83%B3%E3%83%94%E3%83%A5%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0)を参照ください。
+When you click on the file you want to download, a dialogue appears. By default, the file is downloaded under `~/downloads`.
 
 
-### 結果の取得
+### Process details
 
-Imputation Workflow 実行後、以下のものが取得できます。
+Refer to the [NBDC-DDBJ imputation server (beta)](https://genome-analytics-japan.docbase.io/posts/2437858) for processing details.
+In particular, see [Available Imputation Algorithms](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%A4%E3%83%B3%E3%83%94%E3%83%A5%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0) for specific programs.
 
-ウェブブラウザから取得ができます。
 
-以下のコマンドを、手元のパソコンにコピーすることが可能です。
+### Get results
 
-ターミナルを開きます。
+After running the Imputation Workflow, you can get the follows from your web browser.
 
-実行すると、現在コマンドを実行しているディレクトリにファイルがダウンロードされます。
+You can copy the following commands to your computer.
+
+Open a terminal.
+
+When executed, the file will be downloaded to the directory where you are currently executing the command.
 
 ```console
-scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(ダウンロードしたいファイル名) .
+scp ([your account name])@gwa.ddbj.nig.ac.jp:~/ダウンロード/([filename you want to download]) .
 ```
 
-- `(お使いのアカウント名)` は、個人ゲノム解析環境へのログインに使用するアカウントです
-- `(ダウンロードしたいファイル名)` に、ダウンロードしたいファイル名を指定します。
+- `(your account name)` is the account you use to login to the Personal Genome Analysis environment
+- For `(file name you want to download)`, specify the name of the file you want to download.
 
-また、sapporo-serviceの結果ディレクトリから直接ダウンロードすることも可能です。
+You can also download the file directly from the results directory of sapporo-service.
 
-`Run ID`を調べます。
-`Run ID` の右に表示されているものが `Run ID` です。
-右にあるアイコンをクリックすることで、 `Run ID` (以下runid)をコピーすることが可能です。
+Search `Run ID`.
+The `Run ID` is displayed on the right of `Run ID`.
+You can copy the `Run ID`(runid) by clicking on the icon on the right.
 
 ![](./imputationserver.tutorial.Fig11.png)
 
-インストールしたディレクトリ/sapporo-service/run/`runid`の最初の２文字/`runid`/outputs/ 以下にすべてのファイルがあります。
+All files are in first two characters /`runid`/outputs/ of the installed directory /sapporo-service/run/`runid`.
 
-`runid`が`1b19d002-8d4c-4f52-973c-66a165cd135f`の場合、最初の２文字は `1b` になります。
+If `runid` is `1b19d002-8d4c-4f52-973c-66a165cd135f`, the first two characters are `1b`.
 
-scpでコピーするときは、お手元の計算機に以下のように入力します。
-手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム区画から、お手元の計算機にコピーされてきます。
+When you copy with the scp command, enter the following.
+A directory called `outputs` will be created in your computer, and the analysis results will be copied from the Personal Genome Analysis section to your computer.
 
 ```
-scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
+scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/ outputs outputs
 ```
-
