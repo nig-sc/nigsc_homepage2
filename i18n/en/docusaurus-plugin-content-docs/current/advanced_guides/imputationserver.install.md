@@ -57,7 +57,7 @@ The script will install the following in the specified directory.
 Installation completed.
 
 
-### Note: Note: If you are asked for input during the process, enter 'n'.
+### Note: If you are asked for input during the process, enter 'n'.
 
 During script execution, if the following screen appears and waits for input, enter 'n' and continue. (After pressing 'n', press the Enter key.)
 
