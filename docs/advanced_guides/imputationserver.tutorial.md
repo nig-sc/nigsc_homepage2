@@ -8,8 +8,8 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 本システムでは、以下の流れでワークフローを実行します。
 
 1. テストデータの準備
-1. Imputation Workflow用の設定ファイルの生成
-1. Imputation Workflowの実行
+2. Imputation Workflow用の設定ファイルの生成
+3. Imputation Workflowの実行
 
 ## テストデータの準備
 
@@ -52,7 +52,7 @@ scp -i 秘密鍵ファイル ~/ダウンロード/test-data.GRCh37.vcf.gz (お�
 http://localhost:5000
 ```
 
-実際にアクセスすると、次のような画面になる。
+実際にアクセスすると、次のような画面になります。
 
 ![](./imputationserver.tutorial.Fig2.png)
 
@@ -77,12 +77,10 @@ Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル
 
 それぞれについては[利用可能なリファレンスパネルの種類](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E)を参照ください。
 
-上記以外のものをReference Panelとして使いたいときは
-other を選択し、Reference panel config fileに使いたいものを指定しま
-す。
+上記以外のものをReference Panelとして使いたいときはother を選択し、Reference panel config fileに使いたいものを指定します。
 
 Output genotyhpe probabilityを選択します。
-選択可能は以下の２種類で、デフォルトでは false が選択されています。
+以下の２種類が選択可能です。デフォルトでは falseが選択されています。
 
 - false
 - true
@@ -106,13 +104,13 @@ guacamole 経由で、以下のアドレスにアクセスします。
 http://localhost:1121
 ```
 
-以下のような画面が表示されます
+以下のような画面が表示されます。
 
 ![](./imputationserver.tutorial.Fig4.png)
 
 次に、デフォルトで使用可能になっている Sapporo Service on localhost を選択します。
 
-クリックすると以下のような画面がでてきます
+クリックすると以下のような画面がでてきます。
 
 ![](./imputationserver.tutorial.Fig5.png)
 
@@ -142,11 +140,9 @@ Workflow Parameters に先程、 imputationserver-web-uio で生成したパラ�
 ![](./imputationserver.tutorial.Fig10.png)
 
 結果ファイルは、ブラウザから取得が可能です。
-Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されま
-す。
+Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されます。
 
-ダウンロードしたいファイルをクリックするとダイアログが表示され、
-デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
+ダウンロードしたいファイルをクリックするとダイアログが表示され、デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
 
 ### 処理内容について
 
@@ -186,7 +182,7 @@ scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(�
 `runid`が`1b19d002-8d4c-4f52-973c-66a165cd135f`の場合、最初の２文字は `1b` になります。
 
 scpでコピーするときは、お手元の計算機に以下のように入力します。
-手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム区画から、お手元の計算機にコピーされてきます。
+手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム解析区画から、お手元の計算機にコピーされてきます。
 
 ```
 scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
