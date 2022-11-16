@@ -7,7 +7,8 @@ Python処理系のインストールはユーザー権限で可能なので、�
 
  
  
- MInicondaによるインストール例 
+## MInicondaによるインストール例 
+
  公式マニュアルの手順に従ってください。 [Installing on Linux conda 4.10.3.post11+888309718 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
  
  公式ページからダウンロードしたMinicondaを適当な場所に置き、以下のように実行してください。後はインストーラの指示に従ってください。
@@ -35,7 +36,7 @@ $ conda config --set channel_priority strict
 $ sudo vim /home/imo/.condarc
 ```
 
-動作確認
+## 動作確認
 
 ```
 $ python --version 
