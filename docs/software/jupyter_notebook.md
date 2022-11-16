@@ -71,5 +71,7 @@ Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
   
   
 ### 参考
-- Jupyter Notebookの公式サイト [Running the Notebook — Jupyter Documentation 4.1.1 alpha documentation](https://jupyter.readthedocs.io/en/latest/running.html)
+- Jupyter Notebookの公式サイト
+
+ [Running the Notebook — Jupyter Documentation 4.1.1 alpha documentation](https://jupyter.readthedocs.io/en/latest/running.html)
 
