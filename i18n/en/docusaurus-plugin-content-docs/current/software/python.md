@@ -3,31 +3,32 @@ id: python
 title: "Python"
 ---
 
-Python処理系のインストールはユーザー権限で可能なので、各自必要なバージョンを自分のホームディレクトリにインストールしてください。
+The Python processor can be installed with user permission, so install the version you need in your home directory.
 
+
+## Installation example with MIniconda 
+
+ Follow the steps in the official manual. [Installing on Linux conda 4.10.3.post11+888309718 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
  
- 
- MInicondaによるインストール例 
- 公式マニュアルの手順に従ってください。 [Installing on Linux conda 4.10.3.post11+888309718 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
- 
- 公式ページからダウンロードしたMinicondaを適当な場所に置き、以下のように実行してください。後はインストーラの指示に従ってください。
+ Locate the Miniconda downloaded from the official page in a suitable location and execute it as follows. After executing, follow the instructions of the installer.
  
  ```
  cd ~/local/src
  bash Miniconda3-py39_4.10.3-Linux-x86_64.sh
  ```
  
- インストール中、conda initを実行するか聞かれるので、NOを選択してください。
- インストール後、HOME直下にMiniconda3フォルダができます。
+ During installation, you will be asked if you want to run conda init, select NO.
+ After installation, a Miniconda3 folder will be created directly in your home directory.
  
- 下記の２行を実行してください。~/.bashrcにも追記してください。
+ Execute the following two lines. Also add them to ~/.bashrc.
  
  ```
  export PATH=~/miniconda3/bin:$PATH
  source ~/miniconda3/etc/profile.d/conda.sh
  ```
   
-conda-forgeレポジトリをデフォルトに設定し、.condarcのトップに追加されたことを確認してください。
+
+Set the conda-forge repository to default and make sure it is added to the top of the .condarc.
 
 ```
 $ conda config --add channels conda-forge
@@ -35,7 +36,7 @@ $ conda config --set channel_priority strict
 $ sudo vim /home/imo/.condarc
 ```
 
-動作確認
+## Check operation
 
 ```
 $ python --version 
@@ -45,5 +46,5 @@ $ python3 --version
 Python 3.9.5 
 ```
 
-参考:  [Miniconda Install 備忘録 - Qiita](https://qiita.com/Ihmon/items/11074e1a4c0e397d934f)
+Reference:  [Miniconda Install notebook - Qiita](https://qiita.com/Ihmon/items/11074e1a4c0e397d934f)
 

@@ -3,9 +3,10 @@ id: jupyter_notebook
 title: "Jupyter Notebook"
 ---
 
-### Jupyter Notebookサーバーの起動
 
-まず最初に、qloginにより割り当てられたインタラクティブノードのローカルIPアドレスを調べる。
+### Starting the Jupyter Notebook server
+
+First, check the local IP address of the interactive node assigned by qlogin.
 
 ```
 $ ip a | grep ib0
@@ -13,16 +14,17 @@ $ ip a | grep ib0
     inet 172.19.7.186/20 brd 172.19.15.255 scope global ib0
 
 ```
-この例の場合はqloginにより割り当てられたインタラクティブノードのローカルIPアドレスは172.19.7.186である。
+
+In this example, the local IP address of the interactive node assigned by qlogin is 172.19.7.186.
 
 
-次にインタラクティブノード上でJuypter Notebookサーバーを起動する。
+Next, start the Juypter Notebook server on the interactive node.
 
-前述のMinicondaでPythonの環境をインストールしていれば、以下のコマンドでJupyter Notebookサーバーを起動することができる。
+If you have installed the Python environment with Miniconda as described above, you can start the Jupyter Notebook server with the following command.
 
 ` $ jupyter-notebook --no-browser --ip "*" `
 
-起動すると最後に以下のようなメッセージが出る。（プロンプトは返ってこない。このままつないでおく。Ctrl-Cで終了）
+When it starts, you will get the following message at the end. (No prompt is returned. Leave it connected, Ctrl-C to exit).
 
 ```
     To access the notebook, open this file in a browser:
@@ -32,44 +34,44 @@ $ ip a | grep ib0
      or http://127.0.0.1:8888/?token=bc5ae6c7d53b76f9721c95308cf25405c399bbc770b37040
 ```
 
-ここでインタラクティブノード上のJupyter Notebookのポート番号（この例の場合8888）を覚えておく。
+Now remember the port number of the Jupyter Notebook on the interactive node. (In this case, 8888.)
 
-### SSHポートフォワード
 
-ユーザーのクライアントマシンで新しい端末を起動し、以下のコマンドを実行する。（プロンプトは返ってこない。何もせずこのままつないでおく。Ctrl-Cで終了。)
+### SSH port forwarding
+
+Start a new terminal on the user's client machine and execute the following command. (No prompt will be returned. Do nothing and leave it connected, use Ctrl-C to exit).
 
 ```
 $ ssh -N gw.ddbj.nig.ac.jp -L 3001:172.19.7.186:8888
 Enter passphrase for key '/home/youraccount/.ssh/id_rsa': 
 ```
 
-ここで-Lオプションの意味は以下の通りである。
+Now the -L option means the following.
 
-` -L <(1)アクセス時のポート番号>:<(2)インタラクティブノードのIPアドレス>:<(3)Jupyter Notebookのポート番号> `
+` -L <(1)the port number for access>:<(2)IP address of the interactive node>:<(3)the port number for the Jupyter Notebook> `
 
-- (1)については適当に決めて良い。
+- Users can decide (1) for themselves.
 
-- (2)は上記の「インタラクティブノードのローカルIPアドレス」である。
+- (2) is the above 'the local IP address of the interactive node'.
 
-- (3)は上記の「インタラクティブノード上のJupyter Notebookのポート番号」である。
+- (3) is the above 'the port number of the Jupyter Notebook on the interactive node'.
 
 
-### Webブラウザからのアクセス
+### Access from a web browser
 
-ユーザーのクライアントマシンのWebブラウザを用いて以下のURLにアクセスする。
+Access the following URL using a web browser on the user's client machine.
 
 ` http://localhost:3001/?token=bc5ae6c7d53b76f9721c95308cf25405c399bbc770b37040 `
 
-- tokenはJupyter notebookを起動した際のメッセージに表示された文字列を使う。
+- The token is the string displayed in the message when the Jupyter notebook is started.
 
-- ポート番号は、上記(1)アクセス時のポート番号とする。
+- The port number is the port number used when accessing (1) above.
+ 
+Now the Jupyter notebook web screen will be displayed.
 
- 
- 
-これでJupyter notebookのWeb画面が表示される。
- 
   
-  
-### 参考
-- Jupyter Notebookの公式サイト [Running the Notebook — Jupyter Documentation 4.1.1 alpha documentation](https://jupyter.readthedocs.io/en/latest/running.html)
+### Reference
+- Jupyter Notebook Official Website 
+
+[Running the Notebook — Jupyter Documentation 4.1.1 alpha documentation](https://jupyter.readthedocs.io/en/latest/running.html)
 
