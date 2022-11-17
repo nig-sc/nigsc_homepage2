@@ -3,20 +3,21 @@ id: rust
 title: "Rust"
 ---
 
-## Rust処理系のインストール
-Rustのインストールはユーザー権限で可能なので、各自必要なバージョンを自分のホームディレクトリにインストールしてください。
+## Installing the Rust processor
 
-公式ホームページ [rustup.rs - The Rust toolchain installer](https://rustup.rs/)  にアクセスすると以下のような画面が表示されます。
+Rust can be installed with user permission, so install the version you need in your home directory.
+
+When you access the official website [rustup.rs - The Rust toolchain installer](https://rustup.rs/), the following screen will appear.
 
 ![figure](Rust.PNG)
 
-指示に従ってたった一行をコピーして端末に貼り付け実行すればインストールされます。
+To install, copy a single line, paste it on your terminal and run it.
 
-- インストール先は` $HOME/.rustup, $HOME/.cargo `。
+- The installation directory is ` $HOME/.rustup, $HOME/.cargo `.
 
-- Rustのツールにパス等を通し使えるようにするには、` source $HOME/.cargo/env `を実行せよとのこと。
+- Execute the `source $HOME/.cargo/env ` for pass paths etc. to the Rust tools and using it.
 
-このスクリプトの実行については自動的に` .bashrc `に一行追加される。
+A line is automatically added to ` .bashrc ` about running this script.
 
 ```
 user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/section02/p2021_0509_RustCompiler (2021-05-09 01:28:28)
@@ -111,7 +112,7 @@ user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/section02/p2021_0509
 $ 
 ```
 
-以下のツールがインストールされる。
+The following tools are installed.
 
 - ` cargo ` is Rust’s compilation manager, package manager, and general-purpose tool. You can use Cargo to start a new project, build and run your program, and manage any external libraries your code depends on.
 

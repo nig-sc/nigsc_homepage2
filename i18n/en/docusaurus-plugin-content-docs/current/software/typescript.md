@@ -3,20 +3,21 @@ id: typescript
 title: "Node.js, TypeScript"
 ---
 
-## TypeScriptの使い方
+## How to use TypeScript
 
-### Node.js処理系のインストール
-サーバーサイドJavaScript処理系であるNode.jsのインストールはユーザー権限で可能なので、各自必要なバージョンを自分のホームディレクトリにインストールしてください。
+### Installing the Node.js processor
 
-` nvm (node version manager)を用いたインストールが便利です。 `
+Node.js, the server-side JavaScript processor, can be installed with user permission, so install the version you need in your home directory.
 
-1, 以下のコマンドにてnvmをホームディレクトリにインストール。($HOME/.nvmディレクトリ下にインストールされる）
+It is convenient to use ` nvm (node version manager)` for installation. 
+
+1, Install nvm in your home directory with the following command. (It will be installed in the $HOME/.nvm directory.)
 
 ` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash `
 
-- nvmの最新バージョンは以下のページにて確認してください。[GitHub - nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm)
+- Check the latest version of nvm at the following page. [GitHub - nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm)
 
-nvmをインストールすると、~/.bashrcに下記のような記述が自動的に追加される。
+When nvm is installed, the following is automatically added to ~/.bashrc.
 
 ```
 export NVM_DIR="$HOME/.nvm"
@@ -24,17 +25,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 
-` source ~/.bashrc `あるいは` qlogin `しなおすなどの方法で上記の記述を実行するとnvmが使えるようになる。
+You can use nvm by executing the above description by `source ~/.bashrc` or by `qlogin` again.
 
-2, ` nvm ls-remote `で、利用可能なNode.JSのバージョンを表示させる。 
+2, Display the available Node.JS versions using` nvm ls-remote `. 
 
-3, ` nvm install v12.18.3 `のようにしてインストールする。 
+3, Install with ` nvm install v12.18.3 `.
 
-4, ` nvm use v12.18.3 `のようにしてNode.JS処理系をアクティベートする。`~/.bashrc `の最後にこれを追加しておくとよい。
+4, Activate the Node.JS processor by doing ` nvm use v12.18.3 `. You can add this to the end of `~/.bashrc `.
 
 
-### TypeScriptなどのインストール
-npm (node package manager)コマンドにより、TypeScriptおよび関連するツールをインストールする。
+### Installing TypeScript and other software
+
+Install TypeScript and related tools by using the npm (node package manager) command.
+
 
 ```
 npm install -g typescript @types/node ts-node
@@ -43,30 +46,29 @@ npm install -g pkg yarn
 npm install -g tslint
 ```
 
-nvm install, nvm useを用いて、使用するNode.js処理系のバージョンを変えた場合は、TypeScript及び関連するツールもインストールし直す必要がある。
+If you change the version of the Node.js processor used using 'nvm install' or 'nvm use', TypeScript and related tools must also be re-installed.
 
 
-### 注意事項
+### Note
 
-#### TypeScriptがインストールできない
+#### TypeScript cannot be installed.
 
-上記のようにnpm install -g typescriptを実行すると、$HOME/.nvm/versions/node/v12.18.3/ といったディレクトリの下にtscやtsserverなどのファイルがインストールされるはずであるが、インストールされていない場合の対処方法。
+When you execute 'npm install -g typescript' as above, files such as tsc and tsserver should be installed in your directory such as $HOME/.nvm/versions/node/v12.18.3/. Here's what to do if they are not installed.
 
-
-以下のコマンドを実行したときに、nvm useで指定しているバージョンと同じバージョンが表示されるかを確かめる。（これが一致していないのがインストールできない原因である。)
+Check that the same version as that specified in nvm use is displayed when the following command is executed. (If this does not match, this is the reason why it cannot be installed).
 
 ```
 $ npm config get prefix 
 /home/youraccount/.nvm/versions/node/v16.3.0
 ```
 
-以下のコマンドでprefixを正しく調整する。 
+Adjust the prefix correctly with the following command. 
+
 ` npm config set prefix /home/youraccount/.nvm/versions/node/v12.18.3 `
       
-その後、TypeScriptをインストールする。
+Then install TypeScript.
 
 [Cannot install TypeScript globally](https://stackoverflow.com/questions/48518601/cannot-install-typescript-globally)
 
 
-	
 	 
