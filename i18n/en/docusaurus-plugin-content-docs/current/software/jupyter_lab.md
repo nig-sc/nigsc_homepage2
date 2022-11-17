@@ -3,24 +3,25 @@ id: jupyter_lab
 title: "Jupyter Lab"
 ---
 
-### Jupyter Labのインストール
 
-Minicondaをインストールしているのであれば、以下のコマンドでJuypter Labをインストールできる。
+### Installing Jupyter Lab
+
+If you have already installed Miniconda, you can install Juypter Lab with the following command.
 
 ` conda install -c conda-forge jupyterlab `
 
-以下のコマンドにてconfigファイルを生成する。
+Generate a config file with the following command.
 
 ` jupyter server --generate-config `
 
-以下のコマンドにてパスワードを設定する。
+Set a password with the following command.
 
 ` jupyter server --generate-config `
 
 
-### Jupyter Labサーバーの起動
+### Starting the Jupyter Lab server
 
-まず最初に、qloginにより割り当てられたインタラクティブノードのローカルIPアドレスを調べる。
+First, check the local IP address of the interactive node assigned by qlogin.
 
 ```
 $ ip a | grep ib0 
@@ -28,15 +29,13 @@ $ ip a | grep ib0
  inet 172.19.7.186/20 brd 172.19.15.255 scope global ib0
 ``` 
 
-この例の場合はqloginにより割り当てられたインタラクティブノードのローカルIPアドレスは172.19.7.186である。
- 
-  
-  
-次にインタラクティブノード上でJuypter Labサーバーを起動する。
+In this case, it is 172.19.7.186.
+
+Next, start the Juypter Lab server on the interactive node.
 
 ` $ jupyter lab --no-browser --ip "*" `
 
-起動すると最後に以下のようなメッセージが出る。（プロンプトは返ってこない。このままつないでおく。Ctrl-Cで終了）
+When it starts, you will get the following message at the end. (No prompt is returned. Leave it Leave it connected. Use Ctrl-C to exit.)
 
 ```
 $ jupyter lab --no-browser --ip "*"
@@ -52,41 +51,42 @@ $ jupyter lab --no-browser --ip "*"
 
 ```
 
-ここでインタラクティブノード上のJupyter Labのポート番号（この例の場合8888）を覚えておく。
+Now remember the port number of the Jupyter Lab on the interactive node. (8888, in this case.)
 
 
-### SSHポートフォワード
+### SSH port forwarding
 
-ユーザーのクライアントマシンで新しい端末を起動し、以下のコマンドを実行する。（プロンプトは返ってこない。何もせずこのままつないでおく。Ctrl-Cで終了。)
+Start a new terminal on the user's client machine and execute the following command. (No prompt will be returned. Do nothing and leave it connected, use Ctrl-C to exit).
 
 ```
 $ ssh -N gw.ddbj.nig.ac.jp -L 3001:172.19.7.186:8888 
 Enter passphrase for key '/home/youraccount/.ssh/id_rsa': 
 ```
 
-ここで-Lオプションの意味は以下の通りである。
+Here the meaning of the -L option is as follows.
 
-` -L <(1)アクセス時のポート番号>:<(2)インタラクティブノードのIPアドレス>:<(3)Jupyter Labのポート番号> `
+` -L <(1)the port number for access>:<(2)IP address of interactive node>:<(3)the port number of Jupyter Lab> `
 
-- (1)については適当に決めて良い。
+Users can decide (1) for themselves.
 
-- (2)は上記の「インタラクティブノードのローカルIPアドレス」である。
+(2) is the above 'the local IP address of the interactive node'.
 
-- (3)は上記の「インタラクティブノード上のJupyter Labのポート番号」である。
+(3) is the above 'the port number of the Jupyter Notebook on the interactive node'.
 
 
-### Webブラウザからのアクセス
+### Access from a web browser
 
-ユーザーのクライアントマシンのWebブラウザを用いて以下のURLにアクセスする。
+Access the following URL using a web browser on the user's client machine.
 
 ` http://localhost:3001 `
 
-- ポート番号は、上記(1)アクセス時のポート番号とする。
+- The port number is the port number used when accessing (1) above.
 
-- アクセスするとパスワードを聞かれるので、上記で設定したパスワードを入力する。
+- When accessing the site,  you are asked for a password, enter the password set above.
 
  
  
-これでJupyter LabのWeb画面が表示される。
+Now the Jupyter Lab web screen will be displayed.
+
 ![figure](JupyterLab.PNG)
 
