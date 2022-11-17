@@ -6,7 +6,7 @@ title: alphafold 2.2
 
 ## Introduction
 
-The NIG supercomputer provides the singularity image with alphafold 2.2.2 installed and the database for <a href="https://github.com/deepmind/alphafold">alphafold 2.2</a> on /lustre7/software/alphafold/2.2.2/.
+The NIG supercomputer provides the singularity image with alphafold 2.2.2 installed and the database for &#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.2</a></u> on /lustre7/software/alphafold/2.2.2/.
 
 Protein structure prediction by alphafold 2.2 is performed in the following steps.
 
@@ -268,6 +268,6 @@ output files
 
 PDB entries for proteins of the input file and the same amino acid sequence (closely related species).
 
-<a href="https://www.rcsb.org/structure/3AS4"></a>
+&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS4"></a></u>
 
-<a href="https://www.rcsb.org/structure/3AS5"></a>
+&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS5"></a></u>

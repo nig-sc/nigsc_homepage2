@@ -96,7 +96,7 @@ hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.tx
 2022/03/11 14:28:54 00006070:INFO :File is not found.hcp::node:HcpnException @ hcp::node::HcpnEndPointTransfer:L454 :  > hcp::proto::HcppException @ hcp::proto::HcppSession:L1209 :
 ```
 
-## [コマンド概要説明 p.12](/pdf/HCPtools_overview_ja.pdf)には、Windows 10しか対応していないと書いてあります。Windows 11では利用できないのでしょうか。
+## [<u>コマンド概要説明 p.12</u>](/pdf/HCPtools_overview_ja.pdf)には、Windows 10しか対応していないと書いてあります。Windows 11では利用できないのでしょうか。
 
 Windows 11でも、ご利用になれます。
 

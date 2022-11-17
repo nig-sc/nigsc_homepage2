@@ -5,7 +5,7 @@ title: 遺伝研スパコンでのalphafold 2.1の実行
 
 
 ## 概略
-遺伝研スパコンでは<a href="https://github.com/deepmind/alphafold">alphafold 2.1</a>（Yoshitaka Moriwaki氏の<a href="https://gist.github.com/YoshitakaMo/">パッチ</a>適用済み）をインストールしたsingularity imageとalphafold 2.1で使用するデータベースを /lustre7/software/alphafold/2.1.1/ に用意しています。
+遺伝研スパコンでは&#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.1</a></u>（Yoshitaka Moriwaki氏の&#x1f517;<u><a href="https://gist.github.com/YoshitakaMo/">パッチ</a></u>適用済み）をインストールしたsingularity imageとalphafold 2.1で使用するデータベースを /lustre7/software/alphafold/2.1.1/ に用意しています。
 
 
 alphafold 2.1によるタンパク質の立体構造予測は以下のステップで実行されます。
@@ -226,6 +226,6 @@ $ qsub example_job_script_gpu.sh
 
 入力ファイルと同一アミノ酸配列（近縁種）のタンパク質のPDBエントリー
 
-<a href="https://www.rcsb.org/structure/3AS4"></a>
+&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS4"></a></u>
 
-<a href="https://www.rcsb.org/structure/3AS5"></a>
+&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS5"></a></u>

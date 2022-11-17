@@ -7,7 +7,7 @@ title: FAQ (Change Storage Capacity)
 
 You need to apply for using large-scale storage.
 
-Refer to [General Analysis Section > Using large-scale storage](/general_analysis_division/largescale_storage) for application details.
+Refer to [<u>General Analysis Section > Using large-scale storage</u>](/general_analysis_division/largescale_storage) for application details.
 
 
 ## How is storage currently allocated?
@@ -25,6 +25,6 @@ uid **** is using default file quota setting
 $
 ```
 
-For more information, see ["Checking Quota" in the "Using Lustre FS" page](/general_analysis_division/ga_lustre/#checking-quota).
+For more information, see [<u>"Checking Quota" in the "Using Lustre FS" page</u>](/general_analysis_division/ga_lustre/#checking-quota).
 
 
