@@ -69,7 +69,7 @@ Host *
 
 詳しくは以下ご参照ください。
 
-https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset
+&#x1f517;<u>https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset</u>
 
 
 
@@ -94,7 +94,7 @@ Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスし�
 
 ## ssh公開鍵を再度設定し直したのですが、`Permission denied`のエラーが出て接続できません。
 
-2022年7月7日現在、新しい利用申請システムへの移行作業を行っております。(「[2022 年 7 月 5 日(火) 新規利用申請システムが新しくなりました](https://sc.ddbj.nig.ac.jp/blog/2022-07-05-news_NewApp)」)
+2022年7月7日現在、新しい利用申請システムへの移行作業を行っております。(「[<u>2022 年 7 月 5 日(火) 新規利用申請システムが新しくなりました</u>](https://sc.ddbj.nig.ac.jp/blog/2022-07-05-news_NewApp)」)
 そのため、新しいゲートウェイ`gw2.ddbj.nig.ac.jp`への公開鍵登録については即時設定が反映されますが、古い方のゲートウェイ`gw.ddbj.nig.ac.jp`へ設定が反映されるまでに１日程度かかります。
 次回の定期メンテナンス（12月）の際に、古いゲートウェイにも即時設定が反映されるようシステムを改修する予定です。
 

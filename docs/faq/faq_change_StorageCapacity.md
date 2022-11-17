@@ -8,7 +8,7 @@ title: FAQ (ストレージ容量変更について)
 
 ストレージの大規模利用申請が必要です。
 
-申請に関しては[一般解析区画の使い方 > ストレージの大規模利用](/general_analysis_division/largescale_storage)をご参照ください。
+申請に関しては[<u>一般解析区画の使い方 > ストレージの大規模利用</u>](/general_analysis_division/largescale_storage)をご参照ください。
 
 
 ## 現在どのような配分でストレージ容量を割り当てられているのでしょうか。
@@ -26,4 +26,4 @@ uid **** is using default file quota setting
 $
 ```
 
-詳細は[「Lustre FSの使い方」の「quotaの確認方法」](/general_analysis_division/ga_lustre#quotaの確認方法)をご参照ください。
+詳細は[<u>「Lustre FSの使い方」の「quotaの確認方法」</u>](/general_analysis_division/ga_lustre#quotaの確認方法)をご参照ください。
