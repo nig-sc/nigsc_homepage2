@@ -41,3 +41,29 @@ PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 export PATH
 ```
+
+
+## How do I log in to the genetic laboratory supercomputer using Putty or TeraTerm?
+
+The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refer to the manual of each software after referring to the instructions for using PowerShell.
+
+- Putty : 
+[&#x1f517;<u>PuTTY: a free SSH and Telnet client (greenend.org.uk)</u>](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+
+
+- TeraTerm : 
+[&#x1f517;<u>Tera Term Open Source Project (osdn.jp)</u>](https://ttssh2.osdn.jp/index.html.en)
+
+
+## How can I transfer files to/from the NIG supercomputer using WinScp or FileZilla?
+
+On the NIG supercomputer, in addition to scp and sftp, file transfer software such as [<u>Aspera</u>](/software/aspera/) for the General Analysis section and [<u>HCPtools</u>](/software/HCPtools/) for the Personal Genome Analysis section are available for high-speed file transfer over long distances.
+
+If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [<u>Aspera</u>](/software/aspera/) or [<u>HCPtools</u>](/software/HCPtools/) pages.
+
+- WinScp : 
+[&#x1f517;<u>WinSCP :: Official Site :: Free SFTP and FTP client for Windows</u>](https://winscp.net/eng/index.php)
+
+
+- FileZilla : 
+[&#x1f517;<u>FileZilla - The free FTP solution (filezilla-project.org)</u>](https://filezilla-project.org/)

@@ -3,9 +3,9 @@ id: imputation_server
 title: NBDC-DDBJインピュテーションサーバ (beta)
 ---
 
-**インピュテーションサーバ（Imputation Server）** は、SNPアレイデータのインピュテーション解析を支援するサービスです。**[ミシガン大学のインピュテーションサーバ](https://imputationserver.sph.umich.edu/)** や **[TOPMed プロジェクトのインピュテーションサーバ](https://imputation.biodatacatalyst.nhlbi.nih.gov/)** が公開されています。これらのサーバは日本国外に設置されており、利用のためにゲノムデータ（SNPアレイデータ）を国外のサーバにアップロードする必要がありました。
+**インピュテーションサーバ（Imputation Server）** は、SNPアレイデータのインピュテーション解析を支援するサービスです。**[&#x1f517;<u>ミシガン大学のインピュテーションサーバ</u>](https://imputationserver.sph.umich.edu/)** や **[&#x1f517;<u>TOPMed プロジェクトのインピュテーションサーバ</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/)** が公開されています。これらのサーバは日本国外に設置されており、利用のためにゲノムデータ（SNPアレイデータ）を国外のサーバにアップロードする必要がありました。
 
-そこで、**[国立研究開発法人科学技術振興機構 NBDC事業推進部](https://biosciencedbc.jp)** では日本の研究者が利用しやすい日本版インピュテーションサーバとして、**NBDC-DDBJインピュテーションサーバ**のシステムを開発しました。現在このシステムは、**[国立遺伝学研究所スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp)** の **[個人ゲノム解析区画](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction/)** で利用可能です。
+そこで、**[&#x1f517;<u>国立研究開発法人科学技術振興機構 NBDC事業推進部</u>](https://biosciencedbc.jp)** では日本の研究者が利用しやすい日本版インピュテーションサーバとして、**NBDC-DDBJインピュテーションサーバ**のシステムを開発しました。現在このシステムは、**[国立遺伝学研究所スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp)** の **[個人ゲノム解析区画](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction/)** で利用可能です。
 
 本サーバで使用しているインピュテーションのワークフローは、以下のAMED事業において国立国際医療研究センターが検討した情報（インピュテーションソフトウェアの選定・パラメータの設定）の提供を受け、その情報を参考にNBDC事業推進部がウェブサービスとして改変・実装したものです。
 
@@ -24,11 +24,11 @@ NBDC-DDBJインピュテーションサーバ（ベータ版）（以下、本�
 
 ### 利用可能なインピュテーションアルゴリズム
 本システムでは、以下のプログラムを用いてインピュテーション解析を行います。
-- **[conform-gt (version 24May16)](https://faculty.washington.edu/browning/conform-gt.html)** を用いて、入力となる SNP アレイデータの reference / alternative allele がリファレンスパネルデータと一致するように変換します
-- **[Beagle 5.2 (version 21Apr21.304)](https://faculty.washington.edu/browning/beagle/b5_2.html)** を用いてフェージングおよびインピュテーション解析を実施します
-- **[bcftools (version 1.9)](http://samtools.github.io/bcftools/bcftools.html)** を用いてインピュテーション後のゲノムデータ(VCF file)のインデックスを作成します
+- **[&#x1f517;<u>conform-gt (version 24May16)</u>](https://faculty.washington.edu/browning/conform-gt.html)** を用いて、入力となる SNP アレイデータの reference / alternative allele がリファレンスパネルデータと一致するように変換します
+- **[&#x1f517;<u>Beagle 5.2 (version 21Apr21.304)</u>](https://faculty.washington.edu/browning/beagle/b5_2.html)** を用いてフェージングおよびインピュテーション解析を実施します
+- **[&#x1f517;<u>bcftools (version 1.9)</u>](http://samtools.github.io/bcftools/bcftools.html)** を用いてインピュテーション後のゲノムデータ(VCF file)のインデックスを作成します
 
-一連のワークフローは **[Common Workflow Language (CWL)](https://www.commonwl.org)** で実装され、**[imputation-server workflow](https://github.com/ddbj/imputation-server-wf)** として公開されています。
+一連のワークフローは **[&#x1f517;<u>Common Workflow Language (CWL)</u>](https://www.commonwl.org)** で実装され、**[&#x1f517;<u>imputation-server workflow</u>](https://github.com/ddbj/imputation-server-wf)** として公開されています。
 
 ### 主な入力ファイル
 インピュテーションワークフローの入力となるのは次の2つのデータセットです。
@@ -43,12 +43,12 @@ NBDC-DDBJインピュテーションサーバ（ベータ版）（以下、本�
 
 | リファレンスパネルの名前 | 概要 | アクセスレベル | アセンブリバージョン |
 | --- | --- | --- | --- |
-| **GRCh37.1KGP** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。複数のancestryに属する 2,504 名のサンプルを含みます | 非制限公開 | hg19, GRCh37 |
-| **GRCh37.1KGP_EAS** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 504 名のサンプルを含みます | 非制限公開 | hg19, GRCh37 |
-| **GRCh38.1KGP** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。複数のancestryに属する 2,548 名のサンプルを含みます | 非制限公開 | GRCh38 |
-| **GRCh38.1KGP_EAS** | [The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 508 名のサンプルを含みます | 非制限公開 | GRCh38 |
-| **BBJ1K+GRCh37.1KGP** | [BioBank Japanプロジェクト](https://biobankjp.org)のリファレンスパネルと[The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の複数の ancestryに属する 2,504 名のサンプル（合計 3,541名）を含みます | 制限公開 | hg19, GRCh37 |
-| **BBJ1K+GRCh37.1KGP_EAS** | [BioBank Japanプロジェクト](https://biobankjp.org)のリファレンスパネルと[The 1000 Genomes Project](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の東アジアancestryに属する 504 名のサンプル（合計 1,541名）を含みます | 制限公開 | hg19, GRCh37 |
+| **GRCh37.1KGP** | [&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルです。複数のancestryに属する 2,504 名のサンプルを含みます | 非制限公開 | hg19, GRCh37 |
+| **GRCh37.1KGP_EAS** | [&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 504 名のサンプルを含みます | 非制限公開 | hg19, GRCh37 |
+| **GRCh38.1KGP** | [&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルです。複数のancestryに属する 2,548 名のサンプルを含みます | 非制限公開 | GRCh38 |
+| **GRCh38.1KGP_EAS** | [&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 508 名のサンプルを含みます | 非制限公開 | GRCh38 |
+| **BBJ1K+GRCh37.1KGP** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)のリファレンスパネルと[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の複数の ancestryに属する 2,504 名のサンプル（合計 3,541名）を含みます | 制限公開 | hg19, GRCh37 |
+| **BBJ1K+GRCh37.1KGP_EAS** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)のリファレンスパネルと[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の東アジアancestryに属する 504 名のサンプル（合計 1,541名）を含みます | 制限公開 | hg19, GRCh37 |
 
 リファレンスパネルごとのインピュテーション精度を比較した結果、制限公開データである **BBJ1K+GRCh37.1KGP reference panel** の精度が最も高いと評価されました。詳細は投稿中の論文に記載しています。論文が公開されたら本ページを更新します。
 
@@ -56,7 +56,7 @@ NBDC-DDBJインピュテーションサーバ（ベータ版）（以下、本�
 - 本システムの論文を引用してください。
     - Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. *submitted*. 
 - 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)）。
-- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[記載文例](https://humandbs.biosciencedbc.jp/faq#faq-23)の内容を記述して下さい。
+- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[&#x1f517;<u>記載文例</u>](https://humandbs.biosciencedbc.jp/faq#faq-23)の内容を記述して下さい。
 
 
 ## NBDC-DDBJインピュテーションサーバ（ベータ版）の利用方法
@@ -83,7 +83,7 @@ RAM： ______ (推奨： 128GB以上)
 ```
 
 ## 制限公開データのデータ利用申請
-制限公開リファレンスパネルは **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)** に登録されています。JGAデータの利用申請方法は **[NBDCヒトデータベース データの利用](https://humandbs.biosciencedbc.jp/data-use)** をご参照ください。申請時に必要となるアクセッションcode は次表を参照してください。
+制限公開リファレンスパネルは **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)** に登録されています。JGAデータの利用申請方法は **[&#x1f517;<u>NBDCヒトデータベース データの利用</u>](https://humandbs.biosciencedbc.jp/data-use)** をご参照ください。申請時に必要となるアクセッションcode は次表を参照してください。
 
 | リファレンスパネルの名前 | リサーチID | データセットID |
 | --- | --- | --- |
