@@ -3,9 +3,9 @@ id: imputation_server
 title: NBDC-DDBJ Imputation Server
 ---
 
-The **Imputation Server** is a service to support imputation analysis of SNP array data. **[Michigan Imputation Server](https://imputationserver.sph.umich.edu/)** and **[TOPMed Project Imputation Server](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
+The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;<u>Michigan Imputation Server</u>](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;<u>TOPMed Project Imputation Server</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-Therefore, **[the Department of NBDC Program of the Japan Science and Technology Agency](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis Section](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
+Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis Section](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
 The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
 
@@ -27,11 +27,11 @@ Researcher illustration were created by TogoTV (©2016 DBCLS TogoTV / CC-BY-4.0)
 ### Available Imputation Algorithms
 This system uses the following programmes for imputation analysis.
 
-- Use **[conform-gt (version 24May16)](https://faculty.washington.edu/browning/conform-gt.html)** to convert the reference / alternative allele of the input SNP array data to match the reference panel data.
-- Use **[Beagle 5.2 (version 21Apr21.304)](https://faculty.washington.edu/browning/beagle/b5_2.html)** for fading and imputation analysis.
-- Index the genomic data (VCF file) after imputation using **[bcftools (version 1.9)](http://samtools.github.io/bcftools/bcftools.html)**.
+- Use **[&#x1f517;<u>conform-gt (version 24May16)</u>](https://faculty.washington.edu/browning/conform-gt.html)** to convert the reference / alternative allele of the input SNP array data to match the reference panel data.
+- Use **[&#x1f517;<u>Beagle 5.2 (version 21Apr21.304)</u>](https://faculty.washington.edu/browning/beagle/b5_2.html)** for fading and imputation analysis.
+- Index the genomic data (VCF file) after imputation using **[&#x1f517;<u>bcftools (version 1.9)</u>](http://samtools.github.io/bcftools/bcftools.html)**.
 
-A series of workflows are implemented in **[Common Workflow Language (CWL)](https://www.commonwl.org)** and published as an **[input-server workflow](https://github.com/ddbj/imputation-server-wf)**.
+A series of workflows are implemented in **[&#x1f517;<u>Common Workflow Language (CWL)</u>](https://www.commonwl.org)** and published as an **[&#x1f517;<u>input-server workflow</u>](https://github.com/ddbj/imputation-server-wf)**.
 
 
 ### Main input files
@@ -47,15 +47,14 @@ The following two datasets are inputs to the imputation workflow.
 ### Available reference panel types.
 In this system, six types of reference panels are currently available. If you use a reference panel for unrestricted data, it is not necessary to apply to use the data. But for restricted public data, you need to **apply to NBDC for data usage** of the reference panel data.
 
-| リファレンスパネルの名前 | 概要 | アクセスレベル | アセンブリバージョン |
 | Reference Panel Name | Overview | Access Level | Assembly Version |
 | --- | --- | --- | --- |
-| **GRCh37.1KGP** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 2,504 samples belonging to several ancestries | Unrestricted publication | hg19, GRCh37 |
-| **GRCh37.1KGP_EAS** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 504 samples belonging to East Asian ancestry | Unrestricted publication | hg19, GRCh37 |
-| **GRCh38.1KGP** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 2,548 samples belonging to several ancestries | Unrestricted publication | GRCh38 |
-| **GRCh38.1KGP_EAS** | Reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 508 samples belonging to East Asian ancestry | Unrestricted publication | GRCh38 |
-| **BBJ1K+GRCh37.1KGP** | Reference panel obtained by cross-imputing the reference panel '[BioBank Japan project](https://biobankjp.org)' with the reference panel '[The 1000 Genomes Project](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 2,504 samples from several ancestries of the 10,000 Genomes Project (3,541 in total) | restricted publication | hg19, GRCh37 |
-| **BBJ1K+GRCh37.1KGP_EAS** | Reference panel obtained by cross-imputing the reference panel '[BioBank Japan project](https://biobankjp.org)' with the reference panel '[1000 Genomes Project](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 504 samples belonging to the East Asian ancestry of the 10,000 Genomes Project (1,541 in total) | restricted publication | hg19, GRCh37 |
+| **GRCh37.1KGP** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 2,504 samples belonging to several ancestries | Unrestricted publication | hg19, GRCh37 |
+| **GRCh37.1KGP_EAS** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 504 samples belonging to East Asian ancestry | Unrestricted publication | hg19, GRCh37 |
+| **GRCh38.1KGP** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 2,548 samples belonging to several ancestries | Unrestricted publication | GRCh38 |
+| **GRCh38.1KGP_EAS** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 508 samples belonging to East Asian ancestry | Unrestricted publication | GRCh38 |
+| **BBJ1K+GRCh37.1KGP** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org)' with the reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 2,504 samples from several ancestries of the 10,000 Genomes Project (3,541 in total) | restricted publication | hg19, GRCh37 |
+| **BBJ1K+GRCh37.1KGP_EAS** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org)' with the reference panel '[&#x1f517;<u>1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 504 samples belonging to the East Asian ancestry of the 10,000 Genomes Project (1,541 in total) | restricted publication | hg19, GRCh37 |
 
 A result comparing the imputation accuracy of different reference panels showed that the restricted public data, **BBJ1K+GRCh37.1KGP reference panel**, was rated as the most accurate. Details are given in the paper under submission. This page will be updated when the paper is published.
 
@@ -64,7 +63,7 @@ A result comparing the imputation accuracy of different reference panels showed 
 - Cite the paper in this system.
     - Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. *submitted*. 
 - Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)).
-- If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [the example text](https://humandbs.biosciencedbc.jp/faq#faq-23) as an acknowledgement.
+- If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [&#x1f517;<u>the example text</u>](https://humandbs.biosciencedbc.jp/faq#faq-23) as an acknowledgement.
 
 
 ## How to use the NBDC-DDBJ Imputation Server (beta)
@@ -93,7 +92,7 @@ Directory to mount: __________ (e.g. /home/ddbjshare-pg [required], /home/yourac
 
 
 ## Applying for data use of restricted public data
-Restricted Public Reference Panels are registered in the **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)**. For how to apply for use of JGA data, see **[NBDC Human Database - Data Usage](https://humandbs.biosciencedbc.jp/data-use)**. Refer to the following table for the accession code required when applying.
+Restricted Public Reference Panels are registered in the **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)**. For how to apply for use of JGA data, see **[&#x1f517;<u>NBDC Human Database - Data Usage</u>](https://humandbs.biosciencedbc.jp/data-use)**. Refer to the following table for the accession code required when applying.
 
 | Reference Panel Name | Research ID | Dataset ID |
 | --- | --- | --- |

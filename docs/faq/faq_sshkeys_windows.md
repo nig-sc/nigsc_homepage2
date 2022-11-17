@@ -7,10 +7,10 @@ title: "FAQ(SSH公開鍵の登録(Windowsの場合))"
 
 Windowsに標準搭載されているPowerShellを最新バージョンにアップデートする方法をご説明します。
 
-バージョンの確認方法: 詳細は[本ページの「PowerShellのバージョンの確認方法」をご参照ください](/faq/faq_sshkeys_windows#powershellのバージョンの確認方法)。
+バージョンの確認方法: 詳細は[<u>本ページの「PowerShellのバージョンの確認方法」をご参照ください</u>](/faq/faq_sshkeys_windows#powershellのバージョンの確認方法)。
 
-- [現在使用しているPowerShellのバージョンを確認する](/faq/faq_sshkeys_windows#現在インストールされているpowershellのバージョンの確認方法)には`$PSVersionTable`コマンドを実行してください。
-- [最新バージョンを確認する](/faq/faq_sshkeys_windows#公開されている最新バージョンの確認方法)には`winget search Microsoft.PowerShell`コマンドを実行してください。
+- [<u>現在使用しているPowerShellのバージョンを確認する</u>](/faq/faq_sshkeys_windows#現在インストールされているpowershellのバージョンの確認方法)には`$PSVersionTable`コマンドを実行してください。
+- [<u>最新バージョンを確認する</u>](/faq/faq_sshkeys_windows#公開されている最新バージョンの確認方法)には`winget search Microsoft.PowerShell`コマンドを実行してください。
 
 ※最新バージョンではない場合には以下のような画面となります。
 
@@ -50,7 +50,7 @@ winget install --id Microsoft.Powershell --source winget
 
 ### 動作確認
 
-最新バージョンのPowerShellを起動するには`pwsh`コマンドを用います。`powershell`コマンドを用いると古いバージョンのPowerShellが起動されてしまいます。<a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">この事情については公式サイトの説明をご確認ください。</a>
+最新バージョンのPowerShellを起動するには`pwsh`コマンドを用います。`powershell`コマンドを用いると古いバージョンのPowerShellが起動されてしまいます。&#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">この事情については公式サイトの説明をご確認ください。</a></u>
 
 Windowsマークをクリックして、検索ボックスの中をクリックします。
 
@@ -89,7 +89,7 @@ Windowsマークをクリックして、検索ボックスの中をクリック�
 
 今回インストールした最新バージョンよりも、さらに最新バージョンがリリースされると、Microsoftの公式WebサイトにあるGithubでは即時、実行ファイルがアップロードされてインストール可能な状態になりますが、`winget`コマンドに最新バージョンが反映されるまでには時間差があるため、このようなメッセージが表示されます。
 
-さらに最新バージョンへアップグレードする方法は、[本ページ内にアップグレード方法の説明があります](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールしたのにa-new-powershell-stable-release-is-availableというメッセージが表示される)ので、ご参照ください。
+さらに最新バージョンへアップグレードする方法は、[<u>本ページ内にアップグレード方法の説明があります</u>](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールしたのにa-new-powershell-stable-release-is-availableというメッセージが表示される)ので、ご参照ください。
 
 &#x1F4D6; 時間差について
 - 2022年10月19日　この時点で最新の7.2.6をインストールした。
@@ -97,13 +97,13 @@ Windowsマークをクリックして、検索ボックスの中をクリック�
 - 2022年10月21日　確認したところGithubに実行ファイルがアップロードされていたが、まだ`winget`コマンドに反映されていない状態であった。
 - 2022年10月26日　`winget search Microsoft.PowerShell`コマンドを実行したところ、最新バージョンが更新されており、7.2.7が最新であると表示された。
 
-&#x1F4D6; 確認したMicrosoftの公式WebサイトにあるGithubのURL: https://github.com/PowerShell/PowerShell/releases/
+&#x1F4D6; 確認したMicrosoftの公式WebサイトにあるGithubのURL: &#x1f517;<u>https://github.com/PowerShell/PowerShell/releases/</u>
 
 
 ### 参考資料
 
-- <a href="https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">microsoft公式Webサイト「WindowsへのPowerShellのインストール」</a>
-- <a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">microsoft公式Webサイト「Windows PowerShell 5.1 と PowerShell 7.x の相違点」</a>
+- &#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">microsoft公式Webサイト「WindowsへのPowerShellのインストール」</a></u>
+- &#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">microsoft公式Webサイト「Windows PowerShell 5.1 と PowerShell 7.x の相違点」</a></u>
 
 
 ## PowerShell を起動する
@@ -265,9 +265,9 @@ pwsh.exe
 
 PowerShell 7.2.6では、実行ファイル名が`pwsh.exe`という名前でインストールされているため、PowerShellを検索するときは、”powershell”ではなく”pwsh”と入力して検索します。
 
-詳細は<a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">Microsoft公式Webサイトの「Windows PowerShell 5.1 と PowerShell 7.x の相違点」のページをご参照ください。</a>
+詳細は&#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">Microsoft公式Webサイトの「Windows PowerShell 5.1 と PowerShell 7.x の相違点」のページをご参照ください。</a></u>
 
 
 ## `winget`によるインストールについての詳細が知りたいです。
 
-microsoft公式Webサイトにある「WindowsへのPowerShellのインストール」のページをご参照ください。<a href="https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">ここをクリックすると、そのページに移動できます。</a>
+microsoft公式Webサイトにある「WindowsへのPowerShellのインストール」のページをご参照ください。&#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">ここをクリックすると、そのページに移動できます。</a></u>

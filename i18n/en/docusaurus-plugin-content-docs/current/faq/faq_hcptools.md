@@ -104,7 +104,7 @@ If you do not specify a file name, the following error message will be output an
 ```
 
 
-## [HCP tools Command Overview p.10](/pdf/HCPtools_overview_en.pdf) says that only Windows 10 is supported. Is it not available for Windows 11?
+## [<u>HCP tools Command Overview p.10</u>](/pdf/HCPtools_overview_en.pdf) says that only Windows 10 is supported. Is it not available for Windows 11?
 
 Yes, it can be used on Windows 11.
 
