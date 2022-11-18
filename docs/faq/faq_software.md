@@ -46,8 +46,8 @@ export PATH
 
 ホームページではWindowsに標準搭載されているPowerShellをターミナルエミュレータとして使った場合の利用手順を記載しています。
 
-- [&#x1f517;<u>SSH公開鍵の登録・変更</u>](/application/ssh_keys)
-- [&#x1f517;<u>SSH公開鍵の登録(Windowsの場合)</u>](/application/ssh_keys_windows)
+- [<u>SSH公開鍵の登録・変更</u>](/application/ssh_keys)
+- [<u>SSH公開鍵の登録(Windowsの場合)</u>](/application/ssh_keys_windows)
 
 サードパーティ製のターミナルエミュレータ(PuttyやTeraTerm等)を利用したい場合は、PowerShellの場合の利用方法をご参考の上、各ソフトウェアのマニュアルをご参照ください。
 
@@ -63,9 +63,9 @@ export PATH
 
 ホームページではscp, sftpコマンドを用いたファイル転送の手順を記載しています。
 
-- [&#x1f517;<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)
+- [<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)
 
-サードパーティ製のソフトウェア(WinScpやFileZilla等)を利用したい場合は、[&#x1f517;<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)をご参考の上、各ソフトウェアのマニュアルをご参照ください。
+サードパーティ製のソフトウェア(WinScpやFileZilla等)を利用したい場合は、[<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)をご参考の上、各ソフトウェアのマニュアルをご参照ください。
 
 - WinScp : 
 [&#x1f517;<u>WinSCP :: Official Site :: Free SFTP and FTP client for Windows</u>](https://winscp.net/eng/index.php)

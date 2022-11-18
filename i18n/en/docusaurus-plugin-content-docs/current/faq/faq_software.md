@@ -47,8 +47,8 @@ export PATH
 
 The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. 
 
-- [&#x1f517;<u>Registering or changing SSH public keys</u>](/application/ssh_keys)
-- [&#x1f517;<u>Registering or changing SSH public keys (Windows)</u>](/application/ssh_keys_windows)
+- [<u>Registering or changing SSH public keys</u>](/application/ssh_keys)
+- [<u>Registering or changing SSH public keys (Windows)</u>](/application/ssh_keys_windows)
 
 If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refer to the manual of each software after referring to the instructions for using PowerShell.
 
@@ -64,9 +64,9 @@ If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refe
 
 The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
 
-- [&#x1f517;<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/)
+- [<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/)
 
-If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [&#x1f517;<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/) page.
+If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/) page.
 
 - WinScp : 
 [&#x1f517;<u>WinSCP :: Official Site :: Free SFTP and FTP client for Windows</u>](https://winscp.net/eng/index.php)
