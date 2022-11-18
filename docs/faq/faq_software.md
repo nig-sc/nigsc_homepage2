@@ -44,7 +44,12 @@ export PATH
 
 ## PuttyやTeraTermなどを使って遺伝研スパコンにログインする方法を教えてください。
 
-ホームページではWindowsに標準搭載されているPowerShellをターミナルエミュレータとして使った場合の利用手順を記載しています。サードパーティ製のターミナルエミュレータ(PuttyやTeraTerm等)を利用したい場合は、PowerShellの場合の利用方法をご参考の上、各ソフトウェアのマニュアルをご参照ください。
+ホームページではWindowsに標準搭載されているPowerShellをターミナルエミュレータとして使った場合の利用手順を記載しています。
+
+- [&#x1f517;<u>SSH公開鍵の登録・変更</u>](/application/ssh_keys)
+- [&#x1f517;<u>SSH公開鍵の登録(Windowsの場合)</u>](/application/ssh_keys_windows)
+
+サードパーティ製のターミナルエミュレータ(PuttyやTeraTerm等)を利用したい場合は、PowerShellの場合の利用方法をご参考の上、各ソフトウェアのマニュアルをご参照ください。
 
 - Putty : 
 [&#x1f517;<u>PuTTY: a free SSH and Telnet client (greenend.org.uk)</u>](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
@@ -56,8 +61,11 @@ export PATH
 
 ## 遺伝研スパコンでWinScpやFileZillaなどを使ってにファイル転送する方法を教えてください。
 
-遺伝研スパコンでは、scpやsftpの他、遠距離間で大量のファイルを高速通信で転送する場合には、一般解析区画では[<u>Aspera</u>](/software/aspera/)、個人ゲノム解析区画では[<u>HCPtools</u>](/software/HCPtools/)というファイル転送ソフトウェアが利用可能となっています。
-サードパーティ製のソフトウェア(WinScpやFileZilla等)を利用したい場合は、[<u>Aspera</u>](/software/aspera/)や[<u>HCPtools</u>](/software/HCPtools/)のページをご参考の上、各ソフトウェアのマニュアルをご参照ください。
+ホームページではscp, sftpコマンドを用いたファイル転送の手順を記載しています。
+
+- [&#x1f517;<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)
+
+サードパーティ製のソフトウェア(WinScpやFileZilla等)を利用したい場合は、[&#x1f517;<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)をご参考の上、各ソフトウェアのマニュアルをご参照ください。
 
 - WinScp : 
 [&#x1f517;<u>WinSCP :: Official Site :: Free SFTP and FTP client for Windows</u>](https://winscp.net/eng/index.php)
