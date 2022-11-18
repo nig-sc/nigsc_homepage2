@@ -45,7 +45,12 @@ export PATH
 
 ## How do I log in to the genetic laboratory supercomputer using Putty or TeraTerm?
 
-The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refer to the manual of each software after referring to the instructions for using PowerShell.
+The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. 
+
+- [&#x1f517;<u>Registering or changing SSH public keys</u>](/application/ssh_keys)
+- [&#x1f517;<u>Registering or changing SSH public keys (Windows)</u>](/application/ssh_keys_windows)
+
+If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refer to the manual of each software after referring to the instructions for using PowerShell.
 
 - Putty : 
 [&#x1f517;<u>PuTTY: a free SSH and Telnet client (greenend.org.uk)</u>](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
@@ -57,9 +62,11 @@ The NIG supercomputer website describes the procedure for using PowerShell, whic
 
 ## How can I transfer files to/from the NIG supercomputer using WinScp or FileZilla?
 
-On the NIG supercomputer, in addition to scp and sftp, file transfer software such as [<u>Aspera</u>](/software/aspera/) for the General Analysis section and [<u>HCPtools</u>](/software/HCPtools/) for the Personal Genome Analysis section are available for high-speed file transfer over long distances.
+The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
 
-If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [<u>Aspera</u>](/software/aspera/) or [<u>HCPtools</u>](/software/HCPtools/) pages.
+- [&#x1f517;<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/)
+
+If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [&#x1f517;<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/) page.
 
 - WinScp : 
 [&#x1f517;<u>WinSCP :: Official Site :: Free SFTP and FTP client for Windows</u>](https://winscp.net/eng/index.php)
