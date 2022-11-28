@@ -1,6 +1,6 @@
 ---
 slug: 2022-11-24-Lustre6_maintenance
-title: "November 24, 2022: Emergency maintenance of Lustre6"
+title: "(Ended) November 24, 2022: Emergency maintenance of Lustre6"
 tags:
   - maintenance
 authros:

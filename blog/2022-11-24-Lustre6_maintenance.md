@@ -1,6 +1,6 @@
 ---
 slug: 2022-11-24-Lustre6_maintenance
-title: "2022年11月24日(木) Lustre6の緊急メンテナンス"
+title: "(終了) 2022年11月24日(木) Lustre6の緊急メンテナンス"
 tags:
   - maintenance
 authros:
