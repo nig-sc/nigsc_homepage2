@@ -53,7 +53,7 @@ Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル
 - GRCh38.1KGP
 - GRCh38.1KGP-EAS
 
-それぞれについては[利用可能なリファレンスパネルの種類](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E)を参照ください。
+それぞれについては[利用可能なリファレンスパネルの種類](https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server/#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E)を参照ください。
 
 上記以外のものをReference Panelとして使いたいときは
 other を選択し、Reference panel config fileに使いたいものを指定します。
@@ -126,11 +126,6 @@ Run log の中の、Outputs をクリックすると結果ファイル一覧が�
 
 ダウンロードしたいファイルをクリックするとダイアログが表示され、
 デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
-
-### 処理内容について
-
-処理内容については、[NBDC-DDBJインピュテーションサーバ (beta)](https://genome-analytics-japan.docbase.io/posts/2437858)を参照ください。
-特に、具体的なプログラムについては、[利用可能なインピュテーションアルゴリズム](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%A4%E3%83%B3%E3%83%94%E3%83%A5%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0)を参照ください。
 
 ### 結果
 
