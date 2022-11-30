@@ -68,3 +68,70 @@ cp /home/ddbjshare-pg/imputation-desktop/scripts/install.sh install.sh
 ? Are you interested in participating? (Y/n)
 ```
 
+## 起動と停止
+
+インストールスクリプトを実行すると自動的に、以下の３つのサービスが起動します
+
+- ImputationServer web ui
+- Sapporo web
+- Sapporo service
+
+### すべてのサービスの起動と停止
+
+インストールしたディレクトリに、以下の２つのスクリプトがあります。
+
+全てのサービス一括起動スクリプト
+`startall.sh `
+
+全てのサービス一括停止スクリプト
+`stopall.sh `
+
+これらをご使用ください
+
+### ImputationServer web ui のみの起動と停止
+
+ImputationServer web ui のみの起動方法
+
+```
+cd imputation-server-ui
+./start-imputation-server-ui.sh
+```
+
+ImputationServer web ui のみの停止方法
+
+```
+cd imputation-server-ui
+./stop-imputation-server-ui.sh
+```
+
+### Sapporo web のみの起動と停止
+
+Sapporo web のみの起動方法
+
+```
+cd sapporo-web
+./start-sapporo-web.sh
+```
+
+Sapporo web のみの停止方法
+
+```
+cd sapporo-web
+./stop-sapporo-web.sh
+```
+
+### Sapporo service のみの起動と停止
+
+Sapporo service のみの起動方法
+
+```
+cd sapporo-service
+./start-sapporo-service.sh
+```
+
+Sapporo service のみの停止方法
+
+```
+cd sapporo-service
+./stop-sapporo-service.sh
+```
