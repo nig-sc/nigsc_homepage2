@@ -30,7 +30,8 @@ NBDC-DDBJ インピュテーションサーバ（ベータ版）（以下、本�
 
 - [NBDC-DDBJ Imputation Server の概要](/advanced_guides/imputation_server)
 - [インストールマニュアル](/advanced_guides/imputation_server_install)
-- [チュートリアル](/advanced_guides/imputation_server_tutorial)
+- [チュートリアル1、公開レファレンスパネルを使う場合](/advanced_guides/imputation_server_tutorial)
+- [チュートリアル2、制限公開レファレンスパネルを使う場合](/advanced_guides/imputation_server_tutorial2)
 
 
 </td>

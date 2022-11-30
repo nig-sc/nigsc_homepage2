@@ -81,7 +81,7 @@ By default, you can choose for the following four.
 - GRCh38.1KGP
 - GRCh38.1KGP-EAS
 
-For more information on each of them, see [&#x1f517;<u>Types of Reference Panels available</u>](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E).
+For more information on each of them, see [&#x1f517;<u>Types of Reference Panels available</u>](https://sc.ddbj.nig.ac.jp/en/advanced_guides/imputation_server/#available-reference-panel-types).
 
 If you want to use other than the above as a Reference Panel, select 'other' and specify the one you want to use for the Reference panel config file.
 
@@ -148,13 +148,6 @@ You can get the result file from your browser.
 Click on Outputs in the Run log to list the result files.
 
 When you click on the file you want to download, a dialogue appears. By default, the file is downloaded under `~/downloads`.
-
-
-### Process details
-
-Refer to the [&#x1f517;<u>NBDC-DDBJ imputation server (beta)</u>](https://genome-analytics-japan.docbase.io/posts/2437858) for processing details.
-In particular, see [&#x1f517;<u>Available Imputation Algorithms</u>](https://genome-analytics-japan.docbase.io/posts/2437858#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%82%A4%E3%83%B3%E3%83%94%E3%83%A5%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0) for specific programs.
-
 
 ### Get results
 
