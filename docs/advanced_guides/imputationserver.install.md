@@ -76,6 +76,7 @@ cp /home/ddbjshare-pg/imputation-desktop/scripts/install.sh install.sh
 - Sapporo web
 - Sapporo service
 
+
 ### すべてのサービスの起動と停止
 
 インストールしたディレクトリに、以下の２つのスクリプトがあります。
@@ -86,7 +87,8 @@ cp /home/ddbjshare-pg/imputation-desktop/scripts/install.sh install.sh
 全てのサービス一括停止スクリプト
 `stopall.sh `
 
-これらをご使用ください
+これらをご使用ください。
+
 
 ### ImputationServer web ui のみの起動と停止
 
@@ -119,6 +121,7 @@ Sapporo web のみの停止方法
 cd sapporo-web
 ./stop-sapporo-web.sh
 ```
+
 
 ### Sapporo service のみの起動と停止
 

@@ -74,8 +74,9 @@ This system is for users who use the Personal Genome Analysis Section. For infor
 2. The **supercomputer administrator** will cut out a part of the computer node and start a virtual machine of this system. The remote desktop environment user manual will also be sent to you.
 3. Log in to the Remote Desktop Environment according to the Remote Desktop Environment User Manual.
 4. **[Install Manual](./imputation_server_install)** to complete the setup.
-5. Use **[Tutorial](./imputation_server_tutorial)** to learn how to use the Imputation Server with publicly available genomic and reference data
+5. Use **[Tutorial 1 - Using the public reference panel](./imputation_server_tutorial)** to learn how to use the Imputation Server with publicly available genomic and reference data
 6. After completing the above steps, you can upload your genomic data (SNP array data), perform an imputation analysis and download the results of the imputation analysis.
+7. If you use restricted public data, refer to **[Tutorial 2 - Using the restricted release reference panel](./imputation_server_tutorial2)**.
 
 
 text:Example of NBDC-DDBJ Imputation Server usage application email
@@ -88,6 +89,8 @@ Machine name to start guacamle: ________ (e.g. at001)
 Number of cores: ______ (recommended: 16 or more)
 RAM: ______ (recommended: 128 GB or more)
 Directory to mount: __________ (e.g. /home/ddbjshare-pg [required], /home/youraccount-pg [required])
+
+Please also install singularity.
 ```
 
 
