@@ -1,54 +1,50 @@
 ---
-id: imputation_server_tutorial
-title: "Tutorial 1 - Using the public reference panel"
+id: imputation_server_tutorial2
+title: "Tutorial 2 - Using the restricted release reference panel"
 ---
-
 
 ## Procedures for using this system
 
 This system executes workflows in the following steps.
 
-1. Prepare test data
+1. Prepare restricted release data
 2. Generate a configuration file for the Imputation Workflow
 3. Execute the Imputation Workflow
 
 
-## 1. Prepare test data
 
-To proceed with the tutorial, download the test data to be used and copy it to the Personal Genome Analysis section of the NIG supercomputer.
+## 1. Prepare restricted release data
 
+We proceed with the tutorial on the assumption that there is already restricted release data in the personal genome analysis section of the NIG supercomputer.
 
-### Download the test data
+### Notes on file names for restricted release data
 
-Access [&#x1f517;<u>Test data for Imputation Workflow</u>](https://zenodo.org/record/6650681#.YrD-HOxBykr). You can find the following two files.
+File names containing `+` may cause problems in subsequent processing, so should be changed by `_` or similar.
 
-- `test-data.GRCh37.vcf.gz`
-- `test-data.GRCh38.vcf.gz`
+#### Extract and prepare restricted release data
 
-This time, we will use `test-data.GRCh37.vcf.gz`, so download it.
+By following the steps below, extract the file, create the config file and check that the config file has been created correctly.
 
-Even if you use `test-data.GRCh38.vcf.gz`, the steps of procedure are the same and you can proceed without any problems if you select GRCh38 if necessary.
-
-![](./imputationserver.tutorial.Fig1.png)
-
-
-
-
-### Copy it to the Personal Genome Analysis section of the NIG supercomputer
-
-Copy the test data just downloaded.
-
-First, connect the VPN for connecting to the NIG supercomputer.
-
-Next, use the following command to copy the test data that you have just downloaded.
-
-In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the Personal Genome Analysis section of the NIG supercomputer.
+Extract the file
 
 ```
-scp -i [your private key file] ~/download/test-data.GRCh37.vcf.gz ([your account name])@gwa.ddbj.nig.ac.jp:~/
+tar zxvf <the file name of the restricted release data.tar.gz>
 ```
 
-Test data is now prepared.
+Create the config file
+
+```
+cd <Directory in which restricted release data is extracted>
+./generate-default-conofig-file.sh $(pwd)
+```
+
+Check that the config file has been created correctly
+
+```
+ls -l default.config.yaml
+```
+
+This file will be entered in the next UI as `Reference panel config file` in the UI.
 
 ## 2. Generate a configuration file for the Imputation Workflow
 
@@ -60,7 +56,8 @@ http://localhost:5000
 
 When you actually access it, you will see the following screen.
 
-![](./imputationserver.tutorial.Fig2.png)
+
+![](./imputationserver.tutorial2.Fig1.png)
 
 Configure the following items.
 
@@ -69,9 +66,10 @@ Configure the following items.
 - Output genotype probability
 - Number of threads
 
+
 For the target VCF file, specify the full path of the VCF file (\*.vcf.gz file) to be parsed.
 Here, the file that you uploaded is used.
-The specific full path will be `/home/username/test-data.GRCh37.vcf.gz`.
+The specific full path will be `/home/username/restricted release data/datavcf.gz`.
 
 Select the 'Reference panel preset config or'.
 By default, you can choose for the following four.
@@ -84,6 +82,8 @@ By default, you can choose for the following four.
 For more information on each of them, see [&#x1f517;<u>Types of Reference Panels available</u>](https://sc.ddbj.nig.ac.jp/en/advanced_guides/imputation_server/#available-reference-panel-types).
 
 If you want to use other than the above as a Reference Panel, select 'other' and specify the one you want to use for the Reference panel config file.
+
+This time, select other and specify Reference panel config file.
 
 Select 'Output genotyhpe probability'.
 You can select the following two types. By default, false is selected.
@@ -98,9 +98,8 @@ By default, 16 is specified.
 After specifying the parameters, press the Set up job button.
 The generated parameters are displayed at the bottom of the screen. Use this in sapporo-web.
 
-![](./imputationserver.tutorial.Fig3.png)
+![](./imputationserver.tutorial2.Fig2.png)
 
-The red filled area is your account name.
 
 ## 3. Execute the Imputation Workflow
 
@@ -112,42 +111,45 @@ http://localhost:1121
 
 When accessed, the following screen is displayed.
 
-![](./imputationserver.tutorial.Fig4.png)
+
+
+![](./imputationserver.tutorial2.Fig3.png)
 
 Select 'Sapporo Service on localhost', which is available by default.
 
 When clicked, you can see the following screen.
 
-![](./imputationserver.tutorial.Fig5.png)
+![](./imputationserver.tutorial2.Fig4.png)
 
 Scroll down a little to use the backend workflows and select 'beagle' from the Workflows item and click it.
 
-![](./imputationserver.tutorial.Fig6.png)
+![](./imputationserver.tutorial2.Fig5.png)
 
 Select `cwltool 3.1` from the Workflow Engine item of Compose Run.
 
-![](./imputationserver.tutorial.Fig7.png)
+![](./imputationserver.tutorial2.Fig6.png)
 
 In Workflow Parameters, enter the parameters generated by imputationserver-web-uio.
 In this case, delete the `{}` written from the beginning and enter the generated parameters.
 
-![](./imputationserver.tutorial.Fig8.png)
+![](./imputationserver.tutorial2.Fig7.png)
 
 Press the Execute button at the bottom to run the workflow.
 The status of the job will be Running.
 
-![](./imputationserver.tutorial.Fig9.png)
+![](./imputationserver.tutorial2.Fig8.png)
 
 If the workflow is started successfully, the workflow will be run by cwltool.
 
 If successfully completed, `COMPLETE`.
 
-![](./imputationserver.tutorial.Fig10.png)
+![](./imputationserver.tutorial2.Fig9.png)
 
 You can get the result file from your browser.
 Click on Outputs in the Run log to list the result files.
 
 When you click on the file you want to download, a dialogue appears. By default, the file is downloaded under `~/downloads`.
+
 
 ### Get results
 
@@ -172,7 +174,7 @@ Search `Run ID`.
 The `Run ID` is displayed on the right of `Run ID`.
 You can copy the `Run ID`(runid) by clicking on the icon on the right.
 
-![](./imputationserver.tutorial.Fig11.png)
+![](./imputationserver.tutorial2.Fig10.png)
 
 All files are in first two characters /`runid`/outputs/ of the installed directory /sapporo-service/run/`runid`.
 
@@ -184,3 +186,4 @@ A directory called `outputs` will be created in your computer, and the analysis 
 ```
 scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/ outputs outputs
 ```
+
