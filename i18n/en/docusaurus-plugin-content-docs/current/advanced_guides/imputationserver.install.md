@@ -68,3 +68,75 @@ During script execution, if the following screen appears and waits for input, en
 ? Are you interested in participating? (Y/n)
 ```
 
+
+## Starting and stopping
+
+The following three services are automatically started when you run the installation script. 
+
+- ImputationServer web ui
+- Sapporo web
+- Sapporo service
+
+
+### Starting and stopping all services
+
+The following two scripts can be found in the installation directory.
+
+Batch startup script for all services
+`startall.sh `
+
+Script which stop all services at once 
+`stopall.sh `
+
+Please use these.
+
+
+### Starting and stopping only ImputationServer web ui
+
+How to start only ImputationServer web ui
+
+```
+cd imputation-server-ui
+./start-imputation-server-ui.sh
+```
+
+How to stop only ImputationServer web ui
+
+```
+cd imputation-server-ui
+./stop-imputation-server-ui.sh
+```
+
+### Starting and stopping only the Sapporo web
+
+How to start only the Sapporo web
+
+```
+cd sapporo-web
+./start-sapporo-web.sh
+```
+
+How to stop only the Sapporo web 
+
+```
+cd sapporo-web
+./stop-sapporo-web.sh
+```
+
+
+### Starting and stopping only the Sapporo service
+
+How to start only the Sapporo service 
+
+```
+cd sapporo-service
+./start-sapporo-service.sh
+```
+
+How to stop only the Sapporo service
+
+```
+cd sapporo-service
+./stop-sapporo-service.sh
+```
+
