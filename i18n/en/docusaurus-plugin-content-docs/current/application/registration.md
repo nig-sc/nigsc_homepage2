@@ -5,6 +5,10 @@ title: "Application for use/change"
 
 &#x26A0;  Currently, we are not accepting application for new use of the personal genomic analysis section and large-scale storage on the general analysis section. For more information, [refer to this announcement page](/en/blog/2022-05-13-suspension-of-applications).
 
+
+If you have already completed an application for use but without registering your SSH public key, refer to [<u>FAQ : Application/Billing > FAQ(Application for New Use)</u>](/faq/faq_NewUser_registration#when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
+
+
 ## Application for use
 
 [Application for use is accepted](https://sc-account.ddbj.nig.ac.jp/en/application/registration) at any time. 1TB of high-speed storage is available after application for use.

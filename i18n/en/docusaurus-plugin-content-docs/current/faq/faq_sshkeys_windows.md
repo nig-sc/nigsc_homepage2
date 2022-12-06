@@ -1,6 +1,6 @@
 ---
 id: faq_sshkeys_windows
-title: "FAQ (Registration of SSH public key(Windows))"
+title: "FAQ (SSH public key Registration Procedure(Windows))"
 ---
 
 

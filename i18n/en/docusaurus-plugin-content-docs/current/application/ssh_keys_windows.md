@@ -1,10 +1,11 @@
 ---
 id: ssh_keys_windows
-title: Registering or changing SSH public keys (Windows)
+title: SSH public key Registration Procedure(Windows)
 ---
 
+This page provides detailed completion instructions when creating SSH public key and and registering it to the NIG  supercomputer with Windows.
 
-This section explains the procedure for registering an SSH public key using PowerShell, which is standard in Windows.
+PowerShell, which comes standard with Windows, is used as an example.
 
 ![](/img/ssh_keys/windows/ssh_win_1.png)
 
