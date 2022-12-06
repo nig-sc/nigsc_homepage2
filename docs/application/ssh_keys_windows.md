@@ -1,10 +1,11 @@
 ---
 id: ssh_keys_windows
-title: SSH公開鍵の登録(Windowsの場合)
+title: SSH公開鍵登録の詳細(Windowsの場合)
 ---
 
+このページでは、WindowsのためのSSH公開鍵作成から登録までの詳しい手順を説明しています。
 
-Windowsに標準搭載されているPowerShellを使ってSSH公開鍵の登録を行う手順をご説明します。
+Windowsに標準搭載されているPowerShellを例にご説明します。
 
 ![](/img/ssh_keys/windows/ssh_win_1.png)
 

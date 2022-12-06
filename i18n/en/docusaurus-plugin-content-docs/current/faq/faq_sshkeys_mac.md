@@ -1,6 +1,6 @@
 ---
 id: faq_sshkeys_mac
-title: "FAQ (Registration of SSH public key(MacOS))"
+title: "FAQ (SSH public key Registration Procedure(mac))"
 ---
 
 
