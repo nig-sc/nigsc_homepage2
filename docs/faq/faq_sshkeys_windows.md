@@ -1,6 +1,6 @@
 ---
 id: faq_sshkeys_windows
-title: "FAQ(SSH公開鍵の登録(Windowsの場合))"
+title: "FAQ(SSH公開鍵登録の詳細(Windowsの場合))"
 ---
 
 ## 最新バージョンのPowerShellをインストールする方法

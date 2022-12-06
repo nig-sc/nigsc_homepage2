@@ -95,3 +95,37 @@ Therefore, public key registrations to the new gateway `gw2.ddbj.nig.ac.jp` will
 At the next scheduled maintenance (December), the system will be modified so that the settings will be reflected immediately on the old gateway.
 
 Please login from `gw2.ddbj.nig.ac.jp` immediately after setting your public key etc.
+
+
+## I can login from Windows PowerShell, but not from Ubuntu Linux on WSL2 (Windows Subsystem for Linux)?
+
+
+Yes, you can login.
+
+Current Windows runs on a virtual machine from the beginning to use WSL2, and Ubuntu on WSL2
+Linux runs as another virtual machine. (For example, see this link &#x1f517;<u>
+https://www.thomasmaurer.ch/2019/06/install-wsl-2-on-windows-10/</u>)
+
+In other words, it operates with two completely independent virtual machines in one physical computer.
+The disk space is also independent, and these two virtual computers operate in a networked state on a single physical computer.
+
+Although they look similar, PowerShell runs on a virtual machine running the Windows OS, but the screen with the Ubuntu prompt is running on a virtual machine with the Ubuntu Linux OS.
+
+Therefore, you need to copy the private key created in PowerShell to Ubuntu Linux.
+
+For example:
+```
+you@wsl2:~$ cp /mnt/c/Users/you/.ssh/id_rsa .ssh
+you@wsl2:~$ ssh your_account@gw2.ddbj.nig.ac.jp
+Enter passphrase for key '/home/you/.ssh/id_rsa':
+Last login: Thu Dec  1 15:33:59 2022 from XXX.XXX.XXX.XXX
+---------------------------------------------------------------------
+Thank you for using NIG supercomputer system.
+This is the gateway node, do not run program here.
+Please use 'qlogin' to login to a login node.
+---------------------------------------------------------------------
+your_account@gw4:~ (2022-12-01 15:34:50)
+$
+```
+
+See also [<u>FAQ : Login > FAQ(Login)</u>](/faq/faq_login/)

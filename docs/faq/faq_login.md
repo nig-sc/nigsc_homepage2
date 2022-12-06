@@ -99,3 +99,40 @@ Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスし�
 次回の定期メンテナンス（12月）の際に、古いゲートウェイにも即時設定が反映されるようシステムを改修する予定です。
 
 つきましては、公開鍵などの設定直後は`gw2.ddbj.nig.ac.jp`からログインしてください。
+
+
+## Windows PowerShellからはログインできたが、WSL2 (Windows Subsystem for Linux)上のUbuntu Linuxからはログインできないのか？
+
+
+ログインできます。
+
+現在のWindowsはWSL2を使うために最初から仮想マシンの上で動いており、WSL2上のUbuntu
+Linuxは別の仮想マシンとして動作します。（例えば以下のリンク&#x1f517;<u>
+https://www.thomasmaurer.ch/2019/06/install-wsl-2-on-windows-10/</u> )
+
+つまり一台の物理計算機の中に２台の完全に独立な仮想計算機が入っている状態で動作しています。
+ディスク領域も独立になっており、この２台の仮想計算機が一台の物理計算機の中でネットワーク接続している状態で動作します。
+
+外見上そっくりですが、PowerShellはWindows OSがのった仮想マシン上で動いており、
+Ubuntuのプロンプトが表示される画面はUbuntu LinuxOSがのった仮想マシン上で動いています。
+
+ですからPowerShellで作った秘密鍵をUbuntu Linuxの方にコピーする必要があります。
+
+例えば以下の通りです。
+
+```
+you@wsl2:~$ cp /mnt/c/Users/you/.ssh/id_rsa .ssh
+you@wsl2:~$ ssh your_account@gw2.ddbj.nig.ac.jp
+Enter passphrase for key '/home/you/.ssh/id_rsa':
+Last login: Thu Dec  1 15:33:59 2022 from XXX.XXX.XXX.XXX
+---------------------------------------------------------------------
+Thank you for using NIG supercomputer system.
+This is the gateway node, do not run program here.
+Please use 'qlogin' to login to a login node.
+---------------------------------------------------------------------
+your_account@gw4:~ (2022-12-01 15:34:50)
+$
+```
+
+こちらもご参照ください。
+[<u>FAQ : Login > FAQ(ログインについて)</u>](/faq/faq_login/)

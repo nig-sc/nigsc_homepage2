@@ -1,8 +1,9 @@
 ---
 id: ssh_keys_mac
-title: Registering or changing SSH public keys (mac)
+title: SSH public key Registration Procedure(mac)
 ---
 
+This page provides detailed completion instructions when creating SSH public key and and registering it to the NIG  supercomputer with macOS.
 
 Procedure is as follows.
 
