@@ -3,6 +3,11 @@ id: ssh_keys
 title: Registering or changing SSH public keys
 ---
 
+
+&#x26A0;If you have already completed an application for use but without registering your SSH public key, refer to [<u>FAQ : Application/Billing > FAQ(Application for New Use)</u>](/faq/faq_NewUser_registration#when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
+
+
+
 ## Generating public and private key
 
 Create the SSH public and private key required for secure user authentication on the user's computer.
