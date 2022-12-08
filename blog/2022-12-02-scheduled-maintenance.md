@@ -1,6 +1,6 @@
 ---
 slug: 2022-12-02-scheduled-maintenance
-title: "【定期メンテナンス】12月2日～12月8日 定期メンテナンスのお知らせ"
+title: "(終了) 【定期メンテナンス】12月2日～12月8日 定期メンテナンスのお知らせ"
 tags:
   - maintenance
 authros:
