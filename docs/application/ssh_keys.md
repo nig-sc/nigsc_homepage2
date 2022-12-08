@@ -85,10 +85,6 @@ This node is in use for login service only. Please use 'qlogin'.
 ssh -i ~/yourpath/id_rsa youraccount@gw2.ddbj.nig.ac.jp
 ```
 
-公開鍵などの設定直後は`gw2.ddbj.nig.ac.jp`からログインしてください。
-
-2022年7月7日現在、新しい利用申請システムへの移行作業を行っております。([「2022 年 7 月 5 日(火) 新規利用申請システムが新しくなりました」](/blog/2022-07-05-news_NewApp)) そのため、新しいゲートウェイ`gw2.ddbj.nig.ac.jp`への公開鍵登録については即時設定が反映されますが、古い方のゲートウェイ`gw.ddbj.nig.ac.jp`へ設定が反映されるまでに１日程度かかります。 次回の定期メンテナンス（12月）の際に、古いゲートウェイにも即時設定が反映されるようシステムを改修する予定です。
-
 
 うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
 
