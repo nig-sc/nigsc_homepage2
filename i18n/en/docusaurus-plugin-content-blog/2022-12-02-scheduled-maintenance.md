@@ -1,6 +1,6 @@
 ---
 slug: 2022-12-02-scheduled-maintenance
-title: "[Maintenance] December 2 - December 8, 2022: Scheduled Maintenance."
+title: "(Ended) [Maintenance] December 2 - December 8, 2022: Scheduled Maintenance."
 tags:
   - maintenance
 authros:
