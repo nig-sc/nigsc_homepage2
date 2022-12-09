@@ -232,6 +232,7 @@ module.exports = {
             "advanced_guides/imputation_server_install",
             "advanced_guides/imputation_server_tutorial",
             "advanced_guides/imputation_server_tutorial2",
+            "advanced_guides/imputation_server_hail",
         ],
         "講習会": [
             "advanced_guides/IIBMP2021",
