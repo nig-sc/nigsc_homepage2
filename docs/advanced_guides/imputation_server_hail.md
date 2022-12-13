@@ -4,7 +4,9 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 ---
 
 本チュートリアル3ではインピューテーションサーバのインピューテーション結果を
-[hail](https://hail.is) で解析するための環境構築方法を説明します。
+[&#x1f517;<u>hail</u>](https://hail.is) で解析するための環境構築方法を説明します。
+
+まずは guacamole の仮想マシンにログインください。
 
 まずは guacamole の仮想マシンにログインください。
 
@@ -84,6 +86,9 @@ mkdir ~/prs-on-hail
 jupyter notebook --notebook-dir=~/prs-on-hail
 ```
 
+実際にスパコンで行う場合は、[<u>Jupyter Notebookの使い方のページ</u>](/software/jupyter_notebook)をご参照ください。
+
+
 ### Hailの起動確認
 
 Jupyter Notebookを１つ新規作成し、最初のセルに以下を入力し、実行します。
@@ -104,5 +109,5 @@ hl.init()
 
 続いては下記のノートブックを参考に、Jupyter 中で hail をご利用ください。
 
-https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb
+&#x1f517;<u>https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb</u>
 
