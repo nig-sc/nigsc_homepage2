@@ -8,6 +8,9 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 まずは guacamole の仮想マシンにログインください。
 
+まずは guacamole の仮想マシンにログインください。
+
+
 ## conda環境がない場合
 
 もしすでに conda 環境がある場合、次の`minicondaのインストール`はスキップして、 `condaで環境作成` に進んでください。
