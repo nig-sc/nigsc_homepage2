@@ -1,9 +1,12 @@
 ---
 id: imputation_server_hail
-title: Tutorial 3 - Building a hail environment
+title: "Tutorial 3 - PRS calculation with hail"
 ---
 
 This Tutorial 3 describes how to set up an environment for analysing the results of an imputation server's imputation results in [&#x1f517;<u>hail</u>](https://hail.is)  to analyse the results of an imputation server.
+
+
+Login to the guacamole virtual machine.
 
 
 ## If you do not have a conda environment
@@ -13,6 +16,7 @@ If you already have a conda environment, skip the following `miniconda installat
 ### Installing miniconda
 
 As Anaconda requires a paid licence for some uses, it is recommended that you install miniconda and `conda'.
+
 In the following, miniconda and `conda-forge` are used.
 
 ```
@@ -29,6 +33,7 @@ Check that conda is available.
 which conda
 conda --version
 ```
+
 
 ### Creating the conda environment
 
@@ -103,5 +108,6 @@ Check that there are no errors.
 ### Notebook for performing PRS calculations using the imputation results as input to hail
 
 Refer to the following notebook and use hail on Jupyter.
+
 
 &#x1f517;<u>https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb</u>
