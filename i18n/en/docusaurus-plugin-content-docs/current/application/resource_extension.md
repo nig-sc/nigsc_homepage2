@@ -20,13 +20,27 @@ title: "Submission of Your Usage Plan"
 
 </td>
 <td valign="top">
-Click here and download the usage plan table. (Downloaded as Excel)
+Click here.
 
-[<ul><li><font size="+1.5">the usage plan(2022)</font></li></ul>](/files/usage_plan-ver2.3.4-2022.xlsx)
+<a href="https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table.xlsx"><ul><li><font size="+1.5">the usage plan(2022)</font></li></ul></a>
 <p>&#x26A0; Currently, we are not accepting application for new use of the personal genomic analysis section and large-scale storage on the general analysis section. For more information, <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">refer to this announcement page</a>.</p>
 </td>
 </tr>
+<tr>
+<td width="400" height="400" align="center">
+
+![](usageTB_plain_DL.png)
+
+
+</td>
+<td valign="top">
+Click "Download". After clicking, the usage plan table will be downloaded.
+
+</td>
+</tr>
 </table>
+
+If not downloaded, [<u>refer to FAQ</u>](/faq/faq_billing_service#when-i-try-to-download-the-usage-plan-table-the-following-screen-will-appear-on-the-web-browser).
 
 ### How to fill in the usage plan table 
 

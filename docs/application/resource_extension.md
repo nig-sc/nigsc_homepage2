@@ -21,13 +21,28 @@ title: "利用計画表の提出"
 
 </td>
 <td valign="top">
-以下をクリックして、利用計画表をダウンロードしてください。(Excelでダウンロードされます。)
+以下をクリックします。
 
-[<ul><li><font size="+1.5">利用計画表(2022年度版)</font></li></ul>](/files/usage_plan-ver2.3.4-2022.xlsx)
+<a href="https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table.xlsx"><ul><li><font size="+1.5">利用計画表(2022年度版)</font></li></ul></a>
 <p>&#x26A0;現在、大規模利用ユーザおよび一般解析区画大規模ユーザの新規利用申請の受付を停止しております。詳細は<a href="https://sc.ddbj.nig.ac.jp/blog/2022-05-13-suspension-of-applications">こちらのお知らせをご参照ください</a>。</p>
 </td>
 </tr>
+<tr>
+<td width="400" height="400" align="center">
+
+![](usageTB_plain_DL.png)
+
+
+</td>
+<td valign="top">
+すると、左図のように画面が表示されるので、「Download」をクリックします。クリックすると、利用計画表がダウンロードされます。
+
+
+</td>
+</tr>
 </table>
+
+うまくダウンロードされない場合は、[<u>FAQをご参照ください</u>](/faq/faq_billing_service#利用計画表をダウンロードしようとするとwebブラウザが起動して以下の画面が表示されます)。
 
 
 ### 利用計画表の記入方法
