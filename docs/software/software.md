@@ -99,7 +99,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[Apptainer (Singularity)](Apptainer)
+[Apptainer (Singularity)](/software/Apptainer)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">インストール済み</td>
@@ -109,7 +109,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[BioContainers Apptainer (Singularity) Images](BioContainers)
+[BioContainers Apptainer (Singularity) Images](/software/BioContainers)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">インストール済み</td>
