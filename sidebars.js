@@ -234,6 +234,9 @@ module.exports = {
             "advanced_guides/imputation_server_tutorial2",
             "advanced_guides/imputation_server_hail",
         ],
+        "NVIDIA Parabricks": [
+            "advanced_guides/parabricks/parabricks",
+        ],
         "講習会": [
             "advanced_guides/IIBMP2021",
             "advanced_guides/IIBMP2020",
