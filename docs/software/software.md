@@ -109,7 +109,7 @@ title: ソフトウェア
 <tr>
 <td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/Rhelixa_RNAseq">Rhelixa RNAseq パイプライン</a></td>
 <td width="300">インストール済み</td>
-<td width="300">要申請</td>
+<td width="300">利用可能</td>
 </tr>
 <tr>
 <td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/advanced_guide#dfast">DFAST</a></td>
@@ -150,7 +150,7 @@ title: ソフトウェア
 
 </td>
 <td width="300">☓</td>
-<td width="300">要申請</td>
+<td width="300">利用可能</td>
 </tr>
 </table>
 

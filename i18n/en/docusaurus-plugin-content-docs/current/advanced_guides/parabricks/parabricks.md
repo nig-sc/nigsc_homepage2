@@ -12,8 +12,8 @@ GPGPU を利用することにより GATK の公式実装に比べて大幅に�
 
 参考資料
 
-- [&#x1f517;<u>NVIDIA Clara Parabricks 公式サイト</u>](https://www.nvidia.com/ja-jp/clara/genomics/)
-    - [&#x1f517;<u>Clara Parabricks Documentation</u>](https://docs.nvidia.com/clara/)
+- [NVIDIA Clara Parabricks 公式サイト](https://www.nvidia.com/ja-jp/clara/genomics/)
+    - [Clara Parabricks Documentation](https://docs.nvidia.com/clara/)
 
 
 遺伝研スパコン個人ゲノム解析区画では Slurm リソーススケジューラ配下で管理した GPU ノードの上に Parabricks をインストールし提供しており、Slurm リソーススケジューラのアドバンスリザベーションを用いてジョブを投入することができます。
@@ -28,7 +28,7 @@ GPGPU を利用することにより GATK の公式実装に比べて大幅に�
 遺伝研スパコン個人ゲノム解析区画における Parabricks の利用の手順は以下のとおりです。
 
 1. 利用の準備
-    1. 個人ゲノム解析区画の利用申請をしてください。[<u>利用申請の方法はこちらをご参照ください。</u>](/personal_genome_division/pg_application)
+    1. 個人ゲノム解析区画の利用申請をしてください。[利用申請の方法はこちらをご参照ください。](/personal_genome_division/pg_application)
     2. 利用計画表を提出してください。
     3. アドバンスリザベーションの設定をしてください。
 2. ログインとジョブの投入:  Slurm ログインノードにログインし Worker ノード(GPU ノード)にジョブを投入します。
@@ -36,7 +36,7 @@ GPGPU を利用することにより GATK の公式実装に比べて大幅に�
 
 ## Parabricks 利用時の利用計画表の書き方
 
-[<u>利用計画表の提出</u>](/application/resource_extension)のページの記載に従って利用計画表を作成し提出してください。
+[利用計画表の提出](/application/resource_extension)のページの記載に従って利用計画表を作成し提出してください。
 
 個人ゲノム解析区画の GPU ノードの優先利用に関する、料金試算表の書き方は以下のとおりです。
 
@@ -51,7 +51,7 @@ GPGPU を利用することにより GATK の公式実装に比べて大幅に�
 
 ## アドバンスリザベーションの設定方法
 
-基本的な手順は、一般解析区画における Grid Engine のアドバンスリザベーションの手順と同様です。([<u>アドバンスリザベーションサービス使用手順</u>](/general_analysis_division/advance_reservation)をご参照ください。)
+基本的な手順は、一般解析区画における Grid Engine のアドバンスリザベーションの手順と同様です。([アドバンスリザベーションサービス使用手順](/general_analysis_division/advance_reservation)をご参照ください。)
 
 - slurm によるアドバンスドリザベーションコマンドの方法は現在作成中ですので、現時点では予約枠はスパコン SE に依頼して確保してください。
 
