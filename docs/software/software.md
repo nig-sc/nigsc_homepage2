@@ -39,11 +39,24 @@ title: ソフトウェア
 以下のパッケージマネージャはユーザ権限だけで利用可能です。開発・解析環境の構築が容易になります。
 
 <table>
+
+
 <tr>
 <th width="300">名称</th>
 <th width="300">一般解析区画</th>
 <th width="300">個人ゲノム解析区画</th>
 </tr>
+
+
+<tr>
+<td width="300">
+
+[Environmental Modules](/software/environmental_modules)
+</td>
+<td width="300">インストール済み</td>
+<td width="300">インストール済み</td>
+</tr>
+
 
 <tr>
 <td width="300">
@@ -64,14 +77,7 @@ title: ソフトウェア
 <td width="300">利用可能</td>
 </tr>
 
-<tr>
-<td width="300">
 
-[Environmental Modules](/software/environmental_modules)
-</td>
-<td width="300">インストール済み</td>
-<td width="300">インストール済み</td>
-</tr>
 
 </table>
 
@@ -82,19 +88,11 @@ title: ソフトウェア
 
 
 <table>
+
 <tr>
 <th width="300">名称</th>
 <th width="300">一般解析区画</th>
 <th width="300">個人ゲノム解析区画</th>
-</tr>
-<tr>
-<td width="300">
-
-[BioContainers Apptainer (Singularity) Images](BioContainers)
-
-</td>
-<td width="300">インストール済み</td>
-<td width="300">インストール済み</td>
 </tr>
 
 
@@ -106,21 +104,58 @@ title: ソフトウェア
 <td width="300">インストール済み</td>
 <td width="300">インストール済み</td>
 </tr>
+
+
 <tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/Rhelixa_RNAseq">Rhelixa RNAseq パイプライン</a></td>
+<td width="300">
+
+[BioContainers Apptainer (Singularity) Images](BioContainers)
+</td>
 <td width="300">インストール済み</td>
-<td width="300">要申請</td>
+<td width="300">インストール済み</td>
 </tr>
+
+
 <tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/advanced_guide#dfast">DFAST</a></td>
+<td width="300">
+
+[DFAST](/advanced_guides/advanced_guide#dfast)
+
+</td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
 </tr>
+
+
 <tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server">NBDC-DDBJインピュテーションサーバ (beta)</a></td>
+<td width="300">
+
+[NBDC-DDBJ インピュテーションサーバ (beta)](/advanced_guides/imputation_server)
+</td>
 <td width="300">利用不可(※デモ利用機能準備中)</td>
 <td width="300">要申請</td>
 </tr>
+
+
+<tr>
+<td width="300">
+
+[NVIDIA Parabricks](/advanced_guides/parabricks/)
+</td>
+<td width="300">☓</td>
+<td width="300">要申請</td>
+</tr>
+
+
+<tr>
+<td width="300">
+
+[Rhelixa RNAseq パイプライン](/advanced_guides/Rhelixa_RNAseq)
+</td>
+<td width="300">インストール済み</td>
+<td width="300">要申請</td>
+</tr>
+
 
 </table>
 
@@ -150,7 +185,7 @@ title: ソフトウェア
 
 </td>
 <td width="300">☓</td>
-<td width="300">要申請</td>
+<td width="300">利用可能</td>
 </tr>
 </table>
 
