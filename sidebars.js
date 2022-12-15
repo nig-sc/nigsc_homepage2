@@ -204,6 +204,7 @@ module.exports = {
         ],
         "課金サービス利用方法": [
             "application/billing_service",
+            "application/resource_extension",
             "application/invoice",
         ],
         "問い合わせ先・FAQ": [
