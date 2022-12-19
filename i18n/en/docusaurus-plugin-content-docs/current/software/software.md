@@ -55,7 +55,6 @@ The following package managers can be used only with user permission. They facil
 <td width="300">☓</td>
 </tr>
 
-
 <tr>
 <td width="300">
 
@@ -73,7 +72,6 @@ The following package managers can be used only with user permission. They facil
 <td width="300">installed</td>
 <td width="300">installed</td>
 </tr>
-
 </table>
 
 ## Container and analysis pipeline
@@ -84,15 +82,7 @@ The following package managers can be used only with user permission. They facil
 <th width="300">the general analysis section</th>
 <th width="300">the personal genome analysis section</th>
 </tr>
-<tr>
-<td width="300">
 
-
-[BioContainers Apptainer (Singularity) Images](BioContainers)
-</td>
-<td width="300">installed</td>
-<td width="300">installed</td>
-</tr>
 <tr>
 <td width="300">
 
@@ -101,22 +91,53 @@ The following package managers can be used only with user permission. They facil
 <td width="300">installed</td>
 <td width="300">installed</td>
 </tr>
+
 <tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/Rhelixa_RNAseq">Rhelixa RNAseq pipeline</a></td>
+<td width="300">
+
+[BioContainers Apptainer (Singularity) Images](BioContainers)
+</td>
+<td width="300">installed</td>
+<td width="300">installed</td>
+</tr>
+
+<tr>
+<td width="300">
+
+[DFAST](/advanced_guides/advanced_guide#dfast)
+</td>
+<td width="300">available</td>
+<td width="300">available</td>
+</tr>
+
+<tr>
+<td width="300">
+
+[NBDC-DDBJ Imputation Server](/advanced_guides/imputation_server)
+</td>
+<td width="300">available(※Demo function in preparation)</td>
+<td width="300">Application Required</td>
+</tr>
+
+<tr>
+<td width="300">
+
+[NVIDIA Parabricks](/advanced_guides/parabricks/)
+</td>
+<td width="300">☓</td>
+<td width="300">Application Required</td>
+</tr>
+
+<tr>
+<td width="300">
+
+[Rhelixa RNAseq pipeline](/advanced_guides/Rhelixa_RNAseq)
+</td>
 <td width="300">installed</td>
 <td width="300">available</td>
 </tr>
-<tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/advanced_guide#dfast">DFAST</a></td>
-<td width="300">available</td>
-<td width="300">available</td>
-</tr>
-<tr>
-<td width="300"><a href="https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server">NBDC-DDBJ Imputation Server</a></td>
-<td width="300">available(※Demo in preparation)</td>
-<td width="300">Application Required</td>
-</tr>
 </table>
+
 
 
 ## Data transfer and data sharing
