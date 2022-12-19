@@ -8,7 +8,6 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 まずは guacamole の仮想マシンにログインください。
 
-まずは guacamole の仮想マシンにログインください。
 
 
 ## conda環境がない場合
