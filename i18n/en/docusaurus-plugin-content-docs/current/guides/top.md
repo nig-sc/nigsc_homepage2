@@ -50,12 +50,17 @@ The availability forecast for each 4 month period will be posted on the website 
 However, please note that availability is not guaranteed and we may not be able to meet your request.
 
 
+## Applying for a renewal of your account of the end of the fiscal year
+
+If you want to continue using our service in the next fiscal year (2023), you need to [<u>Applying for a renewal of your account of the end of the fiscal year</u>](/application/renewal) for the fiscal year 2022 by 31 March 2023.
+
+
 ## Scheduled maintenance in 2022
 
-In FY2022, we plan to perform scheduled maintenance twice.
+Scheduled maintenance for FY2022 has been completed.
 
 - (Ended) June 28, 09:00 - July 1, 2022, 00:00(24h)
-- December 2, 17:00 - December 8, 2022, 24:00(24h)
+- (Ended) December 2, 17:00 - December 8, 2022, 24:00(24h)
 
 
 ## About Acknowledgements
