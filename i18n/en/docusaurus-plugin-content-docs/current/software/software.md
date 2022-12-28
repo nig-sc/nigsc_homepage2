@@ -74,7 +74,8 @@ The following package managers can be used only with user permission. They facil
 </tr>
 </table>
 
-## Container and analysis pipeline
+## Container
+
 
 <table>
 <tr>
@@ -100,6 +101,20 @@ The following package managers can be used only with user permission. They facil
 <td width="300">installed</td>
 <td width="300">installed</td>
 </tr>
+
+
+</table>
+
+
+## Analysis pipeline
+
+<table>
+<tr>
+<th width="300">area name</th>
+<th width="300">the general analysis section</th>
+<th width="300">the personal genome analysis section</th>
+</tr>
+
 
 <tr>
 <td width="300">
