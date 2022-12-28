@@ -32,7 +32,7 @@ NBDC-DDBJ インピュテーションサーバ（ベータ版）（以下、本�
 - [インストールマニュアル](/advanced_guides/imputation_server_install)
 - [チュートリアル1、公開レファレンスパネルを使う場合](/advanced_guides/imputation_server_tutorial)
 - [チュートリアル2、制限公開レファレンスパネルを使う場合](/advanced_guides/imputation_server_tutorial2)
-
+- [チュートリアル3、hail を用いた PRS 計算](/advanced_guides/imputation_server_hail)
 
 </td>
 </tr>
