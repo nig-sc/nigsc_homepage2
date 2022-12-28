@@ -227,6 +227,7 @@ module.exports = {
         "Alphafold":[
             "advanced_guides/Alphafold_2_1",
             "advanced_guides/Alphafold_2_2",
+            "advanced_guides/Alphafold_2_3_0",
         ],
         "NBDC-DDBJ Imputation Server (beta)": [
             "advanced_guides/imputation_server",
