@@ -220,6 +220,9 @@ output files
 
 PDB entries for proteins of the input file and the same amino acid sequence (closely related species).
 
-&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS4"></a></u>
+&#x1f517;<a href="https://www.rcsb.org/structure/3AS4"><u>https://www.rcsb.org/structure/3AS4</u></a>
 
-&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS5"></a></u>
+&#x1f517;<a href="https://www.rcsb.org/structure/3AS5"><u>https://www.rcsb.org/structure/3AS5</u></a>
+
+
+ 

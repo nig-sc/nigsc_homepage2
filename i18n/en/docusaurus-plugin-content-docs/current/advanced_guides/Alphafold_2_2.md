@@ -29,11 +29,11 @@ And, from 2.2, the structure prediction for complexes is set to 5 structure pred
 
 - Step 1: 10 min
 - Step 2: 10 min
-- Step 3: 5min
+- Step 3: 5 min
 - Step 4: 5 hour
 - Step 5: 1 min
 - Step 6: 15 min
-- Step 7: 1 hour with 200aa, 3 hour with 900aa（using 64CPU core）, 2min with 200aa, 6 min with 900aa（using GPU）
+- Step 7: 1 hour with 200aa, 3 hour with 900aa（using 64CPU core）, 2 min with 200aa, 6 min with 900aa（using GPU）
 - Step 8: 0.5 min with 200aa, 1 hour with 900aa（using 64CPU core）, 0.3min with 200aa, 3 min with 900aa（using GPU）
 
 
@@ -268,6 +268,6 @@ output files
 
 PDB entries for proteins of the input file and the same amino acid sequence (closely related species).
 
-&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS4"></a></u>
+&#x1f517;<a href="https://www.rcsb.org/structure/3AS4"><u>https://www.rcsb.org/structure/3AS4</u></a>
 
-&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS5"></a></u>
+&#x1f517;<a href="https://www.rcsb.org/structure/3AS5"><u>https://www.rcsb.org/structure/3AS5</u></a>

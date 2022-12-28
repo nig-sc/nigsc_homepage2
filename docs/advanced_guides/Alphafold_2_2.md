@@ -273,6 +273,6 @@ $ qsub example_job_script_gpu.sh
 
 入力ファイルと同一アミノ酸配列（近縁種）のタンパク質のPDBエントリー
 
-&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS4"></a></u>
+&#x1f517;<a href="https://www.rcsb.org/structure/3AS4"><u>https://www.rcsb.org/structure/3AS4</u></a>
 
-&#x1f517;<u><a href="https://www.rcsb.org/structure/3AS5"></a></u>
+&#x1f517;<a href="https://www.rcsb.org/structure/3AS5"><u>https://www.rcsb.org/structure/3AS5</u></a>
