@@ -1,10 +1,10 @@
 ---
 id: Alphafold_2_3_0
-title: 遺伝研スパコンでのalphafold 2.3.0の実行
+title: 遺伝研スパコンでのalphafold 2.3の実行
 ---
 
 
-概略
+## 概略
 遺伝研スパコンでは&#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3.0</a></u>をインストールしたsingularity imageとalphafold 2.3で使用するデータベースを /lustre7/software/alphafold/2.3.0/ に用意してあります。
 
  
@@ -191,8 +191,8 @@ PRED=5
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.2.0/database:/data1/database \
-/lustre7/software/alphafold/2.2.0/alphafold-2.2.0-GPU.sif \
+-B /lustre7/software/alphafold/2.3.0/database:/data1/database \
+/lustre7/software/alphafold/2.3.0/alphafold-2.3.0-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
