@@ -89,6 +89,14 @@ title: "Statistics"
 	<td>17</td>
 	<td>1231</td>
 </tr>
+<tr>
+	<td>12-31-2021</td>
+	<td>1365</td>
+	<td>240</td>
+	<td>119</td>
+	<td>19</td>
+	<td>1662</td>
+</tr>
 </table>
 
 

@@ -56,12 +56,12 @@ In this system, six types of reference panels are currently available. If you us
 | **BBJ1K+GRCh37.1KGP** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org)' with the reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 2,504 samples from several ancestries of the 10,000 Genomes Project (3,541 in total) | restricted publication | hg19, GRCh37 |
 | **BBJ1K+GRCh37.1KGP_EAS** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org)' with the reference panel '[&#x1f517;<u>1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 504 samples belonging to the East Asian ancestry of the 10,000 Genomes Project (1,541 in total) | restricted publication | hg19, GRCh37 |
 
-A result comparing the imputation accuracy of different reference panels showed that the restricted public data, **BBJ1K+GRCh37.1KGP reference panel**, was rated as the most accurate. Details are given in the paper under submission. This page will be updated when the paper is published.
+A result comparing the imputation accuracy of different reference panels showed that the restricted public data, BBJ1K+GRCh37.1KGP reference panel, was rated as the most accurate. For more information, see [&#x1f517;<u>the paper written about this system</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/).
 
 
 ### Notes on using this system to prepare papers.
 - Cite the paper in this system.
-    - Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. *submitted*. 
+    - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
 - Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)).
 - If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [&#x1f517;<u>the example text</u>](https://humandbs.biosciencedbc.jp/faq#faq-23) as an acknowledgement.
 
