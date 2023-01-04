@@ -50,11 +50,11 @@ NBDC-DDBJインピュテーションサーバ（ベータ版）（以下、本�
 | **BBJ1K+GRCh37.1KGP** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)のリファレンスパネルと[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の複数の ancestryに属する 2,504 名のサンプル（合計 3,541名）を含みます | 制限公開 | hg19, GRCh37 |
 | **BBJ1K+GRCh37.1KGP_EAS** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)のリファレンスパネルと[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の東アジアancestryに属する 504 名のサンプル（合計 1,541名）を含みます | 制限公開 | hg19, GRCh37 |
 
-リファレンスパネルごとのインピュテーション精度を比較した結果、制限公開データである BBJ1K+GRCh37.1KGP reference panel の精度が最も高いと評価されました。詳細は[本システムの論文](https://pubmed.ncbi.nlm.nih.gov/36539398/)をご参照ください。
+リファレンスパネルごとのインピュテーション精度を比較した結果、制限公開データである BBJ1K+GRCh37.1KGP reference panel の精度が最も高いと評価されました。詳細は[&#x1f517;<u>本システムの論文</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)をご参照ください。
 
 ### 本システムを利用して論文を作成する際のお願い
 - 本システムの論文を引用してください。
-    - [Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)](https://pubmed.ncbi.nlm.nih.gov/36539398/)
+    - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
 - 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)）。
 - 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[&#x1f517;<u>記載文例</u>](https://humandbs.biosciencedbc.jp/faq#faq-23)の内容を記述して下さい。
 

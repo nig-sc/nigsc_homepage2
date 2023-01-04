@@ -1,6 +1,6 @@
 ---
 id: Alphafold_2_3_0
-title: alphafold 2.3.0
+title: alphafold 2.3
 ---
 
 
@@ -179,8 +179,8 @@ PRED=5
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.2.0/database:/data1/database \
-/lustre7/software/alphafold/2.2.0/alphafold-2.2.0-GPU.sif \
+-B /lustre7/software/alphafold/2.3.0/database:/data1/database \
+/lustre7/software/alphafold/2.3.0/alphafold-2.3.0-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
