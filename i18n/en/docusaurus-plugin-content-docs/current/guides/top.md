@@ -66,7 +66,8 @@ Scheduled maintenance for FY2022 has been completed.
 The following will be implemented as in previous years.
 
 - Changes to plans with charges have been closed as of 31 December.
-- End-of-year renewals for 2022 (FY2022) are accepted from January.
+- End-of-year renewals for 2022 (FY2022) are accepted from January 2023.
+- From January 2023, we start accepting applications for the usage plan table for the year 2023.
 
 
 ## About Acknowledgements
