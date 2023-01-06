@@ -54,4 +54,4 @@ $ cp -rp ~/hcp-tools-1.3.0R_45.amd64.ubuntu2004/conf/ ~/.hcp
 
 HCP toolsの設定ファイルをユーザディレクトリに設置し、ユーザ認証のための公開鍵の設定を追記します。
 
-手順については[設定ファイルの書き方](/software/HCPtools/hcptools_conf)を参照して下さい。
+手順については[設定ファイルの書き方](/software/Archaea_tools/hcptools_conf)を参照して下さい。

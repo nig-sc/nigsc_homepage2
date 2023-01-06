@@ -57,5 +57,5 @@ cp "C:\ProgramData\Clealink\HCP Tools\*.conf" C:\Users\your_name\.hcp
 
 Locate the HCP tools configuration file in the user directory and add the public key settings for user authentication.
 
-Procedure: [How to write the configuration file](/software/HCPtools/hcptools_conf)
+Procedure: [How to write the configuration file](/software/Archaea_tools/hcptools_conf)
 
