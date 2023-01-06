@@ -163,6 +163,18 @@ The following package managers can be used only with user permission. They facil
 <th width="300">the general analysis section</th>
 <th width="300">the personal genome analysis section</th>
 </tr>
+
+<tr>
+<td width="300">
+
+[Archaea tools(formerly HCPtools)](/software/Archaea_tools/Archaea_tools.md)
+
+
+</td>
+<td width="300">☓</td>
+<td width="300">available</td>
+</tr>
+
 <tr>
 <td width="300">
 
@@ -171,15 +183,6 @@ The following package managers can be used only with user permission. They facil
 </td>
 <td width="300">available</td>
 <td width="300">☓</td>
-</tr>
-<tr>
-<td width="300">
-
-[HCPtools](./HCPtools/hcptools.md)
-
-</td>
-<td width="300">☓</td>
-<td width="300">available</td>
 </tr>
 </table>
 

@@ -17,4 +17,4 @@ scp your_file.txt youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount/data
 
 ## How to transfer files using HCPtools
 
-Refer to [How to use HCP tools](./software/HCPtools/hcptools.md).
+Refer to [How to use HCP tools](/software/Archaea_tools).
