@@ -181,6 +181,17 @@ title: ソフトウェア
 <th width="300">一般解析区画</th>
 <th width="300">個人ゲノム解析区画</th>
 </tr>
+
+<tr>
+<td width="300">
+
+[Archaea tools(旧HCPtools)](/software/Archaea_tools/Archaea_tools.md)
+
+</td>
+<td width="300">☓</td>
+<td width="300">利用可能</td>
+</tr>
+
 <tr>
 <td width="300">
 
@@ -189,15 +200,6 @@ title: ソフトウェア
 </td>
 <td width="300">利用可能</td>
 <td width="300">☓</td>
-</tr>
-<tr>
-<td width="300">
-
-[HCPtools](./HCPtools/hcptools.md)
-
-</td>
-<td width="300">☓</td>
-<td width="300">利用可能</td>
 </tr>
 </table>
 
