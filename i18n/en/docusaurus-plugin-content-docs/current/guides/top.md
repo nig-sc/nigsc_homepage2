@@ -63,6 +63,12 @@ Scheduled maintenance for FY2022 has been completed.
 - (Ended) December 2, 17:00 - December 8, 2022, 24:00(24h)
 
 
+The following will be implemented as in previous years.
+
+- Changes to plans with charges have been closed as of 31 December.
+- End-of-year renewals for 2022 (FY2022) are accepted from January.
+
+
 ## About Acknowledgements
 
 

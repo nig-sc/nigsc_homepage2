@@ -16,4 +16,4 @@ scp your_file.txt youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount/data
 
 ## HCPtoolsによるファイル転送の方法
 
-転送方法は、[HCPtools の使い方](../software/HCPtools/hcptools.md)をご参照下さい。
+転送方法は、[HCPtools の使い方](/software/Archaea_tools)をご参照下さい。
