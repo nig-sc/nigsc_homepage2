@@ -28,10 +28,10 @@
     ],
     "rules": {
         "react/prop-types": 0,
-        "no-use-before-define": 0
+        "no-use-before-define": 0,
+        "indent": ["error", 2]
     },
     "globals": {
         "JSX": true
-    },
-    "indent": ["error", 2]
+    }
 }

@@ -3,14 +3,14 @@ import clsx from 'clsx'
 import ErrorBoundary from '@docusaurus/ErrorBoundary'
 import {
   PageMetadata,
-  ThemeClassNames,
-  useKeyboardNavigation
+  ThemeClassNames
 } from '@docusaurus/theme-common'
 import SkipToContent from '@theme/SkipToContent'
 import AnnouncementBar from '@theme/AnnouncementBar'
 import Navbar from '@theme/Navbar'
 import Footer from '@theme/Footer'
-import LayoutProviders from '@theme/LayoutProviders'
+import LayoutProviders from '@theme/Layout/Provider'
+
 import type { Props } from '@theme/Layout'
 import ErrorPageContent from '@theme/ErrorPageContent'
 import DDBJNavbar from './DDBJNavbar'
@@ -26,8 +26,6 @@ export default function Layout (props: Props): JSX.Element {
     title,
     description
   } = props
-
-  useKeyboardNavigation()
 
   return (
     <LayoutProviders>

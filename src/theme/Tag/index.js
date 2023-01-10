@@ -11,9 +11,8 @@ import styles from './styles.module.css'
 
 import { useTagLabel } from '../hooks'
 
-function Tag (props) {
-  const { permalink, name, count } = props
-  const displayName = useTagLabel(name)
+function Tag ({ permalink, label, count }) {
+  const displayName = useTagLabel(label)
   return (
     <Link
       href={permalink}
