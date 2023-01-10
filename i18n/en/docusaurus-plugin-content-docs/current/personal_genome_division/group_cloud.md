@@ -17,14 +17,14 @@ DDBJ Group Cloud is a service for sharing data that requires access restrictions
     - Data sharing is also possible by accessing the data sharing middleware (MinIO or OwnCloud shown in the window at the bottom right of the screen) on the Linux desktop. Data download from the data sharing middleware to the user's computer can be configured to be possible or not by the default settings of the environment.
     - Analysis calculations can be performed using a GUI environment on a Linux desktop.
     - By adding computation nodes, jobs can be run using the job scheduler from a terminal emulator in the Linux environment running on the remote desktop.
- 
+
 
 
 ## How to apply for use
 
  When using the service, check [the Terms of Use and the separate table of Terms of Use (fee schedule)](../application/use_policy.md), download [the Extended Service Usage Plan](../application/resource_extension.md), fill in the required information, and send it to ![](sc-helpdesk.png) by e-mail.  After reviewing the purpose of use, we will send you an invitation to use the billing service. Please note that this service may not be available depending on the congestion of the NIH's supercomputer.
 
- 
+
 ## Usage Fees
 
 In addition to the storage usage fee, a separate basic fee of 3.5 million yen will be charged for security monitoring and other management purposes.
@@ -37,5 +37,4 @@ Excerpt from the separate table of usage rules (fee schedule).
 
 
 If you use a remote desktop or compute nodes, node charges apply.
-For details, check [use policy Appendix (Price list)](./application/use_policy.md).
-
+For details, check [use policy Appendix (Price list)](../application/use_policy.md).
