@@ -5,6 +5,35 @@ title: "最新のトピック"
 
 ---
 
+
+## Archaea tools(旧HCPtools)
+
+2022年10月、HCPtoolsソフトウェア提供元が、データ転送系のブランド名称として、「Bytix(バイティックス)」というブランド名を立ち上げ、製品名称が「HCPtools」から「Archaea tools」へ変更になりました。
+
+製品名称変更後も、これまで通りHCPtoolsで使用していたコマンドと同じコマンドをそのままお使いいただけます。
+
+変更についての詳細は、[&#x1f517;<u>Bytix公式ページ「製品名称変更等について」のページをご参照ください</u>](https://support.bytix.tech/important/)。
+
+Archaea tools(旧HCPtools) の使い方は、[&#x1f517;<u>Bytix公式ページ「ドキュメント」のページをご参照ください</u>](https://support.bytix.tech/document/)。
+
+
+<table>
+<tr>
+<td width="400">
+
+![](/img/advanced_guides/Archaea_tools_document.png)
+</td>
+<td valign="top">
+遺伝研スパコンに対してファイルのアップロード、ダウンロードを行うには、一般的に広く用いられているファイル転送ソフトウェアである`scp`や`sftp`をつかうことができますが、`scp`などでは遠距離間で大量のファイルを転送する際に転送速度が遅くなる性質があります。
+
+遠距離の高速通信のために、遺伝研スパコンでは、一般解析区画では Aspera、個人ゲノム解析区画ではArchaea tools(旧HCPtools)というファイル転送ソフトウェアが利用可能となっています。
+
+</td>
+</tr>
+</table>
+
+---
+
 ## NBDC-DDBJ Imputation Server (beta)
 
 2022.10.18
