@@ -19,14 +19,10 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
-- &#x1F9EC; [Added the introduction page of the Imputation Server developed by Genome Analytics Japan Inc.](/en/blog/2022-10-18-news_Imputation-Server) (2022.10.18)
+- [Updated the HCPtools page](/advanced_guides/advanced_guide#archaea-toolsformerly-hcptools) (2023.01.10)
+- &#x1F9EC; [Added the introduction page of the Imputation Server developed by Genome Analytics Japan Inc.](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
 - [Added the power consumption page](/en/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
-- &#x26A0;[Renewal of application system for use](/en/blog/2022-07-05-news_NewApp) (Update 2022.07.05)
-- [300TB more storage for analysis of Luster8](/en/blog/2022-07-05-Lustre8_300TB_add) (2022.07.05)
-- &#x26A0;[Suspend acceptance of application for new use for large-scale storage](/en/blog/2022-05-13-suspension-of-applications) (2022.05.13)
-- &#x1F9EC; [Added the introduction page of PortablePipeline developed by Professor Yoshitake of the University of Tokyo](/en/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
-- &#x2714; [Reducesed DDBJ Group Cloud fees](/blog/2022-04-05-news_DGC) (2022.04.05)
-- [Added gateway nodes](/en/blog/2022-03-16-gateway) (2022.03.17)
+
 
 ## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome analysis section and  large-scale storage on the general analysis section 
 

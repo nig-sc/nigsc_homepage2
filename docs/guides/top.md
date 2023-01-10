@@ -20,14 +20,10 @@ sidebar_label: トップページ
 
 ## 最近のお知らせ
 
-- &#x1F9EC; [(株)ゲノムアナリティクスジャパンが開発したインピュテーションサーバの紹介ページを追加しました](/blog/2022-10-18-news_Imputation-Server) (2022.10.18)
+- [HCPtoolsのページを更新しました](/advanced_guides/advanced_guide#archaea-tools旧hcptools) (2023.01.10)
+- &#x1F9EC; [(株)ゲノムアナリティクスジャパンが開発したインピュテーションサーバの紹介ページを追加しました](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
 - [電力使用状況のページを追加しました](/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
-- &#x26A0;[利用申請システムを刷新しました](/blog/2022-07-05-news_NewApp) (2022.07.05 更新)
-- [Lustre8 の解析用ストレージを増強しました](/blog/2022-07-05-Lustre8_300TB_add) (2022.07.05)
-- &#x26A0;[大規模ユーザ新規利用申請を一時停止しました](/blog/2022-05-13-suspension-of-applications) (2022.05.13)
-- &#x1F9EC; [東大 吉武先生が開発した PortablePipeline の紹介ページを追加しました](/blog/2022-05-10-news_PortablePipeline) (2022.05.10)
-- &#x2714; [DDBJ グループクラウドの料金を値下げしました](/blog/2022-04-05-news_DGC) (2022.04.05)
-- [ゲートウェイノードを追加しました](blog/2022-03-17-gateway_ga) (2022.03.17)
+
 
 
 ## 2022 年 5 月 13 日(金) 個人ゲノム解析区画および一般解析区画大規模ユーザの新規利用申請の一時停止
