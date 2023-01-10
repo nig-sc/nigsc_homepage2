@@ -122,7 +122,7 @@ The billing amount is prorated based on the number of days used.
 
 (※1) Set the maximum available limit (quota) for a user or group. When storage is extremely congested, the storage capacity limit may be reached before the upper limit is reached.
 
-(※2) A service that uploads data to the cloud and shares it among researchers who are permitted to access the data. Includes initial installation costs, security monitoring, and personnel costs for operation. 
+(※2) A service that uploads data to the cloud and shares it among researchers who are permitted to access the data. Includes initial installation costs, security monitoring, and personnel costs for operation.
 If additional development is required, such as support for different data structures, a separate development fee is required in addition to the basic fee. Prices may change from the next fiscal year onward due to changes in circumstances.
 
 

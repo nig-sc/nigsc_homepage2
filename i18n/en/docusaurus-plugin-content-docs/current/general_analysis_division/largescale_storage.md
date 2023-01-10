@@ -3,7 +3,7 @@ id: largescale_storage
 title: Using large-scale storage
 ---
 
-When you start using this service, check the [Acceptable Use Policy](../application/use_policy.md) and [Appendix for Rules of Use (table of charges)](./application/use_policy.md), [Download the usage plan table](./application/resource_extension.md), fill out the required information, and send an email to ![](sc-helpdesk.png). After examining the purpose of use, we will send you a guide to permission to use the billing service.
+When you start using this service, check the [Acceptable Use Policy](../application/use_policy.md) and [Appendix for Rules of Use (table of charges)](../application/use_policy.md), [Download the usage plan table](../application/resource_extension.md), fill out the required information, and send an email to ![](sc-helpdesk.png). After examining the purpose of use, we will send you a guide to permission to use the billing service.
 
 Note: Depending on the congestion status of the NIG supercomputer, you may not be able to use this service.
 
