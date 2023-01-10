@@ -33,7 +33,7 @@ Set the conda-forge repository to default and make sure it is added to the top o
 ```
 $ conda config --add channels conda-forge
 $ conda config --set channel_priority strict
-$ sudo vim /home/imo/.condarc
+$ vim ~/.condarc
 ```
 
 ## Check operation

@@ -50,7 +50,12 @@ If you don't know the account name or group name of the responsible person, foll
 
 ## When applying for new use, I applied for use without entering my SSH public key in the usage registration application form. I have already completed the application for use, but without registering my SSH public key. What should I do?
 
-Login from the following link and register your SSH public key, please.
+You do not need to register a new application again.
+
+Please wait for your account registration card to be sent to you by post.
+
+After you received your account registration card, 
+login from the following link and register your SSH public key.
 
 [<u>Change of application details > Account > SSH Key</u>](/application/registration/#change-of-application-details)
 
