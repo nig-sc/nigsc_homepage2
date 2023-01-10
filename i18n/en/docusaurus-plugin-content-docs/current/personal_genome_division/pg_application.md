@@ -52,10 +52,10 @@ The personal genome analysis section is [a billing service](../application/resou
 When using the personal genome analysis section, indicate your preference regarding the following.
 
 - Type and number of compute nodes you want to use.
-     - For types of compute nodes, refer to [System Overview > Hardware](./guides/hardware.md).
+     - For types of compute nodes, refer to [System Overview > Hardware](../guides/hardware.md).
     - Basically, only Thin compute nodes are available. If you need to use Medium or Fat nodes, contact us.
 - If you want to install a job scheduler, which one to install, UGE or Slurm.
-    - For how to use it, refer to [System Overview > Software](./software/software.md).
+    - For how to use it, refer to [System Overview > Software](../software/software.md).
 - If you would like to use NVIDIA Parabricks, contact us.
 
 
