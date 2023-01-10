@@ -1,7 +1,7 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const { default: pluginContentBlog} = require('@docusaurus/plugin-content-blog');
-const { DEFAULT_OPTIONS } = require('@docusaurus/plugin-content-blog/lib/options');
+const lightCodeTheme = require('prism-react-renderer/themes/github')
+const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const { default: pluginContentBlog } = require('@docusaurus/plugin-content-blog')
+const { DEFAULT_OPTIONS } = require('@docusaurus/plugin-content-blog/lib/options')
 
 module.exports = {
   title: 'NIG supercomputer',
@@ -16,10 +16,10 @@ module.exports = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       ({
         theme: {
-          customCss: [require.resolve('./src/css/custom.css')],
+          customCss: [require.resolve('./src/css/custom.css')]
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -28,14 +28,11 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          blogSidebarTitle: "最近のお知らせ",
+          blogSidebarTitle: '最近のお知らせ',
           blogSidebarCount: 16
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
+        }
+      })
+    ]
   ],
   themeConfig:
   ({
@@ -43,33 +40,33 @@ module.exports = {
       title: 'NIG Supercomputer',
       logo: {
         alt: 'NIGSC Logo',
-        src: 'img/nigsc_logo.png',
+        src: 'img/nigsc_logo.png'
       },
       items: [
         {
-          type: "doc",
-          docId: "guides/overview",
-          label: '利用案内',
+          type: 'doc',
+          docId: 'guides/overview',
+          label: '利用案内'
         },
         {
-          type: "doc",
-          docId: "application/application",
-          label: '利用申請等',
+          type: 'doc',
+          docId: 'application/application',
+          label: '利用申請等'
         },
         {
-          type: "doc",
-          docId: "advanced_guides/advanced_guide",
-          label: '活用方法',
+          type: 'doc',
+          docId: 'advanced_guides/advanced_guide',
+          label: '活用方法'
         },
         {
-          type: "doc",
-          docId: "operation/operation",
-          label: '稼働状況',
+          type: 'doc',
+          docId: 'operation/operation',
+          label: '稼働状況'
         },
         {
-          type: "doc",
-          docId: "report/report",
-          label: '成果報告',
+          type: 'doc',
+          docId: 'report/report',
+          label: '成果報告'
         },
         // {
         //   to: '/blog',
@@ -77,9 +74,9 @@ module.exports = {
         // },
         {
           type: 'localeDropdown',
-          position: 'right',
+          position: 'right'
         }
-      ],
+      ]
     },
     footer: {
       links: [
@@ -97,8 +94,8 @@ module.exports = {
             {
               label: 'DRASearch',
               href: 'https://ddbj.nig.ac.jp/DRASearch/'
-            },
-          ],
+            }
+          ]
         },
         {
           title: 'Database',
@@ -109,37 +106,37 @@ module.exports = {
             },
             {
               label: 'Sequence Read Archive (DRA)',
-              href: 'https://www.ddbj.nig.ac.jp/dra/index.html',
+              href: 'https://www.ddbj.nig.ac.jp/dra/index.html'
             },
             {
               label: 'Japanese Genotype-phenotype Archive (JGA)',
-              href: 'https://www.ddbj.nig.ac.jp/jga/index.html',
+              href: 'https://www.ddbj.nig.ac.jp/jga/index.html'
             },
             {
               label: 'Submission portal D-way',
-              href: 'https://ddbj.nig.ac.jp/D-way/',
-            },
-          ],
-      },
-      {
-        title: 'Supercomputer',
-        items: [
-          {
-            label: 'NIG Supercomputer',
-            href: 'https://sc.ddbj.nig.ac.jp',
-          },
-        ],
-      },
+              href: 'https://ddbj.nig.ac.jp/D-way/'
+            }
+          ]
+        },
+        {
+          title: 'Supercomputer',
+          items: [
+            {
+              label: 'NIG Supercomputer',
+              href: 'https://sc.ddbj.nig.ac.jp'
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} National Institute of Genetics.`,
+      copyright: `Copyright © ${new Date().getFullYear()} National Institute of Genetics.`
     },
     prism: {
       theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      darkTheme: darkCodeTheme
     },
     colorMode: {
-      disableSwitch: true,
-    },
+      disableSwitch: true
+    }
   }),
 
   plugins: [
@@ -150,20 +147,20 @@ module.exports = {
     ],
     [
       async function pluginBlogGlobalData (context, options) {
-        const plugin = await pluginContentBlog(context, options);
+        const plugin = await pluginContentBlog(context, options)
         return {
           name: 'nigsc-plugin-blog-data',
           loadContent: plugin.loadContent,
           contentLoaded: async function contentLoaded ({ content, actions: { setGlobalData } }) {
-            setGlobalData(content);
+            setGlobalData(content)
           }
         }
-      },{ ...DEFAULT_OPTIONS }
-    ],
+      }, { ...DEFAULT_OPTIONS }
+    ]
   ],
 
-  i18n:{
+  i18n: {
     defaultLocale: 'ja',
-    locales: ['ja', 'en'],
+    locales: ['ja', 'en']
   }
-};
+}
