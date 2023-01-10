@@ -3,6 +3,34 @@ id: advanced_guide
 title: "Latest Topics"
 ---
 
+---
+
+## Archaea tools(formerly HCPtools)
+
+In October 2022, the HCPtools software provider launched the brand name 'Bytix' as a brand name for data transfer systems and the product name was changed from 'HCPtools' to 'Archaea tools'.
+
+After the product name change, you can still use the same commands that you have been using for HCPtools.
+
+For more information on the change, [&#x1f517;<u>refer to the Bytix official page 'Product name change etc.'</u>](https://support.bytix.tech/important/)
+
+For information on how to use Archaea tools (formerly HCPtools), [&#x1f517;<u>see the official Bytix page 'Documents'</u>](https://support.bytix.tech/document/).
+
+
+<table>
+<tr>
+<td width="400">
+
+![](/img/advanced_guides/Archaea_tools_document.png)
+</td>
+<td valign="top">
+When you transfer files to and from the NIG supercomputer, you can use `scp` or `sftp`, which are widely used as the file transfer software. But their transfer speed is slow when a large numbers of files are transfered over long distances.
+
+For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis section, and Archaea tools(formerly HCPtools) is available on the personal genome analysis section on the NIG supercomputer.
+
+</td>
+</tr>
+</table>
+
 
 ---
 
