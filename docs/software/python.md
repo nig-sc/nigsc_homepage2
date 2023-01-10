@@ -33,7 +33,7 @@ conda-forgeレポジトリをデフォルトに設定し、.condarcのトップ�
 ```
 $ conda config --add channels conda-forge
 $ conda config --set channel_priority strict
-$ sudo vim /home/imo/.condarc
+$ vim ~/.condarc
 ```
 
 ## 動作確認
