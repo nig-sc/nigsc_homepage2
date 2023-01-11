@@ -64,7 +64,7 @@ sidebar_label: トップページ
 以下は例年通りの実施となります。
 
 - [<u>12 月 31 日を以て、課金を伴う計画の変更は締め切りました。</u>](/application/invoice/#請求書の発行)
-- [<u>1 月より令和 4 年度(2022 年度)の年度末アカウント継続申請を受け付けます。</u>](/application/registration)
+- [<u>1 月より令和 4 年度(2022 年度)の年度末アカウント継続申請を受け付けます。</u>](/application/renewal)
 - [<u>1 月より令和 5 年度(2023 年度)の利用計画表を受け付けます。</u>](/application/resource_extension)
 
 ## 謝辞について
