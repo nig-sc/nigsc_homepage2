@@ -6,9 +6,9 @@ title: alphafold 2.3
 
 ## Introduction
 
-The NIG supercomputer provides the singularity image with alphafold 2.3.0 installed and the database for &#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3.0</a></u> on /lustre7/software/alphafold/2.3.0/.
+The NIG supercomputer provides the singularity image with alphafold 2.3.1 installed and the database for &#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3.1</a></u> on /lustre7/software/alphafold/2.3.1/.
 
-Protein structure prediction by alphafold 2.3.0 is performed in the following steps.
+Protein structure prediction by alphafold 2.3.1 is performed in the following steps.
 
 1. Input amino acid sequence search for uniref90 database by jackhmmer (using CPU)
 2. Input amino acid sequence search for mgnify database by jackhmmer (using CPU)
@@ -59,7 +59,7 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 
 ## Prepare job scripts
 
-There are sample job scripts on /lustre7/software/alphafold/2.3.0/. Download this to your own home directory and use it, modifying it accordingly.
+There are sample job scripts on /lustre7/software/alphafold/2.3.1/. Download this to your own home directory and use it, modifying it accordingly.
 
 
 ### example_job_script_cpu.sh
@@ -84,8 +84,8 @@ export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_thread
 
 singularity exec \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.3.0/database:/data1/database \
-/lustre7/software/alphafold/2.3.0/alphafold-2.3.0-CPU.sif \
+-B /lustre7/software/alphafold/2.3.1/database:/data1/database \
+/lustre7/software/alphafold/2.3.1/alphafold-2.3.1-CPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
@@ -179,8 +179,8 @@ PRED=5
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.3.0/database:/data1/database \
-/lustre7/software/alphafold/2.3.0/alphafold-2.3.0-GPU.sif \
+-B /lustre7/software/alphafold/2.3.1/database:/data1/database \
+/lustre7/software/alphafold/2.3.1/alphafold-2.3.1-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
