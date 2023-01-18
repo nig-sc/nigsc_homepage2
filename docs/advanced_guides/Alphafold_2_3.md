@@ -1,5 +1,5 @@
 ---
-id: Alphafold_2_3_0
+id: Alphafold_2_3
 title: 遺伝研スパコンでのalphafold 2.3の実行
 ---
 
