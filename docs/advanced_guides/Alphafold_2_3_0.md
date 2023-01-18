@@ -5,7 +5,7 @@ title: 遺伝研スパコンでのalphafold 2.3の実行
 
 
 ## 概略
-遺伝研スパコンでは&#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3.0</a></u>をインストールしたsingularity imageとalphafold 2.3で使用するデータベースを /lustre7/software/alphafold/2.3.0/ に用意してあります。
+遺伝研スパコンでは&#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3.1</a></u>をインストールしたsingularity imageとalphafold 2.3で使用するデータベースを /lustre7/software/alphafold/2.3.1/ に用意してあります。
 
  
 
@@ -62,7 +62,7 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 
 ## ジョブスクリプトの準備
 
-/lustre7/software/alphafold/2.3.0/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+/lustre7/software/alphafold/2.3.1/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
 
 
 ### example_job_script_cpu.sh
@@ -88,8 +88,8 @@ export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_thread
 
 singularity exec \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.3.0/database:/data1/database \
-/lustre7/software/alphafold/2.3.0/alphafold-2.3.0-CPU.sif \
+-B /lustre7/software/alphafold/2.3.1/database:/data1/database \
+/lustre7/software/alphafold/2.3.1/alphafold-2.3.1-CPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
@@ -191,8 +191,8 @@ PRED=5
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.3.0/database:/data1/database \
-/lustre7/software/alphafold/2.3.0/alphafold-2.3.0-GPU.sif \
+-B /lustre7/software/alphafold/2.3.1/database:/data1/database \
+/lustre7/software/alphafold/2.3.1/alphafold-2.3.1-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
