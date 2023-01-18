@@ -43,6 +43,7 @@ module.exports = {
                 "software/software"
             ]
         },
+        "introduction",
         {
             type: "category",
             label: "一般解析区画の使い方",
@@ -224,7 +225,7 @@ module.exports = {
         "Alphafold":[
             "advanced_guides/Alphafold_2_1",
             "advanced_guides/Alphafold_2_2",
-            "advanced_guides/Alphafold_2_3_0",
+            "advanced_guides/Alphafold_2_3",
         ],
         "NBDC-DDBJ Imputation Server (beta)": [
             "advanced_guides/imputation_server",

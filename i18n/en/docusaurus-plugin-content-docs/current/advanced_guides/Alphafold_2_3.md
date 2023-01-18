@@ -1,5 +1,5 @@
 ---
-id: Alphafold_2_3_0
+id: Alphafold_2_3
 title: alphafold 2.3
 ---
 
