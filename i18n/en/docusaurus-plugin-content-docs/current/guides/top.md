@@ -19,7 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
-- [Updated the HCPtools page](/advanced_guides/advanced_guide#archaea-toolsformerly-hcptools) (2023.01.10)
+- [Updated the HCPtools page developed by CLEALINK TECHNOLOGY Co., Ltd.](/advanced_guides/advanced_guide#archaea-toolsformerly-hcptools) (2023.01.10)
 - &#x1F9EC; [Added the introduction page of the Imputation Server developed by Genome Analytics Japan Inc.](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
 - [Added the power consumption page](/en/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
 
