@@ -164,3 +164,26 @@ You can switch between multiple versions by `spack load` command.
 ```
 spack load gcc@8.5.0
 ```
+
+
+## If you have installed two or more identical packages.
+
+For example, if Emacs@27.2 has already been installed on Spack, the following error will occur when `Spack Load Emacs` is executed in the same condition, etc. You may.
+
+For example, if Emacs@27.2 has already been installed with spack, but the same Emacs@27.2 is installed again under the same conditions, you may receive the following error when executing `spack load emacs`.
+
+```
+==> Error: emacs matches multiple packages.  Matching packages:    
+xi4oeab emacs@27.2%gcc@8.5.0 arch=linux-centos7-zen    
+7ck36ru emacs@27.2%gcc@8.5.0 arch=linux-centos7-zen  
+
+Use a more specific spec.
+```
+
+If you receive such an error, one of them is not needed and should be removed.
+
+To uninstall, execute the following command with the hash value above.
+
+```
+spack uninstall /7ck36ru
+```
