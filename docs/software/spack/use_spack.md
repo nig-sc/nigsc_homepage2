@@ -162,3 +162,24 @@ spack install -j 4 --fail-fast gcc@8.5.0 binutils=True
 ```
 spack load gcc@8.5.0
 ```
+
+
+## 複数の同一パッケージをインストールしてしまった場合
+
+例えば、emacs@27.2をすでに spack でインストールしてあるにも関わらずもう一度同じemacs@27.2を同一条件でインストールしてしまった場合、`spack load emacs`を実行した際などに以下のようなエラーが出ることがあります。
+
+```
+==> Error: emacs matches multiple packages.  Matching packages:    
+xi4oeab emacs@27.2%gcc@8.5.0 arch=linux-centos7-zen    
+7ck36ru emacs@27.2%gcc@8.5.0 arch=linux-centos7-zen  
+
+Use a more specific spec.
+```
+
+このようなエラーが出る場合、一方は不要なので削除してください。
+
+以下のコマンドにより、上記ハッシュ値を用いてアンインストールできます。
+
+```
+spack uninstall /7ck36ru
+```
