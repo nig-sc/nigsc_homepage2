@@ -29,10 +29,10 @@ For using Archaea tools(formerly HCPtools), all user must install that client so
 Refer to the following documents depending on the environment of your client computer.
 
 - Linux (including for Windows WSL2 environments)
-    - [&#x1f517;<u>Ubuntu Linux</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B04_Ubuntu)
-    - [&#x1f517;<u>CentOS 7</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B03_RHEL)
-- [&#x1f517;<u>Mac OS</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B02_macOS/)
-- [&#x1f517;<u>Windows</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B01_Windows)
+    - [&#x1f517;<u>Ubuntu Linux</u>](https://support.bytix.tech/docs/archaea/tools/1.4_en/B_setup_client/B04_Ubuntu)
+    - [&#x1f517;<u>CentOS 7</u>](https://support.bytix.tech/docs/archaea/tools/1.4_en/B_setup_client/B03_RHEL)
+- [&#x1f517;<u>Mac OS</u>](https://support.bytix.tech/docs/archaea/tools/1.4_en/B_setup_client/B02_macOS/)
+- [&#x1f517;<u>Windows</u>](https://support.bytix.tech/docs/archaea/tools/1.4_en/B_setup_client/B01_Windows)
 
 
 ## How to setup the configuration file
@@ -42,19 +42,19 @@ To transfer data between the NIG supercomputer, a configuration file for Archaea
 Linux (including for Windows WSL2 environments)
 ```
 cd $HOME
-git clone https://github.com/nig-sc/Bytix_Archaea/dot-hcp .hcp
+git clone https://github.com/nig-sc/Bytix_Archaea/ .hcp
 ```
 
 Mac OS
 ```
 cd $HOME
-git clone https://github.com/nig-sc/Bytix_Archaea/dot-hcp .hcp
+git clone https://github.com/nig-sc/Bytix_Archaea/ .hcp
 ```
 
 Windows (PowerShell)
 ```
 cd $HOME
-git clone https://github.com/nig-sc/Bytix_Archaea/dot-hcp _hcp
+git clone https://github.com/nig-sc/Bytix_Archaea/ _hcp
 ```
 
 The following files are created when you git clone.

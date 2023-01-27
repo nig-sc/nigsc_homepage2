@@ -20,7 +20,7 @@ sidebar_label: トップページ
 
 ## 最近のお知らせ
 
-- [(株)クレアリンクテクノロジーが開発したArchaea(旧HCPtools)のページを更新しました](/advanced_guides/advanced_guide#archaea-tools旧hcptools) (2023.01.10)
+- [(株)クレアリンクテクノロジーが開発したBytix Archaea (旧HCPtools)の公式サポートサイトが公開されました](/advanced_guides/advanced_guide#archaea-tools旧hcptools) (2023.01.10)
 - &#x1F9EC; [(株)ゲノムアナリティクスジャパンが開発したインピュテーションサーバの紹介ページを追加しました](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
 - [電力使用状況のページを追加しました](/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
 

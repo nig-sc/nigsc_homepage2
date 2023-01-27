@@ -10,9 +10,11 @@ title: "最新のトピック"
 
 2022年10月、HCPtoolsソフトウェア提供元が、データ転送系のブランド名称として、「Bytix(バイティックス)」というブランド名を立ち上げ、製品名称が「HCPtools」から「Archaea tools」へ変更になりました。
 
+変更についての詳細は、[&#x1f517;<u>Bytix公式ページ「製品名称変更等について」のページをご参照ください</u>](https://support.bytix.tech/important/)。
+
 製品名称変更後も、これまで通りHCPtoolsで使用していたコマンドと同じコマンドをそのままお使いいただけます。
 
-変更についての詳細は、[&#x1f517;<u>Bytix公式ページ「製品名称変更等について」のページをご参照ください</u>](https://support.bytix.tech/important/)。
+また、Windows, Linuxに加えmacOSからも利用可能となりました。([&#x1f517;<u>Bytix公式ページ「対応プラットフォーム」をご参照ください</u>](https://support.bytix.tech/docs/archaea/tools/1.4/A_overview/A09_platforms))。
 
 Archaea tools(旧HCPtools) の使い方は、[&#x1f517;<u>Bytix公式ページ「ドキュメント」のページをご参照ください</u>](https://support.bytix.tech/document/)。
 

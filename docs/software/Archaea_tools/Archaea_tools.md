@@ -47,19 +47,19 @@ Archaea tools(旧HCPtools)を利用するためにはクライアントソフト
 Linux (WindowsのWSL2環境の場合も含む)
 ```
 cd $HOME
-git clone https://github.com/nig-sc/Bytix_Archaea/dot-hcp .hcp
+git clone https://github.com/nig-sc/Bytix_Archaea/ .hcp
 ```
 
 Mac OSの場合
 ```
 cd $HOME
-git clone https://github.com/nig-sc/Bytix_Archaea/dot-hcp .hcp
+git clone https://github.com/nig-sc/Bytix_Archaea/ .hcp
 ```
 
 Windows (PowerShell)の場合
 ```
 cd $HOME
-git clone https://github.com/nig-sc/Bytix_Archaea/dot-hcp _hcp
+git clone https://github.com/nig-sc/Bytix_Archaea/ _hcp
 ```
 
 git cloneすると以下のファイルが作られます。
