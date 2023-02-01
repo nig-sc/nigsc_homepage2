@@ -168,6 +168,16 @@ title: "Statistics"
 			<td>14</td>
 			<td>176</td>
 		</tr>
+		<tr>
+			<td>12-31-2021</td>
+			<td>161</td>
+			<td>14</td>
+			<td>175</td>
+			<td>17</td>
+			<td>0</td>
+			<td>17</td>
+			<td>192</td>
+		</tr>
 	</tbody>
 </table>
 
