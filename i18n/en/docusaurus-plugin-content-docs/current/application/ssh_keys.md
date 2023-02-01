@@ -55,6 +55,8 @@ $
 When you check the save location of the key pair, you will find two files, `id_rsa` and `id_rsa.pub`, are created.
 `id_rsa.pub` is the public key, so you can register the public key by copying all character strings from "ssh-rsa" of the file and pasting it into the "SSH Key" below(red frame).
 
+&#x26A0; If you already have your account, register your public key in [<u>the Change of application details on the Application for use/change page</u>](/application/registration/#change-of-application-details).
+
 ![](reg_ssh_EN.png)
  
 
