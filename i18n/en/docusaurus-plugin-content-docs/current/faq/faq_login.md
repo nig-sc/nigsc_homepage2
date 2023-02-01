@@ -85,7 +85,7 @@ Register the SSL-VPN address here.
 
 ## When entering your username and password for FortiClient for an SSL-VPN connection to the personal genome analysis section, the one-time password is not sent to the email address associated with your VPN account.
 
-- Google has tightened the security since 1 March this year, therefore there have been incidents that the email with one-time password from the NIG supercomputer VPN is not sent to gmail.
+- Google has tightened the security since 1 March 2022, therefore there have been incidents that the email with one-time password from the NIG supercomputer VPN is not sent to gmail.
 - We recommend that you register your institution's email address instead of a free email to sent the e-mail to the wrong person.
 
 
