@@ -62,26 +62,8 @@ When you check the save location of the key pair, you will find two files, `id_r
 
 ## Confirmation of connection to the NIG supercomputer gateway
 
-Connect to the supercomputer system using the ssh command.
-
-```
-$ ssh youraccount@gw2.ddbj.nig.ac.jp
-Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
-Last login: Fri Sep 19 13:28:19 2014 from gw2.ddbj.nig.ac.jp
----------------------------------------------------------------------
-Thank you for using supercomputer system.
-This node is in use for login service only. Please use 'qlogin'.
----------------------------------------------------------------------
-[youraccount@gw2 ~]$
-```
-
-When prompted for the passphrase, enter the passphrase that you specified for key generation.
-After authentication, it is complete to login to the supercomputer system.
-If your private key is stored in a location other than `~/.ssh/id_rsa`, specify the private key path as shown below.
-
-```
-ssh -i ~/yourpath/id_rsa youraccount@gw2.ddbj.nig.ac.jp
-```
+- To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
+- To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).
 
 If you have trouble connecting, refer to [FAQ](/faq/faq_login).
 

@@ -48,3 +48,127 @@ For example, when you specify as below, it means that you have specified 16 × 8
 -pe mpi-fillup 16 -l s_vem=8G -l mem_req=8G 
 ```
 
+
+### Details of parallel environment
+
+#### CPU and memory allocation
+
+The above example specifies one CPU core and the corresponding memory.
+
+If the amount of memory is not specified when executing the qsub command (default value), e.g. for Thin node Type 1a, 8 GB of memory is allocated per CPU core.
+(This depends on the type of computer and the type of queue.)
+
+![](/img/software/grid_engine/pe_1.png)
+
+
+#### parallel_job(1) -pe def_slot 2-10
+
+`-pe def_slot` always allocates the specified number of cores on the same compute node.
+
+```
+#!/bin/bash
+#$ -cwd        
+#$ -V          
+#$ -l epyc     
+#$ -l d_rt=192:00:00 
+#$ -l s_rt=192:00:00 
+#$ -pe def_slot 2
+#$ -l s_vmem=20G      
+#$ -l mem_req=20G   
+#$ -N an_example      
+
+make -j 2
+```
+
+![](/img/software/grid_engine/pe_2.png)
+
+
+#### parallel job (2) -pe mpi -pe pe
+
+`-pe mpi` allocates the specified number of cores on a separate compute node if at all possible.
+
+```
+#!/bin/bash
+#$ -cwd        
+#$ -V          
+#$ -l epyc     
+#$ -l d_rt=192:00:00 
+#$ -l s_rt=192:00:00 
+#$ -pe mpi 2
+#$ -l s_vmem=20G      
+#$ -l mem_req=20G     
+#$ -N an_example      
+
+your_program
+```
+
+![](/img/software/grid_engine/pe_3.png)
+
+
+#### parallel-job(3) -pe mpi-fillup 10 -pe pe-fillup 10
+
+`-pe mpi-fillup` allocates the specified number of cores by packing them into the same compute node as much as possible.
+
+```
+#!/bin/bash
+#$ -cwd        
+#$ -V          
+#$ -l epyc     
+#$ -l d_rt=192:00:00 
+#$ -l s_rt=192:00:00 
+#$ -pe mpi-fillup 4
+#$ -l s_vmem=20G      
+#$ -l mem_req=20G     
+#$ -N an_example      
+
+your_program
+```
+
+![](/img/software/grid_engine/pe_4.png)
+
+
+#### parallel jobs(4) -pe mpi_N -pe pe_N
+
+`-pe mpi_N` allocates the specified number of cores on each compute node.
+
+The following are available: mpi_4, mpi_8, mpi_16, mpi_32, mpi_64, mpi_5, mpi_10, mpi_20.
+
+The following are available: pe_4, pe_8, pe_16, pe_32, pe_64, pe_5, pe_10 and pe_20.
+
+```
+#!/bin/bash
+#$ -cwd        
+#$ -V          
+#$ -l epyc     
+#$ -l d_rt=192:00:00 
+#$ -l s_rt=192:00:00 
+#$ -pe mpi_4 2
+#$ -l s_vmem=8G      
+#$ -l mem_req=8G     
+#$ -N an_example      
+
+your_program
+```
+
+![](/img/software/grid_engine/pe_5.png)
+
+
+#### How to know which compute nodes have been allocated in a parallel job
+
+```
+$ qstat
+job-ID     prior   name       user      state submit/start at     queue   jclass       slots ja-task-ID  
+------------------------------------------------------------------------------------------------------
+ 13862312 0.25410 QLOGIN     you         r     09/25/2021 23:34:49 login.q@at138        1         
+ 13862486 0.25194 QLOGIN     you         r     09/26/2021 10:15:28 login.q@at139        1         
+ 13862667 0.25084 QLOGIN     you         r     09/26/2021 15:40:40 login.q@at137        1         
+ 13862992 0.25039 an_example you         r     09/26/2021 18:54:09 epyc.q@at143         2         
+ 13862987 0.25020 an_example you         r     09/26/2021 19:44:58 epyc.q@at154         1         
+ 13862989 0.25040 an_example you         qw    09/26/2021 18:50:50                      2   
+
+$ qstat -j 13862992 | grep exec_host_list
+exec_host_list        1:    at143:2     
+```
+
+
+You can see which compute nodes have been allocated from the `exec_host_list` line displayed by `qstat -j <job number>`.
