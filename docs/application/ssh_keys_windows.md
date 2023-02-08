@@ -5,18 +5,14 @@ title: SSH公開鍵登録の詳細(Windowsの場合)
 
 このページでは、WindowsのためのSSH公開鍵作成から登録までの詳しい手順を説明しています。
 
-Windowsに標準搭載されているPowerShellを例にご説明します。
+Windowsに標準搭載されているPowerShellを例に、ご説明します。
 
 ![](/img/ssh_keys/windows/ssh_win_1.png)
-
-PowerShellを起動すると、以下の画像のようにPowerShellのバージョンが古くなっていることを示すメッセージが表示される場合があります。その場合は本ページの作業に入る前に、PowerShellのバージョンアップを行うことを推奨します。方法については[FAQの「最新バージョンのPowerShellをインストールする方法」](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)をご参照ください。
-
-![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
 
 
 ## ①SSH公開鍵と秘密鍵を作る
 
-![](/img/ssh_keys/windows/ssh_win_2.png)
+![](/img/ssh_keys/windows/ssh_win_intro_1-1.png)
 
 
 ### PowerShellを起動する
@@ -33,19 +29,27 @@ Windowsマークをクリックします。
 
 ![](/img/ssh_keys/windows/ssh_win_5.png)
 
-「pwsh」と入力します。
+「PowerShell」もしくは「pwsh」と入力します。
+
+PowerShellは、最新バージョンをインストールすることが推奨されています。最新バージョンのPowerShell は、実行ファイル名がpwsh.exeという名前でインストールされているため、PowerShellを検索するときは、”powershell”ではなく”pwsh”と入力して検索します。
+
+「PowerShell」と「pwsh」の違いについての詳細は、[<u>FAQの「PowerShell 5.1と7.2.6の主な違いはありますか。」をご参照ください</u>](/faq/faq_sshkeys_windows#powershell-51と726の主な違いはありますか)。
 
 ![](/img/ssh_keys/windows/ssh_win_6.png)
 
-入力すると、以下の画面のように検索結果に実行ファイルが表示されます。
+「PowerShell」と入力した場合は、以下の画面のように検索結果に実行ファイルが表示されます。
 
-![](/img/ssh_keys/windows/ssh_win_7.png)
+![](/img/ssh_keys/windows/ssh_win_7_powershell.png)
 
-もし以下の画面のように、検索結果に実行ファイルが表示されない場合は、まだ最新バージョンのPowerShellがインストールされていない状態ですので、インストールを推奨します。[FAQの「最新バージョンのPowerShellをインストールする方法」を参照して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
+「pwsh」と入力した場合は、以下の画面のように検索結果に実行ファイルが表示されます。
+
+![](/img/ssh_keys/windows/ssh_win_7_pwsh.png)
+
+「pwsh」と入力した場合に、もし以下の画面のように、検索結果に実行ファイルが表示されない場合は、まだ最新バージョンのPowerShellがインストールされていない状態ですので、インストールを推奨します。[<u>FAQの「最新バージョンのPowerShellをインストールする方法」を参照して、最新バージョンのPowerShellをインストールしてください</u>](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。インストールすると、上図の画面のように、検索結果に実行ファイルが表示されるようになります。
 
 ![](/img/ssh_keys/windows/ssh_win_7_nonpwsh.png)
 
-検索結果に実行ファイルが表示されたら、「管理者として実行」をクリックします。
+「PowerShell」もしくは「pwsh」を入力後、検索結果に実行ファイルが表示されたら、「管理者として実行」をクリックします。
 
 ![](/img/ssh_keys/windows/ssh_win_8.png)
 
@@ -57,9 +61,22 @@ Windowsマークをクリックします。
 
 ![](/img/ssh_keys/windows/ssh_win_10.png)
 
-このとき、PowerShellの画面は、以下のように表示されます。この画面は、2022年10月19日時点での最新バージョン PowerShell 7.2.6を起動したときのPowerShellの画面です。
+このとき、「pwsh」と入力したユーザのPowerShellの画面は、以下のように表示されます。上図の表示画面は、2022年10月19日時点での最新バージョン PowerShell 7.2.6を起動したときのPowerShellの画面です。
 
 ![](/img/ssh_keys/windows/ssh_win_11.png)
+
+もしこの時に、画面に以下のようなメッセージが表示される場合は、「さらに最新バージョンが発表されているのでアップグレードしてください。」と言われています。[ここをクリックして、FAQの「最新バージョンのPowerShellをインストールする方法」のページに移動して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。最新バージョンをインストールすると、上図のように、メッセージが表示されなくなります。
+
+```
+ A new PowerShell stable release is available: v7.2.7
+   Upgrade now, or check out the release page at:
+     https://aka.ms/PowerShell-Release?tag=v7.2.7
+```
+
+一方、「PowerShell」と入力したユーザのPowerShellの画面は、以下のように表示されます。この表示画面のように、PowerShellのバージョンが古くなっていることを示すメッセージが表示される場合があります。その場合は、本ページの作業に入る前に、PowerShellのバージョンアップを行うことを推奨します。方法については、[<u>FAQの「最新バージョンのPowerShellをインストールする方法」</u>](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)をご参照ください。
+
+![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
+
 
 PowerShellの画面が表示されると、コマンドプロンプトが表示されます。コマンドプロンプトの最後には「>」が表示されています。コマンドプロンプトが表示されると、コマンドを入力できる状態になります。コマンドプロンプトの後ろで点滅している四角い箱「_」は、カーソルといい、ここにコマンドを入力していきます。
 
@@ -68,13 +85,6 @@ PowerShellの画面が表示されると、コマンドプロンプトが表示�
 
 ![](/img/ssh_keys/windows/ssh_win_12.png)
 
-もしこの時に、画面に以下のメッセージが表示される場合は、「さらに最新バージョンが発表されているのでアップグレードしてください。」と言われています。[ここをクリックして、FAQの「最新バージョンのPowerShellをインストールする方法」のページに移動して、最新バージョンのPowerShellをインストールしてください](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
-
-```
- A new PowerShell stable release is available: v7.2.7
-   Upgrade now, or check out the release page at:
-     https://aka.ms/PowerShell-Release?tag=v7.2.7
-```
 
 コマンドプロンプトとカーソルが表示されたことを確認したら、SSH公開鍵と秘密鍵を作る前に、OpenSSHクライアントソフトウェアがインストールされているか確認します。
 
@@ -105,6 +115,8 @@ State : Installed
 
 
 ### SSH公開鍵と秘密鍵を作る
+
+![](/img/ssh_keys/windows/ssh_win_intro_1-2.png)
 
 OpensSSHクライアントのインストールの状態が表示された行の次の行に、新たにコマンドプロンプトとカーソルが表示され、再び、コマンドを入力できる状態になります。
 
@@ -223,7 +235,7 @@ cat .\id_rsa.pub
 
 ## ②遺伝研スパコンにSSH公開鍵を登録する
 
-![](/img/ssh_keys/windows/ssh_win_31.png)
+![](/img/ssh_keys/windows/ssh_win_intro_2.png)
 
 作ったSSH公開鍵の中身が表示されたら、表示された中身を全て選択してコピーします。
 
@@ -244,6 +256,16 @@ cat .\id_rsa.pub
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
 
+## 遺伝研スパコンゲートウェイへの接続確認
+
+- 一般解析区画にログインする場合は、[<u>「一般解析区画 > ログイン方法(一般解析区画)」</u>](/general_analysis_division/ga_login)をご参照ください。
+- 個人ゲノム解析区画にログインする場合は、[<u>「個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)」</u>](/personal_genome_division/pg_login)をご参照ください。
+
+
+うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
+
+
 ## 参考文献
 
 - <a href="https://learn.microsoft.com/ja-jp/windows-server/administration/openssh/openssh_install_firstuse?source=recommendations">OpenSSHのインストール方法</a>
+

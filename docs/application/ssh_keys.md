@@ -64,28 +64,8 @@ $
 
 ## 遺伝研スパコンゲートウェイへの接続確認
 
-ssh コマンドにてスーパーコンピュータシステムに接続します。
-
-```
-$ ssh youraccount@gw2.ddbj.nig.ac.jp
-Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
-Last login: Fri Sep 19 13:28:19 2014 from gw2.ddbj.nig.ac.jp
----------------------------------------------------------------------
-Thank you for using supercomputer system.
-This node is in use for login service only. Please use 'qlogin'.
----------------------------------------------------------------------
-[youraccount@gw2 ~]$
-```
-
-パスフレーズの入力プロンプトが表示されたら鍵生成に指定したパスフレーズを入力します。
-
-認証後、スーパーコンピュータシステムへのログインが完了します。
-
-秘密鍵の格納場所が`~/.ssh/id_rsa`以外の場合は以下のように秘密鍵のパスを指定します。
-
-```
-ssh -i ~/yourpath/id_rsa youraccount@gw2.ddbj.nig.ac.jp
-```
+- 一般解析区画にログインする場合は、[<u>「一般解析区画 > ログイン方法(一般解析区画)」</u>](/general_analysis_division/ga_login)をご参照ください。
+- 個人ゲノム解析区画にログインする場合は、[<u>「個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)」</u>](/personal_genome_division/pg_login)をご参照ください。
 
 
 うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
