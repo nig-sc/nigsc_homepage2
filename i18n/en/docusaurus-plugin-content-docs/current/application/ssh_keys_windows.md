@@ -9,14 +9,10 @@ PowerShell, which comes standard with Windows, is used as an example.
 
 ![](/img/ssh_keys/windows/ssh_win_1.png)
 
-When you start PowerShell, you may see a message indicating that the version of PowerShell is out of date, as shown in the image below. In that case, it is recommended to upgrade the version of PowerShell before starting the work on this page. For instructions, see ["How to install the latest version of PowerShell" on the FAQ page](/faq/faq_sshkeys_windows#How to install the latest version of powershell).
-
-![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
-
 
 ## ①Create SSH public key and private key
 
-![](/img/ssh_keys/windows/ssh_win_2.png)
+![](/img/ssh_keys/windows/ssh_win_intro_1-1.png)
 
 
 ### Open PowerShell
@@ -33,15 +29,23 @@ When clicked, the following image is displayed.
 
 ![](/img/ssh_keys/windows/ssh_win_5.png)
 
-Enter 'pwsh'.
+Enter 'PowerShell' or 'pwsh'.
+
+For more information on the differences between "PowerShell" and "pwsh", see [<u>FAQ "What are the main differences between PowerShell 5.1 and 7.2.6?"</u>](/faq/faq_sshkeys_windows#what-are-the-main-differences-between-powershell-51-and-726).
 
 ![](/img/ssh_keys/windows/ssh_win_6.png)
 
-When entered, the executable file appears in the search results, as shown in the screen below.
+If you entered 'PowerShell', the executable file appears in the search results, as shown in the screen below.
 
-![](/img/ssh_keys/windows/ssh_win_7.png)
+![](/img/ssh_keys/windows/ssh_win_7_powershell.png)
 
-If the executable file does not appear in the search results as in the screen below, the latest version of PowerShell is not yet installed and installation is recommended. [Refer to the FAQ "How to install the latest version of PowerShell" to install the latest version of PowerShell](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法).
+
+If you entered 'pwsh', the executable file appears in the search results, as shown in the screen below.
+
+![](/img/ssh_keys/windows/ssh_win_7_pwsh.png)
+
+
+If the executable file does not appear in the search results as in the screen below after you entered 'pwsh', the latest version of PowerShell is not yet installed and installation is recommended. [<u>Refer to the FAQ "How to install the latest version of PowerShell" to install the latest version of PowerShell</u>](/faq/faq_sshkeys_windows#how-to-install-the-latest-version-of-powershell).
 
 ![](/img/ssh_keys/windows/ssh_win_7_nonpwsh.png)
 
@@ -57,9 +61,23 @@ PowerShell will be opened.
 
 ![](/img/ssh_keys/windows/ssh_win_10.png)
 
-At this point, the PowerShell screan appears as follows. This screen shows the PowerShell screen when PowerShell 7.2.6, the latest version as of 19 October 2022, is launched.
+At this time, the PowerShell screen of the user who entered 'pwsh' appears as follows. The display screen shown above is the PowerShell screen when PowerShell 7.2.6, the latest version as of 19 October 2022, is started.
 
 ![](/img/ssh_keys/windows/ssh_win_11.png)
+
+If the following message appears on your screen: you are told "A more up-to-date version has been released, you should upgrade." . [<u>Click here to go to the FAQ "How to install the latest version of PowerShell" page to install the latest version of PowerShell</u>](/faq/faq_sshkeys_windows#how-to-install-the-latest-version-of-powershell).
+
+```
+ A new PowerShell stable release is available: v7.2.7
+   Upgrade now, or check out the release page at:
+     https://aka.ms/PowerShell-Release?tag=v7.2.7
+```
+
+The PowerShell screen for a user typing 'PowerShell' will appear as follows. 
+
+As in this display screen, you may see a message indicating that the version of PowerShell is out of date, as shown in the image below. In that case, it is recommended to upgrade the version of PowerShell before starting the work on this page. For instructions, see [<u>"How to install the latest version of PowerShell" on the FAQ page</u>](/faq/faq_sshkeys_windows#how-to-install-the-latest-version-of-powershell).
+
+![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
 
 When the Terminal screan appears, you can see a command prompt. It ends with '>'. When it appears, you are ready to enter commands. The blinking square box after this prompt is called Cursor, where you enter commands.
 
@@ -67,14 +85,6 @@ When the Terminal screan appears, you can see a command prompt. It ends with '>'
 - You don't need to click '>', Cursor or its black screen using the mouse. When Cursor appears, enter the command as it is and press the Enter key. The mouse is not used.
 
 ![](/img/ssh_keys/windows/ssh_win_12.png)
-
-If the following message appears on your screen: you are told "A more up-to-date version has been released, you should upgrade." . [Click here to go to the FAQ "How to install the latest version of PowerShell" page to install the latest version of PowerShell](/faq/faq_sshkeys_windows#最新バージョンのpowershellをインストールする方法)。
-
-```
- A new PowerShell stable release is available: v7.2.7
-   Upgrade now, or check out the release page at:
-     https://aka.ms/PowerShell-Release?tag=v7.2.7
-```
 
 Once you have verified that the command prompt and cursor appear, check that openSSH client is installed before creating the SSH public key and private key.
 
@@ -105,6 +115,8 @@ If it is 'NotPresent', the OpenSSH client is not yet installed. [See References 
 
 
 ### Create SSH public key and private key
+
+![](/img/ssh_keys/windows/ssh_win_intro_1-2.png)
 
 When a new command prompt and cursor appear on the line following the line showing the status of the OpensSSH client installation, you can type the command again.
 
@@ -225,7 +237,7 @@ Then, the contents of the SSH public key you created are output, as shown in the
 
 ## ②Register the SSH public key with the NIG supercomputer
 
-![](/img/ssh_keys/windows/ssh_win_31.png)
+![](/img/ssh_keys/windows/ssh_win_intro_2.png)
 
 When the contents of the SSH public key you created are displayed, select all the contents displayed and copy them.
 
@@ -246,6 +258,16 @@ After pasting, press the 'Next' button and continue filling in the [continue fil
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
 
+## Confirmation of connection to the NIG supercomputer gateway
+
+- To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
+- To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).
+
+If you have trouble connecting, refer to [FAQ](/faq/faq_login).
+
+
+
 ## Reference
 
 - <a href="https://learn.microsoft.com/en-gb/windows-server/administration/openssh/openssh_install_firstuse?source=recommendations&tabs=gui">Get started with OpenSSH for Windows</a>
+
