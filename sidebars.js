@@ -213,6 +213,9 @@ module.exports = {
             },
             "application/reference"
         ],
+        "Github Discussion": [
+            "github_discussion",
+        ],
     },
     advancedGuidesSidebar : {
         "活用方法概要": [
@@ -315,7 +318,5 @@ module.exports = {
                 "faq/faq_sshkeys_windows",
             ]
         },
-
     ],
-
 };
