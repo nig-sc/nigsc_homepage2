@@ -211,10 +211,8 @@ module.exports = {
                 label: "よくある質問(FAQ)",
                 href: "/faq/faq_login"
             },
-            "application/reference"
-        ],
-        "Github Discussion": [
             "github_discussion",
+            "application/reference",
         ],
     },
     advancedGuidesSidebar : {
