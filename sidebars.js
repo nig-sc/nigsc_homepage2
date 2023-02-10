@@ -211,7 +211,7 @@ module.exports = {
                 label: "よくある質問(FAQ)",
                 href: "/faq/faq_login"
             },
-            "github_discussion",
+            "github_discussions",
             "application/reference",
         ],
     },
