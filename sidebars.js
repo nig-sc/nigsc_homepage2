@@ -211,7 +211,8 @@ module.exports = {
                 label: "よくある質問(FAQ)",
                 href: "/faq/faq_login"
             },
-            "application/reference"
+            "github_discussions",
+            "application/reference",
         ],
     },
     advancedGuidesSidebar : {
@@ -315,7 +316,5 @@ module.exports = {
                 "faq/faq_sshkeys_windows",
             ]
         },
-
     ],
-
 };
