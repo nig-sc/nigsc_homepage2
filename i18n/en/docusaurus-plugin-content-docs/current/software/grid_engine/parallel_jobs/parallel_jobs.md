@@ -5,7 +5,7 @@ title: Pallalel Jobs (parallel job)
 
 When you run a small number of programs that use multiple CPU cores and run for a long time, run them as parallel jobs. (When you execute many jobs, use the array job of parallel jobs.)
 
-To use the parallel job function in addition to the options described in the [Batch Jpbs (batch job)](/software/grid_engine/batch_jobs) page, specify the parallel environment with the -pe option.
+To use the parallel job function in addition to the options described in the [Batch Jpbs (batch job)](/software/grid_engine/batch_jobs) page, specify the parallel environment with the `-pe` option.
 
 Parallel environment types provided by the NIG supercomputer are as follows.
   
@@ -14,19 +14,25 @@ Parallel environment types provided by the NIG supercomputer are as follows.
 <th width="300">parallel environment</th><th width="300">meaning</th>
 </tr>
 <tr>
-  <td>def_slot N</td>
+  <td>`def_slot N`</td>
   <td>  N CPU cores are reserved on the same compute node. (When N exceeds the number of CPU cores on the compute node, the job will not start.)</td>
  </tr>
  <tr>
-  <td>mpi N</td>
+  <td>`mpi N`</td>
   <td>  N CPU cores are reserved across multiple compute nodes. At that time, the compute nodes are selected by the round-robin method. As a result, the cores are secured in a form scattered among as many computing nodes as possible.
   </td>
 </tr>
 <tr>
-  <td>mpi-fillup N</td><td>  N CPU cores are reserved across multiple computation nodes. At that time, the core is secured so that the number of calculation nodes is as small as possible.</td>
+  <td>`mpi-fillup N`</td><td>  N CPU cores are reserved across multiple computation nodes. At that time, the core is secured so that the number of calculation nodes is as small as possible.</td>
 </tr>
 <tr>
-  <td><p>mpi_n N</p><p>The defined parallel environment is as follows.</p><p>mpi_4, mpi_8, mpi_16, mpi_32, mpi_64, mpi_5, mpi_10, mpi_20</p></td>
+  <td>`pe_n N` 
+  
+  The defined parallel environment is as follows.<br/>
+  
+  `pe_4`, `pe_8`, `pe_16`, `pe_32`, `pe_64`, 
+  
+  `pe_5`, `pe_10`, `pe_20`</td>
   <td>N cores are reserved across multiple computation nodes. At that time, n = 4,8,16,… cores are secured on each compute node.</td>
 </tr>
 </table>
@@ -39,7 +45,7 @@ The number of cores can be specified a range besides a single number.
 
 ### Notes on specifying memory requirements for parallel jobs
 
-When -l s_vmem or -l mem_req is specified for the parallel job, the job is submitted by requesting memory, which is multiplied by the number of parallels specified in the parallel environment and specified memory from the system.
+When `-l s_vmem` or `-l mem_req` is specified for the parallel job, the job is submitted by requesting memory, which is multiplied by the number of parallels specified in the parallel environment and specified memory from the system.
 
 For example, when you specify as below, it means that you have specified 16 × 8 = 128GB as the total memory used by the parallel jobs. Remember this point and decide requested memory to be specify.
 
@@ -61,96 +67,24 @@ If the amount of memory is not specified when executing the qsub command (defaul
 ![](/img/software/grid_engine/pe_1.png)
 
 
-#### parallel_job(1) -pe def_slot 2-10
+`def_slot` always allocates the specified number of cores on the same compute node. In the example in the figure below, memory is 20GB per core, a total of 20GB x 2 cores = 40GB  is allocated in one computer.
 
-`-pe def_slot` always allocates the specified number of cores on the same compute node.
+![](/img/software/grid_engine/pe_2_EN.png)
 
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe def_slot 2
-#$ -l s_vmem=20G      
-#$ -l mem_req=20G   
-#$ -N an_example      
+`mpi` allocates resources as evenly as possible to multiple computers. In the example below, if you specify `mpi 2`, memory is 20GB per CPU core and each computer is allocated 1 core x 20GB = 20GB each, for a total of 20GB x 2 computers = 40GB.
 
-make -j 2
-```
+![](/img/software/grid_engine/pe_3_EN.png)
 
-![](/img/software/grid_engine/pe_2.png)
+`mpi-fillup` allocates resources to one of the multiple computers as much as possible. If the resource cannot be allocated, it tries to allocate the resource to another computer. This is the difference with `def_slot`. In the example below, if there are two calculators with 64GB memory per calculator, if you specify `mpi-fillup 4`, the memory is 20GB per CPU core, 3 cores x 20GB = 60 GB for one of the two computers, 1 core x 20GB = 20 GB for the other, a total of 20GB x 4 cores = 80GB is allocated.
 
-
-#### parallel job (2) -pe mpi -pe pe
-
-`-pe mpi` allocates the specified number of cores on a separate compute node if at all possible.
-
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe mpi 2
-#$ -l s_vmem=20G      
-#$ -l mem_req=20G     
-#$ -N an_example      
-
-your_program
-```
-
-![](/img/software/grid_engine/pe_3.png)
-
-
-#### parallel-job(3) -pe mpi-fillup 10 -pe pe-fillup 10
-
-`-pe mpi-fillup` allocates the specified number of cores by packing them into the same compute node as much as possible.
-
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe mpi-fillup 4
-#$ -l s_vmem=20G      
-#$ -l mem_req=20G     
-#$ -N an_example      
-
-your_program
-```
-
-![](/img/software/grid_engine/pe_4.png)
+![](/img/software/grid_engine/pe_4_EN.png)
 
 
 #### parallel jobs(4) -pe mpi_N -pe pe_N
 
-`-pe mpi_N` allocates the specified number of cores on each compute node.
+`pe_N`, if you speify `pe_4 2`, the resources are allocated to two computers with four cores each. In the example in the figure below, memory is 8GB per CPU core, 4 cores x 8GB = 32GB each for each computer, a total of 32GB x 2 computers = 64GB  is allocated.
 
-The following are available: mpi_4, mpi_8, mpi_16, mpi_32, mpi_64, mpi_5, mpi_10, mpi_20.
-
-The following are available: pe_4, pe_8, pe_16, pe_32, pe_64, pe_5, pe_10 and pe_20.
-
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe mpi_4 2
-#$ -l s_vmem=8G      
-#$ -l mem_req=8G     
-#$ -N an_example      
-
-your_program
-```
-
-![](/img/software/grid_engine/pe_5.png)
+![](/img/software/grid_engine/pe_5_EN.png)
 
 
 #### How to know which compute nodes have been allocated in a parallel job

@@ -208,3 +208,10 @@ After pasting, press the 'Next' button and continue filling in the [continue fil
 [The SSH public key registration is completed when you conpletedd the registration of the application for use on the "Application for use" of the "Application for use/change" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
 
 ![](/img/ssh_keys/mac/ssh_mac_31.png)
+
+## Confirmation of connection to the NIG supercomputer
+
+- To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
+- To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).
+
+If you have trouble connecting, refer to [FAQ](/faq/faq_login).
