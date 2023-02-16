@@ -12,10 +12,10 @@ Windowsに標準搭載されているPowerShellを例に、ご説明します。
 
 ## ①SSH公開鍵と秘密鍵を作る
 
+### PowerShellを起動する
+
 ![](/img/ssh_keys/windows/ssh_win_intro_1-1.png)
 
-
-### PowerShellを起動する
 
 Windowsマークをクリックします。
 
@@ -256,7 +256,7 @@ cat .\id_rsa.pub
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
 
-## 遺伝研スパコンゲートウェイへの接続確認
+## 遺伝研スパコンへの接続確認
 
 - 一般解析区画にログインする場合は、[<u>「一般解析区画 > ログイン方法(一般解析区画)」</u>](/general_analysis_division/ga_login)をご参照ください。
 - 個人ゲノム解析区画にログインする場合は、[<u>「個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)」</u>](/personal_genome_division/pg_login)をご参照ください。

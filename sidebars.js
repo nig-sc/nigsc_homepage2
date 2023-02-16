@@ -85,7 +85,7 @@ module.exports = {
                         "software/grid_engine/grid_engine",
                         "software/grid_engine/interactive_jobs",
                         "software/grid_engine/batch_jobs",
-                        "software/grid_engine/parallel_jobs",
+                        "software/grid_engine/parallel_jobs/parallel_jobs",
                         "software/grid_engine/array_jobs",
                         "software/grid_engine/other_commands",
                         "software/qsub_beta",
@@ -183,38 +183,83 @@ module.exports = {
     ],
 
 
-    applicationsSidebar : {
-        "利用規定等": [
-            "application/application",
-            "application/use_policy",
-            "application/legislation",
-        ],
-        "利用申請等": [
+    applicationsSidebar : [
+        {
+            type: "category",
+            label: "利用規定等",
+            items: [
+                "application/application",
+                "application/use_policy",
+                "application/legislation",
+            ],
+        },
+        {
+            type: "category",
+            label: "利用申請等",
+            items: [
             "application/registration",
             "application/resource_extension",
             "application/renewal",
-        ],
-        "パスワード・公開鍵の設定方法": [
+            ],
+        },
+        {
+            type: "category",
+            label: "パスワード・公開鍵の設定方法",
+            items: [
             "application/ssh_keys",
             "application/ssh_keys_mac",
             "application/ssh_keys_windows",
             "application/change_loginpwd",
-        ],
-        "課金サービス利用方法": [
+           ],
+        },
+        {
+           type: "category",
+           label: "課金サービス利用方法",
+           items: [
             "application/billing_service",
             "application/resource_extension",
             "application/invoice",
-        ],
-        "問い合わせ先・FAQ": [
-            {
-                type: "link",
-                label: "よくある質問(FAQ)",
-                href: "/faq/faq_login"
-            },
-            "github_discussions",
-            "application/reference",
-        ],
-    },
+            ],
+        },
+        {
+            type: "category",
+            label: "よくある質問(FAQ)",
+            items: [
+                {
+                    type: 'category',
+                    label: "FAQ : software",
+                    items: [
+                        "faq/faq_software",
+                        "faq/faq_hcptools",
+                        "faq/faq_aspera",
+                        "faq/faq_grid_engine",
+                    ]
+                },
+                {
+                    type: 'category',
+                    label: "FAQ : Login",
+                    items: [
+                        "faq/faq_login",
+                    ]
+                },
+                {
+                    type: 'category',
+                    label: "FAQ : Application/Billing",
+                    items: [
+                        "faq/faq_billing_service",
+                        "faq/faq_change_StorageCapacity",
+                        "faq/faq_NewUser_registration",
+                        "faq/faq_sshkeys_mac",
+                        "faq/faq_sshkeys_windows",
+                    ]
+                },
+            ],
+         },
+        "github_discussions",
+        "application/reference",
+    ],
+
+
     advancedGuidesSidebar : {
         "活用方法概要": [
             "advanced_guides/advanced_guide",

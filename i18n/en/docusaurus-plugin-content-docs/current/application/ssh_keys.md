@@ -42,7 +42,7 @@ If the private key file is stolen, identity theft is possible.
 It is possible to omit the passphrase setting, but it is strongly recommended to set it to reduce damage when the private key is stolen.
 
 
-## Installation of public key on the NIG supercomputer gateway
+## Register the SSH public key to the NIG supercomputer
 
 ```
 $ ls ~/.ssh
