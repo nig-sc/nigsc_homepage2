@@ -211,7 +211,7 @@ cat id_rsa.pub
 ![](/img/ssh_keys/mac/ssh_mac_31.png)
 
 
-## 遺伝研スパコンゲートウェイへの接続確認
+## 遺伝研スパコンへの接続確認
 
 - 一般解析区画にログインする場合は、[<u>「一般解析区画 > ログイン方法(一般解析区画)」</u>](/general_analysis_division/ga_login)をご参照ください。
 - 個人ゲノム解析区画にログインする場合は、[<u>「個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)」</u>](/personal_genome_division/pg_login)をご参照ください。
