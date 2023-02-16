@@ -7,6 +7,8 @@ When you run a small number of programs that use multiple CPU cores and run for 
 
 To use the parallel job function in addition to the options described in the [Batch Jpbs (batch job)](/software/grid_engine/batch_jobs) page, specify the parallel environment with the `-pe` option.
 
+## Types of parallel jobs (overview)
+
 Parallel environment types provided by the NIG supercomputer are as follows.
   
 <table>
@@ -55,9 +57,9 @@ For example, when you specify as below, it means that you have specified 16 × 8
 ```
 
 
-### Details of parallel environment
+## Types of parallel jobs (detail)
 
-#### CPU and memory allocation
+### CPU and memory allocation
 
 The above example specifies one CPU core and the corresponding memory.
 
@@ -79,15 +81,12 @@ If the amount of memory is not specified when executing the qsub command (defaul
 
 ![](/img/software/grid_engine/pe_4_EN.png)
 
-
-#### parallel jobs(4) -pe mpi_N -pe pe_N
-
 `pe_N`, if you speify `pe_4 2`, the resources are allocated to two computers with four cores each. In the example in the figure below, memory is 8GB per CPU core, 4 cores x 8GB = 32GB each for each computer, a total of 32GB x 2 computers = 64GB  is allocated.
 
 ![](/img/software/grid_engine/pe_5_EN.png)
 
 
-#### How to know which compute nodes have been allocated in a parallel job
+### How to know which compute nodes have been allocated in a parallel job
 
 ```
 $ qstat
