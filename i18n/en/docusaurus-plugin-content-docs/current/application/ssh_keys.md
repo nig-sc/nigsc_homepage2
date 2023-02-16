@@ -60,7 +60,7 @@ When you check the save location of the key pair, you will find two files, `id_r
 ![](reg_ssh_EN.png)
  
 
-## Confirmation of connection to the NIG supercomputer gateway
+## Confirmation of connection to the NIG supercomputer
 
 - To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
 - To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).
