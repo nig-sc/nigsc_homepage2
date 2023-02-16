@@ -12,10 +12,10 @@ PowerShell, which comes standard with Windows, is used as an example.
 
 ## ①Create SSH public key and private key
 
+### Open PowerShell
+
 ![](/img/ssh_keys/windows/ssh_win_intro_1-1.png)
 
-
-### Open PowerShell
 
 First, click the Windows symbol.
 
@@ -258,7 +258,7 @@ After pasting, press the 'Next' button and continue filling in the [continue fil
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
 
-## Confirmation of connection to the NIG supercomputer gateway
+## Confirmation of connection to the NIG supercomputer
 
 - To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
 - To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).

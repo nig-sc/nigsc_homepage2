@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: ご利用案内
+title: ご利用概要
 ---
 
 ## 1. 一般解析区画の利用方法

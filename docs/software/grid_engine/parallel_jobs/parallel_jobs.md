@@ -8,8 +8,11 @@ title: パラレルジョブ
  
   
   
-  並列ジョブ機能を利用するには（バッチジョブの項で説明したオプションに加えて）-pe オプションを用いて parallel environment を指定します。
+  並列ジョブ機能を利用するには（バッチジョブの項で説明したオプションに加えて）`-pe` オプションを用いて parallel environment を指定します。
   
+## パラレルジョブの種類(概要)
+
+
   遺伝研スパコンで用意されている parallel environment の種類を以下に示します。
   
 <table>
@@ -17,24 +20,24 @@ title: パラレルジョブ
 <th width="300">parallel environment</th><th width="300">意味</th>
 </tr>
 <tr>
-  <td>def_slot N</td>
+  <td>`def_slot N`</td>
   <td>同一計算ノード上に N 個の CPU コアを確保する。(N が計算ノード上の CPU コア数を超えている場合はジョブが始まらない。）</td>
  </tr>
  <tr>
-  <td>mpi N</td>
+  <td>`mpi N`</td>
   <td>複数の計算ノードにわたって N 個の CPU コアを確保する。その際に計算ノードは round-robin 方式で選択される。結果としてなるべく多数の計算ノードに散った形でコアが確保される。</td>
 </tr>
 <tr>
-  <td>mpi-fillup N</td><td>複数の計算ノードにわたって N 個の CPU コアを確保する。その際に計算ノードの台数がなるべく少なくなるようコアが確保される。</td>
+  <td>`mpi-fillup N`</td><td>複数の計算ノードにわたって N 個の CPU コアを確保する。その際に計算ノードの台数がなるべく少なくなるようコアが確保される。</td>
 </tr>
 <tr>
-  <td>mpi_n N
+  <td>`pe_n N`
   
-  定義されている parallel environment は以下の通り。
+  定義されている parallel environment は以下の通り。<br/>
   
-  mpi_4, mpi_8, mpi_16, mpi_32, mpi_64,
+  `pe_4`, `pe_8`, `pe_16`, `pe_32`, `pe_64`,
   
-  mpi_5, mpi_10, mpi_20</td>
+  `pe_5`, `pe_10`, `pe_20`</td>
   <td>複数の計算ノードにわたって N 個のコアを確保する。その際各計算ノード上に n=4,8,16, … コアを確保する。</td>
 </tr>
 </table>
@@ -47,7 +50,7 @@ title: パラレルジョブ
 
 ### 並列ジョブに対して、メモリ要求量を指定する際の注意事項
 
-並列ジョブに対して-l s_vmem、-l mem_req を指定する場合、並列環境で指定した並列数と指定したメモリ量が掛け合わされた容量のメモリをシステム に要求してジョブが投入されます。
+並列ジョブに対して`-l s_vmem`、`-l mem_req` を指定する場合、並列環境で指定した並列数と指定したメモリ量が掛け合わされた容量のメモリをシステム に要求してジョブが投入されます。
 
 例えば、下記のように指定した場合、並列ジョブが使用するメモリ総量として 16×8=128GB を指定したことになります。 その点について注意した上で指定する要求メモリ量を決定してください。
 
@@ -69,96 +72,21 @@ qsubコマンド実行時にメモリ量を指定しない場合(デフォルト
 ![](/img/software/grid_engine/pe_1.png)
 
 
-#### 並列ジョブ(1) -pe def_slot 2-10
+`def_slot`は、必ず一台の計算機にリソースを取ろうとします。下図の例だと、メモリは1CPUコア当たり20GB、合計20GB x 2コア = 40GBが一台の計算機の中に確保されます。
 
-`-pe def_slot`を指定すると、必ず同一の計算ノード上に指定したコア数を確保します。
+![](/img/software/grid_engine/pe_2_JP.png)
 
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe def_slot 2
-#$ -l s_vmem=20G      
-#$ -l mem_req=20G   
-#$ -N an_example      
+`mpi`は、複数台の計算機に、なるべく均一にリソースを確保しようとします。下図の例だと、例えば、`mpi 2`と書くと、メモリは1CPUコア当たり20GB、各計算機に 1コアx20GB = 20GB ずつ、合計 20GB x 2台 = 40GB 確保されます。
 
-make -j 2
-```
+![](/img/software/grid_engine/pe_3_JP.png)
 
-![](/img/software/grid_engine/pe_2.png)
+`mpi-fillup`は、複数台の計算機の中で、なるべく1台の計算機にリソースを詰めて確保しようとします。入りきらない場合は、別の計算機にリソースを確保しようとします。これが、`def_slot`との違いです。下図の例だと、1台につきメモリ容量 64GBの計算機が2台ある場合、例えば、`mpi-fillup 4`と書くと、メモリは1CPUコア当たり20GB、2台の計算機のうち、どちらか一方の計算機に 3コア×20GB = 60GB、もう1台に1コア × 20GB = 20GB、合計 20GB × 4コア = 80GB 確保されます。
 
+![](/img/software/grid_engine/pe_4_JP.png)
 
-#### 並列ジョブ(2) -pe mpi -pe pe
+`pe_N`は、例えば`pe_4 2`と書くと2台の計算機に4コアずつリソースを取ります。メモリの取られ方は下図の通りだと１CPUコア当たり8GB、各計算機に 4コアx8GB = 32GB ずつ、合計 32GB x 2台 = 64GB 取られます。
 
-`-pe mpi`を指定すると、なるべく別の計算ノード上に指定したコア数を確保します。
-
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe mpi 2
-#$ -l s_vmem=20G      
-#$ -l mem_req=20G     
-#$ -N an_example      
-
-your_program
-```
-
-![](/img/software/grid_engine/pe_3.png)
-
-
-#### 並列ジョブ(3) -pe mpi-fillup 10 -pe pe-fillup 10
-
-`-pe mpi-fillup`を指定すると、なるべく同一の計算ノードに詰めて指定したコア数を確保します。
-
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe mpi-fillup 4
-#$ -l s_vmem=20G      
-#$ -l mem_req=20G     
-#$ -N an_example      
-
-your_program
-```
-
-![](/img/software/grid_engine/pe_4.png)
-
-
-#### 並列ジョブ(4) -pe mpi_N -pe pe_N
-
-`-pe mpi_N`を指定すると、各計算ノード上に指定したコア数を確保します。
-
-mpi_4, mpi_8, mpi_16, mpi_32, mpi_64, mpi_5, mpi_10, mpi_20 が用意されています。
-
-pe_4, pe_8, pe_16, pe_32, pe_64, pe_5, pe_10, pe_20が用意されています。
-
-```
-#!/bin/bash
-#$ -cwd        
-#$ -V          
-#$ -l epyc     
-#$ -l d_rt=192:00:00 
-#$ -l s_rt=192:00:00 
-#$ -pe mpi_4 2
-#$ -l s_vmem=8G      
-#$ -l mem_req=8G     
-#$ -N an_example      
-
-your_program
-```
-
-![](/img/software/grid_engine/pe_5.png)
+![](/img/software/grid_engine/pe_5_JP.png)
 
 
 #### 並列ジョブでどの計算ノードが確保されたかを知る方法
