@@ -5,6 +5,15 @@ title: Job accumulation status and estimated waiting time
 
 The figure below shows the status of job accumulation for each queue of Grid Engine and the estimated job wait time (the wait time prediction value of the job from just submitted to start running).
 
+In the line graph below, queueing time is the estimated waiting time of jobs.
+- Job waiting time is estimated by dividing the amount of jobs in the queue by the amount of jobs processed in an hour.
+- The amount of jobs in the queue is shown in blue on the bar graph.
+- The amount of jobs processed per hour is calculated from the 12-hour average of the vertical axis of the line graph (the amount of jobs processed in 10 minutes) multiplied by 6.
+
+The quantity of jobs is calculated as the number of slots occupied by jobs.
+
+<img alt="job accumlation status" src="https://ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
+
 - Left (the line graph): The amount of jobs per hour that have started running out of the jobs waiting in the queue.
 - Right (the bar chart)
     - Red: amount of jobs currently running
@@ -12,12 +21,8 @@ The figure below shows the status of job accumulation for each queue of Grid Eng
     - Green: amount of free resources
     - Pink: amount of jobs in error state
 
-
-The quantity of jobs is calculated as the number of slots occupied by jobs.
-
-<img alt="job accumlation status" src="https://ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
-
 The data is updated every hour.
+
 
 ### Reference: Slot definition
 
