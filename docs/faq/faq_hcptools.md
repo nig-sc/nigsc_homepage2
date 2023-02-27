@@ -1,6 +1,6 @@
 ---
 id: faq_hcptools
-title: FAQ (HCP tools)
+title: FAQ (Archaea tools(旧HCPtools))
 ---
 
 
