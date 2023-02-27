@@ -1,6 +1,6 @@
 ---
 id: github_discussions
-title: "Github Discussions"
+title: "Github Discussions (Q&A)"
 ---
 
 On 8 February 2023, the Github Discussions website has been set up as a place to discuss questions and answers to the NIG supercomputer.
