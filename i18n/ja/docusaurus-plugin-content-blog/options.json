@@ -8,7 +8,7 @@
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "最近のお知らせ",
+    "message": "最近のお知らせとメンテナンス情報",
     "description": "The label for the left sidebar"
   }
 }
