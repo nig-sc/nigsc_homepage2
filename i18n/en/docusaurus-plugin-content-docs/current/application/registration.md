@@ -112,6 +112,8 @@ This allows you to omit entering the detailed data about the responsible person.
   - If the account name of the responsible person is known, but the group name is unknown.
   - If neither the account name nor the group name of the responsible person is known.
 
+- If you do not know the account name of the responsible person and the group name, [<u>refer to FAQ</u>](/faq/faq_NewUser_registration/#what-should-i-enter-account-name-and-group-name-of-the-responsible-person).
+
 </td>
 </tr>
 

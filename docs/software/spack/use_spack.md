@@ -9,10 +9,8 @@ Spack はユーザ権限で利用できるパッケージマネージャです�
 参考資料
 
 - [Spack 公式ホームページ](https://spack.readthedocs.io/en/latest/#)
-- [Spack github リポジトリ](https://github.com/spack/spack)
+- [Spack github レポジトリ](https://github.com/spack/spack)
 - [Spack packages](https://spack.github.io/packages/) (spack で利用可能なパッケージの検索サイト)
-
-
 
 ## spack で利用可能なパッケージを表示する
 

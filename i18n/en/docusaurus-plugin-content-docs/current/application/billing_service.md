@@ -11,13 +11,13 @@ The NIG supercomputer is operated as a business of the Inter-University Research
 - Priority/occupied use of compute nodes
 - Use of the personal genome analysis section
 
-When using the billing service, fill in [Download the usage plan](/application/resource_extension) and send it to [Contact us](/application/reference).
+When using the billing service, fill in [<u>Download the usage plan</u>](/application/resource_extension) and send it to [<u>Contact us</u>](/application/reference).
 
 Note: Depending on the congestion status of the NIG supercomputer, you may not be able to use this service. (In principle, more than half of all resources that can be rented in the NIG supercomputer are allocated for the free service.)
 
 
 ## Price list
-Click and check [Use Policy](/application/use_policy)
+Click and check [<u>Use Policy</u>](/application/use_policy)
 
 ## Billing service list
 
@@ -40,7 +40,7 @@ The compute nodes and storage of the NIG supercomputer are roughly divided into 
 <tr>
 <td>
 
-[priority use of compute nodes (advance reservation)](/general_analysis_division/advance_reservation)
+[<u>priority use of compute nodes (advance reservation)</u>](/general_analysis_division/advance_reservation)
 <br />
 
 <br />
@@ -74,14 +74,14 @@ It is a service that removes the compute nodes from UGE management and occupies 
 (Thin, Medium nodes)
 <br />
 
-[Introduction（The Personal Genome Analysis Section）](/personal_genome_division/pg_introduction) 
+[<u>Introduction（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_introduction) 
 </td>
 </tr>
 
 <tr>
 <td>
 
-[high-speed storage](/general_analysis_division/largescale_storage)<br />
+[<u>high-speed storage</u>](/general_analysis_division/largescale_storage/#large-scale-use-of-high-speed-storage-quota-setting-only)<br />
 (only Quota settings)<br />
 <br />
 It is a service that specifies the available capacity for high-speed storage. The quota is specified as 1TB immediately after account application, but it can be expanded.
@@ -99,7 +99,7 @@ It is a service that specifies the available capacity for high-speed storage. Th
 <tr>
 <td>
 
-[archive storage](/general_analysis_division/largescale_storage)
+[<u>archive storage</u>](/general_analysis_division/largescale_storage/#large-scale-use-of-archive-storage)
 <br />
 It is a service that a certain amount of memory space is allocated on archive storage.
 </td>
@@ -114,7 +114,7 @@ It is a service that a certain amount of memory space is allocated on archive st
 <tr>
 <td>
 
-[DDBJ Group Cloud](/personal_genome_division/group_cloud)<br />
+[<u>DDBJ Group Cloud</u>](/personal_genome_division/group_cloud)<br />
 <br />
 It is a service that uploads data with a data structure conform to JGA to the cloud and shares it among researchers who are permitted to access the data.
 </td>
