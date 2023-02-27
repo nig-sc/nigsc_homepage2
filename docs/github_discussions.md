@@ -1,6 +1,6 @@
 ---
 id: github_discussions
-title: "Github Discussions"
+title: "Github Discussions (Q&A)"
 ---
 
 2023年2月8日(水)に、遺伝研スパコンへの質問・回答などの議論を行う場としてGithub Discussionsのサイトを開設しました。
