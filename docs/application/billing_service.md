@@ -12,11 +12,11 @@ title: "課金サービスの利用方法"
 - 個人ゲノム解析区画の利用
  
 
-課金サービス利用の際は、[利用計画表をダウンロード](/application/resource_extension)しご記入頂いた上、[問い合わせ先](/application/reference)までご送付ください。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。（原則として遺伝研スパコンで貸し出し可能な全リソースの1/2以上を無料サービスに割り当てております。）
+課金サービス利用の際は、[<u>利用計画表をダウンロード</u>](/application/resource_extension)しご記入頂いた上、[<u>問い合わせ先</u>](/application/reference)までご送付ください。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。（原則として遺伝研スパコンで貸し出し可能な全リソースの1/2以上を無料サービスに割り当てております。）
 
 
 ## 料金表
-料金表は[利用規程](/application/use_policy)をご参照ください。
+料金表は[<u>利用規程</u>](/application/use_policy)をご参照ください。
 
  
 
@@ -36,7 +36,7 @@ title: "課金サービスの利用方法"
 <tr>
 <td>
 
-[計算ノード 優先利用 （アドバンスリザベーション）](/general_analysis_division/advance_reservation)
+[<u>計算ノード 優先利用 （アドバンスリザベーション）</u>](/general_analysis_division/advance_reservation)
 <br />
 
 <br />
@@ -70,14 +70,14 @@ title: "課金サービスの利用方法"
 (Thin, Mediumノード)
 <br />
 
-[個人ゲノム解析環境の利用方法](/personal_genome_division/pg_introduction) 
+[<u>個人ゲノム解析環境の利用方法</u>](/personal_genome_division/pg_introduction) 
 </td>
 </tr>
 
 <tr>
 <td>
 
-[高速ストレージ](/general_analysis_division/largescale_storage)<br />
+[<u>高速ストレージ</u>](/general_analysis_division/largescale_storage#高速ストレージの大規模利用quota設定のみ)<br />
 (Quota設定のみ)<br />
 <br />
 高速ストレージに対して利用可能な容量を指定するサービスです。アカウント申請直後はQuotaが1TBに指定されていますがこれを拡張することができます。
@@ -95,7 +95,7 @@ title: "課金サービスの利用方法"
 <tr>
 <td>
 
-[アーカイブストレージ](/general_analysis_division/largescale_storage)
+[<u>アーカイブストレージ</u>](/general_analysis_division/largescale_storage#アーカイブストレージの大規模利用)
 <br />
 アーカイブストレージに一定容量を確保するサービスです。
 </td>
@@ -110,7 +110,7 @@ title: "課金サービスの利用方法"
 <tr>
 <td>
 
-[DDBJグループクラウド](/personal_genome_division/group_cloud)<br />
+[<u>DDBJグループクラウド</u>](/personal_genome_division/group_cloud)<br />
 <br />
 JGAに準じたデータ構造を持つデータをクラウド上にアップロードし、データアクセスが許可された研究者間で共有するサービスです。
 </td>
