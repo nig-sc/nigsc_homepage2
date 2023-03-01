@@ -1,6 +1,6 @@
 # NIG Supercomputer Home Page (version 2)
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The NIG supercomputer website ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ## Installing Node.js 
 
