@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Installing Node.js with nvm
+## Installing Node.js 
 
 Node.js must be installed as a prerequisite for building and launching the NIG supercomputer home page in your local environment.
 
