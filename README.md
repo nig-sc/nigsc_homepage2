@@ -18,7 +18,7 @@ Please check the following page to see what the latest version is. https://githu
 4. Install Node.js with `nvm install v16.18.1`.  (v16.18.1 is the appropriate one from the node.js version displayed in the aforementioned command.)
 5. Activate Node.js with `nvm use v16.18.1`.
 
-## Displaying the page for editing
+## Displaying the  for editing
 
 By starting the web server in the following way, the result of editing a markdown file is reflected on the screen in real time.
 
@@ -50,25 +50,23 @@ npm start -- --locale en
 ```
 
 
-### 静的サイトの生成
+## Generating the website for production
 
-実際のサービスに使うためには以下のコマンドで静的サイトをビルドする。英語版も含めてサイト全体が生成される。
-
+To use the site for actual service, build the website with the following command. The entire site, including the English version, will be generated.
 ```
 npx browserslist@latest --update-db
 npm run build  # Markdown => HTML
 ```
 
-生成された静的サイトをテスト用に表示するには、例えば以下のようにする。
+To display the generated web site for testing, for example
 
 ```
-npm run serve  # HTML 化されたサイトの表示 
+npm run serve  # Display the website converted to HTML 
 ```
+If you want to access from a remote environment, use `npm run serve -- --host 0.0.0.0`, etc.
 
-これによりローカル環境の web ブラウザ上に web ページが表示される。（リモート環境からアクセスしたい場合は`npm run serve -- --host 0.0.0.0`等とする）
 
-
-最終的には上記コマンドで出来た build ディレクトリを Apache サーバなどで見せれば良い。以下は一例。
+Finally, the build directory created by the above command should be shown to the Apache server, etc. The following is an example.
 
 ```
 sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html
