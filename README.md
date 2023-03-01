@@ -2,25 +2,21 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## 起動方法
+## Installing Node.js with nvm
 
+Node.js must be installed as a prerequisite for building and launching the NIG supercomputer home page in your local environment.
 
-### nvm を用いた Node.js のインストール
-
-前提として Node.js がインストールされている必要があります。
-
-1. nvm のインストール
+1. Installing `nvm`
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
+Please check the following page to see what the latest version is. https://github.com/nvm-sh/nvm
 
-最新バージョンが何かは以下のページにて確認してください。https://github.com/nvm-sh/nvm
-
-2. `source ~/.bashrc`などにより nvm をアクティベートする。
-3. `nvm ls-remote` で、利用可能な node.js のバージョンを表示させる。
-4. `nvm install v16.18.1` のようにして Node.js をインストールする。
-5. `nvm use v16.18.1` のようにして Node.js をアクティベートする。
+2. Activate nvm by running `source ~/.bashrc` or similar command.
+3. Run `nvm ls-remote` to display the available node.js versions.
+4. Install Node.js with `nvm install v16.18.1`. 
+5. Activate Node.js with `nvm use v16.18.1`.
 
 ### 編集用ページの表示
 
