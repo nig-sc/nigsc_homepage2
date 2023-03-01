@@ -18,32 +18,32 @@ Please check the following page to see what the latest version is. https://githu
 4. Install Node.js with `nvm install v16.18.1`.  (v16.18.1 is the appropriate one from the node.js version displayed in the aforementioned command.)
 5. Activate Node.js with `nvm use v16.18.1`.
 
-### 編集用ページの表示
+## Displaying the page for editing
 
-以下の方法で web サーバを起動すると、markdown ファイルの編集結果がリアルタイムで画面上に反映される。
+By starting the web server in the following way, the result of editing a markdown file is reflected on the screen in real time.
 
-1. この git リポジトリを clone する。
+1. Clone the following git repository.
 
 ```
 git clone https://github.com/oogasawa/nigsc_homepage2
 ```
 
-2. 以下のコマンドにて web サーバを起動する。（ブラウザが開きページが表示される）
+2. Start the web server with the following command (The browser will open and the page will be displayed.)
 
 ```
 cd nigsc_homepage2
-npm install  # 初回のみ
+npm install  # First time only
 npm start
 ```
 
-これによりローカル環境の web ブラウザ上に web ページが表示される。
+This displays the web page in a web browser in the local environment.
 
-- これで表示されるのは開発用サイトであり、全文検索が効かない、多言語設定が効かないといった制限がある。
-- リモート環境からアクセスしたい場合は`npm start -- --host 0.0.0.0`等とする。
+- This will only display the development site, and there are some limitations such as full-text search does not work, and multilingual settings do not work.
+- If you want to access from a remote environment, use `npm start -- --host 0.0.0.0`.
 
 ![](top_page.png)
 
-英語版を表示するには`npm start`の際に言語を指定する必要がある。
+To display the English version, you need to specify the language at `npm start`.
 
 ```
 npm start -- --locale en
