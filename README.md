@@ -15,7 +15,7 @@ Please check the following page to see what the latest version is. https://githu
 
 2. Activate nvm by running `source ~/.bashrc` or similar command.
 3. Run `nvm ls-remote` to display the available node.js versions.
-4. Install Node.js with `nvm install v16.18.1`.  (v16.18.1 is the appropriate one from the node.js version displayed in the aforementioned command.)
+4. Install Node.js with `nvm install` command, for example `nvm install v16.18.1`.  (Please select the appropriate version of node.js from the output of the aforementioned command and use it.)
 5. Activate Node.js with `nvm use v16.18.1`.
 
 ## Displaying the  for editing
