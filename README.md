@@ -1,6 +1,6 @@
 # NIG Supercomputer Home Page (version 2)
 
-Thie home page ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The NIG Supercomputer home page ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ## Installing Node.js 
 
@@ -18,7 +18,7 @@ Please check the following page to see what the latest version is. https://githu
 4. Install Node.js with `nvm install` command, for example `nvm install v16.18.1`.  (Please select the appropriate version of node.js from the output of the aforementioned command and use it.)
 5. Activate Node.js with `nvm use v16.18.1`.
 
-## Displaying the  for editing
+## Displaying for editing
 
 By starting the web server in the following way, the result of editing a markdown file is reflected on the screen in real time.
 
