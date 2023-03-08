@@ -1,6 +1,6 @@
 ---
 slug: 2023-03-08-Lustre8_maintenance
-title: "2023年3月8日(水) Lustre8の緊急メンテナンス"
+title: "(終了) 2023年3月8日(水) Lustre8の緊急メンテナンス"
 tags:
   - maintenance
 authros:
