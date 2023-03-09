@@ -1,6 +1,6 @@
 ---
 slug: 2023-03-08-Lustre8_maintenance
-title: "March 8, 2023: Emergency maintenance of Lustre8"
+title: "(Ended) March 8, 2023: Emergency maintenance of Lustre8"
 tags:
   - maintenance
 authros:
