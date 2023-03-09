@@ -24,21 +24,25 @@ In principle, the purpose of use and results are open to the public. However, if
 
 ## Precautions for FEFTA
 
-If your nationality or current residence stipulated by FEFTA is the areas other than listed in appended table 3 of the Export Trade Control Order of Catch-All Controls, provide us with the following information a)b)c) for the examination when applying for an account. (Refer to the section of [related laws and regulations](/application/legislation). )
+If your nationality or current residence stipulated by FEFTA is the areas other than listed in appended table 3 of the Export Trade Control Order of Catch-All Controls, provide us with the following information for the examination when applying for an account. (Refer to the section of [related laws and regulations](/application/legislation). )
 
+- whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
 - a) Education, Professional experience and research content
 - b) Current Employment status (full-time or part-time)
-- c) whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
+- c) Period of use of the supercomputer(date of account issue - yy/mm/dd)
 
 Example
 
 ```
 # Whether or not the applicant is a domestic resident stipulated by FEFTA. (Whether or not the period of residence in Japan is for six months or more.) 
 
-The applicant OOO is a non-resident. The reason is that they have been in Japan for less than six months, reside overseas or foreign employees.
+・The applicant OOO is a non-resident. The reason is that they have been in Japan for less than six months, reside overseas or foreign employees.
+・The applicant OOO currently belongs to xxx university and has a supercomputer account, but will be changed to the following overseas research institutes from MM 20YY.
 
-The applicant OOO currently belongs to xxx university and has a supercomputer account, but will be changed to the following overseas research institutes from MM 20YY.
+# whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI) (A foreigner who has been enrolled or is expected to be enrolled for more than six months and who falls into one of the following categories is in the specified category.)
 
+∙ Still in employment abroad.
+∙ Is a state-funded student.
 
 # Answer each question as below.
 
@@ -59,7 +63,7 @@ Aug 2016 - Present　
 b) Current Employment status
 full-time or part-time
 
-c) whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
+c) Period of use of the supercomputer(date of account issue - yy/mm/dd)
 ```
 
 
