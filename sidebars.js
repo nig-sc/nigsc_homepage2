@@ -189,6 +189,7 @@ module.exports = {
             label: "利用規定等",
             items: [
                 "application/application",
+                "application/signing_PDF",
                 "application/use_policy",
                 "application/legislation",
             ],
