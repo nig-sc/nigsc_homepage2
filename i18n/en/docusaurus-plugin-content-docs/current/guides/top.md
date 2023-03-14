@@ -19,6 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
+- [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
 - [Opened Github Discussions](/en/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 - [The official support website for Bytix Archaea (formerly HCPtools), developed by CLEALINK TECHNOLOGY Co., Ltd., has been released.](/advanced_guides/advanced_guide#archaea-toolsformerly-hcptools) (2023.01.10)
 - &#x1F9EC; [Added the introduction page of the Imputation Server developed by Genome Analytics Japan Inc.](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
