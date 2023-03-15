@@ -24,7 +24,6 @@ sidebar_label: トップページ
 - [Github Discussionsを開設しました](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 - [(株)クレアリンクテクノロジーが開発したBytix Archaea (旧HCPtools)の公式サポートサイトが公開されました](/advanced_guides/advanced_guide#archaea-tools旧hcptools) (2023.01.10)
 - &#x1F9EC; [(株)ゲノムアナリティクスジャパンが開発したインピュテーションサーバの紹介ページを追加しました](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
-- [電力使用状況のページを追加しました](/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
 
 
 
