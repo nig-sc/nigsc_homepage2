@@ -3,6 +3,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const { default: pluginContentBlog } = require('@docusaurus/plugin-content-blog')
 const { DEFAULT_OPTIONS } = require('@docusaurus/plugin-content-blog/lib/options')
 
+const GOOGLE_TAG_ID = 'GT-K8K7B54'
+
+/** @type {import('@docusaurus/types').Config} */
 module.exports = {
   title: 'NIG supercomputer',
   tagline: 'National Institute of Genetics, Japan',
@@ -14,9 +17,24 @@ module.exports = {
   organizationName: 'oogasawa', // Usually your GitHub org/user name.
   projectName: 'nigsc_homepage2', // Usually your repo name.
 
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja', 'en']
+  },
+
+  scripts: [{
+    src: '/js/google-tag-default.js'
+  }, {
+    async: true,
+    src: `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`
+  }, {
+    src: '/js/google-tag-config.js'
+  }],
+
   presets: [
     [
       '@docusaurus/preset-classic',
+      /** @type {import("@docusaurus/preset-classic").Options} */
       ({
         theme: {
           customCss: [require.resolve('./src/css/custom.css')]
@@ -68,10 +86,6 @@ module.exports = {
           docId: 'report/report',
           label: '成果報告'
         },
-        // {
-        //   to: '/blog',
-        //   label: 'お知らせ',
-        // },
         {
           type: 'localeDropdown',
           position: 'right'
@@ -157,10 +171,5 @@ module.exports = {
         }
       }, { ...DEFAULT_OPTIONS }
     ]
-  ],
-
-  i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja', 'en']
-  }
+  ]
 }

@@ -1,0 +1,44 @@
+.consentCookie {
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline: 0;
+}
+
+.consentCookie__container {
+  background-color: #fff;
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.consentCookie__messages {
+  flex-grow: 1;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.consentCookie__actions {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.consentCookie__button {
+  border: none;
+  color: white;
+  background-color: var(--ifm-color-primary);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
