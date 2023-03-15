@@ -1,7 +1,19 @@
 ---
 id: signing_PDF
-title: "電子サインでPDFに署名する方法"
+title: "誓約書に署名する方法"
 ---
+
+新規の利用申請の際には、責任者の方に誓約書を提出していただいております。
+
+誓約書には署名欄があり、電子サイン(Adobe Acrobat Sign)をお願いしております。
+
+
+## 参考
+
+- アドビ公式ページ「電子サインの作成方法」
+
+https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
+
 
 ## 署名の手順
 
@@ -125,10 +137,3 @@ title: "電子サインでPDFに署名する方法"
 AdobeのAcrobat Signから、自動的に、責任者と申請者へ、誓約書PDFの署名が完了し、返信されたことを通知するメールが届きます。
 
 アカウント登録証の到着をお待ちください。
-
-
-## 参考
-
-- アドビ公式ページ「電子サインの作成方法」
-
-https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
