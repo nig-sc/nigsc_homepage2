@@ -23,7 +23,6 @@ Due to disk space constraints, we do not back up the data in the user home direc
 - [Opened Github Discussions](/en/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 - [The official support website for Bytix Archaea (formerly HCPtools), developed by CLEALINK TECHNOLOGY Co., Ltd., has been released.](/advanced_guides/advanced_guide#archaea-toolsformerly-hcptools) (2023.01.10)
 - &#x1F9EC; [Added the introduction page of the Imputation Server developed by Genome Analytics Japan Inc.](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
-- [Added the power consumption page](/en/blog/2022-09-02-news_PowerConsumption) (2022.09.02)
 
 
 ## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome analysis section and  large-scale storage on the general analysis section 
