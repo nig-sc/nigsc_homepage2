@@ -58,5 +58,4 @@ For more information about this section:
 ## 3. Notes.
 
 - Our Institute will make every effort to provide the user with a stable computer system, but will not be held responsible or liable for any damage incurred by the user as a result of using the computer system, or for any other damage incurred in relation to the computer system. Therefore, users are responsible for backing up your research data, etc.
-- Our computer system may be shut down without informing the user.
 - In the event of irregularities such as subletting of accounts or use of accounts for purposes other than research, the responsible unit may be asked to suspend accounts for a month or more or submit a report. Please use it appropriately.
