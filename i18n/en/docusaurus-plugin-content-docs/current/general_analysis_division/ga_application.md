@@ -32,7 +32,7 @@ The general analysis section of NIG supercomputer can be used with a computer ru
     <li>It takes longer time if the examination is required by the Organization such as foreign exchange law.</li>
     </ul>
 </li>
-<li>Confirm your initial password with your account registration card and start using the service</li>
+<li>Confirm your initial password with your account registration certificate and start using the service</li>
     <ul>
     <li>For how to login the general analysis section, refer to the pages after <a href="https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_login/"><u>How to Login (The general analysis section)</u></a>.</li>
     </ul>

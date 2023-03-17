@@ -52,9 +52,9 @@ If you don't know the account name or group name of the responsible person, foll
 
 You do not need to register a new application again.
 
-Please wait for your account registration card to be sent to you by post.
+Please wait for your account registration certificate to be sent to you by post.
 
-After you received your account registration card, 
+After you received your account registration certificate, 
 login from the following link and register your SSH public key.
 
 [<u>Change of application details > Account > SSH Key</u>](/application/registration/#change-of-application-details)
