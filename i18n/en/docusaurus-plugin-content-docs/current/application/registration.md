@@ -109,11 +109,9 @@ For security traceability reasons, we ask you to designate a responsible person 
 - If you know both the account name and the group name of the responsible person, enter them in the form at the top.
 This allows you to omit entering the detailed data about the responsible person.
 
-- Click the check box in the following cases. After clicking the check box, the screen shown on the left is displayed. Then enter the information of the responsible person.
-  - If the account name of the responsible person is known, but the group name is unknown.
-  - If neither the account name nor the group name of the responsible person is known.
+- If you know the account name of the responsible person but do not know the group name, or both are unknown, click the check box in the following cases. After clicking the check box, the screen shown on the left is displayed. Then enter the information of the responsible person.
 
-- If you do not know the account name of the responsible person and the group name, [<u>refer to FAQ</u>](/faq/faq_NewUser_registration/#what-should-i-enter-account-name-and-group-name-of-the-responsible-person).
+- If you do not know what to enter for the account and group name of the responsible person, [<u>refer to FAQ</u>](/faq/faq_NewUser_registration/#what-should-i-enter-account-name-and-group-name-of-the-responsible-person).
 
 </td>
 </tr>

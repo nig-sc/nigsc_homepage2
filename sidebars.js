@@ -43,6 +43,7 @@ module.exports = {
                 "software/software"
             ]
         },
+        "start_the_service",
         "introduction",
         {
             type: "category",
