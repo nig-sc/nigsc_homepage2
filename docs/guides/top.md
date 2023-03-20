@@ -20,9 +20,9 @@ sidebar_label: トップページ
 
 ## 最近のお知らせ
 
-- [誓約書へのサインが押印からAdobe社の電子サインになりました](/blog/2023-03-14-adobe_sign) (2023.03.14)
-- [Github Discussionsを開設しました](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
-- [(株)クレアリンクテクノロジーが開発したBytix Archaea (旧HCPtools)の公式サポートサイトが公開されました](/advanced_guides/advanced_guide#archaea-tools旧hcptools) (2023.01.10)
+- [誓約書へのサインが押印から Adobe 社の電子サインになりました](/blog/2023-03-14-adobe_sign) (2023.03.14)
+- [Github Discussions を開設しました](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
+- [(株)クレアリンクテクノロジーが開発した Bytix Archaea (旧 HCPtools)の公式サポートサイトが公開されました](/advanced_guides/advanced_guide#archaea-tools 旧 hcptools) (2023.01.10)
 - &#x1F9EC; [(株)ゲノムアナリティクスジャパンが開発したインピュテーションサーバの紹介ページを追加しました](/advanced_guides/advanced_guide#nbdc-ddbj-imputation-server-beta) (2022.10.18)
 
 
@@ -64,9 +64,33 @@ sidebar_label: トップページ
 
 以下は例年通りの実施となります。
 
-- [<u>12 月 31 日を以て、課金を伴う計画の変更は締め切りました。</u>](/application/invoice/#請求書の発行)
-- [<u>1 月より令和 4 年度(2022 年度)の年度末アカウント継続申請を受け付けます。</u>](/application/renewal)
-- [<u>1 月より令和 5 年度(2023 年度)の利用計画表を受け付けます。</u>](/application/resource_extension)
+- [12 月 31 日を以て、課金を伴う計画の変更は締め切りました。](/application/invoice/#請求書の発行)
+- [1 月より令和 4 年度(2022 年度)の年度末アカウント継続申請を受け付けます。](/application/renewal)
+- [1 月より令和 5 年度(2023 年度)の利用計画表を受け付けます。](/application/resource_extension)
+
+
+## 2023 年度の定期メンテナンス等
+
+2023 年度の定期メンテナンスは 1 回を予定しています。
+
+- 12 月頃(遺伝研法定停電時)
+
+また、CentOS 7 が 2024 年 6 月 30 日に End-Of-Life を迎えることを受け、2023 年 8 月頃から遺伝研スパコンの OS を Ubuntu Linux に順次移行する予定です。移行計画が決まりましたらホームページ上でお知らせします。
+
+- なるべく利用に影響がないように移行する予定ですが、利用可能な計算ノード数が一時的に減少します。
+- OS が変更となるためユーザの解析環境も移行が必要となる場合があります。
+
+
+以下は例年通りの実施となります。
+
+- [2023 年 6 月 30 日 : 年度末更新をしていないユーザのアカウント停止処理](/application/renewal)
+- [2023 年 7 月 31 日 : 課金サービス第 1 期締め日](/application/invoice/#請求書の発行)
+- [2023 年 11 月 30 日 : 課金サービス第 2 期締め日](/application/invoice/#請求書の発行)
+- [2023 年 12 月 31 日 : 課金を伴う計画の変更締め切り。](/application/invoice/#請求書の発行)
+- [2024 年 1 月より令和 5 年度(2023 年度)の年度末アカウント継続申請を受け付けます。](/application/renewal)
+- [2024 年 1 月より令和 6 年度(2024 年度)の利用計画表を受け付けます。](/application/resource_extension)
+
+
 
 ## 謝辞について
 
