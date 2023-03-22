@@ -257,7 +257,11 @@ module.exports = {
                 },
             ],
          },
-        "github_discussions",
+        {
+            type: "link",
+            label: "Github Discussions(Q&A)",
+            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+        },
         "application/reference",
     ],
 
