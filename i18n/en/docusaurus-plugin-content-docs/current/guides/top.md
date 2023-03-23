@@ -51,10 +51,13 @@ However, please note that availability is not guaranteed and we may not be able 
 
 If you want to continue using our service in the next fiscal year (2023), you need to [<u>Applying for a renewal of your account of the end of the fiscal year</u>](/application/renewal) for the fiscal year 2022 by 31 March 2023.
 
-However, those who applied after January 2023 do not need to apply for an end-of-year account renewal for the next financial year (FY2023).
+(Those who applied after January 2023 do not need to apply for an end-of-year account renewal for the next financial year (FY2023).)
+
+Due to the renewal of the application system in July 2022, there have been some cases of system malfunctions when applying.
+For information on how to deal with this, [please refer to FAQ](/faq/faq_renewal). We apologise for the inconvenience but we would appreciate your cooperation.
 
 
-## Scheduled maintenance in 2022
+## Scheduled maintenance in FY 2022
 
 Scheduled maintenance for FY2022 has been completed.
 
@@ -64,9 +67,26 @@ Scheduled maintenance for FY2022 has been completed.
 
 The following will be implemented as in previous years.
 
-- [<u>Changes to plans with charges have been closed as of 31 December.</u>](/application/invoice/#3rd-period)
+- [<u>Changes to plans with charges for 2022 (FY2022) have been closed as of 31 December.</u>](/application/invoice/#3rd-period)
 - [<u>End-of-year renewals for 2022 (FY2022) are accepted from January 2023.</u>](/application/renewal)
 - [<u>From January 2023, we start accepting applications for the usage plan table for the year 2023.</u>](/application/resource_extension)
+
+
+## Scheduled for FY 2023
+Regular maintenance is scheduled once.
+- Around December (during the NIG's legal power outage)
+
+As CentOS 7 will reach End-Of-Life on 30 June 2024, the OS of the NIG supercomputer will be migrated to Ubuntu Linux gradually from around August 2023. When the migration plan is decided, we will announce it on our website.
+- We plan to migrate as little as possible, but the number of available computer nodes will be temporarily decreased.
+- The OS is changed, so the user's analysis environment may also need to be migrated.
+
+The following will be implemented as usual.
+- [June 30: Account suspension process for users who have not renewed at the end of the fiscal year](/application/renewal)
+- [July 31: Billing service 1st period closing date](/application/invoice/#issuing-invoices)
+- [November 30: Billing service 2nd closing date](/application/invoice/#issuing-invoices)
+- [December 31: Deadline for changes to plans with billing](/application/invoice/#issuing-invoices)
+- [End-of-year renewals for 2023 (FY2023) are accepted from January 2024.](/application/renewal)
+- [From January 2024, we start accepting applications for the usage plan table for the year 2024.](/application/resource_extension)
 
 
 ## About Acknowledgements
