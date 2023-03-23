@@ -19,6 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
+- &#x26A0; [Extended deadline for account renewal application at the end of FY2022](/en/blog/2023-03-23-renewal-date-extended) (2023.03.23)
 - [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
 - [Opened Github Discussions](/en/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 - [The official support website for Bytix Archaea (formerly HCPtools), developed by CLEALINK TECHNOLOGY Co., Ltd., has been released.](/advanced_guides/advanced_guide#archaea-toolsformerly-hcptools) (2023.01.10)
@@ -49,7 +50,7 @@ However, please note that availability is not guaranteed and we may not be able 
 
 ## Applying for a renewal of your account of the end of the fiscal year
 
-If you want to continue using our service in the next fiscal year (2023), you need to [<u>Applying for a renewal of your account of the end of the fiscal year</u>](/application/renewal) for the fiscal year 2022 by 31 March 2023.
+If you want to continue using our service in the next fiscal year (2023), you need to [<u>Applying for a renewal of your account of the end of the fiscal year</u>](/application/renewal) for the fiscal year 2022 by <font color="red"> ~~31 March~~ 7 May</font> 2023.
 
 (Those who applied after January 2023 do not need to apply for an end-of-year account renewal for the next financial year (FY2023).)
 
