@@ -3,7 +3,7 @@ id: renewal
 title: "Applying for a renewal of your account of the end of the fiscal year"
 ---
 
-We decided to extend the end-of-year(FY2022) renewal deadline as follows. For more information about the extension, [see news](/blog/2023-03-23-renewal-date-extended).
+We decided to extend the end-of-year(FY2022) renewal deadline as follows. For more information about the extension, [see news](/blog/2023-03-23-renewal-date-extended).　For information on how to deal with this, [please refer to FAQ](/faq/faq_renewal).
 
 Deadline for renewal applications: 31 March 2023 (Friday) → extended to 7 May 2023 (Sunday)
 
