@@ -37,4 +37,4 @@ title: "問い合わせ先"
 
 遺伝研スパコン ホームページの内容への質問や修正の提案は、以下の Github リポジトリへの Issue や Pull request として受け付けております。
 
-- [[&#x1f517;<u>https://github.com/nig-sc/nigsc_homepage2</u>](https://github.com/nig-sc/nigsc_homepage2)
+- [&#x1f517;<u>https://github.com/nig-sc/nigsc_homepage2</u>](https://github.com/nig-sc/nigsc_homepage2)

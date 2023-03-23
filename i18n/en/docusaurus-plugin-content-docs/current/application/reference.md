@@ -41,4 +41,4 @@ About technical questions such as software installation, please ask in [&#x1f517
 
 If you have any questions or suggestions for modifications to the content of the NIG Supercomputer website, you can submit them as an Issue or Pull request to the Github repository.
 
-- [[&#x1f517;<u>https://github.com/nig-sc/nigsc_homepage2</u>](https://github.com/nig-sc/nigsc_homepage2)
+- [&#x1f517;<u>https://github.com/nig-sc/nigsc_homepage2</u>](https://github.com/nig-sc/nigsc_homepage2)
