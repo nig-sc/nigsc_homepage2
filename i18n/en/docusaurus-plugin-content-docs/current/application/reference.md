@@ -30,19 +30,15 @@ Details of your request:
 
 # Contact for questions about software and the system provided by NIG
 
-In order to facilitate the accumulation and sharing of questions and answers received from users, you can ask in [Github Discussions](https://github.com/nig-sc/nigsc_homepage2/discussions).
-Note that you need your Github account to use it.
+About technical questions such as software installation, please ask in [&#x1f517;<u>Github Discussions</u>](https://github.com/nig-sc/nigsc_homepage2/discussions) in order to facilitate the accumulation and sharing of questions and answers from users. We would be grateful for your cooperation, as it will help users who face similar problems in the future.
 
-We welcome answers from users. We would be grateful for your cooperation.
+- Your Github account is required for use.
+- If you know of a solution to a question, not only for the supercomputer team, it would be helpful if you could write an answer.
+- We may also ask for your help with questions sent to sc-helpdesk when we think it will help other users.
 
-- Questions about installing software
-- Questions about [Analysis pipelines](/software/#analysis-pipeline) and [data transfer systems](/software/#analysis-pipeline) provided by NIG supercomputer
-
-We may also ask you to help us with questions received by email if we consider them to be helpful to other users.
-We appreciate your understanding in advance.
 
 # Contact for questions and requests regarding the NIG supercomputer website
 
 If you have any questions or suggestions for modifications to the content of the NIG Supercomputer website, you can submit them as an Issue or Pull request to the Github repository.
 
-- [https://github.com/nig-sc/nigsc_homepage2](https://github.com/nig-sc/nigsc_homepage2)
+- [[&#x1f517;<u>https://github.com/nig-sc/nigsc_homepage2</u>](https://github.com/nig-sc/nigsc_homepage2)

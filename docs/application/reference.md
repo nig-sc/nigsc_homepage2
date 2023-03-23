@@ -26,21 +26,15 @@ title: "問い合わせ先"
 
 # ソフトウェアや遺伝研提供システムに関する質問窓口
 
-ユーザーから頂いた質問や回答の蓄積・共有を円滑に行うため、
-以下については [Github Discussions](https://github.com/nig-sc/nigsc_homepage2/discussions) で受け付けております。
-ご利用には Github のアカウントが必要ですのでご注意ください。
+ユーザーから頂いた質問や回答の蓄積・共有を円滑に行うため、 ソフトウェアのインストール等の技術的な質問ついては [&#x1f517;<u>Github Discussions</u>](https://github.com/nig-sc/nigsc_homepage2/discussions) で受け付けております。 今後同様の問題に直面したユーザの助けにもなると思いますので、ご協力いただけますと幸いです。
 
-またユーザーの皆様からの回答も歓迎しております。ご協力いただけると幸いです。
+- ご利用には Github のアカウントが必要です。
+- スパコンチームに限らず質問に対する解決策をご存じの方は回答を書き込んでいただけますと助かります。
+- sc-helpdeskにいただいたご質問についても他のユーザの参考になると考えられる場合はご協力をお願いする場合があります。
 
-- ソフトウェアのインストールに関する質問
-- 遺伝研スパコンで提供している[解析パイプライン](/software/#解析パイプライン)や[データ転送システム](/software/#データ転送データ共有)などに関する質問
-
-
-メールでいただいたご質問でも、他のユーザの参考になると判断した場合にはご協力をお願いすることがあります。
-あらかじめご了承下さい。
 
 # 遺伝研スパコン ホームページに関する質問・要望窓口
 
 遺伝研スパコン ホームページの内容への質問や修正の提案は、以下の Github リポジトリへの Issue や Pull request として受け付けております。
 
-- [https://github.com/nig-sc/nigsc_homepage2](https://github.com/nig-sc/nigsc_homepage2)
+- [[&#x1f517;<u>https://github.com/nig-sc/nigsc_homepage2</u>](https://github.com/nig-sc/nigsc_homepage2)
