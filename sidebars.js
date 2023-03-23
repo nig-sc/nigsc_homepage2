@@ -365,6 +365,7 @@ module.exports = {
                 "faq/faq_NewUser_registration",
                 "faq/faq_sshkeys_mac",
                 "faq/faq_sshkeys_windows",
+                "faq/faq_renewal",
             ]
         },
     ],

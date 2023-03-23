@@ -51,6 +51,8 @@ However, please note that availability is not guaranteed and we may not be able 
 
 If you want to continue using our service in the next fiscal year (2023), you need to [<u>Applying for a renewal of your account of the end of the fiscal year</u>](/application/renewal) for the fiscal year 2022 by 31 March 2023.
 
+However, those who applied after January 2023 do not need to apply for an end-of-year account renewal for the next financial year (FY2023).
+
 
 ## Scheduled maintenance in 2022
 
