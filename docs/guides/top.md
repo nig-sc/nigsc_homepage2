@@ -20,6 +20,7 @@ sidebar_label: トップページ
 
 ## 最近のお知らせ
 
+- &#x26A0; [今年度(2022 年度)の年度末アカウント継続申請の受付期限を延長しました](/blog/2023-03-23-renewal-date-extended) (2023.03.23)
 - [誓約書へのサインが押印からAdobe社の電子サインになりました](/blog/2023-03-14-adobe_sign) (2023.03.14)
 - [Github Discussionsを開設しました](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 - [(株)クレアリンクテクノロジーが開発したBytix Archaea (旧HCPtools)の公式サポートサイトが公開されました](/advanced_guides/advanced_guide#archaea-tools旧hcptools) (2023.01.10)
@@ -50,7 +51,7 @@ sidebar_label: トップページ
 
 ## 年度末アカウント継続申請について
 
-来年度(2023 年度)も継続して利用をご希望の場合は、2023 年 3 月 31 日までに、2022 年度の[<u>年度末アカウント継続申請</u>](/application/renewal)が必要です。
+来年度(2023 年度)も継続して利用をご希望の場合は、2023 年<font color="red"> ~~3 月 31 日~~ 5 月 7 日</font>までに、2022 年度の[<u>年度末アカウント継続申請</u>](/application/renewal)が必要です。
 
 (2023年1月以降に申請をされた方は、来年度(2023 年度)の年度末アカウント継続申請を行う必要はありません。)
 
