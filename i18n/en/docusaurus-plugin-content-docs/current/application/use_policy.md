@@ -5,12 +5,12 @@ title: "Use Policy"
 
 
 - [Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems (Revised on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
-- [Appendix 1-3 for the Rules of Use (Revised on 2022)](/pdf/tables_of_nigsc_use_policy_20220221.pdf)
+- [Appendix 1-3 for the Rules of Use (Revised on 2023)](/pdf/tables_of_nigsc_use_policy_20230403.pdf)
 - [Information security at the Research Organization of Information and Systems](/pdf/ROIS_security_policy.pdf)
 
 ---
 
-Price list (Revised on 2022)
+Price list (Revised on 2023)
 
 Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems
 
@@ -21,7 +21,7 @@ Price for the Use for the general analysis section large-scale(excluding tax)
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2" rowspan="3">high-speed storage<br />(only Quota settings ※1)</td>
+			<td colspan="2" rowspan="3">high-speed storage<br />(※1)</td>
 			<td>Free 30TB or less</td>
 			<td>0 yen</td>
 		</tr>
@@ -31,11 +31,6 @@ Price for the Use for the general analysis section large-scale(excluding tax)
 		</tr>
 		<tr>
 			<td colspan="2">Example: Used capacity is 30TB or more and less than 40TB 111,112 yen<br /> Used capacity is 40TB or more and less than 50TB 138,890 yen </td>
-		</tr>
-		<tr>
-			<td colspan="2">archive storage</td>
-			<td>per 10TB a year</td>
-			<td>108,333 yen</td>
 		</tr>
 		<tr>
 			<td rowspan="4">priority use of compute nodes  (※2)</td>
@@ -65,7 +60,7 @@ The billing amount is prorated based on the number of days used.
 
 (※1) Set the maximum available limit (quota) for a user or group. When storage is extremely congested, the storage capacity limit may be reached before the upper limit is reached.
 
-(※1) The compute node priority use service is a service that reserves execution using the advanced reservation function of the grid engine.
+(※2) The compute node priority use service is a service that reserves execution using the advanced reservation function of the grid engine.
 
 **Appendix 2（Pertaining to Article 12）**
 
@@ -74,18 +69,13 @@ Price for the Use for the personal genome analysis section large-scale(excluding
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2" rowspan="2">high-speed storage<br />(only Quota settings ※1)</td>
+			<td colspan="2" rowspan="2">high-speed storage<br />(※1)</td>
 			<td>Basic Bill</td>
 			<td>83,333 yen</td>
 		</tr>
 		<tr>
 			<td>per 10TB a year</td>
 			<td>27,778 yen</td>
-		</tr>
-		<tr>
-			<td colspan="2">archive storage</td>
-			<td>per 10TB a year</td>
-			<td>108,333 yen</td>
 		</tr>
 		<tr>
 			<td>DDBJ Group Cloud</td>
@@ -97,7 +87,7 @@ Price for the Use for the personal genome analysis section large-scale(excluding
 			<td rowspan="4">Access Restricted Data Group Shared Database Service(※2)</td>
 			<td>archive storage (Capacity Guarantee)</td>
 			<td>per 10TB a year</td>
-			<td>108,333 yen</td>
+			<td>40,000 yen</td>
 		</tr>
 		<tr>
 			<td>The Request and Response Development</td>
@@ -170,4 +160,5 @@ The billing amount is prorated based on the number of days used.
 
 Refer to the following for previous Appendix 1-3.
 
-[Appendix 1-3 for the Rules of Use (Revised on May 1, 2020)](/pdf/tables_of_nigsc_use_policy_2.pdf)
+- [Appendix 1-3 for the Rules of Use (Revised on May 1, 2020)](/pdf/tables_of_nigsc_use_policy_2.pdf)
+- - [Appendix 1-3 for the Rules of Use (Revised on 2022)](/pdf/tables_of_nigsc_use_policy_20220221.pdf)
