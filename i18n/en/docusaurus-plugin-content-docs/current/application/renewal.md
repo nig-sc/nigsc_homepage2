@@ -7,9 +7,11 @@ We decided to extend the end-of-year(FY2022) renewal deadline as follows. For mo
 
 Deadline for renewal applications: 31 March 2023 (Friday) → extended to 7 May 2023 (Sunday)
 
+## When to apply
 
-- [&#x1f517;<u>Login to your account page</u>](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256) and submit your application.
+Applications are accepted from 1 January to 31 March every year.
 
+## How to apply
 
 [&#x1f517;<u>Login to your account page</u>](https://sc-account.ddbj.nig.ac.jp/auth/realms/master/protocol/openid-connect/auth?client_id=sc&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fsc-account.ddbj.nig.ac.jp%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=6ygcuJParJ3i8ZlDMnKicXvW3MxkWp4t06IBKOVAbIE&code_challenge=hDLDfyOsqUc58Z-xzzz1g5ybLDycWgY7UV8e-qu1jd8&code_challenge_method=S256) > Application > Continuation
 
