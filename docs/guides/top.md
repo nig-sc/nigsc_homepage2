@@ -69,8 +69,8 @@ sidebar_label: トップページ
 以下は例年通りの実施となります。
 
 - [<u>12 月 31 日を以て、2022年度の課金を伴う計画の変更は締め切りました。</u>](/application/invoice/#請求書の発行)
-- [<u>1 月より令和 4 年度(2022 年度)の年度末アカウント継続申請を受け付けます。</u>](/application/renewal)
-- [<u>1 月より令和 5 年度(2023 年度)の利用計画表を受け付けます。</u>](/application/resource_extension)
+- [<u>1 月より年度末アカウント継続申請を受け付けます。</u>](/application/renewal)
+- [<u>1 月より次年度の利用計画表を受け付けます。</u>](/application/resource_extension)
 
 
 ## 2023 年度の定期メンテナンス等
@@ -82,12 +82,12 @@ sidebar_label: トップページ
 - OS が変更となるためユーザの解析環境も移行が必要となる場合があります。
 
 以下は例年通りの実施となります。
-- [2023 年 6 月 30 日 : 年度末更新をしていないユーザのアカウント停止処理](/application/renewal)
+- [2023 年 6 月 30 日 : 年度末更アカウント継続申請をしていないユーザのアカウント停止処理](/application/renewal)
 - [2023 年 7 月 31 日 : 課金サービス第 1 期締め日](/application/invoice/#請求書の発行)
 - [2023 年 11 月 30 日 : 課金サービス第 2 期締め日](/application/invoice/#請求書の発行)
 - [2023 年 12 月 31 日 : 課金を伴う計画の変更締め切り。](/application/invoice/#請求書の発行)
-- [2024 年 1 月より令和 5 年度(2023 年度)の年度末アカウント継続申請を受け付けます。](/application/renewal)
-- [2024 年 1 月より令和 6 年度(2024 年度)の利用計画表を受け付けます。](/application/resource_extension)
+- [2024 年 1 月より年度末アカウント継続申請を受け付けます。](/application/renewal)
+- [2024 年 1 月より次年度の利用計画表を受け付けます。](/application/resource_extension)
 
 
 ## 謝辞について

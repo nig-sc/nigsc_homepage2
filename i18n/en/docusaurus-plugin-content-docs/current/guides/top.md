@@ -69,8 +69,8 @@ Scheduled maintenance for FY2022 has been completed.
 The following will be implemented as in previous years.
 
 - [<u>Changes to plans with charges for 2022 (FY2022) have been closed as of 31 December.</u>](/application/invoice/#3rd-period)
-- [<u>End-of-year renewals for 2022 (FY2022) are accepted from January 2023.</u>](/application/renewal)
-- [<u>From January 2023, we start accepting applications for the usage plan table for the year 2023.</u>](/application/resource_extension)
+- [<u>Applying for a renewal of your account of the end of FY are accepted from January 2023.</u>](/application/renewal)
+- [<u>From January 2023, we start accepting applications for the usage plan table for next year.</u>](/application/resource_extension)
 
 
 ## Scheduled for FY 2023
@@ -86,8 +86,8 @@ The following will be implemented as usual.
 - [July 31: Billing service 1st period closing date](/application/invoice/#issuing-invoices)
 - [November 30: Billing service 2nd closing date](/application/invoice/#issuing-invoices)
 - [December 31: Deadline for changes to plans with billing](/application/invoice/#issuing-invoices)
-- [End-of-year renewals for 2023 (FY2023) are accepted from January 2024.](/application/renewal)
-- [From January 2024, we start accepting applications for the usage plan table for the year 2024.](/application/resource_extension)
+- [Applying for a renewal of your account of the end of FY are accepted from January 2024.](/application/renewal)
+- [From January 2024, we start accepting applications for the usage plan table for next year.](/application/resource_extension)
 
 
 ## About Acknowledgements
