@@ -7,6 +7,10 @@
     "message": "Terms of use, etc.",
     "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
   },
+  "sidebar.applicationsSidebar.category.誓約書に署名する方法": {
+    "message": "How to sign the pledge",
+    "description": "The label for category 誓約書に署名する方法 in sidebar applicationsSidebar"
+  },
   "sidebar.topSidebar.link.お知らせ": {
     "message": "News",
     "description": "The label for link お知らせ in sidebar operationInfoSidebar, linking to /blog/tags/news"
