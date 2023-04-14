@@ -190,7 +190,15 @@ module.exports = {
             label: "利用規定等",
             items: [
                 "application/application",
-                "application/signing_PDF",
+                {
+                    type: "category",
+                    label: "誓約書に署名する方法",
+                    items: [
+                        "application/signing_PDF",
+                        "application/signing_PDF_domestic_resident",
+                        "application/signing_PDF_non-resident",
+                    ]
+                },
                 "application/use_policy",
                 "application/legislation",
             ],

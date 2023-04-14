@@ -1,39 +1,8 @@
 ---
-id: signing_PDF
-title: "How to sign the pledge"
+id: signing_PDF_domestic_resident
+title: "Steps to sign a PDF (the domestic resident)"
 ---
 
-When applying for new use, the responsible person needs to submit a pledge form. There is a signature field in the pledge form and an electronic signature (Adobe Acrobat Sign) is required.
-
-
-## References
-
-Official Adobe page, 'How to create an e-signature'
-- https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
-- https://helpx.adobe.com/reader/using/sign-pdfs.html
-- https://helpx.adobe.com/uk/sign/using/esign-document.html
-- https://video.tv.adobe.com/v/21155/
-
-
-## Steps to sign a PDF
-
-<table>
-	<tbody>
-		<tr>
-			<td>
-
-It is different in the following two cases. In case the user is a domestic resident, only the responsible person is required to submit an pledge. However, a non domestic resident, a user's pledge is also required in addition to the responsible person's pledge. For more information, see the following pages.
-
-- [<u>In case the applicant is a domestic resident as prescribed in FEFTA</u>](/application/signing_PDF_domestic_resident)
-- [<u>In case the applicant is a non-resident or belongs to the specific categories formulated by the Ministry of Economy</u>](/application/signing_PDF_non-resident)
-
-For information on the Foreign Exchange and Foreign Trade Act, see [<u>Precautions for FEFTA</u>](/application/#precautions-for-fefta).
-
-
-</td>
-		</tr>
-	</tbody>
-</table>
 
 The helpdesk of the NIG Supercomputer(![](sc-helpdesk.png)) will send an email to the responsible person and the applicant regarding the signing of the pledge.
 
@@ -57,7 +26,7 @@ The applicant
 <tr>
 <td width="400" valign="top">
 
-You will receive an email with a signature request.
+You will receive an email with a electronic signature request.
 
 </td>
 <td width="400" valign="top">
@@ -98,6 +67,8 @@ When you open the email, the screen shown below is displayed.
 </tr>
 </table>
 
+## 1. The responsible person signs the Pledge PDF form.
+
 The responsible person should click 'Review(or check) and sign'.
 
 When clicked, the following PDF will be displayed.
@@ -134,7 +105,7 @@ Sign in one of the ways and click 'Apply'. The following screen will then appear
 
 ![](/img/signing_PDF/pdf_10.png)
 
-Click 'Click to sign' to confirm the signature.
+Click 'Click to sign' to confirm the electronic signature.
 
 The 'You have successfully sign the ...' screen appears. Close the screen.
 
@@ -145,5 +116,8 @@ If you would like to keep the signed Pledge PDF, click 'Download a copy'.
 The responsible person's electronic signature and reply to the Pledge PDF has been completed.
 
 Acrobat Sign automatically sends the responsible person and the applicant the final signed document informing them that the Pledge PDF has been signed and replied.
+
+
+## 2. The electronic signatures have been completed by the responsible person.
 
 You only wait for your account registration certificate to arrive by post.

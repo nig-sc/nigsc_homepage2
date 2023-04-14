@@ -1,39 +1,7 @@
 ---
-id: signing_PDF
-title: "誓約書に署名する方法"
+id: signing_PDF_domestic_resident
+title: "署名の手順(国内居住者)"
 ---
-
-新規の利用申請の際には、責任者の方に誓約書を提出していただいております。
-
-誓約書には署名欄があり、電子サイン(Adobe Acrobat Sign)をお願いしております。
-
-
-## 参考
-
-- アドビ公式ページ「電子サインの作成方法」
-
-https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
-
-
-## 署名の手順
-
-<table>
-	<tbody>
-		<tr>
-			<td>
-
-以下二つの場合で手順が異なります。ユーザが国内居住者の場合は、誓約書を提出するのは責任者だけですが、ユーザが非国内居住者の場合は、責任者の誓約書に加えてユーザの誓約書も必要になります。詳細は以下のページをご参照ください。
-
-- [<u>ユーザが外為法の国内居住者の場合</u>](/application/signing_PDF_domestic_resident)
-- [<u>ユーザが外為法の非国内居住者の場合、又は、特定類型に属する場合</u>](/application/signing_PDF_non-resident)
-
-外為法につきましては、[<u>「ユーザアカウント発行基準　外為法に関する注意事項」をご参照ください</u>](/application/#外為法に関する注意事項)。
-
-
-</td>
-		</tr>
-	</tbody>
-</table>
 
 
 遺伝研スパコンのヘルプデスク(![](sc-helpdesk.png))から、責任者と申請者へ、誓約書の署名に関するメールが届きます。
@@ -103,6 +71,8 @@ https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
 </tr>
 </table>
 
+## 1．署名します
+
 責任者は、「確認して署名」をクリックしてください。
 
 クリックすると、以下のPDFが表示されます。
@@ -151,8 +121,11 @@ https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
 
 ![](/img/signing_PDF/pdf_11.png)
 
-誓約書PDFへの署名と返信が完了しました。
+責任者による誓約書PDFへの署名と返信が完了しました。
 
 AdobeのAcrobat Signから、自動的に、責任者と申請者へ、誓約書PDFの署名が完了し、返信されたことを通知するメールが届きます。
+
+
+## 2．署名が完了しました
 
 アカウント登録証の到着をお待ちください。
