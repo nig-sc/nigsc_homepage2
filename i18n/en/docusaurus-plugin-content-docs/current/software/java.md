@@ -76,3 +76,9 @@ $
  $
 
 ```
+
+#### References
+
+- [What consumes memory in java process?](https://serverfault.com/questions/341579/what-consumes-memory-in-java-process)
+- [Java Performance, 2nd Edition](https://learning.oreilly.com/library/view/java-performance-2nd/9781492056102/)
+- [Sensepost | Painless intro to the Linux userland heap](https://sensepost.com/blog/2017/painless-intro-to-the-linux-userland-heap/)
