@@ -101,15 +101,13 @@ title: Hardware
     Total storage capacity: 47.1PB
     </td>
 	<td colspan="2">
-    Large capacity high-speed storage<br />
-	Storage area for analysis(※1)
+    Large capacity high-speed storage(※1)
     </td>
 	<td>Lustre file system<br />
 	17.1PB</td>
 </tr>
 <tr>
     <td colspan="2">
-    Large capacity archive storage<br />
 	Storage area for DB(※2)
     </td>
 	<td>SpectrumScale file system + tapes<br />
@@ -126,8 +124,9 @@ title: Hardware
 	</tbody>
 </table>
 
-- ※1. Storage area for analysis: This area contains user home area in general analysis area and personal genome analysis area
-- ※2. Storage area for DB: This area contains DDBJ databases such as DRA. These databases can be accessed from general analysis area.
+- ※1. This area contains user home area in general analysis area and personal genome analysis area
+- ※2. This area contains DDBJ databases such as DRA.
+
 
 ## Compute nodes
 

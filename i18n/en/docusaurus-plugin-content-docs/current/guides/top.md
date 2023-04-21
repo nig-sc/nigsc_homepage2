@@ -19,6 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
+- [Request for data migration of some users due to the start of operation of the new storage system for databases](/en/blog/2023-04-21-data_migration)  (2023.04.21)
 - &#x26A0; [Extended deadline for account renewal application at the end of FY2022](/en/blog/2023-03-23-renewal-date-extended) (2023.03.23)
 - [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
 - [Opened Github Discussions](/en/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
