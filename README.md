@@ -71,3 +71,81 @@ Finally, the build directory created by the above command should be shown to the
 ```
 sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html
 ```
+
+---
+
+# NIG スーパーコンピュータホームページ（バージョン 2）
+
+NIG Supercomputer ホームページ( https://sc.ddbj.nig.ac.jp )は、新しい静的ウェブサイト生成ツールである[Docusaurus 2](https://docusaurus.io/) を使って構築されています。
+
+## Node.js のインストール
+
+NIG スーパーコンピュータのホームページをローカル環境で構築・起動するためには、前提として Node.js のインストールが必要です。
+
+1. nvm のインストール
+
+``` bash
+curl -o https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+最新バージョンは、以下のページでご確認ください。https://github.com/nvm-sh/nvm
+
+2. `source ~/.bashrc` などのコマンドを実行して、nvm を起動します。
+3. `nvm ls-remote` を実行して、利用可能な node.js のバージョンを表示します。
+4. nvm install` コマンドで Node.js をインストールします。例: `nvm install v16.18.1`。(前述のコマンドの出力から適切なバージョンの node.js を選択し、使用してください)
+5. `nvm use v16.18.1` を実行して Node.js を有効化する。
+
+## web サイトの編集用表示
+
+以下の方法で Web サーバーを起動すると、markdown ファイルの編集結果がリアルタイムで画面に反映されます。
+
+1. 以下の git リポジトリをクローンします。
+
+``` bash
+git clone https://github.com/oogasawa/nigsc_homepage2
+```
+
+2. 以下のコマンドで Web サーバーを起動します(ブラウザが開き、ページが表示されます)。
+
+``` bash
+cd nigsc_homepage2
+npm install # 初回のみ
+npm start
+```
+
+これによりローカル環境の Web ブラウザに以下のようにページが表示されます。
+
+- この場合、開発サイトしか表示されず、全文検索が効かない、多言語設定が効かないなどの制約があります。
+- リモート環境からアクセスする場合は、`npm start -- --host 0.0.0.0`を実行します。
+
+![](top_page.png)
+
+英語版を表示するには、`npm start` を実行する際に言語を指定する必要があります。
+
+``` bash
+npm start -- --locale en
+```
+
+## 本番用 Web サイトの生成
+
+実際のサービスに利用する場合は、以下のコマンドでサイトを構築してください。英語版も含めたサイト全体が生成されます。
+
+``` bash
+npx browserslist@latest --update-db
+npm run build # markdown => HTML
+```
+
+テスト用に生成された Web サイトを表示する場合などは以下のようにします。
+
+``` bash
+npm run serve # HTML に変換されたウェブサイトを表示する 
+```
+
+リモート環境からアクセスする場合は、`npm run serve -- --host 0.0.0.0` などとします。
+
+最後に、上記コマンドで作成した`build`ディレクトリを、Apache サーバーなどに表示させるには例えば以下のようにします。
+
+``` bash
+sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html
+```
+
