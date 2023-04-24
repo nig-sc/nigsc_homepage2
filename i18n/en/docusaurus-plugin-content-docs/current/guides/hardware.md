@@ -270,10 +270,10 @@ HPE Superdome Flex
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
 |-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
-| /lustre6    | 3.8PB              | DDBJ work                                  | 35GB/sec         | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
+| /lustre6    | 3.8PB              | DDBJ work (The old system)                                  | 35GB/sec         | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
 | /lustre7    | 8.0PB              | Home area of general analysis area         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre     | 5.3PB              | Home area of personal genome analysis area | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-
+| /lustre8     | 5.3PB              | Home area of personal genome analysis area | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre9    | 40PB              | DDBJ work (The new system)                                  | 100GB/sec         | DDN ES400NVX2+SS9024, DDN 1U server |
 
 
 ### Large archive storage

@@ -276,6 +276,7 @@ HPE Superdome Flex
 | /lustre6     | 3.8PB    | DDBJ 業務(旧システム)                       | 35GB/sec   | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
 | /lustre7     | 8.0PB    | 一般解析区画のホーム領域       | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
 | /lustre8     | 5.3PB    | 個人ゲノム解析区画のホーム領域 | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre9     | 40PB    | DDBJ 業務(新システム) | 100GB/sec 以上 | DDN ES400NVX2+SS9024, DDN 1U server |
 
 
 ### DB用ストレージ
