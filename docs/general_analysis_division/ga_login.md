@@ -65,7 +65,7 @@ Last login: Sun Sep 26 15:29:09 2021 from gw1
 $ 
 ```
 
-うまく行かない場合は、[よくある質問(FAQ)](/faq/faq_login)を参照してください。
+うまく行かない場合は、[よくある質問(FAQ)](/faq/faq_login_general)を参照してください。
 
 
 

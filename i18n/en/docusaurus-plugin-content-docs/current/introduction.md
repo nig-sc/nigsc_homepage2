@@ -29,6 +29,7 @@ For more information about this section:
 
  <u>https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction</u>
 
+For questions on how to login, refer to [<u>FAQ</u>](/faq/faq_login_general).
 
 ## 2. How to use the personal genome analysis section
 
@@ -53,6 +54,8 @@ For specific procedures:
 For more information about this section:
 
  <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction</u>
+
+For questions on how to login, refer to [<u>FAQ</u>](/faq/faq_login_personal).
 
 
 ## 3. Notes.
