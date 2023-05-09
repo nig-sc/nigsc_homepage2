@@ -1,6 +1,6 @@
 ---
 id: faq_renewal
-title: "FAQ(Applying for a renewal of FY)"
+title: "Applying for a renewal of FY"
 ---
 
 

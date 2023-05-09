@@ -28,7 +28,7 @@
     "description": "The label for category 一般解析区画の使い方 in sidebar topSidebar"
   },
   "sidebar.topSidebar.category.個人ゲノム解析区画の使い方": {
-    "message": "Personal Genome Anaysis Section",
+    "message": "Personal Genome Analysis Section",
     "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar topSidebar"
   },
   "sidebar.softwareSidebar.category.ジョブスケジューラ": {
@@ -55,9 +55,33 @@
     "message": "How to use billing services",
     "description": "The label for category 課金サービス利用方法 in sidebar applicationsSidebar"
   },
-  "sidebar.applicationsSidebar.category.問い合わせ先・FAQ": {
-    "message": "Contact us and FAQ",
-    "description": "The label for category 問い合わせ先・FAQ in sidebar applicationsSidebar"
+  "sidebar.faqSidebar.category.FAQ : 一般解析区画": {
+    "message": "General Analysis Section",
+    "description": "The label for link FAQ:一般解析区画 in sidebar faqSidebar, linking to /faq/faq_login_general"
+  },
+  "sidebar.faqSidebar.category.FAQ : 個人ゲノム解析区画": {
+    "message": "Personal Genome Analysis Section",
+    "description": "The label for link FAQ:個人ゲノム解析区画 in sidebar faqSidebar, linking to /faq/faq_login_personal"
+  },
+  "sidebar.faqSidebar.category.FAQ : 利用申請等": {
+    "message": "Use Application, etc.",
+    "description": "The label for link FAQ : 利用申請等 in sidebar faqSidebar, linking to /faq/faq_NewUser_registration"
+  },
+  "sidebar.faqSidebar.category.FAQ : パスワード・公開鍵の設定方法": {
+    "message": "Set up password and public key",
+    "description": "The label for link FAQ : パスワード・公開鍵の設定方法 in sidebar faqSidebar, linking to /faq/faq_sshkeys_mac"
+  },
+  "sidebar.faqSidebar.category.FAQ : 課金サービス利用方法": {
+    "message": "How to use billing services",
+    "description": "The label for link FAQ : 課金サービス利用方法 in sidebar faqSidebar, linking to /faq/faq_billing_service"
+  },
+  "sidebar.faqSidebar.category.利用計画表の提出": {
+    "message": "Submission of Your Usage Plan",
+    "description": "The label for link 利用計画表の提出 in sidebar faqSidebar, linking to /faq/faq_change_StorageCapacity"
+  },
+  "sidebar.applicationsSidebar.link.よくある質問(FAQ)": {
+    "message": "FAQ",
+    "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq_software"
   },
   "sidebar.advancedGuidesSidebar.category.活用方法概要": {
     "message": "Advances Guides Overview",
@@ -98,10 +122,6 @@
   "sidebar.softwareSidebar.category.HCP tools": {
     "message": "HCP tools",
     "description": "The label for category HCP tools in sidebar softwareSidebar"
-  },
-  "sidebar.applicationsSidebar.link.よくある質問(FAQ)": {
-    "message": "FAQ",
-    "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq1"
   },
   "sidebar.advancedGuidesSidebar.category.Alphafold 2.1": {
     "message": "Alphafold 2.1",

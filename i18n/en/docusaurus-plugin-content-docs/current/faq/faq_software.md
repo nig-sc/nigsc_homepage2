@@ -1,12 +1,12 @@
 ---
 id: faq_software
-title: "FAQ(Software General)"
+title: "Software General"
 ---
 
 
-## I want to restore my computer environment to its initial state.
+## &#x1F180; I want to restore my computer environment to its initial state.
 
-The state of `.bashrc` and `.bash_profile` immediately after account creation are as follows, so to restore the environment to its initial state, restore the `.bashrc` and `.bashr_profile` to this state and login again.
+&#x1F150; The state of `.bashrc` and `.bash_profile` immediately after account creation are as follows, so to restore the environment to its initial state, restore the `.bashrc` and `.bashr_profile` to this state and login again.
 
 **.bashrc**
 
@@ -43,9 +43,9 @@ export PATH
 ```
 
 
-## How do I log in to the genetic laboratory supercomputer using Putty or TeraTerm?
+## &#x1F180; How do I log in to the genetic laboratory supercomputer using Putty or TeraTerm?
 
-The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. 
+&#x1F150; The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. 
 
 - [<u>Registering or changing SSH public keys</u>](/application/ssh_keys)
 - [<u>Registering or changing SSH public keys (Windows)</u>](/application/ssh_keys_windows)
@@ -60,9 +60,9 @@ If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refe
 [&#x1f517;<u>Tera Term Open Source Project (osdn.jp)</u>](https://ttssh2.osdn.jp/index.html.en)
 
 
-## How can I transfer files to/from the NIG supercomputer using WinScp or FileZilla?
+## &#x1F180; How can I transfer files to/from the NIG supercomputer using WinScp or FileZilla?
 
-The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
+&#x1F150; The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
 
 - [<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/)
 

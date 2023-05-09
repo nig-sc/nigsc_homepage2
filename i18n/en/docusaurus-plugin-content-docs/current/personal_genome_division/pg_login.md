@@ -353,8 +353,11 @@ After connecting to the SSL-VPN, launch a terminal emulator and execute the foll
 ssh [username]@gwa.ddbj.nig.ac.jp 
 ```
 
+For questions on how to login, Refer to [<u>FAQ</u>](/faq/faq_login_personal).
+
 
 ## Logging in to the analysis server using SSH
 
 The personal genome analysis section is a node rental, so the user logs in to the borrowed node by SSH from the gateway.
 The name of the relevant node will be provided at the start of use.
+

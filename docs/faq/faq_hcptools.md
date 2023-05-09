@@ -1,12 +1,12 @@
 ---
 id: faq_hcptools
-title: FAQ (Archaea tools(旧HCPtools))
+title: Archaea tools(旧HCPtools)
 ---
 
 
-## ファイル転送のとき、転送元と転送先は、必ず絶対パスで指定しなければいけないのでしょうか。
+## &#x1F180; ファイル転送のとき、転送元と転送先は、必ず絶対パスで指定しなければいけないのでしょうか。
 
-ユーザの計算機のパスには、絶対パスでも相対パスでも、指定することができます。
+&#x1F150; ユーザの計算機のパスには、絶対パスでも相対パスでも、指定することができます。
 
 しかし、個人ゲノム解析区画のパスには、相対パスで指定することはできません。絶対パスで指定してください。
 
@@ -64,9 +64,9 @@ hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_
 hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt .\HCP_upload\upload_ex1.txt
 ```
 
-## ディレクトリを指定してファイル転送をしたいのですが、可能でしょうか。
+## &#x1F180; ディレクトリを指定してファイル転送をしたいのですが、可能でしょうか。
 
-はい、可能です。下記はディレクトリを指定した場合のアップロードの実行例です。
+&#x1F150; はい、可能です。下記はディレクトリを指定した場合のアップロードの実行例です。
 
 ダウンロードの場合も、アップロードの時と同じように指定すれば、ディレクトリを指定してファイル転送ができます。
 
@@ -85,9 +85,9 @@ hcp --user ユーザ名 C:\Users\ユーザ名\upload_ex1.txt gwa.ddbj.nig.ac.jp:
 hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCPtools_upload/upload_ex1.txt
 ```
 
-## アップロード先またはダウンロード先を指定する時、ファイル名の指定は不要なのではないでしょうか。
+## &#x1F180; アップロード先またはダウンロード先を指定する時、ファイル名の指定は不要なのではないでしょうか。
 
-必要です。ファイル名を指定しない場合、下記のようなエラーメッセージが出力され、ファイル転送できません。
+&#x1F150; 必要です。ファイル名を指定しない場合、下記のようなエラーメッセージが出力され、ファイル転送できません。
 
 ```
 2022/03/11 14:28:54 00006070:INFO :Negotiation error is set (A001).
@@ -96,9 +96,9 @@ hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.tx
 2022/03/11 14:28:54 00006070:INFO :File is not found.hcp::node:HcpnException @ hcp::node::HcpnEndPointTransfer:L454 :  > hcp::proto::HcppException @ hcp::proto::HcppSession:L1209 :
 ```
 
-## [<u>コマンド概要説明 p.12</u>](/pdf/HCPtools_overview_ja.pdf)には、Windows 10しか対応していないと書いてあります。Windows 11では利用できないのでしょうか。
+## &#x1F180; Windows 11では利用できないのでしょうか。
 
-Windows 11でも、ご利用になれます。
+&#x1F150; [<u>コマンド概要説明 p.12</u>](/pdf/HCPtools_overview_ja.pdf)には、Windows 10しか対応していないと書いてありますが、Windows 11でも、ご利用になれます。
 
 
 
