@@ -5,6 +5,50 @@ title: "最新のトピック"
 
 ---
 
+## ヒト全ゲノム解析の公共データの再解析データセット
+
+公的データベースにオープンアクセスで公開されているヒトの全ゲノム解析データを再解析したデータを遺伝研スパコン上で共有します。
+
+これらのデータは文部科学省新学術領域研究「 ゲノム配列を核としたヤポネシア人の起源と成立の解明」（ヤポネシアゲノム）の中で解析するために公的データベースからダウンロードし、遺伝研スパコンの中で再解析したものです。研究班終了後（2023年4月〜）も広く研究に使える様にするために遺伝研スパコンの利用者向けに共有データとして保管することになりました。
+
+データはいずれもSRAに登録されたオープンアクセスとなっています。サンプルの背景や利用の条件はオリジナルの論文を参照し利用者の責任で利用してください。
+
+GRCh38にマッピングしたCRAM形式のファイルとGATK4またはParabricksのHaplotypeCallerアルゴリズムで解析したgVCF形式のファイルを共有しています。
+
+同等の解析内容が得られるパイプラインは下記から入手できます。
+
+https://github.com/NCGM-genome/WGSpipeline
+
+<table>
+<tr>
+<td>データセット</td>
+<td>データソース</td>
+<td>参考URL</td>
+</tr>
+<tr>
+<td>International 1000Genomes Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB31736</td>
+<td>https://doi.org/10.1016/j.cell.2022.08.004</td>
+</tr>
+<tr>
+<td>Human Genome Diversity Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB6463</td>
+<td>https://doi.org/10.1126/science.aay5012</td>
+</tr>
+<tr>
+<td>Simons Genome Diversity Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
+</tr>
+<tr>
+<td>Korean Personal Genomics Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJNA284338</td>
+<td>https://doi.org/10.1038/s41598-018-23837-x</td>
+</tr>
+</table>
+
+
+
 
 ## Archaea tools(旧HCPtools)
 
