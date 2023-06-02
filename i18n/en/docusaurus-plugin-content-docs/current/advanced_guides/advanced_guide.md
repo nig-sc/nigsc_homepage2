@@ -5,6 +5,52 @@ title: "Latest Topics"
 
 ---
 
+## Reanalysis dataset of public data of human whole genome analysis
+
+We will share Reanalysed human whole genome analysis data that have been published in public databases as open access data on the NIG supercomputer.
+
+These data were downloaded from public databases for analysis in the Ministry of Education, Culture, Sports, Science and Technology-JAPAN(MEXT)'s Grant-in-Aid for Scientific Research on Innovative Areas "Elucidation of the origin and establishment of the Yaponesians using genome sequences as a core" (Yaponesians genome) and re-analysed on the NIG supercomputer.
+These data will be stored as shared data for the users of the NIG supercomputer so that they can be widely used for research after the research group finishes (from April 2023).
+
+All data are all open access registered with SRA. 
+For sample background and conditions of use, refer to the original papers and use at user's own risk.
+
+We share files in CRAM format mapped to GRCh38 and files in gVCF format analysed with the GATK4 or Parabricks HaplotypeCaller algorithm.
+
+Pipelines with equivalent analysis content are available at　
+https://github.com/NCGM-genome/WGSpipeline
+
+<table>
+<tr>
+<td>DATASET</td>
+<td>DATA SOURCE</td>
+<td>URL</td>
+</tr>
+<tr>
+<td>International 1000Genomes Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB31736</td>
+<td>https://doi.org/10.1016/j.cell.2022.08.004</td>
+</tr>
+<tr>
+<td>Human Genome Diversity Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB6463</td>
+<td>https://doi.org/10.1126/science.aay5012</td>
+</tr>
+<tr>
+<td>Simons Genome Diversity Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
+</tr>
+<tr>
+<td>Korean Personal Genomics Project</td>
+<td>https://www.ebi.ac.uk/ena/browser/view/PRJNA284338</td>
+<td>https://doi.org/10.1038/s41598-018-23837-x</td>
+</tr>
+</table>
+
+
+
+
 ## Archaea tools(formerly HCPtools)
 
 In October 2022, the HCPtools software provider launched the brand name 'Bytix' as a brand name for data transfer systems and the product name was changed from 'HCPtools' to 'Archaea tools'.
