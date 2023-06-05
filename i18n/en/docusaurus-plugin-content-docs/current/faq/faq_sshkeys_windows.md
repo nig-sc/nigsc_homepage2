@@ -1,12 +1,12 @@
 ---
 id: faq_sshkeys_windows
-title: "FAQ (SSH public key Registration Procedure(Windows))"
+title: "SSH public key Registration Procedure(Windows)"
 ---
 
 
-## How to install the latest version of PowerShell
+## &#x1F180; How to install the latest version of PowerShell
 
-This section explains how to update the PowerShell that comes standard with Windows to the latest version.
+&#x1F150; This section explains how to update the PowerShell that comes standard with Windows to the latest version.
 
 How to check the version: for more information [<u>see "How to check the version of PowerShell" on this page</u>](/faq/faq_sshkeys_windows#how-to-check-the-version-of-powershell).
 
@@ -18,7 +18,7 @@ If it is not the latest version, the following screen appears.
 ![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
 
 
-### Installing PowerShell on Windows
+### - Installing PowerShell on Windows
 
 From the command prompt on PowerShell, type the following command and press the Enter key.
 
@@ -49,7 +49,7 @@ The latest version of PowerShell has been installed on the user's Windows PC.
 Now that the installation is complete, start the installed latest version of PowerShell to check the operation.
 
 
-### Operation check
+### - Operation check
 
 To start the latest version of PowerShell, use the `pwsh` command; using the `powershell` command will launch an older version of PowerShell. &#x1f517;<u><a href="https://learn.microsoft.com/en-gb/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">Please refer to the Microsoft Official Home Page for an explanation of this situation.</a></u>
 
@@ -100,15 +100,15 @@ For further instructions on how to upgrade to the more recent version, see [<u>i
 &#x1F4D6; Confirmed Github page on the Microsoft Official Home Page: &#x1f517;<u>https://github.com/PowerShell/PowerShell/releases/</u>
 
 
-### Reference
+### - Reference
 
 - &#x1f517;<u><a href="https://learn.microsoft.com/en-gb/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">Microsoft - Official Home Page - Install PowerShell using Winget (recommended)</a></u>
 - &#x1f517;<u><a href="https://learn.microsoft.com/en-gb/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">Microsoft - Official Home Page - Differences between Windows PowerShell 5.1 and PowerShell 7.x</a></u>
 
 
-## Open PowerShell
+## &#x1F180; How can I open PowerShell?
 
-Type "powershell" in the search box.
+&#x1F150; Type "powershell" in the search box.
 
 ![](/img/ssh_keys/windows/FAQ/win_ps_inst_12.png)
 
@@ -125,10 +125,11 @@ After clicking, PowerShell is launched
 ![](/img/ssh_keys/windows/FAQ/win_ps_inst_15.png)
 
 
-## How to check the version of PowerShell
+## &#x1F180; How to check the version of PowerShell
 
+&#x1F150;
 
-### Check which version of PowerShell you are using
+### - Check which version of PowerShell you are using
 
 Type the following command and press the Enter key.
 
@@ -143,7 +144,7 @@ The version is displayed.
 ![](/img/ssh_keys/windows/FAQ/win_ps_inst_17.png)
 
 
-### Search for the latest version of PowerShell
+### - Search for the latest version of PowerShell
 
 Type the following command and press the 'Enter' key.
 
@@ -164,9 +165,9 @@ When it is finished, possible installation versions is listed.
 When installing, install the official stable release. This is the one that does not have '.Preview' at the end.
 
 
-## Though the latest version of PowerShell has installed, the message `A new PowerShell stable release is available` is displayed.
+## &#x1F180; Though the latest version of PowerShell has installed, the message `A new PowerShell stable release is available` is displayed.
 
-Enter the following command and press the Enter key to further upgrade to the latest version. The `winget` command is not yet reflected in the `winget` command, so get it directly from the script on the Github page.
+&#x1F150; Enter the following command and press the Enter key to further upgrade to the latest version. The `winget` command is not yet reflected in the `winget` command, so get it directly from the script on the Github page.
 
 ```
 Invoke-Expression "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
@@ -231,9 +232,9 @@ This display confirms that PowerShell 7.2.7 is indeed installed.
 The installation of the latest version has been completed.
 
 
-## What are the main differences between PowerShell 5.1 and 7.2.6?
+## &#x1F180; What are the main differences between PowerShell 5.1 and 7.2.6?
 
-By default, the differences are as follows
+&#x1F150; By default, the differences are as follows
 
 - Executable file location
 
@@ -269,6 +270,6 @@ In PowerShell 7.2.6, the executable file is installed with the name 'pwsh.exe', 
 For more  information, refer &#x1f517;<u><a href="https://learn.microsoft.com/en-gb/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">Microsoft - Official Home Page - Differences between Windows PowerShell 5.1 and PowerShell 7.x</a></u>
 
 
-## I would like to know more about installation using `winget`.
+## &#x1F180; I would like to know more about installation using `winget`.
 
-Please refer to the Installing PowerShell on Windows page on the Microsoft official Home Page. &#x1f517;<u><a href="https://learn.microsoft.com/en-gb/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">Click here to move that page.</a></u>
+&#x1F150; Please refer to the Installing PowerShell on Windows page on the Microsoft official Home Page. &#x1f517;<u><a href="https://learn.microsoft.com/en-gb/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">Click here to move that page.</a></u>

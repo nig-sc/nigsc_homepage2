@@ -1,21 +1,21 @@
 ---
 id: faq_NewUser_registration
-title: "FAQ(Application for New Use)"
+title: "Application for New Use"
 ---
 
-##  I want to logout from the application form for use, but I cannot find the logout button.
+## &#x1F180; I want to logout from the application form for use, but I cannot find the logout button.
 
 
-The red frame below is the logout button.
+&#x1F150; The red frame below is the logout button.
 
 Click it to log out.
 
 ![](logout_button.png)
 
 
-## What should I enter "Account name" and "Group name" of the responsible person.
+## &#x1F180; What should I enter "Account name" and "Group name" of the responsible person.
 
-If you don't know the account name or group name of the responsible person, follow the steps below to type in the information. 
+&#x1F150; If you don't know the account name or group name of the responsible person, follow the steps below to type in the information. 
 
 <table>
 <tr>
@@ -48,9 +48,9 @@ If you don't know the account name or group name of the responsible person, foll
 </table>
 
 
-## When applying for new use, I applied for use without entering my SSH public key in the usage registration application form. I have already completed the application for use, but without registering my SSH public key. What should I do?
+## &#x1F180; When applying for new use, I applied for use without entering my SSH public key in the usage registration application form. I have already completed the application for use, but without registering my SSH public key. What should I do?
 
-You do not need to register a new application again.
+&#x1F150; You do not need to register a new application again.
 
 Please wait for your account registration certificate to be sent to you by post.
 

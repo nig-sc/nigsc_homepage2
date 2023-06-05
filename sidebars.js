@@ -232,39 +232,9 @@ module.exports = {
             ],
         },
         {
-            type: "category",
+            type: "link",
             label: "よくある質問(FAQ)",
-            items: [
-                {
-                    type: 'category',
-                    label: "FAQ : software",
-                    items: [
-                        "faq/faq_software",
-                        "faq/faq_hcptools",
-                        "faq/faq_aspera",
-                        "faq/faq_grid_engine",
-                    ]
-                },
-                {
-                    type: 'category',
-                    label: "FAQ : Login",
-                    items: [
-                        "faq/faq_login",
-                    ]
-                },
-                {
-                    type: 'category',
-                    label: "FAQ : Application/Billing",
-                    items: [
-                        "faq/faq_billing_service",
-                        "faq/faq_change_StorageCapacity",
-                        "faq/faq_NewUser_registration",
-                        "faq/faq_sshkeys_mac",
-                        "faq/faq_sshkeys_windows",
-                        "faq/faq_renewal",
-                    ]
-                },
-            ],
+            href: "/faq/faq_software"
          },
         {
             type: "link",
@@ -272,6 +242,7 @@ module.exports = {
             href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
         },
         "application/reference",
+        "faq/old_document",
     ],
 
 
@@ -360,21 +331,46 @@ module.exports = {
         },
         {
             type: 'category',
-            label: "FAQ : Login",
+            label: "FAQ : 一般解析区画",
             items: [
-                "faq/faq_login",
+                "faq/faq_login_general",
             ]
         },
         {
             type: 'category',
-            label: "FAQ : Application/Billing",
+            label: "FAQ : 個人ゲノム解析区画",
             items: [
-                "faq/faq_billing_service",
-                "faq/faq_change_StorageCapacity",
+                "faq/faq_login_personal",
+            ]
+        },
+        {
+            type: 'category',
+            label: "FAQ : 利用申請等",
+            items: [
                 "faq/faq_NewUser_registration",
+                "faq/faq_renewal",
+            ]
+        },
+        {
+            type: 'category',
+            label: "FAQ : パスワード・公開鍵の設定方法",
+            items: [
                 "faq/faq_sshkeys_mac",
                 "faq/faq_sshkeys_windows",
-                "faq/faq_renewal",
+            ]
+        },
+        {
+            type: 'category',
+            label: "FAQ : 課金サービス利用方法",
+            items: [
+                "faq/faq_billing_service",
+                {
+                    type: 'category',
+                    label: "利用計画表の提出",
+                    items: [
+                        "faq/faq_change_StorageCapacity",
+                    ]
+                },
             ]
         },
     ],
