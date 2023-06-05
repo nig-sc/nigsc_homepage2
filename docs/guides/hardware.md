@@ -103,14 +103,16 @@ title: "ハードウェア"
     総ストレージ容量 47.1PB
     </td>
 	<td colspan="2">
-    大容量高速ストレージ(※1)
+    大容量高速ストレージ<br />
+	解析用ストレージ領域(※1)
     </td>
 	<td>Lustre ファイルシステム<br />
 	合計容量：17.1PB</td>
 </tr>
 <tr>
     <td colspan="2">
-	DB 用ストレージ(※2)
+    DB用ストレージ<br />
+	DB 用ストレージ領域(※2)
     </td>
 	<td>SpectrumScale ファイルシステム+テープ<br />
 	合計容量：30PB (15PB ディスク、15PB テープの階層ストレージ)
@@ -127,8 +129,8 @@ title: "ハードウェア"
 	</tbody>
 </table>
 
-- ※1. 一般解析区画および個人ゲノム解析区画におけるユーザホーム領域
-- ※2. DRA 等の DDBJ データベースを格納している領域。
+- ※1. 解析用ストレージ領域：一般解析区画および個人ゲノム解析区画におけるユーザホーム領域
+- ※2. DB 用ストレージ領域：DRA 等の DDBJ データベースを格納している領域。データベースは一般解析区画から参照可能。
 
 
 ## 計算ノード
@@ -273,10 +275,10 @@ HPE Superdome Flex
 
 | アクセスパス | 実効容量 | 用途                           | ピーク性能 | 構成                                             |
 |--------------|----------|--------------------------------|------------|--------------------------------------------------|
-| /lustre6     | 3.8PB    | DDBJ 業務(旧システム)                       | 35GB/sec   | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
+| /lustre6     | 3.8PB    | DDBJ 業務                       | 35GB/sec   | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
 | /lustre7     | 8.0PB    | 一般解析区画のホーム領域       | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
 | /lustre8     | 5.3PB    | 個人ゲノム解析区画のホーム領域 | 35GB/sec 以上 | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre9     | 40PB    | DDBJ 業務(新システム) | 100GB/sec 以上 | DDN ES400NVX2+SS9024, DDN 1U server |
+
 
 
 ### DB用ストレージ

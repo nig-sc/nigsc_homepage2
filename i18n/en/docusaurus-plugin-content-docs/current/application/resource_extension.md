@@ -95,3 +95,7 @@ The total amount of high-speed storage under 30TB for each responsible person is
 
 We accept requests for settings that allow data sharing among groups. In this case, when the total of the bundled groups exceeds 30TB, you are charged. The fee is apportioned by the quota amount among the responsible persons. (Note: In this case, the billing amount cannot be calculated using the usage plan.)
 
+
+## About changing storage capacity
+
+Refer to [FAQ (Change Storage Capacity)](/faq/faq_change_StorageCapacity).

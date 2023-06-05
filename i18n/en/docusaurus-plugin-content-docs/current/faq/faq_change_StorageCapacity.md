@@ -1,18 +1,18 @@
 ---
 id: faq_change_StorageCapacity
-title: FAQ (Change Storage Capacity)
+title: Change Storage Capacity
 ---
 
-## I want to change the allocated storage
+## &#x1F180; How can I change my allocated storage space?
 
-You need to apply for using large-scale storage.
+&#x1F150; You need to apply for using large-scale storage.
 
 Refer to [<u>General Analysis Section > Using large-scale storage</u>](/general_analysis_division/largescale_storage) for application details.
 
 
-## How is storage currently allocated?
+## &#x1F180; How is storage currently allocated?
 
-Execute the `quota` command as shown below to check.
+&#x1F150; Execute the `quota` command as shown below to check.
 
 ```
 $ lfs quota -u your_account /lustre7

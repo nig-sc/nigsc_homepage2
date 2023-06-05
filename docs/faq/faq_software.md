@@ -1,11 +1,11 @@
 ---
 id: faq_software
-title: "FAQ(ソフトウェア一般)"
+title: "ソフトウェア一般"
 ---
 
-## 環境を初期状態に戻したい
+## &#x1F180; 環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。
 
-アカウント作成直後の`.bashrc`, `.bash_profile`は以下のとおりですので、環境を初期状態に戻すには`.bashrc`, `.bashr_profile`をこの状態に戻してログインし直してください。
+&#x1F150; アカウント作成直後の`.bashrc`, `.bash_profile`は以下のとおりですので、環境を初期状態に戻すには`.bashrc`, `.bashr_profile`をこの状態に戻してログインし直してください。
 
 **.bashrc**
 
@@ -42,9 +42,9 @@ export PATH
 ```
 
 
-## PuttyやTeraTermなどを使って遺伝研スパコンにログインする方法を教えてください。
+## &#x1F180; PuttyやTeraTermなどを使って遺伝研スパコンにログインする方法を教えてください。
 
-ホームページではWindowsに標準搭載されているPowerShellをターミナルエミュレータとして使った場合の利用手順を記載しています。
+&#x1F150; ホームページではWindowsに標準搭載されているPowerShellをターミナルエミュレータとして使った場合の利用手順を記載しています。
 
 - [<u>SSH公開鍵の登録・変更</u>](/application/ssh_keys)
 - [<u>SSH公開鍵の登録(Windowsの場合)</u>](/application/ssh_keys_windows)
@@ -59,9 +59,9 @@ export PATH
 [&#x1f517;<u>Tera Term Open Source Project (osdn.jp)</u>](https://ttssh2.osdn.jp/index.html.en)
 
 
-## 遺伝研スパコンでWinScpやFileZillaなどを使ってにファイル転送する方法を教えてください。
+## &#x1F180; 遺伝研スパコンでWinScpやFileZillaなどを使ってにファイル転送する方法を教えてください。
 
-ホームページではscp, sftpコマンドを用いたファイル転送の手順を記載しています。
+&#x1F150; ホームページではscp, sftpコマンドを用いたファイル転送の手順を記載しています。
 
 - [<u>データ転送(一般解析区画)</u>](/general_analysis_division/ga_transfer/)
 

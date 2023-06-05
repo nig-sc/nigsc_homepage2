@@ -1,12 +1,12 @@
 ---
 id: faq_grid_engine
-title: "FAQ (Grid Engine)"
+title: "Grid Engine"
 ---
 
 
-## Is there anything I should be careful about when the job is re-run, e.g. due to a failure of the compute node?
+## &#x1F180; Is there anything I should be careful about when the job is re-run, e.g. due to a failure of the compute node?
 
-When the job is re-run, then.
+&#x1F150; When the job is re-run, then.
 
 1. the standard output and standard error output of the job are appended to the file before re-run.
 2. Depending on the submitted job, the existence of the file output in the first run may cause an error or make the second run inappropriate. If you are concerned that a problem may occur,  delete the intermediate and result files and resubmit the job.

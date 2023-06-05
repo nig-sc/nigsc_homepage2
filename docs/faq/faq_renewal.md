@@ -1,6 +1,6 @@
 ---
 id: faq_renewal
-title: "FAQ(年度末アカウント継続申請)"
+title: "年度末アカウント継続申請"
 ---
 
 

@@ -276,7 +276,7 @@ HPE Superdome Flex
 | /lustre9    | 40PB              | DDBJ work (The new system)                                  | 100GB/sec         | DDN ES400NVX2+SS9024, DDN 1U server |
 
 
-### Large archive storage
+### DB storage
 
 This storage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
 To increase capacity, it is a hierarchical storage system that uses a high-speed disk system and a tape system with low per-capacity cost.
