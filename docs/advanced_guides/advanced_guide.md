@@ -63,6 +63,8 @@ https://github.com/NCGM-genome/WGSpipeline
 
 ## Archaea tools(旧 HCPtools)
 
+2023.01.10
+
 2022 年 10 月、HCPtools ソフトウェア提供元が、データ転送系のブランド名称として、「Bytix(バイティックス)」というブランド名を立ち上げ、製品名称が「HCPtools」から「Archaea tools」へ変更になりました。
 
 変更についての詳細は、[&#x1f517;<u>Bytix 公式ページ「製品名称変更等について」のページをご参照ください</u>](https://support.bytix.tech/important/)。
