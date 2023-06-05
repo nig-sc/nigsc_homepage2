@@ -7,6 +7,8 @@ title: "Latest Topics"
 
 ## Reanalysis dataset of public data of human whole genome analysis
 
+5 Jun 2023.
+
 We will share Reanalysed human whole genome analysis data that have been published in public databases as open access data on the NIG supercomputer.
 
 These data were downloaded from public databases for analysis in the Ministry of Education, Culture, Sports, Science and Technology-JAPAN(MEXT)'s Grant-in-Aid for Scientific Research on Innovative Areas "Elucidation of the origin and establishment of the Yaponesians using genome sequences as a core" (Yaponesians genome) and re-analysed on the NIG supercomputer.
@@ -17,8 +19,14 @@ For sample background and conditions of use, refer to the original papers and us
 
 We share files in CRAM format mapped to GRCh38 and files in gVCF format analysed with the GATK4 or Parabricks HaplotypeCaller algorithm.
 
-Pipelines with equivalent analysis content are available at　
-https://github.com/NCGM-genome/WGSpipeline
+You can get a pipeline with equivalent analysis content at https://github.com/NCGM-genome/WGSpipeline
+
+Also, you can get the dataset from the NIG supercomputer in the following way.
+
+ - For all compute nodes in the general analysis section, the datasets are mounted under `/usr/local/shared_data/public-human-genomes/GRCh38/` and can be accessed and used directly from the analysis programmes in the NIG supercomputer .
+    - The personal genome analysis section is currently being prepared.
+- HTTPS: https://ddbj.nig.ac.jp/public/public-human-genomes/GRCh38/ 
+- FTP: ftp.ddbj.nig.ac.jp/public-human-genomes/GRCh38
 
 <table>
 <tr>
@@ -52,6 +60,8 @@ https://github.com/NCGM-genome/WGSpipeline
 
 
 ## Archaea tools(formerly HCPtools)
+
+10 Jan 2023.
 
 In October 2022, the HCPtools software provider launched the brand name 'Bytix' as a brand name for data transfer systems and the product name was changed from 'HCPtools' to 'Archaea tools'.
 
