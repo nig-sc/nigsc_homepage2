@@ -47,7 +47,7 @@ Also, you can get the dataset from the NIG supercomputer in the following way.
 <tr>
 <td>Simons Genome Diversity Project</td>
 <td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
-<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
+<td>https://doi.org/10.1038/nature18964</td>
 </tr>
 <tr>
 <td>Korean Personal Genomics Project</td>
