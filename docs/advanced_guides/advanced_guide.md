@@ -49,7 +49,7 @@ https://github.com/NCGM-genome/WGSpipeline
 <tr>
 <td>Simons Genome Diversity Project (SGDP)</td>
 <td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
-<td>https://www.ebi.ac.uk/ena/browser/view/PRJEB9586</td>
+<td>https://doi.org/10.1038/nature18964</td>
 </tr>
 <tr>
 <td>Korean Personal Genomics Project (KPGP)</td>
