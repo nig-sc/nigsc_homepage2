@@ -19,7 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Recent News
 
-- [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Yosuke Kawai, Deputy Project Manager, NCGM](/advanced_guides/advanced_guide/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
+- [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
 - [Request for data migration of some users due to the start of operation of the new storage system for databases](/en/blog/2023-04-21-data_migration)  (2023.04.21)
 - &#x26A0; [Extended deadline for account renewal application at the end of FY2022](/en/blog/2023-03-23-renewal-date-extended) (2023.03.23)
 - [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
