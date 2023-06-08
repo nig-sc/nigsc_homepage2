@@ -33,6 +33,6 @@ The personal genomic analysis section in the NIG supercomputer complies with the
 ## Security standards
 
 
-- [Guideline for the Security Management of Medical Information Systems version 5.1 (Jan, 2021)](https://www.mhlw.go.jp/stf/shingi/0000516275.html)
+- [Guideline for the Security Management of Medical Information Systems version 6.0 (May, 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
 - [Guidelines for Safety Management of Medical Information by Providers of Information Systems and Services Handling Medical Information](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [Common Standards for Cybersecurity Measures for Government Agencies and Related Agencies（FY2021）](https://www.nisc.go.jp/eng/index.html)

@@ -33,6 +33,6 @@ title: "関連法規等"
 ## セキュリティ基準
 
 
-- [医療情報システムの安全管理に関するガイドライン　第5.1版（令和3年1月）](https://www.mhlw.go.jp/stf/shingi/0000516275.html)
+- [医療情報システムの安全管理に関するガイドライン　第6.0版（令和5年5月）](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
 - [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [政府機関等の情報セキュリティ対策のための統一基準群（令和3年度版）](https://www.nisc.go.jp/policy/group/general/kijun.html)
