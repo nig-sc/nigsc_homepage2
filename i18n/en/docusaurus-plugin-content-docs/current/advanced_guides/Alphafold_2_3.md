@@ -6,9 +6,9 @@ title: alphafold 2.3
 
 ## Introduction
 
-The NIG supercomputer provides the singularity image with alphafold 2.3.1 installed and the database for &#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3.1</a></u> on /lustre7/software/alphafold/2.3.1/.
+The NIG supercomputer provides the singularity image with alphafold 2.3.2 installed and the database for &#x1f517;<u><a href="https://github.com/deepmind/alphafold">alphafold 2.3</a></u> on /lustre7/software/alphafold/2.3.2/.
 
-Protein structure prediction by alphafold 2.3.1 is performed in the following steps.
+Protein structure prediction by alphafold 2.3 is performed in the following steps.
 
 1. Input amino acid sequence search for uniref90 database by jackhmmer (using CPU)
 2. Input amino acid sequence search for mgnify database by jackhmmer (using CPU)
@@ -59,7 +59,7 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 
 ## Prepare job scripts
 
-There are sample job scripts on /lustre7/software/alphafold/2.3.1/. Download this to your own home directory and use it, modifying it accordingly.
+There are sample job scripts on /lustre7/software/alphafold/2.3.2/. Download this to your own home directory and use it, modifying it accordingly.
 
 
 ### example_job_script_cpu.sh
@@ -78,25 +78,27 @@ OUTPUTDIR="${HOME}/output"
 DATE="2022-12-01"
 MODEL="monomer"
 PRED=5
+VERSION="2.3.2"
+RELAX_MODE="all"    # all, best or none
 
 export OPENMM_CPU_THREADS=16
 export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=16"
 
 singularity exec \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.3.1/database:/data1/database \
-/lustre7/software/alphafold/2.3.1/alphafold-2.3.1-CPU.sif \
+-B /lustre7/software/alphafold/${VERSION}/database:/data1/database \
+/lustre7/software/alphafold/${VERSION}/alphafold-${VERSION}-CPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
 --model_preset=${MODEL} \
 --max_template_date=${DATE} \
 --use_gpu_relax=false \
---num_multimer_predictions_per_model=${PRED}
+--num_multimer_predictions_per_model=${PRED} \
+--models_to_relax=${RELAX_MODE}
 ```
 
-
-#### Modification place
+#### Correction point
 
 ```
 #$ -pe def_slot 16
@@ -156,6 +158,13 @@ PRED=5
 
 When MODEL="multimer" is specified, this specifies the number of prediction structures to be output for a single array. The default value is 5, which outputs a total of 25 predictions for an array of up to 5 subunits. This value is ignored when MODEL="monomer" is specified.
 
+
+```
+RELAX_MODE="all"
+```
+
+If RELAX_MODE="all" is specified, the relaxation step is executed for all predictive models. If RELAX_MODE="best" is specified, only the model with the best pLDDT value will be executed for the relaxation step.
+
 ### example_job_script_gpu.sh
 
 You can use this job script for using a GPU. Run the job with gpu.q.
@@ -175,22 +184,28 @@ OUTPUTDIR="${HOME}/output"
 DATE="2022-12-01"
 MODEL="monomer"
 PRED=5
+VERSION="2.3.2"
+RELAX_MODE="all"    # all, best or none
+
+export OPENMM_CPU_THREADS=8
+export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=8"
 
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.3.1/database:/data1/database \
-/lustre7/software/alphafold/2.3.1/alphafold-2.3.1-GPU.sif \
+-B /lustre7/software/alphafold/${VERSION}/database:/data1/database \
+/lustre7/software/alphafold/${VERSION}/alphafold-${VERSION}-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
 --model_preset=${MODEL} \
 --max_template_date=${DATE} \
 --use_gpu_relax=true \
---num_multimer_predictions_per_model=${PRED}
+--num_multimer_predictions_per_model=${PRED} \
+--models_to_relax=${RELAX_MODE}
 ```
 
-#### Modification place
+#### Correction point
 
 ```
 #$ -l cuda=1
@@ -229,6 +244,12 @@ PRED=5
 ```
 
 When MODEL="multimer" is specified, this specifies the number of prediction structures to be output for a single array. The default value is 5, which outputs a total of 25 predictions for an array of up to 5 subunits. This value is ignored when MODEL="monomer" is specified.
+
+```
+RELAX_MODE="all"
+```
+
+If RELAX_MODE="all" is specified, the relaxation step is executed for all predictive models. If RELAX_MODE="best" is specified, only the model with the best pLDDT value will be executed for the relaxation step.
 
 
 ## Running a job
