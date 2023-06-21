@@ -39,6 +39,7 @@ module.exports = {
             items: [
                 "guides/top",
                 "guides/overview",
+                "guides/security-policy",
                 "guides/hardware",
                 "software/software"
             ]
