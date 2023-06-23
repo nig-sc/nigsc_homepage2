@@ -83,9 +83,9 @@
     "message": "FAQ",
     "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq_software"
   },
-  "sidebar.advancedGuidesSidebar.category.活用方法概要": {
-    "message": "Advances Guides Overview",
-    "description": "The label for category 活用方法概要 in sidebar advancedGuidesSidebar"
+  "sidebar.advancedGuidesSidebar.category.活用方法": {
+    "message": "Advances Guides",
+    "description": "The label for category 活用方法 in sidebar advancedGuidesSidebar"
   },
   "sidebar.advancedGuidesSidebar.category.Rhelixa RNAseq": {
     "message": "Rhelixa RNAseq",

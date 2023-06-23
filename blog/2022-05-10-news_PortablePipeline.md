@@ -13,4 +13,4 @@ date: 2022-05-10
 
 「WindowsやMacから遺伝研のスパコンにお手軽にNGS解析ジョブを投げるツールとしてPortablePipelineを開発しました。」（水圏生物工学研究室のページより）
 
-- [PortablePipelineの紹介（「活用方法概要」>「最新のトピック」) ](/advanced_guides/advanced_guide#portablepipeline)
+- [PortablePipelineの紹介（「活用方法」>「最新のトピック」) ](/advanced_guides/advanced_guide_2020-2022#portablepipeline)

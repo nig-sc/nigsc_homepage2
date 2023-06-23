@@ -15,7 +15,7 @@ Grid Engine or Slurm can be installed and delivered as a job scheduler for the n
 - For information on how to use the job scheduler Grid Engine, refer to [System Configuration > Software > Grid Engine](/software/grid_engine/).
 - For information on how to use the job scheduler Slurm, refer to [System configuration > Software > Slurm](/software/slurm).
 - For information on other available software, see [System configuration > Software](../software/software.md) for available software.
-- You can get infotmation about specific analysis methods, etc. on the "[Advances Guides](/advanced_guides/advanced_guide)" page.
+- You can get infotmation about specific analysis methods, etc. on the "[Advances Guides](/advanced_guides/advanced_guide_2023)" page.
 
 
 ## How to use NVIDIA Parabricks

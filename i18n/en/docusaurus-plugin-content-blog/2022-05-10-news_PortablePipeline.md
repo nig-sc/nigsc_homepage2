@@ -13,4 +13,4 @@ For the NGS analysis pipeline, the tool called Portablepipeline has been develop
 
 「PortablePipeline is software that allows Windows and Mac users to perform NGS analysis in a GUI on a local or remote server or supercomputer.」（Referenced from the Laboratory of Aquatic Molecular Biology and Biotechnology）
 
-- [PortablePipeline introduction（「Advanced Guides Overview」>「Latest topic」) ](/advanced_guides/advanced_guide#portablepipeline)
+- [PortablePipeline introduction（「Advanced Guides Overview」>「Latest topic」) ](/advanced_guides/advanced_guide_2020-2022#portablepipeline)

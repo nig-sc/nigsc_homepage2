@@ -73,7 +73,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'advanced_guides/advanced_guide',
+          docId: 'advanced_guides/advanced_guide_2023',
           label: '活用方法'
         },
         {
