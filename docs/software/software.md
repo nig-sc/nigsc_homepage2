@@ -131,7 +131,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[DFAST](/advanced_guides/advanced_guide#dfast)
+[DFAST](/advanced_guides/advanced_guide_2020-2022#dfast)
 
 </td>
 <td width="300">利用可能</td>

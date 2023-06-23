@@ -119,7 +119,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <td width="300">
 
-[DFAST](/advanced_guides/advanced_guide#dfast)
+[DFAST](/advanced_guides/advanced_guide_2020-2022#dfast)
 </td>
 <td width="300">available</td>
 <td width="300">available</td>

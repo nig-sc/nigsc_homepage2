@@ -248,8 +248,9 @@ module.exports = {
 
 
     advancedGuidesSidebar : {
-        "活用方法概要": [
-            "advanced_guides/advanced_guide",
+        "活用方法": [
+            "advanced_guides/advanced_guide_2023",
+            "advanced_guides/advanced_guide_2020-2022",
         ],
         "Rhelixa RNAseq": [
             "advanced_guides/Rhelixa_RNAseq",

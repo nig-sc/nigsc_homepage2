@@ -16,4 +16,4 @@ title: 使用方法（一般解析区画）
 - ジョブスケジューラ Grid Engineの使い方については[システム構成 > ソフトウェア > Grid Engine](/software/grid_engine)をご参照ください。
 - 遺伝研スパコンで用意されているUGEキューについては[概要（一般解析区画) > UGEキューの種類](../general_analysis_division/ga_introduction.md)をご参照ください。
 - その他、利用可能なソフトウェアについては[システム構成>ソフトウェア](../software/software.md)をご参照ください。
-- 具体的な解析方法などについては[活用方法](../advanced_guides/advanced_guide.md)をご参照ください。
+- 具体的な解析方法などについては[活用方法](../advanced_guides/advanced_guide_2023.md)をご参照ください。
