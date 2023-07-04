@@ -8,11 +8,13 @@ When applying for new use, the responsible person needs to submit a pledge form.
 
 ## References
 
-Official Adobe page, 'How to create an e-signature'
-- https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
-- https://helpx.adobe.com/reader/using/sign-pdfs.html
-- https://helpx.adobe.com/uk/sign/using/esign-document.html
-- https://video.tv.adobe.com/v/21155/
+- Adobe Official Web site, 'How to create an e-signature'
+    - https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
+    - https://helpx.adobe.com/reader/using/sign-pdfs.html
+    - https://helpx.adobe.com/uk/sign/using/esign-document.html
+    - https://video.tv.adobe.com/v/21155/
+
+- If you are unable to electrically sign the pledge because you are using a mailer that can only receive text format, refer to [<u>FAQ "How to sign the pledge"</u>](/faq/faq_signing_PDF).
 
 
 ## Steps to sign a PDF
