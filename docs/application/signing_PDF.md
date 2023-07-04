@@ -10,9 +10,13 @@ title: "誓約書に署名する方法"
 
 ## 参考
 
-- アドビ公式ページ「電子サインの作成方法」
+- 「電子サインの作成方法」アドビ公式ページ
+    - &#x1f517;<u>https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html</u>
 
-https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html
+
+- 「テキスト形式のみ受信可能なメーラーで署名できない場合」
+    -  [<u>よくある質問(FAQ)の「誓約書に署名する方法」</u>](/faq/faq_signing_PDF)をご参照ください。
+    - 詳細は、アドビ公式ページ Adobe Acrobat SignのFAQをご参照ください。&#x1f517;<u>https://helpx.adobe.com/jp/sign/faq.html</u>
 
 
 ## 署名の手順
