@@ -42,6 +42,8 @@ You will receive an email informing you that you have been designated as the Cc 
 
 When you open the email, the screen shown below is displayed.
 
+If you are unable to electrically sign the pledge because you are using a mailer that can only receive text format, refer to [<u>FAQ "How to sign the pledge"</u>](/faq/faq_signing_PDF).
+
 </td>
 <td width="400" valign="top">
 

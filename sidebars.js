@@ -347,6 +347,19 @@ module.exports = {
         },
         {
             type: 'category',
+            label: "FAQ : 利用規定等",
+            items: [        
+                {
+                type: 'category',
+                label: "FAQ : 誓約書に署名する方法",
+                items: [
+                    "faq/faq_signing_PDF",
+                ]
+                },
+            ]
+        },
+        {
+            type: 'category',
             label: "FAQ : 利用申請等",
             items: [
                 "faq/faq_NewUser_registration",
