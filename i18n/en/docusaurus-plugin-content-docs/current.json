@@ -63,6 +63,14 @@
     "message": "Personal Genome Analysis Section",
     "description": "The label for link FAQ:個人ゲノム解析区画 in sidebar faqSidebar, linking to /faq/faq_login_personal"
   },
+  "sidebar.faqSidebar.category.FAQ : 利用規定等": {
+    "message": "Terms of use, etc.",
+    "description": "The label for link FAQ : 利用規定等 in sidebar faqSidebar, linking to /faq/faq_signing_PDF"
+  },
+  "sidebar.faqSidebar.category.FAQ : 誓約書に署名する方法": {
+    "message": "How to sign the pledge",
+    "description": "The label for link FAQ : 誓約書に署名する方法 in sidebar faqSidebar, linking to /faq/faq_signing_PDF"
+  },
   "sidebar.faqSidebar.category.FAQ : 利用申請等": {
     "message": "Use Application, etc.",
     "description": "The label for link FAQ : 利用申請等 in sidebar faqSidebar, linking to /faq/faq_NewUser_registration"

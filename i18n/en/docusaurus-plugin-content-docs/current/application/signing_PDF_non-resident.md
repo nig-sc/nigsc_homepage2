@@ -65,6 +65,9 @@ When you open the email, the screen shown below is displayed.
 </tr>
 </table>
 
+If you are unable to electrically sign the pledge because you are using a mailer that can only receive text format, refer to [<u>FAQ "How to sign the pledge"</u>](/faq/faq_signing_PDF).
+
+
 ## 1. First, the responsible person signs the Pledge PDF form.
 
 The responsible person should click 'Review(or check) and sign'.
