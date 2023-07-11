@@ -232,7 +232,7 @@ When MODEL="multimer" is specified, this specifies the number of prediction stru
 
 ## Running a job
 
-Submit the job script to the UGE using the qsub command.
+Submit the job script to Grid Engine using the qsub command.
 
 ```
 $ qsub example_job_script_cpu.sh

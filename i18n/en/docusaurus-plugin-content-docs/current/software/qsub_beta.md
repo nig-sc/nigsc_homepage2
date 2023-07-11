@@ -5,17 +5,17 @@ title: How to use qsub_beta
 
 ## Tool Introduction
 
-`qsub_beta` is a tool to check in advance the requested resource of the job if there are any error and submit it to UGE when the batch job is executed using [Univa Grid Engine](/software/univa_grid_engine).
+`qsub_beta` is a tool to check in advance the requested resource of the job if there are any error and submit it to Grid Engine when the batch job is executed using [Grid Engine](/software/grid_engine).
 
 If you submit the request resource with a value that cannot be satisfied by any compute node, the job will be in the qw state (waiting), but it will not execute unless you modify the request resource because there are no executable compute nodes.
 
-By Submitting the job to the UGE via `qsub_beta`, you can notice the error in specifying the requested resource at the time the batch job is executed, reducing unnecessary waiting time.
+By Submitting the job to the Grid Engine via `qsub_beta`, you can notice the error in specifying the requested resource at the time the batch job is executed, reducing unnecessary waiting time.
 
 ## How to use qsub_beta
 
 ### Running the batch job via qsub_beta
 
-The method of submitting with qsub_beta is as follows and is the same as for the UGE original qsub.
+The method of submitting with qsub_beta is as follows and is the same as for the Grid Engine original qsub.
 
 ```
 $ qsub_beta –l intel,s_vmem=8G,mem_req=8G job.sh

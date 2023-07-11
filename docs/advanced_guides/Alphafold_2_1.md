@@ -189,7 +189,7 @@ MODEL="monomer"
 
 ## ジョブの実行
 
-ジョブスクリプトをqsubコマンドでUGEに投入してください。
+ジョブスクリプトをqsubコマンドでGrid Engineに投入してください。
 ```
 $ qsub example_job_script_cpu.sh
 ```

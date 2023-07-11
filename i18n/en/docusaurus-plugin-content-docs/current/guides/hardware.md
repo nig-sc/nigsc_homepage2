@@ -226,7 +226,7 @@ HPE Apollo 6500 Gen10
 
 ### Medium compute node (HPE ProLiant DL560 Gen10; 10 computers)
 
-These nodes are compute nodes with 80 cores with 3 TB of physical memory, suitable for running large memory intensive programs such as de novo assembler, etc. You can use it by job submission under UGE.
+These nodes are compute nodes with 80 cores with 3 TB of physical memory, suitable for running large memory intensive programs such as de novo assembler, etc. You can use it by job submission under Grid Engine.
 
 
 ![](Medium.png)
