@@ -9,7 +9,7 @@ It functions as the Operating System when the entire cluster computer is conside
 - In the general analysis section, the Grid Engine is used.
 - In the personal genome analysis section, Grid Engine or Slurm is available.
 
-In bioinformatics, traditionally, Sun Grid Engine (SGE) has been widely used. SGE was replaced by Univa's Univa Grid Engine (UGE), which is now supported by Altair and has become Altair Grid Engine (AGE). (For this reason, the current AGE official manual has a mixture of SGE, UGE, AGE and the generic term "Grid Engine".)
+In bioinformatics, traditionally, Sun Grid Engine (SGE) has been widely used. SGE was replaced by Univa's Grid Engine, which is now supported by Altair and has become Altair Grid Engine (AGE). (For this reason, the current AGE official manual has a mixture of SGE, UGE, AGE and the generic term "Grid Engine".)
 
 Reference
 

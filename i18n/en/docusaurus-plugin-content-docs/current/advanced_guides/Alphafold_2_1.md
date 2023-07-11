@@ -183,7 +183,7 @@ According to the contents of the input file, enter monomer for monomeric protein
 
 ## Running a job
 
-Submit the job script to the UGE using the qsub command.
+Submit the job script to Grid Engine using the qsub command.
 
 ```
 $ qsub example_job_script_cpu.sh
