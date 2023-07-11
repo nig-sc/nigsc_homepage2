@@ -236,7 +236,7 @@ MODEL=”multimer” を指定した際に、1つの配列に対して出力す�
 
 ## ジョブの実行
 
-ジョブスクリプトをqsubコマンドでUGEに投入してください。
+ジョブスクリプトをqsubコマンドでGrid Engineに投入してください。
 
 ```
 $ qsub example_job_script_cpu.sh

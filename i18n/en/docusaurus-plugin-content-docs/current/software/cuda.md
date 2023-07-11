@@ -3,7 +3,7 @@ id: cuda
 title: "CUDA"
 ---
 
-## How to submit jobs that uses GPU to UGE
+## How to submit jobs that uses GPU to Grid Engine
 
 
 When submitting jobs that uses GPU, use the `-l cuda=n` (n specifies the number of GPUs to use. The upper limit is 4.) option in addition to the `-l gpu` option. If the "-l cuda=n" option is not used, the job will be submitted to gpu.q, but no GPUs can be used.

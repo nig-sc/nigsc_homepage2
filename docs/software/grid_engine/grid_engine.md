@@ -10,7 +10,7 @@ Grid Engine はジョブスケジューラあるいはリソーススケジュ�
 - 一般解析区画では、Grid Engine を用いています。
 - 個人ゲノム解析区画では、Grid Engine または Slurm が利用可能です。
 
-バイオインフォマティックス系では伝統的に Sun Grid Engine(SGE)が広く用いられてきました。SGE は Univa 社の Univa Grid Engine (UGE)を経て、現在は Altair 社がサポートしており Altair Grid Engine(AGE)となっています。（こういった経緯で、現在の AGE 公式マニュアルの中でも SGE, UGE, AGE, さらには総称としての Grid Engine という書き方が混在しています。）
+バイオインフォマティックス系では伝統的に Sun Grid Engine(SGE)が広く用いられてきました。SGE は Univa 社の Grid Engineを経て、現在は Altair 社がサポートしており Altair Grid Engine(AGE)となっています。（こういった経緯で、現在の AGE 公式マニュアルの中でも SGE, UGE, AGE, さらには総称としての Grid Engine という書き方が混在しています。）
 
 参考資料
 

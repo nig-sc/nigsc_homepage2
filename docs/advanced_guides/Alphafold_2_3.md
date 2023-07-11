@@ -267,7 +267,7 @@ RELAX_MODE=”all” を指定した場合、すべての予測モデルのrelax
 
 ## ジョブの実行
 
-ジョブスクリプトをqsubコマンドでUGEに投入してください。
+ジョブスクリプトをqsubコマンドでGrid Engineに投入してください。
 
 ```
 $ qsub example_job_script_cpu.sh
