@@ -44,7 +44,7 @@ The compute nodes and storage of the NIG supercomputer are roughly divided into 
 <br />
 
 <br />
-It is a function to reserve a certain number of computers for a certain period of time so that jobs other than your own will not be entered UGE.
+It is a function to reserve a certain number of computers for a certain period of time so that jobs other than your own will not be entered Grid Engine.
 </td>
 <td>
 ○
@@ -61,7 +61,7 @@ None
 the occupancy compute nodes<br />
 （Nodes lending)<br />
 <br />
-It is a service that removes the compute nodes from UGE management and occupies it.
+It is a service that removes the compute nodes from Grid Engine management and occupies it.
 </td>
 <td>
 ○

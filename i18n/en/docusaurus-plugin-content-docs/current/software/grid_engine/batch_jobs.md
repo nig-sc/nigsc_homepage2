@@ -42,7 +42,7 @@ example.sh biotools_list.txt
 - `-cwd`: The batch job will be executed in the same directory as the current. Without this option, the job will be executed in `$HOME` directory.
 - `-V` : All environment variables when you execute `qsub` are inherited to the compute node that executes the batch job.
 - `l short` : Specifies the type of queue that submits the batch job.
-    - The general analysis section has queues such as `epyc`,` intel`, `gpu`,` short`, `medium` and etc. for each computer type. For details, see the [UGE Queue Type](/general_analysis_division/ga_introduction#uge%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E7%A8%AE%E9%A1%9E) page.
+    - The general analysis section has queues such as `epyc`,` intel`, `gpu`,` short`, `medium` and etc. for each computer type. For details, see the [Grid Engine Queue Type](/general_analysis_division/ga_introduction#grid-engine-queue-type) page.
     - On the personal genome analysis section, it depends on the configuration. When you specify nothing, only the `all` queue exists, so specify `-l all`.
 
 

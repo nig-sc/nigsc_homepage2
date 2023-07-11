@@ -5,7 +5,7 @@ title: advance reservation
 
 ## Overview
 
-Advance Reservation is a service that users reserve a certain range of resources in the UGE queue before using and can use exclusively the reserved area.
+Advance Reservation is a service that users reserve a certain range of resources in the Grid Engine queue before using and can use exclusively the reserved area.
 
 Note: this service is a billing service, so you must submit a usage plan before you use it.
 
@@ -43,9 +43,9 @@ To use the Advance Reservation Service, follow the steps below.
     - To delet the reserved quota for computational resources using the `QRDEL` command.
 
 
-The `QRSUB` and `QRDEL` commands are wrapper programs for UGE's `qrsub` and `qrdel` commands created to calculate billing on the NIG supercomputer.
+The `QRSUB` and `QRDEL` commands are wrapper programs for Grid Engine's `qrsub` and `qrdel` commands created to calculate billing on the NIG supercomputer.
 Both `QRSUB` and `QRDEL` command options are available for the `qrsub` and `qrdel` commands, respectively.
-for the options of each command, refer to the Univa Grid Engine User's Manual (English only).
+for the options of each command, refer to the Grid Engine User's Manual (English only).
 
 ## How to get the reserved quota for computational resources
 
@@ -222,7 +222,7 @@ granted_parallel_environment   def_slot slots
 
 Specify `ar-id` (reservation number) with the` -ar` option of the `qsub` command, and execute the job.
 
-Other options are the same as [How to use Univa Grid Engine](/software/univa_grid_engine).
+For options, see [the Grid Engine page](/software/grid_engine).
 
 If you execute the qsub command with `ar-id` before the start time of the reserved slot of the computational resource and submit the job, the job is executed as soon as the start time of the reserved slot comes.
 

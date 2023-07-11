@@ -254,7 +254,7 @@ If RELAX_MODE="all" is specified, the relaxation step is executed for all predic
 
 ## Running a job
 
-Submit the job script to the UGE using the qsub command.
+Submit the job script to Grid Engine using the qsub command.
 
 ```
 $ qsub example_job_script_cpu.sh
