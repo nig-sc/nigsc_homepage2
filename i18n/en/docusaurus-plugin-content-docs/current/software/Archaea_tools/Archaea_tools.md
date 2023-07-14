@@ -171,16 +171,33 @@ Are you sure you want to continue connecting [yes/no] ?
 
 ## Frequently used options for file transfer
 
-- `--hpfp` : Specify UDP (HpFP2) communication to speed up communication over long distances
-    - Without this option, TCP communication ehich uesd usually widely is performed.
-- `-p` : preserve information about file permission
-- `-R` : copy all files under each directory, recursively
-- `-r` : resume the previous copy
-- `-y` : verify blocks of data transfered by message digest
-- `-z` : compress blocks of data transfered
-
-
 For more information of options, refer to [&#x1f517;<u>the official manual</u>](https://support.bytix.tech/document/).
+
+<ul>
+<li>`--hpfp` : Specify UDP (HpFP2) communication to speed up communication over long distances
+    <ul>
+    <li>Without this option, TCP communication ehich uesd usually widely is performed.
+    </li>
+    </ul>
+</li>
+<li> `-p` : preserve information about file permission
+</li>
+<li>`-R` : copy all files under each directory, recursively
+</li>
+<li>`-r` : resume the previous copy
+    <ul>
+    <li>For more information, see <a hrefe="https://support.bytix.tech/docs/archaea/tools/1.4_en/D_commandRef/D01_hcp#r-resume">&#x1f517;<u>the command reference</u></a>.
+    </li>
+    </ul>
+</li>
+<li>`-y` : verify blocks of data transfered by message digest
+</li>
+<li>
+`-z` : compress blocks of data transfered
+</li>
+</ul>
+
+
 
 ## Other Commands
 
