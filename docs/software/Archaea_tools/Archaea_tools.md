@@ -168,15 +168,29 @@ Are you sure you want to continue connecting [yes/no] ?
 
 オプションの詳細については、[&#x1f517;<u>公式マニュアルのコマンドリファレンス</u>](https://support.bytix.tech/document/)をご参照下さい。
 
-- `--hpfp` : UDP(HpFP2)通信の指定で、遠距離間の通信を高速化します。
-    - このオプションを省略すると、通常広く用いられている TCP 通信を行います。
-- `-p` : 転送元のパーミッションを保持します。
-- `-R` : ディレクトリごと再帰的にファイルを転送します。
-- `-r` : ファイル転送の再開処理（リジューム）を行う。
-    - レジューム機能の詳細については、&#x1f517;<u><a href="https://support.bytix.tech/docs/archaea/tools/1.4/D_commandRef/D01_hcp/#r-resume">公式マニュアルのコマンドリファレンス内の「通信再開機能 
-r, resume」</a></u>をご参照ください。
-- `-y` データの完全性（転送途中でエラーや改ざんがないか）の確認を行います。
-- `-z` : 転送時にデータの圧縮を行います。
+<ul>
+<li>`--hpfp` : UDP(HpFP2)通信の指定で、遠距離間の通信を高速化します
+    <ul>
+    <li>
+    このオプションを省略すると、通常広く用いられている TCP 通信を行います。</li>
+    </ul>
+</li>
+<li>`-p` : 転送元のパーミッションを保持します。
+</li>
+<li>`-R` : ディレクトリごと再帰的にファイルを転送します。
+</li>
+<li>`-r` : ファイル転送の再開処理（リジューム）を行う。
+    <ul>
+    <li>
+    レジューム機能の詳細については、<a href="https://support.bytix.tech/docs/archaea/tools/1.4/D_commandRef/D01_hcp/#r-resume">&#x1f517;<u>公式マニュアルのコマンドリファレンス内の「通信再開機能   r, resume」</u></a>をご参照ください。
+    </li>
+    </ul>
+</li>
+<li>`-y` : データの完全性（転送途中でエラーや改ざんがないか）の確認を行います。
+</li>
+<li>`-z` : 転送時にデータの圧縮を行います。
+</li>
+</ul>
 
 
 
@@ -198,3 +212,6 @@ r, resume」</a></u>をご参照ください。
 詳細については、[&#x1f517;<u>公式マニュアル</u>](https://support.bytix.tech/document/)をご参照下さい。
 
 
+
+
+[def]: https://support.bytix.tech/docs/archaea/tools/1.4/D_commandRef/D01_hcp#r-resume
