@@ -35,4 +35,4 @@ title: "関連法規等"
 
 - [医療情報システムの安全管理に関するガイドライン　第6.0版（令和5年5月）](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
 - [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン(令和２年８月（令和４年８月改定）)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
-- [政府機関等の情報セキュリティ対策のための統一基準群（令和3年度版）](https://www.nisc.go.jp/policy/group/general/kijun.html)
+- [政府機関等の情報セキュリティ対策のための統一基準群](https://www.nisc.go.jp/policy/group/general/kijun.html)
