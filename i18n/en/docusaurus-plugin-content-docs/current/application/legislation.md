@@ -11,13 +11,13 @@ title: "Related laws and regulations, etc."
 3. Definition of Residents and Non-Residents
     - [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  Article 6
     - Assessment of Residents and Non-Residents(Extracted from the Ministry of Finance circular, [Interpretation and Enforcement of the Foreign Exchange and Foreign Trade Act (Excerpt), Zokoku No. 2345, 28 December, 2000](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)) 
-
+- [Act on the Comprehensive and Systematic Promotion of Measures to Ensure the Public's Reliable Access to Quality and Appropriate Genomic Medicine (Act No. 57 of 2023), June 16, 2023](https://elaws.e-gov.go.jp/document?lawid=505AC1000000057)
 
 
 ## The personal genome
 
 
-- [Act on the Protection of Personal Information（Act No. 57 of May 30, 2003, Revised and promulgated on 27 May, 2016（Act No. 51 of 2016））](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
+- [Act on the Protection of Personal Information（Act No. 57 of May 30, 2003, Revised and promulgated on May 27, 2016（Act No. 51 of 2016）, Revised on June 7, 2023）](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
 - [Ethical Guidelines for Medical and Biological Research Involving Human Subjects（Enforced in 30 June, 2021）](https://www.meti.go.jp/press/2020/03/20210323004/20210323004.html)
 
 
@@ -34,5 +34,5 @@ The personal genomic analysis section in the NIG supercomputer complies with the
 
 
 - [Guideline for the Security Management of Medical Information Systems version 6.0 (May, 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
-- [Guidelines for Safety Management of Medical Information by Providers of Information Systems and Services Handling Medical Information (August, 2020, Revised on August, 2022)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
+- [Guidelines for Safety Management of Medical Information by Providers of Information Systems and Services Handling Medical Information (August, 2020, Revised on July, 2023)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [Common Standards for Cybersecurity Measures for Government Agencies and Related Agencies](https://www.nisc.go.jp/eng/index.html)
