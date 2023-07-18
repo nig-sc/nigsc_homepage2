@@ -17,7 +17,7 @@ title: "Related laws and regulations, etc."
 ## The personal genome
 
 
-- [Act on the Protection of Personal Information（Act No. 57 of May 30, 2003, Revised and promulgated on 27 May, 2016（Act No. 51 of 2016））](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
+- [Act on the Protection of Personal Information（Act No. 57 of May 30, 2003, Revised and promulgated on May 27, 2016（Act No. 51 of 2016）, Revised on June 7, 2023）](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
 - [Ethical Guidelines for Medical and Biological Research Involving Human Subjects（Enforced in 30 June, 2021）](https://www.meti.go.jp/press/2020/03/20210323004/20210323004.html)
 
 
