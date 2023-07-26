@@ -1,6 +1,6 @@
 ---
 slug: 2023-07-26-gpu-configure
-title: "[Maintainance] July 11, 2023: Temporary suspension of new job execution in GPU queues due to configuration changes on Wednesday, July 26, 2023"
+title: "(Ended) [Maintainance] July 11, 2023: Temporary suspension of new job execution in GPU queues due to configuration changes on Wednesday, July 26, 2023"
 tags:
   - maintenance
 authros:
