@@ -24,8 +24,8 @@ Until now, a part of the CPU of the GPU compute node has been allocated to short
 
 | Queue | Configuration Nodes | Total Number of nodes | Number of CPU cores | Memory |
 | ---- | ---- | ----: | ----: | ----: |
-| gpu.q | Thin nodes Type2b  | 7 | 168 | 2,688GB (384GB/node)|
-| short.q | Thin nodes Type1a | 2 |  128　| 1,024GB (512GB/node) |
+| gpu.q | Thin nodes Type2b  | 7 | 168 (24/node) | 2,688GB (384GB/node)|
+| short.q | Thin nodes Type1a | 2 |  128　(64/node) | 1,024GB (512GB/node) |
 
 For short.q, the CPU will be changed from AMD EPYC 7501 to Intel Xeon Gold 6130 due to the node type change. Please review the execution job if necessary.
 
