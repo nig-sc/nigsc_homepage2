@@ -37,7 +37,7 @@ Click here.
 
 </td>
 <td valign="top">
-Click "Download". After clicking, the usage plan table will be downloaded.
+Click "↓". After clicking, the usage plan table will be downloaded.
 
 </td>
 </tr>
