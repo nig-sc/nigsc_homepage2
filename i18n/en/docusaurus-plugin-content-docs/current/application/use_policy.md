@@ -45,8 +45,8 @@ Price for the Use for the general analysis section large-scale(excluding tax)
 		</tr>
 		<tr>
 			<td>Thin node<br />(Intel/NVIDIA GPU)</td>
-			<td>4 CPU cores, 1GPU, 48GB memory as a single unit, a single unit per 30 days</td>
-			<td>2,690 yen</td>
+			<td>6 CPU cores, 1GPU, 96GB memory as a single unit, a single unit per 30 days</td>
+			<td>56,250 yen</td>
 		</tr>
 		<tr>
 			<td>Medium node</td>
@@ -136,8 +136,8 @@ Price for the Use for the occupancy compute node of the general analysis section
 		</tr>
 		<tr>
 			<td>Thin node<br />(Intel/NVIDIA GPU)</td>
-			<td>4 CPU cores, 1GPU, 48GB memory as a single unit, a single unit per 30 days</td>
-			<td>2,690 yen</td>
+			<td>6 CPU cores, 1GPU, 96GB memory as a single unit, a single unit per 30 days</td>
+			<td>56,250 yen</td>
 		</tr>
 		<tr>
 			<td>Medium node</td>
@@ -155,10 +155,3 @@ Price for the Use for the occupancy compute node of the general analysis section
 The billing amount is prorated based on the number of days used.
 
 (※) Computational node occupancy service is a service that occupies the entire computer or the area separated by using a virtual machine for a certain period of time.
-
----
-
-Refer to the following for previous Appendix 1-3.
-
-- [Appendix 1-3 for the Rules of Use (Revised on May 1, 2020)](/pdf/tables_of_nigsc_use_policy_2.pdf)
-- - [Appendix 1-3 for the Rules of Use (Revised on 2022)](/pdf/tables_of_nigsc_use_policy_20220221.pdf)
