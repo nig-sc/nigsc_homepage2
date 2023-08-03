@@ -1,6 +1,6 @@
 ---
 slug: 2023-07-27-NewStrage_Lustre9
-title: "July 27, 2023: Communication breakdown due to switchover to new storage system."
+title: "(Ended) July 27, 2023: Communication breakdown due to switchover to new storage system."
 tags:
   - maintenance
 authros:
