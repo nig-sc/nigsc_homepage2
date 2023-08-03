@@ -68,6 +68,7 @@ module.exports = {
                 "personal_genome_division/pg_application",
                 "personal_genome_division/pg_login",
                 "personal_genome_division/pg_usage",
+                "personal_genome_division/gpu_slurm",
                 "personal_genome_division/pg_transfer",
                 "general_analysis_division/ga_lustre",
                 "general_analysis_division/largescale_storage",
