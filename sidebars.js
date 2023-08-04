@@ -307,6 +307,7 @@ module.exports = {
             "report/report",
         ],
         "論文リスト": [
+            "report/papers_2022",
             "report/papers_2021",
             "report/papers_2020",
             "report/papers_2019",
