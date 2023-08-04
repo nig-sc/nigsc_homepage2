@@ -19,8 +19,8 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [Parabricks ver 4.1 has already been installed on Slurm for GPUs of the personal genome analysis section](/personal_genome_division/gpu_slurm)(2023.08.03)
-- [Extended number of CPU cores available for GPU node](/en/blog/2023-07-26-gpu-configure)　 (2023.07.11)
+- [Parabricks ver 4.1 has already been installed on Slurm for GPUs of the personal genome analysis section](/en/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
+- [Extended number of CPU cores available for GPU node](/en/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
 - [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
 - [Opened Github Discussions](/en/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
