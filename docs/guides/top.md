@@ -20,7 +20,7 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
-- [個人ゲノム解析区画で使用可能なGPU用SlurmにParabricks ver 4.1を導入しました](/personal_genome_division/gpu_slurm)　(2023.08.03)
+- [個人ゲノム解析区画で使用可能なGPU用SlurmにParabricks ver 4.1を導入しました](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [GPUノードで利用可能なCPUコア数を拡張しました](/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [国立国際医療研究センター　河合洋介先生より、ヒト全ゲノム解析の公共データの再解析データセットが公開されました](/advanced_guides/advanced_guide_2023#%E3%83%92%E3%83%88%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0%E8%A7%A3%E6%9E%90%E3%81%AE%E5%85%AC%E5%85%B1%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%86%8D%E8%A7%A3%E6%9E%90%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88) (2023.06.05)
 - [誓約書へのサインが押印からAdobe社の電子サインになりました](/blog/2023-03-14-adobe_sign) (2023.03.14)
