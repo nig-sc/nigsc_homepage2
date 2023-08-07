@@ -23,3 +23,7 @@ For more information on the usage plan table and price list, refer to the follow
 - [<u>usage plan table</u>](/application/resource_extension)
 
 - [<u>price list</u>](/application/use_policy/)
+
+Please refer to the following link for details on how to use this service.
+
+- [How to use Slurm GPU queue of Personal genome analysis section](personal_genome_division/gpu_slurm)

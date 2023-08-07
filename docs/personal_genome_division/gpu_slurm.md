@@ -18,13 +18,97 @@ title: 個人ゲノム解析区画 SLurm GPU ノード専用キューの利用�
 1. 課金サービスになりますので利用計画表を提出してください。
 2. GPU 用 Slurm 計算ノードにユーザホームの作成(シンボリック)を行いますので、利用されるおおよその期間を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。
 3. Parabrick を rootless docker での実行を希望する場合、
-　subuid, subgid の割り当てを実施する必要がありますので、その旨を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。
-    - Singularity にて利用される場合は設定不要です。
+　subuid, subgid の割り当てを実施する必要がありますので、その旨を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。（※Apptainer(Singularity) にて利用される場合は設定不要です。）
+
+## Apptainer による利用手順
+
+以下の手順では Parabricks v4.0 を apptainer のイメージファイルを使用して実行します。(Apptainer 自体の説明は[Apptainer(Singularity) の使い方](/software/Apptainer)のページをご参照ください。)
+
+Parabricks イメージファイルはユーザが用意したものか、遺伝研スパコンに配置した`/opt/pkg/nvidia/parabricks`以下のものが利用可能です。
+
+### Slurm GPU キュー用ログインノードし、ジョブを投入する。
+ジョブを投入可能なフロントサーバー at022vm02 を用意しています。
+
+前提条件
+* gwa.ddbj.nig.ac.jp にログイン済みである。
+
+Slurm GPU キュー用ログインノードへログインします。
+```
+$ ssh at022vm02
+```
+
+サンプルデータのダウンロードを行います。
+(/home/$(id -un)/で実行したとします)
+```
+$ wget -O parabricks_sample.tar.gz "https://s3.amazonaws.com/parabricks.sample/parabricks_sample.tar.gz"
+```
+
+ダウンロードしたファイルを展開し、parabricks_sample ディレクトリが作成されたことを確認します。
+```
+$ tar -zxf parabricks_sample.tar.gz
+$ ls
+................    parabricks_sample    ................   ................   ................ 
+
+```
+
+ジョブスクリプトを作成します。
+本手順では`test.sh`という名前のスクリプトを以下の内容で作成します。
+
+* ジョブスクリプト`test.sh`の記載内容
+```
+#!/bin/bash
+#
+#SBATCH --partition=all # ここでは all を選択
+#SBATCH --job-name=test
+#SBATCH --output=res.txt
+#SBATCH --mem 384000 # 単位 MB, GPU ノードの全メモリ 384GB を確保する
+
+apptainer exec --nv --bind /home/$(id -un):/input_data /opt/pkg/nvidia/parabricks/clara-parabricks_4.0.0-1.sif \
+  pbrun fq2bam \
+    --ref /input_data/parabricks_sample/Ref/Homo_sapiens_assembly38.fasta \
+    --in-fq /input_data/parabricks_sample/Data/sample_1.fq.gz /input_data/parabricks_sample/Data/sample_2.fq.gz \
+    --out-bam /input_data/parabricks_sample/fq2bam_output.bam
+```
+
+なお、本 Slurm クラスタのパーティション(AGE におけるキュー相当)では、igt009, igt016, all の 3 種類を用意しています。
+
+```
+$ sinfo -l
+Mon Mar 13 10:44:04 2023
+PARTITION AVAIL  TIMELIMIT   JOB_SIZE ROOT OVERSUBS     GROUPS  NODES       STATE NODELIST
+igt009       up   infinite 1-infinite   no       NO        all      1    reserved igt009
+igt016       up   infinite 1-infinite   no       NO        all      1    reserved igt016
+all*         up   infinite 1-infinite   no       NO        all      2    reserved igt[009,016]
+
+```
 
 
-## 利用手順
+ジョブをサブミットします。
+```
+$ sbatch test.sh
+```
 
-Parabricks による解析を実行するための利用手順を記します。
+ジョブがサブミットされたことを確認します。
+```
+$ squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+                56       all     test  pg-user PD       0:00      1 (ReqNodeNotAvail, May be reserved for other job)
+$
+```
+
+ジョブ実行が完了したら、出力ログおよび結果ファイルを確認します。
+```
+$ cat res.txt
+$ ls parabricks_sample/
+Data   Ref   fq2bam_output.bam   fq2bam_output.bam.bai   fq2bam_output_chrs.txt
+```
+* res.txt … 出力ログ
+* fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
+
+
+## Rootless Docker による利用手順
+
+Parabricks による解析を Rootless Docker を用いて実行するための利用手順を記します。
 
 1. 各 Worker ノード(GPU ノード)にログインし、Rootless Docker を起動する。
 2. Slurm GPU キュー用ログインノードし、ジョブを投入する。
