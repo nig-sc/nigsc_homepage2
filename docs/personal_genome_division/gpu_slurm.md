@@ -20,6 +20,7 @@ title: 個人ゲノム解析区画 SLurm GPU ノード専用キューの利用�
 3. Parabrick を rootless docker での実行を希望する場合、
 　subuid, subgid の割り当てを実施する必要がありますので、その旨を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。（※Apptainer(Singularity) にて利用される場合は設定不要です。）
 
+
 ## Apptainer による利用手順
 
 以下の手順では Parabricks v4.0 を apptainer のイメージファイルを使用して実行します。(Apptainer 自体の説明は[Apptainer(Singularity) の使い方](/software/Apptainer)のページをご参照ください。)
