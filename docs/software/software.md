@@ -185,7 +185,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[Archaea tools(旧HCPtools)](/software/Archaea_tools/Archaea_tools.md)
+[Archaea tools(旧 HCPtools)](/software/Archaea_tools/Archaea_tools.md)
 
 </td>
 <td width="300">☓</td>
@@ -294,7 +294,7 @@ R Studio Server
 <tr>
 <td width="300">
 
-C/C++ (GCC)
+[C/C++ (GCC)](/software/gcc)
 
 </td>
 <td width="300">インストール済み</td>
