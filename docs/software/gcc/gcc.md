@@ -252,7 +252,7 @@ spack install -j 8 gcc@12.3.0 binutils=True bootstrap=True
 
 4, `spack load`コマンドで、インストールした gcc をロードし、使えるようにします。
 
-利用可能なバージョンは`spack find`で見つけることができます。
+`spack install`済みの利用可能なバージョンは`spack find`で見つけることができます。
 
 ```
 $ spack find gcc
@@ -275,6 +275,71 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 $ which gcc
 /lustre7/home/lustre4/youraccount/spack/opt/spack/linux-centos7-x86_64_v3/gcc-4.8.5/gcc-13.1.0-j4uonbxx6sjxhg4tx3dd5q6mej62pgcd/bin/gcc
 ```
+
+
+5, 初回は`spack compiler find`で GCC を spack に認識させます。
+
+以下のコマンドを実行することで、スパコンに予めインストールされているコンパイラを spack が探します。
+
+```
+spack compiler find
+```
+
+これにより`$HOME/.spack/linux/compilers.yaml` ファイルが作られ、そこに認識された情報が保存されます。
+
+spack でコンパイルした GCC を`spack compiler find`で spack に認識させるには、`spack load gcc`した状態で`spack compiler find`を実行します。
+
+
+
+6, 動作確認
+
+spack に`spack install gcc`で作った gcc ver 13.1.0 をを認識させ、
+これを使って、他の spack パッケージをインストールしてみます。
+
+```
+spack load gcc@13.1.0
+spack compiler find
+spack install tree %gcc@13.1.0
+```
+
+実行例は以下の通りです。
+
+```
+$ spack load gcc@13.1.0
+
+$ spack compiler find
+==> Added 1 new compiler to /home/oogasawa/.spack/linux/compilers.yaml
+    gcc@13.1.0
+==> Compilers are defined in the following files:
+    /home/oogasawa/.spack/linux/compilers.yaml
+
+$ spack install tree %gcc@13.1.0
+==> Installing tree-2.1.0-ah6zdt2znzoc7ie7kpenwj6t255mr3wp
+==> No binary for tree-2.1.0-ah6zdt2znzoc7ie7kpenwj6t255mr3wp found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/01/0160c535bff2b0dc6a830b9944e981e3427380f63e748da96ced7071faebabf6.tgz
+==> No patches needed for tree
+==> tree: Executing phase: 'install'
+==> tree: Successfully installed tree-2.1.0-ah6zdt2znzoc7ie7kpenwj6t255mr3wp
+  Stage: 1.15s.  Install: 1.54s.  Post-install: 0.16s.  Total: 2.96s
+[+] /lustre7/home/lustre4/oogasawa/spack/opt/spack/linux-centos7-zen/gcc-13.1.0/tree-2.1.0-ah6zdt2znzoc7ie7kpenwj6t255mr3wp
+
+$ spack find
+-- linux-centos7-x86_64_v3 / gcc@4.8.5 --------------------------
+autoconf@2.69                binutils@2.40  gcc@13.1.0      gmp@6.2.1        libxml2@2.10.3  ncurses@6.4    readline@8.2   zlib@1.2.13
+autoconf-archive@2023.02.20  bzip2@1.0.8    gdbm@1.23       libiconv@1.17    m4@1.4.19       perl@5.36.0    tar@1.34       zstd@1.5.5
+automake@1.16.5              diffutils@3.9  gettext@0.21.1  libsigsegv@2.14  mpc@1.3.1       pigz@2.7       texinfo@7.0.3
+berkeley-db@18.1.40          gawk@5.2.1     gmake@4.4.1     libtool@2.4.7    mpfr@4.2.0      pkgconf@1.9.5  xz@5.4.1
+
+-- linux-centos7-zen / gcc@13.1.0 -------------------------------
+tree@2.1.0
+```
+
+- gcc@13.1.0 で tree がコンパイルされたことがわかります。
+- `spack install gcc`時に bootstrap=True となっているので、古い C コンパイラでも問題なく gcc 13.1.0 がコンパイルされています。
+
+
+
+7, gcc のアンロード
 
 元に戻すには`spack unload`します。
 
