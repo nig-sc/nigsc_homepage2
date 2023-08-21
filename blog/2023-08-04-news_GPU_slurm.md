@@ -25,5 +25,5 @@ Parabricks の無料化などに伴い GPU ノードの利用者が増加して�
 
 利用方法は以下のリンクをご参照ください。
 
-- [個人ゲノム解析区画 Slurm GPU キューの利用方法](/personal_genome_division/gpu_slurm)
+- [<u>個人ゲノム解析区画 Slurm GPU キューの利用方法</u>](/personal_genome_division/gpu_slurm)
 

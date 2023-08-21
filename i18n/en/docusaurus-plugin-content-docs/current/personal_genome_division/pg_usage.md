@@ -20,4 +20,4 @@ Grid Engine or Slurm can be installed and delivered as a job scheduler for the n
 
 ## How to use NVIDIA Parabricks
 
-In preparation.
+Refer [<u>the page "How to use NVIDIA Clara Parabricks"</u>](/advanced_guides/parabricks/).
