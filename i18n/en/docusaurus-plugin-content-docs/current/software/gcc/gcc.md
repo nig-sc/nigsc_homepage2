@@ -1,15 +1,14 @@
 ---
 id: gcc
-title: "C/C++ の使い方(GCC: GNU Compiler Collection)"
+title: "C/C++ (GCC: GNU Compiler Collection)"
 ---
 
+## GCC version: status of support for C and C++ language standards
 
-## GCC バージョン:   C 言語標準、C++言語標準への対応状況
+The GCC versions and the conforming language specifications of the default state are as follows.
+(You can change the standard you are compliant with by adding options. For more information, refer to the manuals for each version).
 
-GCC の各バージョンと、デフォルト状態での準拠言語仕様は以下のとおりです。
-(オプションを付けることにより準拠する標準は変えることができます。詳細は各バージョンのマニュアルをご参照ください。)
-
-| バージョン | C 言語標準 | C++言語標準 | 初回リリース年 | URL                                                        |
+| Version | C language standard | C++ language standard | Initial release year | URL                                                        |
 |------------|------------|-------------|--------------|--------------------------------------------------------------|
 | gcc 4.8    | std=gnu90  | std=gnu++98 | 2013         | https://gcc.gnu.org/onlinedocs/gcc-4.8.0/gcc/Standards.html  |
 | gcc 4.9    | std=gnu90  | std=gnu++98 | 2014         | https://gcc.gnu.org/onlinedocs/gcc-4.9.0/gcc/Standards.html  |
@@ -24,7 +23,7 @@ GCC の各バージョンと、デフォルト状態での準拠言語仕様は�
 | gcc 13     | std=gnu17  | std=gnu++17 | 2023         | https://gcc.gnu.org/onlinedocs/gcc-13.1.0/gcc/Standards.html |
 
 
-参考資料
+Reference
 
 - [GCC Releases | gcc.gnu.org](https://gcc.gnu.org/releases.html)
 
@@ -32,26 +31,27 @@ GCC の各バージョンと、デフォルト状態での準拠言語仕様は�
 
 
 
-## GCC のバージョンについて  (CentOS 7 の場合)
+## About GCC versions for CentOS 7
 
-遺伝研スパコンの CentOS 7 のシステムでは
-- CentOS 7 付属の rpm パッケージは GCC ver.4.8 系です。ver.4.8 は、古いバージョンですので、新しいバージョンをインストールすることを推奨いたします。新しいバージョンとして、ver.9 に切り替えることができますので、ver.9 をインストールして使ってください。
-- Bright Cluster Manager (BCM) 付属の[Environmentl modules](/software/environmental_modules) を使って GCC ver.8, ver.9 が提供されています。
-    - BCM は計算機クラスタを構成する個々の計算機に OS 等をデプロイするためのシステムです。[BCM 公式ページ](https://www.nvidia.com/en-us/data-center/bright-cluster-manager/)。
-    - Environmental modules 自体の説明については[「利用案内 => ソフトウェア => Environmental Modules」](/software/environmental_modules)のページをご参照ください。
-- それ以外をご希望の場合には、[spack パッケージマネージャ](/software/spack/install_spack)を使って GCC のインストールおよび GCC のバージョン変更ができます。この場合は GCC をソースコードからコンパイルするので少し時間がかかります。
-    - spack 自体の説明については[「利用案内 => ソフトウェア => spack」](/software/spack/install_spack)のページをご参照ください。
+For CentOS 7 systems of the NIG supercomputer
+- The rpm package included in CentOS 7 is GCC ver.4.8. series. Ver. 4.8 is an old version, so it is recommended to install a newer version. You can switch to ver. 9 as a newer version, so just install and use ver. 9.
+- GCC ver. 8 and ver. 9 are provided using [Environmentl modules](/software/environmental_modules) supplied with Bright Cluster Manager (BCM).
+    - BCM is a system for deploying operating systems and other software to individual computers composing a computer cluster.[BCM official page](https://www.nvidia.com/en-us/data-center/bright-cluster-manager/).
+    - For an explanation of Environmental modules itself, see the page [User Guide => Software => Environmental Modules](/software/environmental_modules).
+- If you would like to use others, you can install GCC and change the GCC version using the [spack package manager](/software/spack/install_spack). In this case, it will take a little longer since GCC is compiled from source code.
+    - For an explanation of spack itself, see the page [User Guide => software => spack](/software/spack/install_spack).
 
 
-## GCC のバージョンを切り替える方法 (Ubuntu Linux の場合)
+## How to switch GCC versions for Ubuntu Linux
 
-- Ubuntu Linux 22.04 付属の deb パッケージは GCC 12 系です。特にバージョンを指定する必要が無い場合は、GCC 12 系をお使いください。
-- バージョンを指定して使いになりたい場合は、[spack パッケージマネージャ](/software/spack/install_spack)を使って GCC のインストールおよび GCC のバージョン変更ができます。この場合は GCC をソースコードからコンパイルするので少し時間がかかります。
-    - spack 自体の説明については[「利用案内 => ソフトウェア => spack」](/software/spack/install_spack)のページをご参照ください。
+- The deb package included in Ubuntu Linux 22.04 is GCC 12 series. If you do not need to specify a version, use GCC 12 series.
+- If you would like to specify a version, you can install GCC and change the GCC version using the [spack package manager](/software/spack/install_spack). In this case, it will take a little longer since GCC is compiled from source code.
+    - For an explanation of spack itself, see the page [User Guide => software => spack](/software/spack/install_spack).
 
-## Environmental Modules による GCC のロード
 
-1, 現在自分の環境で利用可能になっている GCC のバージョンを確認します。
+## Loading GCC with Environmental Modules
+
+1. Check which version of GCC is currently available in your environment.
 
 ```
 $ which gcc
@@ -65,7 +65,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ```
 
-2, `module avail`コマンドにより、Environmental modules で利用可能な GCC を探します。
+2. Find the available GCCs in Environmental modules using the `module avail` command.
 
 ```
 $ module avail
@@ -81,9 +81,9 @@ gcc/8.2.0          java/1.8.0_202   module-git              python2             
 -
 ```
 
-- 遺伝研スパコンでは`gcc/9.2.0`と`gcc/8.2.0`が見つかります。
+- On the NIG supercomputer, you will find `gcc/9.2.0` and `gcc/8.2.0`.
 
-3, `module load`コマンドで、`gcc`をロードし使えるようにします。
+3. Use the `module load` command to load and use `gcc`.
 
 ```
 $ module load gcc/9.2.0
@@ -98,7 +98,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-4, 元に戻すには`module unload`します。
+4. To undo, use the `module unload` command.
 
 ```
 $ module unload gcc/9.2.0
@@ -114,10 +114,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
 
-## Spack による GCC のインストール
+## Installing GCC with Spack
 
 
-1, 現在自分の環境で利用可能になっている GCC のバージョンを確認します。
+1, Check which version of GCC is currently available in your environment.
 
 ```
 $ which gcc
@@ -132,7 +132,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
 
-2, `spack info`コマンドで、利用可能な GCC のバージョンおよびコンパイルオプションを確認します。
+2. Check the available GCC versions and compilation options with the `spack info` command.
 
 ```
 $ spack info gcc
@@ -230,29 +230,27 @@ Run Dependencies:
 
 ```
 
+3. Compile and install gcc itself with the `spack install` command.
 
-3, `spack install`コマンドで gcc 自体をコンパイルし、インストールします。
-
-Preferred version に合わせる場合、バージョンは省略できます。
+The version can be omitted if it matches the Preferred version.
 
 ```
 spack install -j 8 gcc@13.1.0 binutils=True bootstrap=True
 ```
 
-- この例では 1,で現在自分の環境で利用になっている gcc (ver.4.8.5)を使って spack の gcc(ver.13.1.0)をコンパイルした後、コンパイルされてできた spack の gcc ver.13.0.1 を使って spack の gcc ver.13.0.1 をコンパイルしています。(`bootstrap=True`)
+- In this example, after compiling spack's gcc (ver. 13.1.0) using the gcc (ver. 4.8.5) currently used in your environment in 1, the compiled spack's gcc ver. 13.0.1 is used to Compiled. (`bootstrap=True`)
 
 
-他のバージョンをインストールする場合はバージョンを明記します。
-
+If you would like to install other versions, specify the version.
 
 ```
 spack install -j 8 gcc@12.3.0 binutils=True bootstrap=True
 ```
 
 
-4, `spack load`コマンドで、インストールした gcc をロードし、使えるようにします。
+4. Load and make available the installed gcc with the `spack load` command.
 
-`spack install`済みの利用可能なバージョンは`spack find`で見つけることができます。
+You can find available versions that have been the `spack install` command with the `spack find` command.
 
 ```
 $ spack find gcc
@@ -261,7 +259,7 @@ gcc@13.1.0
 ==> 1 installed package
 ```
 
-spack でインストールした GCC を利用するには`spack load`コマンドを実行します。
+To use GCC that has been installed with spack, execute the `spack load` command.
 
 ```
 $ spack load gcc@13.1.0
@@ -276,25 +274,21 @@ $ which gcc
 /lustre7/home/lustre4/youraccount/spack/opt/spack/linux-centos7-x86_64_v3/gcc-4.8.5/gcc-13.1.0-j4uonbxx6sjxhg4tx3dd5q6mej62pgcd/bin/gcc
 ```
 
+5. The first time, use the `spack compiler find` command to make spack recognise GCC.
 
-5, 初回は`spack compiler find`で GCC を spack に認識させます。
-
-以下のコマンドを実行することで、スパコンに予めインストールされているコンパイラを spack が探します。
+By executing the following command, spack will find the compiler pre-installed on the NIG supercomputer.
 
 ```
 spack compiler find
 ```
 
-これにより`$HOME/.spack/linux/compilers.yaml` ファイルが作られ、そこに認識された情報が保存されます。
+Then, a `$HOME/.spack/linux/compilers.yaml` file will be created and the recognised information will be stored there.
 
-spack でコンパイルした GCC を`spack compiler find`で spack に認識させるには、`spack load gcc`した状態で`spack compiler find`を実行します。
+To make spack recognise GCC compiled by spack with the `spack compiler find` command, execute the `spack compiler find` command with the`spack load gcc` command executing.
 
+6. Confirmation of operation
 
-
-6, 動作確認
-
-spack に`spack install gcc`で作った gcc ver 13.1.0 をを認識させ、
-これを使って、他の spack パッケージをインストールしてみます。
+Make spack recognise gcc ver 13.1.0 made with the `spack install gcc` command and try installing other spack packages with it.
 
 ```
 spack load gcc@13.1.0
@@ -302,7 +296,7 @@ spack compiler find
 spack install tree %gcc@13.1.0
 ```
 
-実行例は以下の通りです。
+An example of an execution is shown below.
 
 ```
 $ spack load gcc@13.1.0
@@ -334,14 +328,14 @@ berkeley-db@18.1.40          gawk@5.2.1     gmake@4.4.1     libtool@2.4.7    mpf
 tree@2.1.0
 ```
 
-- gcc@13.1.0 で tree がコンパイルされたことがわかります。
-- `spack install gcc`時に bootstrap=True となっているので、古い C コンパイラでも問題なく gcc 13.1.0 がコンパイルされています。
+- Now, you can see that the tree has been compiled with gcc@13.1.0.
+- Since bootstrap=True when executing the `spack install gcc` command, gcc 13.1.0 is compiled without problems even with older version of the C compilers.
 
 
 
-7, gcc のアンロード
+7. Unloading gcc
 
-元に戻すには`spack unload`します。
+To undo, execute the `spack unload` command.
 
 ```
 $ spack unload gcc
@@ -356,3 +350,4 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 $ which gcc
 /usr/bin/gcc
 ```
+

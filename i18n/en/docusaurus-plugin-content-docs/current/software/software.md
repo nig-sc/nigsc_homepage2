@@ -276,7 +276,7 @@ R Studio Server
 <tr>
 <td width="300">
 
-C/C++ (GCC)
+[C/C++ (GCC)](/software/gcc)
 
 </td>
 <td width="300">installed</td>

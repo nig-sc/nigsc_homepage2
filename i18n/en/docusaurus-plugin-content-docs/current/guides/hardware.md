@@ -61,7 +61,7 @@ title: Hardware
 <tr>
     <td>
     Type 2b<br />
-	GPGPU installed
+	GPU installed
     </td>
 	<td>16 nodes<br />
 	384 CPU cores<br />
