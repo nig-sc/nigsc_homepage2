@@ -65,7 +65,7 @@ title: "ハードウェア"
 <tr>
     <td>
     Type 2b<br />
-	GPGPU 搭載
+	GPU 搭載
     </td>
 	<td>ノード数: 16 台<br />
 	総 CPU コア数: 384<br />

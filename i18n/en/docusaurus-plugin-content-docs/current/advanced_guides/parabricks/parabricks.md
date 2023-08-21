@@ -7,7 +7,7 @@ title: "NVIDIA Clara Parabricks の利用方法"
 ## システム概要
 
 NVIDIA Clara Parabricks は GATK 互換のゲノム解析パイプラインです。
-GPGPU を利用することにより GATK の公式実装に比べて大幅に処理時間を短縮できます。
+GPU を利用することにより GATK の公式実装に比べて大幅に処理時間を短縮できます。
 
 
 参考資料

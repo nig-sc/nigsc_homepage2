@@ -414,11 +414,12 @@ module.exports = {
             ]
         }
     ],
-    reportSidebar: {
-        "各種統計": [
-            "report/report",
-        ],
-        "論文リスト": [
+    reportSidebar: [
+        "report/report",
+        {
+            type: "category",
+            label: "論文リスト",
+            items: [
             "report/papers_2022",
             "report/papers_2021",
             "report/papers_2020",
@@ -430,8 +431,9 @@ module.exports = {
             "report/papers_2014",
             "report/papers_2013",
             "report/papers_2012",
-        ],
-    },
+            ],
+        }
+    ],
 
 
     faqSidebar: [

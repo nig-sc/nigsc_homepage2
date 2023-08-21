@@ -258,6 +258,11 @@ Aggregation period: January 1st -- December 31st
 <tr>
 	<td>2021</td>
 	<td>167</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>2022</td>
+	<td>177</td>
 	<td>0</td>
 </tr>
 </table>
