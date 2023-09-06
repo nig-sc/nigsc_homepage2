@@ -4,9 +4,9 @@ title: Introduction
 ---
 
 
-## 1. How to use the general analysis section
+## 1. How to use the general analysis division
 
-To login to the general analysis section, execute the following command.
+To login to the general analysis division, execute the following command.
 
 ```
 ssh youraccount@gw.ddbj.nig.ac.jp 
@@ -25,15 +25,15 @@ For specific procedures:
  <u>https://sc.ddbj.nig.ac.jp/application/ssh_keys</u>
 
 
-For more information about this section:
+For more information about this division:
 
  <u>https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction</u>
 
 For questions on how to login, refer to [<u>FAQ</u>](/faq/faq_login_general).
 
-## 2. How to use the personal genome analysis section
+## 2. How to use the personal genome analysis division
 
-To login to the personal genome analysis section, execute the following command.
+To login to the personal genome analysis division, execute the following command.
 
 ```
 ssh youraccount@gwA1.ddbj.nig.ac.jp
@@ -51,7 +51,7 @@ For specific procedures:
 
  <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login</u>
 
-For more information about this section:
+For more information about this division:
 
  <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction</u>
 

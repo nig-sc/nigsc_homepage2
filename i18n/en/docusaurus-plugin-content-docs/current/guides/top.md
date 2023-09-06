@@ -19,7 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [Created a new Slurm partition for only GPUs available in the personal genome analysis section](/en/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
+- [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/en/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [Extended number of CPU cores available for GPU node](/en/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
 - [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
@@ -43,19 +43,19 @@ The following will be implemented as usual.
 - [From January 2024, we start accepting applications for the usage plan table for next year.](/application/resource_extension)
 
 
-## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome analysis section and  large-scale storage on the general analysis section 
+## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome analysis division and  large-scale storage on the general analysis division 
 
 Thank you very much for using the NIG supercomputer.
 
 Due to the computing resources of CPU and Disk are current very tight, we suspend application for new use for the following users.
 
-- Application for new use using large-scale for the general analysis section
-- Application for new use of personal genome analysis section users
+- Application for new use using large-scale for the general analysis division
+- Application for new use of personal genome analysis division users
 
 The following applications will be accepted as before.
 
-- For current alreay large-scale users for the general analysis section and the personal genome analysis section users, we will continue to accept additions of resources to chang the usage plan table as before.
-- Regular user registration for the general analysis section will also be accepted as before. In this case, the disk memory will be limited to the default setting of 1TB.
+- For current alreay large-scale users for the general analysis division and the personal genome analysis division users, we will continue to accept additions of resources to chang the usage plan table as before.
+- Regular user registration for the general analysis division will also be accepted as before. In this case, the disk memory will be limited to the default setting of 1TB.
 - For using of the service for workshops, etc.
 
 Thank you for your understanding that we may not be able to meet your request in such cases.

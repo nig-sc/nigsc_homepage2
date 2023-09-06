@@ -6,7 +6,7 @@ title: "SSH public key Registration Procedure(Windows)"
 
 ## &#x1F180; How to install the latest version of PowerShell
 
-&#x1F150; This section explains how to update the PowerShell that comes standard with Windows to the latest version.
+&#x1F150; This division explains how to update the PowerShell that comes standard with Windows to the latest version.
 
 How to check the version: for more information [<u>see "How to check the version of PowerShell" on this page</u>](/faq/faq_sshkeys_windows#how-to-check-the-version-of-powershell).
 

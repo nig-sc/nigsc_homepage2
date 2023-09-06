@@ -1,13 +1,13 @@
 ---
 id: pg_login
-title: "How to Login（The Personal Genome Analysis Section）"
+title: "How to Login（The Personal Genome Analysis division）"
 ---
 
 ## Introduction
 
-SSL-VPN connection is used for login and file transfer to the personal genome analysis section of the NIG supercomputer. For SSL-VPN connection, dedicated software called SSL-VPN Client software must be installed on the user's client machine. Two-factor authentication is used for SSL-VPN connection. For the purpose of improving security, the client machine is set to block access to the Internet when it is connected using SSL-VPN. At this time, communication within the local network to which the client machine belongs is not blocked. Therefore, for example, if the client machine is connected to a file server in the local network, it is possible to send data from that file server to the personal genome analysis section without any problem. On the other hand, if you are working by connecting to the client machine with ssh from outside the local network, the ssh connection will be cut off.
+SSL-VPN connection is used for login and file transfer to the personal genome analysis division of the NIG supercomputer. For SSL-VPN connection, dedicated software called SSL-VPN Client software must be installed on the user's client machine. Two-factor authentication is used for SSL-VPN connection. For the purpose of improving security, the client machine is set to block access to the Internet when it is connected using SSL-VPN. At this time, communication within the local network to which the client machine belongs is not blocked. Therefore, for example, if the client machine is connected to a file server in the local network, it is possible to send data from that file server to the personal genome analysis division without any problem. On the other hand, if you are working by connecting to the client machine with ssh from outside the local network, the ssh connection will be cut off.
 
-But it is possible to use only HTTPS on the Internet from the personal genome analysis section due to the settings on the firewall of the NIG supercomputer.
+But it is possible to use only HTTPS on the Internet from the personal genome analysis division due to the settings on the firewall of the NIG supercomputer.
 
 
 ![figure](sslvpn.png)
@@ -347,7 +347,7 @@ INFO: Tunnel is up and running.
 
 ## Logging in to the gateway using SSH
 
-After connecting to the SSL-VPN, launch a terminal emulator and execute the following command to log in to the gateway of the personal genome analysis section.
+After connecting to the SSL-VPN, launch a terminal emulator and execute the following command to log in to the gateway of the personal genome analysis division.
 
 ```
 ssh [username]@gwa.ddbj.nig.ac.jp 
@@ -358,6 +358,6 @@ For questions on how to login, Refer to [<u>FAQ</u>](/faq/faq_login_personal).
 
 ## Logging in to the analysis server using SSH
 
-The personal genome analysis section is a node rental, so the user logs in to the borrowed node by SSH from the gateway.
+The personal genome analysis division is a node rental, so the user logs in to the borrowed node by SSH from the gateway.
 The name of the relevant node will be provided at the start of use.
 

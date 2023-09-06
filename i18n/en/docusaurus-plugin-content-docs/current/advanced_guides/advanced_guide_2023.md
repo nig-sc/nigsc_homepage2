@@ -23,8 +23,8 @@ You can get a pipeline with equivalent analysis content at https://github.com/NC
 
 Also, you can get the dataset from the NIG supercomputer in the following way.
 
- - For all compute nodes in the general analysis section, the datasets are mounted under `/usr/local/shared_data/public-human-genomes/GRCh38/` and can be accessed and used directly from the analysis programmes in the NIG supercomputer .
-    - The personal genome analysis section is currently being prepared.
+ - For all compute nodes in the general analysis division, the datasets are mounted under `/usr/local/shared_data/public-human-genomes/GRCh38/` and can be accessed and used directly from the analysis programmes in the NIG supercomputer .
+    - The personal genome analysis division is currently being prepared.
 - HTTPS: https://ddbj.nig.ac.jp/public/public-human-genomes/GRCh38/ 
 - FTP: ftp.ddbj.nig.ac.jp/public-human-genomes/GRCh38
 
@@ -84,7 +84,7 @@ For information on how to use Archaea tools (formerly HCPtools), [&#x1f517;<u>se
 <td valign="top">
 When you transfer files to and from the NIG supercomputer, you can use `scp` or `sftp`, which are widely used as the file transfer software. But their transfer speed is slow when a large numbers of files are transfered over long distances.
 
-For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis section, and Archaea tools(formerly HCPtools) is available on the personal genome analysis section on the NIG supercomputer.
+For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis division, and Archaea tools(formerly HCPtools) is available on the personal genome analysis division on the NIG supercomputer.
 
 </td>
 </tr>

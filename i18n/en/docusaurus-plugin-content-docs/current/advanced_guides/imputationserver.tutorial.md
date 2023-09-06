@@ -15,7 +15,7 @@ This system executes workflows in the following steps.
 
 ## 1. Prepare test data
 
-To proceed with the tutorial, download the test data to be used and copy it to the Personal Genome Analysis section of the NIG supercomputer.
+To proceed with the tutorial, download the test data to be used and copy it to the Personal Genome Analysis division of the NIG supercomputer.
 
 
 ### Download the test data
@@ -34,7 +34,7 @@ Even if you use `test-data.GRCh38.vcf.gz`, the steps of procedure are the same a
 
 
 
-### Copy it to the Personal Genome Analysis section of the NIG supercomputer
+### Copy it to the Personal Genome Analysis division of the NIG supercomputer
 
 Copy the test data just downloaded.
 
@@ -42,7 +42,7 @@ First, connect the VPN for connecting to the NIG supercomputer.
 
 Next, use the following command to copy the test data that you have just downloaded.
 
-In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the Personal Genome Analysis section of the NIG supercomputer.
+In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the Personal Genome Analysis division of the NIG supercomputer.
 
 ```
 scp -i [your private key file] ~/download/test-data.GRCh37.vcf.gz ([your account name])@gwa.ddbj.nig.ac.jp:~/
@@ -179,7 +179,7 @@ All files are in first two characters /`runid`/outputs/ of the installed directo
 If `runid` is `1b19d002-8d4c-4f52-973c-66a165cd135f`, the first two characters are `1b`.
 
 When you copy with the scp command, enter the following.
-A directory called `outputs` will be created in your computer, and the analysis results will be copied from the Personal Genome Analysis section to your computer.
+A directory called `outputs` will be created in your computer, and the analysis results will be copied from the Personal Genome Analysis division to your computer.
 
 ```
 scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/ outputs outputs

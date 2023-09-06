@@ -1,12 +1,12 @@
 ---
 id: ga_introduction
-title: "Introduction（The General Analysis Section)"
+title: "Introduction（The General Analysis division)"
 ---
 
 
-## System configuration of the general analysis section
+## System configuration of the general analysis division
 
-The general analysis section of NIG supercomputer is a cluster configuration of bundling of many computers called nodes.
+The general analysis division of NIG supercomputer is a cluster configuration of bundling of many computers called nodes.
 
 A job scheduler is a program that assigns an appropriate computer on a cluster computer system to a computation request from a user. The NIG supercomputer uses Grid Engine, the successor to Sun Grid Engine, which has been widely used in bioinformatics, as a job scheduler.
 
@@ -26,7 +26,7 @@ Compute nodes managed by the Grid Engine are broadly devided into login nodes an
 Compute requests called jobs to login and compute nodes are managed in Grid Engine with queues.
 Jobs wait in queue and are automatically executed by Grid Engine as soon as a computer is available if calculation requirements exceed computer resources.
 
-In the general analysis section of the NIG supercomputer, there is a Grid Engine queue for each type of compute node.
+In the general analysis division of the NIG supercomputer, there is a Grid Engine queue for each type of compute node.
 
 
 

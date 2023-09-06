@@ -12,7 +12,7 @@ title: "Application for use/change"
 
 - 1TB of high-speed storage is available after application for use.
 - If you extend the available storage or use a billing service, [<u>submit a usage plan table</u>](/en/application/resource_extension) after your application has been accepted.
-  - &#x26A0;  Currently, we are not accepting application for new use of the personal genomic analysis section and large-scale storage on the general analysis section. For more information, [<u>refer to this announcement page</u>](/en/blog/2022-05-13-suspension-of-applications).
+  - &#x26A0;  Currently, we are not accepting application for new use of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, [<u>refer to this announcement page</u>](/en/blog/2022-05-13-suspension-of-applications).
 
 
 <table>
@@ -89,7 +89,7 @@ For instructions on how to register by copying and pasting, see below.
 
 - Enter here if you already have a JGA or AGD account.
 If you do not have one, do not enter anything.
-- If you use the personal genome analysis section, tick the box at the bottom.
+- If you use the personal genome analysis division, tick the box at the bottom.
 - Note: If an incorrect email address is entered, the application information can be compromised due to erroneous transmission, for which no liability can be accepted.
 
 </td>
@@ -137,8 +137,8 @@ After the application for use has been completed, DDBJ will normally send an ema
  For more information, refer to the link below, 'Steps from user account application to start of use'.
 
 <ul>
-  <li><a href="https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_application#steps-from-user-account-application-to-start-of-use"><u>The General Analysis Section</u></a></li>
-  <li><a href="https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_application/#steps-from-user-account-application-to-start-of-use"><u>The Personal Genome Analysis Section</u></a></li>
+  <li><a href="https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_application#steps-from-user-account-application-to-start-of-use"><u>The General Analysis division</u></a></li>
+  <li><a href="https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_application/#steps-from-user-account-application-to-start-of-use"><u>The Personal Genome Analysis division</u></a></li>
 </ul>
 
 </td>

@@ -211,7 +211,7 @@ After pasting, press the 'Next' button and continue filling in the [continue fil
 
 ## Confirmation of connection to the NIG supercomputer
 
-- To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
-- To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).
+- To log in to the General Analysis division, refer to [<u>"General Analysis division > How to Login (The general analysis division)"</u>](/general_analysis_division/ga_login).
+- To login to the Personal Genome Analysis division, refer to [<u>"Personal Genome Analysis division > How to Login（The Personal Genome Analysis division）</u>](/personal_genome_division/pg_login).
 
 If you have trouble connecting, refer to [FAQ](/faq/faq_login).

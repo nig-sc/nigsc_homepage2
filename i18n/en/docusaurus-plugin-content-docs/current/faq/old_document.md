@@ -7,7 +7,7 @@ On this page, we list FAQs that were listed in the [FAQ pages](/faq/faq_software
 
 ---
 
-## How to Login (The general analysis section)
+## How to Login (The general analysis division)
 
 ### &#x1F180; I have reconfigured my ssh public key again, but I get a error message `Permission denied` and cannot connect.
 
@@ -19,7 +19,7 @@ Please login from `gw2.ddbj.nig.ac.jp` immediately after setting your public key
 
 ---
 
-## How to Login (The personal genome analysis section)
+## How to Login (The personal genome analysis division)
 
 ### &#x1F180; I have reconfigured my ssh public key again, but I get a error message `Permission denied` and cannot connect.
 
