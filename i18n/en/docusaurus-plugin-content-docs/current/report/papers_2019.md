@@ -129,7 +129,7 @@ title: Published Papers(2019)
     <td>13</td>
     <td>吉田 健太郎</td>
     <td>Kentaro Yoshida</td>
-    <td>Origin of wheat B-genome chromosomes inferred from RNA sequencing analysis of leaf transcripts from section Sitopsis species of Aegilops</td>
+    <td>Origin of wheat B-genome chromosomes inferred from RNA sequencing analysis of leaf transcripts from division Sitopsis species of Aegilops</td>
     <td>DNA Res. 2019 Apr 1;26(2):171-182.</td>
     <td>30715317</td>
     <td>doi: 10.1093/dnares/dsy047</td>

@@ -1,13 +1,13 @@
 ---
 id: pg_transfer
-title: "Data file transfer（The Personal Genome Analysis Section）"
+title: "Data file transfer（The Personal Genome Analysis division）"
 ---
 
 
 
 ## How to transfer files using SSH protocol (scp, sftp)
 
-You can transfer files using scp, sftp, etc. to the gateway server (gwa.ddbj.nig.ac.jp) of the personal genome analysis section.
+You can transfer files using scp, sftp, etc. to the gateway server (gwa.ddbj.nig.ac.jp) of the personal genome analysis division.
 
 Example :
 

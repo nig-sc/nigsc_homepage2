@@ -15,7 +15,7 @@ This system executes workflows in the following steps.
 
 ## 1. Prepare restricted release data
 
-We proceed with the tutorial on the assumption that there is already restricted release data in the personal genome analysis section of the NIG supercomputer.
+We proceed with the tutorial on the assumption that there is already restricted release data in the personal genome analysis division of the NIG supercomputer.
 
 ### Notes on file names for restricted release data
 
@@ -181,7 +181,7 @@ All files are in first two characters /`runid`/outputs/ of the installed directo
 If `runid` is `1b19d002-8d4c-4f52-973c-66a165cd135f`, the first two characters are `1b`.
 
 When you copy with the scp command, enter the following.
-A directory called `outputs` will be created in your computer, and the analysis results will be copied from the Personal Genome Analysis section to your computer.
+A directory called `outputs` will be created in your computer, and the analysis results will be copied from the Personal Genome Analysis division to your computer.
 
 ```
 scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/ outputs outputs

@@ -28,11 +28,11 @@
     "description": "The label for category ソフトウェア in sidebar topSidebar"
   },
   "sidebar.topSidebar.category.一般解析区画の使い方": {
-    "message": "General Analysis Section",
+    "message": "General Analysis Division",
     "description": "The label for category 一般解析区画の使い方 in sidebar topSidebar"
   },
   "sidebar.topSidebar.category.個人ゲノム解析区画の使い方": {
-    "message": "Personal Genome Analysis Section",
+    "message": "Personal Genome Analysis Division",
     "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar topSidebar"
   },
   "sidebar.softwareSidebar.category.ジョブスケジューラ": {
@@ -60,11 +60,11 @@
     "description": "The label for category 課金サービス利用方法 in sidebar applicationsSidebar"
   },
   "sidebar.faqSidebar.category.FAQ : 一般解析区画": {
-    "message": "General Analysis Section",
+    "message": "General Analysis Division",
     "description": "The label for link FAQ:一般解析区画 in sidebar faqSidebar, linking to /faq/faq_login_general"
   },
   "sidebar.faqSidebar.category.FAQ : 個人ゲノム解析区画": {
-    "message": "Personal Genome Analysis Section",
+    "message": "Personal Genome Analysis Division",
     "description": "The label for link FAQ:個人ゲノム解析区画 in sidebar faqSidebar, linking to /faq/faq_login_personal"
   },
   "sidebar.faqSidebar.category.FAQ : 利用規定等": {

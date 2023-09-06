@@ -9,7 +9,7 @@ The NIG supercomputer is operated as a business of the Inter-University Research
 
 - Large-scale use of storage
 - Priority/occupied use of compute nodes
-- Use of the personal genome analysis section
+- Use of the personal genome analysis division
 
 When using the billing service, fill in [<u>Download the usage plan</u>](/application/resource_extension) and send it to [<u>Contact us</u>](/application/reference).
 
@@ -21,7 +21,7 @@ Click and check [<u>Use Policy</u>](/application/use_policy)
 
 ## Billing service list
 
-The compute nodes and storage of the NIG supercomputer are roughly divided into two sections, the general analysis section and the personal genome analysis section. The services available in each section are as shown in the table below. For details of each service, refer to the links in the table below.
+The compute nodes and storage of the NIG supercomputer are roughly divided into two divisions, the general analysis division and the personal genome analysis division. The services available in each division are as shown in the table below. For details of each service, refer to the links in the table below.
 
 - The Fat compute nodes are only available in the form of nodes rental by the billing service.
 
@@ -33,8 +33,8 @@ The compute nodes and storage of the NIG supercomputer are roughly divided into 
 <table>
 <tr>
 <th width="350">Service Name</th>
-<th>The general analysis section</th>
-<th>The personal genome analysis section</th>
+<th>The general analysis division</th>
+<th>The personal genome analysis division</th>
 </tr>
 
 <tr>
@@ -74,7 +74,7 @@ It is a service that removes the compute nodes from Grid Engine management and o
 (Thin, Medium nodes)
 <br />
 
-[<u>Introduction（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_introduction) 
+[<u>Introduction（The Personal Genome Analysis division）</u>](/personal_genome_division/pg_introduction) 
 </td>
 </tr>
 

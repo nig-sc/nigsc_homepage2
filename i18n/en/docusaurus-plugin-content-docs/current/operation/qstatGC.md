@@ -1,6 +1,6 @@
 ---
 id: qstatGC
-title: How to check the congestion status of the general analysis section
+title: How to check the congestion status of the general analysis division
 ---
 
 

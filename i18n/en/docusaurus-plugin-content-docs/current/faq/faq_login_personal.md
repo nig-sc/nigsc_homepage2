@@ -70,9 +70,9 @@ For more information, click the link below.
 
 
 
-## &#x1F180; VPN connection to the personal genome analysis section cannot be established.
+## &#x1F180; VPN connection to the personal genome analysis division cannot be established.
 
-&#x1F150; If you got the error `Credential or ssl vpn configuration is wrong (-7200)` when accessing the personal genome analysis section with FortiClient on Windows 10 or 11,
+&#x1F150; If you got the error `Credential or ssl vpn configuration is wrong (-7200)` when accessing the personal genome analysis division with FortiClient on Windows 10 or 11,
 
 Control Panel => Internet Options => Security tab => Trusted Sites
 
@@ -82,7 +82,7 @@ Register the SSL-VPN address here.
 
 
 
-## &#x1F180; When entering your username and password for FortiClient for an SSL-VPN connection to the personal genome analysis section, the one-time password is not sent to the email address associated with your VPN account.
+## &#x1F180; When entering your username and password for FortiClient for an SSL-VPN connection to the personal genome analysis division, the one-time password is not sent to the email address associated with your VPN account.
 
 &#x1F150; 
 - Google has tightened the security since 1 March 2022, therefore there have been incidents that the email with one-time password from the NIG supercomputer VPN is not sent to gmail.

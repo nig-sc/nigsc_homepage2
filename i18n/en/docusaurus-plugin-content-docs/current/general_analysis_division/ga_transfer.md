@@ -1,16 +1,16 @@
 ---
 id: ga_transfer
-title: Data file transfer（The general analysis section）
+title: Data file transfer（The general analysis division）
 ---
 
-For uploading and downloading data to the general analysis section of the NIG supercomputer, you can currently use the following two file transfer softwares.
+For uploading and downloading data to the general analysis division of the NIG supercomputer, you can currently use the following two file transfer softwares.
 
 - scp, sftp
 - Aspera
 
 ## To transfer files with SSH protocol (scp, sftp)
 
-You can use scp, sftp, etc. to transfer files to the gateway server (`gw.ddbj.nig.ac.jp`) of the general analysis section of the NIG supercomputer.
+You can use scp, sftp, etc. to transfer files to the gateway server (`gw.ddbj.nig.ac.jp`) of the general analysis division of the NIG supercomputer.
 
 Example :
 

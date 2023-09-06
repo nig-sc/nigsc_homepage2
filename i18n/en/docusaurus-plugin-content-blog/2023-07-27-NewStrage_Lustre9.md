@@ -21,7 +21,7 @@ Monday, 27 July 2023, 9:00 - 15:00 (24h notation)
 
 ## Scope of impact
 
-- General Analysis Section and Personal genome Analysis Section of the NIG supercomputer
+- General Analysis division and Personal genome Analysis division of the NIG supercomputer
   - Login and data transfer operations using scp and HCPtools will not be affected.
   - The running jobs will not be stopped.
   - Access to the DDBJ database from within the supercomputer (access to under /usr/local/resources/) will not be affected.

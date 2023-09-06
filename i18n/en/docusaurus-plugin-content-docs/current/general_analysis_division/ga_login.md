@@ -1,11 +1,11 @@
 ---
 id: ga_login
-title: "How to Login (The general analysis section)"
+title: "How to Login (The general analysis division)"
 ---
 
 [First of all, you need to complete application for new use](/application/registration)
 
-##  How to log in to the general analysis section with your account
+##  How to log in to the general analysis division with your account
 
 1. Open a terminal emulator and enter ssh `username@gatewaynodename`. Then press enter. (The same way for the Windows PowerShell SSH client.)
 

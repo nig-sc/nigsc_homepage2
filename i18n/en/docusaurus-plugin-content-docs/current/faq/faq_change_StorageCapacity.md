@@ -7,7 +7,7 @@ title: Change Storage Capacity
 
 &#x1F150; You need to apply for using large-scale storage.
 
-Refer to [<u>General Analysis Section > Using large-scale storage</u>](/general_analysis_division/largescale_storage) for application details.
+Refer to [<u>General Analysis division > Using large-scale storage</u>](/general_analysis_division/largescale_storage) for application details.
 
 
 ## &#x1F180; How is storage currently allocated?

@@ -5,7 +5,7 @@ title: How to use Archaea tools(formerly HCPtools)
 
 When you transfer files to and from the NIG supercomputer, you can use `scp` or `sftp`, which are widely used as the file transfer software. But their transfer speed is slow when a large numbers of files are transfered over long distances.
 
-For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis section, and Archaea tools(formerly HCPtools) is available on the personal genome analysis section on the NIG supercomputer.
+For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis division, and Archaea tools(formerly HCPtools) is available on the personal genome analysis division on the NIG supercomputer.
 
 
 Reference
@@ -101,11 +101,11 @@ PrivateKeyFile C:\Users\youraccount\.ssh/id_rsa    # Specify the private key
 ## The file transfer with Archaea tools(formerly HCPtools)
 
 
-### SSL-VPN connection to the personal genome analysis section
+### SSL-VPN connection to the personal genome analysis division
 
-For file transfer to and from the personal genome analysis section, establish the SSL-VPN connection between the client computer and the personal genome compartment of the NIG supercomputer.
+For file transfer to and from the personal genome analysis division, establish the SSL-VPN connection between the client computer and the personal genome compartment of the NIG supercomputer.
 
-How to establish it: [<u>「How to Login (the personal genome analysis section)」>「How to establish the SSL-VPN connection」</u>](/personal_genome_division/pg_login#vpn%E3%81%B8%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95)
+How to establish it: [<u>「How to Login (the personal genome analysis division)」>「How to establish the SSL-VPN connection」</u>](/personal_genome_division/pg_login#vpn%E3%81%B8%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95)
 
 ![](upload_download_EN.png)
 
