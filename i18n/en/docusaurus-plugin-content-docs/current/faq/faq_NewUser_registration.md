@@ -38,7 +38,7 @@ Click it to log out.
 </tr>
 <tr>
 <td>3.</td>
-<td width="300">Click the "Go Next" button. Clicking on the button will take you to the "Confirm" section on the next page. </td>
+<td width="300">Click the "Go Next" button. Clicking on the button will take you to the "Confirm" division on the next page. </td>
 <td height="400">
 
 ![](ResponsiblePerson_3.png)

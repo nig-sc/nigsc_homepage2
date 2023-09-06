@@ -1,12 +1,12 @@
 ---
 id: gpu_slurm
-title: Hoe to use Slurm GPU node specific queue of Personal genome analysis section
+title: Hoe to use Slurm GPU node specific queue of Personal genome analysis division
 ---
 
 
 ## Overview
 
-In the Personal Genome Analysis section of the DIG supercomputer, jobs can be submitted to GPU nodes managed under the Slurm resource scheduler.
+In the Personal Genome Analysis division of the DIG supercomputer, jobs can be submitted to GPU nodes managed under the Slurm resource scheduler.
 
 Ths Slurm cluster assumes that all GPU nodes (4 GPUs) are used to use Parabricks, so another user's job cannot be submitted to the same GPU node at the same time.
 

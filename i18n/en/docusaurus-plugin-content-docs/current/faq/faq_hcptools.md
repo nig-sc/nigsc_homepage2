@@ -8,14 +8,14 @@ title: Archaea tools(formerly HCPtools)
 
 &#x1F150; The path on the user's computer can be specified as either an absolute or relative path.
 
-However, the path of the personal genome analysis section cannot be specified as a relative path.It must be specified as an absolute path.
+However, the path of the personal genome analysis division cannot be specified as a relative path.It must be specified as an absolute path.
 
 Below are input examples for the user's computer path.
 
 Both input examples 1 and 2 mean the same thing, so you can execute them whichever you prefer.
 
 
-- Upload the file `upload_ex1.txt` in the home directory of the user's computer to the user's home directory in the personal genome analysis section.
+- Upload the file `upload_ex1.txt` in the home directory of the user's computer to the user's home directory in the personal genome analysis division.
 
 Input example 1: When specifying by absolute path
 ```
@@ -41,7 +41,7 @@ hcp --user uesrname .\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/uesrnam
 ```
 
 
-- Download the file `download_ex1.txt` from the user's home directory in the personal genome analysis section to the home directory of the user's computer.
+- Download the file `download_ex1.txt` from the user's home directory in the personal genome analysis division to the home directory of the user's computer.
 
 Input example 1: When specifying by absolute path
 ```

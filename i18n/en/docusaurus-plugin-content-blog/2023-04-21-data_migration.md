@@ -16,7 +16,7 @@ Currently, data on Lustre6 high-speed storage for DDBJ operations and data on GP
 
 After the new storage is fully operational, DRA data etc. will be directly mounted from the NIG supercompute and will be available directly.
 
-Lustre6 was mainly used for building the DDBJ database, but some users' data of the previous supercomputer (NIG supercomputer 2012) still remained. We are informing the applicable users by email. The user home area of the general analysis section of the current NIG supercomputer is located in Lustre7, so we ask users who have received the email to transfer your data there or delete your data.
+Lustre6 was mainly used for building the DDBJ database, but some users' data of the previous supercomputer (NIG supercomputer 2012) still remained. We are informing the applicable users by email. The user home area of the general analysis division of the current NIG supercomputer is located in Lustre7, so we ask users who have received the email to transfer your data there or delete your data.
 
 For information on the current storage types, see below.
 

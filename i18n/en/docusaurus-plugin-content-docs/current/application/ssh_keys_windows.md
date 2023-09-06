@@ -109,7 +109,7 @@ State : Installed
 
 If 'State' of "OpenSSH.Client~~~~0.0.1.0" is 'Installed', the OpensSSH client is installed. [Continue to the next "Create SSH public key and private key"](/application/ssh_keys_windows#ssh公開鍵と秘密鍵を作る-1).
 
-If it is 'NotPresent', the OpenSSH client is not yet installed. [See References and install this software](/application/ssh_keys_windows#参考文献), and then proceed to the next section "Create SSH public key and private key".
+If it is 'NotPresent', the OpenSSH client is not yet installed. [See References and install this software](/application/ssh_keys_windows#参考文献), and then proceed to the next division "Create SSH public key and private key".
 
 ![](/img/ssh_keys/windows/ssh_win_14.png)
 
@@ -260,8 +260,8 @@ After pasting, press the 'Next' button and continue filling in the [continue fil
 
 ## Confirmation of connection to the NIG supercomputer
 
-- To log in to the General Analysis Section, refer to [<u>"General Analysis Section > How to Login (The general analysis section)"</u>](/general_analysis_division/ga_login).
-- To login to the Personal Genome Analysis Section, refer to [<u>"Personal Genome Analysis Section > How to Login（The Personal Genome Analysis Section）</u>](/personal_genome_division/pg_login).
+- To log in to the General Analysis division, refer to [<u>"General Analysis division > How to Login (The general analysis division)"</u>](/general_analysis_division/ga_login).
+- To login to the Personal Genome Analysis division, refer to [<u>"Personal Genome Analysis division > How to Login（The Personal Genome Analysis division）</u>](/personal_genome_division/pg_login).
 
 If you have trouble connecting, refer to [FAQ](/faq/faq_login).
 

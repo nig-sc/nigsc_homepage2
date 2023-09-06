@@ -24,5 +24,5 @@ Thursday, November 24, 2022 09:30 - 12 noon (24h notation)
 
 ## Scope of impact
 
-- In the DDBJ service section, I/O suspensions to Lustre6 are expected to occur before and after the work for approximately 4 minutes each.
-- The general analysis and personal genome analysis section will not be affected.
+- In the DDBJ service division, I/O suspensions to Lustre6 are expected to occur before and after the work for approximately 4 minutes each.
+- The general analysis and personal genome analysis division will not be affected.

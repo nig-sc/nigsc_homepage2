@@ -38,7 +38,7 @@ December 2, 17:00 - December 8, 2022, 00:00(24h)
 
 3. unification of SSH public key reflection flow
 
-Until now, when the SSH public key was registered, it took about 24 hours to be reflected in the gateway gw.ddbj.nig.ac.jp in the general analysis section, and about 10 minutes in gw2.ddbj.nig.ac.jp. After the scheduled maintenance in December, the processing flow will be unified and both gw and gw2 will be reflected in about 10 minutes.
+Until now, when the SSH public key was registered, it took about 24 hours to be reflected in the gateway gw.ddbj.nig.ac.jp in the general analysis division, and about 10 minutes in gw2.ddbj.nig.ac.jp. After the scheduled maintenance in December, the processing flow will be unified and both gw and gw2 will be reflected in about 10 minutes.
 
 
 ## Notes

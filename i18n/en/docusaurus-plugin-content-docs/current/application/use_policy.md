@@ -16,7 +16,7 @@ Terms of Use for Supercomputer Systems of the National Institute of Genetics, th
 
 **Appendix 1（Pertaining to Article 12）**
 
-Price for the Use for the general analysis section large-scale(excluding tax)
+Price for the Use for the general analysis division large-scale(excluding tax)
 
 <table>
 	<tbody>
@@ -64,7 +64,7 @@ The billing amount is prorated based on the number of days used.
 
 **Appendix 2（Pertaining to Article 12）**
 
-Price for the Use for the personal genome analysis section large-scale(excluding tax)
+Price for the Use for the personal genome analysis division large-scale(excluding tax)
 
 <table>
 	<tbody>
@@ -119,7 +119,7 @@ If additional development is required, such as support for different data struct
 
 **Appendix 3（Pertaining to Article 12）**
 
-Price for the Use for the occupancy compute node of the general analysis section and the personal genome analysis section(excluding tax)
+Price for the Use for the occupancy compute node of the general analysis division and the personal genome analysis division(excluding tax)
 
 <table>
 	<tbody>

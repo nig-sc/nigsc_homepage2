@@ -12,7 +12,7 @@ title: "Topics before 2022"
 
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;<u>Michigan Imputation Server</u>](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;<u>TOPMed Project Imputation Server</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis Section](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
+Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
 The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
 
@@ -30,7 +30,7 @@ Subject name: "Investigation and practice of ethical and technical issues in gen
 </td>
 <td valign="top">
 
-The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this system') is available in the Personal Genome Analysis section of the NIG supercomputer. Researchers(users) can upload their own genome data to the server and execute the imputation analysis workflow via the web user interface.
+The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this system') is available in the Personal Genome Analysis division of the NIG supercomputer. Researchers(users) can upload their own genome data to the server and execute the imputation analysis workflow via the web user interface.
 
 
 - [NBDC-DDBJ Imputation Server](/advanced_guides/imputation_server)

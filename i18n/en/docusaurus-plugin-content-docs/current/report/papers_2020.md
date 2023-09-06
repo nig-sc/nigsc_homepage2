@@ -600,7 +600,7 @@ e in Japanese gentian with the CRISPR/Cas9 system</td>
     <td>65</td>
     <td>西井 かなえ</td>
     <td>Kanae Nishii</td>
-    <td>QTL dissection of floral traits in Streptocarpus (Gesneriaceae)</td>
+    <td>QTL disdivision of floral traits in Streptocarpus (Gesneriaceae)</td>
     <td>Netherlands Journal of Plant Breeding, 01 Jul 2020, 216(7):110</td>
     <td>NULL</td>
     <td>doi: 10.1007/s10681-020-02647-1</td>
@@ -906,7 +906,7 @@ e in Japanese gentian with the CRISPR/Cas9 system</td>
     <td>99</td>
     <td>高橋 弘喜</td>
     <td>Hiroki Takahashi</td>
-    <td>Draft Genome Sequence of Aspergillus tubingensis WU-2223L, a Citric Acid-Producing Filamentous Fungus Belonging to Aspergillus Section Nigri</td>
+    <td>Draft Genome Sequence of Aspergillus tubingensis WU-2223L, a Citric Acid-Producing Filamentous Fungus Belonging to Aspergillus division Nigri</td>
     <td>Microbiol Resour Announc. 2020 Aug 13;9(33):e00702-20. </td>
     <td>32817151</td>
     <td>doi: 10.1128/MRA.00702-20.</td>

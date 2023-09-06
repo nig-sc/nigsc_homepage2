@@ -62,7 +62,7 @@ If you use them, make sure that the private key file (`id_rsa`) addresses under 
 
 ### Encryption
 
-It is not necessary to encrypt by HCPtools because the personal genome analysis section is used SSL-VPN connection.
+It is not necessary to encrypt by HCPtools because the personal genome analysis division is used SSL-VPN connection.
 Therefore, normally there is no problem when you create the file with the following content and set it up as `~/.hcp/hcp-hcp-common.conf`.
 
 ### Digest format

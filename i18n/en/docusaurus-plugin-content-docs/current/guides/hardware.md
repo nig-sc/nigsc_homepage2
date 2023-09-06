@@ -118,7 +118,7 @@ title: Hardware
 			<td colspan="3">Inter-node interconnect network</td>
 			<td>
             InfiniBand 4×EDR 100Gbps fat tree<br />
-            (For storage, full bi-section; for compute nodes, connection bandwidth to upstream SW : connection bandwidth to downstream SW = 1:4)
+            (For storage, full bi-division; for compute nodes, connection bandwidth to upstream SW : connection bandwidth to downstream SW = 1:4)
             </td>
 		</tr>
 	</tbody>

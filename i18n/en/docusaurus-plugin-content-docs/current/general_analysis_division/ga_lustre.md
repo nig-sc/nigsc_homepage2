@@ -3,7 +3,7 @@ id: ga_lustre
 title: Using Lustre FS
 ---
 
-The home area of both the general analysis section and the personal genome analysis section of the NIG supercomputer is composed of the Lustre File System.
+The home area of both the general analysis division and the personal genome analysis division of the NIG supercomputer is composed of the Lustre File System.
 
 ## Structure of Lustre File System
 

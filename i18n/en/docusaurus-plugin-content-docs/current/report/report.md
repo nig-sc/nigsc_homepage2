@@ -5,7 +5,7 @@ title: "Statistics"
 
 
 
-## number of users
+## Number of users
 
 
 <table>
@@ -107,8 +107,10 @@ title: "Statistics"
 </tr>
 </table>
 
+![](total_Accounts.png)
 
-## number of user institutions
+
+## Number of user institutions
 
 <table>
 	<tbody>
@@ -199,6 +201,7 @@ title: "Statistics"
 	</tbody>
 </table>
 
+![](totalnumber_institute.png)
 
 ## Number of peer-reviewed papers published
 
@@ -209,60 +212,74 @@ Aggregation period: January 1st -- December 31st
 	<th width="300">Journal published year</th>
 	<th width="300">Number of papers compiled at each end-of-year renewal</th>
 	<th width="300">Number of additional papers submitted after the end-of-year renewal tally for each year</th>
+	<th width="300">Total</th>
 </tr>
 <tr>
 	<td>2012</td>
 	<td>9</td>
 	<td>0</td>
+	<td>9</td>
 </tr>
 <tr>
 	<td>2013</td>
 	<td>23</td>
 	<td>0</td>
+	<td>23</td>
 </tr>
 <tr>
 	<td>2014</td>
 	<td>53</td>
 	<td>0</td>
+	<td>53</td>
 </tr>
 <tr>
 	<td>2015</td>
 	<td>43</td>
 	<td>0</td>
+	<td>43</td>
 </tr>
 <tr>
 	<td>2016</td>
 	<td>83</td>
 	<td>0</td>
+	<td>83</td>
 </tr>
 <tr>
 	<td>2017</td>
 	<td>93</td>
 	<td>0</td>
+	<td>93</td>
 </tr>
 <tr>
 	<td>2018</td>
 	<td>113</td>
 	<td>0</td>
+	<td>113</td>
 </tr>
 <tr>
 	<td>2019</td>
 	<td>104</td>
 	<td>1</td>
+	<td>105</td>
 </tr>
 <tr>
 	<td>2020</td>
 	<td>124</td>
 	<td>1</td>
+	<td>125</td>
 </tr>
 <tr>
 	<td>2021</td>
 	<td>167</td>
 	<td>12</td>
+	<td>179</td>
 </tr>
 <tr>
 	<td>2022</td>
 	<td>177</td>
 	<td>0</td>
+	<td>177</td>
 </tr>
 </table>
+
+![](total_paper.png)

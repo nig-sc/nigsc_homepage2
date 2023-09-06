@@ -20,7 +20,7 @@ To install, copy a single line, paste it on your terminal and run it.
 A line is automatically added to ` .bashrc ` about running this script.
 
 ```
-user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/section02/p2021_0509_RustCompiler (2021-05-09 01:28:28)
+user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/division02/p2021_0509_RustCompiler (2021-05-09 01:28:28)
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 info: downloading installer
@@ -108,7 +108,7 @@ Cargo's bin directory ($HOME/.cargo/bin).
 											 
 To configure your current shell, run:
 source $HOME/.cargo/env
-user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/section02/p2021_0509_RustCompiler (2021-05-09 01:29:33)
+user01@266fb189884e:~/public_html/docsify_notes/doc_rust001/division02/p2021_0509_RustCompiler (2021-05-09 01:29:33)
 $ 
 ```
 

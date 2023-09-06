@@ -25,4 +25,4 @@ Monday, August 1, 2022, 10:00-13:00(24h)
 
 - The application system for use will not be available. 
 https://sc-account.ddbj.nig.ac.jp/en/application/registration
-- The general analysis section, personal genome analysis section and other sections not mentioned above will not be affected.
+- The general analysis division, personal genome analysis division and other divisions not mentioned above will not be affected.
