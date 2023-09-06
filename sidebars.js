@@ -41,7 +41,17 @@ module.exports = {
                 "guides/overview",
                 "guides/security-policy",
                 "guides/hardware",
-                "software/software"
+                {
+                    type: "category",
+                    label: "ソフトウェア",
+                    link: {
+                        type: "doc",
+                        id: "software/software",
+                    },
+                    items: [
+                        "software/software_update_log",
+                    ],
+                }
             ]
         },
         "start_the_service",
