@@ -1,6 +1,6 @@
 ---
 slug: 2023-08-04-news_GPU_slurm
-title: "August 4, 2023: Creating Slurm partition (Parabricks ver 4.1) for only GPU node of the personal genome section"
+title: "August 4, 2023: Creating Slurm partition (Parabricks ver 4.1) for only GPU node of the personal genome division"
 tags:
   - news
 authros:
@@ -10,7 +10,7 @@ date: 2023-08-04
 ---
 
 
-Since the number of users of GPU nodes is increasing due to the free Parabricks, we have created only for GPU nodes in the Personal Genome Analysis section so that more researchers can use the GPU node.
+Since the number of users of GPU nodes is increasing due to the free Parabricks, we have created only for GPU nodes in the Personal Genome Analysis division so that more researchers can use the GPU node.
 
 This new Slurm partition only charges for the time when the computation is actually running.
 
@@ -26,4 +26,4 @@ For more information on the usage plan table and price list, refer to the follow
 
 Please refer to the following link for details on how to use this service.
 
-- [<u>How to use Slurm GPU queue of Personal genome analysis section</u>](personal_genome_division/gpu_slurm)
+- [<u>How to use Slurm GPU queue of Personal genome analysis division</u>](personal_genome_division/gpu_slurm)

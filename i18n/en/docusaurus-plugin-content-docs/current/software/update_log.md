@@ -16,7 +16,7 @@ title: Software update history
 
 (in preparation.)
 
-**For FY2023, we plan to gradually change the OS of the NIES supercomputer to Ubuntu Linux from around August 2023, as CentOS 7 will reach its End-Of-Life on 30 June 2024. **We will announce the plan on our website when it is decided.
+**For FY2023, we plan to gradually change the OS of the NIG supercomputer to Ubuntu Linux from around August 2023, as CentOS 7 will reach its End-Of-Life on 30 June 2024. **We will announce the plan on our website when it is decided.
 - Although the OS will be changed as little as possible, the number of available compute nodes will be temporarily reduced.
 - The user's analysis environment may also need to be migrated due to the change in OS.
 
@@ -28,7 +28,7 @@ After the change to Ubuntu Linux, in addition to updating the entire system by e
 
 ## Update history (since 01.09.2023)
 
-- Abbreviations for target section: G: General analysis section, P: Personal genome analysis section
+- Abbreviations for target division: G: General analysis division, P: Personal genome analysis division
 
 <table>
 <tr>

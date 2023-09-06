@@ -1,6 +1,6 @@
 ---
 id: ga_usage
-title: Usage（The general analysis section）
+title: Usage（The general analysis division）
 ---
 
 On the login node, you can do development work and perform analysis work as a normal Linux system.
@@ -14,6 +14,6 @@ For calculations that take a long time or use a large CPU or memory, run them as
 ### Reference
 
 - [System Configuration > Software > Grid Engine](/software/grid_engine) : how to use the job scheduler Grid Engine
-- [Overview (A General Analysis Section) > Grid Engine Queue Type](../general_analysis_division/ga_introduction.md) : the Grid Engine queues available on the NIG supercomputer
+- [Overview (A General Analysis division) > Grid Engine Queue Type](../general_analysis_division/ga_introduction.md) : the Grid Engine queues available on the NIG supercomputer
 - [System Configuration > Software](../software/software.md) : other available softwares
 - [Advanced guide](../advanced_guides/advanced_guide_2023.md) : specific analysis methods

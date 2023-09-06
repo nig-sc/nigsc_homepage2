@@ -1,21 +1,21 @@
 ---
 id: pg_application
-title: "Preparation for use（The Personal Genome Analysis Section）"
+title: "Preparation for use（The Personal Genome Analysis division）"
 ---
 
 ## Preparation of user's computer
 
-The personal genome analysis section of NIG supercomputer can be used in the same way as the general analysis section, which with a computer running a SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
+The personal genome analysis division of NIG supercomputer can be used in the same way as the general analysis division, which with a computer running a SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
 
 - Mac and Linux computers can be accessed using a standard terminal emulator.
 - Windows computers can be accessed using PowerShell SSH client or Windows Subsystem for Linux version 2 (WSL2), etc.
 
 ## Steps from user account application to start of use
 
-The account name of the personal genome analysis section is the account name of the general analysis section with `-pg` added to the end.
-If you only use the personal genome analysis section, you will be given an account in the general analysis section.
-Steps from user account application to start of use are <u>[the same step as the general analysis section](/general_analysis_division/ga_application/#steps-from-user-account-application-to-start-of-use)</u>.
-The personal genome analysis section is <u>[a billing service](../application/resource_extension.md)</u>, so <u>[Download the usage plan](../application/resource_extension.md)</u>, fill it out and submit it.
+The account name of the personal genome analysis division is the account name of the general analysis division with `-pg` added to the end.
+If you only use the personal genome analysis division, you will be given an account in the general analysis division.
+Steps from user account application to start of use are <u>[the same step as the general analysis division](/general_analysis_division/ga_application/#steps-from-user-account-application-to-start-of-use)</u>.
+The personal genome analysis division is <u>[a billing service](../application/resource_extension.md)</u>, so <u>[Download the usage plan](../application/resource_extension.md)</u>, fill it out and submit it.
 
 
 <ol>
@@ -39,7 +39,7 @@ The personal genome analysis section is <u>[a billing service](../application/re
 </li>
 <li>Confirm your initial password with your account registration card and start using the service</li>
     <ul>
-    <li>For how to login the general analysis section, refer to the pages after <a href="https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_login/"><u>How to Login (The Personal Genome Analysis Section)</u></a>.</li>
+    <li>For how to login the general analysis division, refer to the pages after <a href="https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_login/"><u>How to Login (The Personal Genome Analysis division)</u></a>.</li>
     </ul>
 <li>If you have a request to expand the resources or use billing services, <a href="https://sc.ddbj.nig.ac.jp/en/application/resource_extension"><u>download the Usage Plan Form</u></a>, fill it out and submit it.</li>
     <ul>
@@ -49,7 +49,7 @@ The personal genome analysis section is <u>[a billing service](../application/re
 
 ### Additional notes on preferences
 
-When using the personal genome analysis section, indicate your preference regarding the following.
+When using the personal genome analysis division, indicate your preference regarding the following.
 
 - Type and number of compute nodes you want to use.
      - For types of compute nodes, refer to [System Overview > Hardware](../guides/hardware.md).

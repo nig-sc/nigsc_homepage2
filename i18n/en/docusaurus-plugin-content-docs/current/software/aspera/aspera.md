@@ -5,7 +5,7 @@ title: How to use Aspera
 
 When you transfer files to and from the NIG supercomputer, you can use scp or sftp, which are widely used as the file transfer software. But their transfer speed is slow when a large numbers of files are transfered over long distances.
 
-For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis section, and HCP tools is available on the personal genome analysis section on the NIG supercomputer.
+For high-speed file transfer over long distances, the file transfer software Aspera is available on the general analysis division, and HCP tools is available on the personal genome analysis division on the NIG supercomputer.
 - The total speed for all users can be up to 10 Gbps.
 
 Reference

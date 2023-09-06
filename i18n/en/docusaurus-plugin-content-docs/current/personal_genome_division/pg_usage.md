@@ -1,12 +1,12 @@
 ---
 id: pg_usage
-title: "Usage（The Personal Genome Analysis Section）"
+title: "Usage（The Personal Genome Analysis division）"
 ---
 
 
 ## Introduction
 
-At present, all services of the personal genome analysis section are charged for and the nodes are rented.
+At present, all services of the personal genome analysis division are charged for and the nodes are rented.
 Development and analysis work can be performed on the node as a normal Linux system.
 
 Grid Engine or Slurm can be installed and delivered as a job scheduler for the node.

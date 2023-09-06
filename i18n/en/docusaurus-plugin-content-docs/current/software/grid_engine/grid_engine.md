@@ -6,8 +6,8 @@ title: Grid Engine Overview
 Grid Engine is a type of program called a job scheduler or resource scheduler. It automatically allocates computer resources (CPU cores and memory) to each user in environments using many users.
 It functions as the Operating System when the entire cluster computer is considered as one computer.
 
-- In the general analysis section, the Grid Engine is used.
-- In the personal genome analysis section, Grid Engine or Slurm is available.
+- In the general analysis division, the Grid Engine is used.
+- In the personal genome analysis division, Grid Engine or Slurm is available.
 
 In bioinformatics, traditionally, Sun Grid Engine (SGE) has been widely used. SGE was replaced by Univa's Grid Engine, which is now supported by Altair and has become Altair Grid Engine (AGE). (For this reason, the current AGE official manual has a mixture of SGE, UGE, AGE and the generic term "Grid Engine".)
 

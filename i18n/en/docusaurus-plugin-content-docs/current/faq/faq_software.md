@@ -64,9 +64,9 @@ If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refe
 
 &#x1F150; The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
 
-- [<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/)
+- [<u>Data file transfer (The general analysis division)</u>](/general_analysis_division/ga_transfer/)
 
-If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [<u>Data file transfer (The general analysis section)</u>](/general_analysis_division/ga_transfer/) page.
+If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [<u>Data file transfer (The general analysis division)</u>](/general_analysis_division/ga_transfer/) page.
 
 - WinScp : 
 [&#x1f517;<u>WinSCP :: Official Site :: Free SFTP and FTP client for Windows</u>](https://winscp.net/eng/index.php)

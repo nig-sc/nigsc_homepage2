@@ -5,7 +5,7 @@ title: NBDC-DDBJ Imputation Server
 
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;<u>Michigan Imputation Server</u>](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;<u>TOPMed Project Imputation Server</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis Section](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
+Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
 The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
 
@@ -15,7 +15,7 @@ Subject name: **"Investigation and practice of ethical and technical issues in g
 
 ## Introduction
 
-The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this system') is available in the Personal Genome Analysis section of the NIG supercomputer. Researchers(users) can upload their own genomic data to the server and execute the imputation analysis workflow via the web user interface. After the workflow calculations are completed, the imputed genomic data, which are the results of the calculations, can be downloaded. This system can be used securely by using a virtual private network (SSL-VPN) with encrypted communication.
+The NBDC-DDBJ Imputation Server (beta version) (hereafter referred to as 'this system') is available in the Personal Genome Analysis division of the NIG supercomputer. Researchers(users) can upload their own genomic data to the server and execute the imputation analysis workflow via the web user interface. After the workflow calculations are completed, the imputed genomic data, which are the results of the calculations, can be downloaded. This system can be used securely by using a virtual private network (SSL-VPN) with encrypted communication.
 
 ![](/img/advanced_guides/imputationserver.Fig1-work.png)
 
@@ -68,7 +68,7 @@ A result comparing the imputation accuracy of different reference panels showed 
 
 ## How to use the NBDC-DDBJ Imputation Server (beta)
 
-This system is for users who use the Personal Genome Analysis Section. For information on how to apply for use of it, refer to the **[Steps from user account application to start of use](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_application/#steps-from-user-account-application-to-start-of-use)** page in the Personal Genome Analysis Section. Users of the personal genome analysis section can use this system according to the following procedure. It is strongly recommended to use a virtual environment with one guacamole per user when using the system.
+This system is for users who use the Personal Genome Analysis division. For information on how to apply for use of it, refer to the **[Steps from user account application to start of use](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_application/#steps-from-user-account-application-to-start-of-use)** page in the Personal Genome Analysis division. Users of the personal genome analysis division can use this system according to the following procedure. It is strongly recommended to use a virtual environment with one guacamole per user when using the system.
 
 1. Send an application email to the application desk for the use of this system (**imputation-server@ddbj.nig.ac.jp**)
 2. The **supercomputer administrator** will cut out a part of the computer node and start a virtual machine of this system. The remote desktop environment user manual will also be sent to you.
@@ -84,7 +84,7 @@ text:Example of NBDC-DDBJ Imputation Server usage application email
 I request the use of the NBDC-DDBJ Imputation Server (beta version).
 I would appreciate it if you could create a new virtual machine environment using guacamole.
 
-Account name for the personal genome analysis section: ________ （e.g. youraccount-pg)
+Account name for the personal genome analysis division: ________ （e.g. youraccount-pg)
 Machine name to start guacamle: ________ (e.g. at001)
 Number of cores: ______ (recommended: 16 or more)
 RAM: ______ (recommended: 128 GB or more)

@@ -28,5 +28,5 @@ $
 In this example, the login node at137 is allocated to the user, and you will see the prompt for at137 at the end.
 You can execute commands interactively from this prompt.
 
-- You can specify the amount of memory available by adding the `-l s_vmem`,` -l mem_req` options to the `qlogin` command. (On the general analysis section, 4GB memory will be allocated when you specify no options. On the personal genome analysis section, allocated memory depend on the configuration to use.)
+- You can specify the amount of memory available by adding the `-l s_vmem`,` -l mem_req` options to the `qlogin` command. (On the general analysis division, 4GB memory will be allocated when you specify no options. On the personal genome analysis division, allocated memory depend on the configuration to use.)
 - The upper limit for memory that can be specified here is XXXGB. If you need more memory , specify XXXX.

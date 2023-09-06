@@ -1,6 +1,6 @@
 ---
 slug: 2022-05-13-suspension-of-applications
-title: "May 13, 2022: Suspend acceptance of the application for new use of the personal genome anaysis section and  large-scale storage on the general analysis section"
+title: "May 13, 2022: Suspend acceptance of the application for new use of the personal genome anaysis division and  large-scale storage on the general analysis division"
 tags:
   - news
 authros:
@@ -13,13 +13,13 @@ Thank you very much for using the NIG supercomputer.
 
 Due to the computing resources of CPU and Disk are current very tight, we suspend new usage application for the following users.
 
-- Application for new use using large-scale for the general analysis section
-- Application for new use of personal genome analysis section users
+- Application for new use using large-scale for the general analysis division
+- Application for new use of personal genome analysis division users
 
 The following applications will be accepted as before.
 
-- For current already large-scale users for the general analysis section and the personal genome analysis section users, we will continue to accept additions of resources to chang the usage plan table as before.
-- Regular application for use of the general analysis section will also be accepted as before. In this case, the disk memory will be limited to the default setting of 1TB.
+- For current already large-scale users for the general analysis division and the personal genome analysis division users, we will continue to accept additions of resources to chang the usage plan table as before.
+- Regular application for use of the general analysis division will also be accepted as before. In this case, the disk memory will be limited to the default setting of 1TB.
 - For using of the service for workshops, etc.
 
 Thank you for your understanding that we may not be able to meet your request in such cases.

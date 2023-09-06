@@ -235,7 +235,7 @@ r_cpu                NONE
 
 ## Setup of environment variables required for running Grid Engine 
 
-To be able to execute commands such as qsub of Grid Engine, a series of environment variables must be set up. Normally, you do not need to set up these environment variables yourself because they are automatically set up when you login to the gateway node of the general analysis section.
+To be able to execute commands such as qsub of Grid Engine, a series of environment variables must be set up. Normally, you do not need to set up these environment variables yourself because they are automatically set up when you login to the gateway node of the general analysis division.
 
 Explicit setup may be required in special cases, such as when you use qsub from the Singularity container. In this case, execute the following command.
 

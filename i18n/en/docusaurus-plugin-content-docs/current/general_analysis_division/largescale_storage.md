@@ -8,7 +8,7 @@ When you start using this service, check the [Acceptable Use Policy](../applicat
 Note: Depending on the congestion status of the NIG supercomputer, you may not be able to use this service.
 
 
-The compute nodes and storage of the NIG supercomputer are roughly divided into two sections, the general analysis section and the personal genome analysis section. The following storage services are available in both sections.
+The compute nodes and storage of the NIG supercomputer are roughly divided into two divisions, the general analysis division and the personal genome analysis division. The following storage services are available in both divisions.
 
 
 ## Large-scale use of high-speed storage (Quota setting only)
@@ -19,9 +19,9 @@ The compute nodes and storage of the NIG supercomputer are roughly divided into 
 
 
 
-◯ Red dots: the price of the personal genomic analysis section  ◆Blue dots: the price of the general analysis section
+◯ Red dots: the price of the personal genomic analysis division  ◆Blue dots: the price of the general analysis division
 
-- In the general analysis section of the NIG supercomputer, the total amount of quota setting per responsible person is free up to 30TB. Each user can apply in increments of 1TB up to 30T
+- In the general analysis division of the NIG supercomputer, the total amount of quota setting per responsible person is free up to 30TB. Each user can apply in increments of 1TB up to 30T
 - Apply in 10TB units. If a fraction appears in units of 10TB, it will be rounded up.
 - Available capacity is best-effort only for quarter setting.
 
@@ -31,7 +31,7 @@ The compute nodes and storage of the NIG supercomputer are roughly divided into 
 ![](storage3_2.png)
 
 
-- The price is the same for both the general analysis section and the individual genome analysis section of the NIG supercomputer.
+- The price is the same for both the general analysis division and the individual genome analysis division of the NIG supercomputer.
 - Apply in 10TB increments; any fractions of 10TB will be rounded up to the nearest 10TB.
 
 ## Note:
