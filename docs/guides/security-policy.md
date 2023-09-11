@@ -62,9 +62,7 @@ title: 情報セキュリティ方針
 
 総務企画課 個人情報苦情相談窓口 総務・企画係
 
-連絡先:soumu-mail@nig.ac.jp
-
-TEL:055-981-6707
+連絡先: ![](soumu_mail.png)
 
 
 <p align="right">
