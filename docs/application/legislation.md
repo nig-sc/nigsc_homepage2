@@ -3,6 +3,7 @@ id: legislation
 title: "関連法規等"
 ---
 
+
 ## 外為法関係
 
 1. [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) 第二十五条
