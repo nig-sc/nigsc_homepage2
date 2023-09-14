@@ -3,6 +3,7 @@ id: legislation
 title: "Related laws and regulations, etc."
 ---
 
+
 ## Foreign Exchange and Foreign Trade Act
 
 1. [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) Article 25

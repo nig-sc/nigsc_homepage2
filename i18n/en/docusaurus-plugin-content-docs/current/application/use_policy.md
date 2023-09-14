@@ -7,6 +7,7 @@ title: "Use Policy"
 - [Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems (Revised on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
 - [Appendix 1-3 for the Rules of Use (Revised on August 1, 2023)](/pdf/tables_of_nigsc_use_policy_20230801.pdf)
 - [Information security at the Research Organization of Information and Systems](/pdf/ROIS_security_policy.pdf)
+- [Information Security Guideline, National Institute of Genetics, Research Organization of Information and Systems(revised 13 Feb 2018).](/pdf/nig_security_guide_20180213.pdf)
 
 ---
 
