@@ -370,38 +370,75 @@ module.exports = {
     ],
 
 
-    advancedGuidesSidebar : {
-        "活用方法": [
-            "advanced_guides/advanced_guide_2023",
-            "advanced_guides/advanced_guide_2020-2022",
-        ],
-        "Rhelixa RNAseq": [
-            "advanced_guides/Rhelixa_RNAseq",
-            "advanced_guides/Rhelixa_RNAseq_manual",
-        ],
-        "Alphafold":[
-            "advanced_guides/Alphafold_2_1",
-            "advanced_guides/Alphafold_2_2",
-            "advanced_guides/Alphafold_2_3",
-        ],
-        "NBDC-DDBJ Imputation Server (beta)": [
-            "advanced_guides/imputation_server",
-            "advanced_guides/imputation_server_install",
-            "advanced_guides/imputation_server_tutorial",
-            "advanced_guides/imputation_server_tutorial2",
-            "advanced_guides/imputation_server_hail",
-        ],
-        "NVIDIA Parabricks": [
-            "advanced_guides/parabricks/parabricks",
-        ],
-        "講習会": [
-            "advanced_guides/IIBMP2021",
-            "advanced_guides/IIBMP2020",
-        ],
-        "利用方法解説": [
-            "advanced_guides/commentary"
-        ],
-    },
+    advancedGuidesSidebar : [
+        {
+            type: "category",
+            label: "活用方法",
+            items: [
+                "advanced_guides/advanced_guide_2023",
+                "advanced_guides/advanced_guide_2020-2022",
+            ],
+        },
+        {
+            type: "category",
+            label: "Relixa RNAseq",
+            items: [
+                "advanced_guides/Rhelixa_RNAseq",
+                "advanced_guides/Rhelixa_RNAseq_manual",
+            ],  
+        },
+        {
+            type: "category",
+            label: "Alphafold",
+            items: [
+                "advanced_guides/Alphafold_2_1",
+                "advanced_guides/Alphafold_2_2",
+                "advanced_guides/Alphafold_2_3",
+            ],  
+        },
+        {
+            type: "category",
+            label: "NBDC-DDBJ Imputation Server (beta)",
+            items: [
+                "advanced_guides/imputation_server",
+                "advanced_guides/imputation_server_install",
+                "advanced_guides/imputation_server_tutorial",
+                "advanced_guides/imputation_server_tutorial2",
+                "advanced_guides/imputation_server_hail",
+            ],  
+        },
+        {
+            type: "category",
+            label: "NVIDIA Parabricks",
+            items: [
+                "advanced_guides/parabricks/parabricks",
+            ],  
+        },
+
+        {
+            type: "doc",
+            id: "advanced_guides/experimental",
+            label: "Experimental",
+        },
+
+        {
+            type: "category",
+            label: "講習会",
+            items: [
+                "advanced_guides/IIBMP2021",
+                "advanced_guides/IIBMP2020",
+            ],
+        },
+        {
+            type: "category",
+            label: "利用方法解説",
+            items: [
+                "advanced_guides/commentary",
+            ],
+        },
+
+    ],
+    
     operationInfoSidebar: [
         {
             type: "link",
