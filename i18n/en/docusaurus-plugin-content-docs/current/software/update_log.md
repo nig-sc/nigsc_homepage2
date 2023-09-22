@@ -10,6 +10,7 @@ title: Software update history
 - For occupied nodes, it will be updated every year only during regular maintenance.
     - Software updates generally involve node shutdown and system updates, and all storage on the node is initialised when a system update is performed, so for occupied nodes it will be performed only during regular maintenance. If you would like to update around May-June separately, please let us know.
 - Software that is updated rapidly, such as CUDA, can be irregularly updated.
+- [BioContainers Apptainer (Singularity) Images](/software/BioContainers) is updated weekly.
 
 
 ## Plan for next update
