@@ -45,10 +45,13 @@ For instructions on how to create it, see below.<br/>
 </td>
 <td width="400" valign="top">
 
-[&#x1f517;<u>Access the page of registration application for use</u>](https://sc-account.ddbj.nig.ac.jp/en/application/registration). When you access that page, the screen shown on the left is displayed. Enter the form and click 'Next'.
+[&#x1f517;<u>Access the page of registration application for use</u>](https://sc-account.ddbj.nig.ac.jp/en/application/registration). When you access that page, the screen shown on the left is displayed. Enter the form and click 'Go next'.
 
 - To prevent electronic mail erroneous transmission, enter your email address of the organization you belong to, not a free email address.
 - Enter ACCURATELY the purpose of use. Use of the supercomputer for purposes other than those entered here is prohibited.
+- If an incorrect email address is entered, the application information can be compromised due to erroneous transmission, for which no liability can be accepted.
+- Enter here if you already have a JGA or AGD account.
+If you do not have one, do not enter anything.
     
 
 
@@ -64,7 +67,7 @@ For instructions on how to create it, see below.<br/>
 </td>
 <td>
 
-Enter the address of your institution and click 'Next'. 
+Enter the address of your institution and click 'Go next'. <br/>
 
 - An account certificate will be sent by post to your institution you have entered to verify your identity.
 
@@ -86,11 +89,8 @@ For instructions on how to register by copying and pasting, see below.
 2. [<u>Mac</u>](/application/ssh_keys_mac/#register-the-ssh-public-key-with-the-nig-supercomputer)
 3. [<u>Windows</u>](/application/ssh_keys_windows#register-the-ssh-public-key-with-the-nig-supercomputer)
 
-
-- Enter here if you already have a JGA or AGD account.
-If you do not have one, do not enter anything.
 - If you use the personal genome analysis division, tick the box at the bottom.
-- Note: If an incorrect email address is entered, the application information can be compromised due to erroneous transmission, for which no liability can be accepted.
+
 
 </td>
 </tr>
@@ -103,15 +103,11 @@ If you do not have one, do not enter anything.
 </td>
 <td>
 
+Enter the information of the responsible person and click 'Go next'.
+
 For security traceability reasons, we ask you to designate a responsible person when applying for use.
 [<u>For more information on how to designate a responsible person, see here</u>](/en/application/#the-responsible-person).
 
-- If you know both the account name and the group name of the responsible person, enter them in the form at the top.
-This allows you to omit entering the detailed data about the responsible person.
-
-- If you know the account name of the responsible person but do not know the group name, or both are unknown, click the check box in the following cases. After clicking the check box, the screen shown on the left is displayed. Then enter the information of the responsible person.
-
-- If you do not know what to enter for the account and group name of the responsible person, [<u>refer to FAQ</u>](/faq/faq_NewUser_registration/#what-should-i-enter-account-name-and-group-name-of-the-responsible-person).
 
 </td>
 </tr>
