@@ -96,7 +96,7 @@ Price for the Use for the personal genome analysis division large-scale(excludin
 			<td>1,300,000 yen</td>
 		</tr>
 		<tr>
-			<td>The Request and Response Development</td>
+			<td>The Request and Response Work</td>
 			<td>one man-month</td>
 			<td>250,000 yen</td>
 		</tr>
