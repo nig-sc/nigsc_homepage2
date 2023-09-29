@@ -26,12 +26,16 @@ In principle, the purpose of use and results are open to the public. However, if
 
 If your nationality or current residence stipulated by FEFTA is the areas other than listed in appended table 3 of the Export Trade Control Order of Catch-All Controls, provide us with the following information for the examination when applying for an account. (Refer to the division of [related laws and regulations](/application/legislation). )
 
+- Whether or not the applicant is a domestic resident stipulated by FEFTA
 - whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
 - a) Education, Professional experience and research content
 - b) Current Employment status (full-time or part-time)
 - c) Period of use of the supercomputer(date of account issue - yy/mm/dd)
 
-Example
+If the applicant is a non-resident or falls under the specific category, [<u>it is necessary to submit the plege of the responsible person and the applicant</u>](/application/signing_PDF_non-resident).
+
+
+### Example
 
 ```
 # Whether or not the applicant is a domestic resident stipulated by FEFTA. (Whether or not the period of residence in Japan is for six months or more.) 
