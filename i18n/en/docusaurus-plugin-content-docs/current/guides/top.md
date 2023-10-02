@@ -19,6 +19,8 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
+Regular maintenance is scheduled once.
+- [Regular maintenance from 24 to 30 November](/en/blog/2023-11-24-scheduled-maintenance)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/en/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [Extended number of CPU cores available for GPU node](/en/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
@@ -28,7 +30,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Scheduled for FY 2023
 Regular maintenance is scheduled once.
-- Around December (during the NIG's legal power outage)
+- [<u>November 24 - November 30 (during the NIG's legal power outage)</u>](/en/blog/2023-11-24-scheduled-maintenance)
 
 As CentOS 7 will reach End-Of-Life on 30 June 2024, the OS of the NIG supercomputer will be migrated to Ubuntu Linux gradually from around August 2023. When the migration plan is decided, we will announce it on our website.
 - We plan to migrate as little as possible, but the number of available computer nodes will be temporarily decreased.

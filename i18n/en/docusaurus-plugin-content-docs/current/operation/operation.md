@@ -21,7 +21,7 @@ The quantity of jobs is calculated as the number of slots occupied by jobs.
     - Green: amount of free resources
     - Pink: amount of jobs in error state
 
-The data is updated every hour.
+The data is updated every 10 minutes.
 
 
 ### Reference: Slot definition
