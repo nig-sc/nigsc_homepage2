@@ -6,7 +6,7 @@ tags:
 authros:
   - oogasawara
   - akatsumata
-date: 2023-10-02
+date: 2023-11-24
 ---
 
 Publication date: October 2, 2023
