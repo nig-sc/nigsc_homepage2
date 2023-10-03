@@ -98,7 +98,7 @@ title: Hardware
     <td rowspan="2">
     Storage
     <br /><br />
-    Total storage capacity: 47.1PB
+    Total storage capacity: 57.6PB
     </td>
 	<td colspan="2">
     Large capacity high-speed storage(※1)
@@ -110,8 +110,8 @@ title: Hardware
     <td colspan="2">
 	Storage area for DB(※2)
     </td>
-	<td>SpectrumScale file system + tapes<br />
-	30PB (Disk Capacity 15PB、Hierarchical tape storage 15PB)
+	<td>Lustre file system<br />
+	40.5PB
     </td>
 </tr>
 <tr>
@@ -265,15 +265,14 @@ HPE Superdome Flex
 
 ## Storage
 
-### High-speed storage : Lustre file systems
+### Large capacity high-speed storage
 
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
 |-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
-| /lustre6    | 3.8PB              | DDBJ work (The old system)                                  | 35GB/sec         | DDN SFA14KXE+SS8462, DDN 1U server, DDN SFA7700X |
 | /lustre7    | 8.0PB              | Home area of general analysis area         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
 | /lustre8     | 5.3PB              | Home area of personal genome analysis area | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre9    | 40PB              | DDBJ work (The new system)                                  | 100GB/sec         | DDN ES400NVX2+SS9024, DDN 1U server |
+| /lustre9    | 40.5PB              | DDBJ work                                  | 150GB/sec         | DDN ES400NVX2 + DDN SS9024 |
 
 
 ### DB storage
