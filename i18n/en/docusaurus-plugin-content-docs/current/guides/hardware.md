@@ -101,14 +101,16 @@ title: Hardware
     Total storage capacity: 57.6PB
     </td>
 	<td colspan="2">
-    Large capacity high-speed storage(※1)
+    Large capacity high-speed storage(*1)<br />
+    For user home division in general analysis division and personal genome analysis division.
     </td>
 	<td>Lustre file system<br />
 	17.1PB</td>
 </tr>
 <tr>
     <td colspan="2">
-	Storage area for DB(※2)
+	Storage area for DB<br />
+    For DDBJ databases such as DRA.
     </td>
 	<td>Lustre file system<br />
 	40.5PB
@@ -123,9 +125,6 @@ title: Hardware
 		</tr>
 	</tbody>
 </table>
-
-- ※1. This area contains user home area in general analysis area and personal genome analysis area
-- ※2. This area contains DDBJ databases such as DRA.
 
 
 ## Compute nodes
@@ -270,22 +269,15 @@ HPE Superdome Flex
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
 |-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
-| /lustre7    | 8.0PB              | Home area of general analysis area         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre8     | 5.3PB              | Home area of personal genome analysis area | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre9    | 40.5PB              | DDBJ work                                  | 150GB/sec         | DDN ES400NVX2 + DDN SS9024 |
+| /lustre7    | 8.0PB              | Home area for general analysis division         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre8     | 5.3PB              | Home area for personal genome analysis division | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+
 
 
 ### DB storage
 
-This storage is used for DDBJ work such as storing DDBJ databases such as DRA and in not published for general users.
-To increase capacity, it is a hierarchical storage system that uses a high-speed disk system and a tape system with low per-capacity cost.
-
-| Components                 | Model number                      | Effective capacity, performance, etc. |
-|----------------------------|-----------------------------------|---------------------------------------|
-| Large Storage Disk System   | IBM Elastic Storage Server GL6S   | 12.9PB, read 36.6GB/s, write 29.0GB/s |
-| Large Storage Tape System   | IBM TS4500 Tape Libraries         | 15PB (uncompressed)                   |
-| Tape Cartridge  	         | IBM 3592JD Cartridges             |                                       |
-| Tape Drive	             | IBM TS1155 (x8 tape drivers)      | 360MB/s per drive for R/W             |
-|  Hierarchical Storage Management System | SpectrumScale Server |                                       |
+| access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
+|-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
+| /lustre9    | 40.5PB              | DDBJ work                                  | 150GB/sec         | DDN ES400NVX2 + DDN SS9024 |
 
 
