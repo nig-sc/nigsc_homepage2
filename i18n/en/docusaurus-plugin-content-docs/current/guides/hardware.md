@@ -101,16 +101,16 @@ title: Hardware
     Total storage capacity: 57.6PB
     </td>
 	<td colspan="2">
-    Large capacity high-speed storage(*1)<br />
-    For user home division in general analysis division and personal genome analysis division.
+    Analysis storage(*1)<br />
+    For user home directories in general analysis division and personal genome analysis division.
     </td>
 	<td>Lustre file system<br />
 	17.1PB</td>
 </tr>
 <tr>
     <td colspan="2">
-	Storage area for DB<br />
-    For DDBJ databases such as DRA.
+	Database storage<br />
+    For DDBJ database including DRA
     </td>
 	<td>Lustre file system<br />
 	40.5PB
