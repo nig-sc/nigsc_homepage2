@@ -102,7 +102,7 @@ title: Hardware
     </td>
 	<td colspan="2">
     Analysis storage(*1)<br />
-    For user home directories in general analysis division and personal genome analysis division.
+    For user home directories in the general analysis division and personal genome analysis division.
     </td>
 	<td>Lustre file system<br />
 	17.1PB</td>
@@ -264,17 +264,17 @@ HPE Superdome Flex
 
 ## Storage
 
-### Large capacity high-speed storage
+### Analysis storage
 
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
 |-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
-| /lustre7    | 8.0PB              | Home area for general analysis division         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
-| /lustre8     | 5.3PB              | Home area for personal genome analysis division | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre7    | 8.0PB              | home directories in the general analysis division         | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
+| /lustre8     | 5.3PB              | home directories in the personal genome analysis division | 35GB/sec or more | DDN SFA14KXE+SS9012, DDN 1U server, DDN SFA7700X |
 
 
 
-### DB storage
+### Database storage
 
 | access path | Effective Capacity | Usage                                      | Peak Performance | Configuration  
 |-------------|--------------------|--------------------------------------------|------------------|--------------------------------------------------|
