@@ -3,7 +3,7 @@ id: ga_lustre
 title: Using Lustre FS
 ---
 
-The home area of both the general analysis division and the personal genome analysis division of the NIG supercomputer is composed of the Lustre File System.
+The home directories in both the general analysis division and the personal genome analysis division of the NIG supercomputer is composed of the Lustre File System.
 
 ## Structure of Lustre File System
 
@@ -25,7 +25,7 @@ Reference：https://ddn.co.jp/issue/lustre.html
 
 Each user has a limit on the available storage capacity for each user.
 
-You can check the user's current home space usage and quota settings with the "lfs quota" command.
+You can check the usage status and quota settings of the user's current home directories by using the "lfs quota" command.
 
 
 ```bash
