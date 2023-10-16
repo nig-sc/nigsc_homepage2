@@ -1,11 +1,10 @@
 ---
 id: operation
-title: Job accumulation status and estimated waiting time
+title: Waiting time until starting execution
 ---
 
-The figure below shows the status of job accumulation for each queue of Grid Engine and the estimated job wait time (the wait time prediction value of the job from just submitted to start running).
 
-In the line graph below, queueing time is the estimated waiting time of jobs.
+In the line graph below, queueing time is the waiting time until starting execution.
 - Job waiting time is estimated by dividing the amount of jobs in the queue by the amount of jobs processed in an hour.
 - The amount of jobs in the queue is shown in blue on the bar graph.
 - The amount of jobs processed per hour is calculated from the 12-hour average of the vertical axis of the line graph (the amount of jobs processed in 10 minutes) multiplied by 6.
@@ -24,7 +23,19 @@ The quantity of jobs is calculated as the number of slots occupied by jobs.
 The data is updated every 10 minutes.
 
 
-### Reference: Slot definition
+## Reference
+
+### Job definition
+
+Refere to [<u>the "Grid Engine Overview" page</u>](/software/grid_engine). 
+
+
+### Queue definition
+
+Refere to [<u>the "Grid Engine Queue Type" page</u>](/general_analysis_division/ga_queue). 
+
+
+### Slot definition
 
 <table>
 <tr>
