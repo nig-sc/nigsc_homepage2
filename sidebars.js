@@ -54,8 +54,11 @@ module.exports = {
                 }
             ]
         },
-        "start_the_service",
-        "introduction",
+    ],
+
+    guidesSidebar: [
+        "guides/start_of_use",
+        "guides/introduction",
         {
             type: "category",
             label: "一般解析区画の使い方",
@@ -86,6 +89,7 @@ module.exports = {
             ]
         }
     ],
+    
     softwareSidebar: [
         {
             type: 'category',

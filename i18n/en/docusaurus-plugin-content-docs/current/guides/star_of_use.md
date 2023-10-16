@@ -1,5 +1,5 @@
 ---
-id: start_the_service
+id: start_of_use
 title: How to start using the system
 ---
 
