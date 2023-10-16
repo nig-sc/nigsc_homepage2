@@ -64,6 +64,7 @@ module.exports = {
             label: "一般解析区画の使い方",
             items: [
                 "general_analysis_division/ga_introduction",
+                "general_analysis_division/ga_queue",
                 "general_analysis_division/ga_application",
                 "general_analysis_division/ga_login",
                 "general_analysis_division/ga_usage",
