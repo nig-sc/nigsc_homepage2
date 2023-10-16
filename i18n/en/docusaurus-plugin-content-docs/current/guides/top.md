@@ -20,7 +20,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 ## Featured News
 
 Regular maintenance is scheduled once.
-- [Regular maintenance from 24 to 30 November](/en/blog/2023-11-24-scheduled-maintenance)
+- [Scheduled maintenance from 24 to 30 November](/en/blog/2023-11-24-scheduled-maintenance)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/en/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [Extended number of CPU cores available for GPU node](/en/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
