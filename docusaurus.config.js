@@ -55,7 +55,7 @@ module.exports = {
   themeConfig:
   ({
     navbar: {
-      title: 'NIG Supercomputer',
+      title: 'トップページ',
       logo: {
         alt: 'NIGSC Logo',
         src: 'img/nigsc_logo.png'
@@ -64,6 +64,12 @@ module.exports = {
         {
           type: 'doc',
           docId: 'guides/overview',
+          label: 'システム概要'
+        },
+
+        {
+          type: 'doc',
+          docId: 'guides/start_of_use',
           label: '利用案内'
         },
         {

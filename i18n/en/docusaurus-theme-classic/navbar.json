@@ -3,6 +3,11 @@
     "message": "NIG Supercomputer",
     "description": "The title in the navbar"
   },
+  "item.label.システム概要": {
+    "message": "System Overview",
+    "description": "Navbar item with label システム概要"
+  },
+
   "item.label.利用申請等": {
     "message": "Make Application",
     "description": "Navbar item with label 利用申請等"
