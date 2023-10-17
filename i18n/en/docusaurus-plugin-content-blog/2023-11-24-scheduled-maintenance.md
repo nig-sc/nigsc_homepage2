@@ -18,7 +18,7 @@ The scheduled maintenance of the NIG supercomputer is scheduled on the following
 November 24, 17:00 - November 30, 2023, 17:00(24h)
 
 
-### Work schedule
+## Work schedule
 
 - 11/24(Fri.) 17:00～ 　Supercomputer outage
 - 11/25(Sat.) 　　　　　Legal power outage
