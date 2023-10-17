@@ -5,7 +5,7 @@ title: Waiting time until starting execution
 
 
 In the line graph below, queueing time is the waiting time until starting execution.
-- Job waiting time is estimated by dividing the amount of jobs in the queue by the amount of jobs processed in an hour.
+- The waiting time until starting execution is estimated by dividing the amount of jobs in the queue by the amount of jobs processed in an hour.
 - The amount of jobs in the queue is shown in blue on the bar graph.
 - The amount of jobs processed per hour is calculated from the 12-hour average of the vertical axis of the line graph (the amount of jobs processed in 10 minutes) multiplied by 6.
 
