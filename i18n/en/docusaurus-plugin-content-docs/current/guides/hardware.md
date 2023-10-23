@@ -105,7 +105,7 @@ title: Hardware
     For user home directories in the general analysis division and personal genome analysis division.
     </td>
 	<td>Lustre file system<br />
-	17.1PB</td>
+	13.3PB</td>
 </tr>
 <tr>
     <td colspan="2">
