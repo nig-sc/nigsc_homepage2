@@ -394,6 +394,13 @@ module.exports = {
         },
         {
             type: "category",
+            label: "Relixa Graphing Tool",
+            items: [
+                "advanced_guides/Rhelixa_RNAseq_Visualization",
+            ],  
+        },
+        {
+            type: "category",
             label: "Alphafold",
             items: [
                 "advanced_guides/Alphafold_2_1",
