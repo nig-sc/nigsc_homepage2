@@ -3,6 +3,42 @@ id: advanced_guide_2023
 title: "2023年のトピック"
 ---
 
+---
+## オミクスデータグラフ化ツール 「RIAS®️ Visualization」の 提供を始めます
+
+2023.10.26
+
+国立遺伝学研究所と包括連携協定を結ぶ株式会社Rhelixa（代表取締役：仲木 竜）より、オミクスデータグラフ化ツール Visualization が提供され、遺伝研スーパーコンピュータの利用者は無料で試用できるようになりました。
+
+
+### Visualization の概要
+
+Visualization は複雑なセッティングやプログラミングをすることなく、RNA-seqデータをはじめとするオミクスデータをグラフ化できます。データの全体傾向の把握の他、特定の因子（遺伝子等）に絞ってシグナルの傾向を可視化できます。
+
+作成されたグラフは、論文や研究発表で自由にご利用いただけます。
+
+作成できるグラフの種類は以下の 15 種類です。
+- Violin Plot 
+- Box Plot
+- Heatmap
+- Complex Heatmap
+- Venn Diagram 
+- 2D PCA Scatter Plot
+- 3D PCA Scatter Plot
+- Hierarchical Clustering
+- Linear Regression
+- Rotatable Scatter Plot
+- Correlation Matrix
+- Volcano Plot
+- MA Plot
+- Chord Diagram
+- Network Analysis
+
+### 利用方法
+
+「活用方法」の左側メニューから「Rhelixa Graphing Tool」を選んでください。
+
+
 
 ---
 

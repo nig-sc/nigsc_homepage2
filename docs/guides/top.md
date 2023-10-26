@@ -20,12 +20,12 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
-- [11月24日 - 11月30日に定期メンテナンスを行います](/blog/2023-11-24-scheduled-maintenance)
+- [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めます](/advanced_guides/advanced_guide_2023#オミクスデータグラフ化ツール-rias%EF%B8%8F-visualizationの-提供を始めます) (2023.10.26)
+- [11月24日 - 11月30日に定期メンテナンスを行います <= 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.10.26)＼&#x1f195;／
 - [個人ゲノム解析区画で使用可能な GPU 専用 Slurm パーティションを新設しました](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [GPU ノードで利用可能な CPU コア数を拡張しました](/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [国立国際医療研究センター　河合洋介先生より、ヒト全ゲノム解析の公共データの再解析データセットが公開されました](/advanced_guides/advanced_guide_2023#%E3%83%92%E3%83%88%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0%E8%A7%A3%E6%9E%90%E3%81%AE%E5%85%AC%E5%85%B1%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%86%8D%E8%A7%A3%E6%9E%90%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88) (2023.06.05)
-- [誓約書へのサインが押印から Adobe 社の電子サインになりました](/blog/2023-03-14-adobe_sign) (2023.03.14)
-- [Github Discussions を開設しました](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
+
 
 
 ## 2023 年度の定期メンテナンス等

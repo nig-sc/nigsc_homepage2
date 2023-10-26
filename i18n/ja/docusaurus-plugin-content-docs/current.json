@@ -51,6 +51,10 @@
     "message": "Rhelixa RNAseq",
     "description": "The label for category Rhelixa RNAseq in sidebar advancedGuidesSidebar"
   },
+  "sidebar.advancedGuidesSidebar.category.Rhelixa グラフ化ツール": {
+    "message": "Rhelixa Graphing Tool",
+    "description": "The label for category Rhelixa グラフ化ツール in sidebar advancedGuidesSidebar"
+  },
   "sidebar.advancedGuidesSidebar.category.講習会": {
     "message": "講習会",
     "description": "The label for category 講習会 in sidebar advancedGuidesSidebar"
