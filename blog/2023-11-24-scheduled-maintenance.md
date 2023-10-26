@@ -85,6 +85,13 @@ date: 2023-11-24
   <td>2023.2.0</td>
 </tr>
 
+<tr>
+  <td>(6)</td>
+  <td>Altair Grid Engine</td>
+  <td>8.6.19/8.6.4</td>
+  <td>8.8.1</td>
+</tr>
+
 </table>
 
 
