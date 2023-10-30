@@ -20,7 +20,7 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
-- [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めます](/advanced_guides/advanced_guide_2023#オミクスデータグラフ化ツール-rias%EF%B8%8F-visualizationの-提供を始めます) (2023.10.26)
+- [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#オミクスデータグラフ化ツール-rias%EF%B8%8F-visualizationの-提供を始めます) (2023.10.26)
 - [11月24日 - 11月30日に定期メンテナンスを行います <= 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.10.26)＼&#x1f195;／
 - [個人ゲノム解析区画で使用可能な GPU 専用 Slurm パーティションを新設しました](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [GPU ノードで利用可能な CPU コア数を拡張しました](/blog/2023-07-26-gpu-configure)　(2023.07.11)
