@@ -11,7 +11,7 @@ title: "Topics in 2023"
 An omics data graphing tool Visualization has been provided by Rhelixa Corporation (CTO: Ryu Nakaki), which has a comprehensive collaboration agreement with the National Institute of Genetics, and is available for free trial for NIG supercomputer users.
 
 
-## Overview of Visualization
+### Overview of Visualization
 
 
 By using Visualization, omics data such as RNA-seq data can be easily graphed without complicated settings or programming. In addition to grasping the overall trend of the data, you can also visualise signal trends focusing on specific factors (e.g. genes).
@@ -38,7 +38,7 @@ There are 15 types of graphs that can be created, as follows:
 
 ### How to use
 
-Select "Rhelixa Graphing Tool" from the menu on the left side of "How to use".
+Select "Rhelixa Graphing Tool" from the menu on the left side of "Advances Guides".
 
 
 ---
