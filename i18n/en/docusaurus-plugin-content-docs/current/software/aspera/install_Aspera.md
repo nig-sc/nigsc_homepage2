@@ -64,7 +64,7 @@ For Linux, follow the above steps, the file such as `ibm-aspera-connect_4.1.0.46
 
 ```
 tar zxvf ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
-bash ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
+bash ibm-aspera-connect_4.1.0.46-linux_x86_64.sh
 ```
 
 When you run the installer, the executable file will be extracted under `$HOME/.aspera/connect/bin`, so pass the path here.
