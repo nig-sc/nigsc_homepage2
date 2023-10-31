@@ -386,7 +386,7 @@ module.exports = {
         },
         {
             type: "category",
-            label: "Relixa RNAseq",
+            label: "Rhelixa RNAseq",
             items: [
                 "advanced_guides/Rhelixa_RNAseq",
                 "advanced_guides/Rhelixa_RNAseq_manual",
@@ -394,7 +394,7 @@ module.exports = {
         },
         {
             type: "category",
-            label: "Relixa Graphing Tool",
+            label: "Rhelixa Graphing Tool",
             items: [
                 "advanced_guides/Rhelixa_RNAseq_Visualization",
             ],  
