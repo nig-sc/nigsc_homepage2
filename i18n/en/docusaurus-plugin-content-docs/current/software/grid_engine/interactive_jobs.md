@@ -29,4 +29,4 @@ In this example, the login node at137 is allocated to the user, and you will see
 You can execute commands interactively from this prompt.
 
 - You can specify the amount of memory available by adding the `-l s_vmem`,` -l mem_req` options to the `qlogin` command. (On the general analysis division, 4GB memory will be allocated when you specify no options. On the personal genome analysis division, allocated memory depend on the configuration to use.)
-- The upper limit for memory that can be specified here is XXXGB. If you need more memory , specify XXXX.
+- The upper limit for memory that can be specified on the interactive node is approximately 96 GB. If you need larger than this, run a batch job on the compute node using the qsub command or contact ![](sc-helpdesk.png). Also, depending on the congestion of the interactive node, you may be asked to conserve memory.
