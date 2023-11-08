@@ -10,8 +10,8 @@ date: 2022-07-05
 ---
 
 
-- The URL for the application form for use => <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">Registration</a>
-- The URL for application instructions => [Application for use/change](/en/application/registration/)
+- The URL for the application form for use `=>` [Registration](/application/registration)
+- The URL for application instructions `=>` [Application for use/change](/application/registration/)
 
 
 <table>
