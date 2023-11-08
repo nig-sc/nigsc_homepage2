@@ -11,7 +11,7 @@ On this page, we list FAQs that were listed in the [FAQ pages](/faq/faq_software
 
 ### &#x1F180; I have reconfigured my ssh public key again, but I get a error message `Permission denied` and cannot connect.
 
-&#x1F150; As of 7 July 2022, we move the data to a new application system for use ("[<u>July 5, 2022(Monday) Application system for new use is new</u>](/en/blog/2022-07-05-news_NewApp)").
+&#x1F150; As of 7 July 2022, we move the data to a new application system for use ("[<u>July 5, 2022(Monday) Application system for new use is new</u>](/blog/2022-07-05-news_NewApp)").
 Therefore, public key registrations to the new gateway `gw2.ddbj.nig.ac.jp` will be reflected immediately, but it will take about one day for the settings to be reflected to the old gateway `gw.ddbj.nig.ac.jp`.
 At the next scheduled maintenance (December), the system will be modified so that the settings will be reflected immediately on the old gateway.
 
@@ -23,7 +23,7 @@ Please login from `gw2.ddbj.nig.ac.jp` immediately after setting your public key
 
 ### &#x1F180; I have reconfigured my ssh public key again, but I get a error message `Permission denied` and cannot connect.
 
-&#x1F150; As of 7 July 2022, we move the data to a new application system for use ("[<u>July 5, 2022(Monday) Application system for new use is new</u>](/en/blog/2022-07-05-news_NewApp)").
+&#x1F150; As of 7 July 2022, we move the data to a new application system for use ("[<u>July 5, 2022(Monday) Application system for new use is new</u>](/blog/2022-07-05-news_NewApp)").
 Therefore, public key registrations to the new gateway `gw2.ddbj.nig.ac.jp` will be reflected immediately, but it will take about one day for the settings to be reflected to the old gateway `gw.ddbj.nig.ac.jp`.
 At the next scheduled maintenance (December), the system will be modified so that the settings will be reflected immediately on the old gateway.
 

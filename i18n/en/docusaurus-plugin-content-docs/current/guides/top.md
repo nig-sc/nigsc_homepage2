@@ -20,19 +20,19 @@ Due to disk space constraints, we do not back up the data in the user home direc
 ## Featured News
 
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
-- [Scheduled maintenance from 24 to 30 November <= Updated work description](/en/blog/2023-11-24-scheduled-maintenance) (2023.10.26)＼&#x1f195;／
-- [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/en/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
-- [Extended number of CPU cores available for GPU node](/en/blog/2023-07-26-gpu-configure)　(2023.07.11)
+- [Scheduled maintenance from 24 to 30 November <= Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.10.26)＼&#x1f195;／
+- [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
+- [Extended number of CPU cores available for GPU node](/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
-- [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/en/blog/2023-03-14-adobe_sign) (2023.03.14)
-- [Opened Github Discussions](/en/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
+- [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/blog/2023-03-14-adobe_sign) (2023.03.14)
+- [Opened Github Discussions](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 
 
 ## Scheduled for FY 2023
 Regular maintenance is scheduled once.
-- [<u>November 24 - November 30 (during the NIG's legal power outage)</u>](/en/blog/2023-11-24-scheduled-maintenance)
+- [<u>November 24 - November 30 (during the NIG's legal power outage)</u>](/blog/2023-11-24-scheduled-maintenance)
 
-As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS will be performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/en/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
+As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS will be performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
 
 - With this migration, the analysis environment may need to be re-installed. Please make sure to check the development environment and reinstall the analysis environment on your own.
 
