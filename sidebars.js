@@ -545,7 +545,6 @@ module.exports = {
             type: 'category',
             label: "FAQ : パスワード・公開鍵の設定方法",
             items: [
-                "faq/faq_sshkeys_mac",
                 "faq/faq_sshkeys_windows",
             ]
         },
