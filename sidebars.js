@@ -112,7 +112,7 @@ module.exports = {
                     type: 'category',
                     label: 'Slurm',
                     items: [
-                        "software/slurm"
+                        "software/Slurm/Slurm"
                     ]
                 },
 
@@ -123,13 +123,6 @@ module.exports = {
             type: 'category',
             label: 'パッケージマネージャ',
             items: [
-                {
-                    type: "category",
-                    label: "Guix",
-                    items: [
-                        "software/guix/guix",
-                    ],
-                },
                 {
                     type: "category",
                     label: "spack",
@@ -223,7 +216,7 @@ module.exports = {
                     type: 'category',
                     label: 'Slurm',
                     items: [
-                        "software/slurm"
+                        "software/Slurm/Slurm"
                     ]
                 },
 
@@ -234,13 +227,6 @@ module.exports = {
             type: 'category',
             label: 'パッケージマネージャ',
             items: [
-                {
-                    type: "category",
-                    label: "Guix",
-                    items: [
-                        "software/guix/guix",
-                    ],
-                },
                 {
                     type: "category",
                     label: "spack",
@@ -556,4 +542,15 @@ module.exports = {
             ]
         },
     ],
+    oldDocumentsidebar: [
+        {
+            type: 'category',
+            label: "software",
+            items: [
+                "oldDocuments/software/guix/guix",
+            ]
+        },
+    ],
+
+    
 };

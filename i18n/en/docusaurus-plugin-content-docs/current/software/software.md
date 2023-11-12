@@ -26,7 +26,8 @@ Job scheduler automatically allocates computer resources (CPU core and memory) t
 <tr>
 <td width="300">
 
-[Slurm](/software/slurm)
+[Slurm](/software/Slurm/Slurm.md)
+
 </td>
 <td width="300">☓</td>
 <td width="300">Application Required</td>

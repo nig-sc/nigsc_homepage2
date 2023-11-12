@@ -13,7 +13,7 @@ Added pages on the home page about package managers spack and nix that can be us
 
 The following package managers can be used only with user permission. They facilitate the construction of development and analysis environments.
 
-- [Guix](/software/guix) (&#x2728;Updated May 19)
+- [Guix](/oldDocuments/software/guix) (&#x2728;Updated May 19)
 - [spack](/software/spack/install_spack) (&#x2728;Updated May 19)
 - [Environmental Modules](/software/environmental_modules/) (April 13)
 
