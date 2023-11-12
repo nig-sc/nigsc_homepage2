@@ -4,6 +4,44 @@ title: "Topics in 2023"
 ---
 
 ---
+## The omics data graphing tool RIAS®️ Visualization is now available.
+
+26 Oct 2023.
+
+An omics data graphing tool Visualization has been provided by Rhelixa Corporation (CTO: Ryu Nakaki), which has a comprehensive collaboration agreement with the National Institute of Genetics, and is available for free trial for NIG supercomputer users.
+
+
+### Overview of Visualization
+
+
+By using Visualization, omics data such as RNA-seq data can be easily graphed without complicated settings or programming. In addition to grasping the overall trend of the data, you can also visualise signal trends focusing on specific factors (e.g. genes).
+
+You can freely use the created graphs in your papers and research publications.
+
+There are 15 types of graphs that can be created, as follows:
+- Violin Plot 
+- Box Plot
+- Heatmap
+- Complex Heatmap
+- Venn Diagram 
+- 2D PCA Scatter Plot
+- 3D PCA Scatter Plot
+- Hierarchical Clustering
+- Linear Regression
+- Rotatable Scatter Plot
+- Correlation Matrix
+- Volcano Plot
+- MA Plot
+- Chord Diagram
+- Network Analysis
+
+
+### How to use
+
+Select "Rhelixa Graphing Tool" from the menu on the left side of "Advances Guides".
+
+
+---
 
 ## Reanalysis dataset of public data of human whole genome analysis
 

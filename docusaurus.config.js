@@ -11,6 +11,8 @@ module.exports = {
   tagline: 'National Institute of Genetics, Japan',
   url: 'https://sc.ddbj.nig.ac.jp',
   baseUrl: '/',
+  //url: 'http://133.39.114.45', 
+  //baseUrl: '/~oogasawa/nigsc_homepage2/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: '/img/favicon.ico',
