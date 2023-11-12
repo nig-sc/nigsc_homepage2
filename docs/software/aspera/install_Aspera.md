@@ -68,7 +68,7 @@ Linux の場合は上記の手順で
 
 ```
 tar zxvf ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
-bash ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz
+bash ibm-aspera-connect_4.1.0.46-linux_x86_64.sh
 ```
 インストーラを実行すると、`$HOME/.aspera/connect/bin`の下に実行ファイルが展開されるのでここにパスを通します。
 

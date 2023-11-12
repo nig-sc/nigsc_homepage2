@@ -64,6 +64,7 @@ module.exports = {
             label: "一般解析区画の使い方",
             items: [
                 "general_analysis_division/ga_introduction",
+                "general_analysis_division/ga_queue",
                 "general_analysis_division/ga_application",
                 "general_analysis_division/ga_login",
                 "general_analysis_division/ga_usage",
@@ -371,10 +372,17 @@ module.exports = {
         },
         {
             type: "category",
-            label: "Relixa RNAseq",
+            label: "Rhelixa RNAseq",
             items: [
                 "advanced_guides/Rhelixa_RNAseq",
                 "advanced_guides/Rhelixa_RNAseq_manual",
+            ],  
+        },
+        {
+            type: "category",
+            label: "Rhelixa Graphing Tool",
+            items: [
+                "advanced_guides/Rhelixa_RNAseq_Visualization",
             ],  
         },
         {
@@ -523,7 +531,6 @@ module.exports = {
             type: 'category',
             label: "FAQ : パスワード・公開鍵の設定方法",
             items: [
-                "faq/faq_sshkeys_mac",
                 "faq/faq_sshkeys_windows",
             ]
         },
