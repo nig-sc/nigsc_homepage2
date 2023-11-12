@@ -26,7 +26,8 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[Slurm](/software/slurm)
+[Slurm](/software/Slurm/Slurm.md)
+
 </td>
 <td width="300">☓</td>
 <td width="300">要申請</td>
@@ -53,20 +54,9 @@ title: ソフトウェア
 
 [Environmental Modules](/software/environmental_modules)
 </td>
-<td width="300">インストール済み</td>
-<td width="300">インストール済み</td>
+<td width="300">X</td>
+<td width="300">X (CentOS 7 環境のみ）</td>
 </tr>
-
-
-<tr>
-<td width="300">
-
-[Guix](/software/guix)
-</td>
-<td width="300">インストール済み</td>
-<td width="300">☓</td>
-</tr>
-
 
 <tr>
 <td width="300">
