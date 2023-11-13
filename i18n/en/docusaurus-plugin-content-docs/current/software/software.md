@@ -47,14 +47,16 @@ The following package managers can be used only with user permission. They facil
 <th width="300">the personal genome analysis division</th>
 </tr>
 
+
 <tr>
 <td width="300">
 
-[Guix](/software/guix)
+[Environmental Modules](/software/environmental_modules)
 </td>
-<td width="300">installed</td>
-<td width="300">☓</td>
+<td width="300">X</td>
+<td width="300">X (Only available for CentOS 7)</td>
 </tr>
+
 
 <tr>
 <td width="300">
@@ -65,14 +67,8 @@ The following package managers can be used only with user permission. They facil
 <td width="300">available</td>
 </tr>
 
-<tr>
-<td width="300">
 
-[Environmental Modules](/software/environmental_modules)
-</td>
-<td width="300">installed</td>
-<td width="300">installed</td>
-</tr>
+
 </table>
 
 ## Container
