@@ -22,12 +22,12 @@ ssh youraccount@gw2.ddbj.nig.ac.jp
 
 For specific procedures:
 
- <u>https://sc.ddbj.nig.ac.jp/application/ssh_keys</u>
+[<u>https://sc.ddbj.nig.ac.jp/application/ssh_keys</u>](https://sc.ddbj.nig.ac.jp/application/ssh_keys)
 
 
 For more information about this division:
 
- <u>https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction</u>
+[<u>https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction</u>](https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction)
 
 For questions on how to login, refer to [<u>FAQ</u>](/faq/faq_login_general).
 
@@ -49,11 +49,11 @@ ssh youraccount@gwA2.ddbj.nig.ac.jp
 
 For specific procedures:
 
- <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login</u>
+[<u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login</u>](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login)
 
 For more information about this division:
 
- <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction</u>
+[<u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction</u>](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction)
 
 For questions on how to login, refer to [<u>FAQ</u>](/faq/faq_login_personal).
 
