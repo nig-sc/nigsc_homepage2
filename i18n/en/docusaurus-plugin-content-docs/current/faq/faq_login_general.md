@@ -50,8 +50,13 @@ RSA host key for gw.ddbj.nig.ac.jp has changed and you have requested strict che
 Host key verification failed.
 ```
 
-In this case, delete the relevant line in the `.ssh/known_hosts` file or the `.ssh/known_hosts` file itself.
-Also use `ssh-keygen -R gw.ddbj.nig.ac.jp` to delete the relevant line.
+There are two gateway nodes of the NIG supercomputer: `gw.ddbj.nig.ac.jp` and `gw2.ddbj.nig.ac.jp`. By executing `ssh-keygen -R gw.ddbj.nig.ac.jp` , `ssh-keygen -R gw2.ddbj.nig.ac.jp` respectively, this error will disappear. **<font color="red">Execute it on the user's computer</font>, not on the NIG supercomputer.**
+
+When you execute it, the error will disappear, but you will be asked `Are you sure you want to continue connecting (yes/no)? `. Select `yes'.<br/>
+
+This confirmation message is displayed the first time when connecting from a user's computer to the NIG supercomputer server, to make sure that the connection is to a legitimate server and not to a spoofed fake server. 
+
+It will be asked only once the first time and will not be displayed again the next time.
 
 
 ## &#x1F180; SSH connections frequently disconnected.

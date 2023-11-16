@@ -72,10 +72,10 @@ date: 2023-11-24
 </tr>
 
 <tr>
-  <td>(4)</td>
+  <td>(4)*</td>
   <td>NVIDIA CUDA</td>
   <td>12.2</td>
-  <td>12.3</td>
+  <td>12.1</td>
 </tr>
 
 <tr>
@@ -93,6 +93,8 @@ date: 2023-11-24
 </tr>
 
 </table>
+
+*: CUDAについてはUbuntu Linux 22.04LTS GAカーネルの対応バージョンが12.1なので、12.1にダウングレードされます。
 
 
 ### OS移行 (CentOS 7.9からUbuntu Linux 22.04LTSへの移行)
