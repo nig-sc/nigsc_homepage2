@@ -46,8 +46,8 @@ Table: Software upgrade plan for development/analysis
 <tr>
   <td>#</td>
   <td>Software</td>
-  <td>Before upgrade</td>
-  <td>After upgrade</td>
+  <td>Before scheduled maintenance</td>
+  <td>After scheduled maintenancee</td>
 </tr>
 
 <tr>
