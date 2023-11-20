@@ -54,6 +54,16 @@ module.exports = {
                 }
             ]
         },
+
+        {
+            type: "category",
+            label: "稼働状況",
+            items: [
+                "operation/operation",
+                "operation/Total_PowerConsumption",
+            ]
+        },
+        
     ],
 
     guidesSidebar: [
@@ -72,6 +82,8 @@ module.exports = {
                 "general_analysis_division/advance_reservation",
                 "general_analysis_division/ga_lustre",
                 "general_analysis_division/largescale_storage",
+                "operation/qstatGC",
+                "operation/gfree",
             ]
         },
         {
@@ -91,110 +103,6 @@ module.exports = {
         }
     ],
     
-    softwareSidebar: [
-        {
-            type: 'category',
-            label: "ジョブスケジューラ",
-            items: [
-                {
-                    type: 'category',
-                    label: 'Grid Engine',
-                    items: [
-                        "software/grid_engine/grid_engine",
-                        "software/grid_engine/interactive_jobs",
-                        "software/grid_engine/batch_jobs",
-                        "software/grid_engine/parallel_jobs/parallel_jobs",
-                        "software/grid_engine/array_jobs",
-                        "software/grid_engine/other_commands",
-                        "software/qsub_beta",
-                    ]
-                },
-                {
-                    type: 'category',
-                    label: 'Slurm',
-                    items: [
-                        "software/Slurm/Slurm"
-                    ]
-                },
-
-
-            ]
-        },
-        {
-            type: 'category',
-            label: 'パッケージマネージャ',
-            items: [
-                {
-                    type: "category",
-                    label: "spack",
-                    items: [
-                        "software/spack/install_spack",
-                        "software/spack/use_spack",
-                    ],
-                },
-                {
-                    type: "category",
-                    label: "Environmental Modules",
-                    items: [
-                        "software/environmental_modules/environmental_modules",
-                    ],
-                },
-
-            ]
-        },
-
-
-        {
-            type: 'category',
-            label: 'コンテナ・解析パイプライン',
-            items: [
-                "software/BioContainers/BioContainers",
-                "software/Apptainer/Apptainer",
-            ]
-        },
-
-        {
-            type: 'category',
-            label: "データ転送・データ共有",
-            items: [
-                {
-                    type: 'category',
-                    label: 'Aspera',
-                    items: [
-                        "software/aspera/aspera",
-                        "software/aspera/install_Aspera",
-                    ],
-                },
-                {
-                    type: "category",
-                    label: "HCP tools",
-                    items: [
-                        "software/Archaea_tools/Archaea_tools",
-                        "software/Archaea_tools/hcptools_conf",
-                    ],
-                }
-            ]
-        },
-
-        {
-            type: 'category',
-            label: "開発環境・ライブラリ",
-            items: [
-                "software/python",
-                "software/R",
-                "software/jupyter_notebook",
-                "software/jupyter_lab",
-                "software/java",
-                "software/typescript",
-                "software/rust",
-                
-                "personal_genome_division/pg_transfer",
-                "general_analysis_division/ga_lustre",
-                "general_analysis_division/largescale_storage",
-                "personal_genome_division/group_cloud",
-            ]
-        }
-    ],
     softwareSidebar: [
         {
             type: 'category',
@@ -437,28 +345,6 @@ module.exports = {
 
     ],
     
-    operationInfoSidebar: [
-        {
-            type: "link",
-            label: "お知らせ",
-            href: "/blog/tags/news"
-        },
-        {
-            type: "link",
-            label: "メンテナンス情報",
-            href: "/blog/tags/maintenance"
-        },
-        {
-            type: "category",
-            label: "稼働状況",
-            items: [
-                "operation/operation",
-                "operation/qstatGC",
-                "operation/gfree",
-                "operation/Total_PowerConsumption",
-            ]
-        }
-    ],
     reportSidebar: [
         "report/report",
         {

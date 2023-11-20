@@ -111,7 +111,7 @@ title: "ハードウェア"
 </tr>
 <tr>
     <td colspan="2">
-    DB用ストレージ<br />
+    DB 用ストレージ<br />
 	DRA 等の DDBJ データベースを格納している領域
     </td>
 	<td>Lustre ファイルシステム<br />
@@ -247,22 +247,21 @@ HPE ProLiant DL560 Gen10
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                             |
 
  
-### Fat 計算ノード (HPE Superdome Flex; 1 台)
+### Fat 計算ノード (1 台 : ホスト名 fat1)
 
-複数の計算ノードを接続して大規模な共有メモリー型の計算機を構築する NUMA(Non Uniformed Memory Access)アーキテクチャの計算ノードです。 
+HPE Superdome Flex 2 筐体を Superdome Flex グリッド・インターコネクトで接続して合計 12TB の共有メモリの計算ノードを構成しています。
 
 FAT ノードは申請制での利用となります。
 
 ![](Fat.png) 
 
-HPE Superdome Flex
-(ホスト名: fat1)
-	
+FAT 計算ノード１ノード（HPE Superdome Flex 2 筐体）当たりのスペック
+
 | 構成要素 | 型番                                                    | 員数 | ノードあたりの性能など               |
 |----------|---------------------------------------------------------|------|--------------------------------------|
 | CPU      | Intel Xeon Gold 6148 (20 cores) Base 2.4GHz, Max 3.7GHz |   16 | 合計 288 コア                         |
 | Memory   | 32GB DDR4-2666                                          |  192 | 合計 12,288GB (CPU コアあたり 47.2GB) |
-| Storage  | 1.2TB SAS HDD                                           |    2 | 1.2TB (RAID1)                        |
+| Storage  | 1.2TB SAS HDD                                           |    4 | 2.4TB (RAID1)                        |
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                              |
 
 
@@ -278,7 +277,7 @@ HPE Superdome Flex
 
 
 
-### DB用ストレージ
+### DB 用ストレージ
 
 | アクセスパス | 実効容量 | 用途                           | ピーク性能 | 構成                                             |
 |--------------|----------|--------------------------------|------------|--------------------------------------------------|
