@@ -84,11 +84,11 @@ module.exports = {
           docId: 'advanced_guides/advanced_guide_2023',
           label: '活用方法'
         },
-        {
-          type: 'doc',
-          docId: 'operation/operation',
-          label: '稼働状況'
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'operation/operation',
+        //   label: '稼働状況'
+        // },
         {
           type: 'doc',
           docId: 'report/report',
