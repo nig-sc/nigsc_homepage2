@@ -74,10 +74,10 @@ module.exports = {
             label: "一般解析区画の使い方",
             items: [
                 "general_analysis_division/ga_introduction",
-                "general_analysis_division/ga_queue",
                 "general_analysis_division/ga_application",
                 "general_analysis_division/ga_login",
                 "general_analysis_division/ga_usage",
+                "general_analysis_division/ga_queue",
                 "general_analysis_division/ga_transfer",
                 "general_analysis_division/advance_reservation",
                 "general_analysis_division/ga_lustre",
@@ -92,7 +92,19 @@ module.exports = {
             items: [
                 "personal_genome_division/pg_introduction",
                 "personal_genome_division/pg_application",
-                "personal_genome_division/pg_login",
+                {
+                    type: "category",
+                    label: "ログイン方法 (個人ゲノム解析区画)",
+                    items: [
+                        "personal_genome_division/pg_login",
+                        "personal_genome_division/pg_login_ssl-vpn_install_win",
+                        "personal_genome_division/pg_login_ssl-vpn_install_mac",
+                        "personal_genome_division/pg_login_ssl-vpn_install_linux",
+                        "personal_genome_division/pg_login_ssl-vpn_connection_win",
+                        "personal_genome_division/pg_login_ssl-vpn_connection_mac",
+                        "personal_genome_division/pg_login_ssl-vpn_connection_linux",
+                    ],
+                },
                 "personal_genome_division/pg_usage",
                 "personal_genome_division/gpu_slurm",
                 "personal_genome_division/pg_transfer",

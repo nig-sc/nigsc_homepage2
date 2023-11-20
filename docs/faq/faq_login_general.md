@@ -50,9 +50,9 @@ RSA host key for gw.ddbj.nig.ac.jp has changed and you have requested strict che
 Host key verification failed.
 ```
 
+遺伝研スパコンのゲートウェイノードは `gw.ddbj.nig.ac.jp`, `gw2.ddbj.nig.ac.jp` の２つがありますが、それぞれ `ssh-keygen -R gw.ddbj.nig.ac.jp` , `ssh-keygen -R gw2.ddbj.nig.ac.jp` を実行することでこのエラーが出なくなります。**実行するときは、スパコン上ではなく、<font color="red">ユーザの計算機上で実行します</font>。**
 
-その場合は、`.ssh/known_hosts`ファイルの該当行を削除、もしくは`.ssh/known_hosts`ファイル自体を削除する。
-また、`ssh-keygen -R gw.ddbj.nig.ac.jp` を使用して該当行を削除してください。
+実行すると、エラーは出なくなりますが、`Are you sure you want to continue connecting (yes/no)?` と聞かれます。「yes」を入力します。<br/>この確認メッセージは、ユーザの計算機から遺伝研スパコンのサーバに初めて接続する場合に、接続先がなりすまされた偽のサーバではなく正規のサーバであるかどうかの確認のために、表示されます。最初の1回だけ聞かれて、次回以降は表示されません。
 
 
 ## &#x1F180; SSH のコネクションが頻繁に切れます。

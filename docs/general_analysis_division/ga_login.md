@@ -3,7 +3,14 @@ id: ga_login
 title: "ログイン方法(一般解析区画)"
 ---
 
-[まず最初に、新規利用申請を行ってください。](/application/registration)
+[<u>ログインするためには、利用申請が必要です。</u>](/application/registration)
+
+## ゲートウェイノードは ２つあります
+
+遺伝研スパコンの一般解析区画のゲートウェイノードは、以下の2つがあります。
+
+- `gw.ddbj.nig.ac.jp`
+- `gw2.ddbj.nig.ac.jp`
 
 
 ## ログインの手順
