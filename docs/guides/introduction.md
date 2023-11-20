@@ -21,11 +21,11 @@ ssh youraccount@gw2.ddbj.nig.ac.jp
 
 具体的な手順は、下記 URL に掲載しております。
 
- <u>https://sc.ddbj.nig.ac.jp/application/ssh_keys</u>
+[<u>https://sc.ddbj.nig.ac.jp/application/ssh_keys</u>](https://sc.ddbj.nig.ac.jp/application/ssh_keys)
 
 一般解析区画の利用方法については、下記 URL をご参照ください。 
 
- <u>https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction</u>
+[<u>https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction</u>](https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction)
 
 うまくいかない場合は、[<u>よくある質問(FAQ)</u>](/faq/faq_login_general)をご参照ください。
 
@@ -46,11 +46,11 @@ ssh youraccount@gwA2.ddbj.nig.ac.jp
 
 ※セキュリティ向上のため、ログイン時の認証方式は、公開鍵認証に加えてSSL-VPN接続を採用しております。具体的な手順は、下記URLに掲載しております。
 
- <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login</u>
+[<u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login</u>](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_login)
 
 個人ゲノム解析区画の利用方法については下記 URL を参照ください。 
 
- <u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction</u>
+[<u>https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction</u>](https://sc.ddbj.nig.ac.jp/personal_genome_division/pg_introduction)
 
 うまくいかない場合は、[<u>よくある質問(FAQ)</u>](/faq/faq_login_personal)をご参照ください。
 

@@ -3,7 +3,16 @@ id: ga_login
 title: "How to Login (The general analysis division)"
 ---
 
-[First of all, you need to complete application for new use](/application/registration)
+[<u>Before logging in, you need to complete application for use.</u>](/application/registration)
+
+
+## Gateway Node
+
+There are two gateway nodes for the general analysis division of the NIG supercomputer.
+
+- `gw.ddbj.nig.ac.jp`
+- `gw2.ddbj.nig.ac.jp`
+
 
 ##  How to log in to the general analysis division with your account
 

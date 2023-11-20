@@ -46,8 +46,8 @@ Table: Software upgrade plan for development/analysis
 <tr>
   <td>#</td>
   <td>Software</td>
-  <td>Before upgrade</td>
-  <td>After upgrade</td>
+  <td>Before scheduled maintenance</td>
+  <td>After scheduled maintenancee</td>
 </tr>
 
 <tr>
@@ -72,10 +72,10 @@ Table: Software upgrade plan for development/analysis
 </tr>
 
 <tr>
-  <td>(4)</td>
+  <td>(4)*</td>
   <td>NVIDIA CUDA</td>
   <td>12.2</td>
-  <td>12.3</td>
+  <td>12.1</td>
 </tr>
 
 <tr>
@@ -94,6 +94,8 @@ Table: Software upgrade plan for development/analysis
 
 </table>
 
+*: 
+CUDA is downgraded to 12.1 because the supported version of the Ubuntu Linux 22.04LTS GA kernel is 12.1.
 
 ### OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)
 
