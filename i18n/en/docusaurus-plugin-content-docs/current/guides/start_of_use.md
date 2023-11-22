@@ -1,6 +1,6 @@
 ---
 id: start_of_use
-title: How to start using the system
+title: "How to start using the system"
 ---
 
 To use the NIG supercomputer, you need to register your application before you start using it.
@@ -88,7 +88,7 @@ When the account registration certificate arrived, you will be able to log in to
 The NIG supercomputer can be used with any common computer running an SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
 
 For login instructions, see below.<br/>
-[<u>Introduction</u>](/introduction/)
+[<u>Introduction</u>](/guides/introduction/)
 
 
 </td>

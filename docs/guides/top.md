@@ -20,6 +20,10 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
+- [ISMS認証(ISO27001:2013)を取得しました](/guides/security-policy) (2023.11.22)
+
+![](/img/ISMS_ANAB_ISMS-AC_color.png) 
+
 - [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#オミクスデータグラフ化ツール-rias%EF%B8%8F-visualizationの-提供を始めました) (2023.10.26)
 - [11月24日 - 11月30日に定期メンテナンスを行います <= 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.10.26)＼&#x1f195;／
     - NVIDIA CUDAのバージョンについて、メールでは12.3とお知らせいたしましたが、正しくは12.1になります。
