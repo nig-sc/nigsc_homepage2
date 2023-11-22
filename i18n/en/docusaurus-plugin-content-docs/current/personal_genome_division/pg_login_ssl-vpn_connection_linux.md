@@ -6,23 +6,6 @@ title: "How to connect to the VPN (Linux)"
 
 For Linux, connect using the openfortivpn CUI.
 
-## 1. Configure the SSL-VPN client
-
-Save a configuration file with the following content
-- Configration file name and location are optional.
-- For username and password, enter the VPN account information obtained in advance.
-- For trusted-cert, the following fixed value (hash value of the SSL-VPN server's certificate) must be specified.
-
-```
-$ sudo vi /path/to/config
-host = 133.39.24.254
-port = 443
-username = ********
-password = ********
-trusted-cert = 860101b1dbaff15fa35da3f6ed643b3cae434234c9bd866d86f67948d07a7f94
-```
-
-## 2. Connect to VPN
 
 1. Specify the configuration file as an argument and execute the command as follows.
 

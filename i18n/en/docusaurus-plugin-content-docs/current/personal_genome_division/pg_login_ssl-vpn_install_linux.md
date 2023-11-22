@@ -10,15 +10,17 @@ For Linux and Windows Subsystem for Linux 2 (WSL2), use the CUI openfortivpn.
 
 ### Example 1: Installing on centOS
 
-1. Install openfortivpn from the RPMs -> x86_64 link on the following page.
+1. Install openfortivpn on the user's computer ('Client machine' in the figure below) by selecting the link 'RPMs' -> 'x86_64' at the URL below. [https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936](https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936)(latest version as of 10.Dec.2021)
 
-[https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936](https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936)(latest version as of 10.Dec.2021)
+- For the latest version of openfortivpn, see the following link. https://github.com/adrienverge/openfortivpn#installing
 
 ```
 $ sudo yum -y install
 https://kojipkgs.fedoraproject.org//packages/openfortivpn/1.17.0/3.el7/x86_64/op
 enfortivpn-1.17.0-3.el7.x86_64.rpm
 ```
+
+![figure](sslvpn.png)
 
 
 2. Ensure that it has been installed.
@@ -39,21 +41,4 @@ $ sudo apt-get install -y openfortivpn
 ```
 $ sudo openfortivpn --version
 1.6.0
-```
-
-
-## Create a configuration file
-
-Save a configuration file with the following content
-- The configration file name and location are optional.
-- For username and password, enter the VPN account information obtained in advance.
-- For trusted-cert, the following fixed value (hash value of the SSL-VPN server's certificate) must be specified.
-
-```
-$ sudo vi /path/to/config
-host = 133.39.24.254
-port = 443
-username = ********
-password = ********
-trusted-cert = 860101b1dbaff15fa35da3f6ed643b3cae434234c9bd866d86f67948d07a7f94
 ```

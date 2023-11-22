@@ -22,6 +22,11 @@ title: Hardware
     </td>	
 	<td rowspan="4">
     Thin nodes
+        <br />Total: 232 units<br/><br/>
+   Total number of CPU cores: 14,336<br />
+    Total computing performance: 844.472 TFLOPS<br />
+    (CPU: 345.272 TFLOPS, GPU: 499.2 TFLOPS)<br />
+    Total memory capacity 110.080 TB
     </td>
     <td>
     Type 1a<br />
@@ -86,9 +91,9 @@ title: Hardware
     <tr>
 	<td colspan="2">
     Fat node<br />
-    Two nodes connected to form 12TB of shared memory</td>
+    12TB of shared memory</td>
 	<td>
-    2 node<br />
+    1 node<br />
 	288 CPU cores<br />
 	27.648 TFLOPS<br />
 	12.288 TB total memory (42.7GB memory/CPU core)
@@ -245,7 +250,7 @@ HPE ProLiant DL560 Gen10
  
 ### Fat compute node (HPE Superdome Flex; one computer)
 
-This compute node for the NUMA (Non Uniformed Memory Access) architecture, which connects multiple compute nodes to build a large shared memory type compute system. 
+A total of 12 TB of shared memory compute nodes are configured by connecting HPE Superdome Flex 2 chassis with Superdome Flex grid interconnects.
 
 You can use FAT nodes by application only.
 
@@ -258,7 +263,7 @@ HPE Superdome Flex
 |-----------|---------------------------------------------------------|-----------------------|--------------------------------------|
 | CPU       | Intel Xeon Gold 6148 (20 cores) Base 2.4GHz, Max 3.7GHz |                    16 | Total 288 core                       |
 | Memory    | 32GB DDR4-2666                                          |                   192 | Total 12,288GB (47.2GB per CPU core) |
-| Storage   | 1.2TB SAS HDD                                           |                     2 | 1.2TB (RAID1)                        |
+| Storage   | 1.2TB SAS HDD                                           |                     4 | 2.4TB (RAID1)                        |
 | Network   | InfiniBand 4xEDR                                        |                     1 | 100Gbps                              |
 
 

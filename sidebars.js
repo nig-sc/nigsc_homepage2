@@ -38,8 +38,8 @@ module.exports = {
             label: "システム構成",
             items: [
                 "guides/top",
-                "guides/overview",
                 "guides/security-policy",
+                "guides/overview",
                 "guides/hardware",
                 {
                     type: "category",
@@ -90,19 +90,43 @@ module.exports = {
             type: "category",
             label: "個人ゲノム解析区画の使い方",
             items: [
-                "personal_genome_division/pg_introduction",
                 "personal_genome_division/pg_application",
                 {
                     type: "category",
                     label: "ログイン方法 (個人ゲノム解析区画)",
+                    link: {
+                        type: "doc",
+                        id: "personal_genome_division/pg_login",
+                    },
                     items: [
-                        "personal_genome_division/pg_login",
-                        "personal_genome_division/pg_login_ssl-vpn_install_win",
-                        "personal_genome_division/pg_login_ssl-vpn_install_mac",
-                        "personal_genome_division/pg_login_ssl-vpn_install_linux",
-                        "personal_genome_division/pg_login_ssl-vpn_connection_win",
-                        "personal_genome_division/pg_login_ssl-vpn_connection_mac",
-                        "personal_genome_division/pg_login_ssl-vpn_connection_linux",
+                        {
+                            type: "category",
+                            label: "SSL-VPNクライアントソフトウェアのインストール方法",
+                            items: [
+                                "personal_genome_division/pg_login_ssl-vpn_install_win",
+                                "personal_genome_division/pg_login_ssl-vpn_install_mac",
+                                "personal_genome_division/pg_login_ssl-vpn_install_linux",
+                            ],
+                        },
+                        {
+                            type: "category",
+                            label: "SSL-VPNクライアントの設定方法",
+                            items: [
+                                "personal_genome_division/pg_login_ssl-vpn_configure_file_win",
+                                "personal_genome_division/pg_login_ssl-vpn_configure_file_mac",
+                                "personal_genome_division/pg_login_ssl-vpn_configure_file_linux",
+                            ],
+                        },
+                        {
+
+                            type: "category",
+                            label: "SSL-VPNへの接続方法",
+                            items: [
+                                "personal_genome_division/pg_login_ssl-vpn_connection_win",
+                                "personal_genome_division/pg_login_ssl-vpn_connection_mac",
+                                "personal_genome_division/pg_login_ssl-vpn_connection_linux",
+                            ],
+                        },
                     ],
                 },
                 "personal_genome_division/pg_usage",
@@ -111,8 +135,8 @@ module.exports = {
                 "general_analysis_division/ga_lustre",
                 "general_analysis_division/largescale_storage",
                 "personal_genome_division/group_cloud",
-            ]
-        }
+            ],
+        },
     ],
     
     softwareSidebar: [
