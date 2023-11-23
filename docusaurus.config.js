@@ -9,9 +9,10 @@ const GOOGLE_TAG_ID = 'GT-K8K7B54'
 module.exports = {
   title: 'NIG supercomputer',
   tagline: 'National Institute of Genetics, Japan',
-  url: 'http://192.168.11.50/',
-  baseUrl: '/~oogasawa/nigsc_homepage2',
-  //url: 'http://133.39.114.45', 
+  utl: 'https://sc.nig.ac.jp',
+  baseUrl: '/',
+  // url: 'http://192.168.11.50/',
+  // url: 'http://133.39.114.45', 
   //baseUrl: '/~oogasawa/nigsc_homepage2/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
