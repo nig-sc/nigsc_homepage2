@@ -38,7 +38,17 @@ module.exports = {
             label: "システム構成",
             items: [
                 "guides/top",
-                "guides/security-policy",
+                {
+                    type: "category",
+                    label: "情報セキュリティ方針(ISO27001)",
+                    link: {
+                        type: "doc",
+                        id: "guides/security-policy",
+                    },
+                    items: [
+                        "guides/ISMS_Certificate",
+                    ],
+                },
                 "guides/overview",
                 "guides/hardware",
                 {

@@ -23,6 +23,10 @@
     "message": "System Overview",
     "description": "The label for category システム構成 in sidebar topSidebar"
   },
+  "sidebar.topSidebar.category.情報セキュリティ方針(ISO27001)": {
+    "message": "Information Security Policy (ISO27001)",
+    "description": "The label for category 情報セキュリティ方針(ISO27001) in sidebar topSidebar"
+  },
   "sidebar.topSidebar.category.ソフトウェア": {
     "message": "Software",
     "description": "The label for category ソフトウェア in sidebar topSidebar"

@@ -49,6 +49,18 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: white;
 }
 
+
+
+.box-link {
+  background: #2f4f4f;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+
 .recentBlogPosts__title_src-theme-RecentBlogPosts-styles-module {
     margin: 0;
     font-size: 0.9rem;
