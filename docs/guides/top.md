@@ -20,13 +20,10 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
-- [ISMS認証(ISO27001:2013)を取得しました](/guides/security-policy) (2023.11.22)
-
-![](/img/ISMS_ANAB_ISMS-AC_color.png) 
-
-- [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#オミクスデータグラフ化ツール-rias%EF%B8%8F-visualizationの-提供を始めました) (2023.10.26)
-- [11月24日 - 11月30日に定期メンテナンスを行います <= 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.10.26)＼&#x1f195;／
-    - NVIDIA CUDAのバージョンについて、メールでは12.3とお知らせいたしましたが、正しくは12.1になります。
+- [ISMS 認証(ISO27001)を取得しました](/guides/security-policy) (2023.11.22)
+- [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#オミクスデータグラフ化ツール-rias%EF%B8%8F-visualization の-提供を始めました) (2023.10.26)
+- [11 月 24 日 - 11 月 30 日に定期メンテナンスを行います <= 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.10.26)＼&#x1f195;／
+    - NVIDIA CUDA のバージョンについて、メールでは 12.3 とお知らせいたしましたが、正しくは 12.1 になります。
 - [個人ゲノム解析区画で使用可能な GPU 専用 Slurm パーティションを新設しました](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [GPU ノードで利用可能な CPU コア数を拡張しました](/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [国立国際医療研究センター　河合洋介先生より、ヒト全ゲノム解析の公共データの再解析データセットが公開されました](/advanced_guides/advanced_guide_2023#%E3%83%92%E3%83%88%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0%E8%A7%A3%E6%9E%90%E3%81%AE%E5%85%AC%E5%85%B1%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%86%8D%E8%A7%A3%E6%9E%90%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88) (2023.06.05)
@@ -34,12 +31,12 @@ sidebar_label: トップページ
 
 
 ## 2023 年度の定期メンテナンス等
-2023 年度の定期メンテナンスを1回を予定しています。
--   [<u>11月24日 - 11月30日(遺伝研法定停電時)</u>](/blog/2023-11-24-scheduled-maintenance)
+2023 年度の定期メンテナンスを 1 回を予定しています。
+-   [<u>11 月 24 日 - 11 月 30 日(遺伝研法定停電時)</u>](/blog/2023-11-24-scheduled-maintenance)
 
-また、CentOS 7 が 2024 年 6 月 30 日に End-Of-Life を迎えることを受け、定期メンテナンスでCentOS 7.9からUbuntu Linux 22.04LTSへの移行を行います。移行についての詳細は、[<u>定期メンテナンス 作業内容の「OS移行 (CentOS 7.9からUbuntu Linux 22.04LTSへの移行)」をご参照ください</u>](/blog/2023-11-24-scheduled-maintenance#os移行-centos-79からubuntu-linux-2204ltsへの移行)。
+また、CentOS 7 が 2024 年 6 月 30 日に End-Of-Life を迎えることを受け、定期メンテナンスで CentOS 7.9 から Ubuntu Linux 22.04LTS への移行を行います。移行についての詳細は、[<u>定期メンテナンス 作業内容の「OS 移行 (CentOS 7.9 から Ubuntu Linux 22.04LTS への移行)」をご参照ください</u>](/blog/2023-11-24-scheduled-maintenance#os 移行-centos-79 から ubuntu-linux-2204lts への移行)。
 
-- OSの移行に伴い、解析環境の再インストールが必要になる場合があります。各自で必ず開発環境を確認し、解析環境の再インストールをお願いいたします。
+- OS の移行に伴い、解析環境の再インストールが必要になる場合があります。各自で必ず開発環境を確認し、解析環境の再インストールをお願いいたします。
 
 
 以下は例年通りの実施となります。

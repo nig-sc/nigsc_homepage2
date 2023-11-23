@@ -1,95 +1,97 @@
 ---
 id: security-policy
-title: 情報セキュリティ方針 (ISO27001)
+title: Information Security Policy (ISO27001)
 ---
 
+<table>
+<tr><td>
+The official version of this document is the Japanese text.
+The English translation is provided only for reference.
+</td></tr>
+</table>
 
-## 情報セキュリティ方針
+## Information Security Declaration
 
-### ＜情報セキュリティ宣言＞
-
-
-国立遺伝学研究所 生命情報・DDBJセンター（以下「当センター」）は遺伝学を中心としたライフサイエンス系の研究・教育のためのリソース提供を目的としてスーパーコンピュータシステム（以下「遺伝研スパコン」）の運営を行っています。
-
-当センターは、すべての利害関係者の信頼と安心を頂くために、保有する研究・教育活動に必要な情報および遺伝研スパコンを含む情報システム（以下「情報資産」といいます）の安全性及び信頼性を確保し、関係者全員で以下の取り組みを実施します。
+National Institute of Genetics Bioinformation and DDBJ Center (hereafter referred to as "the Center") operates a supercomputer system (hereafter referred to as "the NIG supercomputer") for the purpose of providing resources for research and education in the life sciences with a focus on genetics.
 
 
-### ＜情報セキュリティ基本方針＞　
-1.	目標
-
-個人ゲノムデータをはじめとする情報資産を適切に分類し、機密性、完全性、可用性を確保するための適切な対策を実施します。
-
-2.	組織及び体制の確立
-
-情報セキュリティの確保に必要な組織及び体制を整備し、責任と権限を明確にします。また、人的資源に関するリスクを認識し、適切な対策を講じます。
-
-3.	安全管理措置
-
-情報資産の適正な管理、運用を実現する為、情報セキュリティマネジメントシステムを確立及び維持し、適切な物理的管理策及び技術的管理策を実施し継続的な改善に努めます。
-
-4.	法令順守
-
-情報セキュリティに関する事業上及び法令又は、その他の社会的規範、並びにお客様との契約上のセキュリティ義務による要求事項を遵守します。
-
-5.	教育訓練
-
-情報セキュリティに関する教育、訓練を定期的に実施し、この方針の周知徹底を図ります。
-
-6.	緊急事態への対応
-
-情報漏えいや改ざん及び破損等の情報セキュリティインシデントが発生した際、また、災害等により事業活動が中断されるような事態に対して適切な対策を講じます。
-
-7.	継続的改善
-
-この情報セキュリティ方針が実行されるために必要なマネジメントシステムを組織内で運用し、継続的改善に努めます。
-	
-
-### ＜個人情報を取り扱う情報システムの安全管理＞
-
-遺伝研スパコンの安全性及び信頼性を確保するため、利用に関する安全管理を定めた下記、ポリシーと規程を遵守します。
-- 「情報・システム研究機構 情報セキュリティポリシー」
-- 「情報・システム研究機構国立遺伝学研究所スーパーコンピュータシステム利用規程」
-- 「情報・システム研究機構 個人情報保護規程」
+To earn the trust and confidence of all stakeholders, the Center has implemented an Information Security Management System (ISMS, compliant with ISO 27001). This initiative ensures the safety and reliability of the information necessary for our research and educational activities, as well as our information systems, including the NIG supercomputer (hereinafter referred to as 'information assets'). All related parties are committed to undertaking the following measures in this regard.
 
 
 
-### ＜個人情報の取り扱いに関する苦情相談窓口＞
+## Information Security Basic Policy　
 
-個人情報に関するお問い合わせは下記で承ります。
+### 1. Goals
 
-〒411-8540　
+We will properly classify information assets, including personal genome data, and implement appropriate measures to ensure confidentiality, integrity, and availability.
 
-静岡県三島市谷田 1111
+### 2. Establishment of Organization and System
 
-情報・システム研究機構 国立遺伝学研究所
+We will establish the organization and systems necessary to ensure information security, and clarify responsibilities and authorities. In addition, we recognize the risks related to human resources and take appropriate measures.
 
-総務企画課 個人情報苦情相談窓口 総務・企画係
+### 3. Safety Management Measures
 
-連絡先: ![](soumu_mail.png)
+In order to ensure proper management and operation of information assets, we shall establish and maintain an information security management system, implement appropriate physical and technical control measures, and strive for continuous improvement.
+
+### 4. Compliance with Laws and Regulations
+
+We will comply with the requirements arising from business operations and legal obligations related to information security, as well as other social norms and security obligations stipulated in contracts with customers.
+
+
+### 5. Education and Training
+
+We will conduct regular education and training on information security to ensure that all employees are familiar with this policy.
+
+### 6. Emergency Response
+
+We will take appropriate measures in the event of an information security incident, such as information leakage, falsification, or damage, or in the event that business activities are interrupted due to a disaster.
+
+### 7. Continuous Improvement
+
+We will operate a management system necessary to implement this information security policy within our organization and strive for continuous improvement.
+
+
+## Security Management of Information System Handling Personal Information
+
+To ensure the safety and reliability of the NIG supercomputer, we will comply with the following policies and regulations that stipulate the safety management of its use.
+
+- [Research Organization of Information and Systems Information Security Policy](/pdf/ROIS_security_policy.pdf) 
+- [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer  (Amended on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
+- [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-3 (Amended on August 1, 2023)](/pdf/tables_of_nigsc_use_policy_20230801.pdf)
+- [Research Organization of Information and Systems, National Institute of Genetics Information Security Guidelines (Revised February 13, 2018)](/pdf/nig_security_guide_20180213.pdf)
+- Research Organization of Information and Systems Personal Information Protection Regulations
+- [Guidelines for the Secure Management of Medical Information Systems Version 6.0 (May 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
+- [Guidelines for Safety Management of Information Systems and Services Providers Handling Medical Information (August 2020, revised July 2023)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
+- [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
+- [NBDC Human Data Handling Security Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines)
+
+
+
+
+
+## Complaints and Inquiries Concerning the Handling of Personal Information
+
+For inquiries regarding personal information, please contact the following
+
+```
+1111 Yata, Mishima, Shizuoka, 411-8540, Japan
+National Institute of Genetics, 
+Research Organization of Information and Systems
+
+General Affairs and Planning Division, 
+General Affairs and Planning Section,
+Personal Information Complaints Consultation Desk
+```
+
+Contact: ![](soumu_mail.png)
 
 
 <p align="right">
-制定：2023年6月21日
+Established: June 21, 2023
 
-国立遺伝学研究所 生命情報・DDBJセンター長　有田正規
+Masanori Arita, Director, Center for Bioinformation and DDBJ, National Institute of Genetics
 </p>
 
----
-## ISMS認証証書
-
-国立遺伝学研究所 生命情報・DDBJセンター（以下「当センター」）は、遺伝研スーパーコンピュータ　個人ゲノム解析区画の構築・運用を対象範囲として、2023年11月19日付けで、ISO（国際標準化機構）の認証基準であるISMS（ISO27001: 2013、情報セキュリティ管理システム）の認証を取得しました。
-
-[<u>ISMS認定証書 (PDF)</u>](/img/ISMS.pdf)
 
 
-
-## ロゴマーク
-
-![](/img/ISMS_ANAB_ISMS-AC_color.png)
-
-
-
-## 関連規定等
-
-[<u>関連規定等は、こちらをクリックしてご参照ください。</u>](/application/legislation)
 

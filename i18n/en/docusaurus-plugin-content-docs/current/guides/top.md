@@ -20,9 +20,6 @@ Due to disk space constraints, we do not back up the data in the user home direc
 ## Featured News
 
 - [Certified to ISMS (ISO 27001:2013)](/guides/security-policy) (2023.11.22)
-
-![](/img/ISMS_ANAB_ISMS-AC_color.png) 
-
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
 - [Scheduled maintenance from 24 to 30 November <= Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.10.26)＼&#x1f195;／
     - Regarding the version of NVIDIA CUDA, we informed you in the email that it is 12.3, but the correct version is 12.1.
