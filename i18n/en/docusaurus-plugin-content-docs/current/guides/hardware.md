@@ -222,7 +222,7 @@ HPE Apollo 6500 Gen10
 | peak performance of single precision floating point number | 15TFLOPS                |
 | peak performance of double precision floating point number | 7.5TFLOPS               |
 | single core theoretical performance                        | 1.3GLOPS                |
-| memory size                                                | 6GB(GDDR5)              |
+| memory size                                                | 16GB(GDDR5)              |
 | memory bandwidth                                           | 900GB/sec               |
 | memory bandwidth per 1GFLOPS                               | 266GB/sec               |
 | connection bandwidth                                       | 8 (PCIe2.0 x16)GB/sec   |
