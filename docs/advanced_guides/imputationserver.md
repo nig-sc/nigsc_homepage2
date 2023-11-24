@@ -3,7 +3,12 @@ id: imputation_server
 title: NBDC-DDBJインピュテーションサーバ (beta)
 ---
 
-![](./imputationserver.logo_color.png)
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
+
 
 **インピュテーションサーバ（Imputation Server）** は、SNPアレイデータのインピュテーション解析を支援するサービスです。**[&#x1f517;<u>ミシガン大学のインピュテーションサーバ</u>](https://imputationserver.sph.umich.edu/)** や **[&#x1f517;<u>TOPMed プロジェクトのインピュテーションサーバ</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/)** が公開されています。これらのサーバは日本国外に設置されており、利用のためにゲノムデータ（SNPアレイデータ）を国外のサーバにアップロードする必要がありました。
 

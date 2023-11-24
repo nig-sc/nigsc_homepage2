@@ -3,7 +3,11 @@ id: imputation_server_hail
 title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル3、hail を用いた PRS 計算
 ---
 
-![](./imputationserver.logo_color.png)
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
 
 本チュートリアル3ではインピューテーションサーバのインピューテーション結果を
 [&#x1f517;<u>hail</u>](https://hail.is) で解析するための環境構築方法を説明します。

@@ -3,7 +3,11 @@ id: imputation_server_tutorial2
 title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル2、制限公開レファレンスパネルを使う場合
 ---
 
-![](./imputationserver.logo_color.png)
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
 
 ## システム利用方法
 
