@@ -3,7 +3,11 @@ id: imputation_server_install
 title: NBDC-DDBJインピュテーションサーバ (beta) インストールマニュアル 
 ---
 
-![](./imputationserver.logo_color.png)
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
 
 ## 構成・使用方法
 
