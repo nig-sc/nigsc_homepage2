@@ -221,7 +221,7 @@ HPE Apollo 6500 Gen10
 | 単精度浮動小数点演算ピーク性能 | 15TFLOPS                |
 | 倍精度浮動小数点演算ピーク性能 | 7.5TFLOPS               |
 | 単体コア理論性能               | 1.3GLOPS                |
-| メモリサイズ                   | 6GB(GDDR5)              |
+| メモリサイズ                   | 16GB(GDDR5)              |
 | メモリバンド幅                 | 900GB/sec               |
 | 1GFLOPS 毎のメモリバンド幅      | 266GB/sec               |
 | 接続帯域                       | 8 (PCIe2.0 x16)GB/sec   |
