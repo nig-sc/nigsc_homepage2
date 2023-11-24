@@ -53,7 +53,7 @@ title: 情報セキュリティ方針 (ISO27001)
 - [情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程 (令和 4 年 4 月 5 日改正）](/pdf/nigsc_use_policy_2204.pdf)
 - [情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程　別表１〜３ (令和 5 年 8 月 1 日改正）](/pdf/tables_of_nigsc_use_policy_20230801.pdf)
 - [情報・システム研究機構 国立遺伝学研究所 情報セキュリティガイドライン（2018 年 2 月 13 日 改訂）](/pdf/nig_security_guide_20180213.pdf)
-- 情報・システム研究機構 個人情報保護規程
+- [情報・システム研究機構 個人情報保護規程 (令和 4 年 4 月 14 日改正)](/pdf/ROIS_personal_information_protection_regulation.pdf)
 - [医療情報システムの安全管理に関するガイドライン　第 6.0 版（令和 5 年 5 月）](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
 - [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン(令和 2 年 8 月（令和 5 年 7 月改定）)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
