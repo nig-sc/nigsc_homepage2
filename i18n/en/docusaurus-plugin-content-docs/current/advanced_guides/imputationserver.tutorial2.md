@@ -3,6 +3,12 @@ id: imputation_server_tutorial2
 title: "Tutorial 2 - Using the restricted release reference panel"
 ---
 
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
+
 ## Procedures for using this system
 
 This system executes workflows in the following steps.

@@ -3,6 +3,11 @@ id: imputation_server_tutorial
 title: "Tutorial 1 - Using the public reference panel"
 ---
 
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
 
 ## Procedures for using this system
 

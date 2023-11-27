@@ -4,18 +4,18 @@ title: "Use Policy"
 ---
 
 
-- [Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems (Revised on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
-- [Appendix 1-3 for the Rules of Use (Revised on August 1, 2023)](/pdf/tables_of_nigsc_use_policy_20230801.pdf)
-- [Information security at the Research Organization of Information and Systems](/pdf/ROIS_security_policy.pdf)
-- [Information Security Guideline, National Institute of Genetics, Research Organization of Information and Systems(revised 13 Feb 2018).](/pdf/nig_security_guide_20180213.pdf)
+- [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer  (Amended on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
+- [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-3 (Amended on August 1, 2023)](/pdf/tables_of_nigsc_use_policy_20230801.pdf)
+- [Research Organization of Information and Systems Information Security Policy](/pdf/ROIS_security_policy.pdf)
+- [Research Organization of Information and Systems, National Institute of Genetics Information Security Guidelines (Revised February 13, 2018)](/pdf/nig_security_guide_20180213.pdf)
 
 ---
 
-Price list (Revised on 2023)
+## Price list (Revised on 2023)
 
 Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems
 
-**Appendix 1（Pertaining to Article 12）**
+### **Appendix 1（Pertaining to Article 12）**
 
 Price for the Use for the general analysis division large-scale(excluding tax)
 
@@ -63,7 +63,7 @@ The billing amount is prorated based on the number of days used.
 
 (※2) The compute node priority use service is a service that reserves execution using the advanced reservation function of the grid engine.
 
-**Appendix 2（Pertaining to Article 12）**
+### **Appendix 2（Pertaining to Article 12）**
 
 Price for the Use for the personal genome analysis division large-scale(excluding tax)
 
@@ -118,7 +118,7 @@ If additional development is required, such as support for different data struct
 
 
 
-**Appendix 3（Pertaining to Article 12）**
+### **Appendix 3（Pertaining to Article 12）**
 
 Price for the Use for the occupancy compute node of the general analysis division and the personal genome analysis division(excluding tax)
 
