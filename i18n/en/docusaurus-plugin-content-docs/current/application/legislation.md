@@ -25,16 +25,16 @@ title: "Related laws and regulations, etc."
 
 The personal genomic analysis division in the NIG supercomputer complies with the following security guidelines.
 
-- [NBDC Guidelines for Human Data Sharing ](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
-- [NBDC Security Guidelines for Human Data](https://humandbs.biosciencedbc.jp/en/guidelines)
+- [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
+- [NBDC Human Data Handling Security Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines)
 
 
--  [Checklist for the NBDC Guidelines for Human Data Sharing and the NBDC Security Guidelines for Human Data（for “Off-Premise-Server” Operation Managers）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+-  [Checklist for NBDC Human Data Handling Security Guidelines and NBDC Guidelines for Human Data Sharing（for “Off-Premise-Server” Operation Managers）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
 
 
 ## Security standards
 
 
-- [Guideline for the Security Management of Medical Information Systems version 6.0 (May, 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
-- [Guidelines for Safety Management of Medical Information by Providers of Information Systems and Services Handling Medical Information (August, 2020, Revised on July, 2023)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
+- [Guideline for the Security Management of Medical Information Systems Version 6.0 (May 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
+- [Guidelines for Safety Management of Information Systems and Services Providers Handling Medical Information (August 2020, revised July 2023)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [Common Standards for Cybersecurity Measures for Government Agencies and Related Agencies](https://www.nisc.go.jp/eng/index.html)

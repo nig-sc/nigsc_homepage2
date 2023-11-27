@@ -3,6 +3,11 @@ id: imputation_server_install
 title: Install Manual
 ---
 
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
 
 ## Configuration and usage
 
