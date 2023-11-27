@@ -3,6 +3,12 @@ id: imputation_server_hail
 title: "Tutorial 3 - PRS calculation with hail"
 ---
 
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
+
 This Tutorial 3 describes how to set up an environment for analysing the results of an imputation server's imputation results in [&#x1f517;<u>hail</u>](https://hail.is)  to analyse the results of an imputation server.
 
 

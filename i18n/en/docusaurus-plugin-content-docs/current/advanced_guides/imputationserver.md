@@ -3,6 +3,12 @@ id: imputation_server
 title: NBDC-DDBJ Imputation Server
 ---
 
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
+
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;<u>Michigan Imputation Server</u>](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;<u>TOPMed Project Imputation Server</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
 Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
