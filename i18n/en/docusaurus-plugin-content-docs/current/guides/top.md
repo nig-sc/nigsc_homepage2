@@ -31,10 +31,10 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 
 ## Scheduled for FY 2023
-Regular maintenance is scheduled once.
-- [<u>November 24 - November 30 (during the NIG's legal power outage)</u>](/blog/2023-11-24-scheduled-maintenance)
+Scheduled maintenance has ended.
+- [<u>(Ended)November 24 - November 30 (during the NIG's legal power outage)</u>](/blog/2023-11-24-scheduled-maintenance)
 
-As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS will be performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
+As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS has been performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
 
 - With this migration, the analysis environment may need to be re-installed. Please make sure to check the development environment and reinstall the analysis environment on your own.
 
