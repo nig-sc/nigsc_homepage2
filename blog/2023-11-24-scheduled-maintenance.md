@@ -1,6 +1,6 @@
 ---
 slug: 2023-11-24-scheduled-maintenance
-title: "【定期メンテナンス】11月24日～11月30日 定期メンテナンスのお知らせ"
+title: "(終了)【定期メンテナンス】11月24日～11月30日 定期メンテナンスのお知らせ"
 tags:
   - maintenance
 authros:

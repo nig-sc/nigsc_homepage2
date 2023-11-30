@@ -17,4 +17,4 @@ Click on the links below to view graphs on power consumption for the last week a
 You can see power consumption graphs　for the last week and year by clicking on the links below.
 
 
-- 「&#x1f517;<u><a href="https://sc2.ddbj.nig.ac.jp/grafana/dashboard/snapshot/E2yfNPgjWdei7ZZuzqpLCMdzzd4LutRg?orgId=1&kiosk">Power consumption of the NIG supercomputer</a></u>」
+- 「&#x1f517;<u><a href="https://sc2.ddbj.nig.ac.jp/grafana/dashboard/snapshot/V5Kd3yKcH1neOapGUu7atXUpjBXlGIvA?orgId=1&kiosk">Power consumption of the NIG supercomputer</a></u>」
