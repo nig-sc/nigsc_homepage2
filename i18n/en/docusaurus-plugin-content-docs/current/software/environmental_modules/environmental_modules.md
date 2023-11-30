@@ -3,6 +3,12 @@ id: environmental_modules
 title: "Environmental Modules"
 ---
 
+<table>
+<td>
+Environmental Modules is only available on the CentOS 7 environment of the NIG supercomputer. It is not available on the Ubuntu Linux environment.
+</td>
+</table>
+
 The Environment Modules package is a tool that lets users switch the version of the C/C++ compiler, etc. used with the user permission.
 
 In the NIG supercomputer, we use it included in BCM and is pre-installed in our system.
