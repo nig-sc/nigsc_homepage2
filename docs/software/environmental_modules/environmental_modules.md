@@ -3,9 +3,14 @@ id: environmental_modules
 title: "Environmental Modules"
 ---
 
+<table>
+<td>
+Environmental Modulesは、遺伝研スパコンのCentOS 7 の環境のみで有効です。Ubuntu Linuxの環境では使用できません。
+</td>
+</table>
+
 使用する C/C++コンパイラ等のバージョンをユーザ権限で切り替えるためのツールです。
 
-遺伝研スパコンでは BCM 付属の Environmental Modules を使っており、Environmental Modules はシステムに最初からインストールされています。
 
 参考資料
 
