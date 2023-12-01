@@ -32,7 +32,7 @@ Works for scheduled maintenance are as follows.
 
 1. Software version upgrade 
 2. OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)
-    - [FAQ page for OS migration has been created.](/faq/faq_changed_os)＼&#x1f195;／
+    - [FAQ page for OS migration has been created.](/faq/faq_os_migration)＼&#x1f195;／
 3. Grid Engine version upgrade 
 4. yum update for Cent OS that did not migrate OS 
 5. Firmware and device driver version upgrade for InfininBand and Lustre 
