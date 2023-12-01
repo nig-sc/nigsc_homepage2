@@ -37,7 +37,7 @@ Scheduled maintenance has ended.
 As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS has been performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
 
 - With this migration, the analysis environment may need to be re-installed. Please make sure to check the development environment and reinstall the analysis environment on your own.
-- [FAQ page for OS migration has been created.](/faq/faq_changed_os)
+- [FAQ page for OS migration has been created.](/faq/faq_changed_os)＼&#x1f195;／
 
 The following will be implemented as usual.
 - [June 30: Account suspension process for users who have not renewed at the end of the fiscal year](/application/renewal)
