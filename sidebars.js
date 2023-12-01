@@ -480,6 +480,7 @@ module.exports = {
                 },
             ]
         },
+        "faq/faq_changed_os"
     ],
     oldDocumentsidebar: [
         {
