@@ -20,7 +20,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 ## Featured News
 
 - [(Ended)Scheduled maintenance from 24 to 30 November <= Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
-    - [FAQ page for OS migration has been created.](/faq/faq_changed_os) ＼&#x1f195;／
+    - [FAQ page for OS migration has been created.](/faq/faq_os_migration) ＼&#x1f195;／
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
@@ -37,7 +37,7 @@ Scheduled maintenance has ended.
 As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS has been performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
 
 - With this migration, the analysis environment may need to be re-installed. Please make sure to check the development environment and reinstall the analysis environment on your own.
-- [FAQ page for OS migration has been created.](/faq/faq_changed_os)＼&#x1f195;／
+- [FAQ page for OS migration has been created.](/faq/faq_os_migration)＼&#x1f195;／
 
 The following will be implemented as usual.
 - [June 30: Account suspension process for users who have not renewed at the end of the fiscal year](/application/renewal)

@@ -1,6 +1,6 @@
 ---
-id: faq_changed_os
-title: "Related to OS changing"
+id: faq_os_migration
+title: "Related to OS migration"
 ---
 
 On this page, questions relating to errors and other problems that occurred after [<u>the scheduled maintenance in FY2023</u>](/en/blog/2023-11-24-scheduled-maintenance/) are listed.
