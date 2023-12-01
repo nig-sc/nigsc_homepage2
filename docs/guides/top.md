@@ -37,7 +37,7 @@ sidebar_label: トップページ
 また、CentOS 7 が 2024 年 6 月 30 日に End-Of-Life を迎えることを受け、定期メンテナンスで CentOS 7.9 から Ubuntu Linux 22.04LTS への移行を行いました。移行についての詳細は、[<u>定期メンテナンス 作業内容の「OS 移行 (CentOS 7.9 から Ubuntu Linux 22.04LTS への移行)」をご参照ください</u>](/blog/2023-11-24-scheduled-maintenance#os%20%E7%A7%BB%E8%A1%8C-centos-79%20%E3%81%8B%E3%82%89%20ubuntu-linux-2204lts%20%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C)。
 
 - OS の移行に伴い、解析環境の再インストールが必要になる場合があります。各自で必ず開発環境を確認し、解析環境の再インストールをお願いいたします。
-- [OS 移行に伴う FAQ のページを作成しました](/faq/faq_changed_os)
+- [OS 移行に伴う FAQ のページを作成しました](/faq/faq_changed_os)＼&#x1f195;／
 
 以下は例年通りの実施となります。
 - [2023 年 6 月 30 日 : 年度末更アカウント継続申請をしていないユーザのアカウント停止処理](/application/renewal)
