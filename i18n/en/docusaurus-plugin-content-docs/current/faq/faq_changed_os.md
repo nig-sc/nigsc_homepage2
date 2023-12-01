@@ -34,6 +34,25 @@ module load r/3.5.2
 module load singularity
 ```
 
+## &#x1F180; When I try to qlogin to the NIG supercomputer, I get the following error message.
+```
+[username@gwB1 ~]$ qlogin
+
+error: commlib error: access denied (service qmaster@it001: client gdi version "0x100035F3" does not match server gdi version "0x10003800")
+
+error: getting configuration: unable to contact qmaster using port 6444 on host "it001"
+
+error: Cannot get configuration from qmaster.
+```
+
+&#x1F150; This is due to the fact that the path has changed due to Univa Grid Engine being acquired by Altair and becoming AGE.
+
+Before you qlogin, execute this:
+```
+$ source /home/geadmin/AGER/ager/common/settings.sh
+```
+
+
 
 ## &#x1F180; When I try to run any programme, I get the following error about libraries. It was running without problems before the OS has been changed.
 ```
