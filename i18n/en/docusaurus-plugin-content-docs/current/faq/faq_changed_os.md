@@ -54,7 +54,7 @@ $ source /home/geadmin/AGER/ager/common/settings.sh
 
 
 
-## &#x1F180; When I try to run any programme, I get the following error about libraries. It was running without problems before the OS has been changed.
+## &#x1F180; When I try to run some programme, I get the following error about libraries. It was running without problems before the OS has been changed.
 ```
 error while loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
 ```
@@ -63,6 +63,62 @@ error while loading shared libraries: libcrypto.so.10: cannot open shared object
 
 Please compile again by the tarball.
 
+
+## &#x1F180; I want to use R, but I get the following error: error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory
+
+&#x1F150;
+
+Since CentOS 7 will reach its End-Of-Life on June 30, 2024, 
+The OS of the NIG supercomputer has been migrated from CentOS 7 to Ubuntu Linux 22.04LTS in the scheduled maintenance.
+
+CentOS 7 had become outdated in terms of its Linux kernel version, leading to numerous issues with installing tools like Aspera client and bioinformatics tools.
+
+Given these circumstances, I apologize for the inconvenience, but I kindly request the reinstallation of the analysis environment.
+
+> error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory
+
+This type of error is occurring due to the difference in library versions between the ones that came with the previous CentOS 7 and those included in the current Ubuntu Linux 22.04.
+
+
+There are two ways to deal with this issue.
+
+### i) Using R that comes with Ubuntu Linux 22.04
+
+When we migrated to Ubuntu Linux 22.04, we significantly expanded the installed libraries and tools.
+The version of R that can be installed by `apt install` of Ubuntu Linux is installed on the system from the beginning.
+The various packages of R that can be installed by `apt install` are also already installed.
+
+```
+$ which R
+/usr/bin/R
+$ R --version
+R version 4.1.2 (2021-11-01) -- "Bird Hippie
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+```
+
+
+### ii) Reinstalling R from a tarball
+
+As a result of migrating to Ubuntu Linux 22.04, the installation of R from tarballs has also been simplified.
+
+
+Download and unzip R (download the tarball of the version you need. The latest is 4.2.3)
+
+```
+cd $HOME/local/src
+wget https://cran.r-project.org/src/base/R-4/R-4.1.0.tar.gz
+tar zxvf R-4.1.0.tar.gz
+cd R-4.1.0
+```
+
+After this, installation can be done with just the following command.
+
+```
+. /configure --prefix=$HOME/local
+make
+make install
+```
 
 ## &#x1F180; I have recompiled by tarball, but when make runs, I get the follow error.
 ```
