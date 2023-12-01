@@ -55,18 +55,15 @@ We will operate a management system necessary to implement this information secu
 
 To ensure the safety and reliability of the NIG supercomputer, we will comply with the following policies and regulations that stipulate the safety management of its use.
 
+- [Guidelines for the Secure Management of Medical Information Systems Version 6.0 (May 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
+- [Guidelines for Safety Management of Information Systems and Services Providers Handling Medical Information (August 2020, revised July 2023)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
+- [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
+- [NBDC Human Data Handling Security Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines)
 - [Research Organization of Information and Systems Information Security Policy](/pdf/ROIS_security_policy.pdf) 
 - [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer  (Amended on April 5, 2022)](/pdf/nigsc_use_policy_2204.pdf)
 - [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-3 (Amended on August 1, 2023)](/application/use_policy/)
 - [Research Organization of Information and Systems, National Institute of Genetics Information Security Guidelines (Revised February 13, 2018)](/pdf/nig_security_guide_20180213.pdf)
 - [Research Organization of Information and Systems Personal Information Protection Regulations (Revised April 14, 2022)](/pdf/ROIS_personal_information_protection_regulation.pdf)
-- [Guidelines for the Secure Management of Medical Information Systems Version 6.0 (May 2023)](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
-- [Guidelines for Safety Management of Information Systems and Services Providers Handling Medical Information (August 2020, revised July 2023)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
-- [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
-- [NBDC Human Data Handling Security Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines)
-
-
-
 
 
 ## Complaints and Inquiries Concerning the Handling of Personal Information
