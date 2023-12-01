@@ -67,39 +67,9 @@ CentOS 7 のときに tarball からインストールしていた場合、こ�
 
 
 
-## &#x1F180; qlogin しようとすると、以下のエラーが出ます。
-```
-[username@gwB1 ~]$ qlogin
-
-error: commlib error: access denied (service qmaster@it001: client gdi version "0x100035F3" does not match server gdi version "0x10003800")
-
-error: getting configuration: unable to contact qmaster using port 6444 on host "it001"
-
-error: Cannot get configuration from qmaster.
-```
-
-&#x1F150; Univa Grid Engine が Altair 社に買収されて AGE になった関係で、パスが変わってしまっていることが原因です。
-
-qlogin する前に
-```
-$ source /home/geadmin/AGER/ager/common/settings.sh
-```
-を実行してください。
-
-
-## &#x1F180; 何かプログラムを実行しようとすると、以下のようなライブラリに関するエラーが出ます。OS 移行前は問題なく実行できていました。
-```
-error while loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
-```
-
-&#x1F150; このエラーは以前の CentOS7 に付属するライブラリのバージョンと、今の Ubuntu Linux 22.04 に付属するライブラリのバージョンが違うために出ています。
-CentOS 7 のときに tarball からインストールしていた場合、このようなエラーが出る可能性があります。
-
-お手数ですが tarball からコンパイルし直してください。
-
-
-
 ## &#x1F180; R を使用したいのですが、以下のようなエラーが出ます。error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory
+
+&#x1F150;
 
 今回、CentOS 7 が 2024 年 6 月 30 日に End-Of-Life を迎えることを受け、定期メンテナンスで CentOS
 7.9 から Ubuntu Linux 22.04LTS
@@ -131,7 +101,7 @@ Platform: x86_64-pc-linux-gnu (64-bit)
 
 ### ii) R を再インストールする
 
-Ubuntu Linux 22.04 にした結果 R の tarball からのインストールも簡略化され、
+Ubuntu Linux 22.04 への移行の結果 R の tarball からのインストールも簡略化されました。
 
 R のダウンロードと解凍（必要なバージョンの tarball をダウンロードしてください。最新は 4.2.3 です。）
 
