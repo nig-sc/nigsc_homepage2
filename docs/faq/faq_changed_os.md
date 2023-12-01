@@ -1,6 +1,6 @@
 ---
 id: faq_changed_os
-title: FAQ：related to OS changing
+title: FAQ：OS以降に伴うご質問
 ---
 
 このページでは、[<u>2023 年度の定期メンテナンス後</u>](/blog/2023-11-24-scheduled-maintenance)に発生したエラーなどに関する質問をまとめています。
