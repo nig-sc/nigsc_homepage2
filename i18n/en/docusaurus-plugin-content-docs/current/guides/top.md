@@ -22,7 +22,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
 - [(Ended)Scheduled maintenance from 24 to 30 November <= Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.10.26)＼&#x1f195;／
-    - Regarding the version of NVIDIA CUDA, we informed you in the email that it is 12.3, but the correct version is 12.1.
+    - [FAQ page for OS migration has been created.](/faq/faq_changed_os)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 - [Extended number of CPU cores available for GPU node](/blog/2023-07-26-gpu-configure)　(2023.07.11)
 - [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
