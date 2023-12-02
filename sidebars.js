@@ -307,7 +307,7 @@ module.exports = {
          },
         {
             type: "link",
-            label: "Github Discussions(Q&A)",
+            label: "Github Discussions (Q&A)",
             href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
         },
         "application/reference",
@@ -414,6 +414,12 @@ module.exports = {
 
 
     faqSidebar: [
+        {
+            type: "link",
+            label: "Github Discussions (Q&A)",
+            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+        },
+
         {
             type: 'category',
             label: "FAQ : software",
