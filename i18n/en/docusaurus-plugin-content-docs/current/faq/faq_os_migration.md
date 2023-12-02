@@ -3,7 +3,7 @@ id: faq_os_migration
 title: "Related to OS migration"
 ---
 
-On this page, questions relating to errors and other problems that occurred after [<u>the scheduled maintenance in FY2023</u>](/en/blog/2023-11-24-scheduled-maintenance/) are listed.
+On this page, questions relating to errors and other problems that occurred after [<u>the scheduled maintenance in FY2023</u>](/blog/2023-11-24-scheduled-maintenance/) are listed.
 
 ## &#x1F180; After the scheduled maintenance in FY2023, when I tried to qlogin, I got an error `ERROR: Unable to locate a modulefile for 'gcc'`.
 
