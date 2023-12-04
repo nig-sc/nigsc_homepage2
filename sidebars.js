@@ -481,17 +481,23 @@ module.exports = {
             ]
         },
         {
-        type: "category",
-        label: "FAQ：OS移行に伴うご質問",
-        link: {
-            type: "doc",
-            id: "faq/faq_os_migration",
+            type: "category",
+            label: "FAQ：OS移行に伴うご質問",
+            link: {
+                type: "doc",
+                id: "faq/faq_os_migration",
+            },
+            items: [
+                "faq/faq_os_migration_login",
+                "faq/faq_os_migration_env-var",
+            ],
         },
-        items: [
-            "faq/faq_os_migration_qlogin",
-            "faq/faq_os_migration_env-var",
-        ],
-    },
+        {
+            type: "link",
+            label: "Github Discussions(Q&A)",
+            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+        },
+
     ],
     oldDocumentsidebar: [
         {
