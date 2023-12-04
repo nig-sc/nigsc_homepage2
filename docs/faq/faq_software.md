@@ -3,7 +3,7 @@ id: faq_software
 title: "ソフトウェア一般"
 ---
 
-## &#x1F180; `.bashrc`などのシェル設定ファイルの読み込み順について教えてください
+## &#x1F180; `.bashrc`などのシェル設定ファイルの読み込み順について教えてください {#shell-config}
 
 
 &#x1F150; 読み込み順についての正式な情報源は、`bash(1)`マニュアルです。(`man bash`コマンドで表示できます。)
@@ -68,7 +68,7 @@ ssh you@remotehost 'bash -s' < local_script.sh
 - https://qiita.com/ono_matope/items/feebac51afb346d9db0e
 
 
-## &#x1F180; 環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合)
+## &#x1F180; 環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合) {#ubuntu-initialization}
 
 
 &#x1F150; 環境を初期状態に戻すには`.bash_profile`, `.bashrc`を以下の状態に戻してログインし直してください。
