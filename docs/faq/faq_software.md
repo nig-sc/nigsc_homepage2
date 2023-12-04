@@ -6,7 +6,7 @@ title: "ソフトウェア一般"
 ## &#x1F180; `.bashrc`などのシェル設定ファイルの読み込み順について教えてください
 
 
-読み込み順についての正式な情報源は、`bash(1)`マニュアルに書いてあります。(`man bash`コマンドで表示できます。)
+&#x1F150; 読み込み順についての正式な情報源は、`bash(1)`マニュアルです。(`man bash`コマンドで表示できます。)
 
 以下 4 つの場合でシェル設定ファイルの読み込み順が異なります。`bash(1)`マニュアルの該当の記載を併記します。
 
@@ -15,7 +15,7 @@ title: "ソフトウェア一般"
 `ssh` でログインした場合や`su -`を実行した場合など。(`su -`は`su --login`と同じ。ログインシェルとしてシェルを起動せよの意味。)
 `qlogin`した場合もこれに該当します。
 
-`/etc/profile`, `~/.bash_profile`, `~/.bash_login`, `~/.profile`の順で探して最初に存在したファイルを読み込みます。
+`~/.bash_profile`, `~/.bash_login`, `~/.profile`の順で探して最初に存在したファイルを読み込みます。
 
 > When bash is invoked as an interactive login shell, or as a non-interactive shell with the --login option, it first
 > reads and executes commands from the file `/etc/profile`, if that file exists.  After reading that file, it looks for
@@ -41,15 +41,13 @@ title: "ソフトウェア一般"
 
 ### 3, non-interactive, login shell
 
-ssh でリモートコマンドを実行した場合や scp を実行した場合など。
-
-`~/.bashrc`が読み込まれます。
-
-例えば、ローカルマシンにあるスクリプトをリモートサーバ上で実行する場合がこれに当たります。
+scp を実行する場合や、ローカルマシンにあるスクリプトをリモートサーバ上で実行する場合がこれに当たります。
 
 ```
 ssh you@remotehost 'bash -s' < local_script.sh
 ```
+
+`~/.bashrc`が読み込まれます。
 
 > Bash attempts to determine when it is being run with its standard input connected to a network connection, as  when
 > executed by the remote shell daemon, usually `rshd`, or the secure shell daemon `sshd`.  If bash determines it is being
@@ -61,9 +59,9 @@ ssh you@remotehost 'bash -s' < local_script.sh
 
 ### 4, non-interactive non-login shell
 
- シェルスクリプトを実行した場合など。
+シェルスクリプトを実行した場合など。
  
- シェル設定ファイルは読み込まれません。
+シェル設定ファイルは読み込まれません。
 
 
 参考資料
@@ -227,7 +225,7 @@ fi
 &#x1F150; アカウント作成直後の`.bash_profile`, `.bashrc`は以下のとおりです。
 これらのファイルをこの状態に戻してログインし直してください。
 
-### .bash_profile
+### `.bash_profile`
 
 ```bash
 # .bash_profile
@@ -245,7 +243,7 @@ export PATH
 ```
 
 
-### .bashrc
+### `.bashrc`
 
 ```bash
 # .bashrc
