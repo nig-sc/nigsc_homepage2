@@ -307,7 +307,7 @@ module.exports = {
          },
         {
             type: "link",
-            label: "Github Discussions (Q&A)",
+            label: "Github Discussions(Q&A)",
             href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
         },
         "application/reference",
@@ -414,7 +414,6 @@ module.exports = {
 
 
     faqSidebar: [
-
         {
             type: 'category',
             label: "FAQ : software",
@@ -481,13 +480,18 @@ module.exports = {
                 },
             ]
         },
-        "faq/faq_os_migration",
         {
-            type: "link",
-            label: "Github Discussions (Q&A)",
-            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+        type: "category",
+        label: "FAQ：OS移行に伴うご質問",
+        link: {
+            type: "doc",
+            id: "faq/faq_os_migration",
         },
-
+        items: [
+            "faq/faq_os_migration_qlogin",
+            "faq/faq_os_migration_env-var",
+        ],
+    },
     ],
     oldDocumentsidebar: [
         {

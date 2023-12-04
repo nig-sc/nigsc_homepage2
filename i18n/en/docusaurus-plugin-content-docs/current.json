@@ -111,6 +111,10 @@
     "message": "Submission of Your Usage Plan",
     "description": "The label for link 利用計画表の提出 in sidebar faqSidebar, linking to /faq/faq_change_StorageCapacity"
   },
+  "sidebar.faqSidebar.category.FAQ：OS移行に伴うご質問": {
+    "message": "Related to OS migration",
+    "description": "The label for link FAQ：OS移行に伴うご質問 in sidebar faqSidebar, linking to /faq/faq_os_migration"
+  },
   "sidebar.applicationsSidebar.link.よくある質問(FAQ)": {
     "message": "FAQ",
     "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq_software"
