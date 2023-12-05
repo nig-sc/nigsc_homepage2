@@ -48,16 +48,16 @@ SSL-VPN接続を行います。
 
 SSL-VPN接続を開始したら、ユーザの計算機上でターミナルエミュレータを起動し、個人ゲノム解析環境のゲートウェイにログインします。
 
-ゲートウェイノードは、`gwA1.ddbj.nig.ac.jp` と  `gwA2.ddbj.nig.ac.jp` の2つがあります。それぞれ、以下のコマンドを実行するとログインできます。
+ゲートウェイノードは、`gwa.ddbj.nig.ac.jp` と  `gwa2.ddbj.nig.ac.jp` の2つがあります。それぞれ、以下のコマンドを実行するとログインできます。
 
 ```
-ssh [ユーザ名]@gwA1.ddbj.nig.ac.jp 
+ssh [ユーザ名]@gwa.ddbj.nig.ac.jp 
 ```
 
 または
 
 ```
-ssh [ユーザ名]@gwA2.ddbj.nig.ac.jp 
+ssh [ユーザ名]@gwa2.ddbj.nig.ac.jp 
 ```
 
 うまく行かない場合は、[<u>よくある質問(FAQ)</u>](/faq/faq_login_personal)をご参照ください。
