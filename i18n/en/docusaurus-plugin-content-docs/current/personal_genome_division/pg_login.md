@@ -47,16 +47,16 @@ For more information on how to connect, see the following link.
 
 After connecting to the SSL-VPN, launch a terminal emulator and execute the following command to log in to the gateway of the personal genome analysis division.
 
-There are two gateway nodes, `gwA1.ddbj.nig.ac.jp` and `gwA2.ddbj.nig.ac.jp`. You can log in by executing the following commands, respectively.
+There are two gateway nodes, `gwa.ddbj.nig.ac.jp` and `gwa2.ddbj.nig.ac.jp`. You can log in by executing the following commands, respectively.
 
 ```
-ssh [username]@gwA1.ddbj.nig.ac.jp 
+ssh [username]@gwa.ddbj.nig.ac.jp 
 ```
 
 or
 
 ```
-ssh [username]@gwA2.ddbj.nig.ac.jp 
+ssh [username]@gwa2.ddbj.nig.ac.jp 
 ```
 
 For questions on how to login, Refer to [<u>FAQ</u>](/faq/faq_login_personal).

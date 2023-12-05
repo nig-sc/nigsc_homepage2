@@ -1,7 +1,21 @@
 ---
 id: faq_os_migration_env-var
-title: "Questions related to environment variables"
+title: "Questions related to reinstallation of environment variables"
 ---
+
+
+## &#x1F180; I want to restore my computer environment to its initial state. (Ubuntu Linux 22.04)
+
+&#x1F150; It depends on how you have built your analysis environment, so it is difficult to say, but in general, on Cent OS 7, any parts of C code that you have compiled yourself will need to be recompiled.
+
+The same applies to Conda and R packages that call C code behind that.
+
+Referring to [FAQ](/faq/faq_software/#ubuntu-initialization), the procedure is as follows.
+1. restore the shell configuration files, such as `.bashrc`, to their initial state once.
+2. reinstall the programs installed from the tarball after restoring the initial state.
+3. reinstall conda, R packages, etc.
+
+The libraries and tools installed on Ubuntu Linux 22.04 are greatly expanded, and installation from the tarball has been simplified.
 
 
 ## &#x1F180; I have recompiled by tarball, but when make runs, I get the follow error.
