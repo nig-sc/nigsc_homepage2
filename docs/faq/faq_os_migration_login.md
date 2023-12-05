@@ -1,6 +1,6 @@
 ---
 id: faq_os_migration_login
-title: login 時の挙動に関する質問
+title: login 時の挙動に関するご質問
 ---
 
 
