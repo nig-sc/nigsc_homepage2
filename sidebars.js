@@ -515,11 +515,20 @@ module.exports = {
     oldDocumentsidebar: [
         {
             type: "category",
-            label: "software",
+            label: "古いドキュメント",
             items: [
-                "oldDocuments/software/guix/guix",
-                "oldDocuments/software/R",
-            ]
+                {
+                    type: 'category',
+                    label: "software",
+                    items: [
+                        "oldDocuments/software/guix/guix",
+                        "oldDocuments/software/R",
+                    ],  
+                },
+            ],
         },
+        "faq/old_document",
     ],
+
+
 };

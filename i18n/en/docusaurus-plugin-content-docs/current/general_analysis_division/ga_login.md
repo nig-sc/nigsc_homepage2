@@ -22,6 +22,12 @@ There are two gateway nodes for the general analysis division of the NIG superco
 $ ssh youraccount@gw.ddbj.nig.ac.jp
 ```
 
+or
+
+```
+$ ssh youraccount@gw2.ddbj.nig.ac.jp
+```
+
 If your private key is stored in a location other than `~/.ssh/id_rsa`, specify the private key path as shown below.
 
 ```
