@@ -1,6 +1,6 @@
 ---
 id: R
-title: "R"
+title: "How to use R"
 ---
 
 <table>

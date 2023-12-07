@@ -10,7 +10,7 @@ title: "Questions related to reinstallation of environment variables"
 
 The same applies to Conda and R packages that call C code behind that.
 
-Referring to [FAQ](/faq/faq_software/#ubuntu-initialization), the procedure is as follows.
+Referring to [<u>FAQ</u>](/faq/faq_software/#ubuntu-initialization), the procedure is as follows.
 1. restore the shell configuration files, such as `.bashrc`, to their initial state once.
 2. reinstall the programs installed from the tarball after restoring the initial state.
 3. reinstall conda, R packages, etc.
@@ -29,7 +29,7 @@ Libraries compiled by the CentOS 7 environment cannot be used on the Ubuntu envi
 
 If the same error occurs after recompiling, the environment variables may not be set correctly. Please reset `.bash_profile` and `.bashrc` to the initial state and see the errors do not occur again.
 
-To learn how to restore the initial state, [refer to the FAQ 'Software General'](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
+To learn how to restore the initial state, [<u>refer to the FAQ 'Software General'</u>](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
 
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
@@ -45,7 +45,7 @@ Please compile again by the tarball.
 
 If the same error occurs after recompiling, the environment variables may not be set correctly. Please reset `.bash_profile` and `.bashrc` to the initial state and see the errors do not occur again.
 
-To learn how to restore the initial state, [refer to the FAQ 'Software General'](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
+To learn how to restore the initial state, [<u>refer to the FAQ 'Software General'</u>](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
 
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
@@ -102,7 +102,7 @@ make install
 
 If the same error occurs after recompiling, the environment variables may not be set correctly. Please reset `.bash_profile` and `.bashrc` to the initial state and see the errors do not occur again.
 
-To learn how to restore the initial state, [refer to the FAQ 'Software General'](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
+To learn how to restore the initial state, [<u>refer to the FAQ 'Software General'</u>](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
 
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 

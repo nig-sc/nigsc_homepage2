@@ -3,7 +3,7 @@ id: faq_software
 title: "Software General"
 ---
 
-## &#x1F180; What is the order in which shell configuration files such as `.bashrc` are loaded?
+## &#x1F180; What is the order in which shell configuration files such as `.bashrc` are loaded? {#shell-config}
 
 
 &#x1F150; The official information source for reading order is the `bash(1)` manual. (You can display it with the `man bash` command.)
@@ -67,7 +67,7 @@ Reference
 - https://qiita.com/ono_matope/items/feebac51afb346d9db0e
 
 
-## &#x1F180; I want to restore my computer environment to its initial state. (Ubuntu Linux 22.04)
+## &#x1F180; I want to restore my computer environment to its initial state. (Ubuntu Linux 22.04) {#ubuntu-initialization}
 
 
 &#x1F150; To restore the environment to its initial state, change `.bash_profile` and `.bashrc` back to the following state and log in again.
