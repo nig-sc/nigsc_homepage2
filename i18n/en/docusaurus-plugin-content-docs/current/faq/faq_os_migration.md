@@ -11,4 +11,4 @@ For more information on each item, see the following links.
 
 
 - [<u>Questions about behavior at login</u>](/faq/faq_os_migration_login)
-- [<u>Questions related to reinstallation of environment variables</u>](/faq/faq_os_migration_env-var)
+- [<u>Questions related to reinstallation of analysis environments</u>](/faq/faq_os_migration_env-var)

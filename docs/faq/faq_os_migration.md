@@ -8,4 +8,4 @@ title: FAQ：OS 移行に伴うご質問
 各項目の詳細は、以下のリンクをご参照ください。
 
 - [<u>login 時の挙動に関するご質問</u>](/faq/faq_os_migration_login)
-- [<u>環境変数の再インストールに関するご質問</u>](/faq/faq_os_migration_env-var)
+- [<u>解析環境の再インストールに関するご質問</u>](/faq/faq_os_migration_env-var)
