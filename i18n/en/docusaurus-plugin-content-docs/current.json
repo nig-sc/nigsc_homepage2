@@ -35,9 +35,9 @@
     "message": "FAQ",
     "description": "The label for link よくある質問(FAQ) in sidebar topSidebar, linking to /faq/faq_software"
   },
-  "sidebar.topSidebar.link.古いFAQ": {
-    "message": "Old FAQ",
-    "description": "The label for link 古いFAQ in sidebar topSidebar, linking to /faq/old_document"
+  "sidebar.topSidebar.link.古いドキュメント": {
+    "message": "Old Documents",
+    "description": "The label for link 古いドキュメント in sidebar topSidebar, linking to /faq/old_document"
   },
   "sidebar.guidesSidebar.category.一般解析区画の使い方": {
     "message": "The General Analysis Division",

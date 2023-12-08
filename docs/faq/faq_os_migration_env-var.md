@@ -1,10 +1,10 @@
 ---
 id: faq_os_migration_env-var
-title: 環境変数の再インストールに関するご質問
+title: 解析環境の再インストールに関するご質問
 ---
 
 
-## &#x1F180; 環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合)
+## &#x1F180; OS移行に伴って解析環境を再インストールしたいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合)
 
 &#x1F150; これは解析環境をどのように構築されたかに依存するので、一概には言えませんが、一般論としてCent OS 7上で、ご自分でC言語のコードをコンパイルされた部分については、すべて再コンパイルが必要です。
 
@@ -151,4 +151,20 @@ mpif90                opalcc        oshc++       shmemc++
 ```
 export PATH=/usr/mpi/gcc/openmpi-4.1.5a1/bin:${PATH}
 mpirun -np 32 ....
+```
+
+
+## &#x1F180; intel コンパイラを使おうとすると、`ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`というエラーが出ます。
+
+&#x1F150; Environmental Modulesは、遺伝研スパコンのCentOS 7 の環境のみで有効です。Ubuntu Linuxの環境では使用できません。
+
+したがって、既存の.bashrc,barc_profile等で設定している"module load"の記述はコメントアウトしてください。
+
+この詳細は、[<u>FAQ「login 時の挙動に関するご質問」をご参照ください。</u>](/faq/faq_os_migration_login/#module_load)
+
+
+また、intelコンパイラを利用する場合は、以下のコマンドで有効化してください。
+
+```
+source /opt/pkg/intel/oneapi/setvars.sh
 ```
