@@ -1,10 +1,10 @@
 ---
 id: faq_os_migration_env-var
-title: "Questions related to reinstallation of environment variables"
+title: "Questions related to reinstallation of analysis environments"
 ---
 
 
-## &#x1F180; I want to restore my computer environment to its initial state. (Ubuntu Linux 22.04)
+## &#x1F180; I want to reinstall my analysis environment along with the OS migration. (Ubuntu Linux 22.04)
 
 &#x1F150; It depends on how you have built your analysis environment, so it is difficult to say, but in general, on Cent OS 7, any parts of C code that you have compiled yourself will need to be recompiled.
 
@@ -143,4 +143,19 @@ If you use the `mpirun` command or other commands, execute one of the following 
 ```
 export PATH=/usr/mpi/gcc/openmpi-4.1.5a1/bin:${PATH}
 mpirun -np 32 ....
+```
+
+
+## &#x1F180; When I try to use the intel compiler, I get an error: `ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`.
+
+&#x1F150; Environmental Modules is only available on the CentOS 7 environment of the NIG supercomputer. It is not available on the Ubuntu Linux environment.
+
+Therefor, the existing `.bashrc`, `barc_profile`, etc., should be commented out.
+
+For more information on commenting out, see ['Questions about behavior at login'](/faq/faq_os_migration_login/#module_load).
+
+Also, when you use the intel compiler, activate it with the following command.
+
+```
+source /opt/pkg/intel/oneapi/setvars.sh
 ```
