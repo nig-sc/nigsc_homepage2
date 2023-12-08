@@ -62,32 +62,33 @@ module.exports = {
                         "software/software_update_log",
                     ],
                 },
-                {
-                    type: "category",
-                    label: "稼働状況",
-                    items: [
-                        "operation/operation",
-                        "operation/Total_PowerConsumption",
-                    ]
-                },
-                {
-                    type: "link",
-                    label: "よくある質問(FAQ)",
-                    href: "/faq/faq_software"
-                 },
-                {
-                    type: "link",
-                    label: "Github Discussions(Q&A)",
-                    href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
-                },
-                "application/reference",
-                {
-                    type: "link",
-                    label: "古いFAQ",
-                    href: "faq/old_document",
-                 },
-            ]
+            ],
         },
+        {
+            type: "category",
+            label: "稼働状況",
+            items: [
+                "operation/operation",
+                "operation/Total_PowerConsumption",
+            ],
+        },
+        {
+            type: "link",
+            label: "よくある質問(FAQ)",
+            href: "/faq/faq_software"
+        },
+        {
+            type: "link",
+            label: "Github Discussions(Q&A)",
+            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+        },
+        "application/reference",
+        {
+            type: "link",
+            label: "古いドキュメント",
+            href: "faq/old_document",
+        },
+
     ],
 
     guidesSidebar: [
@@ -515,11 +516,20 @@ module.exports = {
     oldDocumentsidebar: [
         {
             type: "category",
-            label: "software",
+            label: "古いドキュメント",
             items: [
-                "oldDocuments/software/guix/guix",
-                "oldDocuments/software/R",
-            ]
-        },
+                {
+                    type: 'category',
+                    label: "software",
+                    items: [
+                        "oldDocuments/software/guix/guix",
+                        "oldDocuments/software/R",
+                    ],  
+                },
+                "faq/old_document",
+            ],
+        },  
     ],
+
+
 };

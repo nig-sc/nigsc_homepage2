@@ -1,6 +1,6 @@
 ---
 id: old_document
-title: "Old Documents"
+title: "Old FAQ"
 ---
 
 On this page, we list FAQs that were listed in the [FAQ pages](/faq/faq_software) but are no longer listed because the information is now out of date.
