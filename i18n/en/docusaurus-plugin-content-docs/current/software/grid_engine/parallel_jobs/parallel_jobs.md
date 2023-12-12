@@ -1,6 +1,6 @@
 ---
 id: parallel_jobs
-title: Pallalel Jobs (parallel job)
+title: Parallel Jobs (parallel job)
 ---
 
 When you run a small number of programs that use multiple CPU cores and run for a long time, run them as parallel jobs. (When you execute many jobs, use the array job of parallel jobs.)
