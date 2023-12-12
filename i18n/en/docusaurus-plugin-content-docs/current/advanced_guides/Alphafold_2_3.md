@@ -189,6 +189,7 @@ RELAX_MODE="all"    # all, best or none
 
 export OPENMM_CPU_THREADS=8
 export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=8"
+export CUDA_VISIBLE_DEVICES='0'
 
 singularity exec \
 --nv \
@@ -211,7 +212,13 @@ singularity exec \
 #$ -l cuda=1
 ```
 
+```
+export CUDA_VISIBLE_DEVICES='0'
+```
+
 Up to a protein size of about 1000 amino acid residues for structure prediction can be run with cuda=1. If an error occurs due to insufficient memory on the GPU, increase the number.
+
+Change the setting of the CUDA_VISIBLE_DEVICES environment variable from `'0'` to `'0,1'` for cuda=2 and to `'0,1,2'` for cuda=3. For cuda=4, delete the line `export CUDA_VISIBLE_DEVICES='0'`.
 
 ``` 
 FASTAFILE="${HOME}/input/test.fasta"
