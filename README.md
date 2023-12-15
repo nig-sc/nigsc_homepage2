@@ -25,7 +25,7 @@ By starting the web server in the following way, the result of editing a markdow
 1. Clone the following git repository.
 
 ```
-git clone https://github.com/oogasawa/nigsc_homepage2
+git clone https://github.com/nig-sc/nigsc_homepage2
 ```
 
 2. Start the web server with the following command (The browser will open and the page will be displayed.)
@@ -102,7 +102,7 @@ curl -o https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 1. 以下の git リポジトリをクローンします。
 
 ``` bash
-git clone https://github.com/oogasawa/nigsc_homepage2
+git clone https://github.com/nig-sc/nigsc_homepage2
 ```
 
 2. 以下のコマンドで Web サーバーを起動します(ブラウザが開き、ページが表示されます)。
