@@ -3,70 +3,41 @@ id: ssh_keys
 title: SSH公開鍵の登録・変更
 ---
 
-&#x26A0;既に利用申請を終えているが、SSH公開鍵の登録をしないまま利用申請をしてしまった場合は、[<u>FAQ : Application/Billing > FAQ(新規利用申請)</u>](/faq/faq_NewUser_registration#新規利用申請の際利用登録申請フォームにssh公開鍵を入力しないまま利用申請をしてしまいました既に利用申請を終えていますがssh公開鍵の登録をしないまま利用申請をしてしまった状態ですどうしたらよいでしょうか)をご参照ください。
+&#x26A0;SSH公開鍵の登録をしないまま利用申請を完了してしまった場合は、[<u>FAQ : 利用申請等 > 利用申請</u>](/faq/faq_NewUser_registration#%F0%9F%86%80-%E5%88%A9%E7%94%A8%E7%94%B3%E8%AB%8B%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%ABssh%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E3%81%97%E3%81%AA%E3%81%84%E3%81%BE%E3%81%BE%E5%88%A9%E7%94%A8%E7%94%B3%E8%AB%8B%E3%82%92%E5%AE%8C%E4%BA%86%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%84%E3%81%BE%E3%81%97%E3%81%9Fssh%E5%85%AC%E9%96%8B%E9%8D%B5%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C%E3%81%A9%E3%81%86%E3%81%97%E3%81%9F%E3%82%89%E3%82%88%E3%81%84%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)をご参照ください。
 
 
-## 公開鍵・秘密鍵の生成
+## SSH公開鍵の登録・変更の手順
 
 安全なユーザー認証のために必要となる SSH 公開鍵・秘密鍵をユーザーの計算機上で作成します。
 作成には Mac, Linux の場合ターミナルエミュレータ(Windows の場合は PowerShell など)を使います。
 
-作業前にユーザーの計算機に OpenSSH がインストールされていることを確認して下さい。Windows PowerShell への OpenSSH のインストール方法はたとえば[Microsoft 社の該当ページ](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)などを参照してください。
+作業前にユーザーの計算機に OpenSSH がインストールされていることを確認して下さい。Windows PowerShell への OpenSSH のインストール方法はたとえば[&#x1f517;<u>Microsoft 社の該当ページ</u>](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)などを参照してください。
 
 
-SSH 公開鍵・秘密鍵を生成するには、`ssh-keygen`コマンドを使用します。
+### 1. 公開鍵・秘密鍵の生成
 
-```
-$ cd ~/.ssh
-$ ssh-keygen -t rsa -b 3072                                                      (1)
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/temp/.ssh/id_rsa):                    (2)
-Enter passphrase (empty for no passphrase):                                      (3)
-Enter same passphrase again:                                                     (4)
-Your identification has been saved in /home/temp/.ssh/id_rsa.
-Your public key has been saved in /home/temp/.ssh/id_rsa.pub.
-The key fingerprint is:
-e5:23:f0:fc:b7:60:70:80:79:91:f2:f1:6d:a8:ae:90 temp@host
-```
-
-- (1) RSA バージョン 2 で、3072 ビットの鍵を生成する。
-- (2) 公開鍵・秘密鍵の保存先：変更する場合のみここでパスを指定する。変更しない場合は Enter を押す。
-- (3) パスフレーズを入力する。
-- (4) パスフレーズを再入力する。
+SSH 公開鍵・秘密鍵の生成方法は、以下のリンクをご参照ください。
+- [<u>SSH 公開鍵・秘密鍵の生成方法 (Windowsの場合)</u>](/application/ssh_keys_ssh-keygen_win)
+- [<u>SSH 公開鍵・秘密鍵の生成方法 (Macの場合)</u>](/application/ssh_keys_ssh-keygen_mac)
+- [<u>SSH 公開鍵・秘密鍵の生成方法 (Linuxの場合)</u>](/application/ssh_keys_ssh-keygen_linux)
 
 
-SSH では秘密鍵ファイルを所有していることが本人であることの根拠として扱われます。
-秘密鍵ファイルを盗まれてしまうとなりすましが可能となります。
-パスフレーズの設定は省略することが可能ですが秘密鍵の盗難時の被害を軽減するため設定することを強く推奨します。
+### 2. 遺伝研スパコンへのSSH公開鍵の登録・変更方法
+
+遺伝研スパコンへのSSH公開鍵の登録方法は、以下のリンクをご参照ください。
+- [<u>遺伝研スパコンへのSSH公開鍵の登録・変更方法 (Windowsの場合)</u>](/application/ssh_keys_register_win)
+- [<u>遺伝研スパコンへのSSH公開鍵の登録・変更方法 (Macの場合)</u>](/application/ssh_keys_register_mac)
+- [<u>遺伝研スパコンへのSSH公開鍵の登録・変更方法 (Linuxの場合)</u>](/application/ssh_keys_register_linux)
 
 
 
-## 遺伝研スパコンへのSSH公開鍵の登録
+### 3. 遺伝研スパコンへの接続
 
+[<u>遺伝研スパコンへの接続</u>](/application/ssh_keys_connect_NIGsupercomputer)のページをご参照ください。
 
-```
-$ ls ~/.ssh
-id_rsa  id_rsa.pub
-$ cat ~/.ssh/id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAznOdmkDHzjDpsNIhkl2VNjUXBlC3QePKDAzmu3FDCMgBYUDyiXAXLf85q25cylVq66gLUP63nlFJz4/SLO13w2Qf3Gyyj7ADJJZR3sD+Sf8vdlt2hShAT0kkKBmToBqv2Pqx2SfzRVedlyCE4YFieUVmZUkz95dxwSUklGXmQSvigkqCG86r0NlxCSMjYitDGWAyGMu37cvBYzH0+C2uthtbqTd1VYHfjtvewySSZsvbVVnjLme0Ah2cAyifVaSN4uslDBqkN62b3vaijoXPy9ieUzSP0/dgBhKN/m7yhnM/1s+foJnRI3wfDdqXPw3yOqPC/9EXrjnmdpEmpgMJTw== temp@host
-$ 
-```
+&#x1f4a1; [<u>利用登録申請のページからマイページへログインしたい場合は、「利用申請等 > 利用申請・変更 > 申請内容の変更」をご参照ください。</u>](/application/registration#%E7%94%B3%E8%AB%8B%E5%86%85%E5%AE%B9%E3%81%AE%E5%A4%89%E6%9B%B4)
 
+## 参考文献
 
-鍵ペアの保存先を確認すると、`id_rsa`, `id_rsa.pub`の２つのファイルが作成されています。
-`id_rsa.pub`が公開鍵になりますので、ファイルの内容を、先頭文字列"ssh-rsa"から全部コピーし下記の赤枠部分「SSH鍵」にペーストすることで、公開鍵の登録が出来ます。
-
-&#x26A0; アカウントをお持ちの方は、[<u>申請内容の変更</u>](/application/registration/#%E7%94%B3%E8%AB%8B%E5%86%85%E5%AE%B9%E3%81%AE%E5%A4%89%E6%9B%B4)のページから登録してください。
-
-![](reg_ssh_JP.png)
-
- 
-
-## 遺伝研スパコンへの接続確認
-
-- 一般解析区画にログインする場合は、[<u>「一般解析区画 > ログイン方法(一般解析区画)」</u>](/general_analysis_division/ga_login)をご参照ください。
-- 個人ゲノム解析区画にログインする場合は、[<u>「個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)」</u>](/personal_genome_division/pg_login)をご参照ください。
-
-
-うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
+- &#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/windows-server/administration/openssh/openssh_install_firstuse?source=recommendations">OpenSSHのインストール方法</a></u>
 

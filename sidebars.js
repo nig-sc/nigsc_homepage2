@@ -62,38 +62,45 @@ module.exports = {
                         "software/software_update_log",
                     ],
                 },
-            ],
+                {
+                    type: "category",
+                    label: "稼働状況",
+                    items: [
+                        "operation/operation",
+                        "operation/Total_PowerConsumption",
+                    ]
+                },
+                {
+                    type: "link",
+                    label: "よくある質問(FAQ)",
+                    href: "/faq/faq_software"
+                 },
+                {
+                    type: "link",
+                    label: "Github Discussions(Q&A)",
+                    href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+                },
+                "application/reference",
+                {
+                    type: "link",
+                    label: "古いFAQ",
+                    href: "faq/old_document",
+                 },
+            ]
         },
-        {
-            type: "category",
-            label: "稼働状況",
-            items: [
-                "operation/operation",
-                "operation/Total_PowerConsumption",
-            ],
-        },
-        {
-            type: "link",
-            label: "よくある質問(FAQ)",
-            href: "/faq/faq_software"
-        },
-        {
-            type: "link",
-            label: "Github Discussions(Q&A)",
-            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
-        },
-        "application/reference",
-        {
-            type: "link",
-            label: "古いドキュメント",
-            href: "faq/old_document",
-        },
-
     ],
 
     guidesSidebar: [
-        "guides/start_of_use",
-        "guides/introduction",
+        {
+            type: "category",
+            label: "ご利用概要",
+            items: [
+                "guides/introduction",
+                "guides/start_of_use",
+            ],
+        },
+        
+
         {
             type: "category",
             label: "一般解析区画の使い方",
@@ -300,10 +307,27 @@ module.exports = {
             type: "category",
             label: "パスワード・公開鍵の設定方法",
             items: [
-            "application/ssh_keys",
-            "application/ssh_keys_mac",
-            "application/ssh_keys_windows",
-            "application/change_loginpwd",
+                "application/ssh_keys",
+                {
+                    type: "category",
+                    label: "SSH公開鍵・秘密鍵の生成方法",
+                    items: [
+                        "application/ssh_keys_ssh-keygen_win",
+                        "application/ssh_keys_ssh-keygen_mac",
+                        "application/ssh_keys_ssh-keygen_linux",
+                    ],
+                },
+                {
+                    type: "category",
+                    label: "遺伝研スパコンへのSSH公開鍵の登録・変更方法",
+                    items: [
+                        "application/ssh_keys_register_win",
+                        "application/ssh_keys_register_mac",
+                        "application/ssh_keys_register_linux",
+                    ],
+                },
+                "application/ssh_keys_connect_NIGsupercomputer",
+                "application/change_loginpwd",
            ],
         },
         {
@@ -526,9 +550,9 @@ module.exports = {
                         "oldDocuments/software/R",
                     ],  
                 },
-                "faq/old_document",
             ],
-        },  
+        },
+        "faq/old_document",
     ],
 
 

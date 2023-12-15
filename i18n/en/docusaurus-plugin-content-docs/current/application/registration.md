@@ -3,7 +3,7 @@ id: registration
 title: "Application for use/change"
 ---
 
-&#x26A0;  If you have already completed an application for use but without registering your SSH public key, refer to [<u>FAQ : Application/Billing > FAQ(Application for New Use)</u>](/faq/faq_NewUser_registration#when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
+&#x26A0;  If you have already completed an application for use but without registering your SSH public key, refer to [<u>FAQ : Use Application, etc > Application for New Use</u>](/faq/faq_NewUser_registration/#🆀-when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
 
 
 ## Application for use
@@ -15,6 +15,8 @@ title: "Application for use/change"
   - &#x26A0;  Currently, we are not accepting application for new use of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, [<u>refer to this announcement page</u>](/blog/2022-05-13-suspension-of-applications).
 
 
+### How to apply for use
+
 <table>
 <tr>
 <td width="400" valign="top">
@@ -24,13 +26,12 @@ title: "Application for use/change"
 </td>
 <td width="400" valign="top">
 
-Create an SSH public key.<br/>
-For instructions on how to create it, see below.<br/>
-<ol>
-<li><a href="https://sc.ddbj.nig.ac.jp/application/ssh_keys"><u>Linux</u></a></li>
-<li><a href="https://sc.ddbj.nig.ac.jp/application/ssh_keys_mac"><u>Mac</u></a></li>
-<li><a href="https://sc.ddbj.nig.ac.jp/application/ssh_keys_windows"><u>Windows</u></a></li>
-</ol>
+<font size="5">Create an SSH public key.</font><br/>
+For instructions on how to create it, see below.
+
+1. [<u>Windows</u>](/application/ssh_keys_ssh-keygen_win)
+2. [<u>Mac</u>](/application/ssh_keys_ssh-keygen_mac)
+3. [<u>Linux</u>](/application/ssh_keys_ssh-keygen_linux)
 
 
 </td>
@@ -45,7 +46,9 @@ For instructions on how to create it, see below.<br/>
 </td>
 <td width="400" valign="top">
 
-[&#x1f517;<u>Access the page of registration application for use</u>](https://sc-account.ddbj.nig.ac.jp/application/registration). When you access that page, the screen shown on the left is displayed. Enter the form and click 'Go next'.
+<font size="5"><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>Access the page of registration application for use</u>.</a></font><br/>
+
+When you access that page, the screen shown on the left is displayed. Enter the form and click 'Go next'.
 
 - To prevent electronic mail erroneous transmission, enter your email address of the organization you belong to, not a free email address.
 - Enter ACCURATELY the purpose of use. Use of the supercomputer for purposes other than those entered here is prohibited.
@@ -67,9 +70,9 @@ If you do not have one, do not enter anything.
 </td>
 <td>
 
-Enter the address of your institution and click 'Go next'. <br/>
+<font size="5">Enter the address of your institution and click 'Go next'. </font><br/>
 
-- An account certificate will be sent by post to your institution you have entered to verify your identity.
+An account certificate will be sent by post to your institution you have entered to verify your identity.
 
 </td>
 </tr>
@@ -82,12 +85,12 @@ Enter the address of your institution and click 'Go next'. <br/>
 </td>
 <td>
 
-- Copy and paste the SSH public key created in the first step into the form to register it.<br/>
-For instructions on how to register by copying and pasting, see below.
+<font size="5">Copy and paste the SSH public key created in the first step into the form to register it.</font><br/>
+For instructions on how to register by copying and pasting, see below.<br/>
 
-1. [<u>Linux</u>](/application/ssh_keys/#register_the_ssh_public_key_to_the_nig_supercomputer)
-2. [<u>Mac</u>](/application/ssh_keys_mac/#register-the-ssh-public-key-with-the-nig-supercomputer)
-3. [<u>Windows</u>](/application/ssh_keys_windows#register-the-ssh-public-key-with-the-nig-supercomputer)
+1. [<u>Windows</u>](/application/ssh_keys_register_win)
+2. [<u>Mac</u>](/application/ssh_keys_register_mac)
+3. [<u>Linux</u>](/application/ssh_keys_register_linux)
 
 - If you use the personal genome analysis division, tick the box at the bottom.
 
@@ -103,7 +106,7 @@ For instructions on how to register by copying and pasting, see below.
 </td>
 <td>
 
-Enter the information of the responsible person and click 'Go next'.
+<font size="5">Enter the information of the responsible person and click 'Go next'.</font><br/>
 
 For security traceability reasons, we ask you to designate a responsible person when applying for use.
 [<u>For more information on how to designate a responsible person, see here</u>](/application/#the-responsible-person).
@@ -121,8 +124,7 @@ For security traceability reasons, we ask you to designate a responsible person 
 
 </td>
 <td>
-The DDBJ will normally contact the applicant and the responsible person by email within one week after completion of the application.
-
+<font size="5">The application for use is completed.</font><br/>
 
 The application for use is completed when the 'Completed' screen appears, as shown on the left.
 <br/>
@@ -160,8 +162,11 @@ If your affiliation or other details change, immediately [&#x1f517;<u>change you
 
 </td>
 <td width="400" valign="top">
-Login to your account page.<br/>
-Click on the URL below to access the change application details page. When accessed, you can see first a login screen to the page. Enter your account name and password. Click 'Sign In'<br/>
+<font size="5">Login to your account page.</font><br/>
+
+Click on the URL below to access the change application details page. When accessed, you can see first a login screen to the page.<br/>
+
+Enter your account name and password. Click 'Sign In'<br/>
 
 &#x1f517;<u>https://sc-account.ddbj.nig.ac.jp/login</u>
 
@@ -176,7 +181,6 @@ Click on the URL below to access the change application details page. When acces
 
 </td>
 <td width="400" valign="top">
-
 When you click 'Sign In', if the screen shown on the left is displayed, click 'Sing in with Keycloak'.<br/>
 If you can login to your account page without being displayed, skip ahead.
 
@@ -191,6 +195,7 @@ If you can login to your account page without being displayed, skip ahead.
 
 </td>
 <td>
+<font size="5">Change application details.</font><br/>
 After logging in, your account page is displayed as shown on the left.<br/>
 
 From the left menu, you can change your affiliation, SSH public key, password, etc., or request for termination of your account.
