@@ -5,6 +5,41 @@ title: "How to Login (The general analysis division)"
 
 [<u>Before logging in, you need to complete application for use.</u>](/application/registration)
 
+<details>
+<summary>
+利用申請の流れは、以下のようになります。</summary>
+
+<p>
+
+[<u>手順の詳細は、ここをクリックして「利用申請・変更」をご参照ください。</u>](/application/registration)
+
+
+**1. [SSH公開鍵・秘密鍵の生成](/application/ssh_keys#1-%E5%85%AC%E9%96%8B%E9%8D%B5%E7%A7%98%E5%AF%86%E9%8D%B5%E3%81%AE%E7%94%9F%E6%88%90)**
+
+**2. [申請登録](/application/registration#%E5%88%A9%E7%94%A8%E7%94%B3%E8%AB%8B)**
+
+以下の情報を登録します。
+ - 申請者情報
+ - 所属機関の住所
+ - 1．で生成したSSH公開鍵
+ - 責任者情報
+
+**3. 利用申請完了**
+
+利用申請が完了すると、[<u>誓約書への署名を依頼するメールが届きますので、署名します。</u>](/application/signing_PDF)
+
+
+署名が受理されると、郵送によりアカウント登録証がお手元に届き、ログインできるようになります。
+
+ログイン方法は以下をご参照ください。
+
+- [遺伝研スパコンへのログイン方法](/general_analysis_division/ga_login#%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E6%89%8B%E9%A0%86)
+- [申請登録フォームのマイページへのログイン方法](/application/registration#%E7%94%B3%E8%AB%8B%E5%86%85%E5%AE%B9%E3%81%AE%E5%A4%89%E6%9B%B4)
+
+</p>
+</details>
+
+
 
 ## Gateway Node
 
@@ -12,6 +47,7 @@ There are two gateway nodes for the general analysis division of the NIG superco
 
 - `gw.ddbj.nig.ac.jp`
 - `gw2.ddbj.nig.ac.jp`
+
 
 
 ##  How to log in to the general analysis division with your account

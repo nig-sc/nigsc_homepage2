@@ -31,13 +31,9 @@
     "message": "Software",
     "description": "The label for category ソフトウェア in sidebar topSidebar"
   },
-  "sidebar.topSidebar.link.よくある質問(FAQ)": {
-    "message": "FAQ",
-    "description": "The label for link よくある質問(FAQ) in sidebar topSidebar, linking to /faq/faq_software"
-  },
-  "sidebar.topSidebar.link.古いドキュメント": {
-    "message": "Old Documents",
-    "description": "The label for link 古いドキュメント in sidebar topSidebar, linking to /faq/old_document"
+  "sidebar.guidesSidebar.category.ご利用概要": {
+    "message": "Introduction",
+    "description": "The label for category ご利用概要 in sidebar topSidebar"
   },
   "sidebar.guidesSidebar.category.一般解析区画の使い方": {
     "message": "The General Analysis Division",
@@ -206,11 +202,6 @@
   "sidebar.operationInfoSidebar.link.メンテナンス情報": {
     "message": "Maintenance Info",
     "description": "The label for link メンテナンス情報 in sidebar operationInfoSidebar, linking to /blog/tags/maintenance"
-  },
-  "sidebar.oldDocumentsidebar.category.古いドキュメント": {
-    "message": "Old Documents",
-    "description": "The label for link 古いドキュメント in sidebar oldDocumentsidebar"
   }
-  
   
 }
