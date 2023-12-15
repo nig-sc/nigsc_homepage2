@@ -44,7 +44,7 @@ Before you start using the service, check '[<u>Issuance criteria for user accoun
 </td>
 <td width="400" valign="top">
 
-<font size="5">Sending the responsible person's pledge by e-mail</font><br/>
+<font size="5">Getting the responsible person's pledge by e-mail</font><br/>
 
 From the viewpoint of security traceability, specify the responsible person when applying for use. [<u>For more information, see here</u>](/application/#the-responsible-person).<br/>
 
@@ -62,7 +62,7 @@ Sign and return the pledge PDF [<u>following the steps in 'How to sign the pledg
 </td>
 <td width="400" valign="top">
 
-<font size="5">Arrival of account registration certificate</font><br/>
+<font size="5">Getting your account registration certificate</font><br/>
 
 After you have returned the signed pledge, it normally takes about a week to issue your account registration certificate.<br/>
 
