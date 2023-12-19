@@ -62,115 +62,88 @@ module.exports = {
                         "software/software_update_log",
                     ],
                 },
+            ],
+        },
+        {
+            type: "category",
+            label: "利用案内",
+            items: [
+                "guides/start_of_use",
+                "guides/introduction",
                 {
                     type: "category",
-                    label: "稼働状況",
+                    label: "一般解析区画の使い方",
                     items: [
-                        "operation/operation",
-                        "operation/Total_PowerConsumption",
+                        "general_analysis_division/ga_introduction",
+                        "general_analysis_division/ga_application",
+                        "general_analysis_division/ga_login",
+                        "general_analysis_division/ga_usage",
+                        "general_analysis_division/ga_queue",
+                        "general_analysis_division/ga_transfer",
+                        "general_analysis_division/advance_reservation",
+                        "general_analysis_division/ga_lustre",
+                        "general_analysis_division/largescale_storage",
+                        "operation/qstatGC",
+                        "operation/gfree",
                     ]
                 },
                 {
-                    type: "link",
-                    label: "よくある質問(FAQ)",
-                    href: "/faq/faq_software"
-                 },
-                {
-                    type: "link",
-                    label: "Github Discussions(Q&A)",
-                    href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
-                },
-                "application/reference",
-                {
-                    type: "link",
-                    label: "古いFAQ",
-                    href: "faq/old_document",
-                 },
-            ]
-        },
-    ],
-
-    guidesSidebar: [
-        {
-            type: "category",
-            label: "ご利用概要",
-            items: [
-                "guides/introduction",
-                "guides/start_of_use",
-            ],
-        },
-        
-
-        {
-            type: "category",
-            label: "一般解析区画の使い方",
-            items: [
-                "general_analysis_division/ga_introduction",
-                "general_analysis_division/ga_application",
-                "general_analysis_division/ga_login",
-                "general_analysis_division/ga_usage",
-                "general_analysis_division/ga_queue",
-                "general_analysis_division/ga_transfer",
-                "general_analysis_division/advance_reservation",
-                "general_analysis_division/ga_lustre",
-                "general_analysis_division/largescale_storage",
-                "operation/qstatGC",
-                "operation/gfree",
-            ]
-        },
-        {
-            type: "category",
-            label: "個人ゲノム解析区画の使い方",
-            items: [
-                "personal_genome_division/pg_application",
-                {
                     type: "category",
-                    label: "ログイン方法 (個人ゲノム解析区画)",
-                    link: {
-                        type: "doc",
-                        id: "personal_genome_division/pg_login",
-                    },
+                    label: "個人ゲノム解析区画の使い方",
                     items: [
+                        "personal_genome_division/pg_application",
                         {
                             type: "category",
-                            label: "SSL-VPNクライアントソフトウェアのインストール方法",
+                            label: "ログイン方法 (個人ゲノム解析区画)",
+                            link: {
+                                type: "doc",
+                                id: "personal_genome_division/pg_login",
+                            },
                             items: [
-                                "personal_genome_division/pg_login_ssl-vpn_install_win",
-                                "personal_genome_division/pg_login_ssl-vpn_install_mac",
-                                "personal_genome_division/pg_login_ssl-vpn_install_linux",
+                                {
+                                    type: "category",
+                                    label: "SSL-VPNクライアントソフトウェアのインストール方法",
+                                    items: [
+                                        "personal_genome_division/pg_login_ssl-vpn_install_win",
+                                        "personal_genome_division/pg_login_ssl-vpn_install_mac",
+                                        "personal_genome_division/pg_login_ssl-vpn_install_linux",
+                                    ],
+                                },
+                                {
+                                    type: "category",
+                                    label: "SSL-VPNクライアントの設定方法",
+                                    items: [
+                                        "personal_genome_division/pg_login_ssl-vpn_configure_file_win",
+                                        "personal_genome_division/pg_login_ssl-vpn_configure_file_mac",
+                                        "personal_genome_division/pg_login_ssl-vpn_configure_file_linux",
+                                    ],
+                                },
+                                {
+                
+                                    type: "category",
+                                    label: "SSL-VPNへの接続方法",
+                                    items: [
+                                        "personal_genome_division/pg_login_ssl-vpn_connection_win",
+                                        "personal_genome_division/pg_login_ssl-vpn_connection_mac",
+                                        "personal_genome_division/pg_login_ssl-vpn_connection_linux",
+                                    ],
+                                },
                             ],
                         },
-                        {
-                            type: "category",
-                            label: "SSL-VPNクライアントの設定方法",
-                            items: [
-                                "personal_genome_division/pg_login_ssl-vpn_configure_file_win",
-                                "personal_genome_division/pg_login_ssl-vpn_configure_file_mac",
-                                "personal_genome_division/pg_login_ssl-vpn_configure_file_linux",
-                            ],
-                        },
-                        {
-
-                            type: "category",
-                            label: "SSL-VPNへの接続方法",
-                            items: [
-                                "personal_genome_division/pg_login_ssl-vpn_connection_win",
-                                "personal_genome_division/pg_login_ssl-vpn_connection_mac",
-                                "personal_genome_division/pg_login_ssl-vpn_connection_linux",
-                            ],
-                        },
+                        "personal_genome_division/pg_usage",
+                        "personal_genome_division/gpu_slurm",
+                        "personal_genome_division/pg_transfer",
+                        "general_analysis_division/ga_lustre",
+                        "general_analysis_division/largescale_storage",
+                        "personal_genome_division/group_cloud",
                     ],
                 },
-                "personal_genome_division/pg_usage",
-                "personal_genome_division/gpu_slurm",
-                "personal_genome_division/pg_transfer",
-                "general_analysis_division/ga_lustre",
-                "general_analysis_division/largescale_storage",
-                "personal_genome_division/group_cloud",
             ],
         },
+                
     ],
-    
+
+
     softwareSidebar: [
         {
             type: 'category',
@@ -350,6 +323,11 @@ module.exports = {
             href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
         },
         "application/reference",
+        {
+        type: "link",
+        label: "古いドキュメント",
+        href: "/oldDocuments/software/R",
+        },
     ],
 
 
@@ -427,6 +405,17 @@ module.exports = {
             ],
         },
 
+    ],
+
+    operationInfoSidebar: [
+        {
+            type: "category",
+            label: "稼働状況",
+            items: [
+                "operation/operation",
+                "operation/Total_PowerConsumption",
+            ]
+        },
     ],
     
     reportSidebar: [
