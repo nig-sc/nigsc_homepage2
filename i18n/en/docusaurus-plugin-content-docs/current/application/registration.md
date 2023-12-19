@@ -92,8 +92,9 @@ For instructions on how to register by copying and pasting, see below.<br/>
 2. [<u>Mac</u>](/application/ssh_keys_register_mac)
 3. [<u>Linux</u>](/application/ssh_keys_register_linux)
 
-- If you use the personal genome analysis division, tick the box at the bottom.
-
+:::note
+If you use the personal genome analysis division, tick the box at the bottom.
+:::
 
 </td>
 </tr>
