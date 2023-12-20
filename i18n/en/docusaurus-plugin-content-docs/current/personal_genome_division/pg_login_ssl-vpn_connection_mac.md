@@ -20,6 +20,10 @@ For MacOS, connect using the FortiClient GUI.
 
 ![figure](VPNwin_14.png)
 
+:::info
+If the dialog box does not appear, refer to [<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear).
+:::
+
 A one-time password will be sent to the email address linked to the SSL-VPN account as follows.
 
 ![figure](VPNwin_15.png)
