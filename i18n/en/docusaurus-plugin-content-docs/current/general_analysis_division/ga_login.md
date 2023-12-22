@@ -40,6 +40,12 @@ title: "How to Login (The general analysis division)"
 </details>
 
 
+## Introduction
+
+SSH connection is used for logging in to the general analysis division of the NIG supercomputer. 
+
+![](pg_login_1.png)
+
 
 ## Gateway Node
 
