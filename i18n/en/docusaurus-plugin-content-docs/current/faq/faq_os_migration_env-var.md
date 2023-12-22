@@ -159,3 +159,20 @@ Also, when you use the intel compiler, activate it with the following command.
 ```
 source /opt/pkg/intel/oneapi/setvars.sh
 ```
+
+## &#x1F180; I would like to use DRMAA, but the library path I have been using is not available. It seems to change from `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` that I have been using due to the scheduled maintenance.
+
+&#x1F150;  The DRMAA libraries were changed to the following paths along with [the AGE version upgrade (8.6.19/8.6.4 → 8.8.1)](/en/blog/2023-11-24-scheduled-maintenance/#software-version-upgrade-details).
+Please use the libraries located in the following paths.
+
+```
+$ ls -l /home/geadmin/AGEN/drmaa/lib/lx-amd64/
+total 7444
+drwxr-xr-x 2 9901 9901  4096 Sep 19 02:05 ./
+drwxr-xr-x 3 root root  4096 Nov 29 13:44 ../
+lrwxrwxrwx 1 9901 9901   15 Sep 19 02:05 libdrmaa.so -> libdrmaa.so.1.0*
+-rwxr-xr-x 1 9901 9901 3699608 Sep 19 02:05 libdrmaa.so.1.0*
+lrwxrwxrwx 1 9901 9901   16 Sep 19 02:05 libdrmaa2.so -> libdrmaa2.so.0.1*
+-rwxr-xr-x 1 9901 9901 3911464 Sep 19 02:05 libdrmaa2.so.0.1*
+$
+```
