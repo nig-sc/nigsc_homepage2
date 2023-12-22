@@ -48,9 +48,7 @@ For more information on how to connect, see the following link.
 
 If you have trouble connecting, refer to [<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear).
 
-### <Marker color="#3FCBE7">Log in to the gateway via
-ssh connection.
-</Marker>
+### <Marker color="#3FCBE7">Log in to the gateway via ssh connection.</Marker>
 
 #### STEP 3. SSH log in to the gateway
 
