@@ -1,7 +1,21 @@
 ---
 id: faq_os_migration_env-var
-title: "Questions related to environment variables"
+title: "Questions related to reinstallation of analysis environments"
 ---
+
+
+## &#x1F180; I want to reinstall my analysis environment along with the OS migration. (Ubuntu Linux 22.04)
+
+&#x1F150; It depends on how you have built your analysis environment, so it is difficult to say, but in general, on Cent OS 7, any parts of C code that you have compiled yourself will need to be recompiled.
+
+The same applies to Conda and R packages that call C code behind that.
+
+Referring to [<u>FAQ</u>](/faq/faq_software/#ubuntu-initialization), the procedure is as follows.
+1. restore the shell configuration files, such as `.bashrc`, to their initial state once.
+2. reinstall the programs installed from the tarball after restoring the initial state.
+3. reinstall conda, R packages, etc.
+
+The libraries and tools installed on Ubuntu Linux 22.04 are greatly expanded, and installation from the tarball has been simplified.
 
 
 ## &#x1F180; I have recompiled by tarball, but when make runs, I get the follow error.
@@ -15,7 +29,7 @@ Libraries compiled by the CentOS 7 environment cannot be used on the Ubuntu envi
 
 If the same error occurs after recompiling, the environment variables may not be set correctly. Please reset `.bash_profile` and `.bashrc` to the initial state and see the errors do not occur again.
 
-To learn how to restore the initial state, [refer to the FAQ 'Software General'](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
+To learn how to restore the initial state, [<u>refer to the FAQ 'Software General'</u>](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
 
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
@@ -31,7 +45,7 @@ Please compile again by the tarball.
 
 If the same error occurs after recompiling, the environment variables may not be set correctly. Please reset `.bash_profile` and `.bashrc` to the initial state and see the errors do not occur again.
 
-To learn how to restore the initial state, [refer to the FAQ 'Software General'](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
+To learn how to restore the initial state, [<u>refer to the FAQ 'Software General'</u>](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
 
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
@@ -88,7 +102,7 @@ make install
 
 If the same error occurs after recompiling, the environment variables may not be set correctly. Please reset `.bash_profile` and `.bashrc` to the initial state and see the errors do not occur again.
 
-To learn how to restore the initial state, [refer to the FAQ 'Software General'](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
+To learn how to restore the initial state, [<u>refer to the FAQ 'Software General'</u>](/faq/faq_software#%F0%9F%86%80-i-want-to-restore-my-computer-environment-to-its-initial-state-ubuntu-linux-2204).
 
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
@@ -129,4 +143,19 @@ If you use the `mpirun` command or other commands, execute one of the following 
 ```
 export PATH=/usr/mpi/gcc/openmpi-4.1.5a1/bin:${PATH}
 mpirun -np 32 ....
+```
+
+
+## &#x1F180; When I try to use the intel compiler, I get an error: `ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`.
+
+&#x1F150; Environmental Modules is only available on the CentOS 7 environment of the NIG supercomputer. It is not available on the Ubuntu Linux environment.
+
+Therefor, the existing `.bashrc`, `barc_profile`, etc., should be commented out.
+
+For more information on commenting out, see ['Questions about behavior at login'](/faq/faq_os_migration_login/#module_load).
+
+Also, when you use the intel compiler, activate it with the following command.
+
+```
+source /opt/pkg/intel/oneapi/setvars.sh
 ```

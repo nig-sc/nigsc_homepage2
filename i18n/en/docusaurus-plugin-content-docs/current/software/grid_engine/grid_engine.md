@@ -32,7 +32,7 @@ The following four types of jobs are mainly used by Grid Engine.
     - To use the supercomputer interactively.
 - [Batch Jobs (batch job)](/software/grid_engine/batch_jobs)
     - To run a small number of programs that use only one CPU core
-- [Pallalel Jobs (parallel job)](/software/grid_engine/parallel_jobs)
+- [Parallel Jobs (parallel job)](/software/grid_engine/parallel_jobs)
     - To run a small number of programs that use multiple CPU cores at the same time
 - [Array Jobs (array job)](/software/grid_engine/array_jobs)
     - To run a large number of batch jobs or parallel jobs sequentially

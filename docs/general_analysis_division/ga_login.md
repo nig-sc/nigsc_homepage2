@@ -23,6 +23,12 @@ title: "ログイン方法(一般解析区画)"
 $ ssh youraccount@gw.ddbj.nig.ac.jp
 ```
 
+または
+
+```
+$ ssh youraccount@gw2.ddbj.nig.ac.jp
+```
+
 秘密鍵の格納場所が`~/.ssh/id_rsa`以外の場合は以下のように秘密鍵のパスを指定します。
 
 ```

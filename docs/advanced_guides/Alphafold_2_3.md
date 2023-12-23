@@ -200,6 +200,7 @@ RELAX_MODE="all"    # all, best or none
 
 export OPENMM_CPU_THREADS=8
 export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=8"
+export CUDA_VISIBLE_DEVICES='0'
 
 singularity exec \
 --nv \
@@ -222,7 +223,13 @@ singularity exec \
 #$ -l cuda=1
 ```
 
+```
+export CUDA_VISIBLE_DEVICES='0'
+```
+
 構造予測するタンパク質の大きさが1000アミノ酸残基程度までは cuda=1 で実行可能です。GPUのメモリ不足でエラーになった場合、数を増やして実行してください。
+
+それにあわせて、CUDA_VISIBLE_DEVICES環境変数の設定を cuda=2 の場合は `'0'` から `'0,1'` に、cuda=3の場合は `'0,1,2'` に変更してください。cuda=4の場合は `export CUDA_VISIBLE_DEVICES='0'` の行を削除してください。
 
 ```
 FASTAFILE="${HOME}/input/test.fasta"
