@@ -176,21 +176,29 @@ GPUを使用する場合のジョブスクリプトです。gpu.qでジョブを
 
 FASTAFILE="${HOME}/input/test.fasta"
 OUTPUTDIR="${HOME}/output"
-DATE="2021-11-12"
+DATE="2022-12-01"
 MODEL="monomer"
 PRED=5
+VERSION="2.3.2"
+RELAX_MODE="all"    # all, best or none
+
+export OPENMM_CPU_THREADS=8
+export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=8"
+export CUDA_VISIBLE_DEVICES='0'
 
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.2.2/database:/data1/database \
-/lustre7/software/alphafold/2.2.2/alphafold-2.2.2-GPU.sif \
+-B /lustre7/software/alphafold/${VERSION}/database:/data1/database \
+/lustre7/software/alphafold/${VERSION}/alphafold-${VERSION}-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
 --model_preset=${MODEL} \
 --max_template_date=${DATE} \
---num_multimer_predictions_per_model=${PRED}
+--use_gpu_relax=true \
+--num_multimer_predictions_per_model=${PRED} \
+--models_to_relax=${RELAX_MODE}
 ```
 
 #### 修正箇所
@@ -199,7 +207,12 @@ singularity exec \
 #$ -l cuda=1
 ```
 
+```
+export CUDA_VISIBLE_DEVICES='0'
+```
 構造予測するタンパク質の大きさが1000アミノ酸残基程度までは cuda=1 で実行可能です。GPUのメモリ不足でエラーになった場合、数を増やして実行してください。
+
+それにあわせて、CUDA_VISIBLE_DEVICES環境変数の設定を cuda=2 の場合は `'0'` から `'0,1'` に、cuda=3の場合は `'0,1,2'` に変更してください。cuda=4の場合は `export CUDA_VISIBLE_DEVICES='0'` の行を削除してください。
 
 ``` 
 FASTAFILE="${HOME}/input/test.fasta"

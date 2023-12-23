@@ -172,21 +172,29 @@ You can use this job script for using a GPU. Run the job with gpu.q.
 
 FASTAFILE="${HOME}/input/test.fasta"
 OUTPUTDIR="${HOME}/output"
-DATE="2021-11-12"
+DATE="2022-12-01"
 MODEL="monomer"
 PRED=5
+VERSION="2.3.2"
+RELAX_MODE="all"    # all, best or none
+
+export OPENMM_CPU_THREADS=8
+export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=8"
+export CUDA_VISIBLE_DEVICES='0'
 
 singularity exec \
 --nv \
 -B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/2.2.2/database:/data1/database \
-/lustre7/software/alphafold/2.2.2/alphafold-2.2.2-GPU.sif \
+-B /lustre7/software/alphafold/${VERSION}/database:/data1/database \
+/lustre7/software/alphafold/${VERSION}/alphafold-${VERSION}-GPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
 --model_preset=${MODEL} \
 --max_template_date=${DATE} \
---num_multimer_predictions_per_model=${PRED}
+--use_gpu_relax=true \
+--num_multimer_predictions_per_model=${PRED} \
+--models_to_relax=${RELAX_MODE}
 ```
 
 #### Modification place
@@ -195,7 +203,12 @@ singularity exec \
 #$ -l cuda=1
 ```
 
+```
+export CUDA_VISIBLE_DEVICES='0'
+```
 Up to a protein size of about 1000 amino acid residues for structure prediction can be run with cuda=1. If an error occurs due to insufficient memory on the GPU, increase the number.
+
+Change the setting of the CUDA_VISIBLE_DEVICES environment variable from `'0'` to `'0,1'` for cuda=2 and to `'0,1,2'` for cuda=3. For cuda=4, delete the line `export CUDA_VISIBLE_DEVICES='0'`.
 
 ``` 
 FASTAFILE="${HOME}/input/test.fasta"

@@ -1,10 +1,10 @@
 ---
 id: faq_os_migration_login
-title: login 時の挙動に関する質問
+title: login 時の挙動に関するご質問
 ---
 
 
-## &#x1F180; 2023 年度のメンテナンス後、qlogin をしようとすると、`ERROR: Unable to locate a modulefile for 'gcc'`というエラーが表示されます。
+## &#x1F180; 2023 年度のメンテナンス後、qlogin をしようとすると、`ERROR: Unable to locate a modulefile for 'gcc'`というエラーが表示されます。 {#module_load}
 
 &#x1F150; このエラーは無視して問題ありません。
 
@@ -55,9 +55,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 ```
 
+
 あるいは、「[環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合)](/faq/faq_software#ubuntu-initialization)」のシェル設定ファイルの初期状態を参考にして`~/.bashrc`を編集してください。
 
 
 シェル設定ファイルに関する説明は[FAQ ソフトウェア一般](/faq/faq_software)の中の「 [`.bashrc` などのシェル設定ファイルの読み込み順について教えてください](/faq/faq_software#shell-config)」の項目をご参照ください。
-
-
