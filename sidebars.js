@@ -73,6 +73,23 @@ module.exports = {
                 "operation/Total_PowerConsumption",
             ]
         },
+        {
+            type: "link",
+            label: "よくある質問(FAQ)",
+            href: "/faq/faq_software"
+         },
+        {
+            type: "link",
+            label: "Github Discussions(Q&A)",
+            href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
+        },
+        "application/reference",
+        {
+            type: "link",
+            label: "古いドキュメント",
+            href: "/faq/old_document",
+         },
+
         
     ],
 
@@ -311,7 +328,6 @@ module.exports = {
             href: "https://github.com/nig-sc/nigsc_homepage2/discussions"
         },
         "application/reference",
-        "faq/old_document",
     ],
 
 
@@ -507,6 +523,7 @@ module.exports = {
                 "oldDocuments/software/guix/guix",
             ]
         },
+        "faq/old_document", 
     ],
 
     
