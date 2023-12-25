@@ -168,3 +168,21 @@ mpirun -np 32 ....
 ```
 source /opt/pkg/intel/oneapi/setvars.sh
 ```
+
+
+## &#x1F180; DRMAAを使用したいのですが、定期メンテナンスにより、これまで使用していた `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` から変更になったようです。ライブラリのパスを教えてください。
+
+&#x1F150;  DRMAAのライブラリは、[AGEのソフトウェアバージョンアップ (8.6.19/8.6.4 → 8.8.1)](/blog/2023-11-24-scheduled-maintenance#%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%86%85%E5%AE%B9)に伴い、以下のパスに変更されました。
+以下のパスに配置されたライブラリを使用してください。
+
+```
+$ ls -l /home/geadmin/AGEN/drmaa/lib/lx-amd64/
+total 7444
+drwxr-xr-x 2 9901 9901  4096 Sep 19 02:05 ./
+drwxr-xr-x 3 root root  4096 Nov 29 13:44 ../
+lrwxrwxrwx 1 9901 9901   15 Sep 19 02:05 libdrmaa.so -> libdrmaa.so.1.0*
+-rwxr-xr-x 1 9901 9901 3699608 Sep 19 02:05 libdrmaa.so.1.0*
+lrwxrwxrwx 1 9901 9901   16 Sep 19 02:05 libdrmaa2.so -> libdrmaa2.so.0.1*
+-rwxr-xr-x 1 9901 9901 3911464 Sep 19 02:05 libdrmaa2.so.0.1*
+$
+```
