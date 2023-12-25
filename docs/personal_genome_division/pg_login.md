@@ -3,6 +3,8 @@ id: pg_login
 title: "ログイン方法（個人ゲノム解析区画）"
 ---
 
+import Marker from '@site/src/components/Marker';
+
 ## 概要
 
 遺伝研スパコンの個人ゲノム解析区画へのログイン及びファイル転送にはSSL-VPN接続を用います。SSL-VPN接続を行うためにはユーザーの計算機に専用のソフトウェアをインストールする必要があります(これを以下SSL-VPNクライアントソフトウェアと呼びます)。
@@ -22,19 +24,22 @@ SSL-VPN接続の際は二要素認証が行われます。セキュリティー�
 ![figure](howto.png)
 
 
-### 1. SSL-VPNクライアントのインストール
+### <Marker color="#3FCBE7">FortiClientにログインして、SSL-VPN接続を開始する。</Marker>
+
+#### STEP 1. SSL-VPNクライアントソフトウェアのインストール
 
 「[&#x1f517;<u>FortiClient</u>](https://www.fortinet.com/support/product-downloads)」の 公式サイト にアクセスし、FortiClient をダウンロードして、インストールします。
 
 - 公式サイト：&#x1f517;<u>https://www.fortinet.com/support/product-downloads</u>
 
 ダウンロードとインストール方法の詳細は、以下のリンクからをご参照ください。
+
 - [<u>SSL-VPNクライアントソフトウェアのインストール (Windowsの場合)</u>](/personal_genome_division/pg_login_ssl-vpn_install_win)
 - [<u>SSL-VPNクライアントソフトウェアのインストール (Macの場合)</u>](/personal_genome_division/pg_login_ssl-vpn_install_mac)
 - [<u>SSL-VPNクライアントソフトウェアのインストール (Linuxの場合)</u>](/personal_genome_division/pg_login_ssl-vpn_install_linux)
 
 
-### 2. SSL-VPNへの接続
+#### STEP 2. SSL-VPNへの接続
 
 SSL-VPN接続を行います。
 
@@ -43,8 +48,12 @@ SSL-VPN接続を行います。
 - [<u>Macの場合 (FortiClient GUI)</u>](/personal_genome_division/pg_login_ssl-vpn_connection_mac)
 - [<u>Linuxの場合 (openfortivpn CUI)</u>](/personal_genome_division/pg_login_ssl-vpn_connection_linux)
 
+うまくつながらない場合は、[<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear)をご参照ください。
 
-### 3. SSHによるゲートウェイへのログイン
+
+### <Marker color="#3FCBE7">ssh接続によりゲートウェイにログインする。</Marker>
+
+#### STEP 3. SSHによるゲートウェイへのログイン
 
 SSL-VPN接続を開始したら、ユーザの計算機上でターミナルエミュレータを起動し、個人ゲノム解析環境のゲートウェイにログインします。
 

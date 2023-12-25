@@ -16,6 +16,10 @@ Windowsの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 
 ![figure](VPNwin_14.png)
 
+:::info
+ダイヤログボックスが表示されない場合は、[<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear)をご参照ください。
+:::
+
 クリックすると、SSL-VPNアカウントに紐付くメールアドレスへ以下のようなワンタイムパスワードが送信されます。
 
 ![figure](VPNwin_15.png)

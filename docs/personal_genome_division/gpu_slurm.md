@@ -1,6 +1,6 @@
 ---
 id: gpu_slurm
-title: 個人ゲノム解析区画 SLurm GPU ノード専用キューの利用方法
+title: 個人ゲノム解析区画 Slurm GPU ノード専用キューの利用方法
 ---
 
 

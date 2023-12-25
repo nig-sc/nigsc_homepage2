@@ -70,11 +70,11 @@ module.exports = {
           label: 'システム概要'
         },
 
-        {
-          type: 'doc',
-          docId: 'guides/start_of_use',
-          label: '利用案内'
-        },
+        //{
+        //  type: 'doc',
+        //  docId: 'guides/start_of_use',
+        //  label: '利用案内'
+        //},
         {
           type: 'doc',
           docId: 'application/application',
@@ -85,11 +85,11 @@ module.exports = {
           docId: 'advanced_guides/advanced_guide_2023',
           label: '活用方法'
         },
-        // {
-        //   type: 'doc',
-        //   docId: 'operation/operation',
-        //   label: '稼働状況'
-        // },
+        {
+           type: 'doc',
+           docId: 'operation/operation',
+           label: '稼働状況'
+         },
         {
           type: 'doc',
           docId: 'report/report',
