@@ -104,5 +104,7 @@ your_account@gw4:~ (2022-12-01 15:34:50)
 $
 ```
 
-See also [<u>FAQ : Login > FAQ(Login)</u>](/faq/faq_login/)
+See also FAQ:
+- [<u>FAQ > The General Analysis Division > How to Login</u>](/faq/faq_login_general)
+- [<u>FAQ > The Personal Genome Analysis Division > How to Login</u>](/faq/faq_login_personal)
 

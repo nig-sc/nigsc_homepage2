@@ -249,11 +249,11 @@ On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Appl
 
 ![](/img/ssh_keys/windows/ssh_win_33.png)
 
-After pasting, press the 'Next' button and continue filling in the [continue filling in the application form for use](/application/registration/#application-for-use).
+After pasting, press the 'Next' button and continue filling in the [continue filling in the account application form](/application/registration/#application-for-use).
 
 ![](/img/ssh_keys/windows/ssh_win_34.png)
 
-[The SSH public key registration is completed when you conpletedd the registration of the application for use on the "Application for use" of the "Application for use/change" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
+[The SSH public key registration is completed when you conpletedd the registration of the account application on the "The NIG supercomputer Account Application" of the "Account Application and Change of Application Details" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
 
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
@@ -263,11 +263,14 @@ After pasting, press the 'Next' button and continue filling in the [continue fil
 - To log in to the General Analysis division, refer to [<u>"General Analysis division > How to Login (The general analysis division)"</u>](/general_analysis_division/ga_login).
 - To login to the Personal Genome Analysis division, refer to [<u>"Personal Genome Analysis division > How to Login（The Personal Genome Analysis division）</u>](/personal_genome_division/pg_login).
 
-If you have trouble connecting, refer to [FAQ](/faq/faq_login).
-
+If you have trouble connecting, refer to FAQ.
+- [<u>FAQ > The General Analysis Division > How to Login</u>](/faq/faq_login_general)
+- [<u>FAQ > The Personal Genome Analysis Division > How to Login</u>](/faq/faq_login_personal)
 
 
 ## Reference
 
 - <a href="https://learn.microsoft.com/en-gb/windows-server/administration/openssh/openssh_install_firstuse?source=recommendations&tabs=gui">Get started with OpenSSH for Windows</a>
+
+
 

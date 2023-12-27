@@ -16,7 +16,7 @@ $ sudo openfortivpn -c /path/to/config
 
 ![figure](VPNwin_15.png)
 
-送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/faq/faq_login_personal#🆀-個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにユーザ名をパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません)をご参照ください。
+送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/faq/faq_login_personal#🆀-個人ゲノム解析区画に対してssl-vpn接続を行うためにforticlientにアカウント名とパスワードを入力してもvpnアカウントに紐付くメールアドレスへワンタイムパスワードが送られてきません)をご参照ください。
 
 3. 以下のように対話式でワンタイムパスワード(上記の例の場合、269274)を入力し、Enterキーを押してください。
 ```

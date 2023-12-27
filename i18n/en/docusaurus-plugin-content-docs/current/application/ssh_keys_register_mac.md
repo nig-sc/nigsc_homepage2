@@ -18,16 +18,16 @@ On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Appl
 
 ![](/img/ssh_keys/mac/ssh_mac_29.png)
 
-After pasting, press the 'Next' button and continue filling in the [continue filling in the application form for use](/application/registration/#application-for-use).
+After pasting, press the 'Next' button and continue filling in the [continue filling in the account application](/application/registration/#application-for-use).
 
 ![](/img/ssh_keys/mac/ssh_mac_30.png)
 
-[The SSH public key registration is completed when you conpletedd the registration of the application for use on the "Application for use" of the "Application for use/change" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
+[The SSH public key registration is completed when you conpletedd the registration of the account application on the "The NIG supercomputer Account Application" of the "Account Application and Change of Application Details" page and the "Completed" screen appears as shown below](/application/registration/#application-for-use)
 
 ![](/img/ssh_keys/mac/ssh_mac_31.png)
 
 
-&#x26A0; If you already have your account, register your public key in [<u>the Change of application details on the Application for use/change page</u>](/application/registration/#change-of-application-details).
+&#x26A0; If you already have your account, register your public key in [<u>the Change of application details by clicking here</u>](/application/registration/#change-of-application-details).
 
 ![](reg_ssh_EN.png)
  

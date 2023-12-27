@@ -78,7 +78,7 @@ module.exports = {
         {
           type: 'doc',
           docId: 'application/application',
-          label: '利用申請等'
+          label: 'アカウント申請等'
         },
         {
           type: 'doc',

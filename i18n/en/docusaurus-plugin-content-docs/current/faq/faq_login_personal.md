@@ -92,7 +92,7 @@ Register the SSL-VPN address here.
 
 &#x1F150; If the connection does not proceed beyond about 40% and does not connect,
 
-1. first, check that the dialogue box is not behind another web browser or the FortiClient login screen. 
+1. first, check that the dialogue box is not behind another screen or window. 
 2. second, if this does not solve the problem, see [<u>'Installing FortiClient VPN Client software'</u>](/personal_genome_division/pg_login/#1-installing-forticlient-vpn-client-software) and reinstall the latest FortiClient.
 
 
