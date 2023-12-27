@@ -3,7 +3,7 @@ id: ssh_keys
 title: Registering or changing SSH public keys
 ---
 
-&#x26A0;  If you have already completed an application for use but without registering your SSH public key, refer to [<u>FAQ : Use Application, etc > Application for New Use</u>](/faq/faq_NewUser_registration/#🆀-when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
+&#x26A0;  If you have already completed an account application but without registering your SSH public key, refer to [<u>FAQ : Make Application, etc > Create an NIG supercomputer account</u>](/faq/faq_NewUser_registration/#🆀-when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
 
 
 
@@ -37,7 +37,7 @@ To register or change the SSH public key to the NIG supercomputer, refer to the 
 
 Refer to the '[<u>How to connect to the NIG supercomputer</u>](/application/ssh_keys_connect_NIGsupercomputer)' page.
 
-&#x1f4a1; [<u>If you would like to log in to 'My Page' from the Application for use page, refer to 'Use Application, etc. > Application for use/change > Change of application details'.</u>](/application/registration/#change-of-application-detailsv)
+&#x1f4a1; [<u>If you would like to log in to 'My Page' from the Account Application page, refer to 'Make Application, etc. > Account Application and Change of Application Details > Change of application details'.</u>](/application/registration/#change-of-application-detailsv)
 
 
 

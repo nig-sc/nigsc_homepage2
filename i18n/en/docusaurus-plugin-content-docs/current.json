@@ -71,9 +71,9 @@
     "message": "Development Environment and Libraries",
     "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
   },
-  "sidebar.applicationsSidebar.category.利用申請等": {
+  "sidebar.applicationsSidebar.category.アカウント申請等": {
     "message": "Use Application, etc.",
-    "description": "The label for category 利用申請等 in sidebar applicationsSidebar"
+    "description": "The label for category アカウント申請等 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.パスワード・公開鍵の設定方法": {
     "message": "Set up password and public key",
@@ -99,9 +99,9 @@
     "message": "How to sign the pledge",
     "description": "The label for link FAQ : 誓約書に署名する方法 in sidebar faqSidebar, linking to /faq/faq_signing_PDF"
   },
-  "sidebar.faqSidebar.category.FAQ : 利用申請等": {
+  "sidebar.faqSidebar.category.FAQ : アカウント申請等": {
     "message": "Use Application, etc.",
-    "description": "The label for link FAQ : 利用申請等 in sidebar faqSidebar, linking to /faq/faq_NewUser_registration"
+    "description": "The label for link FAQ : アカウント申請等 in sidebar faqSidebar, linking to /faq/faq_NewUser_registration"
   },
   "sidebar.faqSidebar.category.FAQ : パスワード・公開鍵の設定方法": {
     "message": "Set up password and public key",

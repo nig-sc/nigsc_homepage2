@@ -48,7 +48,7 @@ Click it to log out.
 </table>
 
 
-## &#x1F180; When applying for new use, I applied for use without entering my SSH public key in the usage registration application form. I have already completed the application for use, but without registering my SSH public key. What should I do?
+## &#x1F180; When applying for new use, I applied for use without entering my SSH public key in the account application form. I have already completed the account application, but without registering my SSH public key. What should I do?
 
 &#x1F150; You do not need to register a new application again.
 

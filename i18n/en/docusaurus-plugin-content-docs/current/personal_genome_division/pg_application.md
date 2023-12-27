@@ -10,16 +10,16 @@ The personal genome analysis division of NIG supercomputer can be used in the sa
 - Mac and Linux computers can be accessed using a standard terminal emulator.
 - Windows computers can be accessed using PowerShell SSH client or Windows Subsystem for Linux version 2 (WSL2), etc.
 
-## Steps from user account application to start of use
+## Steps from account application to start of use
 
 The account name of the personal genome analysis division is the account name of the general analysis division with `-pg` added to the end.
 If you only use the personal genome analysis division, you will be given an account in the general analysis division.
-Steps from user account application to start of use are <u>[the same step as the general analysis division](/general_analysis_division/ga_application/#steps-from-user-account-application-to-start-of-use)</u>.
+Steps from account application to start of use are <u>[the same step as the general analysis division](/general_analysis_division/ga_application/#steps-from-user-account-application-to-start-of-use)</u>.
 The personal genome analysis division is <u>[a billing service](../application/resource_extension.md)</u>, so <u>[Download the usage plan](../application/resource_extension.md)</u>, fill it out and submit it.
 
 
 <ol>
-<li><a href="https://sc.ddbj.nig.ac.jp/en/application/registration"><u>Follow the usage application procedure</u></a> and apply from <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">&#x1f517;<u>the usage application form</u></a>.</li>
+<li><a href="https://sc.ddbj.nig.ac.jp/en/application/registration"><u>Follow the account application procedure</u></a> and apply from <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">&#x1f517;<u>the account application form</u></a>.</li>
     <ul>
     <li>Before you fill it in, ensure <a href="https://sc.ddbj.nig.ac.jp/en/application/"><u>"User Account Issuance Criteria"</u></a> and <a href="https://sc.ddbj.nig.ac.jp/en/application/use_policy"><u>"Acceptable Use Policy"</u></a>.</li>
     <li>You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)</li>

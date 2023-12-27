@@ -20,48 +20,48 @@ title: Archaea tools(旧HCPtools)
 
 入力例1：絶対パスで指定する場合
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
+hcp --user youraccountname C:\Users\youraccountname\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
 ```
 
 入力例2：相対パスで指定する場合
 ```
-hcp --user ユーザ名 upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
+hcp --user youraccountname upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
 ```
 
 - ディレクトリを指定してファイルをアップロードする
 
 入力例1：絶対パスで指定する場合
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt
+hcp --user youraccountname C:\Users\youraccountname\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/youraccountname/HCP_upload/upload_ex1.txt
 ```
 
 入力例2：相対パスで指定する場合
 ```
-hcp --user ユーザ名 .\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt
+hcp --user youraccountname .\HCP_upload\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/youraccountname/HCP_upload/upload_ex1.txt
 ```
 
 - 個人ゲノム解析区画のユーザのホームディレクトリにあるファイル`download_ex1.txt`を、ユーザの計算機のホームディレクトリの下にダウンロードする
 
 入力例1：絶対パスで指定する場合
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:download_ex1.txt C:\Users\ユーザ名\download_ex1.txt
+hcp --user youraccountname gwa.ddbj.nig.ac.jp:download_ex1.txt C:\Users\youraccountname\download_ex1.txt
 ```
 
 入力例2：相対パスで指定する場合
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:download_ex1.txt .\download_ex1.txt
+hcp --user youraccountname gwa.ddbj.nig.ac.jp:download_ex1.txt .\download_ex1.txt
 ```
 
 - ディレクトリを指定してファイルをダウンロードする
 
 入力例1：絶対パスで指定する場合
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt C:\Users\ユーザ名\HCP_upload\upload_ex1.txt
+hcp --user youraccountname gwa.ddbj.nig.ac.jp:/home/youraccountname/HCP_upload/upload_ex1.txt C:\Users\youraccountname\HCP_upload\upload_ex1.txt
 ```
 
 入力例2：相対パスで指定する場合
 ```
-hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_ex1.txt .\HCP_upload\upload_ex1.txt
+hcp --user youraccountname gwa.ddbj.nig.ac.jp:/home/youraccountname/HCP_upload/upload_ex1.txt .\HCP_upload\upload_ex1.txt
 ```
 
 ## &#x1F180; ディレクトリを指定してファイル転送をしたいのですが、可能でしょうか。
@@ -72,17 +72,17 @@ hcp --user ユーザ名 gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCP_upload/upload_
 
 - 送信元のディレクトリを指定したい場合
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
+hcp --user youraccountname C:\Users\youraccountname\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:upload_ex1.txt
 ```
 
 - アップロード先のディレクトリを指定したい場合
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCPtools_upload/upload_ex1.txt
+hcp --user youraccountname C:\Users\youraccountname\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/youraccountname/HCPtools_upload/upload_ex1.txt
 ```
 
 - 送信元とアップロード先の両方でディレクトリを指定したい場合
 ```
-hcp --user ユーザ名 C:\Users\ユーザ名\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/ユーザ名/HCPtools_upload/upload_ex1.txt
+hcp --user youraccountname C:\Users\youraccountname\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/youraccountname/HCPtools_upload/upload_ex1.txt
 ```
 
 ## &#x1F180; アップロード先またはダウンロード先を指定する時、ファイル名の指定は不要なのではないでしょうか。

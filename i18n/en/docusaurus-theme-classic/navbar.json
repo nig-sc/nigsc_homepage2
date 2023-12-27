@@ -8,9 +8,9 @@
     "description": "Navbar item with label システム概要"
   },
 
-  "item.label.利用申請等": {
+  "item.label.アカウント申請等": {
     "message": "Make Application",
-    "description": "Navbar item with label 利用申請等"
+    "description": "Navbar item with label アカウント申請等"
   },
   "item.label.利用案内": {
     "message": "User Guide",
