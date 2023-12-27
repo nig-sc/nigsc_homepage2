@@ -126,22 +126,22 @@ PrivateKeyFile C:\Users\youraccount\.ssh/id_rsa    # 秘密鍵の絶対パス
 
 Linux (WindowsのWSL2環境の場合も含む）の場合
 ```
-hcp --user ユーザ名 --hpfp \
-   /home/ユーザ名/your_file.txt \
+hcp --user youraccountname --hpfp \
+   /home/youraccountname/your_file.txt \
    gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt
 ```
 
 Mac OSの場合
 ```
-hcp --user ユーザ名 --hpfp \
-   /Users/ユーザ名/your_file.txt \
+hcp --user youraccountname --hpfp \
+   /Users/youraccountname/your_file.txt \
    gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt
 ```
 
 Windows (PowerShell)の場合
 ```
-hcp --user ユーザ名 --hpfp \
-    C:\Users\ユーザ名\your_file.txt \
+hcp --user youraccountname --hpfp \
+    C:\Users\youraccountname\your_file.txt \
     gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt
 ```
 
@@ -151,9 +151,9 @@ hcp --user ユーザ名 --hpfp \
 
 
 ```
-hcp --user ユーザ名 --hpfp  \
+hcp --user youraccountname --hpfp  \
     gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt \
-    C:\Users\ユーザ名\your_file.txt
+    C:\Users\youraccountname\your_file.txt
 ```
 
 ### 注意

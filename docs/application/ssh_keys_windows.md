@@ -243,15 +243,15 @@ cat .\id_rsa.pub
 
 ![](/img/ssh_keys/windows/ssh_win_32.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規利用申請のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
+<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規アカウント申請のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
 
 ![](/img/ssh_keys/windows/ssh_win_33.png)
 
-貼り付けたら、「次へ」ボタンを押して、[利用登録申請フォームへの入力を続けます](/application/registration#利用申請)。
+貼り付けたら、「次へ」ボタンを押して、[利用登録申請フォームへの入力を続けます](/application/registration#アカウント申請)。
 
 ![](/img/ssh_keys/windows/ssh_win_34.png)
 
-[「利用申請・変更」のページの「利用申請」で、以下の画面のように、"利用申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します](/application/registration#利用申請)。
+[「アカウント申請・変更」のページの「アカウント申請」で、以下の画面のように、"アカウント申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します](/application/registration#アカウント申請)。
 
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
@@ -262,7 +262,12 @@ cat .\id_rsa.pub
 - 個人ゲノム解析区画にログインする場合は、[<u>「個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)」</u>](/personal_genome_division/pg_login)をご参照ください。
 
 
-うまく接続できない場合は[よくある質問(FAQ)](/faq/faq_login)もご参照ください。
+うまく接続できない場合は、よくある質問(FAQ)もご参照ください。
+うまく接続できない場合は、よくある質問(FAQ)もご参照ください。
+- [<u>FAQ : 一般解析区画 > ログイン方法(一般解析区画)</u>](/faq/faq_login_general)
+- [<u>FAQ : 個人ゲノム解析区画 > ログイン方法(個人ゲノム解析区画)</u>](/faq/faq_login_personal)
+
+
 
 
 ## 参考文献

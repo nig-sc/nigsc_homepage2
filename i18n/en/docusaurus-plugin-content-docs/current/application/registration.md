@@ -1,18 +1,18 @@
 ---
 id: registration
-title: "Application for use/change"
+title: "Account Application and Change of Application Details"
 ---
 
-&#x26A0;  If you have already completed an application for use but without registering your SSH public key, refer to [<u>FAQ : Use Application, etc > Application for New Use</u>](/faq/faq_NewUser_registration/#🆀-when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
+&#x26A0;  If you have already completed an the account application but without registering your SSH public key, refer to [<u>FAQ : Account Application, etc > Create an NIG supercomputer account</u>](/faq/faq_NewUser_registration/#🆀-when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).
 
 
-## Application for use
+## The NIG supercomputer Account Application
 
-[&#x1f517;<u>Application for use is accepted</u>](https://sc-account.ddbj.nig.ac.jp/application/registration) at any time. 
+[&#x1f517;<u>This Application is accepted</u>](https://sc-account.ddbj.nig.ac.jp/application/registration) at any time. 
 
-- 1TB of high-speed storage is available after application for use.
+- 1TB of high-speed storage is available after the account application.
 - If you extend the available storage or use a billing service, [<u>submit a usage plan table</u>](/application/resource_extension) after your application has been accepted.
-  - &#x26A0;  Currently, we are not accepting application for new use of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, [<u>refer to this announcement page</u>](/blog/2022-05-13-suspension-of-applications).
+  - &#x26A0;  Currently, we are not accepting Create an NIG supercomputer account of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, [<u>refer to this announcement page</u>](/blog/2022-05-13-suspension-of-applications).
 
 
 ### How to apply for use
@@ -46,7 +46,7 @@ For instructions on how to create it, see below.
 </td>
 <td width="400" valign="top">
 
-<font size="5"><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>Access the page of registration application for use</u>.</a></font><br/>
+<font size="5"><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>Access the page of registration for the NIG supercomputer account application</u>.</a></font><br/>
 
 When you access that page, the screen shown on the left is displayed. Enter the form and click 'Go next'.
 
@@ -125,12 +125,12 @@ For security traceability reasons, we ask you to designate a responsible person 
 
 </td>
 <td>
-<font size="5">The application for use is completed.</font><br/>
+<font size="5">The account application is completed.</font><br/>
 
-The application for use is completed when the 'Completed' screen appears, as shown on the left.
+The account application is completed when the 'Completed' screen appears, as shown on the left.
 <br/>
 
-After the application for use has been completed, DDBJ will normally send an email to the applicant and the responsible person within one week.
+After the account application has been completed, DDBJ will normally send an email to the applicant and the responsible person within one week.
 <br/>
 
  For more information, refer to the link below, 'Steps from user account application to start of use'.
@@ -151,7 +151,7 @@ After the application for use has been completed, DDBJ will normally send an ema
 ## Change of application details
 
 
-If your affiliation or other details change, immediately [&#x1f517;<u>change your application details here</u>](https://sc-account.ddbj.nig.ac.jp/login).
+If your affiliation or other details change, immediately [&#x1f517;<u>change of application details here</u>](https://sc-account.ddbj.nig.ac.jp/login).
 
 
 
@@ -165,7 +165,7 @@ If your affiliation or other details change, immediately [&#x1f517;<u>change you
 <td width="400" valign="top">
 <font size="5">Login to your account page.</font><br/>
 
-Click on the URL below to access the change application details page. When accessed, you can see first a login screen to the page.<br/>
+Click on the URL below to access the change of application details page. When accessed, you can see first a login screen to the page.<br/>
 
 Enter your account name and password. Click 'Sign In'<br/>
 
@@ -196,7 +196,7 @@ If you can login to your account page without being displayed, skip ahead.
 
 </td>
 <td>
-<font size="5">Change application details.</font><br/>
+<font size="5">Change of application details.</font><br/>
 After logging in, your account page is displayed as shown on the left.<br/>
 
 From the left menu, you can change your affiliation, SSH public key, password, etc., or request for termination of your account.

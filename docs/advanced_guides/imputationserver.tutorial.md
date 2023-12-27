@@ -71,7 +71,7 @@ http://localhost:5000
 
 Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル) のフルパスを指定します。
 ここでは先程アップロードした、ファイルを使います。
-具体的なフルパスは `/home/ユーザ名/test-data.GRCh37.vcf.gz`のようになります。
+具体的なフルパスは `/home/youraccountname/test-data.GRCh37.vcf.gz`のようになります。
 
 次にReference panel preset config orを選択します。
 デフォルトで以下の４つについて、選択が可能です。

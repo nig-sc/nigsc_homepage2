@@ -229,7 +229,7 @@ HPE Apollo 6500 Gen10
 
 ### Medium 計算ノード (HPE ProLiant DL560 Gen10; 10 台)
 
-[<u>Medium 計算ノードは、Ubuntu Linuxをサポートしていないため、2023年の定期メンテナンスでOS移行は行われず、Cent OS 7.9のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
+[<u>Mediumノードのハードウェア（HPE ProLiant DL560 Gen10とHPE Superdome Flex）は、Ubuntu Linuxをサポートしていないため、2023年11月の定期メンテナンス時にCent OS 7.9からUbuntu Linux 22.04に移行できず、Cent OS 7.9のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
 
 3TB の物理メモリを搭載した 80 コアを搭載した計算ノードです。De novo アセンブラなど大規模なメモリを必要とするようなプログラムを実行するのに向いています。Grid Engine 配下のためジョブ投入により利用可能です。
 
@@ -251,7 +251,7 @@ HPE ProLiant DL560 Gen10
  
 ### Fat 計算ノード (1 台 : ホスト名 fat1)
 
-[<u>Fat 計算ノードは、Ubuntu Linuxをサポートしていないため、2023年の定期メンテナンスでOS移行は行われず、Cent OS 7.9のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
+[<u>Fatノードのハードウェア（HPE ProLiant DL560 Gen10とHPE Superdome Flex）は、Ubuntu Linuxをサポートしていないため、2023年11月の定期メンテナンス時にCent OS 7.9からUbuntu Linux 22.04に移行できず、Cent OS 7.9のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
 
 HPE Superdome Flex 2 筐体を Superdome Flex グリッド・インターコネクトで接続して合計 12TB の共有メモリの計算ノードを構成しています。
 
