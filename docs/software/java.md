@@ -10,7 +10,7 @@ Java 処理系 (JDK)のインストールはユーザー権限で可能なので
 - [Oracle Java SE download site](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [OpenJDK download site](https://openjdk.java.net/install/index.html)
 - [GraalVM download site](https://www.graalvm.org/)
-- [IBM Java SDK download site](https://www.ibm.com/support/pages/java-sdk-downloads-version-80) (古いバージョンの Java をサポート）
+- [IBM Java SDK download site](https://www.ibm.com/support/pages/java-sdk-downloads-version-80) (古いバージョンの Java をサポート)
 
 インストール例
 
