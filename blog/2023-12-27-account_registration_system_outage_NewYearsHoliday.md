@@ -2,7 +2,7 @@
 slug: 2023-12-27-account_registration_system_outage_NewYearsHoliday
 title: "2023年12月27日～2024年1月9日 アカウント登録システム停止のお知らせ"
 tags:
-  - maintenance
+  - news
 authros:
   - oogasawara
   - akatsumata
