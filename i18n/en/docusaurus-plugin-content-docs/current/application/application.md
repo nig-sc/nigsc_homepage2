@@ -16,9 +16,9 @@ On the other hand, the supercomputer system is subject to Export Administration 
 
 In principle, the purpose of use and results are open to the public. However, if you want to postpone the release date, contact us.
 
-#### Application for use
+#### Account Application
 
-- [New Use Application](/application/registration)
+- [Creat an account](/application/registration)
 - Check [Issuance criteria for user accounts](/application/), [Use Policy](/application/use_policy) and [the following "The responsible person"](/application/#the-responsible-person) in advance.
 - For foreign nationals and those residing abroad, read [the following "Precautions for FEFTA"](/application/#precautions-for-fefta).
 

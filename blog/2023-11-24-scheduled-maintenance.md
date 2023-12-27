@@ -33,7 +33,7 @@ date: 2023-11-24
 1. ソフトウェアバージョンアップ 
 2. OS 移行 (CentOS 7.9 から Ubuntu Linux 22.04LTS への移行)
     - [OS 移行に伴う FAQ のページを作成しました](/faq/faq_os_migration)＼&#x1f195;／
-    - MediumノードとFatノードはUbuntu Linuxをサポートしていないため、Cent OS 7.9のままとなっております。
+    - MediumノードとFatノードのハードウェア（HPE ProLiant DL560 Gen10とHPE Superdome Flex）は、Ubuntu Linuxをサポートしていないため、今回の定期メンテナンス時にCent OS 7.9からUbuntu Linux 22.04に移行できず、Cent OS 7.9のままとなっております。
 3. Grid Engine のバージョンアップ 
 4. OS 移行しなかった Cent OS に対する yum update 
 5. InfininBand, Lustre のファームウェア及びデバイスドライババージョンアップ 

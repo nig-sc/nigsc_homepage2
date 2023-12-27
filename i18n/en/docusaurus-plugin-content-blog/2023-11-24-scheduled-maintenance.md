@@ -33,7 +33,7 @@ Works for scheduled maintenance are as follows.
 1. Software version upgrade 
 2. OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration)＼&#x1f195;／
-    - Medium and Fat nodes do not support Ubuntu Linux, so still Cent OS 7.9.
+    - The medium nodes and the fat node hardware (that is, HPE ProLiant DL560 Gen10 and HPE Superdome Flex) do not support Ubuntu Linux and could not be migrated from Cent OS 7.9 to Ubuntu Linux 22.04 this time.
 3. Grid Engine version upgrade 
 4. yum update for Cent OS that did not migrate OS 
 5. Firmware and device driver version upgrade for InfininBand and Lustre 

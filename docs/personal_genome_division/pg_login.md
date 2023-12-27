@@ -60,13 +60,13 @@ SSL-VPN接続を開始したら、ユーザの計算機上でターミナルエ�
 ゲートウェイノードは、`gwa.ddbj.nig.ac.jp` と  `gwa2.ddbj.nig.ac.jp` の2つがあります。それぞれ、以下のコマンドを実行するとログインできます。
 
 ```
-ssh [ユーザ名]@gwa.ddbj.nig.ac.jp 
+ssh [アカウント名]@gwa.ddbj.nig.ac.jp 
 ```
 
 または
 
 ```
-ssh [ユーザ名]@gwa2.ddbj.nig.ac.jp 
+ssh [アカウント名]@gwa2.ddbj.nig.ac.jp 
 ```
 
 うまく行かない場合は、[<u>よくある質問(FAQ)</u>](/faq/faq_login_personal)をご参照ください。

@@ -7,7 +7,9 @@ title: "How to connect to the VPN (Windows)"
 For Windows, connect using the FortiClient GUI.
 
 
-1. Enter a username and password.
+1. Enter 'User name' and 'Password'.
+    - 'User name': enter the account name for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
+    - 'Password': enter the SSL-VPN password 'VPN password' sent by SECURE DELIVER return mail.
 
 ![figure](VPNwin_13.png) 
 

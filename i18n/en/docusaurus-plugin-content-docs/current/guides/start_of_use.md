@@ -3,7 +3,7 @@ id: start_of_use
 title: "How to start using the system"
 ---
 
-To use the NIG supercomputer, you need to register your application before you start using it.
+To use the NIG supercomputer, you need to register your account application before you start using it.
 
 <table>
 <tr>
@@ -29,9 +29,9 @@ Before you start using the service, check '[<u>Issuance criteria for user accoun
 </td>
 <td>
 
-<font size="5">Application for use</font><br/>
+<font size="5">Account Application</font><br/>
 
-[<u>Access the 'Application for use/change' page</u>](/application/registration) and apply for use according to the procedures.
+[<u>Access the 'Account Application and Change of applicatio details' page</u>](/application/registration) and apply for use according to the procedures.
 
 </td>
 </tr>

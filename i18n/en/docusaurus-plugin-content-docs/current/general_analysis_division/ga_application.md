@@ -11,10 +11,10 @@ The general analysis division of NIG supercomputer can be used with a computer r
 - Windows computers can be accessed using PowerShell SSH client or Windows Subsystem for Linux version 2 (WSL2), etc.
 
 
-## Steps from user account application to start of use
+## Steps from  account application to start of use
 
 <ol>
-<li><a href="https://sc.ddbj.nig.ac.jp/en/application/registration"><u>Follow the usage application procedure</u></a> and apply from <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">&#x1f517;<u>the usage application form</u></a>.</li>
+<li><a href="https://sc.ddbj.nig.ac.jp/en/application/registration"><u>Follow the account application procedure</u></a> and apply from <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">&#x1f517;<u>the account application form</u></a>.</li>
     <ul>
     <li>Before you fill it in, ensure <a href="https://sc.ddbj.nig.ac.jp/en/application/"><u>"User Account Issuance Criteria"</u></a> and <a href="https://sc.ddbj.nig.ac.jp/en/application/use_policy"><u>"Acceptable Use Policy"</u></a>.</li>
     <li>You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)</li>
