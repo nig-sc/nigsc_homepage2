@@ -3,20 +3,20 @@ id: ga_login
 title: "ログイン方法(一般解析区画)"
 ---
 
-[<u>ログインするためには、アカウント申請が必要です。</u>](/application/registration)
+[<u>ログインするためには、アカウントの新規登録が必要です。</u>](/application/registration)
 
 <details>
 <summary>
-アカウント申請の流れは、以下のようになります。</summary>
+アカウントの新規登録の流れは、以下のようになります。</summary>
 
 <p>
 
-[<u>手順の詳細は、ここをクリックして「アカウント申請・変更」をご参照ください。</u>](/application/registration)
+[<u>手順の詳細は、ここをクリックして「アカウントの新規登録」をご参照ください。</u>](/application/registration)
 
 
 **1. [SSH公開鍵・秘密鍵の生成](/application/ssh_keys#1-%E5%85%AC%E9%96%8B%E9%8D%B5%E7%A7%98%E5%AF%86%E9%8D%B5%E3%81%AE%E7%94%9F%E6%88%90)**
 
-**2. [申請登録](/application/registration#%E5%88%A9%E7%94%A8%E7%94%B3%E8%AB%8B)**
+**2. [アカウントの新規登録](/application/registration)**
 
 以下の情報を登録します。
  - 申請者情報
@@ -24,9 +24,9 @@ title: "ログイン方法(一般解析区画)"
  - 1．で生成したSSH公開鍵
  - 責任者情報
 
-**3. アカウント申請完了**
+**3. アカウントの新規登録完了**
 
-アカウント申請が完了すると、[<u>誓約書への署名を依頼するメールが届きますので、署名します。</u>](/application/signing_PDF)
+アカウントの新規登録が完了すると、[<u>誓約書への署名を依頼するメールが届きますので、署名します。</u>](/application/signing_PDF)
 
 
 署名が受理されると、郵送によりアカウント登録証がお手元に届き、ログインできるようになります。

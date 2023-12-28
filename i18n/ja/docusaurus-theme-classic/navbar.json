@@ -7,9 +7,9 @@
     "message": "利用案内",
     "description": "Navbar item with label 利用案内"
   },
-  "item.label.アカウント申請等": {
-    "message": "アカウント申請等",
-    "description": "Navbar item with label アカウント申請等"
+  "item.label.各種申請": {
+    "message": "各種申請",
+    "description": "Navbar item with label 各種申請"
   },
   "item.label.活用方法": {
     "message": "活用方法",

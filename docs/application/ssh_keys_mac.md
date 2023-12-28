@@ -197,16 +197,16 @@ cat id_rsa.pub
 
 ![](/img/ssh_keys/mac/ssh_mac_28.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規アカウント申請のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、command + V を押して、貼り付けます。
+<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウントの新規登録のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、command + V を押して、貼り付けます。
 
 ![](/img/ssh_keys/mac/ssh_mac_29.png)
 
-貼り付けたら、「次へ」ボタンを押して、[利用登録申請フォームへの入力を続けます](/application/registration#アカウント申請)。
+貼り付けたら、「次へ」ボタンを押して、[アカウント申請システムの申請フォームへの入力を続けます](/application/registration)。
 
 ![](/img/ssh_keys/mac/ssh_mac_30.png)
 
 
-[「アカウント申請・変更」のページの「アカウント申請」でアカウント申請が完了し、以下の画面のように、"アカウント申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します。](/application/registration#アカウント申請)
+[「アカウントの新規登録」でアカウントの新規登録が完了し、以下の画面のように、"利用申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します。](/application/registration)
 
 ![](/img/ssh_keys/mac/ssh_mac_31.png)
 
