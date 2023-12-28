@@ -31,21 +31,25 @@
     "message": "Software",
     "description": "The label for category ソフトウェア in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.ご利用概要": {
-    "message": "Introduction",
-    "description": "The label for category ご利用概要 in sidebar topSidebar"
+  "sidebar.topSidebar.category.アカウントの新規登録から利用開始までの流れ": {
+    "message": "How to start using the system",
+    "description": "The label for category アカウントの新規登録から利用開始までの流れ in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.一般解析区画の使い方": {
+  "sidebar.guidesSidebar.category.ログイン方法の概要": {
+    "message": "Overview of login procedure",
+    "description": "The label for category ログイン方法の概要 in sidebar guidesSidebar"
+  },
+  "sidebar.topSidebar.category.一般解析区画の使い方": {
     "message": "The General Analysis Division",
     "description": "The label for category 一般解析区画の使い方 in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.個人ゲノム解析区画の使い方": {
+  "sidebar.topSidebar.category.個人ゲノム解析区画の使い方": {
     "message": "The Personal Genome Analysis Division",
     "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.ログイン方法 (個人ゲノム解析区画)": {
+  "sidebar.personal_genome_division.Sidebar.category.ログイン方法（個人ゲノム解析区画）": {
     "message": "How to Login（The Personal Genome Analysis division）",
-    "description": "The label for category ログイン方法 (個人ゲノム解析区画) in sidebar topSidebar"
+    "description": "The label for category ログイン方法（個人ゲノム解析区画） in sidebar personal_genome_divisionSidebar"
   },
   "sidebar.guidesSidebar.category.SSL-VPNクライアントソフトウェアのインストール方法": {
     "message": "Installing FortiClient VPN Client software",
@@ -71,9 +75,9 @@
     "message": "Development Environment and Libraries",
     "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
   },
-  "sidebar.applicationsSidebar.category.アカウント申請等": {
+  "sidebar.applicationsSidebar.category.各種申請": {
     "message": "Use Application, etc.",
-    "description": "The label for category アカウント申請等 in sidebar applicationsSidebar"
+    "description": "The label for category 各種申請 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.パスワード・公開鍵の設定方法": {
     "message": "Set up password and public key",
@@ -99,9 +103,9 @@
     "message": "How to sign the pledge",
     "description": "The label for link FAQ : 誓約書に署名する方法 in sidebar faqSidebar, linking to /faq/faq_signing_PDF"
   },
-  "sidebar.faqSidebar.category.FAQ : アカウント申請等": {
+  "sidebar.faqSidebar.category.FAQ : 各種申請": {
     "message": "Use Application, etc.",
-    "description": "The label for link FAQ : アカウント申請等 in sidebar faqSidebar, linking to /faq/faq_NewUser_registration"
+    "description": "The label for link FAQ : 各種申請 in sidebar faqSidebar, linking to /faq/faq_NewUser_registration"
   },
   "sidebar.faqSidebar.category.FAQ : パスワード・公開鍵の設定方法": {
     "message": "Set up password and public key",
@@ -143,9 +147,9 @@
     "message": "Explanation of Usage",
     "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
   },
-  "sidebar.topSidebar.category.稼働状況": {
+  "sidebar.operationSidebar.category.稼働状況": {
     "message": "Operation Info",
-    "description": "The label for category 稼働状況 in sidebar topSidebar"
+    "description": "The label for category 稼働状況 in sidebar operationiSidebar"
   },
   "sidebar.reportSidebar.category.各種統計": {
     "message": "Statistics",

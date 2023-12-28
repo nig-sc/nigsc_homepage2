@@ -15,6 +15,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAznOdmkDHzjDpsNIhkl2VNjUXBlC3QePKDAzmu3FDCMgB
 $ 
 ```
 
-&#x26A0; If you already have your account, register your public key in [<u>the Change of application details by clicking here</u>](/application/registration/#change-of-application-details).
+&#x26A0; If you already have your account, register your public key in [<u>the Change of account information by clicking here</u>](/application/change_account_info).
 
 ![](reg_ssh_EN.png)
