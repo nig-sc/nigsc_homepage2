@@ -12,21 +12,21 @@ title: "利用の準備（個人ゲノム解析区画）"
 
 
 
-## ユーザーアカウント申請から利用開始までの流れ
+## アカウントの新規利用から利用開始までの流れ
 
 個人ゲノム解析区画のアカウント名は、一般解析区画のアカウント名の末尾に`-pg`を付加したものになります。
 個人ゲノム解析環境のみを利用する場合でも一般解析区画のアカウントが付与されます。
-ユーザーアカウント申請から利用開始までの流れは[一般解析区画と共通](/general_analysis_division/ga_application#ユーザーアカウント申請から利用開始までの流れ)となります。
+アカウントの新規利用から利用開始までの流れは[一般解析区画と共通](/general_analysis_division/ga_application#アカウントの新規利用から利用開始までの流れ)となります。
 個人ゲノム解析区画は[課金サービス](../application/billing_service.md)ですので、[利用計画表をダウンロード](../application/resource_extension.md)し、記入の上、ご提出ください。
 
 
 <ol>
-<li><a href="https://sc.ddbj.nig.ac.jp/application/registration"><u>アカウント申請の手順</u></a>に沿って、<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>アカウント申請フォーム</u></a>から申請登録をしてください。</li>
+<li><a href="https://sc.ddbj.nig.ac.jp/application/registration"><u>アカウントの新規利用手順</u></a>に沿って、<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>アカウント登録システムの申請フォーム</u></a>から申請登録をしてください。</li>
     <ul>
     <li>事前に「<a href="https://sc.ddbj.nig.ac.jp/application/"><u>ユーザーアカウント発行基準</u></a>」及び「<a href="https://sc.ddbj.nig.ac.jp/application/use_policy"><u>利用規程</u></a>」をご確認ください。</li>
     <li>メールアドレスは、フリーメールアドレスではなく、所属機関のメールアドレスをご入力ください。(特別な場合を除く)</li>
     <li>事前にSSH公開鍵を作成してください。登録フォームの中で、SSH公開鍵の登録を行う箇所があります。SSH公開鍵の作成・登録などは<a href="https://sc.ddbj.nig.ac.jp/application/ssh_keys"><u>SSH公開鍵の登録</u></a>をご参照ください。</li>
-    <li>遺伝研スパコンではアカウント申請時に外為法の定める国内居住者でありかつ大学あるいは国公立研究機関の教員を責任者として指名する必要があります。責任者のアカウント毎にUNIXグループが作られます。</li>
+    <li>遺伝研スパコンではアカウントの新規登録時に外為法の定める国内居住者でありかつ大学あるいは国公立研究機関の教員を責任者として指名する必要があります。責任者のアカウント毎にUNIXグループが作られます。</li>
     </ul>
 <li>ご本人様確認のため、<a href="https://sc.ddbj.nig.ac.jp/application/#%E8%B2%AC%E4%BB%BB%E8%80%85%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><u>責任者</u></a>にメールが送信されます。<a href="https://sc.ddbj.nig.ac.jp/application/signing_PDF"><u>「署名の手順」の順番に沿って</u></a>、誓約書PDFをご返信ください。</li>
     <ul>

@@ -21,14 +21,27 @@ The outline of the connection procedure is shown in the figure below.
 
 ![figure](howto.png)
 
-### <Marker color="#3FCBE7">Log in to FortiClient and start the SSL-VPN connection.</Marker>
-
-#### STEP 1. Installing FortiClient VPN Client software
+### STEP 1. Installing FortiClient VPN Client software
 
 
 Download and install FortiClient on the official website of "[&#x1f517;<u>FortiClient</u>](https://www.fortinet.com/support/product-downloads)".
 
 - The Official Website：&#x1f517;<u>https://www.fortinet.com/support/product-downloads</u>
+
+<table>
+<tr>
+<td width="400" valign="top">
+
+![](forticlientonly.png)
+
+</td>
+<td width="400" valign="top">
+
+Download 'FortiClient VPN only' from 'Product Downloads'.
+
+</td>
+</tr>
+</table>
 
 For more information on how to download and install it, see the links below.
 
@@ -37,7 +50,18 @@ For more information on how to download and install it, see the links below.
 - [<u>Installing FortiClient VPN Client software (Linux)</u>](/personal_genome_division/pg_login_ssl-vpn_install_linux)
 
 
-#### STEP 2. Connecting to the VPN 
+### STEP 2. Configure the SSL-VPN client
+
+
+Set up the SSL-VPN client.
+
+To set up, see the link below.
+- [Configure the SSL-VPN client (Windows)](/personal_genome_division/pg_login_ssl-vpn_configure_file_win)
+- [Configure the SSL-VPN client (Mac)](/personal_genome_division/pg_login_ssl-vpn_configure_file_mac)
+- [Configure the SSL-VPN client (Linux)](/personal_genome_division/pg_login_ssl-vpn_configure_file_linux)
+
+
+### STEP 3. Connecting to the VPN 
 
 You should connect to the SSL-VPN before logging in to the prsonal genome analysis division.
 
@@ -48,9 +72,7 @@ For more information on how to connect, see the following link.
 
 If you have trouble connecting, refer to [<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear).
 
-### <Marker color="#3FCBE7">Log in to the gateway via ssh connection.</Marker>
-
-#### STEP 3. SSH log in to the gateway
+### STEP 4. SSH log in to the gateway
 
 After connecting to the SSL-VPN, launch a terminal emulator and execute the following command to log in to the gateway of the personal genome analysis division.
 

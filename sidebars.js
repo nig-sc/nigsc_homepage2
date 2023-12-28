@@ -67,7 +67,7 @@ module.exports = {
         {
             type: "doc",
             id: "guides/start_of_use",
-            label: "アカウント申請から利用開始までの流れ",
+            label: "アカウントの新規登録から利用開始までの流れ",
         },
         {
             type: "doc",
@@ -267,13 +267,8 @@ module.exports = {
                 "application/legislation",
             ],
         },
-        {
-            type: "category",
-            label: "アカウント申請等",
-            items: [
-            "application/registration",
-            ],
-        },
+        "application/registration",
+        "application/change_account_info",
         "application/renewal",
         "application/resource_extension",
         {
@@ -480,7 +475,7 @@ module.exports = {
         },
         {
             type: 'category',
-            label: "FAQ : アカウント申請等",
+            label: "FAQ : 各種申請",
             items: [
                 "faq/faq_NewUser_registration",
                 "faq/faq_renewal",

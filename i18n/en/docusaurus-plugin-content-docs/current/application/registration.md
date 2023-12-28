@@ -1,6 +1,6 @@
 ---
 id: registration
-title: "Account Application and Change of Application Details"
+title: "New account registration"
 ---
 
 &#x26A0;  If you have already completed an the account application but without registering your SSH public key, refer to [<u>FAQ : Account Application, etc > Create an NIG supercomputer account</u>](/faq/faq_NewUser_registration/#🆀-when-applying-for-new-use-i-applied-for-use-without-entering-my-ssh-public-key-in-the-usage-registration-application-form-i-have-already-completed-the-application-for-use-but-without-registering-my-ssh-public-key-what-should-i-do).

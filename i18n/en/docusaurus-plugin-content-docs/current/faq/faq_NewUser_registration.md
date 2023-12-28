@@ -1,6 +1,6 @@
 ---
 id: faq_NewUser_registration
-title: "Application for New Use"
+title: "New account registration"
 ---
 
 ## &#x1F180; I want to logout from the application form for use, but I cannot find the logout button.
@@ -57,5 +57,5 @@ Please wait for your account registration certificate to be sent to you by post.
 After you received your account registration certificate, 
 login from the following link and register your SSH public key.
 
-[<u>Change of application details > Account > SSH Key</u>](/application/registration/#change-of-application-details)
+[<u>Change of Account Information > Account > SSH Key</u>](/application/registration)
 

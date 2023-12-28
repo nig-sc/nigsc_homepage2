@@ -16,7 +16,7 @@ $
 ```
 
 
-&#x26A0; アカウントをお持ちの方は、[<u>申請内容の変更</u>](/application/registration/#%E7%94%B3%E8%AB%8B%E5%86%85%E5%AE%B9%E3%81%AE%E5%A4%89%E6%9B%B4)のページから登録してください。
+&#x26A0; アカウントをお持ちの方は、[<u>申請内容の変更</u>](/application/change_account_info)のページから登録してください。
 
 ![](reg_ssh_JP.png)
 

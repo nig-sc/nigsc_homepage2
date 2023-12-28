@@ -24,13 +24,28 @@ SSL-VPN接続の際は二要素認証が行われます。セキュリティー�
 ![figure](howto.png)
 
 
-### <Marker color="#3FCBE7">FortiClientにログインして、SSL-VPN接続を開始する。</Marker>
-
-#### STEP 1. SSL-VPNクライアントソフトウェアのインストール
+### STEP 1. SSL-VPNクライアントソフトウェアのインストール
 
 「[&#x1f517;<u>FortiClient</u>](https://www.fortinet.com/support/product-downloads)」の 公式サイト にアクセスし、FortiClient をダウンロードして、インストールします。
 
 - 公式サイト：&#x1f517;<u>https://www.fortinet.com/support/product-downloads</u>
+
+
+<table>
+<tr>
+<td width="400" valign="top">
+
+![](forticlientonly.png)
+
+</td>
+<td width="400" valign="top">
+
+「Product Downloads」の「FortiClient VPN only」をダウンロードしてください。
+
+</td>
+</tr>
+</table>
+
 
 ダウンロードとインストール方法の詳細は、以下のリンクからをご参照ください。
 
@@ -39,7 +54,17 @@ SSL-VPN接続の際は二要素認証が行われます。セキュリティー�
 - [<u>SSL-VPNクライアントソフトウェアのインストール (Linuxの場合)</u>](/personal_genome_division/pg_login_ssl-vpn_install_linux)
 
 
-#### STEP 2. SSL-VPNへの接続
+### STEP 2. SSL-VPNクライアントの設定
+
+SSL-VPNクライアントのセットアップをします。
+
+設定方法は、以下のリンクをご参照ください。
+- [SSL-VPNクライアントの設定方法(Windowsの場合)](/personal_genome_division/pg_login_ssl-vpn_configure_file_win)
+- [SSL-VPNクライアントの設定方法(Macの場合)](/personal_genome_division/pg_login_ssl-vpn_configure_file_mac)
+- [SSL-VPNクライアントの設定方法(Linuxの場合)](/personal_genome_division/pg_login_ssl-vpn_configure_file_linux)
+
+
+### STEP 3. SSL-VPNへの接続
 
 SSL-VPN接続を行います。
 
@@ -51,9 +76,7 @@ SSL-VPN接続を行います。
 うまくつながらない場合は、[<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear)をご参照ください。
 
 
-### <Marker color="#3FCBE7">ssh接続によりゲートウェイにログインする。</Marker>
-
-#### STEP 3. SSHによるゲートウェイへのログイン
+### STEP 4. SSHによるゲートウェイへのログイン
 
 SSL-VPN接続を開始したら、ユーザの計算機上でターミナルエミュレータを起動し、個人ゲノム解析環境のゲートウェイにログインします。
 
