@@ -17,18 +17,18 @@ Windowsに標準搭載されているPowerShellを例に、ご説明します。
 
 ![](/img/ssh_keys/windows/ssh_win_32.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">新規アカウント申請のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
+<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウント登録システム</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
 
 ![](/img/ssh_keys/windows/ssh_win_33.png)
 
-貼り付けたら、「次へ」ボタンを押して、[利用登録申請フォームへの入力を続けます](/application/registration#アカウント申請)。
+貼り付けたら、「次へ」ボタンを押して、[アカウント申請システムの申請フォームへの入力を続けます](/application/registration)。
 
 ![](/img/ssh_keys/windows/ssh_win_34.png)
 
-[「アカウント申請・変更」のページの「アカウント申請」で、以下の画面のように、"アカウント申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します](/application/registration#アカウント申請)。
+[「アカウントの新規登録」のページで、以下の画面のように、"利用申請登録完了"の画面が表示されると、SSH公開鍵の登録が完了します](/application/registration)。
 
 ![](/img/ssh_keys/windows/ssh_win_35.png)
 
-&#x26A0; アカウントをお持ちの方は、[<u>申請内容の変更</u>](/application/registration/#%E7%94%B3%E8%AB%8B%E5%86%85%E5%AE%B9%E3%81%AE%E5%A4%89%E6%9B%B4)のページから登録してください。
+&#x26A0; アカウントをお持ちの方は、[<u>申請内容の変更</u>](/application/change_account_info)のページから登録してください。
 
 ![](reg_ssh_JP.png)

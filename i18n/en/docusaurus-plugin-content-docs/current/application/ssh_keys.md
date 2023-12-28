@@ -37,7 +37,7 @@ To register or change the SSH public key to the NIG supercomputer, refer to the 
 
 Refer to the '[<u>How to connect to the NIG supercomputer</u>](/application/ssh_keys_connect_NIGsupercomputer)' page.
 
-&#x1f4a1; [<u>If you would like to log in to 'My Page' from the Account Application page, refer to 'Make Application, etc. > Account Application and Change of Application Details > Change of application details'.</u>](/application/registration/#change-of-application-detailsv)
+&#x1f4a1; [<u>If you would like to log in to 'My Page' from the Account Application page, refer to 'Make Application > Change of Account Information'.</u>](/application/change_account_info)
 
 
 
