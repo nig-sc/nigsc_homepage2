@@ -14,7 +14,7 @@ Grid Engine はジョブスケジューラあるいはリソーススケジュ�
 
 参考資料
 
-- [Sun Grid Engine for Dummies (2009)](http://web.archive.org/web/20151011170032/https://blogs.oracle.com/templedf/entry/sun_grid_engine_for_dummies)
+- Sun Grid Engine for Dummies [[PDF]](Sun_Grid_Engine_for_Dummies.pdf) [[Internet Archive]](http://web.archive.org/web/20151011170032/https://blogs.oracle.com/templedf/entry/sun_grid_engine_for_dummies)
 - [「遺伝研スパコンを使った解析の並列化・高速化」 (IIBMP2021 データサイエンティスト養成セッション資料)](https://www.slideshare.net/oogasawa/pptx-251567866)
 - [Altair Grid Engine 公式サイト](https://www.altair.com/grid-engine/)
     - [Introuctory Guide](https://2021.help.altair.com/2021.1/AltairGridEngine/8.7.0/IntroductionGE.pdf)
