@@ -64,7 +64,9 @@ module.exports = {
                 },
             ],
         },
-        {
+        "guides/start_of_use",
+        "guides/introduction",
+        /*{
             type: "doc",
             id: "guides/start_of_use",
             label: "アカウントの新規登録から利用開始までの流れ",
@@ -73,7 +75,7 @@ module.exports = {
             type: "doc",
             id: "guides/introduction",
             label: "ログイン方法の概要",
-        },
+        },*/
         {
             type: "category",
             label: "一般解析区画の使い方",
@@ -521,7 +523,7 @@ module.exports = {
         },
 
     ],
-    oldDocumentsidebar: [
+    oldDocumentsSidebar: [
         {
             type: "category",
             label: "古いドキュメント",
