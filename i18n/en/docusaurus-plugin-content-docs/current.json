@@ -31,14 +31,6 @@
     "message": "Software",
     "description": "The label for category ソフトウェア in sidebar topSidebar"
   },
-  "sidebar.topSidebar.category.アカウントの新規登録から利用開始までの流れ": {
-    "message": "How to start using the system",
-    "description": "The label for category アカウントの新規登録から利用開始までの流れ in sidebar topSidebar"
-  },
-  "sidebar.guidesSidebar.category.ログイン方法の概要": {
-    "message": "Overview of login procedure",
-    "description": "The label for category ログイン方法の概要 in sidebar guidesSidebar"
-  },
   "sidebar.topSidebar.category.一般解析区画の使い方": {
     "message": "The General Analysis Division",
     "description": "The label for category 一般解析区画の使い方 in sidebar topSidebar"
@@ -47,19 +39,19 @@
     "message": "The Personal Genome Analysis Division",
     "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar topSidebar"
   },
-  "sidebar.personal_genome_division.Sidebar.category.ログイン方法（個人ゲノム解析区画）": {
+  "sidebar.topSidebar.category.ログイン方法 (個人ゲノム解析区画)": {
     "message": "How to Login（The Personal Genome Analysis division）",
-    "description": "The label for category ログイン方法（個人ゲノム解析区画） in sidebar personal_genome_divisionSidebar"
+    "description": "The label for category ログイン方法 (個人ゲノム解析区画) in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.SSL-VPNクライアントソフトウェアのインストール方法": {
+  "sidebar.topSidebar.category.SSL-VPNクライアントソフトウェアのインストール方法": {
     "message": "Installing FortiClient VPN Client software",
     "description": "The label for category SSL-VPNクライアントソフトウェアのインストール方法 in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.SSL-VPNクライアントの設定方法": {
+  "sidebar.topSidebar.category.SSL-VPNクライアントの設定方法": {
     "message": "Configure the SSL-VPN client",
     "description": "The label for category SSL-VPNクライアントの設定方法 in sidebar topSidebar"
   },
-  "sidebar.guidesSidebar.category.SSL-VPNへの接続方法": {
+  "sidebar.topSidebar.category.SSL-VPNへの接続方法": {
     "message": "How to connect to the VPN",
     "description": "The label for category SSL-VPNへの接続方法 in sidebar topSidebar"
   },
@@ -82,6 +74,14 @@
   "sidebar.applicationsSidebar.category.パスワード・公開鍵の設定方法": {
     "message": "Set up password and public key",
     "description": "The label for category パスワード・公開鍵の設定方法 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.SSH公開鍵・秘密鍵の生成方法": {
+    "message": "How to generate SSH public and private keys",
+    "description": "The label for category SSH公開鍵・秘密鍵の生成方法 in sidebar applicationsSidebar"
+  },
+  "sidebar.applicationsSidebar.category.遺伝研スパコンへのSSH公開鍵の登録・変更方法": {
+    "message": "How to register or change the SSH public key",
+    "description": "The label for category 遺伝研スパコンへのSSH公開鍵の登録・変更方法 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.課金サービス利用方法": {
     "message": "How to use billing services",
@@ -127,6 +127,14 @@
     "message": "FAQ",
     "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq_software"
   },
+  "sidebar.applicationsSidebar.link.古いドキュメント": {
+    "message": "Old Documents",
+    "description": "The label for link 古いドキュメント in sidebar applicationsSidebar, linking to /faq/faq_software"
+  },
+  "sidebar.oldDocumentsSidebar.category.古いドキュメント": {
+    "message": "Old Documents",
+    "description": "The label for category 古いドキュメント in sidebar oldDocumentsSidebar"
+  },
   "sidebar.advancedGuidesSidebar.category.活用方法": {
     "message": "Advances Guides",
     "description": "The label for category 活用方法 in sidebar advancedGuidesSidebar"
@@ -147,9 +155,9 @@
     "message": "Explanation of Usage",
     "description": "The label for category 利用方法解説 in sidebar advancedGuidesSidebar"
   },
-  "sidebar.operationSidebar.category.稼働状況": {
+  "sidebar.operationInfoSidebar.category.稼働状況": {
     "message": "Operation Info",
-    "description": "The label for category 稼働状況 in sidebar operationiSidebar"
+    "description": "The label for category 稼働状況 in sidebar operationInfoSidebar"
   },
   "sidebar.reportSidebar.category.各種統計": {
     "message": "Statistics",
