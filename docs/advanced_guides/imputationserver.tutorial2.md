@@ -128,7 +128,7 @@ http://localhost:1121
 次にバックエンドワークフローを使用するために少し下にスクロールし、
 Workflows という項目から beagle をクリックします。
 
-![](./imputationserver.tutorial2.Fig5.png)
+![](./imputationserver.tutorial.Fig6-2.png)
 
 Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選択します。
 
@@ -137,18 +137,18 @@ Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選�
 Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。
 このとき、デフォルトで書かれている `{}` を消して、生成したパラメータを入力します。
 
-![](./imputationserver.tutorial2.Fig7.png)
+![](./imputationserver.tutorial2.Fig7-2.png)
 
 一番下にあるExecute ボタンを押して、ワークフローを実行します。
 ジョブの状態がRunning になります。
 
-![](./imputationserver.tutorial2.Fig8.png)
+![](./imputationserver.tutorial2.Fig8-2.png)
 
 正常にワークフローの実行が開始されるとcwltoolでワークフローが実行されます。
 
 正常に終了すると `COMPLETE` になります。
 
-![](./imputationserver.tutorial2.Fig9.png)
+![](./imputationserver.tutorial2.Fig9-2.png)
 
 結果ファイルは、ブラウザから取得が可能です。
 Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されま
