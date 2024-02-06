@@ -76,7 +76,7 @@ If your private key is stored in a location other than `~/.ssh/id_rsa`, specify 
 ssh -i ~/yourpath/id_rsa youraccount@gw.ddbj.nig.ac.jp
 ```
 
-2. Enter the passphrase for the SSH key pair and press enter in "Enter passphrase for key ...".
+2. Enter the passphrase for the SSH key pair(SSH public key and SSH secret key) and press enter in "Enter passphrase for key ...".
 
 Enter "yes" to continue connecting ig the following message is displayed after entering the key passphrase.
 

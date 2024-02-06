@@ -57,5 +57,5 @@ Please wait for your account registration certificate to be sent to you by post.
 After you received your account registration certificate, 
 login from the following link and register your SSH public key.
 
-[<u>Change of Account Information > Account > SSH Key</u>](/application/registration)
+[<u>Change of Account Information > Account > SSH public Key</u>](/application/registration)
 

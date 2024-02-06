@@ -1,6 +1,6 @@
 ---
 slug: 2023-12-27-account_registration_system_outage_NewYearsHoliday
-title: "December 27, 2023 - Junuary 9 30, 2024: Notice of Account Registration System Outage from December 27 to January 9"
+title: "(Ended) December 27, 2023 - Junuary 9 30, 2024: Notice of Account Registration System Outage from December 27 to January 9"
 tags:
   - maintenance
 authros:

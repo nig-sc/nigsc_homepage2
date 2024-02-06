@@ -55,5 +55,5 @@ title: "アカウントの新規登録"
 
 後日アカウント登録証がお手元に届きましたら、下記からログインして、SSH公開鍵の登録作業を行ってください。
 
-[<u>申請内容の変更 > アカウント > SSH鍵</u>](/application/registration)
+[<u>申請内容の変更 > アカウント > SSH公開鍵</u>](/application/registration)
 

@@ -197,7 +197,7 @@ cat id_rsa.pub
 
 ![](/img/ssh_keys/mac/ssh_mac_28.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウントの新規登録のページ</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、command + V を押して、貼り付けます。
+<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウントの新規登録のページ</a>の「アカウント」のページにある「SSH公開鍵」の枠の中をクリックし、command + V を押して、貼り付けます。
 
 ![](/img/ssh_keys/mac/ssh_mac_29.png)
 
