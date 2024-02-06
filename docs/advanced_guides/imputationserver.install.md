@@ -42,7 +42,7 @@ guacamoleの仮想マシンにログインします。
 以下のコマンドを使って、必要なものをインストールし、サービスの実行を行います。
 
 ```
-cp /home/ddbjshare-pg/imputation-desktop/scripts/install.sh install.sh
+cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.sh install.sh
 ./install.sh
 ```
 

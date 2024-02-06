@@ -16,7 +16,7 @@ To select a range and copy that: Left-click the mouse just to the left of the fi
 
 ![](/img/ssh_keys/windows/ssh_win_32.png)
 
-On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Application for new use page</a>, click in the 'SSH key' frame on the 'Account' page, press Ctrl + V to paste them.
+On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Application for new use page</a>, click in the 'SSH public Key' frame on the 'Account' page, press Ctrl + V to paste them.
 
 ![](/img/ssh_keys/windows/ssh_win_33.png)
 
