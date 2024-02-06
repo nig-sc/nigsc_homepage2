@@ -43,7 +43,7 @@ Log in to the guacamole virtual machine.
 Use the following commands to install the essentials and run the service.
 
 ```
-cp /home/ddbjshare-pg/imputation-desktop/scripts/install.sh install.sh
+cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.sh install.sh
 ./install.sh
 ```
 
