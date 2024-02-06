@@ -17,7 +17,7 @@ Windowsに標準搭載されているPowerShellを例に、ご説明します。
 
 ![](/img/ssh_keys/windows/ssh_win_32.png)
 
-<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウント登録システム</a>の「アカウント」のページにある「SSH鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
+<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウント登録システム</a>の「アカウント」のページにある「SSH公開鍵」の枠の中をクリックし、Ctl + Vをして、貼り付けます。
 
 ![](/img/ssh_keys/windows/ssh_win_33.png)
 

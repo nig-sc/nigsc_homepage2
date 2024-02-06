@@ -1,6 +1,6 @@
 ---
 slug: 2023-11-24-scheduled-maintenance
-title: "(Ended)[Maintenance] November 24 - November 30, 2023: Scheduled Maintenance."
+title: "(Ended) [Maintenance] November 24 - November 30, 2023: Scheduled Maintenance."
 tags:
   - maintenance
 authros:

@@ -5,7 +5,7 @@ title: How to register or change the SSH public key to the NIG supercomputer (Li
 
 
 When you check the save location of the key pair, you will find two files, `id_rsa` and `id_rsa.pub`, are created.
-`id_rsa.pub` is the public key, so you can register the public key by copying all character strings from "ssh-rsa" of the file and pasting it into the "SSH Key" below(red frame).
+`id_rsa.pub` is the public key, so you can register the public key by copying all character strings from "ssh-rsa" of the file and pasting it into the "SSH public Key" below(red frame).
 
 ```
 $ ls ~/.ssh
