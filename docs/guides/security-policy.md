@@ -51,7 +51,7 @@ title: 情報セキュリティ方針 (ISO27001)
 - [医療情報システムの安全管理に関するガイドライン　第 6.0 版（令和 5 年 5 月）](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
 - [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン(令和 2 年 8 月（令和 5 年 7 月改定）)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
-- [NBDC ヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
+- [NBDC ヒトデータ取扱いセキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
 - [情報・システム研究機構 情報セキュリティポリシー](/pdf/ROIS_security_policy.pdf)
 - [情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程 (令和 4 年 4 月 5 日改正）](/pdf/nigsc_use_policy_2204.pdf)
 - [情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程　別表１〜３ (令和 5 年 8 月 1 日改正）](/pdf/tables_of_nigsc_use_policy_20230801.pdf)
@@ -76,7 +76,7 @@ title: 情報セキュリティ方針 (ISO27001)
 <p align="right">
 制定：2023 年 6 月 21 日
 
-改定：2023 年 12 月 1 日
+改定：2024 年 2 月  7 日
 
 国立遺伝学研究所 生命情報・ DDBJ センター長　有田正規
 </p>
