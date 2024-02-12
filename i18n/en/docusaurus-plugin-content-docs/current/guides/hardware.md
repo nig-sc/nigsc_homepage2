@@ -230,7 +230,7 @@ HPE Apollo 6500 Gen10
 
 ### Medium compute node (HPE ProLiant DL560 Gen10; 10 computers)
 
-[The medium nodes hardware (that is, HPE ProLiant DL560 Gen10 and HPE Superdome Flex) do not support Ubuntu Linux and could not be migrated from Cent OS 7.9 to Ubuntu Linux 22.04 at the scheduled maintenance in November 2023.](/en/blog/2023-11-24-scheduled-maintenance#work-description)
+[The medium nodes hardware (that is, HPE ProLiant DL560 Gen10 and HPE Superdome Flex) do not support Ubuntu Linux and could not be migrated from Cent OS 7.9 to Ubuntu Linux 22.04 at the scheduled maintenance in November 2023.](/blog/2023-11-24-scheduled-maintenance#work-description)
 
 
 These nodes are compute nodes with 80 cores with 3 TB of physical memory, suitable for running large memory intensive programs such as de novo assembler, etc. You can use it by job submission under Grid Engine.
@@ -253,7 +253,7 @@ HPE ProLiant DL560 Gen10
  
 ### Fat compute node (HPE Superdome Flex; one computer)
 
-[The fat node hardware (that is, HPE ProLiant DL560 Gen10 and HPE Superdome Flex) do not support Ubuntu Linux and could not be migrated from Cent OS 7.9 to Ubuntu Linux 22.04 at the scheduled maintenance in November 2023.](/en/blog/2023-11-24-scheduled-maintenance#work-description)
+[The fat node hardware (that is, HPE ProLiant DL560 Gen10 and HPE Superdome Flex) do not support Ubuntu Linux and could not be migrated from Cent OS 7.9 to Ubuntu Linux 22.04 at the scheduled maintenance in November 2023.](/blog/2023-11-24-scheduled-maintenance#work-description)
 
 A total of 12 TB of shared memory compute nodes are configured by connecting HPE Superdome Flex 2 chassis with Superdome Flex grid interconnects.
 

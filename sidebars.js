@@ -39,6 +39,12 @@ module.exports = {
             items: [
                 "guides/top",
                 {
+                    type: "link",
+                    label: "サイト内検索",
+                    href: "https://sc.ddbj.nig.ac.jp/search"
+                },
+
+                {
                     type: "category",
                     label: "情報セキュリティ方針(ISO27001)",
                     link: {

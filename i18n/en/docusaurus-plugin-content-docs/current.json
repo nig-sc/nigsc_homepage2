@@ -19,6 +19,11 @@
     "message": "Maintenance Info",
     "description": "The label for link メンテナンス情報 in sidebar operationInfoSidebar, linking to /blog/tags/maintenance"
   },
+  "sidebar.topSidebar.link.サイト内検索": {
+    "message": "Site Search",
+    "description": "The label for link サイト内検索 in sidebar operationInfoSidebar, linking to https://sc.ddbj.nig.ac.jp/search"
+  },
+
   "sidebar.topSidebar.category.システム構成": {
     "message": "System Overview",
     "description": "The label for category システム構成 in sidebar topSidebar"

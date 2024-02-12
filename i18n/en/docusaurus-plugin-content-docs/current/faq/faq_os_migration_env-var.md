@@ -162,7 +162,7 @@ source /opt/pkg/intel/oneapi/setvars.sh
 
 ## &#x1F180; I would like to use DRMAA, but the library path I have been using is not available. It seems to change from `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` that I have been using due to the scheduled maintenance.
 
-&#x1F150;  The DRMAA libraries were changed to the following paths along with [the AGE version upgrade (8.6.19/8.6.4 → 8.8.1)](/en/blog/2023-11-24-scheduled-maintenance/#software-version-upgrade-details).
+&#x1F150;  The DRMAA libraries were changed to the following paths along with [the AGE version upgrade (8.6.19/8.6.4 → 8.8.1)](/blog/2023-11-24-scheduled-maintenance/#software-version-upgrade-details).
 Please use the libraries located in the following paths.
 
 ```

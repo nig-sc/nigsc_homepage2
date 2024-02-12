@@ -98,7 +98,14 @@ module.exports = {
         {
           type: 'localeDropdown',
           position: 'right'
-        }
+        },
+
+        {
+          type: 'html',
+          position: 'right',
+          value: ` <a href="https://sc.ddbj.nig.ac.jp/search"><img src="/img/search.png" height="45" width="200" /></a>`,
+        },
+
       ]
     },
     footer: {
@@ -163,11 +170,6 @@ module.exports = {
   }),
 
   plugins: [
-    [
-      require.resolve('docusaurus-lunr-search'), {
-        languages: ['ja', 'en']
-      }
-    ],
     [
       async function pluginBlogGlobalData (context, options) {
         const plugin = await pluginContentBlog(context, options)
