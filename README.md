@@ -1,6 +1,6 @@
 # NIG Supercomputer Home Page (version 2)
 
-The NIG Supercomputer home page ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The NIG Supercomputer home page ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus ver3](https://docusaurus.io/), a modern static website generator.
 
 ## Installing Node.js 
 
@@ -15,8 +15,9 @@ Please check the following page to see what the latest version is. https://githu
 
 2. Activate nvm by running `source ~/.bashrc` or similar command.
 3. Run `nvm ls-remote` to display the available node.js versions.
-4. Install Node.js with `nvm install` command, for example `nvm install v16.18.1`.  (Please select the appropriate version of node.js from the output of the aforementioned command and use it.)
-5. Activate Node.js with `nvm use v16.18.1`.
+4. Install Node.js with `nvm install` command, for example `nvm install v18.18.2`.  (Please select the appropriate version of node.js from the output of the aforementioned command and use it.)
+5. Activate Node.js with `nvm use v18.18.2`.
+6. Install TypeScript and other tools with `nvm install -g typescript @types/node ts-node yarn eslint`
 
 ## Displaying for editing
 
@@ -76,7 +77,7 @@ sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html
 
 # NIG スーパーコンピュータホームページ（バージョン 2）
 
-NIG Supercomputer ホームページ( https://sc.ddbj.nig.ac.jp )は、新しい静的ウェブサイト生成ツールである[Docusaurus 2](https://docusaurus.io/) を使って構築されています。
+NIG Supercomputer ホームページ( https://sc.ddbj.nig.ac.jp )は、新しい静的ウェブサイト生成ツールである[Docusaurus ver3](https://docusaurus.io/) を使って構築されています。
 
 ## Node.js のインストール
 
@@ -92,8 +93,9 @@ curl -o https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 2. `source ~/.bashrc` などのコマンドを実行して、nvm を起動します。
 3. `nvm ls-remote` を実行して、利用可能な node.js のバージョンを表示します。
-4. nvm install` コマンドで Node.js をインストールします。例: `nvm install v16.18.1`。(前述のコマンドの出力から適切なバージョンの node.js を選択し、使用してください)
-5. `nvm use v16.18.1` を実行して Node.js を有効化する。
+4. nvm install` コマンドで Node.js をインストールします。例: `nvm install v18.18.2`。(前述のコマンドの出力から適切なバージョンの node.js を選択し、使用してください)
+5. `nvm use v18.18.2` を実行して Node.js を有効化する。
+6. TypeScriptおよびツール類をインストールする。`nvm install -g typescript @types/node ts-node yarn eslint`
 
 ## web サイトの編集用表示
 
