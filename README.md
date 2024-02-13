@@ -1,6 +1,6 @@
 # NIG Supercomputer Home Page (version 2)
 
-The NIG Supercomputer home page ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus ver3](https://docusaurus.io/), a modern static website generator.
+The NIG Supercomputer home page ( https://sc.ddbj.nig.ac.jp ) is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Installing Node.js 
 
@@ -77,7 +77,7 @@ sudo -u www-data rm -Rf /var/www/html ; sudo -u www-data mv build /var/www/html
 
 # NIG スーパーコンピュータホームページ（バージョン 2）
 
-NIG Supercomputer ホームページ( https://sc.ddbj.nig.ac.jp )は、新しい静的ウェブサイト生成ツールである[Docusaurus ver3](https://docusaurus.io/) を使って構築されています。
+NIG Supercomputer ホームページ( https://sc.ddbj.nig.ac.jp )は、新しい静的ウェブサイト生成ツールである[Docusaurus 3](https://docusaurus.io/) を使って構築されています。
 
 ## Node.js のインストール
 
