@@ -16,7 +16,7 @@ import ErrorPageContent from '@theme/ErrorPageContent'
 import DDBJNavbar from './DDBJNavbar'
 
 import './styles.css'
-import ConsentCookie from '../../components/ConsentCookie'
+//import ConsentCookie from '../../components/ConsentCookie'
 
 export default function Layout (props: Props): JSX.Element {
   const {
@@ -46,7 +46,6 @@ export default function Layout (props: Props): JSX.Element {
 
       {!noFooter && <Footer />}
 
-      <ConsentCookie />
     </LayoutProviders>
   )
 }
