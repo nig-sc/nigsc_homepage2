@@ -3,7 +3,7 @@ id: registration
 title: "アカウントの新規登録"
 ---
 
-&#x26A0;アカウントの新規登録は完了しているが、SSH公開鍵を登録し忘れた、SSH公開鍵だけ変更したいという場合は、[<u>FAQ : 各種申請 > アカウントの新規登録</u>](/faq/faq_NewUser_registration#%F0%9F%86%80-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%96%B0%E8%A6%8F%E7%99%BB%E9%8C%B2%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%ABssh%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E3%81%97%E3%81%AA%E3%81%84%E3%81%BE%E3%81%BE%E7%99%BB%E9%8C%B2%E3%82%92%E5%AE%8C%E4%BA%86%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%84%E3%81%BE%E3%81%97%E3%81%9Fssh%E5%85%AC%E9%96%8B%E9%8D%B5%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C%E3%81%A9%E3%81%86%E3%81%97%E3%81%9F%E3%82%89%E3%82%88%E3%81%84%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)をご参照ください。
+&#x26A0;アカウントの新規登録は完了しているが、SSH 公開鍵を登録し忘れた、SSH 公開鍵だけ変更したいという場合は、[<u>FAQ : 各種申請 > アカウントの新規登録</u>](/faq/faq_NewUser_registration#%F0%9F%86%80-%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E6%96%B0%E8%A6%8F%E7%99%BB%E9%8C%B2%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%ABssh%E5%85%AC%E9%96%8B%E9%8D%B5%E3%81%AE%E7%99%BB%E9%8C%B2%E3%82%92%E3%81%97%E3%81%AA%E3%81%84%E3%81%BE%E3%81%BE%E7%99%BB%E9%8C%B2%E3%82%92%E5%AE%8C%E4%BA%86%E3%81%97%E3%81%A6%E3%81%97%E3%81%BE%E3%81%84%E3%81%BE%E3%81%97%E3%81%9Fssh%E5%85%AC%E9%96%8B%E9%8D%B5%E3%82%92%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C%E3%81%A9%E3%81%86%E3%81%97%E3%81%9F%E3%82%89%E3%82%88%E3%81%84%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)をご参照ください。
 
 
 
@@ -11,7 +11,7 @@ title: "アカウントの新規登録"
 
 - アカウントの新規登録が受理されると高速ストレージ 1TB が利用可能となります。
 - 利用可能なストレージ領域を拡張したい場合や課金サービスを利用したい場合は、アカウントの新規登録が受理されたあとで[<u>利用計画表を提出</u>](/application/resource_extension)してください。
-  - &#x26A0;現在、個人ゲノム解析区画および一般解析区画大規模ユーザのアカウントの新規登録の受付を停止しております。詳細は[<u>こちらのお知らせをご参照ください</u>](/blog/2022-05-13-suspension-of-applications)。
+  - &#x26A0;現在、個人ゲノム解析区画および一般解析区画大規模ユーザのアカウントの新規登録の受付を停止しております。詳細は[こちらのお知らせをご参照ください](/blog/2022-05-13-suspension-of-applications)。
 
 
 ### アカウントの新規登録手順
@@ -25,14 +25,14 @@ title: "アカウントの新規登録"
 </td>
 <td width="400" valign="top">
 
-<font size="5">まず、SSH公開鍵を生成します。</font><br/>
+<font size="5">まず、SSH 公開鍵を生成します。</font><br/>
 
-次のステップでアカウントの新規登録をする際に、SSH公開鍵の登録も一緒に行います。このため、事前に生成しておきます。<br/>
+次のステップでアカウントの新規登録をする際に、SSH 公開鍵の登録も一緒に行います。このため、事前に生成しておきます。<br/>
 生成方法は、以下をご参照ください。
 
-1. [<u>Windowsの場合</u>](/application/ssh_keys_ssh-keygen_win)
-2. [<u>Macの場合</u>](/application/ssh_keys_ssh-keygen_mac)
-3. [<u>Linuxの場合</u>](/application/ssh_keys_ssh-keygen_linux)
+1. [<u>Windows の場合</u>](/application/ssh_keys_ssh-keygen_win)
+2. [<u>Mac の場合</u>](/application/ssh_keys_ssh-keygen_mac)
+3. [<u>Linux の場合</u>](/application/ssh_keys_ssh-keygen_linux)
 
 </td>
 </tr>
@@ -53,7 +53,7 @@ title: "アカウントの新規登録"
 - メールアドレスは誤送信対策のためフリーメールではなく所属機関のメールアドレスを記載してください。
 - 利用目的は正確に記載してください。ここで記載した利用目的以外でのスパコンの利用は禁止しています。
 - 間違ったメールアドレスを入力した場合、誤送信により申請情報が漏洩する可能性がありますが、責任を負いかねますので、お気を付けください。
-- JGA や AGD のアカウントをすでにお持ちの場合は「JGAアカウント」や「AGDアカウント」に入力してください。
+- JGA や AGD のアカウントをすでにお持ちの場合は「JGA アカウント」や「AGD アカウント」に入力してください。
 持っていない場合は何も入力しないでください。
 
 </td>
@@ -83,12 +83,12 @@ title: "アカウントの新規登録"
 </td>
 <td>
 
-<font size="5">次に、一番最初に生成したSSH公開鍵を、アカウント登録システムの申請フォームにコピー&ペーストして登録します。</font><br/>
+<font size="5">次に、一番最初に生成した SSH 公開鍵を、アカウント登録システムの申請フォームにコピー&ペーストして登録します。</font><br/>
 
 コピー&ペーストして登録する方法は、以下をご参照ください。<br/>
-1. [<u>Windowsの場合</u>](/application/ssh_keys_register_win)
-2. [<u>Macの場合</u>](/application/ssh_keys_register_mac)
-3. [<u>Linuxの場合</u>](/application/ssh_keys_register_linux)
+1. [<u>Windows の場合</u>](/application/ssh_keys_register_win)
+2. [<u>Mac の場合</u>](/application/ssh_keys_register_mac)
+3. [<u>Linux の場合</u>](/application/ssh_keys_register_linux)
 
 
 :::note

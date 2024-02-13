@@ -3,7 +3,6 @@ id: pg_login
 title: "How to Login（The Personal Genome Analysis division）"
 ---
 
-import Marker from '@site/src/components/Marker';
 
 ## Introduction
 

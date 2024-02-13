@@ -4,31 +4,30 @@ title: "データ転送（個人ゲノム解析区画）"
 ---
 
 
-## SSHプロトコルによるファイル転送の方法 (scp, sftp)
+## SSH プロトコルによるファイル転送の方法 (scp, sftp)
 
-個人ゲノム解析区画のゲートウェイサーバ(gwa.ddbj.nig.ac.jp)に対してscp, sftp等を用いたファイル転送が可能です。
+個人ゲノム解析区画のゲートウェイサーバ(`gwa.ddbj.nig.ac.jp`)に対して `scp`, `sftp` 等を用いたファイル転送が可能です。
 
-例:
+Linux または Mac の場合の例：
 
-```
-scp your_file.txt youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount/data
-```
+この状態で、カレントディレクトリにある`your_file.txt`ファイルを遺伝研スパコンに `scp` するには、
+以下のコマンドを実行します。（ここで`you`は、遺伝研スパコンのアカウント名です。）
 
-<details>
-<summary>
-&#x1F180; 個人のノートパソコンのダウンロードフォルダに保存されているファイルを転送する方法がわかりません。</summary>
-
-<p>
-
-&#x1F150; WindowsのPowerShellを使ってscpする方法は以下のとおりです。
-
-1. まずPowerShellを起動します。そうすると、デフォルトの場合では、Windows内のホームディレクトリがカレントディレクトリになった状態でPowerShellが起動します(ここで"user"はユーザ名)。この状態で以下のコマンドを実行して、SSH秘密鍵が以下の位置にあることを確認します。この場合のSSH秘密鍵は、id_rsaファイルのことです。
+ここで`you`は、遺伝研スパコンのアカウント名です。
 
 ```
-PS C:\Users\user> ls .ssh
+scp your_file.txt you@gwa.ddbj.nig.ac.jp:/home/you
+```
+
+Windows (PowerShell) の場合の例:
+
+1. まず PowerShell を起動します。そうすると、デフォルトの場合では、Windows 内のホームディレクトリがカレントディレクトリになった状態で PowerShell が起動します(ここで"youwin" は Windows のアカウント名)。この状態で以下のコマンドを実行して、SSH 秘密鍵ファイルが以下の位置にあることを確認します。この場合の SSH 秘密鍵ファイルは、`id_rsa` ファイルのことです。
+
+```
+PS C:\Users\youwin> ls .ssh
 
 
-    Directory: C:\Users\user\.ssh
+    Directory: C:\Users\youwin\.ssh
 
 
 Mode                 LastWriteTime         Length Name
@@ -39,17 +38,15 @@ Mode                 LastWriteTime         Length Name
 -a----        2024/01/22     12:41           5453 known_hosts.old
 ```
 
-2. この状態で、ダウンロードフォルダのyour_file.txtファイルをスパコンにscpするには、以下のコマンドを実行します。（ここで"useraccount"は、遺伝研スパコンのアカウント名です。）
+2. この状態で、ダウンロードフォルダ(`Downloads`)の中にある`your_file.txt`ファイルを遺伝研スパコンに `scp` するには、
+以下のコマンドを実行します。（ここで`you`は、遺伝研スパコンのアカウント名です。）
 
 ```
-PS C:\Users\user> scp .\Downloads\your_file.txt
-youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount
+PS C:\Users\youwin> scp .\Downloads\your_file.txt
+you@gwa.ddbj.nig.ac.jp:/home/you
 ```
 
-</p>
-</details>
 
-
-## HCPtoolsによるファイル転送の方法
+## HCPtools によるファイル転送の方法
 
 転送方法は、[HCPtools の使い方](/software/Archaea_tools)をご参照下さい。

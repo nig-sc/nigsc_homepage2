@@ -9,27 +9,21 @@ title: "Data file transfer（The Personal Genome Analysis division）"
 
 You can transfer files using scp, sftp, etc. to the gateway server (gwa.ddbj.nig.ac.jp) of the personal genome analysis division.
 
-Example :
+Example on Linux and Mac :
 
 ```
-scp your_file.txt youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount/data
+scp your_file.txt you@gwa.ddbj.nig.ac.jp:/home/you
 ```
 
-<details>
-<summary>
-&#x1F180; I don't know how to transfer files stored in the downloads folder on my personal laptop. </summary>
+Example on Windows (PowerShell)
 
-<p>
-
-&#x1F150; Using PowerShell in Windows to scp is as follows.
-
-1. At first, start PowerShell. Then, by default, PowerShell starts with your home directory in Windows as the current directory ("user" is your user name). Execute the following command to check that the SSH private key is in the following location. In this case, the SSH private key is the id_rsa file.
+1. At first, start PowerShell. Then, by default, PowerShell starts with your home directory in Windows as the current directory ("youwin" is your Windows user name). Execute the following command to check that the SSH private key is in the following location. In this case, the SSH private key is the id_rsa file.
 
 ```
-PS C:\Users\user> ls .ssh
+PS C:\Users\youwin> ls .ssh
 
 
-    Directory: C:\Users\user\.ssh
+    Directory: C:\Users\youwin\.ssh
 
 
 Mode                 LastWriteTime         Length Name
@@ -40,15 +34,13 @@ Mode                 LastWriteTime         Length Name
 -a----        2024/01/22     12:41           5453 known_hosts.old
 ```
 
-2. In this state, to scp the your_file.txt file in the download folder to the supercomputer, execute the following command. ("useraccount" is the account name of the NIG supercomputer).
+2. In this state, to scp the your_file.txt file in the download folder to the supercomputer, execute the following command. ("you" is the account name of the NIG supercomputer).
 
 ```
-PS C:\Users\user> scp .\Downloads\your_file.txt
-youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount
+PS C:\Users\youwin> scp .\Downloads\your_file.txt
+you@gwa.ddbj.nig.ac.jp:/home/you
 ```
 
-</p>
-</details>
 
 
 ## How to transfer files using HCPtools

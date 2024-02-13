@@ -4,18 +4,18 @@ title: データ転送（一般解析区画）
 ---
 
 
-遺伝研スパコンの一般解析区画へのデータのアップロード・ダウンロードについては現在以下の2つの方法が利用可能です。
+遺伝研スパコンの一般解析区画へのデータのアップロード・ダウンロードについては現在以下の 2 つの方法が利用可能です。
 
 
 - scp, sftp
 - Aspera
 
 
-##  SSHプロトコルによるファイル転送の方法 (scp, sftp)
+##  SSH プロトコルによるファイル転送の方法 (scp, sftp)
 
-遺伝研スパコンの一般解析区画のゲートウェイサーバ(`gw.ddbj.nig.ac.jp`)に対してscp, sftp等を用いたファイル転送が可能です。
+遺伝研スパコンの一般解析区画のゲートウェイサーバ(`gw.ddbj.nig.ac.jp`)に対して scp, sftp 等を用いたファイル転送が可能です。
 
-例:
+Linux または Mac の例:
 
 ```
 scp your_file.txt youraccount@gw.ddbj.nig.ac.jp:/home/youraccount/data
@@ -24,15 +24,10 @@ scp your_file.txt youraccount@gw.ddbj.nig.ac.jp:/home/youraccount/data
 - 「your_file.txt」は、転送したいファイル名に変えて実行してください。
 - 「youraccount」は、アカウント登録証に記載されているユーザのアカウント名に変えて実行ください。
 
-<details>
-<summary>
-&#x1F180; 個人のノートパソコンのダウンロードフォルダに保存されているファイルを転送する方法がわかりません。</summary>
 
-<p>
+Windows (PowerShell)の例
 
-&#x1F150; WindowsのPowerShellを使ってscpする方法は以下のとおりです。
-
-1. まずPowerShellを起動します。そうすると、デフォルトの場合では、Windows内のホームディレクトリがカレントディレクトリになった状態でPowerShellが起動します(ここで"user"はユーザ名)。この状態で以下のコマンドを実行して、SSH秘密鍵が以下の位置にあることを確認します。この場合のSSH秘密鍵は、id_rsaファイルのことです。
+1. まず PowerShell を起動します。そうすると、デフォルトの場合では、Windows 内のホームディレクトリがカレントディレクトリになった状態で PowerShell が起動します(ここで"user"はユーザ名)。この状態で以下のコマンドを実行して、SSH 秘密鍵が以下の位置にあることを確認します。この場合の SSH 秘密鍵は、id_rsa ファイルのことです。
 
 ```
 PS C:\Users\user> ls .ssh
@@ -49,22 +44,20 @@ Mode                 LastWriteTime         Length Name
 -a----        2024/01/22     12:41           5453 known_hosts.old
 ```
 
-2. この状態で、ダウンロードフォルダのyour_file.txtファイルをスパコンにscpするには、以下のコマンドを実行します。（ここで"useraccount"は、遺伝研スパコンのアカウント名です。）
+2. この状態で、ダウンロードフォルダの your_file.txt ファイルをスパコンに scp するには、以下のコマンドを実行します。（ここで"useraccount"は、遺伝研スパコンのアカウント名です。）
 
 ```
 PS C:\Users\user> scp .\Downloads\your_file.txt
 youraccount@gw.ddbj.nig.ac.jp:/home/youraccount
 ```
 
-</p>
-</details>
 
 
-## Asperaの利用方法
+## Aspera の利用方法
 
-Asperaは大容量のファイル転送を効率的に行う商用ソフトウェアです。
+Aspera は大容量のファイル転送を効率的に行う商用ソフトウェアです。
 特に遠距離との通信の際の転送速度の劣化が少ないことと、きちんとチューニングすれば理論帯域幅にかなり近い転送速度が実現できることが特徴です。
-遺伝研スパコンでは合計帯域幅上限10GbpsのAsperaサーバーを導入し運用しています。
-（遺伝研の総帯域幅は30Gbpsです。）
+遺伝研スパコンでは合計帯域幅上限 10Gbps の Aspera サーバーを導入し運用しています。
+（遺伝研の総帯域幅は 30Gbps です。）
 
 利用方法については[システム構成 > ソフトウェア > Aspera](../software/aspera/aspera.md) を参照してください。

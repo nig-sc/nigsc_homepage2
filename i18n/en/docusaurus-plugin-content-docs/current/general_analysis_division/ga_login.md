@@ -3,42 +3,6 @@ id: ga_login
 title: "How to Login (The general analysis division)"
 ---
 
-[<u>Before logging in, you need to complete the NIG supercomputer account application.</u>](/application/registration)
-
-<details>
-<summary>
-The process for applying for an account is as follows.</summary>
-
-<p>
-
-[<u>For more information on the procedure, click here to read 'Account Application and Change of Application Details'.</u>](/application/registration)
-
-
-**1. [How to generate SSH public and private keys](/application/ssh_keys#1-%E5%85%AC%E9%96%8B%E9%8D%B5%E7%A7%98%E5%AF%86%E9%8D%B5%E3%81%AE%E7%94%9F%E6%88%90)**
-
-**2. [Account Application](/application/registration#%E5%88%A9%E7%94%A8%E7%94%B3%E8%AB%8B)**
-
-Register the following information:
-- Applicant information
-- Address of your organisation
-- SSH public key generated in 1.
-- Responsible person information
-
-**3. Completed account application**
-
-After you complete your account application, [<u>an e-mail will be sent to you asking you to sign a pledge form, then sign it.</u>](/application/signing_PDF)
-
-
-When your signature is accepted, you will receive your account registration card by post and will be able to log in to the NIG supercomputer system.
-
-See below to learn how to log in it.
-
-- [How to Login to the NIG supercomputer system](/general_analysis_division/ga_login#%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E6%89%8B%E9%A0%86)
-- [How to log in to 'My Page' on the account application form.](/application/registration#%E7%94%B3%E8%AB%8B%E5%86%85%E5%AE%B9%E3%81%AE%E5%A4%89%E6%9B%B4)
-
-</p>
-</details>
-
 
 ## Introduction
 

@@ -8,127 +8,132 @@ title: Hardware
 <table>
 <tbody>
 <tr>
-    <th colspan="3">Classification</th>
-    <th>Specifications</th>
+<th colspan="3">Classification</th>
+<th>Specifications</th>
 </tr>
 <tr>
-    <td rowspan="6">
-    Compute Nodes
-    <br /><br/><br/><br />
-	15,424 CPU cores<br /><br />
-	933.560 TFLOPS<br />
-	(CPU: 434.360 TFLOPS, GPU: 499.2 TFLOPS)<br /><br />
-	153.088 TB total memory
-    </td>	
-	<td rowspan="4">
-    Thin nodes
-        <br />Total: 232 units<br/><br/>
-   Total number of CPU cores: 14,336<br />
-    Total computing performance: 844.472 TFLOPS<br />
-    (CPU: 345.272 TFLOPS, GPU: 499.2 TFLOPS)<br />
-    Total memory capacity 110.080 TB
-    </td>
-    <td>
-    Type 1a<br />
-	AMD EPYC 7501 CPU.<br />
-    </td>
-    <td>
-    136 nodes<br />
-	8,704 CPU cores<br />
-	139.264 TFLOPS<br />
-    69.632 TB total memory（8GB memory/CPU core）<br/>
-    </td>
+<td rowspan="6">
+Compute Nodes
+<br /><br/><br/><br />
+15,424 CPU cores<br /><br />
+933.560 TFLOPS<br />
+(CPU: 434.360 TFLOPS, GPU: 499.2 TFLOPS)<br /><br />
+153.088 TB total memory
+</td> 
+<td rowspan="4">
+Thin nodes
+<br />Total: 232 units<br/><br/>
+Total number of CPU cores: 14,336<br />
+Total computing performance: 844.472 TFLOPS<br />
+(CPU: 345.272 TFLOPS, GPU: 499.2 TFLOPS)<br />
+Total memory capacity 110.080 TB
+</td>
+<td>
+Type 1a<br />
+AMD EPYC 7501 CPU.<br />
+</td>
+<td>
+136 nodes<br />
+8,704 CPU cores<br />
+139.264 TFLOPS<br />
+69.632 TB total memory（8GB memory/CPU core）<br/>
+</td>
 </tr>
 <tr>
-    <td>
-    Type 1b<br />
-	AMD EPYC 7702 CPU. (Expansion in April 2020)
-    </td>
-	<td>
-    28 nodes<br />
-	3,584 CPU cores<br />
-	57.344 TFLOPS<br />
-	14.336 TB total memory (4GB memory/CPU core)
-    </td>
+<td>
+Type 1b<br />
+AMD EPYC 7702 CPU. (Expansion in April 2020)
+</td>
+<td>
+28 nodes<br />
+3,584 CPU cores<br />
+57.344 TFLOPS<br />
+14.336 TB total memory (4GB memory/CPU core)
+</td>
 </tr>
 <tr>
-    <td>
-    Type 2a<br />
-	Intel Xeon Gold 6130 CPU
-    </td>
-    <td>
-    52 nodes<br />
-    1,664 CPU cores<br />
-	111.800 TFLOPS<br />
-	19.968 TB total memory (12GB memory/CPU core)
-    </td>
+<td>
+Type 2a<br />
+Intel Xeon Gold 6130 CPU
+</td>
+<td>
+52 nodes<br />
+1,664 CPU cores<br />
+111.800 TFLOPS<br />
+19.968 TB total memory (12GB memory/CPU core)
+</td>
 </tr>
 <tr>
-    <td>
-    Type 2b<br />
-	GPU installed
-    </td>
-	<td>16 nodes<br />
-	384 CPU cores<br />
-    64GPUs (4 GPU/node)<br />
-	536.064 TFLOPS<br />
-	(CPU: 36.864 TFLOPS, GPU: 499.2 TFLOPS)<br />
-	6.144 TB total memory (16GB moemory/CPU core)
-    </td>
+<td>
+Type 2b<br />
+GPU installed
+</td>
+<td>
+16 nodes<br />
+384 CPU cores<br />
+64GPUs (4 GPU/node)<br />
+536.064 TFLOPS<br />
+(CPU: 36.864 TFLOPS, GPU: 499.2 TFLOPS)<br />
+6.144 TB total memory (16GB moemory/CPU core)
+</td>
 </tr>
 <tr>
-    <td colspan="2">
-    Medium node<br />
-    3TB of shared memory installed
-    </td>
-	<td>
-    10 nodes<br />
-	800 CPU cores<br />
-	61.440 TFLOPS<br />
-	30.72 TB total memory (38.4GB memory/CPU core)
-    </td>
-</tr>
-    <tr>
-	<td colspan="2">
-    Fat node<br />
-    12TB of shared memory</td>
-	<td>
-    1 node<br />
-	288 CPU cores<br />
-	27.648 TFLOPS<br />
-	12.288 TB total memory (42.7GB memory/CPU core)
-    </td>
+<td colspan="2">
+Medium node<br />
+3TB of shared memory installed
+</td>
+<td>
+10 nodes<br />
+800 CPU cores<br />
+61.440 TFLOPS<br />
+30.72 TB total memory (38.4GB memory/CPU core)
+</td>
 </tr>
 <tr>
-    <td rowspan="2">
-    Storage
-    <br /><br />
-    Total storage capacity: 57.6PB
-    </td>
-	<td colspan="2">
-    Analysis storage(*1)<br />
-    For user home directories in the general analysis division and personal genome analysis division.
-    </td>
-	<td>Lustre file system<br />
-	13.3PB</td>
+<td colspan="2">
+Fat node<br />
+12TB of shared memory
+</td>
+<td>
+1 node<br />
+288 CPU cores<br />
+27.648 TFLOPS<br />
+12.288 TB total memory (42.7GB memory/CPU core)
+</td>
 </tr>
 <tr>
-    <td colspan="2">
-	Database storage<br />
-    For DDBJ database including DRA
-    </td>
-	<td>Lustre file system<br />
-	40.5PB
-    </td>
+<td rowspan="2">
+Storage
+<br /><br />
+Total storage capacity: 57.6PB
+</td>
+<td colspan="2">
+Analysis storage(*1)<br />
+For user home directories in the general analysis division and personal genome analysis division.
+</td>
+<td>
+Lustre file system<br />
+13.3PB
+</td>
 </tr>
 <tr>
-			<td colspan="3">Inter-node interconnect network</td>
-			<td>
-            InfiniBand 4×EDR 100Gbps fat tree<br />
-            (For storage, full bi-division; for compute nodes, connection bandwidth to upstream SW : connection bandwidth to downstream SW = 1:4)
-            </td>
-		</tr>
-	</tbody>
+<td colspan="2">
+Database storage<br />
+For DDBJ database including DRA
+</td>
+<td>
+Lustre file system<br />
+40.5PB
+</td>
+</tr>
+<tr>
+<td colspan="3">Inter-node interconnect network</td>
+<td>
+InfiniBand 4×EDR 100Gbps fat tree<br />
+(For storage, full bi-division; for compute nodes, connection bandwidth to upstream SW : connection bandwidth to downstream SW = 1:4)
+</td>
+</tr>
+</tbody>
 </table>
 
 

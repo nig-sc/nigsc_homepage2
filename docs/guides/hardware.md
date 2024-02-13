@@ -4,129 +4,151 @@ title: "ハードウェア"
 ---
 
 ## システム全体
+
 <table>
 <tbody>
 <tr>
-    <th colspan="3">機器分類</th>
-    <th>機器諸元</th>
+<th colspan="3">機器分類</th>
+<th>機器諸元</th>
 </tr>
 <tr>
-    <td rowspan="6">
-    計算ノード
-    <br /><br/><br/>
-	総 CPU コア数: 15,424<br />
-	合計演算性能 933.560 TFLOPS<br />
-	(CPU: 434.360 TFLOPS, GPU: 499.2 TFLOPS)<br />
-	総メモリ容量 153.088 TB
-    </td>	
-	<td rowspan="4">
-    Thin 計算ノード
-    <br />合計 232台<br/><br/>
-    総 CPU コア数: 14,336<br />
-    合計演算性能 844.472 TFLOPS<br />
-    (CPU: 345.272 TFLOPS, GPU: 499.2 TFLOPS)<br />
-    総メモリ容量 110.080 TB
-    </td>
-    <td>
-    Type 1a<br />
-	CPU に AMD EPYC 7501 を搭載<br />
-    </td>
-    <td>
-    ノード数: 136 台<br />
-	総 CPU コア数: 8,704<br />
-	合計演算性能: 139.264 TFLOPS<br />
-	総メモリ容量 69.632 TB（コアあたり 8GB）<br/>
-    </td>
+<td rowspan="6">
+計算ノード
+<br /><br/><br/>
+総 CPU コア数: 15,424<br />
+合計演算性能 933.560 TFLOPS<br />
+(CPU: 434.360 TFLOPS, GPU: 499.2 TFLOPS)<br />
+総メモリ容量 153.088 TB
+</td>	
+<td rowspan="4">
+Thin 計算ノード
+<br />合計 232 台<br/><br/>
+総 CPU コア数: 14,336<br />
+合計演算性能 844.472 TFLOPS<br />
+(CPU: 345.272 TFLOPS, GPU: 499.2 TFLOPS)<br />
+総メモリ容量 110.080 TB
+</td>
+<td>
+Type 1a<br />
+CPU に AMD EPYC 7501 を搭載<br />
+</td>
+<td>
+ノード数: 136 台<br />
+総 CPU コア数: 8,704<br />
+合計演算性能: 139.264 TFLOPS<br />
+総メモリ容量 69.632 TB（コアあたり 8GB）<br/>
+</td>
 </tr>
 <tr>
-    <td>
-    Type 1b<br />
-	CPU に AMD EPYC 7702 を搭載（2020 年 4 月増設
-    </td>
-	<td>
-    ノード数: 28 台<br />
-	総 CPU コア数: 3,584<br />
-	合計演算性能: 57.344 TFLOPS<br />
-	総メモリ容量 14.336 TB（コアあた 4GB）
-    </td>
+<td>
+Type 1b<br />
+CPU に AMD EPYC 7702 を搭載（2020 年 4 月増設
+</td>
+<td>
+ノード数: 28 台<br />
+総 CPU コア数: 3,584<br />
+合計演算性能: 57.344 TFLOPS<br />
+総メモリ容量 14.336 TB（コアあた 4GB）
+</td>
 </tr>
 <tr>
-    <td>
-    Type 2a<br />
-	CPU に Intel Xeon Gold 6130 を搭載
-    </td>
-    <td>
-    ノード数: 52 台<br />
-	総 CPU コア数: 1,664<br />
-	合計演算性能 111.800 TFLOPS<br />
-	総メモリ容量 19.968 TB (コアあたり 12GB)
-    </td>
+<td>
+Type 2a<br />
+CPU に Intel Xeon Gold 6130 を搭載
+</td>
+<td>
+ノード数: 52 台<br />
+総 CPU コア数: 1,664<br />
+合計演算性能 111.800 TFLOPS<br />
+総メモリ容量 19.968 TB (コアあたり 12GB)
+</td>
 </tr>
 <tr>
-    <td>
-    Type 2b<br />
-	GPU 搭載
-    </td>
-	<td>ノード数: 16 台<br />
-	総 CPU コア数: 384<br />
-    総 GPU 数: 64 基(1 ノードあたり 4 基)<br />
-	合計演算性能: 536.064 TFLOPS<br />
-	(CPU: 36.864 TFLOPS, GPU: 499.2 TFLOPS)<br />
-	総メモリ容量 6.144 TB (コアあたり 16GB)
-    </td>
+<td>
+
+Type 2b<br />
+GPU 搭載
+
+</td>
+<td>
+
+ノード数: 16 台<br />
+総 CPU コア数: 384<br />
+総 GPU 数: 64 基(1 ノードあたり 4 基)<br />
+合計演算性能: 536.064 TFLOPS<br />
+(CPU: 36.864 TFLOPS, GPU: 499.2 TFLOPS)<br />
+総メモリ容量 6.144 TB (コアあたり 16GB)
+
+</td>
 </tr>
 <tr>
-    <td colspan="2">
-    Medium 計算ノード<br />
-	3TB の共有メモリ搭載
-    </td>
-	<td>
-    ノード数: 10 台<br />
-	総 CPU コア数: 800<br />
-	合計演算性能 61.440 TFLOPS<br />
-	総メモリ容量 30.72 TB (コアあたり 38.4GB)
-    </td>
-</tr>
-    <tr>
-	<td colspan="2">Fat 計算ノード<br />
-	12TB の共有メモリを構成</td>
-	<td>ノード数 1 台<br />
-	総 CPU コア数: 288<br />
-	合計演算性能 27.648 TFLOPS<br />
-	総メモリ容量 12.288 TB (コアあたり 42.7GB)
-    </td>
+<td colspan="2">
+
+Medium 計算ノード<br />
+3TB の共有メモリ搭載
+
+</td>
+<td>
+
+ノード数: 10 台<br />
+総 CPU コア数: 800<br />
+合計演算性能 61.440 TFLOPS<br />
+総メモリ容量 30.72 TB (コアあたり 38.4GB)
+
+</td>
 </tr>
 <tr>
-    <td rowspan="2">
-    ストレージ
-    <br /><br />
-    総ストレージ容量 57.6PB
-    </td>
-	<td colspan="2">
-    大容量高速ストレージ (※1)<br />
-	一般解析区画および個人ゲノム解析区画におけるユーザホーム領域
-    </td>
-	<td>Lustre ファイルシステム<br />
-	合計容量：13.3PB</td>
+<td colspan="2">
+
+Fat 計算ノード<br />
+12TB の共有メモリを構成
+
+</td>
+<td>
+
+ノード数 1 台<br />
+総 CPU コア数: 288<br />
+合計演算性能 27.648 TFLOPS<br />
+総メモリ容量 12.288 TB (コアあたり 42.7GB)
+
+</td>
 </tr>
 <tr>
-    <td colspan="2">
-    DB用ストレージ<br />
-	DRA 等の DDBJ データベースを格納している領域
-    </td>
-	<td>Lustre ファイルシステム<br />
-	合計容量：40.5PB
-    </td>
+<td rowspan="2">
+ストレージ
+<br /><br />
+総ストレージ容量 57.6PB
+</td>
+<td colspan="2">
+大容量高速ストレージ (※1)<br />
+一般解析区画および個人ゲノム解析区画におけるユーザホーム領域
+</td>
+<td>
+Lustre ファイルシステム<br />
+合計容量：13.3PB
+</td>
 </tr>
 <tr>
-			<td colspan="3">ノード間相互結合網</td>
-			<td>
-            InfiniBand 4×EDR 100Gbps fat tree<br />
-            (ストレージに対しては full bi-section、
-            計算ノードに対しては、上流 SW への接続帯域：下流 SW への接続帯域 = 1:4)
-            </td>
-		</tr>
-	</tbody>
+<td colspan="2">
+DB 用ストレージ<br />
+DRA 等の DDBJ データベースを格納している領域
+</td>
+<td>
+Lustre ファイルシステム<br />
+合計容量：40.5PB
+</td>
+</tr>
+<tr>
+<td colspan="3">
+ノード間相互結合網
+</td>
+<td>
+InfiniBand 4×EDR 100Gbps fat tree<br />
+(ストレージに対しては full bi-section、
+計算ノードに対しては、上流 SW への接続帯域：下流 SW への接続帯域 = 1:4)
+</td>
+</tr>
+</tbody>
 </table>
 
 
@@ -229,7 +251,7 @@ HPE Apollo 6500 Gen10
 
 ### Medium 計算ノード (HPE ProLiant DL560 Gen10; 10 台)
 
-[<u>Mediumノードのハードウェア（HPE ProLiant DL560 Gen10とHPE Superdome Flex）は、Ubuntu Linuxをサポートしていないため、2023年11月の定期メンテナンス時にCent OS 7.9からUbuntu Linux 22.04に移行できず、Cent OS 7.9のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
+[<u>Medium ノードのハードウェア（HPE ProLiant DL560 Gen10 と HPE Superdome Flex）は、Ubuntu Linux をサポートしていないため、2023 年 11 月の定期メンテナンス時に Cent OS 7.9 から Ubuntu Linux 22.04 に移行できず、Cent OS 7.9 のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
 
 3TB の物理メモリを搭載した 80 コアを搭載した計算ノードです。De novo アセンブラなど大規模なメモリを必要とするようなプログラムを実行するのに向いています。Grid Engine 配下のためジョブ投入により利用可能です。
 
@@ -251,7 +273,7 @@ HPE ProLiant DL560 Gen10
  
 ### Fat 計算ノード (1 台 : ホスト名 fat1)
 
-[<u>Fatノードのハードウェア（HPE ProLiant DL560 Gen10とHPE Superdome Flex）は、Ubuntu Linuxをサポートしていないため、2023年11月の定期メンテナンス時にCent OS 7.9からUbuntu Linux 22.04に移行できず、Cent OS 7.9のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
+[<u>Fat ノードのハードウェア（HPE ProLiant DL560 Gen10 と HPE Superdome Flex）は、Ubuntu Linux をサポートしていないため、2023 年 11 月の定期メンテナンス時に Cent OS 7.9 から Ubuntu Linux 22.04 に移行できず、Cent OS 7.9 のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#%E4%BD%9C%E6%A5%AD%E5%86%85%E5%AE%B9)
 
 HPE Superdome Flex 2 筐体を Superdome Flex グリッド・インターコネクトで接続して合計 12TB の共有メモリの計算ノードを構成しています。
 
@@ -281,7 +303,7 @@ FAT 計算ノード１ノード（HPE Superdome Flex 2 筐体）当たりのス�
 
 
 
-### DB用ストレージ
+### DB 用ストレージ
 
 | アクセスパス | 実効容量 | 用途                           | ピーク性能 | 構成                                             |
 |--------------|----------|--------------------------------|------------|--------------------------------------------------|

@@ -10,29 +10,23 @@ For uploading and downloading data to the general analysis division of the NIG s
 
 ## To transfer files with SSH protocol (scp, sftp)
 
-You can use scp, sftp, etc. to transfer files to the gateway server (`gw.ddbj.nig.ac.jp`) of the general analysis division of the NIG supercomputer.
+You can use `scp`, `sftp`, etc. to transfer files to the gateway server (`gw.ddbj.nig.ac.jp`) of the general analysis division of the NIG supercomputer.
 
-Example :
-
-```
-scp your_file.txt youraccount@gw.ddbj.nig.ac.jp:/home/youraccount/data
-```
-
-<details>
-<summary>
-&#x1F180; I don't know how to transfer files stored in the downloads folder on my personal laptop. </summary>
-
-<p>
-
-&#x1F150; Using PowerShell in Windows to scp is as follows.
-
-1. At first, start PowerShell. Then, by default, PowerShell starts with your home directory in Windows as the current directory ("user" is your user name). Execute the following command to check that the SSH private key is in the following location. In this case, the SSH private key is the id_rsa file.
+Example on Linux and Mac:
 
 ```
-PS C:\Users\user> ls .ssh
+scp your_file.txt you@gw.ddbj.nig.ac.jp:/home/you
+```
+
+Example on Windows (PowerShell)
+
+1. At first, start PowerShell. Then, by default, PowerShell starts with your home directory in Windows as the current directory ("youwin" is your Windows user name). Execute the following command to check that the SSH private key is in the following location. In this case, the SSH private key is the `id_rsa` file.
+
+```
+PS C:\Users\youwin> ls .ssh
 
 
-    Directory: C:\Users\user\.ssh
+    Directory: C:\Users\youwin\.ssh
 
 
 Mode                 LastWriteTime         Length Name
@@ -43,15 +37,12 @@ Mode                 LastWriteTime         Length Name
 -a----        2024/01/22     12:41           5453 known_hosts.old
 ```
 
-2. In this state, to scp the your_file.txt file in the download folder to the supercomputer, execute the following command. ("useraccount" is the account name of the NIG supercomputer).
+2. In this state, to scp the `your_file.txt` file in the download folder to the supercomputer, execute the following command. ("you" is the account name of the NIG supercomputer).
 
 ```
-PS C:\Users\user> scp .\Downloads\your_file.txt
-youraccount@gwa.ddbj.nig.ac.jp:/home/youraccount
+PS C:\Users\youwin> scp .\Downloads\your_file.txt
+you@gw.ddbj.nig.ac.jp:/home/you
 ```
-
-</p>
-</details>
 
 
 ## To use Aspera
