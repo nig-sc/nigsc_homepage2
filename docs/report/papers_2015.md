@@ -3,9 +3,9 @@ id: papers_2015
 title: 論文のリスト(2015)
 ---
 
-## 2015.01.01 -- 2015.12.31にユーザによって発表された論文のリスト
+## 2015.01.01 -- 2015.12.31 にユーザによって発表された論文のリスト
 
-### 2015年度の年度末アカウント継続申請時に集計した論文
+### 2015 年度の年度末アカウント継続申請時に集計した論文
 
 
 <table>
@@ -16,8 +16,7 @@ title: 論文のリスト(2015)
     <td>Title</td>
     <td>Journal, Volume, Number, Pages</td>
     <td>PMID</td>
-    <td>DOI
-</td>
+    <td>DOI</td>
 </tr>
 <tr>
     <td>1</td>
@@ -26,8 +25,7 @@ title: 論文のリスト(2015)
     <td>Plant Omics Data Center: an integrated web repository for interspecies gene expression networks with NLP-based curation.</td>
     <td>Plant Cell Physiol. 2015 Jan;56(1):e9.</td>
     <td>25505034</td>
-    <td>doi: 10.1093/pcp/pcu188.
-</td>
+    <td>doi: 10.1093/pcp/pcu188.</td>
 </tr>
 <tr>
     <td>2</td>
@@ -36,8 +34,7 @@ title: 論文のリスト(2015)
     <td>High-speed westfall-young permutation procedure for genome-wide association studies. </td>
     <td>BCB '15: Proceedings of the 6th ACM Conference on Bioinformatics, Computational Biology and Health Informatics, September 2015 Pages 17-26</td>
     <td>NULL</td>
-    <td>doi.org/10.1145/2808719.2808721
-</td>
+    <td>doi.org/10.1145/2808719.2808721</td>
 </tr>
 <tr>
     <td>3</td>
@@ -46,8 +43,7 @@ title: 論文のリスト(2015)
     <td>Learning chromatin states with factorized information criteria.</td>
     <td>Bioinformatics. 2015 Aug 1;31(15):2426-33.</td>
     <td>25810430</td>
-    <td>doi: 10.1093/bioinformatics/btv163.
-</td>
+    <td>doi: 10.1093/bioinformatics/btv163.</td>
 </tr>
 <tr>
     <td>4</td>
@@ -56,8 +52,7 @@ title: 論文のリスト(2015)
     <td>DB-AT: a 2015 update to the Full-parasites database brings a multitude of new transcriptomic data for apicomplexan parasites.</td>
     <td>Nucleic Acids Res. 2015 Jan;43(Database issue):D631-6.</td>
     <td>25414358</td>
-    <td>doi: 10.1093/nar/gku1240.
-</td>
+    <td>doi: 10.1093/nar/gku1240.</td>
 </tr>
 <tr>
     <td>5</td>
@@ -66,8 +61,7 @@ title: 論文のリスト(2015)
     <td>MeSH ORA framework: R/Bioconductor packages to support MeSH over-representation analysis</td>
     <td>BMC Bioinformatics. 2015 Feb 15;16:45.</td>
     <td>25887539</td>
-    <td>doi: 10.1186/s12859-015-0453-z.
-</td>
+    <td>doi: 10.1186/s12859-015-0453-z.</td>
 </tr>
 <tr>
     <td>6</td>
@@ -76,8 +70,7 @@ title: 論文のリスト(2015)
     <td>Whole-genome sequencing of six Mauritian Cynomolgus macaques (Macaca fascicularis) reveals a genome-wide pattern of polymorphisms under extreme population bottleneck.</td>
     <td>Genome Biol Evol. 2015 Mar 23;7(3):821-30.</td>
     <td>25805843</td>
-    <td>doi: 10.1093/gbe/evv033.
-</td>
+    <td>doi: 10.1093/gbe/evv033.</td>
 </tr>
 <tr>
     <td>7</td>
@@ -86,8 +79,7 @@ title: 論文のリスト(2015)
     <td>Development and validation of SSR markers for the plant-parasitic nematode Subanguina moxaeusing genome assembly of Illumina pair-end reads.</td>
     <td>Nematology (2015) 17, p515-522</td>
     <td>NULL</td>
-    <td>doi:10.1163/15685411-00002885
-</td>
+    <td>doi:10.1163/15685411-00002885</td>
 </tr>
 <tr>
     <td>8</td>
@@ -96,8 +88,7 @@ title: 論文のリスト(2015)
     <td>Genome-wide variation in the pinewood nematode Bursaphelenchus xylophilus and its relationship with pathogenic traits.</td>
     <td>BMC Genomics. 2015 Oct 23;16:845.</td>
     <td>26493074</td>
-    <td>doi: 10.1186/s12864-015-2085-0.
-</td>
+    <td>doi: 10.1186/s12864-015-2085-0.</td>
 </tr>
 <tr>
     <td>9</td>
@@ -106,8 +97,7 @@ title: 論文のリスト(2015)
     <td>The dynamic balance of import and export of zinc in Escherichia coli suggests a heterogeneous population response to stress.</td>
     <td>J R Soc Interface. 2015 May 6;12(106):20150069.</td>
     <td>25808337</td>
-    <td>doi: 10.1098/rsif.2015.0069.
-</td>
+    <td>doi: 10.1098/rsif.2015.0069.</td>
 </tr>
 <tr>
     <td>10</td>
@@ -116,8 +106,7 @@ title: 論文のリスト(2015)
     <td>Two different rickettsial bacteria invading Volvox carteri.</td>
     <td>PLoS One. 2015 Feb 11;10(2):e0116192.</td>
     <td>25671568</td>
-    <td>doi: 10.1371/journal.pone.0116192.
-</td>
+    <td>doi: 10.1371/journal.pone.0116192.</td>
 </tr>
 <tr>
     <td>11</td>
@@ -126,8 +115,7 @@ title: 論文のリスト(2015)
     <td>Aquatic adaptation and the evolution of smell and taste in whales</td>
     <td>Zoological Lett. 2015 Feb 13;1:9.</td>
     <td>26605054</td>
-    <td>doi: 10.1186/s40851-014-0002-z.
-</td>
+    <td>doi: 10.1186/s40851-014-0002-z.</td>
 </tr>
 <tr>
     <td>12</td>
@@ -136,8 +124,7 @@ title: 論文のリスト(2015)
     <td>Epidemiological and genetic analysis of a 2014 outbreak of hepatitis A in Japan.</td>
     <td>Vaccine. 2015 Nov 9;33(45):6029-36.</td>
     <td>25957664</td>
-    <td>doi: 10.1016/j.vaccine.2015.04.061.
-</td>
+    <td>doi: 10.1016/j.vaccine.2015.04.061.</td>
 </tr>
 <tr>
     <td>13</td>
@@ -146,8 +133,7 @@ title: 論文のリスト(2015)
     <td>Multiple invasions of an infectious retrovirus in cat genomes.</td>
     <td>Sci Rep. 2015 Feb 2;5:8164.</td>
     <td>25641657</td>
-    <td>doi: 10.1038/srep08164.
-</td>
+    <td>doi: 10.1038/srep08164.</td>
 </tr>
 <tr>
     <td>14</td>
@@ -156,8 +142,7 @@ title: 論文のリスト(2015)
     <td>Simian retrovirus 4 induces lethal acute thrombocytopenia in Japanese macaques.</td>
     <td>J Virol. 2015 Apr;89(7):3965-75.</td>
     <td>25609821</td>
-    <td>doi: 10.1128/JVI.03611-14.
-</td>
+    <td>doi: 10.1128/JVI.03611-14.</td>
 </tr>
 <tr>
     <td>15</td>
@@ -166,8 +151,7 @@ title: 論文のリスト(2015)
     <td>Segmental HOG: new descriptor for glomerulus detection in kidney microscopy image.</td>
     <td>BMC Bioinformatics. 2015 Sep 30;16:316.</td>
     <td>26423821</td>
-    <td>doi: 10.1186/s12859-015-0739-1.
-</td>
+    <td>doi: 10.1186/s12859-015-0739-1.</td>
 </tr>
 <tr>
     <td>16</td>
@@ -176,8 +160,7 @@ title: 論文のリスト(2015)
     <td>Loss of function mutations in the rice chromomethylase OsCMT3a cause a burst of transposition.</td>
     <td>Plant J. 2015 Sep;83(6):1069-81.</td>
     <td>26243209</td>
-    <td>doi: 10.1111/tpj.12952.
-</td>
+    <td>doi: 10.1111/tpj.12952.</td>
 </tr>
 <tr>
     <td>17</td>
@@ -186,8 +169,7 @@ title: 論文のリスト(2015)
     <td>agplus: a rapid and flexible tool for aggregation plots</td>
     <td>Bioinformatics. 2015 Sep 15;31(18):3046-7.</td>
     <td>25995229</td>
-    <td>doi: 10.1093/bioinformatics/btv322.
-</td>
+    <td>doi: 10.1093/bioinformatics/btv322.</td>
 </tr>
 <tr>
     <td>18</td>
@@ -196,8 +178,7 @@ title: 論文のリスト(2015)
     <td>Tissue-specific expression of histone H3 variants diversified after species separation</td>
     <td>Epigenetics Chromatin. 2015 Sep 17;8:35.</td>
     <td>26388943</td>
-    <td>doi: 10.1186/s13072-015-0027-3.
-</td>
+    <td>doi: 10.1186/s13072-015-0027-3.</td>
 </tr>
 <tr>
     <td>19</td>
@@ -206,8 +187,7 @@ title: 論文のリスト(2015)
     <td>Incorporation of histone H3.1 suppresses the lineage potential of skeletal muscle.</td>
     <td>Nucleic Acids Res. 2015 Jan;43(2):775-86.</td>
     <td>25539924</td>
-    <td>doi: 10.1093/nar/gku1346. 
-</td>
+    <td>doi: 10.1093/nar/gku1346. </td>
 </tr>
 <tr>
     <td>20</td>
@@ -216,8 +196,7 @@ title: 論文のリスト(2015)
     <td>Gene activation-associated long noncoding RNAs function in mouse preimplantation development.</td>
     <td>Development. 2015 Mar 1;142(5):910-20.</td>
     <td>25633350</td>
-    <td>doi: 10.1242/dev.116996.
-</td>
+    <td>doi: 10.1242/dev.116996.</td>
 </tr>
 <tr>
     <td>21</td>
@@ -226,8 +205,7 @@ title: 論文のリスト(2015)
     <td>Resequencing of the common marmoset genome improves genome assemblies and gene-coding sequence analysis</td>
     <td>Sci Rep. 2015 Nov 20;5:16894.</td>
     <td>26586576</td>
-    <td>doi: 10.1038/srep16894.
-</td>
+    <td>doi: 10.1038/srep16894.</td>
 </tr>
 <tr>
     <td>22</td>
@@ -236,8 +214,7 @@ title: 論文のリスト(2015)
     <td>MiFish, a set of universal PCR primers for metabarcoding environmental DNA from fishes: detection of more than 230 subtropical marine species.</td>
     <td>R Soc Open Sci. 2015 Jul 22;2(7):150088.</td>
     <td>26587265</td>
-    <td>doi: 10.1098/rsos.150088.
-</td>
+    <td>doi: 10.1098/rsos.150088.</td>
 </tr>
 <tr>
     <td>23</td>
@@ -246,8 +223,7 @@ title: 論文のリスト(2015)
     <td>Draft Genome Sequence of the Archiascomycetous Yeast Saitoella complicata.</td>
     <td>Genome Announc. 2015 May 28;3(3):e00220-15.</td>
     <td>26021914</td>
-    <td>doi: 10.1128/genomeA.00220-15.
-</td>
+    <td>doi: 10.1128/genomeA.00220-15.</td>
 </tr>
 <tr>
     <td>24</td>
@@ -256,8 +232,7 @@ title: 論文のリスト(2015)
     <td>Colil: a database and search service for citation contexts in the life sciences domain</td>
     <td>J Biomed Semantics. 2015 Oct 19;6:38.</td>
     <td>26500753</td>
-    <td>doi: 10.1186/s13326-015-0037-x.
-</td>
+    <td>doi: 10.1186/s13326-015-0037-x.</td>
 </tr>
 <tr>
     <td>25</td>
@@ -266,8 +241,7 @@ title: 論文のリスト(2015)
     <td>Implications of miR166 and miR159 induction to the basal response mechanisms of an andigena potato (Solanum tuberosum subsp. andigena) to salinity stress, predicted from network models in Arabidopsis</td>
     <td>Genome. 2015 Jan;58(1):13-24.</td>
     <td>25955479</td>
-    <td>doi: 10.1139/gen-2015-0011.
-</td>
+    <td>doi: 10.1139/gen-2015-0011.</td>
 </tr>
 <tr>
     <td>26</td>
@@ -276,8 +250,7 @@ title: 論文のリスト(2015)
     <td>Predicting RNA Duplex Dimerization Free-Energy Changes upon Mutations Using Molecular Dynamics Simulations</td>
     <td>J Phys Chem Lett. 2015 Nov 5;6(21):4348-51.</td>
     <td>26722970</td>
-    <td>doi: 10.1021/acs.jpclett.5b01984.
-</td>
+    <td>doi: 10.1021/acs.jpclett.5b01984.</td>
 </tr>
 <tr>
     <td>27</td>
@@ -286,8 +259,7 @@ title: 論文のリスト(2015)
     <td>Optimizing and benchmarking de novo transcriptome sequencing: from library preparation to assembly evaluation</td>
     <td>BMC Genomics. 2015 Nov 18;16:977.</td>
     <td>26581708</td>
-    <td>doi: 10.1186/s12864-015-2007-1.
-</td>
+    <td>doi: 10.1186/s12864-015-2007-1.</td>
 </tr>
 <tr>
     <td>28</td>
@@ -296,8 +268,7 @@ title: 論文のリスト(2015)
     <td>Diversity of Fungi on Decomposing Leaf Litter in a Sugarcane Plantation and Their Response to Tillage Practice and Bagasse Mulching: Implications for Management Effects on Litter Decomposition</td>
     <td>Microb Ecol. 2015 Oct;70(3):646-58.</td>
     <td>25933637</td>
-    <td>doi: 10.1007/s00248-015-0620-9.
-</td>
+    <td>doi: 10.1007/s00248-015-0620-9.</td>
 </tr>
 <tr>
     <td>29</td>
@@ -306,8 +277,7 @@ title: 論文のリスト(2015)
     <td>Glucose Homeostatic Law: Insulin Clearance Predicts the Progression of Glucose Intolerance in Humans</td>
     <td>PLoS One. 2015 Dec 1;10(12):e0143880.</td>
     <td>26623647</td>
-    <td>doi: 10.1371/journal.pone.0143880. 
-</td>
+    <td>doi: 10.1371/journal.pone.0143880. </td>
 </tr>
 <tr>
     <td>30</td>
@@ -316,8 +286,7 @@ title: 論文のリスト(2015)
     <td>Proteome analysis of shell matrix proteins in the brachiopod Laqueus rubellus.</td>
     <td>Proteome Sci. 2015 Aug 15;13:21.</td>
     <td>26279640</td>
-    <td>doi: 10.1186/s12953-015-0077-2.
-</td>
+    <td>doi: 10.1186/s12953-015-0077-2.</td>
 </tr>
 <tr>
     <td>31</td>
@@ -326,8 +295,7 @@ title: 論文のリスト(2015)
     <td>Comparative genomics of Fructobacillus spp. and Leuconostoc spp. reveals niche-specific evolution of Fructobacillus spp.</td>
     <td>BMC Genomics. 2015 Dec 29;16:1117.</td>
     <td>26715526</td>
-    <td>doi: 10.1186/s12864-015-2339-x.
-</td>
+    <td>doi: 10.1186/s12864-015-2339-x.</td>
 </tr>
 <tr>
     <td>32</td>
@@ -336,8 +304,7 @@ title: 論文のリスト(2015)
     <td>Complete genome sequence and analysis of Lactobacillus hokkaidonensis LOOC260(T), a psychrotrophic lactic acid bacterium isolated from silage.</td>
     <td>BMC Genomics. 2015 Mar 25;16(1):240.</td>
     <td>25879859</td>
-    <td>doi: 10.1186/s12864-015-1435-2.
-</td>
+    <td>doi: 10.1186/s12864-015-1435-2.</td>
 </tr>
 <tr>
     <td>33</td>
@@ -346,18 +313,16 @@ title: 論文のリスト(2015)
     <td>Construction of a linkage map based on retrotransposon insertion polymorphisms in sweetpotato via high-throughput sequencing.</td>
     <td>Breed Sci. 2015 Mar;65(2):145-53.</td>
     <td>26069444</td>
-    <td>doi: 10.1270/jsbbs.65.145.
-</td>
+    <td>doi: 10.1270/jsbbs.65.145.</td>
 </tr>
 <tr>
     <td>34</td>
     <td>門田 有希</td>
     <td>Yuki Monden</td>
-    <td>シイタケ（Lentinula edodes）におけるレトロトランスポゾン挿入多型を利用したHigh-Throughput な品種判定マーカーの開発.</td>
-    <td>DNA多型 23, p34-38 (2015)</td>
+    <td>シイタケ（Lentinula edodes）におけるレトロトランスポゾン挿入多型を利用した High-Throughput な品種判定マーカーの開発.</td>
+    <td>DNA 多型 23, p34-38 (2015)</td>
     <td>NULL</td>
-    <td>NULL
-</td>
+    <td>NULL</td>
 </tr>
 <tr>
     <td>35</td>
@@ -366,8 +331,7 @@ title: 論文のリスト(2015)
     <td>Identification of self-growth-inhibiting compounds lauric acid and 7-(Z)-tetradecenoic acid from Helicobacter pylori.</td>
     <td>Microbiology (Reading). 2015 Jun;161(6):1231-9.</td>
     <td>25767109</td>
-    <td>doi: 10.1099/mic.0.000077.
-</td>
+    <td>doi: 10.1099/mic.0.000077.</td>
 </tr>
 <tr>
     <td>36</td>
@@ -376,8 +340,7 @@ title: 論文のリスト(2015)
     <td>Germline mutation rates and the long-term phenotypic effects of mutation accumulation in wild-type laboratory mice and mutator mice.</td>
     <td>Genome Res. 2015 Aug;25(8):1125-34.</td>
     <td>26129709</td>
-    <td>doi: 10.1101/gr.186148.114.
-</td>
+    <td>doi: 10.1101/gr.186148.114.</td>
 </tr>
 <tr>
     <td>37</td>
@@ -386,8 +349,7 @@ title: 論文のリスト(2015)
     <td>The Draft Genome of Hop (Humulus lupulus), an Essence for Brewing.</td>
     <td>Plant Cell Physiol. 2015 Mar;56(3):428-41.</td>
     <td>25416290</td>
-    <td>doi: 10.1093/pcp/pcu169.
-</td>
+    <td>doi: 10.1093/pcp/pcu169.</td>
 </tr>
 <tr>
     <td>38</td>
@@ -396,8 +358,7 @@ title: 論文のリスト(2015)
     <td>Transcriptome analysis of predator- and prey-induced phenotypic plasticity in the Hokkaido salamander (Hynobius retardatus).</td>
     <td>Mol Ecol. 2015 Jun;24(12):3064-76.</td>
     <td>25943778</td>
-    <td>doi: 10.1111/mec.13228.
-</td>
+    <td>doi: 10.1111/mec.13228.</td>
 </tr>
 <tr>
     <td>39</td>
@@ -406,8 +367,7 @@ title: 論文のリスト(2015)
     <td>A RAD-based phylogenetics for Orestias fishes from Lake Titicaca.</td>
     <td>Mol Phylogenet Evol. 2015 Dec;93:307-17.</td>
     <td>26291568</td>
-    <td>doi: 10.1016/j.ympev.2015.08.012.
-</td>
+    <td>doi: 10.1016/j.ympev.2015.08.012.</td>
 </tr>
 <tr>
     <td>40</td>
@@ -416,8 +376,7 @@ title: 論文のリスト(2015)
     <td>Transcriptome Analysis of Nine Tissues to Discover Genes Involved in the Biosynthesis of Active Ingredients in Sophora flavescens.</td>
     <td>Biol Pharm Bull. 2015;38(6):876-83.</td>
     <td>26027827</td>
-    <td>doi: 10.1248/bpb.b14-00834.
-</td>
+    <td>doi: 10.1248/bpb.b14-00834.</td>
 </tr>
 <tr>
     <td>41</td>
@@ -426,8 +385,7 @@ title: 論文のリスト(2015)
     <td>Transcriptomic landscape of Pueraria lobata demonstrates potential for phytochemical study.</td>
     <td>Front Plant Sci. 2015 Jun 22;6:426.</td>
     <td>26157443</td>
-    <td>doi: 10.3389/fpls.2015.00426.
-</td>
+    <td>doi: 10.3389/fpls.2015.00426.</td>
 </tr>
 <tr>
     <td>42</td>
@@ -436,8 +394,7 @@ title: 論文のリスト(2015)
     <td>GroupTracker: Video tracking system for multiple animals under severe occlusion.</td>
     <td>Comput Biol Chem. 2015 Aug;57:39-45.</td>
     <td>25736254</td>
-    <td>doi: 10.1016/j.compbiolchem.2015.02.006.
-</td>
+    <td>doi: 10.1016/j.compbiolchem.2015.02.006.</td>
 </tr>
 <tr>
     <td>43</td>
@@ -446,7 +403,6 @@ title: 論文のリスト(2015)
     <td>Somatic Primary piRNA Biogenesis Driven by cis-Acting RNA Elements and trans-Acting Yb.</td>
     <td>Cell Rep. 2015 Jul 21;12(3):429-40.</td>
     <td>26166564</td>
-    <td>doi: 10.1016/j.celrep.2015.06.035. 
-</td>
+    <td>doi: 10.1016/j.celrep.2015.06.035. </td>
 </tr>
 </table>

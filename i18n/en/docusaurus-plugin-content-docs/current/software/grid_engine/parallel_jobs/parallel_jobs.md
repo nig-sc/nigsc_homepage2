@@ -10,32 +10,48 @@ To use the parallel job function in addition to the options described in the [Ba
 ## Types of parallel jobs (overview)
 
 Parallel environment types provided by the NIG supercomputer are as follows.
-  
+
 <table>
 <tr>
 <th width="300">parallel environment</th><th width="300">meaning</th>
 </tr>
 <tr>
-  <td>`def_slot N`</td>
-  <td>  N CPU cores are reserved on the same compute node. (When N exceeds the number of CPU cores on the compute node, the job will not start.)</td>
- </tr>
- <tr>
-  <td>`mpi N`</td>
-  <td>  N CPU cores are reserved across multiple compute nodes. At that time, the compute nodes are selected by the round-robin method. As a result, the cores are secured in a form scattered among as many computing nodes as possible.
-  </td>
+<td>
+`def_slot N`
+</td>
+<td>
+N CPU cores are reserved on the same compute node. (When N exceeds the number of CPU cores on the compute node, the job will not start.)
+</td>
 </tr>
 <tr>
-  <td>`mpi-fillup N`</td><td>  N CPU cores are reserved across multiple computation nodes. At that time, the core is secured so that the number of calculation nodes is as small as possible.</td>
+<td>
+`mpi N`
+</td>
+<td>
+N CPU cores are reserved across multiple compute nodes. At that time, the compute nodes are selected by the round-robin method. As a result, the cores are secured in a form scattered among as many computing nodes as possible.
+</td>
 </tr>
 <tr>
-  <td>`pe_n N` 
-  
-  The defined parallel environment is as follows.<br/>
-  
-  `pe_4`, `pe_8`, `pe_16`, `pe_32`, `pe_64`, 
-  
-  `pe_5`, `pe_10`, `pe_20`</td>
-  <td>N cores are reserved across multiple computation nodes. At that time, n = 4,8,16,… cores are secured on each compute node.</td>
+<td>
+`mpi-fillup N`
+</td>
+<td>
+N CPU cores are reserved across multiple computation nodes. At that time, the core is secured so that the number of calculation nodes is as small as possible.
+</td>
+</tr>
+<tr>
+<td>
+`pe_n N` 
+
+The defined parallel environment is as follows.<br/>
+
+`pe_4`, `pe_8`, `pe_16`, `pe_32`, `pe_64`, 
+
+`pe_5`, `pe_10`, `pe_20`
+</td>
+<td>
+N cores are reserved across multiple computation nodes. At that time, n = 4,8,16,… cores are secured on each compute node.
+</td>
 </tr>
 </table>
 

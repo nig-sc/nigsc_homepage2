@@ -1,5 +1,8 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+//const lightCodeTheme = require('prism-react-renderer/themes/github')
+//const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const {themes} = require('prism-react-renderer');
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 const { default: pluginContentBlog } = require('@docusaurus/plugin-content-blog')
 const { DEFAULT_OPTIONS } = require('@docusaurus/plugin-content-blog/lib/options')
 
@@ -9,13 +12,16 @@ const GOOGLE_TAG_ID = 'GT-K8K7B54'
 module.exports = {
   title: 'NIG supercomputer',
   tagline: 'National Institute of Genetics, Japan',
-  url: 'https://sc.ddbj.nig.ac.jp',
-  baseUrl: '/',
-  //url: 'http://192.168.11.50/',
-  //baseUrl: '/~oogasawa/nigsc_homepage2/',
+  //url: 'https://sc.ddbj.nig.ac.jp',
+  //baseUrl: '/',
+  url: 'http://192.168.11.50/',
+  baseUrl: '/~oogasawa/nigsc_homepage2/',
   // url: 'http://133.39.114.45', 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
+  onBrokenAnchors: 'ignore',
+  //onBrokenLinks: 'throw',
+  //onBrokenMarkdownLinks: 'warn',
   favicon: '/img/favicon.ico',
   organizationName: 'oogasawa', // Usually your GitHub org/user name.
   projectName: 'nigsc_homepage2', // Usually your repo name.
@@ -160,10 +166,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} National Institute of Genetics.`
     },
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme
-    },
+    // prism: {
+    //   theme: lightCodeTheme,
+    //   darkTheme: darkCodeTheme
+    // },
     colorMode: {
       disableSwitch: true
     }

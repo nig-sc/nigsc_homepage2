@@ -1,39 +1,39 @@
 ---
 id: Archaea_tools
-title: Archaea tools(旧HCPtools) の使い方
+title: Archaea tools(旧 HCPtools) の使い方
 ---
 
 
 遺伝研スパコンに対してファイルのアップロード、ダウンロードを行うには、一般的に広く用いられているファイル転送ソフトウェアである`scp`や`sftp`をつかうことができますが、`scp`などでは遠距離間で大量のファイルを転送する際に転送速度が遅くなる性質があります。
 
-遠距離の高速通信のために、遺伝研スパコンでは、一般解析区画では Aspera、個人ゲノム解析区画ではArchaea tools(旧HCPtools)というファイル転送ソフトウェアが利用可能となっています。
+遠距離の高速通信のために、遺伝研スパコンでは、一般解析区画では Aspera、個人ゲノム解析区画では Archaea tools(旧 HCPtools)というファイル転送ソフトウェアが利用可能となっています。
 
 
 
 参考資料
 
-- 各製品ごとの公式マニュアルは、[&#x1f517;<u>Bytix公式ページ「ドキュメント」のページをご参照ください</u>](https://support.bytix.tech/document/)。
-- 最新バージョンは、[&#x1f517;<u>Bytix公式ページ「ダウンロード【最新版】」のページをご参照ください</u>](https://support.bytix.tech/latest/)。
+- 各製品ごとの公式マニュアルは、[&#x1f517;<u>Bytix 公式ページ「ドキュメント」のページをご参照ください</u>](https://support.bytix.tech/document/)。
+- 最新バージョンは、[&#x1f517;<u>Bytix 公式ページ「ダウンロード【最新版】」のページをご参照ください</u>](https://support.bytix.tech/latest/)。
 - [<u>FAQ（よくある質問）: HCP tools</u>](/faq/faq_hcptools)
 
 
 ## ソフトウェアの改称について
 
-2022年10月、HCPtoolsソフトウェア提供元が、データ転送系のブランド名称として、「Bytix(バイティックス)」というブランド名を立ち上げ、製品名称が「HCPtools」から「Archaea tools」へ変更になりました。
+2022 年 10 月、HCPtools ソフトウェア提供元が、データ転送系のブランド名称として、「Bytix(バイティックス)」というブランド名を立ち上げ、製品名称が「HCPtools」から「Archaea tools」へ変更になりました。
 
-製品名称変更後も、これまで通りHCPtoolsで使用していたコマンドと同じコマンドをそのままお使いいただけます。
+製品名称変更後も、これまで通り HCPtools で使用していたコマンドと同じコマンドをそのままお使いいただけます。
 
-変更についての詳細は、[&#x1f517;<u>Bytix公式ページ「製品名称変更等について」のページをご参照ください</u>](https://support.bytix.tech/important/)。
+変更についての詳細は、[&#x1f517;<u>Bytix 公式ページ「製品名称変更等について」のページをご参照ください</u>](https://support.bytix.tech/important/)。
 
 
 
 
 ## クライアントソフトウェアのインストール
 
-Archaea tools(旧HCPtools)を利用するためにはクライアントソフトウェアをユーザのクライアント計算機にインストールする必要があります。
+Archaea tools(旧 HCPtools)を利用するためにはクライアントソフトウェアをユーザのクライアント計算機にインストールする必要があります。
 お使いのクライアント計算機の環境に応じて以下の文書をご参照ください。
 
-- Linux の場合 (WindowsのWSL2環境の場合も含む）
+- Linux の場合 (Windows の WSL2 環境の場合も含む）
     - [&#x1f517;<u>Ubuntu Linux</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B04_Ubuntu)
     - [&#x1f517;<u>CentOS 7</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B03_RHEL)
 - [&#x1f517;<u>Mac OS の場合</u>](https://support.bytix.tech/docs/archaea/tools/1.4/B_setup_client/B02_macOS/)
@@ -42,15 +42,15 @@ Archaea tools(旧HCPtools)を利用するためにはクライアントソフト
 
 ## 設定ファイルの設置方法
 
-遺伝研スパコンとのデータの受送信を行うためにはホームディレクトリにArchaea tools(旧HCPtools)の設定ファイルを設置する必要があります。遺伝研スパコン用の設定ファイルはgithubからクローンして取得してください。
+遺伝研スパコンとのデータの受送信を行うためにはホームディレクトリに Archaea tools(旧 HCPtools)の設定ファイルを設置する必要があります。遺伝研スパコン用の設定ファイルは github からクローンして取得してください。
 
-Linux (WindowsのWSL2環境の場合も含む)
+Linux (Windows の WSL2 環境の場合も含む)
 ```
 cd $HOME
 git clone https://github.com/nig-sc/Bytix_Archaea/ .hcp
 ```
 
-Mac OSの場合
+Mac OS の場合
 ```
 cd $HOME
 git clone https://github.com/nig-sc/Bytix_Archaea/ .hcp
@@ -62,7 +62,7 @@ cd $HOME
 git clone https://github.com/nig-sc/Bytix_Archaea/ _hcp
 ```
 
-git cloneすると以下のファイルが作られます。
+git clone すると以下のファイルが作られます。
 
 ```
 $ tree .hcp
@@ -84,10 +84,10 @@ $ tree .hcp
 ```
 
 
-次に秘密鍵の絶対パスを設定ファイルhcp-common.confの中に以下のように書いてください。
+次に秘密鍵の絶対パスを設定ファイル hcp-common.conf の中に以下のように書いてください。
 
 
-hcp-common.confの中身
+hcp-common.conf の中身
 ```
 PrivateKeyFile /home/youraccount/.ssh/id_rsa    # 秘密鍵の絶対パス
 AcceptableCryptMethod   PLAIN                # 暗号化:なし
@@ -95,7 +95,7 @@ AcceptableDigestMethod  SHA256               # ダイジェスト方式: SHA256
 DisableDataIntegrityChecking yes             # ダイジェスト方式なしを許可
 ```
 
-Mac OSの場合
+Mac OS の場合
 ```
 PrivateKeyFile /Users/youraccount/.ssh/id_rsa    # 秘密鍵の絶対パス
 ```
@@ -124,14 +124,14 @@ PrivateKeyFile C:\Users\youraccount\.ssh/id_rsa    # 秘密鍵の絶対パス
 
 ユーザのクライアント計算機でターミナルエミュレータを起動し以下のコマンドを実行します。
 
-Linux (WindowsのWSL2環境の場合も含む）の場合
+Linux (Windows の WSL2 環境の場合も含む）の場合
 ```
 hcp --user youraccountname --hpfp \
    /home/youraccountname/your_file.txt \
    gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt
 ```
 
-Mac OSの場合
+Mac OS の場合
 ```
 hcp --user youraccountname --hpfp \
    /Users/youraccountname/your_file.txt \
@@ -157,7 +157,7 @@ hcp --user youraccountname --hpfp  \
 ```
 
 ### 注意
-初めてデータ転送を行う時に以下のメッセージが表示されます。ここはyesと入力してください。
+初めてデータ転送を行う時に以下のメッセージが表示されます。ここは yes と入力してください。
 
 ```
 Are you sure you want to continue connecting [yes/no] ?
@@ -168,30 +168,15 @@ Are you sure you want to continue connecting [yes/no] ?
 
 オプションの詳細については、[&#x1f517;<u>公式マニュアルのコマンドリファレンス</u>](https://support.bytix.tech/document/)をご参照下さい。
 
-<ul>
-<li>`--hpfp` : UDP(HpFP2)通信の指定で、遠距離間の通信を高速化します
-    <ul>
-    <li>
-    このオプションを省略すると、通常広く用いられている TCP 通信を行います。</li>
-    </ul>
-</li>
-<li>`-p` : 転送元のパーミッションを保持します。
-</li>
-<li>`-R` : ディレクトリごと再帰的にファイルを転送します。
-</li>
-<li>`-r` : ファイル転送の再開処理（リジューム）を行う。
-    <ul>
-    <li>
-    レジューム機能の詳細については、<a href="https://support.bytix.tech/docs/archaea/tools/1.4/D_commandRef/D01_hcp/#r-resume">&#x1f517;<u>公式マニュアルのコマンドリファレンス内の「通信再開機能   r, resume」</u></a>をご参照ください。
-    </li>
-    </ul>
-</li>
-<li>`-y` : データの完全性（転送途中でエラーや改ざんがないか）の確認を行います。
-</li>
-<li>`-z` : 転送時にデータの圧縮を行います。
-</li>
-</ul>
 
+- `--hpfp` : UDP(HpFP2)通信の指定で、遠距離間の通信を高速化します
+    - このオプションを省略すると、通常広く用いられている TCP 通信を行います。
+- `-p` : 転送元のパーミッションを保持します。
+- `-R` : ディレクトリごと再帰的にファイルを転送します。
+- `-r` : ファイル転送の再開処理（リジューム）を行う。
+    - レジューム機能の詳細については、<a href="https://support.bytix.tech/docs/archaea/tools/1.4/D_commandRef/D01_hcp/#r-resume">&#x1f517;<u>公式マニュアルのコマンドリファレンス内の「通信再開機能   r, resume」</u></a>をご参照ください。
+- `-y` : データの完全性（転送途中でエラーや改ざんがないか）の確認を行います。
+- `-z` : 転送時にデータの圧縮を行います。
 
 
 ## その他のコマンド

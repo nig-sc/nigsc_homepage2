@@ -13,6 +13,8 @@ The general analysis division of NIG supercomputer can be used with a computer r
 
 ## Steps from  account application to start of use
 
+<!--
+
 <ol>
 <li><a href="https://sc.ddbj.nig.ac.jp/en/application/registration"><u>Follow the account application procedure</u></a> and apply from <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">&#x1f517;<u>the account application form</u></a>.</li>
     <ul>
@@ -41,7 +43,7 @@ The general analysis division of NIG supercomputer can be used with a computer r
     <li><a href="https://sc.ddbj.nig.ac.jp/en/application/reference/"><u>Contact us</u></a> for Submission.</li>
     </ul>
 </ol>
-
+-->
 
 ## Application for use by a group
 
