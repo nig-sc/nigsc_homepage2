@@ -22,7 +22,7 @@ There are two gateway nodes for the general analysis division of the NIG superco
 
 ##  How to log in to the general analysis division with your account
 
-1. Open a terminal emulator and enter ssh `username@gatewaynodename`. Then press enter. (The same way for the Windows PowerShell SSH client.)
+1. Open a terminal emulator and enter `ssh username@gatewaynodename`. Then press enter. (The same way for the Windows PowerShell SSH client.)
 
 ```
 $ ssh youraccount@gw.ddbj.nig.ac.jp
@@ -48,7 +48,7 @@ Enter "yes" to continue connecting ig the following message is displayed after e
 Are you sure you want to continue connecting (yes/no)?
 ```
 
-3.  Execute 'qlogin' command to log in to the login node.
+3.  Execute `qlogin` command to log in to the login node.
 
 ```
 $ qlogin
@@ -111,4 +111,8 @@ To use this login node, `qlogin` with the `-l gpu` option.
 qlogin -l gpu
 ```
 
+### References
+
+- [Java > Notes: When I start the Java program, I get an error saying that there is not enough memory.](/software/java/#when-i-start-the-java-program-i-get-an-error-saying-that-there-is-not-enough-memory)
+- [Apptainer (Singularity) > Building images on the supercomputer : Generating Apptainer (Sigularity) images from Docker container images](/software/Apptainer/#building-images-on-the-supercomputer--generating-apptainer-sigularity-images-from-docker-container-images)
 
