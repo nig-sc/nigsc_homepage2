@@ -41,57 +41,66 @@ title: Software update history
 </tr>
 
 <tr>
-  <td>30.11.2023</td>
-  <td>Apptainer</td>
-  <td>1.2.2-1</td>
-  <td>Updated</td>
-  <td>Updated</td>
-  <td>Updated with the Scheduled maintenance in FY 2023. Updated from 1.1</td>
+<td>30.11.2023</td>
+<td>Apptainer</td>
+<td>1.2.2-1</td>
+<td>Updated</td>
+<td>Updated</td>
+<td>Updated with the Scheduled maintenance in FY 2023. Updated from 1.1</td>
 </tr>
 
 <tr>
-  <td>30.11.2023</td>
-  <td>SingularityCE</td>
-  <td>3.11.4</td>
-  <td>Updated</td>
-  <td>Updated</td>
-  <td>Updated with the Scheduled maintenance in FY 2023. Updated from 3.10.2</td>
+<td>30.11.2023</td>
+<td>SingularityCE</td>
+<td>3.11.4</td>
+<td>Updated</td>
+<td>Updated</td>
+<td>Updated with the Scheduled maintenance in FY 2023. Updated from 3.10.2</td>
 </tr>
 
 <tr>
-  <td>30.11.2023</td>
-  <td>NVIDIA HPC SDK<br/>(former PGI compiler)	</td>
-  <td>23.7</td>
-  <td>Updated</td>
-  <td>Updated</td> 
-  <td>Updated with the Scheduled maintenance in FY 2023. Updated from 22.9</td>
+<td>30.11.2023</td>
+<td>
+NVIDIA HPC SDK<br/>
+(former PGI compiler)
+</td>
+<td>23.7</td>
+<td>Updated</td>
+<td>Updated</td> 
+<td>
+Updated with the Scheduled maintenance in FY 2023. Updated from 22.9
+</td>
 </tr>
 
 <tr>
-  <td>30.11.2023</td>
-  <td>NVIDIA CUDA*</td>
-  <td>12.1</td>
-  <td>Downgraded</td>
-  <td>Downgraded</td>   
-  <td>Downgraded with the Scheduled maintenance in FY 2023. *CUDA is downgraded to 12.1 from 12.2 because the supported version of the Ubuntu Linux 22.04LTS GA kernel is 12.1.</td>   
+<td>30.11.2023</td>
+<td>NVIDIA CUDA*</td>
+<td>12.1</td>
+<td>Downgraded</td>
+<td>Downgraded</td>   
+<td>
+Downgraded with the Scheduled maintenance in FY 2023. *CUDA is downgraded to 12.1 from 12.2 because the supported version of the Ubuntu Linux 22.04LTS GA kernel is 12.1.
+</td>   
 </tr>
 
 <tr>
-  <td>30.11.2023</td>
-  <td>Intel OneAPI</td>
-  <td>2023.2.0</td>
-  <td>Updated</td>
-  <td>Updated</td>
-  <td>Updated with the Scheduled maintenance in FY 2023. Updated from 2022.2.0</td>
+<td>30.11.2023</td>
+<td>Intel OneAPI</td>
+<td>2023.2.0</td>
+<td>Updated</td>
+<td>Updated</td>
+<td>
+Updated with the Scheduled maintenance in FY 2023. Updated from 2022.2.0
+</td>
 </tr>
 
 <tr>
-  <td>30.11.2023</td>
-  <td>Altair Grid Engine</td>
-  <td>8.8.1</td>
-  <td>Updated</td>
-  <td>Updated</td>
-  <td>Updated with the Scheduled maintenance in FY 2023. Updated from 8.6.19/8.6.4</td>
+<td>30.11.2023</td>
+<td>Altair Grid Engine</td>
+<td>8.8.1</td>
+<td>Updated</td>
+<td>Updated</td>
+<td>Updated with the Scheduled maintenance in FY 2023. Updated from 8.6.19/8.6.4</td>
 </tr>
 
 
