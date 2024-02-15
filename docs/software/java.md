@@ -71,6 +71,9 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ### SDKMAN!による Java 処理系(JDK) のインストール
 
+
+#### - Java 処理系(JDK) のインストール
+
 `sdk list java`コマンドを実行することによりインストール可能な Java 処理系のリストが表示されます。
 
 ```
@@ -143,7 +146,7 @@ sdk install java 21.0.1-oracle
 
 
 ```
-export JAVA_HOME="$(sdk home java current)"
+export JAVA_HOME=$HOME/.sdkman/candidates/java/current
 ```
 
 これにより、`JAVA_HOME`環境変数は`/home/you/.sdkman/candidates/java/current`を指すようになります。
@@ -160,6 +163,9 @@ sdk install java 8.0.392-amzn
 
 
 インストールされている JDK のリストは`sdk list java`で確認できます。
+
+
+#### - Java 処理系(JDK) のバージョンの切り替え
 
 使用する JDK を切り替えるには`sdk use`コマンドを実行します。
 

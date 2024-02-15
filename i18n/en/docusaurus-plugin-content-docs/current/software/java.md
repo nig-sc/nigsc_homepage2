@@ -70,6 +70,8 @@ Reference
 
 ### Installing Java processors (JDK) with SDKMAN!
 
+#### - Installing Java processors (JDK)
+
 Running the `sdk list java` command will list the Java processors that can be installed.
 
 ```
@@ -141,7 +143,7 @@ At this time, the `JAVA_HOME` environment variable is not set automatically, so 
 If necessary, also add it to `~/.bashrc`.
 
 ```
-export JAVA_HOME="$(sdk home java current)"
+export JAVA_HOME=$HOME/.sdkman/candidates/java/current
 ```
 
 The `JAVA_HOME` environment variable will point to `/home/you/.sdkman/candidates/java/current`.
@@ -152,6 +154,8 @@ sdk install java 8.0.392-amzn
 ```
 
 A list of installed JDKs can be found with `sdk list java`.
+
+#### - Switching which JDK to use
 
 To switch which JDK to use, run the `sdk use` command: 
 
