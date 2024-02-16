@@ -152,7 +152,7 @@ export JAVA_HOME=$HOME/.sdkman/candidates/java/current
 これにより、`JAVA_HOME`環境変数は`/home/you/.sdkman/candidates/java/current`を指すようになります。
 
 
-
+#### - Java 処理系(JDK) のバージョンの切り替え
 
 同様に例えば Java 8 をインストールしたい場合は以下のようにします。
 (ここでは Amazon Web Service がサポートしている Corretto JDK https://aws.amazon.com/jp/corretto をインストールする例を示します。)
@@ -164,8 +164,6 @@ sdk install java 8.0.392-amzn
 
 インストールされている JDK のリストは`sdk list java`で確認できます。
 
-
-#### - Java 処理系(JDK) のバージョンの切り替え
 
 使用する JDK を切り替えるには`sdk use`コマンドを実行します。
 
