@@ -14,7 +14,6 @@ In bioinformatics, traditionally, Sun Grid Engine (SGE) has been widely used. SG
 Reference
 
 - Sun Grid Engine for Dummies [[PDF]](Sun_Grid_Engine_for_Dummies.pdf) [[Internet Archive]](http://web.archive.org/web/20151011170032/https://blogs.oracle.com/templedf/entry/sun_grid_engine_for_dummies)
-- ["Parallelization and acceleration of analysis using the NIG supercomputer" (IIBMP2021 the handout for the Data Scientist Training Session )](https://www.slideshare.net/oogasawa/pptx-251567866)
 - [Altair Grid Engine official website](https://www.altair.com/grid-engine/)
     - [Introuctory Guide](https://2021.help.altair.com/2021.1/AltairGridEngine/8.7.0/IntroductionGE.pdf)
     - [User's Guide](https://2021.help.altair.com/2021.1/AltairGridEngine/8.7.0/UsersGuideGE.pdf)
