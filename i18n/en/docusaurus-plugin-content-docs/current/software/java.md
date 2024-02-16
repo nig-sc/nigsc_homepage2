@@ -148,6 +148,9 @@ export JAVA_HOME=$HOME/.sdkman/candidates/java/current
 
 The `JAVA_HOME` environment variable will point to `/home/you/.sdkman/candidates/java/current`.
 
+
+#### - Switching which JDK to use
+
 Similarly, to install Java 8 (Here is an example of installing the Corretto JDK https://aws.amazon.com/jp/corretto, which is supported by Amazon Web Service.): 
 ```
 sdk install java 8.0.392-amzn
@@ -155,7 +158,6 @@ sdk install java 8.0.392-amzn
 
 A list of installed JDKs can be found with `sdk list java`.
 
-#### - Switching which JDK to use
 
 To switch which JDK to use, run the `sdk use` command: 
 

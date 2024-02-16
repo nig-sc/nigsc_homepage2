@@ -5,7 +5,7 @@ title: "Statistics"
 
 
 
-## Number of NIG Supercomputer System Accounts
+## Number of users
 
 
 <table>
@@ -120,6 +120,8 @@ title: "Statistics"
 
 ## Number of user institutions
 
+The number of institutions represents [the number of institutions applying for scientific research funding in Japan](https://www-kaken.jsps.go.jp/kaken1/kikanList.do).
+
 <table>
 <tbody>
 <tr>
@@ -220,6 +222,8 @@ title: "Statistics"
 </table>
 
 ![](totalnumber_institute.png)
+
+
 
 ## Number of peer-reviewed papers published
 
