@@ -13,37 +13,24 @@ The general analysis division of NIG supercomputer can be used with a computer r
 
 ## Steps from  account application to start of use
 
-<!--
 
-<ol>
-<li><a href="https://sc.ddbj.nig.ac.jp/en/application/registration"><u>Follow the account application procedure</u></a> and apply from <a href="https://sc-account.ddbj.nig.ac.jp/en/application/registration">&#x1f517;<u>the account application form</u></a>.</li>
-    <ul>
-    <li>Before you fill it in, ensure <a href="https://sc.ddbj.nig.ac.jp/en/application/"><u>"User Account Issuance Criteria"</u></a> and <a href="https://sc.ddbj.nig.ac.jp/en/application/use_policy"><u>"Acceptable Use Policy"</u></a>.</li>
-    <li>You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)</li>
-    <li>In the registration form, there is a page to register the SSH public key, so create your SSH public key in advance. For details, see <a href="https://sc.ddbj.nig.ac.jp/en/application/ssh_keys"><u>SSH public key registration</u></a>.</li>
-    <li>When applying to use the NIG supercomputer, you must designate a faculty member of a university or national/public research institution who is a resident of Japan under the Foreign Exchange and Foreign Trade Control Law as the responsible person. A UNIX group is created for each account of the responsible person.</li>
-    </ul>
-<li>To confirm your identity, the person in charge of the NIG supercomputer send email to <a href="https://sc.ddbj.nig.ac.jp/en/application/#the-responsible-person"><u>the responsible person</u></a>. Send back the Pledge(PDF) <a href="https://sc.ddbj.nig.ac.jp/en/application/signing_PDF"><u>with reference to the 'Steps to sign a PDF'</u></a>.
-</li>
-    <ul>
-    <li>The email will be sent in a few days After completing the application form</li>
-    </ul>
-<li>Wait for your account registration certificate to arrive.
-    <ul>
-    <li>It takes about a week to mail your account registration certidicate by post after you sent the pledge(PDF)</li>
-    <li>It takes longer time if the examination is required by the Organization such as foreign exchange law.</li>
-    </ul>
-</li>
-<li>Confirm your initial password with your account registration certificate and start using the service</li>
-    <ul>
-    <li>For how to login the general analysis division, refer to the pages after <a href="https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_login/"><u>How to Login (The general analysis division)</u></a>.</li>
-    </ul>
-<li>If you have a request to expand the resources or use billing services, <a href="https://sc.ddbj.nig.ac.jp/en/application/resource_extension"><u>download the Usage Plan Form</u></a>, fill it out and submit it.</li>
-    <ul>
-    <li><a href="https://sc.ddbj.nig.ac.jp/en/application/reference/"><u>Contact us</u></a> for Submission.</li>
-    </ul>
-</ol>
--->
+
+1. [Follow the account application procedure](/application/registration) and apply from [the account application form](https://sc-account.ddbj.nig.ac.jp/en/application/registration).
+    - Before you fill it in, ensure ["User Account Issuance Criteria"](/application/) and ["Acceptable Use Policy"](/application/use_policy).
+    - You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)
+    - In the registration form, there is a page to register the SSH public key, so create your SSH public key in advance. For details, see [SSH public key registration](/application/ssh_keys)
+    - When applying to use the NIG supercomputer, you must designate a faculty member of a university or national/public research institution who is a resident of Japan under the Foreign Exchange and Foreign Trade Control Law as the responsible person. A UNIX group is created for each account of the responsible person.
+2. To confirm your identity, the person in charge of the NIG supercomputer send email to [the responsible person](/application/#the-responsible-person). Send back the Pledge(PDF) [with reference to the 'Steps to sign a PDF'](/application/signing_PDF).
+    - The email will be sent in a few days after completing the application form.
+3. Wait for your account registration certificate to arrive.
+    - It takes about a week to mail your account registration certidicate by post after you sent the pledge(PDF).
+    - It takes longer time if the examination is required by the Organization such as foreign exchange law.
+4. Confirm your initial password with your account registration certificate and start using the service.
+    - For how to login the general analysis division, refer to the pages after [How to Login (The general analysis division)](/general_analysis_division/ga_login/)
+5. If you have a request to expand the resources or use billing services, [download the Usage Plan Form](/application/resource_extension), fill it out and submit it.
+    - [Contact us](/application/reference/) for Submission.
+
+
 
 ## Application for use by a group
 
