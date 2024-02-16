@@ -5,7 +5,7 @@ title: "各種統計"
 
 
 
-## スパコンアカウント数
+## ユーザー数
 
 <table>
 <tr>
@@ -119,6 +119,8 @@ title: "各種統計"
 
 ## ユーザーの所属機関数
 
+機関数は、[国内の科研費の申請機関数](https://www-kaken.jsps.go.jp/kaken1/kikanList.do)を表しています。
+
 <table>
 <tbody>
 <tr>
@@ -219,6 +221,8 @@ title: "各種統計"
 </table>
 
 ![](totalnumber_institute.png)
+
+![](totalnumber_institute_map.png)
 
 
 ## 発行済み査読付き論文数
