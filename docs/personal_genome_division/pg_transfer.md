@@ -11,7 +11,7 @@ title: "データ転送（個人ゲノム解析区画）"
 Linux または Mac の場合の例：
 
 この状態で、カレントディレクトリにある`your_file.txt`ファイルを遺伝研スパコンに `scp` するには、
-以下のコマンドを実行します。（ここで`you`は、遺伝研スパコンのアカウント名です。）
+以下のコマンドを実行します。
 
 ここで`you`は、遺伝研スパコンのアカウント名です。
 
@@ -47,6 +47,6 @@ you@gwa.ddbj.nig.ac.jp:/home/you
 ```
 
 
-## HCPtools によるファイル転送の方法
+## Archaea tools(旧 HCPtools) によるファイル転送の方法
 
-転送方法は、[HCPtools の使い方](/software/Archaea_tools)をご参照下さい。
+転送方法は、[Archaea tools(旧 HCPtools) の使い方](/software/Archaea_tools)をご参照下さい。
