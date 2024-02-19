@@ -193,6 +193,19 @@ a specific range of array jobs.
 
 ## ジョブの実行条件の変更 (qalter)
 
+qalter で 待ち行列（キュー）に投入（サブミット）されたバッチジョブが使用するメモリ量等を変更することが出来ます。ジョブのメモリ要求量を 200GB から 100GB に変更する場合は、まず、qstat でジョブの hard_resource_list を確認します。qalter による hard_resource_list の変更は hard_resource_list 全体を上書きするため、メモリ要求量とメモリ以外の hard_resource_list も合わせて指定して変更します。
+
+```
+[username@at027 ~]$ qstat -j 25453855 |grep hard_resource_list
+hard_resource_list:         mem_req=100G,s_vmem=100G
+
+[username@at027 ~]$ qalter -l  d_rt=600,mem_req=100G,s_rt=600,s_stack=10240K,s_vmem=100G,short=TRUE 25453855
+modified hard resource list of job 25453855
+modified environment of job 25453855
+
+[username@at027 ~]$ qstat -j 25453855 |grep hard_resource_list
+hard_resource_list:         d_rt=600,mem_req=100G,s_rt=600,s_stack=10240K,s_vmem=100G,short=TRUE
+```
 
 ## ジョブの結果の確認
 
