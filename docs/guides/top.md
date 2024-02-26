@@ -20,14 +20,13 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
+- [アカウント登録システムのアカウント情報変更申請のページでのシステム不具合が発生しています](/blog/2024-02-26-change-account-error)　(2024.02.26)
 - &#x26a0; [12 月 27 日～1 月 9 日 年末年始に伴いアカウント登録システムを停止します](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) ＼&#x1f195;／
 - [(終了)11 月 24 日 - 11 月 30 日に定期メンテナンスを行います `<=` 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.12.01)
     - [OS 移行に伴う FAQ のページを作成しました](/faq/faq_os_migration)＼&#x1f195;／
 - [ISMS 認証(ISO27001)を取得しました](/guides/ISMS_Certificate) (2023.11.22)
 - [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#%E3%82%AA%E3%83%9F%E3%82%AF%E3%82%B9%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B0%E3%83%A9%E3%83%95%E5%8C%96%E3%83%84%E3%83%BC%E3%83%AB-rias%25EF%25B8%258F-visualization%20%E3%81%AE-%E6%8F%90%E4%BE%9B%E3%82%92%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F) (2023.10.26)
 - [個人ゲノム解析区画で使用可能な GPU 専用 Slurm パーティションを新設しました](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
-- [GPU ノードで利用可能な CPU コア数を拡張しました](/blog/2023-07-26-gpu-configure)　(2023.07.11)
-- [国立国際医療研究センター　河合洋介先生より、ヒト全ゲノム解析の公共データの再解析データセットが公開されました](/advanced_guides/advanced_guide_2023#%E3%83%92%E3%83%88%E5%85%A8%E3%82%B2%E3%83%8E%E3%83%A0%E8%A7%A3%E6%9E%90%E3%81%AE%E5%85%AC%E5%85%B1%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%86%8D%E8%A7%A3%E6%9E%90%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88) (2023.06.05)
 
 
 
