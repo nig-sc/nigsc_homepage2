@@ -19,16 +19,13 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
+- [Notice of system failure on the page for requesting changes to account information in the account registration system](/blog/2024-02-26-change-account-error) 
 - &#x26a0; [December 27, 2023 - January 9, 2024, the account registration system will be suspended due to the year-end and New Year's holidays.](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) ＼&#x1f195;／
 - [(Ended)Scheduled maintenance from 24 to 30 November `<=` Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration) ＼&#x1f195;／
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
-- [Extended number of CPU cores available for GPU node](/blog/2023-07-26-gpu-configure)　(2023.07.11)
-- [A reanalysis dataset of public data from the Human Whole Genome Analysis has been published by Professor Yosuke Kawai, NCGM](/advanced_guides/advanced_guide_2023/#reanalysis-dataset-of-public-data-of-human-whole-genome-analysis) (2023.06.05)
-- [Signature to the pledge is now an electronic signature by Adobe, instead of a stamp](/blog/2023-03-14-adobe_sign) (2023.03.14)
-- [Opened Github Discussions](/blog/2023-02-08-news_GithubDiscussions) (2023.02.08)
 
 
 ## Scheduled for FY 2023
