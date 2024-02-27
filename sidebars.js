@@ -179,7 +179,7 @@ module.exports = {
                         "software/Slurm/interactive_jobs",
                         "software/Slurm/parallel_jobs",
                         "software/Slurm/array_jobs",
-                        "software/Slurm/other_jobs",
+                        "software/Slurm/other_commands",
                     ]
                 },
 
