@@ -106,9 +106,9 @@ Workflow Parameters に先程、 imputationserver-web-ui で生成したパラ�
 
 ![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/4d2a8ccd-f00d-46cd-ab18-b7dc6d73f53f)
 
-一番下にあるExecute ボタンを押して、ワークフローを実行します。 ジョブの状態がRunning になります。
+一番下にある `EXECUTE` ボタンを押して、ワークフローを実行します。 ジョブの状態が `RUNNING` になります。
 
-FILL_THE_SCREENSHOT
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/b1f87d86-b8dc-45d4-a951-f463da4dc2e6)
 
 正常にワークフローの実行が開始されるとcwltoolでワークフローが実行されます。
 
