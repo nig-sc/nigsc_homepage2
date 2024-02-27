@@ -96,7 +96,7 @@ http://localhost:1121
 
 次にバックエンドワークフローを使用するために少し下にスクロールし、 Workflows という項目から hibag をクリックします。
 
-![image.png](https://image.docbase.io/uploads/995a21fc-2298-4fac-b876-d1d56fee5572.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/3bf3a8d4-f7d7-48b6-b6de-298c01e8ae42)
 
 Compose Run の項目から、Workflow Engine の項目で cwltool 3.1 を選択します。
 
