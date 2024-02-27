@@ -100,7 +100,7 @@ http://localhost:1121
 
 Compose Run の項目から、Workflow Engine の項目で cwltool 3.1 を選択します。
 
-![image.png](https://image.docbase.io/uploads/8c9c0dc6-add5-4d67-a993-63c9a2f7d9f5.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/931a27bc-5c98-49c5-aee9-de791b48703b)
 
 Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、デフォルトで書かれている {} を消して、生成したパラメータを入力します。
 
