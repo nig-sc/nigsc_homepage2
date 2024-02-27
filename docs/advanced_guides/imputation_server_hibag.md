@@ -104,17 +104,17 @@ Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選�
 
 Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、最初から書かれている `{}` を消して、生成したパラメータを入力します。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/4d2a8ccd-f00d-46cd-ab18-b7dc6d73f53f)
+![fig8](./imputation_server_hibag_fig8.png)
 
 一番下にある `EXECUTE` ボタンを押して、ワークフローを実行します。 ジョブの状態が `RUNNING` になります。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/b1f87d86-b8dc-45d4-a951-f463da4dc2e6)
+![fig9](./imputation_server_hibag_fig9.png)
 
 正常にワークフローの実行が開始されるとcwltoolでワークフローが実行されます。
 
 正常に終了すると `COMPLETE` になります。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/c4bcfb64-c345-42e5-a0cf-441977f9eb46)
+![fig10](./imputation_server_hibag_fig10.png)
 
 結果ファイルは、ブラウザから取得が可能です。 Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されます。
 
@@ -140,7 +140,7 @@ Imputation Workflow 実行後、以下のものが取得できます。
 
 `Run ID`を調べます。`Run ID` の右に表示されているものが `Run ID` です。 右にあるアイコンをクリックすることで、 `Run ID` (以下runid)をコピーすることが可能です。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/fc5756fc-4c9c-4714-b014-ad7a3631e810)
+![fig11](./imputation_server_hibag_fig11.png)
 
 インストールしたディレクトリ/sapporo-service/run/`runid` の最初の２文字 /`runid`/outputs/ 以下にすべてのファイルがあります。
 
