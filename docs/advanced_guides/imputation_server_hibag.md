@@ -92,7 +92,7 @@ http://localhost:1121
 
 クリックすると以下のような画面がでてきます
 
-![image.png](https://image.docbase.io/uploads/b78158f0-74bb-48ec-88df-b74c087c21ea.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/31921e26-cfa9-4692-9e3c-6bd5bb868eb5)
 
 次にバックエンドワークフローを使用するために少し下にスクロールし、 Workflows という項目から hibag をクリックします。
 
