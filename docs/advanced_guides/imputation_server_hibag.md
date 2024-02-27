@@ -50,7 +50,7 @@ http://localhost:5000/hibag
 
 実際にアクセスすると、次のような画面になります。
 
-![image.png](https://image.docbase.io/uploads/2ca8d3ad-d685-40e1-b5ac-6c48b7e4042a.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/464bf8a1-4487-405c-8804-7d98a849c94d)
 
 以下の項目について設定を行います。
 
