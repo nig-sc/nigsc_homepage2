@@ -104,7 +104,7 @@ Compose Run の項目から、Workflow Engine の項目で cwltool 3.1 を選択
 
 Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、デフォルトで書かれている {} を消して、生成したパラメータを入力します。
 
-![image.png](https://image.docbase.io/uploads/7ad0c985-5a95-40de-b33f-dc1268d49ba9.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/51bdf603-4cd9-4017-8f2e-ad0d71426702)
 
 一番下にあるExecute ボタンを押して、ワークフローを実行します。 ジョブの状態がRunning になります。
 
