@@ -114,7 +114,9 @@ Workflow Parameters に先程、 imputationserver-web-ui で生成したパラ�
 
 正常に終了すると `COMPLETE` になります。
 
-結果ファイルは、ブラウザから取得が可能です。 Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されま す。
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/c4bcfb64-c345-42e5-a0cf-441977f9eb46)
+
+結果ファイルは、ブラウザから取得が可能です。 Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されます。
 
 ダウンロードしたいファイルをクリックするとダイアログが表示され、 デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
 
@@ -138,14 +140,14 @@ Imputation Workflow 実行後、以下のものが取得できます。
 
 `Run ID`を調べます。`Run ID` の右に表示されているものが `Run ID` です。 右にあるアイコンをクリックすることで、 `Run ID` (以下runid)をコピーすることが可能です。
 
-FILL THE SCREENSHOT
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/fc5756fc-4c9c-4714-b014-ad7a3631e810)
 
 インストールしたディレクトリ/sapporo-service/run/`runid` の最初の２文字 /`runid`/outputs/ 以下にすべてのファイルがあります。
 
-`runid`が`1b19d002-8d4c-4f52-973c-66a165cd135f`の場合、最初の２文字は `1b` になります。
+`runid`が`eef64a2e-ca10-4ab0-a762-a965c4149a4a`の場合、最初の２文字は `ee` になります。
 
 scpでコピーするときは、お手元の計算機に以下のように入力します。 手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム解析区画から、お手元の計算機にコピーされてきます。
 
 ```
-scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
+scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/ee/eef64a2e-ca10-4ab0-a762-a965c4149a4a/outputs outputs
 ```
