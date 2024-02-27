@@ -21,7 +21,7 @@
 
 1KG.JPT.bim, 1KG.JPT.fam, 1KG.JPT.bed のすべてをダウンロードします。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/cbe1f5e8-9f7e-4e40-8b7e-28b4905b89f9)
+![fig1](./imputation_server_hibag_fig1.png)
 
 ### 遺伝研スパコン個人ゲノム解析区画へコピーします。
 さきほどダウンロードしたテストデータをコピーします。
@@ -50,7 +50,7 @@ http://localhost:5000/hibag
 
 実際にアクセスすると、次のような画面になります。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/464bf8a1-4487-405c-8804-7d98a849c94d)
+![fig2](./imputation_server_hibag_fig2.png)
 
 以下の項目について設定を行います。
 
@@ -74,7 +74,7 @@ http://localhost:5000/hibag
 パラメータの指定が終わったら、Set up job ボタンを押します。 
 画面下部に、生成されたパラメータが表示されます。これをsapporo-web で使います。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/78985286-74fa-4343-8f49-a15f149eb14a)
+![fig3](./imputation_server_hibag_fig3.png)
 
 ## Imputation Workflowの実行
 
@@ -86,25 +86,25 @@ http://localhost:1121
 
 以下のような画面が表示されます。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/a583ef94-e1af-4f29-a727-ea4109b7fed8)
+![fig4](./imputation_server_hibag_fig4.png)
 
 次に、デフォルトで使用可能になっている Sapporo Service on localhost を選択します。
 
 クリックすると以下のような画面がでてきます
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/31921e26-cfa9-4692-9e3c-6bd5bb868eb5)
+![fig5](./imputation_server_hibag_fig5.png)
 
 次にバックエンドワークフローを使用するために少し下にスクロールし、 Workflows という項目から hibag をクリックします。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/3bf3a8d4-f7d7-48b6-b6de-298c01e8ae42)
+![fig6](./imputation_server_hibag_fig6.png)
 
 Compose Run の項目から、Workflow Engine の項目で cwltool 3.1 を選択します。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/931a27bc-5c98-49c5-aee9-de791b48703b)
+![fig7](./imputation_server_hibag_fig7.png)
 
 Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、デフォルトで書かれている {} を消して、生成したパラメータを入力します。
 
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/51bdf603-4cd9-4017-8f2e-ad0d71426702)
+![fig8](./imputation_server_hibag_fig8.png)
 
 一番下にあるExecute ボタンを押して、ワークフローを実行します。 ジョブの状態がRunning になります。
 
