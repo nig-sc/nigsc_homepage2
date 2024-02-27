@@ -174,7 +174,12 @@ module.exports = {
                     type: 'category',
                     label: 'Slurm',
                     items: [
-                        "software/Slurm/Slurm"
+                        "software/Slurm/Slurm",
+                        "software/Slurm/batch_jobs",
+                        "software/Slurm/interactive_jobs",
+                        "software/Slurm/parallel_jobs",
+                        "software/Slurm/array_jobs",
+                        "software/Slurm/other_commands",
                     ]
                 },
 
