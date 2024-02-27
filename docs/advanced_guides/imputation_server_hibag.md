@@ -13,7 +13,7 @@
 
 ### PLINK bed、bim、fam ファイル の準備
 
-[Test data for Imputation Server HIBAG Workflow](https://zenodo.org/uploads/10579034) にアクセスします。以下の3つのファイルがおいてあります。
+[Test data for Imputation Server HIBAG Workflow](https://zenodo.org/records/10579034) にアクセスします。以下の3つのファイルがおいてあります。
 
 - 1KG.JPT.bim
 - 1KG.JPT.fam
