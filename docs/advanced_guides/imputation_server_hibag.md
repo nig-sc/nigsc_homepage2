@@ -86,7 +86,7 @@ http://localhost:1121
 
 以下のような画面が表示されます。
 
-![image.png](https://image.docbase.io/uploads/9ba36f43-6746-4dd0-8666-2d7d74c5792f.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/a583ef94-e1af-4f29-a727-ea4109b7fed8)
 
 次に、デフォルトで使用可能になっている Sapporo Service on localhost を選択します。
 
