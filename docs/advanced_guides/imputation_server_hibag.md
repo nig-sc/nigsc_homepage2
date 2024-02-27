@@ -74,7 +74,7 @@ http://localhost:5000/hibag
 パラメータの指定が終わったら、Set up job ボタンを押します。 
 画面下部に、生成されたパラメータが表示されます。これをsapporo-web で使います。
 
-![image.png](https://image.docbase.io/uploads/538511c7-f13b-4752-a86f-315fb3c03958.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/78985286-74fa-4343-8f49-a15f149eb14a)
 
 ## Imputation Workflowの実行
 
