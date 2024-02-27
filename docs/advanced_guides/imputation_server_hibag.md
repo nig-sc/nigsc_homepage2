@@ -15,11 +15,11 @@
 
 [Test data for Imputation Server HIBAG Workflow](https://zenodo.org/records/10579034) にアクセスします。以下の3つのファイルがおいてあります。
 
-- 1KG.JPT.bim
-- 1KG.JPT.fam
-- 1KG.JPT.bed
+- `1KG.JPT.bim`
+- `1KG.JPT.fam`
+- `1KG.JPT.bed`
 
-1KG.JPT.bim, 1KG.JPT.fam, 1KG.JPT.bed のすべてをダウンロードします。
+`1KG.JPT.bim`、`1KG.JPT.fam`、`1KG.JPT.bed` のすべてをダウンロードします。
 
 ![fig1](./imputation_server_hibag_fig1.png)
 
@@ -60,7 +60,7 @@ http://localhost:5000/hibag
 
 「PLINK の bed ファイルのパス」 には、解析対象の bed ファイルのフルパスを指定します。
 ここでは先程アップロードした、ファイルを使います。
-具体的なフルパスは /home/youraccountname/AAA.bed のようになります。
+具体的なフルパスは `/home/youraccountname/1KG.JPT.bed` のようになります。
 
 次に HIBAG のモデルのオプションを選択します。
 以下の3つについて、選択が可能です。3つの選択肢を選択すると、どのモデルを用いるかが決まります。
@@ -98,11 +98,11 @@ http://localhost:1121
 
 ![fig6](./imputation_server_hibag_fig6.png)
 
-Compose Run の項目から、Workflow Engine の項目で cwltool 3.1 を選択します。
+Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選択します。
 
 ![fig7](./imputation_server_hibag_fig7.png)
 
-Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、デフォルトで書かれている {} を消して、生成したパラメータを入力します。
+Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、最初から書かれている `{}` を消して、生成したパラメータを入力します。
 
 ![fig8](./imputation_server_hibag_fig8.png)
 
