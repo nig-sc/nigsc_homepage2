@@ -21,7 +21,7 @@
 
 1KG.JPT.bim, 1KG.JPT.fam, 1KG.JPT.bed のすべてをダウンロードします。
 
-![image.png](https://image.docbase.io/uploads/cd84005d-f818-4a24-b912-02e2b3eb42d2.png =WxH)
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/cbe1f5e8-9f7e-4e40-8b7e-28b4905b89f9)
 
 ### 遺伝研スパコン個人ゲノム解析区画へコピーします。
 さきほどダウンロードしたテストデータをコピーします。
