@@ -19,7 +19,8 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [(Ended) Notice of system failure on the page for requesting changes to account information in the account registration system](/blog/2024-02-26-change-account-error) 
+- [(Ended) February 27, 2024: Token code for SSL-VPN connection not being sent](/blog/2024-02-27-ssh-vpn-mail-unavailable) (2024.02.27)
+- [(Ended) Notice of system failure on the page for requesting changes to account information in the account registration system](/blog/2024-02-26-change-account-error) (2024.02.26)
 - &#x26a0; [December 27, 2023 - January 9, 2024, the account registration system will be suspended due to the year-end and New Year's holidays.](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) ＼&#x1f195;／
 - [(Ended) Scheduled maintenance from 24 to 30 November `<=` Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration) ＼&#x1f195;／
