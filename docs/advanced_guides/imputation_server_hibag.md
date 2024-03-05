@@ -72,7 +72,7 @@ http://localhost:5000/hibag
 最後に 本ワークフローが出力するファイル(複数)のプレフィックス名 を入力します。
 
 入力例は下記の画像ようになります。
-![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/391dc057-949d-4198-a610-fda746194a49)
+![fig_inputexample](./imputation_server_hibag_fig_inputexample.png)
 
 ここでは、入力の bed ファイルのパスを入力後、
 
