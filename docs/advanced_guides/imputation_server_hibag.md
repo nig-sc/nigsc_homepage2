@@ -124,7 +124,7 @@ Workflow Parameters に先程、 imputationserver-web-ui で生成したパラ�
 
 正常にワークフローの実行が開始されるとcwltoolでワークフローが実行されます。
 
-正常に終了すると `COMPLETE` になります。
+正常に動作すると10分程度でステータスが `COMPLETE` に変わります。
 
 ![fig10](./imputation_server_hibag_fig10.png)
 
