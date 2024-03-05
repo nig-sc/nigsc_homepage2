@@ -71,6 +71,18 @@ http://localhost:5000/hibag
 
 最後に 本ワークフローが出力するファイル(複数)のプレフィックス名 を入力します。
 
+入力例は下記の画像ようになります。
+![image](https://github.com/kozo2/nigsc_homepage2/assets/12192/391dc057-949d-4198-a610-fda746194a49)
+
+ここでは、入力の bed ファイルのパスを入力後、
+
+- `--Select a genotyping platform--` のドロップダウンリストで `Illumina HumanOmni2.5 (based on HumanOmini2.5-8v1_C` を選択
+- `--Select a resolution--` ののドロップダウンリストで `Two-field (4-digit) resolution` を選択
+- `-Select an ancestry--` のドロップダウンリストで `Asian` を選択
+
+そして `Output file name prefix` に `1KG.JPT.hibag` を入力しました。
+(注意: `Output file name prefix` にパスを書くことはできません。/が含まれているとエラーになります)
+
 パラメータの指定が終わったら、Set up job ボタンを押します。 
 画面下部に、生成されたパラメータが表示されます。これをsapporo-web で使います。
 
