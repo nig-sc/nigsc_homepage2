@@ -81,7 +81,7 @@ http://localhost:5000/hibag
 - `-Select an ancestry--` のドロップダウンリストで `Asian` を選択
 
 そして `Output file name prefix` に `1KG.JPT.hibag` を入力しました。
-(注意: `Output file name prefix` にパスを書くことはできません。/が含まれているとエラーになります)
+(注意: `Output file name prefix` にパスを書くことはできません。 `/` が含まれているとエラーになります)
 
 パラメータの指定が終わったら、Set up job ボタンを押します。 
 画面下部に、生成されたパラメータが表示されます。これをsapporo-web で使います。
