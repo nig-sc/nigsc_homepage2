@@ -77,7 +77,7 @@ http://localhost:5000/hibag
 ここでは、入力の bed ファイルのパスを入力後、
 
 - `--Select a genotyping platform--` のドロップダウンリストで `Illumina HumanOmni2.5 (based on HumanOmini2.5-8v1_C` を選択
-- `--Select a resolution--` ののドロップダウンリストで `Two-field (4-digit) resolution` を選択
+- `--Select a resolution--` のドロップダウンリストで `Two-field (4-digit) resolution` を選択
 - `-Select an ancestry--` のドロップダウンリストで `Asian` を選択
 
 そして `Output file name prefix` に `1KG.JPT.hibag` を入力しました。
