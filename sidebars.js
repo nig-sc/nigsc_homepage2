@@ -248,6 +248,7 @@ module.exports = {
             items: [
                 "software/python",
                 "software/R",
+                "software/r_studio_server",
                 "software/jupyter_notebook",
                 "software/jupyter_lab",
                 "software/java",

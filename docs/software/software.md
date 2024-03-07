@@ -247,7 +247,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-R Studio Server
+[R Studio Server](r_studio_server)
 
 </td>
 <td width="300">利用可能</td>
