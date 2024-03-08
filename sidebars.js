@@ -247,7 +247,7 @@ module.exports = {
             label: "開発環境・ライブラリ",
             items: [
                 "software/python",
-                "software/R",
+                "software/R/R",
                 "software/r_studio_server",
                 "software/jupyter_notebook",
                 "software/jupyter_lab",
