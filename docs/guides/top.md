@@ -21,9 +21,7 @@ sidebar_label: トップページ
 ## 重要なお知らせ
 
 - [2024 年 3 月 9 日(土) SINET6 の機器メンテナンス作業により通信断が発生します](/blog/2024-03-09-network) (2024.03.08)
-- [(終了) SSL-VPN接続のためのToken codeが送信されない不具合が発生しています](/blog/2024-02-27-ssh-vpn-mail-unavailable) (2024.02.27)
-- [(終了)アカウント登録システムのアカウント情報変更申請のページでのシステム不具合が発生しています](/blog/2024-02-26-change-account-error)　(2024.02.26)
-- &#x26a0; [12 月 27 日～1 月 9 日 年末年始に伴いアカウント登録システムを停止します](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) ＼&#x1f195;／
+- &#x26a0; [12 月 27 日～1 月 9 日 年末年始に伴いアカウント登録システムを停止します](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) (2023.12.27)
 - [(終了)11 月 24 日 - 11 月 30 日に定期メンテナンスを行います `<=` 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.12.01)
     - [OS 移行に伴う FAQ のページを作成しました](/faq/faq_os_migration)＼&#x1f195;／
 - [ISMS 認証(ISO27001)を取得しました](/guides/ISMS_Certificate) (2023.11.22)
