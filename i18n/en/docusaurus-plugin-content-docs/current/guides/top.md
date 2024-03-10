@@ -19,9 +19,9 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [March 9, 2024: Communication breakdowns occur due to network device maintenance](/blog/2024-03-09-network) (2024.03.08)
-- &#x26a0; [December 27, 2023 - January 9, 2024, the account registration system will be suspended due to the year-end and New Year's holidays.](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) (2023.12.27)
-- [(Ended) Scheduled maintenance from 24 to 30 November `<=` Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
+- [(Ended) March 9, 2024: Communication breakdowns occur due to network device maintenance](/blog/2024-03-09-network) (2024.03.08)
+- &#x26a0; [(Ended) December 27, 2023 - January 9, 2024, the account registration system will be suspended due to the year-end and New Year's holidays.](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) (2023.12.27)
+- [(Ended) Scheduled maintenance from 24 to 30 November ← Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration) ＼&#x1f195;／
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)

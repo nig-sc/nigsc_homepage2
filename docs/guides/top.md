@@ -20,9 +20,9 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
-- [2024 年 3 月 9 日(土) SINET6 の機器メンテナンス作業により通信断が発生します](/blog/2024-03-09-network) (2024.03.08)
-- &#x26a0; [12 月 27 日～1 月 9 日 年末年始に伴いアカウント登録システムを停止します](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) (2023.12.27)
-- [(終了)11 月 24 日 - 11 月 30 日に定期メンテナンスを行います `<=` 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.12.01)
+- [(終了) 2024 年 3 月 9 日(土) SINET6 の機器メンテナンス作業により通信断が発生します](/blog/2024-03-09-network) (2024.03.08)
+- &#x26a0; [(終了) 12 月 27 日～1 月 9 日 年末年始に伴いアカウント登録システムを停止します](/blog/2023-12-27-account_registration_system_outage_NewYearsHoliday) (2023.12.27)
+- [(終了) 11 月 24 日 - 11 月 30 日に定期メンテナンスを行います ← 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.12.01)
     - [OS 移行に伴う FAQ のページを作成しました](/faq/faq_os_migration)＼&#x1f195;／
 - [ISMS 認証(ISO27001)を取得しました](/guides/ISMS_Certificate) (2023.11.22)
 - [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#%E3%82%AA%E3%83%9F%E3%82%AF%E3%82%B9%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B0%E3%83%A9%E3%83%95%E5%8C%96%E3%83%84%E3%83%BC%E3%83%AB-rias%25EF%25B8%258F-visualization%20%E3%81%AE-%E6%8F%90%E4%BE%9B%E3%82%92%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F) (2023.10.26)
