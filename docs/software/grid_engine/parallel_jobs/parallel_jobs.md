@@ -60,7 +60,7 @@ title: パラレルジョブ
 
 ```
 -pe def_slot 16 -l s_vmem=8G -l mem_req=8G
--pe mpi-fillup 16 -l s_vem=8G -l mem_req=8G 
+-pe mpi-fillup 16 -l s_vmem=8G -l mem_req=8G 
 ```
 
 
