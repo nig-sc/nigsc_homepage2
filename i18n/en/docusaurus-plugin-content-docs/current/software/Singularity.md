@@ -7,7 +7,7 @@ title: "Singularity"
 
 Singularity containers are available on the NIG supercomputer to install various analysis software with user permission.
 
-By using Singularity, for example, it is possible to run analysis software installed by Ubuntu Linux apt-get etc. on the NIG supercomputer (CentOS 7.5).
+By using Singularity, for example, it is possible to run analysis software installed by Ubuntu Linux apt-get etc. on the NIG supercomputer (CentOS 7.9).
 
 
 ## Reference
