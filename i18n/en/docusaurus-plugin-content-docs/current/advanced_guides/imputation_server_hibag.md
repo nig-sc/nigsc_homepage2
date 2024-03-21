@@ -1,19 +1,20 @@
 ## Procedures for using this system
 
-In this system, the HLA Genotype Imputation workflow using [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) is executed following the steps below.
+This system executes HLA Genotype Imputation workflows using [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) in the following steps.
 
-1. Preparation of test input data
-2. Generation of configuration file for HLA Genotype Imputation Workflow
-3. Execution of HLA Genotype Imputation Workflow
+1. Prepare test data
+2. Generate a configuration file for HLA Genotype Imputation Workflow
+3. Execute the HLA Genotype Imputation Workflow
 
-## Preparation of Test Input Data
+## 1. Prepare test data
 
-To proceed with the tutorial, download the test input data and copy it to the Individual Genome Analysis Section of the NIG Supercomputer Center.
+To proceed with the tutorial, download the test input data and copy it to the Personal Genome Analysis division of the NIG supercomputer.
 The required data for input to this workflow are PLINK bed, bim, and fam files.
 
 ### Preparation of PLINK bed, bim, and fam files
 
-Access [Test data for Imputation Server HIBAG Workflow](https://zenodo.org/records/10579034). The following three files are available:
+Access [Test data for Imputation Server HIBAG Workflow](https://zenodo.org/records/10579034).
+You can find the following three files.
 
 - `1KG.JPT.bim`
 - `1KG.JPT.fam`
@@ -23,15 +24,16 @@ Download all `1KG.JPT.bim`, `1KG.JPT.fam`, and `1KG.JPT.bed` files.
 
 ![fig1](./imputation_server_hibag_fig1.png)
 
-### Copy to Individual Genome Analysis Section of NIG Supercomputer
+### Copy it to Personal Genome Analysis division of the NIG supercomputer
 
-Copy the downloaded test data.
+Copy the test data just downloaded.
 
-Connect to the NIG Supercomputer via VPN.
+First, connect the VPN for connecting to the NIG supercomputer.
 
-Next, copy the downloaded test data with the following command. (Please place all PLINK files in the same directory.)
+Next, use the following command to copy the test data that you have just downloaded.
+(Please place all PLINK files in the same directory.)
 
-In the example below, the test data to be copied is located in the Downloads folder, and the destination is the home directory of your account in the Individual Genome Analysis Section of the NIG Supercomputer.
+In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the Personal Genome Analysis division of the NIG supercomputer.
 
 ```
 scp -i secret_key_file ~/Downloads/1KG.JPT.bim (your_account_name)@gwa.ddbj.nig.ac.jp:~/
@@ -39,7 +41,7 @@ scp -i secret_key_file ~/Downloads/1KG.JPT.fam (your_account_name)@gwa.ddbj.nig.
 scp -i secret_key_file ~/Downloads/1KG.JPT.bed (your_account_name)@gwa.ddbj.nig.ac.jp:~/
 ```
 
-With this, the preparation of test input data is complete.
+Test data is now prepared.
 
 ## Generation of Configuration File for HLA Genotype Imputation Workflow
 
