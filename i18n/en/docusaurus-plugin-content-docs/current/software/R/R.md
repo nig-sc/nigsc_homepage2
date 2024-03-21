@@ -1,25 +1,20 @@
 ---
 id: R2
-title: "Rの使い方"
+title: "How to Use R"
 ---
 
-この記事では、遺伝研スパコン上でのR環境のユーザ環境へのインストール方法、パッケージ管理の利用方法について説明します。
-以下の項目について説明します。
+This article explains the methods for installing the R environment on the user environment of the National Institute of Genetics supercomputer and using package management. It covers the following topics:
 
-1. [OSディストリビューション付属のRを使う方法](/software/R#osディストリビューション付属のrを使う方法)
-2. [ソースコードからRをビルドしてユーザ環境にインストールする方法](/software/R#tarball-からrをインストールする方法)
-3. [condaでRをインストールする方法](/software/R#condaでrをインストールする方法)
-4. [renv を利用したR分析環境の管理](/software/R#renv-を利用したr分析環境の管理)
-5. [パッケージマネージャspackを用いる方法](/software/R#パッケージマネージャ-spack-を用いる方法)
-6. [(参考)Rを高速化する方法](/software/R#参考rを高速化する方法)
+1. [How to use R included with the OS distribution](/software/R#how-to-use-r-included-with-the-os-distribution)
+2. [How to build and install R from source code into the user environment](/software/R#how-to-install-r-from-a-tarball)
+3. [How to install R using conda](/software/R#how-to-install-r-with-conda)
+4. [Managing R analysis environments with renv](/software/R#managing-r-analysis-environment-with-renv)
+5. [Using the package manager spack](/software/R#how-to-use-the-package-manager-spack)
+6. [(Reference) Ways to Speed Up R](/software/R#performance-comparison-between-using-and-not-using-mkl-reference)
 
-について説明します。
+## How to Use R Included with the OS Distribution
 
-
-## OSディストリビューション付属のRを使う方法
-
-ubuntu22.04を導入している計算ノードでは、Ubuntu22.04付属のRをインストール済みです。
-Rとコマンドを入力すればR環境が立ち上がりますので、ご利用ください。
+On compute nodes with Ubuntu 22.04 installed, R that comes with Ubuntu 22.04 is pre-installed. You can launch the R environment by entering the R command.
 
 ```
 username@at138:~$ R
@@ -42,36 +37,33 @@ Type 'q()' to quit R.
 
 > 
 ```
-2024年2月現在、インストールされているRのバージョンは4.1.2(2021-11-01)になります。
+As of February 2024, the installed version of R is 4.1.2 (2021-11-01).
 
-またubuntu 22.04に付属しているr-cranのパッケージはインストールされています。
+Additionally, the r-cran packages that come with Ubuntu 22.04 are installed.
 
 ```
 apt search r-cran
 ```
-でインストールされているパッケージ群について参照してください。またインストールされている
-パッケージ群については、Rを起動後に
+
+You can refer to the installed package group by entering the above command. Furthermore, after launching R, you can check the libraries available in the R environment by typing:
 
 ```
 library()
 ```
-と入力することで、R環境から利用可能なライブラリを確認することができます。
 
-その他必要なライブラリについては、本ページ内に記載のいずれかの方法(renvなど)でユーザ環境に個別に導入可能です。
+Other necessary libraries can be individually introduced into the user environment through any of the methods mentioned on this page (such as renv).
 
-## tarball からRをインストールする方法
+## How to Install R from a Tarball
 
-R Networkからソースコードをダウンロードしてビルド、ユーザホームディレクトリ下にインストールして利用する方法です。
-以下を実行することで`$HOME/local/`の下に R 処理系がインストールされます。
-R の最新のソースコード(tarball)については[The Comprehensive R Archive Network](https://cran.ism.ac.jp/)などを参照してくだい。
- 
+This method involves downloading the source code from the R Network, building it, and installing it under the user's home directory. Execute the following to install the R system under `$HOME/local/`. For the latest source code (tarball) of R, please refer to [The Comprehensive R Archive Network](https://cran.r-project.org/).
+
 ```
 mkdir -p ~/local/src
 cd ~/local/src
 # Install R
 R_VERSION=4.3.2
 R_MAJOR=4
-wget https://cran.ism.ac.jp/src/base/R-${R_MAJOR}/R-${R_VERSION}.tar.gz
+wget https://cran.r-project.org/src/base/R-${R_MAJOR}/R-${R_VERSION}.tar.gz
 tar xzvf R-${R_VERSION}.tar.gz
 cd R-${R_VERSION}
 
@@ -80,23 +72,21 @@ make
 make install
 ```
 
+## How to Install R with conda
 
-## condaでRをインストールする方法
+This section describes how to install the R environment using miniconda.
+For installation of miniconda itself, refer to ["How to Use Python" inside Miniconda](/software/python#miniconda).
 
-ここでは、minicondaを利用して、R環境をインストールする手順について説明します。
-miniconda自体のインストール方法については、[「pythonの使い方」内のMiniconda](/software/python#miniconda)を参照してください。
+Once miniconda is installed and the conda command is available, execute the following commands.
 
+With conda, it is possible to create and switch between virtual environments for different versions of R.
 
-minicondaをインストールして、condaコマンドが利用可能になったら、以下のコマンド群を投入します。
-
-condaの場合、Rの複数のバージョン毎に仮想環境を作成して切り替えて使い分けるというような利用方法が可能になります。
-
-以下のコマンドでチャネル上で使用可能なRのバージョンを確認します。
+Check the versions of R available on the channel with the following command:
 ```
 conda search -c conda-forge r-base
 ```
 
-以下のように利用可能なバージョン群が表示されます。
+The available versions will be displayed as follows:
 
 ```
 yxxxx@at139:~$ conda search -c conda-forge r-base                                               
@@ -104,21 +94,21 @@ Loading channels: done
 # Name                       Version           Build  Channel                                   
 r-base                         3.3.1               1  pkgs/r        
 
-(中略)
+(omission)
             
 r-base                         4.3.2      hb8ee39d_1  conda-forge         
 r-base                         4.3.2      hb8ee39d_2  conda-forge         
 ```
-利用したいRのバージョンの環境を作成します。
+Create an environment for the R version you want to use.
 
-R-4.3.2という名前でR環境を作成します。ここでは4.3.2は単に例で、ユーザが利用したいバージョンを指定してください。
+To create an R environment named R-4.3.2, execute the following command. Here, 4.3.2 is just an example; specify the version you wish to use.
 
 ```
 xxxx@at139:~$ conda create -n R-4.3.2 -y -c conda-forge r-base=4.3.2
 
 Looking for: ['r-base=4.3.2']
 
-(中略)
+(omission)
 
 conda-forge/linux-64                                32.4MB @  48.6MB/s  0.7s
 Transaction
@@ -138,7 +128,7 @@ Transaction
   + font-ttf-dejavu-sans-mono          2.37  hab24e00_0           conda-forge      397kB
   + font-ttf-inconsolata              3.000  h77eed37_0           conda-forge       97kB
 
-  (中略)
+  (omission)
 
   + r-base                            4.3.2  hb8ee39d_2           conda-forge       26MB
 
@@ -152,7 +142,7 @@ Transaction
 
 
 font-ttf-inconsolata                                96.5kB @   1.0MB/s  0.1s
-（中略）
+(omission)
 libstdcxx-devel_linux-64                            13.0MB @   8.5MB/s  0.4s
 sysroot_linux-64                                    15.3MB @   9.7MB/s  0.3s
 binutils_impl_linux-64                               5.4MB @   3.1MB/s  0.3s
@@ -174,21 +164,20 @@ To deactivate an active environment, use
 
 ```
 
-r-base=4.3.2 という記述がバージョンを指定してインストールすることを意味します。
+The notation `r-base=4.3.2` signifies installing a specific version.
 
-Rの環境をactivateします。
+Activate the R environment.
 ```
 conda activate R-4.3.2
 
 ```
-プロンプトに(R-4.3.2)という文字が付加されることを確認します。r-essentialsを追加インストールします。
+Verify that the prompt now includes (R-4.3.2). Install r-essentials.
 
 ```
 conda install -c conda-forge r-essentials
 ```
 
-インストールが開始されます。反応に時間がかかります。
-
+Installation will begin. This may take some time.
 
 ```
 Channels:
@@ -212,7 +201,7 @@ The following packages will be downloaded:
     ---------------------------|-----------------
     anyio-4.2.0                |     pyhd8ed1ab_0          99 KB  conda-forge
 
-　　（中略）
+    (omission)
 
     zipp-3.17.0                |     pyhd8ed1ab_0          19 KB  conda-forge
     ------------------------------------------------------------
@@ -220,14 +209,16 @@ The following packages will be downloaded:
 
 The following NEW packages will be INSTALLED:
 
-  anyio              conda-forge/noarch::anyio-4.2.0-pyhd8ed1ab_0 
+  anyio             
 
-　　(中略)
+ conda-forge/noarch::anyio-4.2.0-pyhd8ed1ab_0 
+
+    (omission)
 
   zipp               conda-forge/noarch::zipp-3.17.0-pyhd8ed1ab_0 
 
 ```
-進めるかを確認されるので、yを入力します。
+When prompted, enter `y`.
 
 ```
 
@@ -235,7 +226,7 @@ Proceed ([y]/n)? y
 
 ```
 
-インストールが開始されます。
+The installation will start.
 
 ```
 
@@ -247,7 +238,7 @@ Executing transaction: done
 (R-4.3.2) xxxx@at137:~$   
 
 ```
-プロンプトが返ってきたら、R(4.3.2)が起動することを確認します。
+After the prompt returns, verify that R (4.3.2) launches.
 
 ```
 (R-4.3.2) xxxx@at137:~$ R                                                                      
@@ -272,72 +263,71 @@ Type 'q()' to quit R.
 
 ```
 
-R環境から抜ける場合は、q()を入力します。
+To exit the R environment, enter `q()`.
 
 ```
 q()
 ```
 
-condaの仮想環境から抜けるには、conda deactivate を実行します。
+To leave the conda virtual environment, execute `conda deactivate`.
 
 ```
 conda deactivate
 ```
-通常のシェル環境に戻ります。
-仮想環境に多重に入っている場合は、シェルに抜けるまで、conda deactivateを実行してください。
+You will return to the normal shell environment. If you have entered multiple virtual environments, execute `conda deactivate` until you exit to the shell.
 
-一回、Rの仮想環境をインストールした後、次回以降は
+After installing the R virtual environment once, in subsequent sessions, check the list of previously created virtual environments with
 
 ```
 conda env list
 
 ```
-で以前作成した仮想環境のリストを確認して、activateしたい仮想環境を conda activateして、Rを起動してください。
+and activate the desired virtual environment with `conda activate`, then launch R.
 
-conda環境でのサブコマンドについては、開発元の以下のドキュメントを参照してください。
+For subcommands in the conda environment, please refer to the documentation from the developers below.
 
-[condaのコマンド一覧](https://conda.io/projects/conda/en/latest/commands/index.html)
+[List of conda commands](https://conda.io/projects/conda/en/latest/commands/index.html)
 
-Rの仮想環境がインストールできましたら、R上のパッケージ管理は、以下のrenvを利用してください。
+Once you have installed the R virtual environment, for package management on R, please use renv as described below.
 
-## renv を利用したR分析環境の管理
+## Managing R Analysis Environment with renv
 
-renvは、[posit](https://posit.co/)が開発支援しているRのパッケージ管理の為のオープンソースパッケージです。Rでの分析環境の再現性を担保することを目的として開発されています。
+renv is an open-source package for R package management, supported by [posit](https://posit.co/). It was developed to ensure the reproducibility of analysis environments in R.
 
-- renvのgithubのページ  https://rstudio.github.io/renv/
-- renv利用のGettiing Started    https://rstudio.github.io/renv/articles/renv.html
-- renvの関数リファレンス　https://rstudio.github.io/renv/reference/index.html
+- renv's GitHub page: https://rstudio.github.io/renv/
+- Getting Started with renv: https://rstudio.github.io/renv/articles/renv.html
+- renv Function Reference: https://rstudio.github.io/renv/reference/index.html
 
-R環境上でのrenvを利用した解析作業の流れは以下のようになります。
+The workflow for using renv in the R environment is as follows:
 
-1. renv::init()を実行する。
-2. Rコードを書く。必要なパッケージをrenvを使ってインストールする。
-3. 作業過程でrenv::snapshot()を適宜行う。ロックファイルに保存する。
-4. 分析作業を終えたら、renv::snapshot()をして、編集したファイルとrenv/とrenv.lockファイルを外部リポジトリにgit commitして保存する。
+1. Execute `renv::init()`.
+2. Write R code. Install necessary packages using renv.
+3. During the work process, periodically perform `renv::snapshot()` and save it in the lock file.
+4. After finishing the analysis work, execute `renv::snapshot()` and save the edited files, renv/, and renv.lock file in an external repository with git commit.
 
-この作業手順により解析環境をリポジトリに保存しながら、解析環境を再現することが可能になります。以下にrenvの各関数とシステムライブラリ、プロジェクトライブラリ、ロックファイルの関係を纏めた図を示します。
+This workflow allows you to save the analysis environment in a repository and reproduce the analysis environment. Below is a diagram summarizing the relationship between renv functions, system library, project library, and lock file.
 
 
 ![figure](renv.png)
 
-主なrenv関数は以下のようになります。
+The main renv functions are as follows:
 
-|renv関数|意味|オンラインマニュアル|
-|------------|----|------------------|
-|renv::init()|パッケージ管理開始(ホームディレクトリ直下では無く、作業用ディレクトリを作成して作業用ディレクトリ上で実行する。そうでないとエラーになる場合がある) |[renv::init](https://rstudio.github.io/renv/reference/init.html)|
-|renv::install()|パッケージインストール|[renv::install](https://rstudio.github.io/renv/reference/install.html)|
-|renv::status()|インストール状況確認コマンド|[renv::status](https://rstudio.github.io/renv/reference/status.html)|
-|renv::snapshot()|インストール状況記録|[renv::snapshot](https://rstudio.github.io/renv/reference/snapshot.html)|
-|renv::restore()|renv.lockファイルから状態を再現する|[renv::restore](https://rstudio.github.io/renv/reference/restore.html)|
-|renv::history()|コミット履歴の参照|[renv::history](https://rstudio.github.io/renv/reference/history.html)|
-|renv::revert()|histroyのcommit履歴を用いてrenv.lockを復旧する|[renv::revert](https://rstudio.github.io/renv/reference/history.html)|
-|renv::update()|プロジェクトライブラリをアップデートする|[renv::update](https://rstudio.github.io/renv/reference/update.html)|
+| renv Function | Meaning | Online Manual |
+|---------------|---------|---------------|
+| renv::init() | Start package management (execute in a working directory created under the home directory, not directly under the home directory, to avoid errors) | [renv::init](https://rstudio.github.io/renv/reference/init.html) |
+| renv::install() | Install packages | [renv::install](https://rstudio.github.io/renv/reference/install.html) |
+| renv::status() | Check installation status | [renv::status](https://rstudio.github.io/renv/reference/status.html) |
+| renv::snapshot() | Record installation status | [renv::snapshot](https://rstudio.github.io/renv/reference/snapshot.html) |
+| renv::restore() | Reproduce state from renv.lock file | [renv::restore](https://rstudio.github.io/renv/reference/restore.html) |
+| renv::history() | View commit history | [renv::history](https://rstudio.github.io/renv/reference/history.html) |
+| renv::
 
+revert() | Recover renv.lock using history's commit history | [renv::revert](https://rstudio.github.io/renv/reference/history.html) |
+| renv::update() | Update project library | [renv::update](https://rstudio.github.io/renv/reference/update.html) |
 
+### Installing renv
 
-### renvのインストール
-
-R環境でrenvパッケージをインストールするには以下のようにします。
+To install the renv package in the R environment, follow these steps:
 
 ```
 > install.packages("renv")
@@ -357,7 +347,7 @@ The downloaded source packages are in
 >
 ```
 
-renvパッケージを呼び出して利用可能にします。
+Make the renv package available for use.
 
 ```
 > library(renv)
@@ -380,21 +370,20 @@ The following objects are masked from ‘package:base’:
 
 ```
 
- インストールされたrenvのバージョンを確認します。
+Check the installed version of renv.
 
 ```
 > print(packageVersion("renv"))
 [1] ‘1.0.4’
 > 
 ```
-上記の流れでrenvパッケージが適用されました。
+With the above steps, the renv package has been applied.
 
 
 
-### 実行例
+### Example Execution
 
-以下は、RStudio Serverのコンソール上での実行例です。プロジェクトはrenv-testという名称で作成しています。ホームディレクトリ直下でrenv::init()を
-実行するとエラーになりますので、プロジェクトを作成してからプロジェクトディレクトリの中でinitを実施してください。
+The following is an execution example on the RStudio Server console. The project is created with the name "renv-test". Executing `renv::init()` directly under the home directory results in an error, so create a project and then execute init within the project directory.
 
 ```
 > renv::init()
@@ -413,7 +402,7 @@ Restarting R session...
 - Project '~/renv-test' loaded. [renv 1.0.4]
 ```
 
-パッケージをインストールしてみます。
+Try installing a package.
 
 ```
 > install.packages("tidyr")
@@ -446,7 +435,9 @@ The following package(s) will be installed:
 - cpp11      [0.4.7]
 - dplyr      [1.1.4]
 - fansi      [1.0.6]
-- generics   [0.1.3]
+- generics
+
+   [0.1.3]
 - glue       [1.7.0]
 - lifecycle  [1.0.4]
 - magrittr   [2.0.3]
@@ -468,7 +459,7 @@ These packages will be installed into "~/renv-test/renv/library/R-4.3/x86_64-pc-
 Do you want to proceed? [Y/n]: y
 
 ```
-yと入力します。
+Enter y.
 
 ```
 # Installing packages --------------------------------------------------------
@@ -496,7 +487,7 @@ yと入力します。
 Successfully installed 21 packages in 25 seconds.
 
 ```
-パッケージがインストールされました。ここで、Rのコード編集作業を行います。終わったら、renv::snapshot()を実行します。
+After installing packages, perform your R coding tasks. Once completed, run `renv::snapshot()`.
 ```
 > renv::snapshot()
 The following package(s) will be updated in the lockfile:
@@ -526,36 +517,35 @@ The following package(s) will be updated in the lockfile:
 
 Do you want to proceed? [Y/n]: 
 ```
-yと入力します。
+Enter y.
 ```
 - Lockfile written to "~/renv-test/renv.lock".
 > 
 ```
-ロックファイルに書き込まれます。このrenv.lockファイルをgitリポジトリなどで管理すれば
-他のホストや他のプロジェクトフォルダ上でrenv::restore()でライブラリ環境を復元する
-ことが可能になります。
+The lockfile is written. Managing this renv.lock file in a git repository, for instance, allows you to restore the library environment
 
-## パッケージマネージャ spack を用いる方法
+ on another host or project folder using `renv::restore()`.
 
-spack はユーザー権限だけで使えるパッケージマネージャの１つです。
+ ## How to Use the Package Manager Spack
 
-### 基本的な手順
+Spack is one of the package managers that can be used with user privileges only.
 
-[spacke 自体のインストール手順](/software/spack/install_spack)の手順に従って spack パッケージマネージャをインストールしてください。
+### Basic Procedure
 
-以下のコマンドを実行すると R 処理系が使えるようになります。
+Please install the Spack package manager according to the instructions in [Installing Spack](/software/spack/install_spack).
+
+Executing the following commands will make the R environment available.
 
 ```
 spack install r
 spack load r
 ```
 
-### インストール方法の詳細
+### Detailed Installation Instructions
 
-#### 利用可能なパッケージの表示
+#### Displaying Available Packages
 
-R 処理系はパッケージ名も単に`r`なので、R関係の利用可能なパッケージの検索に工夫がいります。
-`spack list | grep ^r | less`を実行することで R 関連のパッケージを表示できます。
+The package name for the R environment is simply `r`, so some ingenuity is required to search for available R-related packages. Executing `spack list | grep ^r | less` will display R-related packages.
 
 ```bash
 $ spack list | grep ^r | less
@@ -569,12 +559,12 @@ r-a4reporting
 r-abadata
 r-abaenrichment
 r-abind
-... (以下略)
+... (omitted)
 ```
 
-#### 利用可能なバージョンの表示
+#### Displaying Available Versions
 
-R 処理系本体のパッケージ名は`r`ですので`spack info r`を実行すると利用可能な R のバージョンを表示できます。
+Since the package name for the R environment itself is `r`, executing `spack info r` will display available versions of R.
 
 ```bash
 $ spack info r
@@ -651,26 +641,25 @@ Run Dependencies:
     None
 ```
 
-特定のバージョンをインストールしたい場合は以下のようにコマンドを実行します。
+To install a specific version, execute the command as follows:
 
 ```bash
 spack install r@4.0.5
 spack load r@4.0.5
 ```
 
-#### R 処理系のバージョン切り替え
+#### Switching R Versions
 
-現在インストールされているバージョンを確認します。
+Check the currently installed versions.
 
 ```
 $ spack find r
 ==> 2 installed packages
 -- linux-centos7-zen2 / intel@2021.4.0 --------------------------
 r@4.0.5  r@4.1.3
-
 ```
 
-使いたいバージョンを`spack load`すればそのバージョンに切り替わります。
+Loading the desired version with `spack load` will switch to that version.
 
 ```
 $ spack load r@4.0.5
@@ -723,54 +712,52 @@ Type 'q()' to quit R.
 $
 ```
 
-#### コンパイルオプションの調整
+#### Adjusting Compilation Options
 
-上記の`spack info r`の Variants の部分を見ると、デフォルトの状態では X window 関係のライブラリがリンクされておらず、グラフの画像出力ができない状態であることがわかります。
+By looking at the Variants section in the `spack info r` command, you can see that by default, X window related libraries are not linked, and graphical output of graphs is not possible in this state.
 
-`spack instal`の際に以下のようにすることでコンパイルオプションを調整できます。(コンパイル時間はかなりかかるようになります。)
+Compilation options can be adjusted during `spack install` as follows (note that compilation time will significantly increase).
 
 ```bash
 spack install r@4.0.5 X=True
 ```
 
-### アンインストール
+### Uninstalling
 
-以下のコマンドでパッケージのアンインストールができます。
+The following command can be used to uninstall packages.
 
 `spack uninstall r`
 
-spack 自体のアンインストールについては[spack 自体のインストール手順](/software/spack/install_spack)をご参照ください。
+For uninstalling Spack itself, please refer to [Installing Spack](/software/spack/install_spack).
 
-## (参考)Rを高速化する方法
+## (Reference) Ways to Speed Up R
 
-遺伝研スパコンでは、***インテル oneAPI ベース & HPCツールキット　マルチノード***　を導入しており、以下のものが利用可能です
+At the Genomic Research Supercomputer, the ***Intel oneAPI Base & HPC Toolkit Multi-Node*** has been introduced, and the following are available:
 
-- インテル oneAPI DPC++/C++ コンパイラ
-- インテル MKL(マス・カーネル・ライブラリ)
+- Intel oneAPI DPC++/C++ Compiler
+- Intel MKL (Math Kernel Library)
 
-これらを利用してソースコードのRをビルドして高速化することが可能な場合があります。ここではその方法について説明します。
+It is possible to build and speed up R source code using these tools. This section describes how to do that.
 
-### コンパイラはGNUコンパイラを利用し、MKLをBLASライブラリとしてリンクしてRをビルドする方法
+### Building R with the GNU Compiler and Linking with MKL as the BLAS Library
 
-Intel MKLをBLASライブラリとしてリンクし、コンパイラとしては、gcc,gfortranを利用してRをビルドする方法について説明します。
-以下のドキュメントを参考にして本項目は記載しています。
+This section describes how to link R with the Intel MKL as the BLAS library using the gcc and gfortran compilers. Although methods for compiling the source code with the Intel Compiler will be discussed later, using MKL can already lead to performance improvements. This item is based on the following document:
 
 - [R Installation and Administration A.3.1.3 Intel MKL](https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#MKL)
 
-configureに利用する環境変数を設定します。ここでは上記のドキュメントのMKLのマルチスレッド対応のビルドの仕方に従っています。
-シングルスレッド対応にしたい場合は、その点を読み替えてください。またここでは、CRANからR-4.3.2のソースコードパッケージをダウンロード
-して展開しています。
+Set the environment variables for configure. This follows the documentation for building with MKL's multi-threaded support. If you want single-threaded support, please adjust accordingly. Here, we're downloading and unpacking the source code package for R-4.3.2 from CRAN.
 
 ```
 yxxxx@at138:~/R2/R-4.3.2$ export MKL="-L/lustre7/software/intel_ubuntu/oneapi/mkl/latest/lib/intel64 -lmkl_gf_lp64 -lmkl_core -lmkl_gnu_thread -dl -fopenmp"
 yxxxx@at138:~/R2/R-4.3.2$ export MKL_INTERFACE_LAYER=GNU,LP64 
 yxxxx@at138:~/R2/R-4.3.2$ export MKL_THREADING_LAYER=GNU 
 ```
-上記の変数を利用してconfigureをかけます。またこの時に、libcurlやzlibやiconv部分でエラーが出る場合は、minicondaの中の当該ツールを参照して
-OS付属のものを見ていないことが疑われるので、conda環境を抜けて、ビルド時にminiconda環境を参照しないようにしてください。
+Use the above variables for configure. If there are errors related to libcurl, zlib, or iconv, it is suspected that the build is not looking at the OS-provided tools but those inside miniconda, so exit the conda environment and ensure that the miniconda environment is not referenced during the build.
 ```
 yxxxx@at138:~/R2/R-4.3.2$ ./configure --with-blas="$MKL" --with-lapack --prefix=/home/yxxxx/R-4.3.2MKL
-checking build system type... x86_64-pc-linux-gnu
+checking build system type
+
+... x86_64-pc-linux-gnu
 checking host system type... x86_64-pc-linux-gnu
 loading site script './config.site'
 loading build-specific script './config.site'
@@ -780,15 +767,15 @@ checking whether ln -s works... yes
 checking for ar... ar
 checking for a BSD-compatible install... /usr/bin/install -c
 
-(長いので省略)
+(omitted for brevity)
 ```
-またconfigure中で以下の部分でBLASの環境をチェックしているのでここで環境チェックがうまくいっていることを見ておいてください。
+Make sure to check the environment for BLAS during configure as follows.
 ```
 checking for dgemm_ in -L/lustre7/software/intel_ubuntu/oneapi/mkl/latest/lib/intel64 -lmkl_gf_lp64 -lmkl_core -lmkl_gnu_thread -dl -fopenmp... yes
 checking whether double complex BLAS can be used... yes
 checking whether the BLAS is complete... yes
 
-（長いので省略）
+(omitted for brevity)
 
 R is now configured for x86_64-pc-linux-gnu
 
@@ -805,7 +792,7 @@ R is now configured for x86_64-pc-linux-gnu
   C++20 compiler:              g++ -std=gnu++20  -g -O2
   C++23 compiler:              g++ -std=gnu++23  -g -O2
   Fortran free-form compiler:  gfortran  -g -O2
-  Obj-C compiler:	        
+  Obj-C compiler:	         
 
   Interfaces supported:        X11, tcltk
   External libraries:          pcre2, readline, BLAS(MKL), LAPACK(in blas), curl
@@ -817,14 +804,14 @@ R is now configured for x86_64-pc-linux-gnu
 
   Recommended packages:        yes
 ```
-上記でBLASがMKLになっていることを確認してください。
+Please note that BLAS is using MKL.
 
-次にmakeします。エラーで中断しないことを確認します。
+Then proceed with make, ensuring there are no interruptions due to errors.
 ```
 yxxxx@at138:~/R2/R-4.3.2$ make
 make[1]: Entering directory '/lustre7/home/yxxxx/R2/R-4.3.2/m4'
 
-（省略）
+(omitted for brevity)
 
 configuring Java ...
 Java interpreter : /usr/bin/java
@@ -851,17 +838,18 @@ Updating Java configuration in /home/yxxxx/R2/R-4.3.2
 Done.
 ```
 
-make installをかけます。
-
+Proceed to `make install`.
 ```
 yxxxx@at138:~/R2/R-4.3.2$ make install
-mkdir -p -- /home/yxxxx/R-4.3.2MKL/lib/R
+mkdir -p -- /home/yxxxx/R
+
+-4.3.2MKL/lib/R
 make[1]: Entering directory '/lustre7/home/yxxxx/R2/R-4.3.2/m4'
 make[1]: Nothing to be done for 'install'.
 make[1]: Leaving directory '/lustre7/home/yxxxx/R2/R-4.3.2/m4'
 make[1]: Entering directory '/lustre7/home/yxxxx/R2/R-4.3.2/tools'
 
-(省略)
+(omitted for brevity)
 
 gcc -I. -I../../src/include -I../../src/include  -I/usr/local/include -DHAVE_CONFIG_H    -g -O2  -L/usr/local/lib -DR_HOME='"/home/yxxxx/R-4.3.2MKL/lib/R"' \
   -o Rscript ./Rscript.c
@@ -890,8 +878,7 @@ make[1]: Entering directory '/lustre7/home/yxxxx/R2/R-4.3.2/tests'
 make[1]: Nothing to be done for 'install'.
 make[1]: Leaving directory '/lustre7/home/yxxxx/R2/R-4.3.2/tests'
 ```
-Rがターゲットディレクトリにインストールされていることを確認します。
-
+Verify that R has been installed in the target directory.
 ```
 yxxxx@at138:~/R-4.3.2MKL/bin$ pwd
 /home/yxxxx/R-4.3.2MKL/bin
@@ -916,17 +903,19 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 ```
-今回ビルドしたRはマルチスレッド動作をする為、環境変数のOMP_NUM_THREADS または MKL_NUM_THREADSで利用コア数を設定してからRを実行して下さい。あまり多数のコアを利用して動作させようとしても、CPU資源を膨大に利用しても並列動作のオーバーヘッドで却って性能が出なかったり、悪ければデッドロックに陥る場合もあります。問題の規模、プログラム動作を見ながら妥当と思えるコア数を指定するようにしてください。
+The R built this time operates in multi-thread mode, so set the number of cores to
 
-### MKLを使用した場合と使用しない場合の性能比較（参考）
+ use with the environment variable OMP_NUM_THREADS or MKL_NUM_THREADS before running R. Using too many cores may lead to excessive CPU resource usage and parallel operation overhead, potentially resulting in worse performance or even deadlocks. Please specify a reasonable number of cores based on the problem size and program operation.
 
-以下に簡単なベンチマーク結果を示します。
+### Performance Comparison Between Using and Not Using MKL (Reference)
 
-- [参考に使用したベンチマーク：R benchmarks](https://mac.r-project.org/benchmarks/)
+Here we present some simple benchmark results.
 
-複数のプログラムが動作する複数ユーザ共用のノード上で動作させているため、あくまで参考値になります。またMKLを利用しているRの方はMKL_NUM_THREADSを5としています。また利用しているRはバージョン4.3.2です。
+- [Benchmark used for reference: R benchmarks](https://mac.r-project.org/benchmarks/)
 
-#### MKLを利用しない場合（外部BLASを利用しない場合）
+Since these benchmarks were run on a node shared by multiple users with multiple programs running, the results are for reference only. The R version using MKL had MKL_NUM_THREADS set to 5. The version of R used was 4.3.2.
+
+### Without Using MKL (Not Using External BLAS)
 ```
 yxxxx@at139:~/R-4.3.2MKL/bin$ cat R-benchmark-25.R |~/R-plane/bin/R --slave
 Loading required package: Matrix
@@ -945,13 +934,13 @@ Number of times each test is run__________________________:  3
 
    I. Matrix calculation
    ---------------------
-Creation, transp., deformation of a 2500x2500 matrix (sec):  0.497 
-2400x2400 normal distributed random matrix ^1000____ (sec):  0.338 
+Creation, transposition, deformation of a 2500x2500 matrix (sec):  0.497 
+2400x2400 normally distributed random matrix ^1000____ (sec):  0.338 
 Sorting of 7,000,000 random values__________________ (sec):  0.783333333333333 
 2800x2800 cross-product matrix (b = a' * a)_________ (sec):  10.3113333333333 
-Linear regr. over a 3000x3000 matrix (c = a \ b')___ (sec):  3.76533333333333 
+Linear regression over a 3000x3000 matrix (c = a \ b')___ (sec):  3.76533333333333 
                       --------------------------------------------
-                 Trimmed geom. mean (2 extremes eliminated):  1.13597509074229 
+                 Trimmed geometric mean (2 extremes eliminated):  1.13597509074229 
 
    II. Matrix functions
    --------------------
@@ -961,26 +950,26 @@ Determinant of a 2500x2500 random matrix____________ (sec):  0.184666666666667
 Cholesky decomposition of a 3000x3000 matrix________ (sec):  0.0586666666666673 
 Inverse of a 1600x1600 random matrix________________ (sec):  1.672 
                       --------------------------------------------
-                Trimmed geom. mean (2 extremes eliminated):  0.273209956216133 
+                Trimmed geometric mean (2 extremes eliminated):  0.273209956216133 
 
-   III. Programmation
+   III. Programming
    ------------------
 3,500,000 Fibonacci numbers calculation (vector calc)(sec):  0.175333333333332 
 Creation of a 3000x3000 Hilbert matrix (matrix calc) (sec):  0.184666666666667 
-Grand common divisors of 400,000 pairs (recursion)__ (sec):  0.147666666666666 
+Greatest common divisors of 400,000 pairs (recursion)__ (sec):  0.147666666666666 
 Creation of a 500x500 Toeplitz matrix (loops)_______ (sec):  0.042666666666662 
 Escoufier's method on a 45x45 matrix (mixed)________ (sec):  0.307999999999993 
                       --------------------------------------------
-                Trimmed geom. mean (2 extremes eliminated):  0.168465829089985 
+                Trimmed geometric mean (2 extremes eliminated):  0.168465829089985 
 
 
 Total time for all 15 tests_________________________ (sec):  19.2476666666667 
-Overall mean (sum of I, II and III trimmed means/3)_ (sec):  0.373931786643322 
+Overall mean (sum of I, II, and III trimmed means/3)_ (sec):  0.373931786643322 
                       --- End of test ---
 
 ```
 
-#### MKLを利用した場合
+### With MKL
 
 ```
 yxxxx@at139:~/R-4.3.2MKL/bin$ cat R-benchmark-25.R |./R --slave
@@ -1000,13 +989,15 @@ Number of times each test is run__________________________:  3
 
    I. Matrix calculation
    ---------------------
-Creation, transp., deformation of a 2500x2500 matrix (sec):  0.511333333333334 
-2400x2400 normal distributed random matrix ^1000____ (sec):  0.337666666666667 
+Creation, transposition, deformation of a 2500x2500 matrix (sec):  0.511333333333334 
+2400x2400 normally distributed random matrix ^1000____ (sec):  0.337666666666667 
 Sorting of 7,000,000 random values__________________ (sec):  0.799666666666667 
 2800x2800 cross-product matrix (b = a' * a)_________ (sec):  0.148666666666666 
-Linear regr. over a 3000x3000 matrix (c = a \ b')___ (sec):  0.107999999999999 
+Linear regression over a 3000x3000 matrix (c = a \ b')___ (sec):  0.107999999
+
+999999 
                       --------------------------------------------
-                 Trimmed geom. mean (2 extremes eliminated):  0.294986381459619 
+                 Trimmed geometric mean (2 extremes eliminated):  0.294986381459619 
 
    II. Matrix functions
    --------------------
@@ -1016,35 +1007,34 @@ Determinant of a 2500x2500 random matrix____________ (sec):  0.0846666666666659
 Cholesky decomposition of a 3000x3000 matrix________ (sec):  0.074333333333333 
 Inverse of a 1600x1600 random matrix________________ (sec):  0.120000000000001 
                       --------------------------------------------
-                Trimmed geom. mean (2 extremes eliminated):  0.123633325394564 
+                Trimmed geometric mean (2 extremes eliminated):  0.123633325394564 
 
-   III. Programmation
+   III. Programming
    ------------------
 3,500,000 Fibonacci numbers calculation (vector calc)(sec):  0.173999999999999 
 Creation of a 3000x3000 Hilbert matrix (matrix calc) (sec):  0.187000000000001 
-Grand common divisors of 400,000 pairs (recursion)__ (sec):  0.146000000000001 
+Greatest common divisors of 400,000 pairs (recursion)__ (sec):  0.146000000000001 
 Creation of a 500x500 Toeplitz matrix (loops)_______ (sec):  0.0439999999999981 
 Escoufier's method on a 45x45 matrix (mixed)________ (sec):  0.235000000000003 
                       --------------------------------------------
-                Trimmed geom. mean (2 extremes eliminated):  0.168105234521273 
+                Trimmed geometric mean (2 extremes eliminated):  0.168105234521273 
 
 
 Total time for all 15 tests_________________________ (sec):  3.38 
-Overall mean (sum of I, II and III trimmed means/3)_ (sec):  0.18302324510412 
+Overall mean (sum of I, II, and III trimmed means/3)_ (sec):  0.18302324510412 
                       --- End of test ---
 ```
-２倍程度の高速化はされていることがわかります。
+It can be seen that using MKL results in approximately a two-fold speed increase.
 
-### IntelのコンパイラでRをコンパイルし、MKLをリンクしてRをビルドする方法
+### (Reference) How to Compile R with Intel Compiler and Link MKL for Building R
 
-以下の資料を参考に、IntelコンパイラでRのソースコードを最適化レベル３でコンパイル、ビルドして、MKLとリンクする方法について説明します。
+This document describes how to compile R's source code with optimization level 3 using the Intel compiler and link it with MKL, based on the following reference:
 
 - [R Installation and Administration C.2.3 Intel compilers](https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Intel-compilers)
 
-上記にも一部記述がありますが、最新のIntelコンパイラでは、`-lmkl_sequential`を指定しないと動作チェック時にエラーが出てしまうことを遺伝研スパコン上でも確認しており、これを回避できていません。このオプションはスレッド並列動作をしないMKLライブラリを利用することを指示するオプションの為、並列動作の恩恵を受けることが現状できません。この為、あくまで参考までに`-lmkl_sequential`を指定してビルドが通った時の作業手順について以下で説明します。
+As mentioned in the document, it has been confirmed on the Genomic Research Supercomputer that an error occurs during operation checks if `-lmkl_sequential` is not specified with the latest Intel compiler, and this has not been circumvented. This option indicates the use of the MKL library that does not perform thread parallel operations, hence, currently, it is not possible to benefit from parallel operations. Therefore, the following explains the procedure when the build passes by specifying `-lmkl_sequential`, for reference only.
 
-
-まず、準備のために、以下の環境変数を設定します。
+First, set the following environment variables for preparation:
 ```
 CXX=icpx
 FC=ifx
@@ -1057,7 +1047,7 @@ C17FLAGS=-O3 -fp-model precise -Wall -Wno-strict-prototypes
 MKL=-L/lustre7/software/intel_ubuntu/oneapi/mkl/2023.2.0/lib/intel64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential
 FCFLAGS=-free -O3 -fp-model precise -warn all,noexternals
 ```
-以下のようにconfigureをかけます。
+Run configure as follows:
 
 ```
 yxxxx@at138:~/R2/R-4.3.2$ ./configure --with-blas="$MKL" --with-lapack --prefix=/home/yxxxx/R-Intel
@@ -1105,8 +1095,9 @@ R is now configured for x86_64-pc-linux-gnu
 
   Recommended packages:        yes
 ```
-上記で、コンパイラは、GNUコンパイラではなくicpx、ifxが利用されていること、BLASがMKLとなっていることを確認してください。
-makeをかけます。
+Ensure that the compilers used are not GNU compilers but icpx and ifx, and that BLAS is linked with MKL.
+
+Proceed with make:
 
 ```
 yxxxx@at138:~/R2/R-4.3.2$ make
@@ -1182,9 +1173,10 @@ Updating Java configuration in /home/yxxxx/R2/R-4.3.2
 Done.
 
 make[1]: Leaving directory '/lustre7/home/yxxxx/R2/R-4.3.2'
-
 ```
-ビルド時にエラーが出ていないことを確認します。
+Ensure no errors occur during the build process.
+
+Then perform make install:
 
 ```
 yxxxx@at138:~/R2/R-4.3.2$ make install
@@ -1217,7 +1209,7 @@ make[1]: Entering directory '/lustre7/home/yxxxx/R2/R-4.3.2/tests'
 make[1]: Nothing to be done for 'install'.
 make[1]: Leaving directory '/lustre7/home/yxxxx/R2/R-4.3.2/tests'
 ```
-Rがインストールされていることを確認します。起動することを確認します。
+Verify that R is installed and starts up correctly:
 
 ```
 yxxxx@at138:~/R-Intel/bin$ ls -l
@@ -1245,7 +1237,7 @@ Type 'q()' to quit R.
 
 > 
 ```
-参考にベンチマーク結果を掲載します。
+Benchmark results are provided for reference:
 
 ```
 yxxxx@at139:~/R-Intel/bin$ cat R-benchmark-25.R | ./R --slave
@@ -1298,5 +1290,4 @@ Total time for all 15 tests_________________________ (sec):  5.26666666666667
 Overall mean (sum of I, II and III trimmed means/3)_ (sec):  0.324038250064507 
                       --- End of test ---
 ```
-MKLを利用しないRよりは早いが、マルチスレッド動作をするRよりは遅い。という結果になります。ただし、CPUコアは1個だけ
-しか使っていない状態ではあるので、計算資源の利用観点からは効率的にはなっている。ということになります。大規模な問題でなければ利用できるのかと思います。
+The results show that R without MKL is faster than R with MKL but slower than R operating in multi-thread mode. However, since only one CPU core is used, it is efficient from a resource utilization perspective. It could be viable for non-large-scale problems.
