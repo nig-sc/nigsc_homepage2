@@ -43,7 +43,7 @@ scp -i secret_key_file ~/Downloads/1KG.JPT.bed (your_account_name)@gwa.ddbj.nig.
 
 Test data is now prepared.
 
-## Generation of Configuration File for HLA Genotype Imputation Workflow
+## 2. Generate a configuration file for the HLA Genotype Imputation Workflow
 
 Access the following address via guacamole of the NIG Supercomputer.
 
@@ -51,21 +51,22 @@ Access the following address via guacamole of the NIG Supercomputer.
 http://localhost:5000/hibag
 ```
 
-Upon actual access, the screen appears as follows.
+When you actually access it, you will see the following screen.
 
 ![fig2](./imputation_server_hibag_fig2.png)
 
-Configure the following items:
+Configure the following items.
 
 - Path to the PLINK bed file
 - Selection of the HIBAG model provided by this system
 - Prefix name for the file(s) output by this workflow
 
-For "Path to the PLINK bed file," specify the full path to the bed file to be analyzed. Here, use the uploaded file.
+For "Path to the PLINK bed file," specify the full path to the bed file to be parsed.
+Here, the file that you uploaded is used.
 The specific full path will be like `/home/youraccountname/1KG.JPT.bed`.
 
 Next, select options for the HIBAG model.
-Selections are available for the following three:
+You can choose for the following three.
 
 1. Genotyping platform
 2. Resolution
@@ -85,12 +86,13 @@ Here, after entering the path to the bed file input,
 Then, input `1KG.JPT.hibag` into `Output file name prefix`.
 (Note: You cannot include a path in `Output file name prefix`. Including `/` will cause an error.)
 
-After specifying the parameters, click the "Set up job" button.
-The generated parameters will be displayed at the bottom of the screen. These will be used in sapporo-web.
+After specifying the parameters, press the "Set up job" button.
+The generated parameters are displayed at the bottom of the screen.
+Use this in sapporo-web.
 
 ![fig3](./imputation_server_hibag_fig3.png)
 
-## Execution of Imputation Workflow
+## 3. Execute the HLA Genotype Imputation Workflow
 
 Access the following address via guacamole of the NIG Supercomputer.
 
