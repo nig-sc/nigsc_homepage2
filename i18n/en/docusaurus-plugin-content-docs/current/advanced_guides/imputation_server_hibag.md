@@ -1,4 +1,4 @@
-## System Usage
+## Procedures for using this system
 
 In this system, the HLA Genotype Imputation workflow using [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) is executed following the steps below.
 
