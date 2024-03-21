@@ -1,165 +1,162 @@
-## システム利用方法
+## System Usage
 
-本システムでは、以下の流れで [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) を用いた HLA Genotype Imputation ワークフローを実行します。
+In this system, the HLA Genotype Imputation workflow using [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) is executed following the steps below.
 
-1. テスト入力データの準備
-2. HLA Genotype Imputation Workflow 用の設定ファイルの生成
-3. HLA Genotype Imputation Workflow の実行
+1. Preparation of test input data
+2. Generation of configuration file for HLA Genotype Imputation Workflow
+3. Execution of HLA Genotype Imputation Workflow
 
-## テスト入力データの準備
+## Preparation of Test Input Data
 
-チュートリアルをすすめるにあたって、使用するテスト入力データをダウンロードし、遺伝研スパコン個人ゲノム解析区画へコピーします。
-本ワークフローへの入力として必要となるデータは、PLINK の bed、bim、fam ファイルです。
+To proceed with the tutorial, download the test input data and copy it to the Individual Genome Analysis Section of the NIG Supercomputer Center.
+The required data for input to this workflow are PLINK bed, bim, and fam files.
 
-### PLINK bed、bim、fam ファイル の準備
+### Preparation of PLINK bed, bim, and fam files
 
-[Test data for Imputation Server HIBAG Workflow](https://zenodo.org/records/10579034) にアクセスします。以下の3つのファイルがおいてあります。
+Access [Test data for Imputation Server HIBAG Workflow](https://zenodo.org/records/10579034). The following three files are available:
 
 - `1KG.JPT.bim`
 - `1KG.JPT.fam`
 - `1KG.JPT.bed`
 
-`1KG.JPT.bim`、`1KG.JPT.fam`、`1KG.JPT.bed` のすべてをダウンロードします。
+Download all `1KG.JPT.bim`, `1KG.JPT.fam`, and `1KG.JPT.bed` files.
 
 ![fig1](./imputation_server_hibag_fig1.png)
 
-### 遺伝研スパコン個人ゲノム解析区画へコピーします。
-さきほどダウンロードしたテストデータをコピーします。
+### Copy to Individual Genome Analysis Section of NIG Supercomputer
 
-遺伝研スパコンへ接続するためのVPNを接続してください。
+Copy the downloaded test data.
 
-次に、さきほどダウンロードしたテストデータを次のコマンドでコピーします。(PLINKのファイルはすべて同じ directory 内に配置してください。)
+Connect to the NIG Supercomputer via VPN.
 
-以下の例では、コピーしたいテストデータは、ダウンロードフォルダの中にあり、コピー先は、遺伝研スパコン個人ゲノム解析区画のお使いのアカウントのホームディレクトリになります。
+Next, copy the downloaded test data with the following command. (Please place all PLINK files in the same directory.)
+
+In the example below, the test data to be copied is located in the Downloads folder, and the destination is the home directory of your account in the Individual Genome Analysis Section of the NIG Supercomputer.
 
 ```
-scp -i 秘密鍵ファイル ~/Downloads/1KG.JPT.bim (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/
-scp -i 秘密鍵ファイル ~/Downloads/1KG.JPT.fam (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/
-scp -i 秘密鍵ファイル ~/Downloads/1KG.JPT.bed (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/
+scp -i secret_key_file ~/Downloads/1KG.JPT.bim (your_account_name)@gwa.ddbj.nig.ac.jp:~/
+scp -i secret_key_file ~/Downloads/1KG.JPT.fam (your_account_name)@gwa.ddbj.nig.ac.jp:~/
+scp -i secret_key_file ~/Downloads/1KG.JPT.bed (your_account_name)@gwa.ddbj.nig.ac.jp:~/
 ```
 
-これでテスト入力データの準備は終了です。
+With this, the preparation of test input data is complete.
 
-## HLA Genotype Imputation Workflow 用の設定ファイルの生成
+## Generation of Configuration File for HLA Genotype Imputation Workflow
 
-遺伝研スパコンの guacamole 経由で以下のアドレスにアクセスします。
+Access the following address via guacamole of the NIG Supercomputer.
 
 ```
 http://localhost:5000/hibag
 ```
 
-実際にアクセスすると、次のような画面になります。
+Upon actual access, the screen appears as follows.
 
 ![fig2](./imputation_server_hibag_fig2.png)
 
-以下の項目について設定を行います。
+Configure the following items:
 
-- PLINK の bed ファイルのパス
-- 本システムが予め備えている HIBAG のモデルの選択
-- 本ワークフローが出力するファイルのプレフィックス名
+- Path to the PLINK bed file
+- Selection of the HIBAG model provided by this system
+- Prefix name for the file(s) output by this workflow
 
-「PLINK の bed ファイルのパス」 には、解析対象の bed ファイルのフルパスを指定します。
-ここでは先程アップロードした、ファイルを使います。
-具体的なフルパスは `/home/youraccountname/1KG.JPT.bed` のようになります。
+For "Path to the PLINK bed file," specify the full path to the bed file to be analyzed. Here, use the uploaded file.
+The specific full path will be like `/home/youraccountname/1KG.JPT.bed`.
 
-次に HIBAG のモデルのオプションを選択します。
-以下の3つについて、選択が可能です。3つの選択肢を選択すると、どのモデルを用いるかが決まります。
+Next, select options for the HIBAG model.
+Selections are available for the following three:
 
 1. Genotyping platform
-1. Resolution
-1. Ancestry
+2. Resolution
+3. Ancestry
 
-最後に 本ワークフローが出力するファイル(複数)のプレフィックス名 を入力します。
+Finally, input the prefix name for the file(s) output by this workflow.
 
-入力例は下記の画像ようになります。
+An input example is shown in the image below.
 ![fig_inputexample](./imputation_server_hibag_fig_inputexample.png)
 
-ここでは、入力の bed ファイルのパスを入力後、
+Here, after entering the path to the bed file input,
 
-- `--Select a genotyping platform--` のドロップダウンリストで `Illumina HumanOmni2.5 (based on HumanOmini2.5-8v1_C` を選択
-- `--Select a resolution--` のドロップダウンリストで `Two-field (4-digit) resolution` を選択
-- `-Select an ancestry--` のドロップダウンリストで `Asian` を選択
+- Select `Illumina HumanOmni2.5 (based on HumanOmini2.5-8v1_C` from the dropdown list under `--Select a genotyping platform--`
+- Select `Two-field (4-digit) resolution` from the dropdown list under `--Select a resolution--`
+- Select `Asian` from the dropdown list under `-Select an ancestry--`
 
-そして `Output file name prefix` に `1KG.JPT.hibag` を入力しました。
-(注意: `Output file name prefix` にパスを書くことはできません。 `/` が含まれているとエラーになります)
+Then, input `1KG.JPT.hibag` into `Output file name prefix`.
+(Note: You cannot include a path in `Output file name prefix`. Including `/` will cause an error.)
 
-パラメータの指定が終わったら、Set up job ボタンを押します。 
-画面下部に、生成されたパラメータが表示されます。これをsapporo-web で使います。
+After specifying the parameters, click the "Set up job" button.
+The generated parameters will be displayed at the bottom of the screen. These will be used in sapporo-web.
 
 ![fig3](./imputation_server_hibag_fig3.png)
 
-## Imputation Workflowの実行
+## Execution of Imputation Workflow
 
-guacamole 経由で、以下のアドレスにアクセスします。
+Access the following address via guacamole of the NIG Supercomputer.
 
 ```
 http://localhost:1121
 ```
 
-以下のような画面が表示されます。
+The following screen will be displayed.
 
 ![fig4](./imputation_server_hibag_fig4.png)
 
-次に、デフォルトで使用可能になっている Sapporo Service on localhost を選択します。
+Next, select the Sapporo Service on localhost, which is available by default.
 
-クリックすると以下のような画面がでてきます
+Clicking will bring up the following screen.
 
 ![fig5](./imputation_server_hibag_fig5.png)
 
-次にバックエンドワークフローを使用するために少し下にスクロールし、 Workflows という項目から hibag をクリックします。
+Next, scroll down a bit to use the backend workflow, and click on `hibag` under Workflows.
 
 ![fig6](./imputation_server_hibag_fig6.png)
 
-Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選択します。
+From the Compose Run section, select `cwltool 3.1` under Workflow Engine.
 
 ![fig7](./imputation_server_hibag_fig7.png)
 
-Workflow Parameters に先程、 imputationserver-web-ui で生成したパラメータを入力します。 このとき、最初から書かれている `{}` を消して、生成したパラメータを入力します。
+Input the parameters generated earlier in the imputationserver-web-ui into Workflow Parameters. When doing so, delete the `{}` already written and input the generated parameters.
 
 ![fig8](./imputation_server_hibag_fig8.png)
 
-一番下にある `EXECUTE` ボタンを押して、ワークフローを実行します。 ジョブの状態が `RUNNING` になります。
+Click the `EXECUTE` button at the bottom to execute the workflow. The job status will change to `RUNNING`.
 
 ![fig9](./imputation_server_hibag_fig9.png)
 
-正常にワークフローの実行が開始されるとcwltoolでワークフローが実行されます。
+When the workflow execution starts successfully, the workflow will be executed by cwltool.
 
-正常に動作すると10分程度でステータスが `COMPLETE` に変わります。
+If it runs correctly, the status will change to `COMPLETE` in about 10 minutes.
 
 ![fig10](./imputation_server_hibag_fig10.png)
 
-結果ファイルは、ブラウザから取得が可能です。 Run log の中の、Outputs をクリックすると結果ファイル一覧が表示されます。
+The result files can be obtained from the web browser. Click on `Outputs` in the Run log to view the list of result files.
 
-ダウンロードしたいファイルをクリックするとダイアログが表示され、 デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
+When you click on the file you want to download, a dialog will appear, and by default, it will be downloaded under `~/Downloads`.
 
-## 結果
-Imputation Workflow 実行後、以下のものが取得できます。
+## Results
 
-ウェブブラウザから取得ができます。
+After executing the Imputation Workflow, the following can be obtained:
 
-以下のコマンドを、手元のパソコンにコピーすることが可能です。
+You can obtain it from the web browser.
 
-ターミナルを開きます。
+You can copy the following command to your local computer.
 
-実行すると、現在コマンドを実行しているディレクトリにファイルがダウンロードされます。
+Open a terminal.
 
-`scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(ダウンロードしたいファイル名) .`
+Executing this command will download the file to the directory where the command is currently being executed.
 
--  `(お使いのアカウント名)` は、個人ゲノム解析環境へのログインに使用するアカウントです
-- `(ダウンロードしたいファイル名)` に、ダウンロードしたいファイル名を指定します。
+`scp (your_account_name)@gwa.ddbj.nig.ac.jp:~/Downloads/(filename_you_want_to_download) .`
 
-また、sapporo-serviceの結果ディレクトリから直接ダウンロードすることも可能です。
+- `(your_account_name)` is the account you use to log in to the Individual Genome Analysis environment.
+- `(filename_you_want_to_download)` specifies the name of the file you want to download.
 
-`Run ID`を調べます。`Run ID` の右に表示されているものが `Run ID` です。 右にあるアイコンをクリックすることで、 `Run ID` (以下runid)をコピーすることが可能です。
+Alternatively, you can directly download from the sapporo-service result directory.
+
+Check the `Run ID`. What is displayed to the right of `Run ID` is the `Run ID`. By clicking on the icon to the right, you can copy the `Run ID`.
 
 ![fig11](./imputation_server_hibag_fig11.png)
 
-インストールしたディレクトリ/sapporo-service/run/`runid` の最初の２文字 /`runid`/outputs/ 以下にすべてのファイルがあります。
+All files are located under the directory `/sapporo-install/sapporo-service/run/(first_2_characters_of_runid)/(runid)/outputs/`.
 
-`runid`が`eef64a2e-ca10-4ab0-a762-a965c4149a4a`の場合、最初の２文字は `ee` になります。
+If the `runid` is `eef64a2e-ca10-4ab0-a762-a965c4149a4a`, the first 2 characters are `ee`.
 
-scpでコピーするときは、お手元の計算機に以下のように入力します。 手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム解析区画から、お手元の計算機にコピーされてきます。
-
-```
-scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/ee/eef64a2e-ca10-4ab0-a762-a965c4149a4a/outputs outputs
-```
+When using scp to copy, input as follows on your local machine. A directory named `outputs` will be created on
