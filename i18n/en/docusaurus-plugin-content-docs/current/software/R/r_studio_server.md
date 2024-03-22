@@ -1,13 +1,13 @@
 ---
 id: r_studio_server
-title: "How to Use RStudio Server"
+title: "RStudio Server"
 ---
 
-### How to Use RStudio Server in a User Environment
+## How to Use RStudio Server in a User Environment
 
 RStudio Server is a web server-based RStudio environment (IDE). This document explains how to start the RStudio server environment within the National Institute of Genetics supercomputer. Unlike RStudio Desktop, RStudio Server is primarily a server application that runs on a server, making it difficult to manage the entire RStudio Server with conda. Therefore, this document demonstrates how to set up a user environment on the RStudio Server login node using Singularity containers.
 
-### About the Rocker Project
+## About the Rocker Project
 
 The [Rocker Project](https://rocker-project.org/) provides integrated environments for RStudio Server as containers, maintaining and distributing the following container images:
 
@@ -29,7 +29,7 @@ Here, we will demonstrate how to create a RStudio Server environment accessible 
 - Starting a Singularity container on the login node and setting up the rserver environment
 - Configuring a method to connect to RStudio Server from outside of the National Institute of Genetics (ssh port forwarding)
 
-### Importing Rocker Images
+## Importing Rocker Images
 
 Rocker Project images are available as Docker images, but can be imported onto the login node of the National Institute of Genetics supercomputer as Singularity SIF images by following these steps. You may choose which version of the container to import, so please refer to the following page to decide which version to use:
 
@@ -52,7 +52,7 @@ yxxxx@at139:~$ ls -l *sif
 -rwxr-xr-x 1 yxxxx xxxxx 800317440 Feb 27 08:50 tidyverse_4.3.2.sif
 ```
 
-### Starting a Singularity Container on the Login Node
+## Starting a Singularity Container on the Login Node
 
 Start the imported Singularity image on the login node by following these steps.
 
@@ -108,7 +108,7 @@ Additionally, RStudio server defaults to a 60-minute session timeout. To disable
 --auth-timeout-minutes=0 --auth-stay-signed-in-days=30
 ```
 
-### Setting Up SSH Port Forwarding
+## Setting Up SSH Port Forwarding
 
 Open a terminal on your PC and execute the following command to set up ssh port forwarding. This assumes your PC is capable of using ssh.
 ```
@@ -122,7 +122,7 @@ Enter passphrase for key '/Users/xxxxxx/.ssh/id_rsa':
 ```
 Leave this terminal open while connected to RStudio Server. After finishing with RStudio Server, you can stop it with Ctrl+C.
 
-### Connecting to RStudio Server from a Terminal
+## Connecting to RStudio Server from a Terminal
 
 Open a browser on the terminal and navigate to `http://localhost:LocalPortNumberSpecifiedAbove (e.g., 3100)`. An authentication screen will appear.
 

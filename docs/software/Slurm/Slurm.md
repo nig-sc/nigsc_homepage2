@@ -26,7 +26,7 @@ Slurmはオープンソースソフトウェアのジョブスケジューラで
   - スパコンを対話的に利用する場合に用いる。
 - [バッチジョブ (batch job)](software/Slurm/batch_jobs.md)
   - CPU コアを 1 コアだけ使用するプログラムを少数実行する場合に用いる。
-- [パラレルジョブ (parallel job)](software/Slurm/parallel_jobs.mdx)
+- [パラレルジョブ (parallel job)](software/Slurm/parallel_jobs.md)
   - CPU コアを複数同時に使用するプログラムを少数実行する場合に用いる。
 - [アレイジョブ (array job)](software/Slurm/array_jobs.md)
   - バッチジョブまたはパラレルジョブを多数順次実行する場合に用いる。
