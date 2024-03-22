@@ -1,6 +1,6 @@
 ---
 id: pgi_compiler
-title: How to Use C/C++ (NVIDIA HPC Compiler)
+title: C/C++ (NVIDIA HPC Compiler)
 ---
 
 As of February 2024, the genetic research supercomputer system has implemented NVIDIA HPC SDK 23.7. The former PGI Compiler continues its development within the NVIDIA HPC Compiler as part of the NVIDIA HPC SDK.

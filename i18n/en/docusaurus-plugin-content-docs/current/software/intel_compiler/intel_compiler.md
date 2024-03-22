@@ -1,6 +1,6 @@
 ---
 id: intel_compiler
-title: How to Use C/C++ (Intel Compiler)
+title: C/C++ (Intel Compiler)
 ---
 
 The NIG supercomputer system has installed the ***Intel oneAPI Base & HPC Toolkit Multi-node***, enabling the use of the following tools. For details about each product, please refer to the following sites:
