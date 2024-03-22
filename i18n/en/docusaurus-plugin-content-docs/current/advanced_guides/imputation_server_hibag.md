@@ -1,3 +1,14 @@
+---
+id: imputation_server_hibag
+title: "Tutorial 4 - HLA Genotype Imputation workflows using HIBAG"
+---
+
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
+
 ## Procedures for using this system
 
 This system executes HLA Genotype Imputation workflows using [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) in the following steps.
