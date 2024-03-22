@@ -1,3 +1,14 @@
+---
+id: imputation_server_hibag
+title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
+---
+
+<img
+  src={require('./imputationserver.logo_color.png').default}
+  alt=''
+  style={{ width: '200px' }}
+/>
+
 ## システム利用方法
 
 本システムでは、以下の流れで [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) を用いた HLA Genotype Imputation ワークフローを実行します。
