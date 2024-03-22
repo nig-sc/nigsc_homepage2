@@ -236,7 +236,7 @@ Many development environments are preinstalled on the system. But if you need a 
 <tr>
 <td width="300">
 
-R Studio Server
+[R Studio Server](R/r_studio_server)
 
 </td>
 <td width="300">available</td>
@@ -282,7 +282,7 @@ R Studio Server
 <tr>
 <td width="300">
 
-C/C++ (Intel Compiler)
+[C/C++ (Intel Compiler)](intel_compiler/intel_compiler.md)
 
 </td>
 <td width="300">installed</td>
@@ -292,7 +292,7 @@ C/C++ (Intel Compiler)
 <tr>
 <td width="300">
 
-C/C++ (PGI Compiler)
+[C/C++ (PGI Compiler)](pgi_compiler/pgi_compiler.md)
 
 </td>
 <td width="300">installed</td>
