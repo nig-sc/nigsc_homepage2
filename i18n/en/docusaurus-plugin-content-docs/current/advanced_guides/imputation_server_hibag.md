@@ -134,38 +134,36 @@ In this case, delete the `{}` written from the beginning and enter the generated
 
 ![fig8](./imputation_server_hibag_fig8.png)
 
-Click the `EXECUTE` button at the bottom to execute the workflow. The job status will change to `RUNNING`.
+Press the `EXECUTE` button at the bottom to run the workflow. The status of the job will be `RUNNING`.
 
 ![fig9](./imputation_server_hibag_fig9.png)
 
-When the workflow execution starts successfully, the workflow will be executed by cwltool.
+If the workflow is started successfully, the workflow will be run by cwltool.
 
-If it runs correctly, the status will change to `COMPLETE` in about 10 minutes.
+If successfully completed, the status will change to `COMPLETE` (in about 10 minutes).
 
 ![fig10](./imputation_server_hibag_fig10.png)
 
-The result files can be obtained from the web browser. Click on `Outputs` in the Run log to view the list of result files.
+You can get the result file from your browser. Click on `Outputs` in the Run log to list the result files.
 
-When you click on the file you want to download, a dialog will appear, and by default, it will be downloaded under `~/Downloads`.
+When you click on the file you want to download, a dialogue appears. By default, the file is downloaded under `~/Downloads`.
 
-## Results
+## Get results
 
-After executing the Imputation Workflow, the following can be obtained:
-
-You can obtain it from the web browser.
+After running the Imputation Workflow, you can get the follows from your web browser.
 
 You can copy the following command to your local computer.
 
 Open a terminal.
 
-Executing this command will download the file to the directory where the command is currently being executed.
+When executed, the file will be downloaded to the directory where you are currently executing the command.
 
 `scp (your_account_name)@gwa.ddbj.nig.ac.jp:~/Downloads/(filename_you_want_to_download) .`
 
-- `(your_account_name)` is the account you use to log in to the Individual Genome Analysis environment.
-- `(filename_you_want_to_download)` specifies the name of the file you want to download.
-
-Alternatively, you can directly download from the sapporo-service result directory.
+- `(your_account_name)` is the account you use to log in to the Personal Genome Analysis environment.
+- For `(filename_you_want_to_download)`, specify the name of the file you want to download.
+ 
+You can also download the file directly from the results directory of sapporo-service.
 
 Check the `Run ID`. What is displayed to the right of `Run ID` is the `Run ID`. By clicking on the icon to the right, you can copy the `Run ID`.
 
