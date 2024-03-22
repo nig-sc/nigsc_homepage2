@@ -165,12 +165,17 @@ When executed, the file will be downloaded to the directory where you are curren
  
 You can also download the file directly from the results directory of sapporo-service.
 
-Check the `Run ID`. What is displayed to the right of `Run ID` is the `Run ID`. By clicking on the icon to the right, you can copy the `Run ID`.
+Search `Run ID`. The `Run ID` is displayed on the right of `Run ID`. You can copy the `Run ID`(runid) by clicking on the icon on the right.
 
 ![fig11](./imputation_server_hibag_fig11.png)
 
-All files are located under the directory `/sapporo-install/sapporo-service/run/(first_2_characters_of_runid)/(runid)/outputs/`.
+All files are in first two characters /`runid`/outputs/ of the installed directory /sapporo-service/run/`runid`.
 
-If the `runid` is `eef64a2e-ca10-4ab0-a762-a965c4149a4a`, the first 2 characters are `ee`.
+If the `runid` is `eef64a2e-ca10-4ab0-a762-a965c4149a4a`, the first two characters are `ee`.
 
-When using scp to copy, input as follows on your local machine. A directory named `outputs` will be created on
+When you copy with the `scp` command, enter the following. A directory called `outputs` will be created in your computer,
+and the analysis results will be copied from the Personal Genome Analysis division to your computer.
+
+```
+scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/ee/eef64a2e-ca10-4ab0-a762-a965c4149a4a/ outputs outputs
+```
