@@ -3,14 +3,14 @@ id: r_studio_server
 title: "RStudio Serverの使い方"
 ---
 
-### RStudio　Server環境のユーザ環境での利用方法
+## RStudio　Server環境のユーザ環境での利用方法
 
 RStudio ServerはWebサーバベースのRStudio環境(IDE)です。
 ここでは、Rstudio serverの遺伝研スパコン内での環境起動方法について説明します。RStudio ServerはRStudio Desktopと異なり、
 主にサーバ上で動作するサーバアプリケーションであり、RStudio Server全体をcondaで管理することは難しいです。この為、ここでは
 Singularityコンテナを使用したRStudio Serverのログインノード上での利用環境構築手順について示します。
 
-### Rocker Projectについて
+## Rocker Projectについて
 
 [Rocker Project](https://rocker-project.org/)は、RStudio Serverの統合環境をコンテナとして提供しており、
 以下のようなコンテナイメージをメンテナンス、配布してくれています。
@@ -38,7 +38,7 @@ Singularityコンテナを使用したRStudio Serverのログインノード上�
 
 について説明していきます。
 
-### Rocker Imageのインポート
+## Rocker Imageのインポート
 
 Rocker Projectのイメージは、Dockerイメージで公開されていますが、以下の手順でSingularityのSIFイメージとして
 遺伝研スパコンのログインノード上でインポートします。
@@ -82,7 +82,7 @@ yxxxx@at139:~$ ls -l *sif
 ```
 
 
-### ログインノード上でのSingularityコンテナの起動
+## ログインノード上でのSingularityコンテナの起動
 
 ログインノード上でインポートしたSingularityイメージを以下の手順で起動します。
 
@@ -144,7 +144,7 @@ tcp   ESTAB  0      0                                            172.19.xxx.xxx:
 ```
 などとrserverのオプションを追加指定してください。
 
-### sshポートフォワードの設定
+## sshポートフォワードの設定
 
 sshのポートフォワードの為に、手元のPCでターミナルを開いて、以下のコマンドを実行します。手元のPCは、sshが利用可能なPCを想定しています。
 ```
@@ -161,7 +161,7 @@ Enter passphrase for key '/Users/xxxxxx/.ssh/id_rsa':
 ```
 RStudio Serverに接続中はこの端末は置いたままにしておいてください。RStudio Serverの利用終了後には、Ctl+Cで停止することが可能です。
 
-### RStudio Serverへの端末からの接続
+## RStudio Serverへの端末からの接続
 
 次に端末上でブラウザを起動し、`http://localhost:上で指定したローカルポート番号(例では3100)` を指定して画面を開きます。認証画面が表示されます。
 

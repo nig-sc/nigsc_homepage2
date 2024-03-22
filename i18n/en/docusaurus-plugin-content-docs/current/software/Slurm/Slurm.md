@@ -23,9 +23,9 @@ In the personal genome analysis section's Slurm, the following three types of jo
 
 - [Interactive jobs](software/Slurm/interactive_jobs.md)
   - Used when interacting with the supercomputer.
-- [Batch jobs](software/Slurm/batch_jobs.mdx)
+- [Batch jobs](software/Slurm/batch_jobs.md)
   - Used when running a small number of programs that use only one CPU core.
-- [Parallel jobs](software/Slurm/parallel_jobs.mdx)
+- [Parallel jobs](software/Slurm/parallel_jobs.md)
   - Used when running a small number of programs that use multiple CPU cores simultaneously.
 - [Array jobs](software/Slurm/array_jobs.md)
   - Used when sequentially running many batch or parallel jobs.
