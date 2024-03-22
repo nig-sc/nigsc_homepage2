@@ -1,6 +1,6 @@
 ---
-id: R2
-title: "How to Use R"
+id: R
+title: "R"
 ---
 
 This article explains the methods for installing the R environment on the user environment of the National Institute of Genetics supercomputer and using package management. It covers the following topics:
