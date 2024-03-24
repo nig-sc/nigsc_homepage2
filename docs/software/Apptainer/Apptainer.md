@@ -9,7 +9,7 @@ title: "Apptainer (Singularity)の使い方"
 
 遺伝研スパコンでは様々な解析ソフトウェアをユーザー権限でインストール出来るようにするため Apptainer (Sigularity) コンテナが利用可能です。
 
-Apptainer (Sigularity) を使うことによって例えば遺伝研スパコン(CentOS7.5)の上で、Ubuntu Linux の apt-get 等でインストールした解析ソフトウェアを動作させることが可能になります。
+Apptainer (Sigularity) を使うことによって例えば遺伝研スパコン(CentOS7.9)の上で、Ubuntu Linux の apt-get 等でインストールした解析ソフトウェアを動作させることが可能になります。
 
 
 

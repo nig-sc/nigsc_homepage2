@@ -4,7 +4,7 @@ title: "Java"
 ---
 
 
-### Installing the Java processor
+## Installing the Java processor
 
 The Java processor (JDK) can be installed with user permission, so install the version of the JDK you need in your home directory.
 

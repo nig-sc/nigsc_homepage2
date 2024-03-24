@@ -10,7 +10,7 @@ title: "Apptainer (Singularity)"
 
 Apptainer (Sigularity) containers are available on the NIG supercomputer to install various analysis software with user permission.
 
-By using Apptainer (Sigularity), for example, it is possible to run analysis software installed by Ubuntu Linux apt-get etc. on the NIG supercomputer (CentOS 7.5).
+By using Apptainer (Sigularity), for example, it is possible to run analysis software installed by Ubuntu Linux apt-get etc. on the NIG supercomputer (CentOS 7.9).
 
 
 ## Reference
