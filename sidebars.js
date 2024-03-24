@@ -384,6 +384,7 @@ module.exports = {
                 "advanced_guides/imputation_server_tutorial",
                 "advanced_guides/imputation_server_tutorial2",
                 "advanced_guides/imputation_server_hail",
+                "advanced_guides/imputation_server_hibag",
             ],  
         },
         {
