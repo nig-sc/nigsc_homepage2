@@ -247,13 +247,16 @@ module.exports = {
             label: "開発環境・ライブラリ",
             items: [
                 "software/python",
-                "software/R",
+                "software/R/R",
+                "software/R/r_studio_server",
                 "software/jupyter_notebook",
                 "software/jupyter_lab",
                 "software/java",
                 "software/typescript",
                 "software/rust",
                 "software/gcc/gcc",
+                "software/intel_compiler/intel_compiler",
+                "software/pgi_compiler/pgi_compiler",
                 "software/cuda",
             ]
 

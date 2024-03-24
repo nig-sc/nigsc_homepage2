@@ -3,7 +3,7 @@ id: jupyter_notebook
 title: "Jupyter Notebookの使い方"
 ---
 
-### Jupyter Notebookサーバーの起動
+## Jupyter Notebookサーバーの起動
 
 まず最初に、qloginにより割り当てられたインタラクティブノードのローカルIPアドレスを調べます。
 
@@ -34,7 +34,7 @@ $ ip a | grep ib0
 
 ここでインタラクティブノード上のJupyter Notebookのポート番号（この例の場合8888）を覚えておきます。
 
-### SSHポートフォワード
+## SSHポートフォワード
 
 ユーザーのクライアントマシンで新しい端末を起動し、以下のコマンドを実行します。（プロンプトは返ってきません。何もせずこのままつないでおきます。Ctrl-Cで終了します。)
 
@@ -54,7 +54,7 @@ Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
 - (3)は上記の「インタラクティブノード上のJupyter Notebookのポート番号」です。
 
 
-### Webブラウザからのアクセス
+## Webブラウザからのアクセス
 
 ユーザーのクライアントマシンのWebブラウザを用いて以下のURLにアクセスします。
 
@@ -70,7 +70,7 @@ Enter passphrase for key '/home/youraccount/.ssh/id_rsa':
  
   
   
-### 参考
+## 参考
 - Jupyter Notebookの公式サイト
 
  [Running the Notebook — Jupyter Documentation 4.1.1 alpha documentation](https://jupyter.readthedocs.io/en/latest/running.html)

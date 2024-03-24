@@ -4,7 +4,7 @@ title: "Jupyter Lab"
 ---
 
 
-### Installing Jupyter Lab
+## Installing Jupyter Lab
 
 If you have already installed Miniconda, you can install Juypter Lab with the following command.
 
@@ -19,7 +19,7 @@ Set a password with the following command.
 ` jupyter server --generate-config `
 
 
-### Starting the Jupyter Lab server
+## Starting the Jupyter Lab server
 
 First, check the local IP address of the interactive node assigned by qlogin.
 
@@ -54,7 +54,7 @@ $ jupyter lab --no-browser --ip "*"
 Now remember the port number of the Jupyter Lab on the interactive node. (8888, in this case.)
 
 
-### SSH port forwarding
+## SSH port forwarding
 
 Start a new terminal on the user's client machine and execute the following command. (No prompt will be returned. Do nothing and leave it connected, use Ctrl-C to exit).
 
@@ -74,7 +74,7 @@ Users can decide (1) for themselves.
 (3) is the above 'the port number of the Jupyter Notebook on the interactive node'.
 
 
-### Access from a web browser
+## Access from a web browser
 
 Access the following URL using a web browser on the user's client machine.
 
