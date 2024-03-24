@@ -19,7 +19,7 @@ This system executes HLA Genotype Imputation workflows using [HIBAG](https://bio
 
 ## 1. Prepare test data
 
-To proceed with the tutorial, download the test input data and copy it to the Personal Genome Analysis division of the NIG supercomputer.
+To proceed with the tutorial, download the test input data and copy it to the personal genome analysis section of the NIG supercomputer.
 The required data for input to this workflow are PLINK bed, bim, and fam files.
 
 ### Preparation of PLINK bed, bim, and fam files
@@ -35,7 +35,7 @@ Download all `1KG.JPT.bim`, `1KG.JPT.fam`, and `1KG.JPT.bed` files.
 
 ![fig1](./imputation_server_hibag_fig1.png)
 
-### Copy it to Personal Genome Analysis division of the NIG supercomputer
+### Copy it to personal genome analysis section of the NIG supercomputer
 
 Copy the test data just downloaded.
 
@@ -44,7 +44,7 @@ First, connect the VPN for connecting to the NIG supercomputer.
 Next, use the following command to copy the test data that you have just downloaded.
 (Please place all PLINK files in the same directory.)
 
-In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the Personal Genome Analysis division of the NIG supercomputer.
+In the following example, the test data you want to copy are in the download folder, and the copy destination is the home directory of your account in the personal genome analysis section of the NIG supercomputer.
 
 ```
 scp -i secret_key_file ~/Downloads/1KG.JPT.bim (your_account_name)@gwa.ddbj.nig.ac.jp:~/
@@ -174,7 +174,7 @@ All files are in first two characters /`runid`/outputs/ of the installed directo
 If the `runid` is `eef64a2e-ca10-4ab0-a762-a965c4149a4a`, the first two characters are `ee`.
 
 When you copy with the `scp` command, enter the following. A directory called `outputs` will be created in your computer,
-and the analysis results will be copied from the Personal Genome Analysis division to your computer.
+and the analysis results will be copied from the personal genome analysis section to your computer.
 
 ```
 scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/ee/eef64a2e-ca10-4ab0-a762-a965c4149a4a/ outputs outputs
