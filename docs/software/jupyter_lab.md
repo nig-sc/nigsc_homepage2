@@ -2,91 +2,127 @@
 id: jupyter_lab
 title: "Jupyter Labの使い方"
 ---
-
+Jupyter LabはJupyter Notebookに比べユーザビリティの向上や拡張機能の導入などエンハンスが行われています。標準ではインストールされていないため各自で導入が必要です。インストール、および使用方法は次のとおりです。
 ### Jupyter Labのインストール
-
-Minicondaをインストールしているのであれば、以下のコマンドでJuypter Labをインストールできます。
-
-` conda install -c conda-forge jupyterlab `
-
-以下のコマンドにてconfigファイルを生成します。
-
-` jupyter server --generate-config `
-
-以下のコマンドにてパスワードを設定します。
-
-` jupyter server --generate-config `
-
-
-### Jupyter Labサーバーの起動
-
-まず最初に、qloginにより割り当てられたインタラクティブノードのローカルIPアドレスを調べます。
-
+condaを導入していない場合、先に[Pythonの使い方](/software/python)を参照しMinicondaをインストールします。
+condaのインストール後にcondaコマンドでJupyter Labをインストールします。
 ```
-$ ip a | grep ib0 
-10: ib0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 256 
- inet 172.19.7.186/20 brd 172.19.15.255 scope global ib0
-``` 
-
-この例の場合はqloginにより割り当てられたインタラクティブノードのローカルIPアドレスは172.19.7.186です。
- 
-  
-  
-次にインタラクティブノード上でJuypter Labサーバーを起動します。
-
-` $ jupyter lab --no-browser --ip "*" `
-
-起動すると最後に以下のようなメッセージが出ます。（プロンプトは返ってきません。このままつないでおきます。Ctrl-Cで終了します。）
-
+$ conda install -c conda-forge jupyterlab
 ```
-$ jupyter lab --no-browser --ip "*"
-[I 2021-08-13 09:55:43.340 ServerApp] jupyterlab | extension was successfully linked.
-[I 2021-08-13 09:55:43.707 ServerApp] nbclassic | extension was successfully linked.
-[W 2021-08-13 09:55:44.145 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
-[I 2021-08-13 09:55:44.245 ServerApp] nbclassic | extension was successfully loaded.
-...
-[I 2021-08-13 09:55:44.250 ServerApp] Jupyter Server 1.10.2 is running at:
-[I 2021-08-13 09:55:44.250 ServerApp] http://at139:8888/lab
-[I 2021-08-13 09:55:44.250 ServerApp]  or http://127.0.0.1:8888/lab
-[I 2021-08-13 09:55:44.250 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-
+### Jupyter Labの起動
+Jupyter Labを起動するインタラクティブノードを確認します。インタラクティブノードは負荷状況に応じてqlogin時に選択されるのでログインの度に確認が必要です。
+```
+(login node) $ hostname
+at139
+```
+Jupyter Labに使用するポート(e.g. 8888)が他に使用されていないか確認します。
+```
+$ netstat -an|grep 8888
+```
+Jupyter Labにパスワードを設定します。
+```
+$ jupyter server --generate-config
+Writing default config to: /lustre7/home/user/.jupyter/jupyter_server_config.py
+$ jupyter server password
+Enter password:
+Verify password:
+[JupyterPasswordApp] Wrote hashed password to /lustre7/home/user/.jupyter/jupyter_server_config.json
+```
+Jupyter Labを起動します。任意のポートを指定しますが、実際に割り当てられたポートは標準出力から確認します。
+```
+$ jupyter lab --no-browser --port=8888 --ip=`hostname`
+[I 2024-03-19 10:22:38.636 ServerApp] Serving notebooks from local directory: /lustre7/home/user
+[I 2024-03-19 10:22:38.636 ServerApp] Jupyter Server 2.12.5 is running at:
+[I 2024-03-19 10:22:38.636 ServerApp] http://at083:8888/lab
+[I 2024-03-19 10:22:38.636 ServerApp]     http://127.0.0.1:8888/lab
+```
+起動するとプロンプトは戻りません。メッセージに記載があるとおり終了する場合はCtrl-Cを使用します。
+### Alternative: Jupyter Labのジョブ起動
+Jupyter Labにパスワードを設定します。
+```
+$ jupyter server --generate-config
+Writing default config to: /lustre7/home/user/.jupyter/jupyter_server_config.py
+$ jupyter server password
+Enter password:
+Verify password:
+[JupyterPasswordApp] Wrote hashed password to /lustre7/home/user/.jupyter/jupyter_server_config.json
 ```
 
-ここでインタラクティブノード上のJupyter Labのポート番号（この例の場合8888）を覚えておきます。
+Jupyter Lab起動スクリプトを用意します。
+任意のポートを指定しますが、実際に割り当てられたポートは後にログから確認します。
+```
+$ cat jupyter_lab
+#!/bin/bash
 
+#$ -cwd
+#$ -V
+#$ -l short
+#$ -l s_vmem=16G
+#$ -l mem_req=16G
+#$ -N user_jupyter_lab
+#$ -S /bin/bash
 
-### SSHポートフォワード
+source ${HOME}/miniconda3/etc/profile.d/conda.sh
+conda activate py312
+jupyter lab --no-browser --port=8888 --ip=`hostname`
+conda deactivate
+```
 
-ユーザーのクライアントマシンで新しい端末を起動し、以下のコマンドを実行します。（プロンプトは返ってきません。何もせずこのままつないでおきます。Ctrl-Cで終了します。)
+ジョブをサブミットします。
+```
+$ qsub jupyter_lab
+```
+サブミットしたジョブの実行ノードを確認します。
+この例ではat083が使用されているため後のポートフォワーディングで指定します。
+```
+$ qstat
+job-ID     prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID
+------------------------------------------------------------------------------------------------------------------------------------------------
+  25675539 0.25013 QLOGIN     user         r     03/13/2024 21:29:33 login.q@at137                                                     1
+  25675545 0.25000 user_jupyt user         r     03/13/2024 21:45:20 short.q@at083                                                     1
+```
+実際に割り当てられたポートをログから確認します。
+```
+$ grep -A1 running user_jupyter_lab.e25683453
+[I 2024-03-19 10:42:03.438 ServerApp] Jupyter Server 2.12.5 is running at:
+[I 2024-03-19 10:42:03.439 ServerApp] http://at084:28888/lab
+```
+### SSHポートフォワーディング
+
+Jupyter Labを使用したい端末から当該インタラクティブノードへポートへフォワーディングを行います。
+実行するとプロンプトは戻りません。Ctrl-Cで終了します。
 
 ```
-$ ssh -N gw.ddbj.nig.ac.jp -L 3001:172.19.7.186:8888 
-Enter passphrase for key '/home/youraccount/.ssh/id_rsa': 
+$ ssh -i ~/.ssh/my_id_rsa -L 18888:at139:8888 <user>@gw.ddbj.nig.ac.jp
+Enter passphrase for key '/home/user/.ssh/my_id_rsa':
 ```
+ここでLオプションは次のとおり指定します。
 
-ここで-Lオプションの意味は以下の通りです。
+` -L <(1)>:<(2)>:<(3)> `
 
-` -L <(1)アクセス時のポート番号>:<(2)インタラクティブノードのIPアドレス>:<(3)Jupyter Labのポート番号> `
+1. 端末で使用していない任意のポートを指定
 
-- (1)については適当に決めて良いです。
+2. Jupyter Labを起動したノードのホスト名
 
-- (2)は上記の「インタラクティブノードのローカルIPアドレス」です。
-
-- (3)は上記の「インタラクティブノード上のJupyter Labのポート番号」です。
+3. Jupyter Labに指定したポート番号
 
 
 ### Webブラウザからのアクセス
 
-ユーザーのクライアントマシンのWebブラウザを用いて以下のURLにアクセスします。
+端末でWebブラウザを起動し次のURLにアクセスします。ポートは先に(1)で指定したポートを使用します。
 
-` http://localhost:3001 `
+` http://localhost:18888/ `
 
-- ポート番号は、上記(1)アクセス時のポート番号とします。
-
-- アクセスするとパスワードを聞かれるので、上記で設定したパスワードを入力します。
-
- 
- 
-これでJupyter LabのWeb画面が表示されます。
+パスワードの入力を求められるので先に設定したパスワードを入力します。
+入力後、Jupyter LabのWeb画面が表示されます。
 ![figure](JupyterLab.PNG)
 
+### Jupyter Labからのジョブ起動
+ConsoleまたはTerminalからジョブ起動ができます。
+Consoleから起動する場合はコマンドの先頭に`!`を追加して実行します。
+```
+!qsub launch_python.sh
+```
+
+### Jupyter Labの終了
+Webブラウザ上で`File`メニューから`Shut Down`をクリックします。
