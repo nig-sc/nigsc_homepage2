@@ -5,8 +5,6 @@ title: バッチジョブ
 
 ## バッチジョブの使い方
 
-import Marker from '@site/src/components/Marker';
-import RedText from '@site/src/components/RedText';
 
 CPU コアを 1 コアだけ使用し長時間実行するプログラムを少数実行する場合は、バッチジョブとして実行してください。Slurmではバッチジョブの投入にはsbatchコマンドを利用します。
 
@@ -51,12 +49,12 @@ example.sh biotools_list.txt
 個人ゲノム解析区画でParabricks(GPUを利用するジョブ)を利用する場合、計算ノード上のGPUを全て占有してジョブが動作していても、CPUコア、メモリに空きがあると、他のジョブが
 同じ計算ノードに並行して起動される可能性があります。計算ノードを1ジョブで占有して他ジョブが同じ計算ノード上で実行されないようにしたい場合は
 
-- <RedText>`--gres=gpu:4` オプションを指定してGPUを割り当てる </RedText>
+- `--gres=gpu:4` オプションを指定してGPUを割り当てる 
 
 上記を実施した上で、以下のいずれかを指定してください。
 
-- <RedText>`--mem` 384000で、メモリを計算ノードの設定上限いっぱい(384GB)まで取得する</RedText>
-- <RedText>`--exclusive`オプションを指定して、ノードを排他利用するように指定する</RedText>
+- `--mem` 384000で、メモリを計算ノードの設定上限いっぱい(384GB)まで取得する
+- `--exclusive`オプションを指定して、ノードを排他利用するように指定する
 
 ```js
 #!/bin/bash
