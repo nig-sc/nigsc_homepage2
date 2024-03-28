@@ -22,13 +22,13 @@ Slurmはオープンソースソフトウェアのジョブスケジューラで
 
 個人ゲノム解析区画のSlurmでは以下の3種類のジョブが主に使われます。(Slurmのドキュメントではパラレルジョブという分類が明示的にはないですが、遺伝研スパコンのAGEの説明との対応として別に分類して説明します)
 
-- [インタラクティブジョブ (interactive job)](software/Slurm/interactive_jobs.md)
+- [インタラクティブジョブ (interactive job)](/software/Slurm/interactive_jobs)
   - スパコンを対話的に利用する場合に用いる。
-- [バッチジョブ (batch job)](software/Slurm/batch_jobs.md)
+- [バッチジョブ (batch job)](/software/Slurm/batch_jobs)
   - CPU コアを 1 コアだけ使用するプログラムを少数実行する場合に用いる。
-- [パラレルジョブ (parallel job)](software/Slurm/parallel_jobs.md)
+- [パラレルジョブ (parallel job)](/software/Slurm/parallel_jobs)
   - CPU コアを複数同時に使用するプログラムを少数実行する場合に用いる。
-- [アレイジョブ (array job)](software/Slurm/array_jobs.md)
+- [アレイジョブ (array job)](/software/Slurm/array_jobs)
   - バッチジョブまたはパラレルジョブを多数順次実行する場合に用いる。
 
 （その他のジョブについての説明など詳細については公式のマニュアルをご参照下さい。）

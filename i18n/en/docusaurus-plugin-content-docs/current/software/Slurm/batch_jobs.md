@@ -5,8 +5,6 @@ title: Batch Jobs
 
 ## How to Use Batch Jobs
 
-import Marker from '@site/src/components/Marker';
-import RedText from '@site/src/components/RedText';
 
 Batch jobs should be executed as batch jobs when running a small number of programs that use only one CPU core for an extended period. In Slurm, the sbatch command is used to submit batch jobs.
 
@@ -48,12 +46,12 @@ example.sh biotools_list.txt
 ### Special Notes for Submitting Jobs in the Personal Genome Analysis Partition
 When using Parabricks (a job that utilizes GPUs) in the personal genome analysis partition, even if the job is operating while monopolizing all GPUs on a compute node, there is a possibility that other jobs will start concurrently on the same compute node if there are available CPU cores and memory. If you want to monopolize a compute node for one job so that no other jobs run on the same compute node, you should do the following:
 
-- <RedText>`--gres=gpu:4` option to allocate GPUs</RedText>
+- `--gres=gpu:4` option to allocate GPUs
 
 Then, please specify one of the following:
 
-- <RedText>`--mem` 384000 to obtain memory up to the maximum configuration limit (384GB) per compute node</RedText>
-- <RedText>Specify the `--exclusive` option for exclusive use of the node</RedText>
+- `--mem` 384000 to obtain memory up to the maximum configuration limit (384GB) per compute node
+- Specify the `--exclusive` option for exclusive use of the node
 
 ```bash
 #!/bin/bash

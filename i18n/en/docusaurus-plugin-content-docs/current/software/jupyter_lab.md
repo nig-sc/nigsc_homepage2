@@ -1,92 +1,129 @@
 ---
 id: jupyter_lab
-title: "Jupyter Lab"
+title: "How to use Jupyter Lab"
 ---
+Jupyter Lab was implemented based on Jupyter Notebook. Jupyter Lab provides better usability and supports extensions. You need to install it to use. Follow the instruction below.
+### Jupyter Lab Installation
+You need to install conda before installation. Refer to [How to use Python](/software/python).
 
-
-## Installing Jupyter Lab
-
-If you have already installed Miniconda, you can install Juypter Lab with the following command.
-
-` conda install -c conda-forge jupyterlab `
-
-Generate a config file with the following command.
-
-` jupyter server --generate-config `
-
-Set a password with the following command.
-
-` jupyter server --generate-config `
-
-
-## Starting the Jupyter Lab server
-
-First, check the local IP address of the interactive node assigned by qlogin.
-
+You can install Jupyter Lab with conda.
 ```
-$ ip a | grep ib0 
-10: ib0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 256 
- inet 172.19.7.186/20 brd 172.19.15.255 scope global ib0
-``` 
-
-In this case, it is 172.19.7.186.
-
-Next, start the Juypter Lab server on the interactive node.
-
-` $ jupyter lab --no-browser --ip "*" `
-
-When it starts, you will get the following message at the end. (No prompt is returned. Leave it Leave it connected. Use Ctrl-C to exit.)
-
+$ conda install -c conda-forge jupyterlab
 ```
-$ jupyter lab --no-browser --ip "*"
-[I 2021-08-13 09:55:43.340 ServerApp] jupyterlab | extension was successfully linked.
-[I 2021-08-13 09:55:43.707 ServerApp] nbclassic | extension was successfully linked.
-[W 2021-08-13 09:55:44.145 ServerApp] WARNING: The Jupyter server is listening on all IP addresses and not using encryption. This is not recommended.
-[I 2021-08-13 09:55:44.245 ServerApp] nbclassic | extension was successfully loaded.
-...
-[I 2021-08-13 09:55:44.250 ServerApp] Jupyter Server 1.10.2 is running at:
-[I 2021-08-13 09:55:44.250 ServerApp] http://at139:8888/lab
-[I 2021-08-13 09:55:44.250 ServerApp]  or http://127.0.0.1:8888/lab
-[I 2021-08-13 09:55:44.250 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-
+### Launch Jupyter Lab
+Identify the node where you have launched Jupyter Lab. Note that the interactive node where you do qlogin varies each time because the job scheduler controls it according to load status.
 ```
-
-Now remember the port number of the Jupyter Lab on the interactive node. (8888, in this case.)
-
-
-## SSH port forwarding
-
-Start a new terminal on the user's client machine and execute the following command. (No prompt will be returned. Do nothing and leave it connected, use Ctrl-C to exit).
-
+(login node) $ hostname
+at139
 ```
-$ ssh -N gw.ddbj.nig.ac.jp -L 3001:172.19.7.186:8888 
-Enter passphrase for key '/home/youraccount/.ssh/id_rsa': 
+Confirm the port you want to use for Jupyter Lab is not used.
+```
+$ netstat -an|grep 8888
+```
+Set password for Jupyter Lab.
+```
+$ jupyter server --generate-config
+Writing default config to: /lustre7/home/user/.jupyter/jupyter_server_config.py
+$ jupyter server password
+Enter password:
+Verify password:
+[JupyterPasswordApp] Wrote hashed password to /lustre7/home/user/.jupyter/jupyter_server_config.json
+```
+Then launch Jupyter Lab.
+You can specify the port which you confirmed is exclusive above, but you need to check the assigned port from the standard output.
+```
+$ jupyter lab --no-browser --port=8888 --ip=`hostname`
+[I 2024-03-19 10:22:38.636 ServerApp] Serving notebooks from local directory: /lustre7/home/user
+[I 2024-03-19 10:22:38.636 ServerApp] Jupyter Server 2.12.5 is running at:
+[I 2024-03-19 10:22:38.636 ServerApp] http://at083:8888/lab
+[I 2024-03-19 10:22:38.636 ServerApp]     http://127.0.0.1:8888/lab
+```
+Once it launched, the prompt is not returned. Use Ctrl-C to terminate.
+### Alternative: Launch Jupyter Lab with Job scheduler
+Set password for Jupyter Lab
+```
+$ jupyter server --generate-config
+Writing default config to: /lustre7/home/user/.jupyter/jupyter_server_config.py
+$ jupyter server password
+Enter password:
+Verify password:
+[JupyterPasswordApp] Wrote hashed password to /lustre7/home/user/.jupyter/jupyter_server_config.json
 ```
 
-Here the meaning of the -L option is as follows.
+You need to prepare a job script for launching Jupyter Lab.
+You can use an arbitrary port, but you need to check the assigned port from the log.
+```
+$ cat jupyter_lab
+#!/bin/bash
 
-` -L <(1)the port number for access>:<(2)IP address of interactive node>:<(3)the port number of Jupyter Lab> `
+#$ -cwd
+#$ -V
+#$ -l short
+#$ -l s_vmem=16G
+#$ -l mem_req=16G
+#$ -N user_jupyter_lab
+#$ -S /bin/bash
 
-Users can decide (1) for themselves.
+source ${HOME}/miniconda3/etc/profile.d/conda.sh
+conda activate py312
+jupyter lab --no-browser --port=8888 --ip=`hostname`
+conda deactivate
+```
 
-(2) is the above 'the local IP address of the interactive node'.
+Submit a job
+```
+$ qsub jupyter_lab
+```
+Confirm the node where the job is running.
+This example shows at083 is being usued for the job.
+```
+$ qstat
+job-ID     prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID
+------------------------------------------------------------------------------------------------------------------------------------------------
+  25675539 0.25013 QLOGIN     user         r     03/13/2024 21:29:33 login.q@at137                                                     1
+  25675545 0.25000 user_jupyt user         r     03/13/2024 21:45:20 short.q@at083                                                     1
+```
+Check the port that has been assigned from the log
+```
+$ grep -A1 running user_jupyter_lab.e25683453
+[I 2024-03-19 10:42:03.438 ServerApp] Jupyter Server 2.12.5 is running at:
+[I 2024-03-19 10:42:03.439 ServerApp] http://at084:28888/lab
+```
+### SSH Port Forwarding
 
-(3) is the above 'the port number of the Jupyter Notebook on the interactive node'.
+Set up port forwarding on the `Jupyter_client` node where you want to use Jupyter Lab.
+Once you run it, the prompt won't return. To terminate it use Ctrl-C.
+```
+$ ssh -i ~/.ssh/my_id_rsa -L 18888:at139:8888 <user>@gw.ddbj.nig.ac.jp
+Enter passphrase for key '/home/user/.ssh/my_id_rsa':
+```
+The L option should be set as follows:
+
+` -L <(1)>:<(2)>:<(3)> `
+
+1. `Jupyter_client` port
+
+2. Jupyter Lab Host Name
+
+3. Jupyter Lab Port Specified
 
 
-## Access from a web browser
+### Access Jupyter Lab
 
-Access the following URL using a web browser on the user's client machine.
+Open your web browser and access the following
 
-` http://localhost:3001 `
+` http://localhost:18888/ `
 
-- The port number is the port number used when accessing (1) above.
-
-- When accessing the site,  you are asked for a password, enter the password set above.
-
- 
- 
-Now the Jupyter Lab web screen will be displayed.
-
+You are requested to enter your password, and so you enter yours.
+After the authentication Jupyter Lab is available.
 ![figure](JupyterLab.PNG)
 
+### Launch Python from Jupyter Lab with Job scheduler
+You can submit a Python job from `Console` or `Terminal` in Jupyter Lab.
+In case you use `Console`, you have to prepend '!' to the command.
+```
+!qsub launch_python.sh
+```
+
+### Terminate Jupyter Lab
+Click `Menu`->`Shut Down` in Jupyter Lab.
