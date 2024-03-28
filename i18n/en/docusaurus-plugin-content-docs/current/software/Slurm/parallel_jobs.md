@@ -12,7 +12,6 @@ Reference Information:
 - [Support for MultiCore/Multi-Thread Architecture (detailed documentation from the developer)](https://slurm.schedmd.com/mc_support.html)
 - [CPU Management User and Administrator Guide](https://slurm.schedmd.com/cpu_management.html)
 
-import RedText from '@site/src/components/RedText';
 
 ## Types of Parallel Jobs (Overview)
 
@@ -50,7 +49,6 @@ For example, specifying the following would allocate a total memory of 128GB on 
 
 To submit a job that acquires NTASK cores on a single compute node, use the following approach. Be mindful that specifying the `--mem-per-cpu` option will allocate memory based on the product of the CPU core count and the specified memory amount.
 
-import Marker from '@site/src/components/Marker';
 
 ```
 #!/bin/bash
