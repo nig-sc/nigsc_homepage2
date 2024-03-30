@@ -21,13 +21,13 @@ Reference materials:
 
 In the personal genome analysis section's Slurm, the following three types of jobs are mainly used. (Although the Slurm documentation does not explicitly categorize parallel jobs, they are classified separately here for correspondence with the AGE of the genetic research supercomputer's explanation.)
 
-- [Interactive jobs](software/Slurm/interactive_jobs.md)
+- [Interactive jobs](/software/Slurm/interactive_jobs)
   - Used when interacting with the supercomputer.
-- [Batch jobs](software/Slurm/batch_jobs.md)
+- [Batch jobs](/software/Slurm/batch_jobs)
   - Used when running a small number of programs that use only one CPU core.
-- [Parallel jobs](software/Slurm/parallel_jobs.md)
+- [Parallel jobs](/software/Slurm/parallel_jobs)
   - Used when running a small number of programs that use multiple CPU cores simultaneously.
-- [Array jobs](software/Slurm/array_jobs.md)
+- [Array jobs](/software/Slurm/array_jobs)
   - Used when sequentially running many batch or parallel jobs.
 
 (For more details on other types of jobs, please refer to the official manual.)
