@@ -12,7 +12,6 @@ title: パラレルジョブ
  - [Support for MultiCore/Multi-Thread Architecture(開発元の詳細ドキュメント)](https://slurm.schedmd.com/mc_support.html)
  - [CPU Management User and Administrator Guide](https://slurm.schedmd.com/cpu_management.html)
 
-import RedText from '@site/src/components/RedText';
 
 ## パラレルジョブの種類（概要）
 
@@ -50,7 +49,6 @@ sbatch、srunコマンド実行時にオプションで明示的にメモリ量�
 
 一台の計算ノード上でNTASK個のコアを取得してジョブを投入する方法は以下のようになります。この際、`--mem-per-cpu`オプションを指定して、1CPUコアあたりのメモリ量を指定すると、CPUコア数とタスク数の積のメモリ量が計算ノード上で確保されるのでご注意ください。
 
-import Marker from '@site/src/components/Marker';
 
 ```
 #!/bin/bash
