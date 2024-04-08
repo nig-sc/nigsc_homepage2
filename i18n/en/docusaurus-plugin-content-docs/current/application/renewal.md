@@ -3,6 +3,14 @@ id: renewal
 title: "Applying for a renewal of your account of the end of the fiscal year"
 ---
 
+- From 4 January, applying for a renewal of your account of the end of the currnt fiscal year will be accepted.
+
+- If you have not applied to renew your end-of-year account by 31 March, 
+    - you will not be able to log in from 1 April.
+        - You can still apply to renew your end-of-year account after 1 April. After applying, you will be able to log in again.
+    - after 30 June, your home directory will be deleted. 
+        - After 30 June, you can still apply to renew your end-of-year account, but all your data will be deleted. Please note that.
+
 
 ## When to apply
 
