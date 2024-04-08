@@ -27,22 +27,23 @@ Due to disk space constraints, we do not back up the data in the user home direc
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
 
 
-## Scheduled for FY 2023
-Scheduled maintenance has ended.
-- [<u>(Ended)November 24 - November 30 (during the NIG's legal power outage)</u>](/blog/2023-11-24-scheduled-maintenance)
+## Announcement of replacement to the next NIG supercomputer system
 
-As CentOS 7 will reach End-Of-Life on 30 June 2024, the migration from CentOS 7.9 to Ubuntu Linux 22.04LTS has been performed during scheduled maintenance. For more information, refer to [<u>'OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)' on the Scheduled Maintenance page</u>](/blog/2023-11-24-scheduled-maintenance#os-migration-from-centos-79-to-ubuntu-linux-2204lts). 
+At the end of FY2024, it will be replaced by the next NIG supercomputer system. The current NIG supercomputer is contracted until 28 February 2025. The next NIG supercomputer is scheduled to start operation on 1 March 2025. Further details will be announced around October 2024 after the opening of the tender.
 
-- With this migration, the analysis environment may need to be re-installed. Please make sure to check the development environment and reinstall the analysis environment on your own.
-- [FAQ page for OS migration has been created.](/faq/faq_os_migration)＼&#x1f195;／
+
+## Scheduled for FY 2024
+
+The scheduled maintenance for FY2024 is planned for around November 2024.
+
 
 The following will be implemented as usual.
 - [June 30: Account suspension process for users who have not renewed at the end of the fiscal year](/application/renewal)
 - [July 31: Billing service 1st period closing date](/application/invoice/#issuing-invoices)
 - [November 30: Billing service 2nd closing date](/application/invoice/#issuing-invoices)
 - [December 31: Deadline for changes to plans with billing](/application/invoice/#issuing-invoices)
-- [Applying for a renewal of your account of the end of FY are accepted from January 2024.](/application/renewal)
-- [From January 2024, we start accepting applications for the usage plan table for next year.](/application/resource_extension)
+- [Applying for a renewal of your account of the end of FY are accepted from 4 January 2025.](/application/renewal)
+- [From 4 January 2025, we start accepting applications for the usage plan table for next year.](/application/resource_extension)
 
 
 ## May 13, 2022(Friday) - Suspend acceptance of application for new use for the personal genome analysis division and  large-scale storage on the general analysis division 
