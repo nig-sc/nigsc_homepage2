@@ -8,7 +8,7 @@ title: "Installing the SSL-VPN Client software FortiClient VPN(MacOS)"
 
 Click on the following URL to access the official ForiClient website page. You will see several software, of which download 'FortiClient VPN only'.
 
-- FortiClient official website: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
+- FortiClient official website: [https://www.fortinet.com/support/product-downloads](https://www.fortinet.com/support/product-downloads)
 
 ![figure](VPN_MAC_install_1_701_1.png)
 

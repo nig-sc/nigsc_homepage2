@@ -80,7 +80,7 @@ For more information, click the link below.
 
 Click on the URL below to access the official ForiClient website page, then download the FortiClient VPN client software for Windows or Mac from 'FortiClient VPN' at the bottom of the displayed page. Click on ① and ② in the diagram below to download the software.
 
-- FortiClient official website:[https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
+- FortiClient official website:[https://www.fortinet.com/support/product-downloads](https://www.fortinet.com/support/product-downloads)
 
 
 ＜Windows＞
