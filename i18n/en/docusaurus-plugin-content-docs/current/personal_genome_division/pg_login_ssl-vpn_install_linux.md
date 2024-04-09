@@ -1,6 +1,6 @@
 ---
 id: pg_login_ssl-vpn_install_linux
-title: "Installing FortiClient VPN Client software (Linux)"
+title: "Installing the SSL-VPN Client software FortiClient VPN(Linux)"
 ---
 
 For Linux and Windows Subsystem for Linux 2 (WSL2), use the CUI openfortivpn.
