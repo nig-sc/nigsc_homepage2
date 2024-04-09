@@ -12,9 +12,6 @@ title: "Applying for a renewal of your account of the end of the fiscal year"
         - After 30 June, you can still apply to renew your end-of-year account, but all your data will be deleted. Please note that.
 
 
-## When to apply
-
-Applications are accepted from 1 January to 31 March every year.
 
 ## How to apply
 

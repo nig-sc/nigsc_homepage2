@@ -1,22 +1,21 @@
 ---
 id: pg_login_ssl-vpn_install_win
-title: "Installing FortiClient VPN Client software (Windows)"
+title: "Installing the SSL-VPN Client software FortiClient VPN(Windows)"
 ---
 
 
-## Download the VPN service "FortiClient"
+## Download the SSL-VPN client software "FortiClient"
 
-1. Click the URL below. You can see the FortiClient official website page. On that page, click "Product Downloads" and then "FortiClient VPN only" as shown below.
-	-  ForiClient official site: [&#x1f517;<u>https://www.fortinet.com/support/product-downloads</u>](https://www.fortinet.com/support/product-downloads)
+Click on the following URL to access the official ForiClient website page. You will see several software, of which download 'FortiClient VPN only'.
 
-![figure](VPNwin_2_701_1.png)
+- FortiClient official website: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
 
-2. Download the FortiClient VPN installer installation programme for Windows by clicking ① and ② as shown below.
+![figure](VPN_MAC_install_1_701_1.png)
 
-![figure](VPNwin_2_701_2.png)
+For more detailed download instructions, see [FAQ](/faq/faq_login_personal#how-to-DL-VPN).
 
 
-##  Install the VPN service "FortiClient"
+## Install the SSL-VPN client software "FortiClient"
 
 
 1. Run the installation program saved in the download folder.
