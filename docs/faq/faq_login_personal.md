@@ -75,13 +75,13 @@ Host *
 
 以下のURLをクリックして、ForiClientの公式サイトのページにアクセスしたら、表示されたページの下の方にある「FortiClient VPN」から、Windows用またはMac用のFortiClient VPNクライアントソフトウェアをダウンロードします。下図の①、②の順にクリックすると、ダウンロードできます。
 
-- FortiClient公式サイト: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
-
-＜Macの場合＞
-![figure](VPN_MAC_install_1_701_2.png)
+- FortiClient公式サイト: [https://www.fortinet.com/support/product-downloads](https://www.fortinet.com/support/product-downloads)
 
 ＜Windowsの場合＞
 ![figure](VPNwin_2_701_2.png)
+
+＜Macの場合＞
+![figure](VPN_MAC_install_1_701_2.png)
 
 
 
