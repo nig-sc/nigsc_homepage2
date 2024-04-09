@@ -74,6 +74,22 @@ For more information, click the link below.
 &#x1f517;<u>https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset</u>
 
 
+## &#x1F180; I don't know how to download the SSL-VPN client software FortiClient. {#how-to-DL-VPN}
+
+&#x1F150; 
+
+Click on the URL below to access the official ForiClient website page, then download the FortiClient VPN client software for Windows or Mac from 'FortiClient VPN' at the bottom of the displayed page. Click on ① and ② in the diagram below to download the software.
+
+- FortiClient official website:[https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
+
+
+＜Windows＞
+![figure](VPNwin_2_701_2.png)
+
+＜Mac＞
+![figure](VPN_MAC_install_1_701_2.png)
+
+
 
 ## &#x1F180; VPN connection to the personal genome analysis division cannot be established.
 

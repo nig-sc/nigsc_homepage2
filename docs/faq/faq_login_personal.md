@@ -69,6 +69,22 @@ Host *
 &#x1f517;<u>https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset</u>
 
 
+## &#x1F180; SSL-VPNクライアントソフトウェア FortiClientのダウンロード方法がわかりません。{#how-to-DL-VPN}
+
+&#x1F150; 
+
+以下のURLをクリックして、ForiClientの公式サイトのページにアクセスしたら、表示されたページの下の方にある「FortiClient VPN」から、Windows用またはMac用のFortiClient VPNクライアントソフトウェアをダウンロードします。下図の①、②の順にクリックすると、ダウンロードできます。
+
+- FortiClient公式サイト: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
+
+＜Macの場合＞
+![figure](VPN_MAC_install_1_701_2.png)
+
+＜Windowsの場合＞
+![figure](VPNwin_2_701_2.png)
+
+
+
 ## &#x1F180; 個人ゲノム解析区画に対する VPN 接続ができません。
 
 &#x1F150; Windows 10, 11 の FortiClient で個人ゲノム解析区画にアクセスしたときに、`Credential or ssl vpn configuration is wrong (-7200)`というエラーが出る場合、
