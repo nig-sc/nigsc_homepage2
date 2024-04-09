@@ -38,7 +38,7 @@ The scheduled maintenance for FY2024 is planned for around November 2024.
 
 
 The following will be implemented as usual.
-- [June 30: Account suspension process for users who have not renewed at the end of the fiscal year](/application/renewal)
+- [June 30: Deleting accounts for users who have not renewed at the end of the fiscal year](/application/renewal)
 - [July 31: Billing service 1st period closing date](/application/invoice/#issuing-invoices)
 - [November 30: Billing service 2nd closing date](/application/invoice/#issuing-invoices)
 - [December 31: Deadline for changes to plans with billing](/application/invoice/#issuing-invoices)

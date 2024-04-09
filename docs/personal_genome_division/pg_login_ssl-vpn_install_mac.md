@@ -4,20 +4,17 @@ title: "SSL-VPNクライアントソフトウェアのインストール(Macの�
 ---
 
 
-## VPN サービス「FortiClient」のダウンロード方法
+## SSL-VPN クライアントソフトウェア「FortiClient」のダウンロード方法
 
-1. 以下のURLから、ForiClientの公式サイトのページにアクセスして、①［Product Downloads］、②［FortiClient VPN only］の順にクリックします。
+1. 以下のURLをクリックして、ForiClientの公式サイトのページにアクセスします。いくつかソフトウェアが表示されますが、そのうちの「FortiClient VPN only」をダウンロードしてください。
 	- FortiClient公式サイト: [https://www.forticlient.com/downloads](https://www.forticlient.com/downloads)
-
 
 ![figure](VPN_MAC_install_1_701_1.png)
 
-2. 下図の①、②の順にクリックして、Mac用のFortiClient VPNインストーラをダウンロードします。
-
-![figure](VPN_MAC_install_1_701_2.png)
+より詳しくダウンロード方法を知りたい場合は、[FAQ](/faq/faq_login_personal#how-to-DL-VPN)をご参照ください。
 
 
-## VPN サービス「FortiClient」のインストール方法
+## SSL-VPN クライアントソフトウェア「FortiClient」のインストール方法
 
 1. ダウンロードしたインストーラを実行するために、OKをクリックします。
 
