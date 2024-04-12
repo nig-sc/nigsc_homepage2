@@ -19,12 +19,23 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [(Ended) March 9, 2024: Communication breakdowns occur due to network device maintenance](/blog/2024-03-09-network) (2024.03.08)
 - [(Ended) Scheduled maintenance from 24 to 30 November ← Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration) ＼&#x1f195;／
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)
+
+
+## Information about applications for renewing accounts at the end of the financial year
+
+As in previous years, we are accepting application for renewing accounts at the end of the financial year. **Please be careful that after 30 June, your home directory will be deleted.**
+
+- From 4 January, applying for a renewal of your account of the end of the currnt fiscal year will be accepted. You should submit your end-of-year account renewal application by 31 March.
+
+- If you have not applied to renew your end-of-year account by 31 March, you will not be able to log in from 1 April.
+    - You can still apply to renew your end-of-year account after 1 April. After applying, you will be able to log in again.
+- After 30 June, your home directory will be deleted.
+    - After 30 June, you can still apply to renew your end-of-year account, but all your data will be deleted. Please note that.
 
 
 ## Announcement of replacement to the next NIG supercomputer system
