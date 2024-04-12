@@ -271,7 +271,7 @@ HPE Superdome Flex
 	
 | component |model number                                             | number of computation | performance par node, etc            |
 |-----------|---------------------------------------------------------|-----------------------|--------------------------------------|
-| CPU       | Intel Xeon Gold 6148 (20 cores) Base 2.4GHz, Max 3.7GHz |                    16 | Total 288 core                       |
+| CPU       | Intel Xeon Gold 6154 (18 cores) Base 3.0GHz, Max 3.7GHz |                    16 | Total 288 core                       |
 | Memory    | 32GB DDR4-2666                                          |                   192 | Total 12,288GB (47.2GB per CPU core) |
 | Storage   | 1.2TB SAS HDD                                           |                     4 | 2.4TB (RAID1)                        |
 | Network   | InfiniBand 4xEDR                                        |                     1 | 100Gbps                              |
