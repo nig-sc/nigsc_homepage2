@@ -6,7 +6,7 @@ title: "C/C++の使い方 (Intel Compiler)"
 遺伝研スパコンでは、***インテル oneAPI ベース & HPCツールキット　マルチノード***　を導入しており以下のツールが利用可能となっています。各製品の詳細については以下のサイトを参照してください。
 
 - [スイート製品に同梱される製品と機能一覧(販売元サイト)](https://www.xlsoft.com/jp/products/intel/oneapi/bundle.html)
-- [oneAPI　プログラミングガイド](https://www.isus.jp/wp-content/uploads/pdf/oneapi-programming-guide_2024_JA_draft.pdf)
+- [oneAPI　プログラミングガイド](https://www.intel.co.jp/content/dam/www/central-libraries/jp/ja/documents/oneapi-programming-guide-jp.pdf)
 - [Intel oneAPI specification](https://spec.oneapi.io/versions/latest/index.html)
 
 gccなどオープンソースコンパイラと比較してインテルのコンパイラ、ライブラリ、開発環境を利用した方が良いと考えられる場合は以下のような場合が考えられます。
