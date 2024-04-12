@@ -285,7 +285,7 @@ FAT 計算ノード１ノード（HPE Superdome Flex 2 筐体）当たりのス�
 
 | 構成要素 | 型番                                                    | 員数 | ノードあたりの性能など               |
 |----------|---------------------------------------------------------|------|--------------------------------------|
-| CPU      | Intel Xeon Gold 6148 (20 cores) Base 2.4GHz, Max 3.7GHz |   16 | 合計 288 コア                         |
+| CPU      | Intel Xeon Gold 6154 (18 cores) Base 3.0GHz, Max 3.7GHz |   16 | 合計 288 コア                         |
 | Memory   | 32GB DDR4-2666                                          |  192 | 合計 12,288GB (CPU コアあたり 47.2GB) |
 | Storage  | 1.2TB SAS HDD                                           |    4 | 2.4TB (RAID1)                        |
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                              |
