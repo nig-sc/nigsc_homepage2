@@ -255,7 +255,22 @@ module.exports = {
                 "software/typescript",
                 "software/rust",
                 "software/gcc/gcc",
-                "software/intel_compiler/intel_compiler",
+                {
+                    type: "category",
+                    label: "C/C++の使い方 (Intel Compiler)",
+                    link: {
+                        type: "doc",
+                        id: "software/intel_compiler/intel_compiler",
+                    },
+                    items: [
+                        "software/intel_compiler/intel_compiler_ParallelComLib",
+                        "software/intel_compiler/intel_compiler_NumCalc",
+                        "software/intel_compiler/intel_compiler_AILib",
+                        "software/intel_compiler/intel_compiler_profiler",
+                        "software/intel_compiler/intel_compiler_debugger",
+                        "software/intel_compiler/intel_compiler_OtherLanguages",
+                    ],
+                },
                 "software/pgi_compiler/pgi_compiler",
                 "software/cuda",
             ]
