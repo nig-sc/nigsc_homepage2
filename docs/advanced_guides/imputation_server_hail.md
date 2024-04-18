@@ -30,20 +30,20 @@ NBDC-DDBJインピュテーションサーバをインストールする前に�
 
 正しくGuacamole環境に接続できると以下のような画面がでてきます。
 
-![](./imputationserver-prerequisete-Fig1-ubuntu.png)
+![](./imputationserver-prerequisete-Fig1-ubuntu_copy.png)
 
 次に、左上の`アクティビティ`をクリックします。以下のような画面が表示されます。
 
-![](./imputationserver-prerequisete-Fig2-activity.png)
+![](./imputationserver-prerequisete-Fig2-activity_copy.png)
 
 画面中央の`検索ワードを入力`と書いてある、検索窓をクリックします。
 そこに、`terminal`と入力します。以下のような画面が表示されます。
 
-![](./imputationserver-prerequisete-Fig3-terminal.png)
+![](./imputationserver-prerequisete-Fig3-terminal_copy.png)
 
 `端末`をクリックします。以下のような画面が表示されます。
 
-![](./imputationserver-prerequisete-Fig4-display-terminal.png)
+![](./imputationserver-prerequisete-Fig4-display-terminal_copy.png)
 
 次にguacamole デスクトップ環境の「アクティビティ」からターミナルを起動してください。
 
