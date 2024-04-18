@@ -16,34 +16,7 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ### Guacamole環境への接続
 
-NBDC-DDBJインピュテーションサーバをインストールする前に、下記2点を行なってください。
-
-- 遺伝研スパコンの個人ゲノム解析区画へVPNを貼ってください
-- Guacamoleを使って、仮想デスクトップ環境へログインしてください
-「Guacamole ― 接続手順 (2024/02/27)」マニュアルP.5には「ポート番号は、Guacamole の利用申請を受理した際にお渡しした VNC のポート番号」と記載があります。インピュテーションサーバをご利用の方は、Guacamole の利用申請は必要ありません。VNC のポート番号は 5901以上をご指定ください。
-
-これら2点については別途ご案内が届いているかと思います。
-
-該当するご案内が届いていない場合には、imputation-server@ddbj.nig.ac.jp までお問合せください。
-
-### ターミナルを開く
-
-正しくGuacamole環境に接続できると以下のような画面がでてきます。
-
-![](./imputationserver-prerequisete-Fig1-ubuntu_copy.png)
-
-次に、左上の`アクティビティ`をクリックします。以下のような画面が表示されます。
-
-![](./imputationserver-prerequisete-Fig2-activity_copy.png)
-
-画面中央の`検索ワードを入力`と書いてある、検索窓をクリックします。
-そこに、`terminal`と入力します。以下のような画面が表示されます。
-
-![](./imputationserver-prerequisete-Fig3-terminal_copy.png)
-
-`端末`をクリックします。以下のような画面が表示されます。
-
-![](./imputationserver-prerequisete-Fig4-display-terminal_copy.png)
+この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください。
 
 次にguacamole デスクトップ環境の「アクティビティ」からターミナルを起動してください。
 
@@ -53,9 +26,9 @@ NBDC-DDBJインピュテーションサーバをインストールする前に�
 
 もしすでに conda コマンドが使える場合、次の `miniconda のインストール` はスキップして、 `conda-forge を用いた conda 環境の構築` に進んでください。
 
-## miniconda のインストール
+### miniconda のインストール
 
-「conda コマンドが使えない場合」では、下記コマンドを実行して miniconda のインストールを行います。
+下記コマンドを実行して miniconda のインストールを行います。
 
 ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -143,7 +116,7 @@ $ pip install jupyter
 export PYSPARK_SUBMIT_ARGS='--driver-memory 48g --executor-memory 48g pyspark-shell'
 ```
 
-## Jupyter Notebook の起動と、hail を用いた PRS 計算のノートブックチュートリアル
+## Jupyter Notebook の起動
 
 続いて、下記のコマンドで Jupyter Notebook を起動してください。
 
@@ -159,10 +132,30 @@ $ jupyter notebook --notebook-dir=~/imputation-server-test &
 Jupyter Notebook 実行環境の操作方法に慣れていない場合は、
 [こちらの記事](https://www.javadrive.jp/python/jupyter-notebook/index5.html) を参考に基本操作を習得いただくとチュートリアルを進めやすくなります。
 
-Jupyter Notebook 実行環境が表示されたら、[ノートブックチュートリアル](https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb)
-の手順に従ってチュートリアルを進めてください。
+## Hailの起動確認
+Jupyter Notebook を1つ新規作成し、最初のセルに以下を入力し、実行します。
 
-guacamole デスクトップ環境内でノートブックチュートリアルを開くには、
+```
+import hail as hl
+```
+
+次のセルに以下を入力し、実行します。
+
+```
+hl.init()
+```
+
+エラーがないことを確認します。
+
+## インピューテーション結果を hail の入力とし PRS 計算の行うノートブック
+
+続いては下記のノートブックを参考に、Jupyter 中で hail をご利用ください。
+
+https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb
+
+## 補足
+
+Guacamole デスクトップ環境内でノートブックチュートリアルを開くには、
 Firefoxのウェブ検索欄に「DDBJ imputation」とタイプし検索を行ってください。
 その検索結果に「[NBDC-DDBJインピュテーションサーバ(beta)チュートリアル3、hailを用いたPRS計算](https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server_hail)」が含まれています。
 そのページの下部にノートブックチュートリアルへのリンクがあります。
