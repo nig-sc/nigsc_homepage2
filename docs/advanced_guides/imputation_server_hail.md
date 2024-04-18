@@ -16,9 +16,9 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 次にguacamole デスクトップ環境の「アクティビティ」からターミナルを起動してください。
 
-## conda 環境がない場合
+## conda コマンドが使えない場合
 
-もしすでに conda 環境がある場合、次の `miniconda のインストール` はスキップして、 `conda-forge を用いた conda 環境の構築` に進んでください。
+もしすでに conda コマンドが使える場合、次の `miniconda のインストール` はスキップして、 `conda-forge を用いた conda 環境の構築` に進んでください。
 
 ## miniconda のインストール
 
