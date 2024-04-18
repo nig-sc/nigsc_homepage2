@@ -84,7 +84,8 @@ $ conda --version
 
 続いて、下記コマンドを実行してください。
 今回は `conda-forge` と呼ばれる パッケージリポジトリを使うことで有償ライセンスが必要がない方法を紹介しています。
-conda のパッケージリポジトリのライセンスについては[こちらの記事](https://qiita.com/kimisyo/items/986802ea52974b92df27)が分かりやすく解説してくれています。
+conda のパッケージリポジトリのライセンスについては[こちらの記事](https://qiita.com/kimisyo/items/986802ea52974b92df27)
+をご参照ください。
 
 ```
 $ conda create -c conda-forge -n hail-python37-openjdk8 python=3.7 openjdk=8
