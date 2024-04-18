@@ -24,7 +24,7 @@ NBDC-DDBJインピュテーションサーバをインストールする前に�
 
 これら2点については別途ご案内が届いているかと思います。
 
-該当するご案内が届いていない場合には、imputation-server@ddbj.nig.ac.jp までお問合せください
+該当するご案内が届いていない場合には、imputation-server@ddbj.nig.ac.jp までお問合せください。
 
 ### ターミナルを開く
 
@@ -46,6 +46,8 @@ NBDC-DDBJインピュテーションサーバをインストールする前に�
 ![](./imputationserver-prerequisete-Fig4-display-terminal.png)
 
 次にguacamole デスクトップ環境の「アクティビティ」からターミナルを起動してください。
+
+以下は上記で開いたターミナルの中で作業を行います。
 
 ## conda コマンドが使えない場合
 
