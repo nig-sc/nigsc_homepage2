@@ -77,20 +77,25 @@ chmod 755 ~/bin/jq
 
 本システムをセットアップし、サービスの実行を行うスクリプトがあります。
 
-#### スクリプトの実行
+#### インストールスクリプトの実行
 
-guacamoleの仮想マシンにログインします。
+guacamole上のターミナルで作業を行います。
 
-以下のコマンドを使って、必要なものをインストールし、サービスの実行を行います。
+インストール用のディレクトリを作り、そこに移動します。
+
+```
+mkdir ~/imputation-server-test
+cd ~/imputation-server-test
+```
+
+以下のコマンドで、必要なものをインストールし、サービスの起動を行います。
 
 ```
 cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.sh install.sh
 ./install.sh
 ```
 
-
-
-デフォルトでは、`$HOME/sapporo-install` 以下に必要なものがインストールされます。
+デフォルトでは、`$PWD/sapporo-install` 以下に必要なものがインストールされます。
 
 インストール先を変更したい場合は、スクリプトの中の `INSTALLDIR` を変更してください。
 
@@ -98,6 +103,9 @@ cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.s
 
 - Python 3.9.7
 - Node.js v14.17.6
+
+また、以下の３つのサービスが起動します。
+
 - ImputationServer web ui
 - Sapporo web 1.0.10
 - Sapporo Service 1.0.16
