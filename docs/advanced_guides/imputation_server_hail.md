@@ -128,4 +128,10 @@ Jupyter Notebook 実行環境の操作方法に慣れていない場合は、
 
 Jupyter Notebook 実行環境が表示されたら、[ノートブックチュートリアル](https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb)
 の手順に従ってチュートリアルを進めてください。
-遺伝研スパコンホームページ経由で guacamole デスクトップ環境からノートブックチュートリアルを開くことができますので、コピーアンドペーストでチュートリアルを進めていただくことが可能です。
+
+guacamole デスクトップ環境からノートブックチュートリアルを開くには、
+Firefoxのウェブ検索欄に「DDBJ imputation」とタイプし検索を行ってください。
+その検索結果に「NBDC-DDBJインピュテーションサーバ(beta)チュートリアル3、hailを用いたPRS計算(https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server_hail)」が含まれています。
+そのページの下部にノートブックチュートリアルへのリンクがあります。
+
+guacamole デスクトップ環境からノートブックチュートリアルを開けたら、コピーアンドペーストでチュートリアルを進めていただくことが可能です。
