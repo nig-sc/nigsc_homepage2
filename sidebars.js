@@ -409,7 +409,14 @@ module.exports = {
                 "advanced_guides/parabricks/parabricks",
             ],  
         },
-
+        {
+            type: "category",
+            label: "Benchmark",
+            items: [
+                "advanced_guides/benchmark_dorado",
+                "advanced_guides/benchmark_parabricks",
+            ],  
+        },
         {
             type: "doc",
             id: "advanced_guides/experimental",
