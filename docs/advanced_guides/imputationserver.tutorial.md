@@ -192,22 +192,16 @@ Run log の中の、Outputs をクリックすると結果ファイル一覧が�
 
 Imputation Workflow 実行後、以下のものが取得できます。
 
-ウェブブラウザから取得ができます。
+Guacamole内のブラウザから結果を取得することができます。
 
-以下のコマンドを、手元のパソコンにコピーすることが可能です。
+### RunIDを調べる
+
+**この作業は、遺伝研個人ゲノム解析区画のGuacamole環境から行いますので、Guacamoleに接続してください**
 
 ターミナルを開きます。
 
 実行すると、現在コマンドを実行しているディレクトリにファイルがダウンロードされます。
 
-```console
-scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(ダウンロードしたいファイル名) .
-```
-
-- `(お使いのアカウント名)` は、個人ゲノム解析環境へのログインに使用するアカウントです
-- `(ダウンロードしたいファイル名)` に、ダウンロードしたいファイル名を指定します。
-
-また、sapporo-serviceの結果ディレクトリから直接ダウンロードすることも可能です。
 
 `Run ID`を調べます。
 `Run ID` の右に表示されているものが `Run ID` です。
@@ -219,10 +213,49 @@ scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(�
 
 `runid`が`1b19d002-8d4c-4f52-973c-66a165cd135f`の場合、最初の２文字は `1b` になります。
 
+
+
+### インピューテーション後のデータ
+
+**この作業は、遺伝研個人ゲノム解析区画のGuacamole環境から行いますので、Guacamoleに接続してください**
+
+
+guacamoleデスクトップ環境にてターミナルを開いていただき、下記のコマンドで結果をコピーしてください。
+chr{1-22,X_PAR1,X_PAR2,X_nonPAR}.beagle.vcf.gz がインピュテーション後のデータです。
+これをチュートリアル3で利用します。
+
+```
+$ cd ~/imputation-server-test
+$ cp -r sapporo-install/sapporo-service/run/runidの最初の２文字/runid/outputs .
+$ ls outputs/
+chr1.beagle.log
+chr1.beagle.vcf.gz
+chr1.beagle.vcf.gz.tbi
+chr1.conform-gt.log
+chr1.conform-gt.vcf.gz
+...
+```
+
+### インピュテーション後のデータを手元のPCへ持ってくる
+
+**この作業は、手元のPCで行います**
+
+#### Guacamole内のブラウザでファイルをダウンロードしたところからの取得
+
+```console
+scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(ダウンロードしたいファイル名) .
+```
+
+- `(お使いのアカウント名)` は、個人ゲノム解析環境へのログインに使用するアカウントです
+- `(ダウンロードしたいファイル名)` に、ダウンロードしたいファイル名を指定します。
+
+#### sapporo-serviceの結果ディレクトリからの取得
+
+また、sapporo-serviceの結果ディレクトリから直接ダウンロードすることも可能です。
+
 scpでコピーするときは、お手元の計算機に以下のように入力します。
 手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム解析区画から、お手元の計算機にコピーされてきます。
 
 ```
-scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
+scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/imputation-server-test/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
 ```
-
