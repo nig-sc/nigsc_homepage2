@@ -60,7 +60,7 @@ Do you accept the license terms? [yes|no]
 `yes` とタイプしてから、ENTER キーを押下し、先に進んでください。
 
 次に、`Miniconda3 will now be installed into this location: /home/<username>/miniconda3:`
-と表示されるのでインストール場所が問題なければそのままエンターキーを押してください。
+と表示されるのでインストール場所が問題なければそのまま ENTER キーを押下してください。
 別の場所にインストールする場合には、別のパスを指定してください。
 続いて、`Do you wish to update your shell profile to automatically initialize conda? ... [yes|no]` と表示されるので
 `yes` か `no` をタイプしてから ENTER キーを押下し、先に進んでください。(`no`を推奨します)
