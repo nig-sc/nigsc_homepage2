@@ -12,9 +12,7 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 本チュートリアル3ではインピューテーションサーバのインピューテーション結果を
 [&#x1f517;<u>hail</u>](https://hail.is) で解析するための環境構築方法を説明します。
 
-## 事前準備
-
-### Guacamole環境への接続
+## Guacamole環境への接続
 
 この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください。
 
@@ -22,13 +20,12 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 以下は上記で開いたターミナルの中で作業を行います。
 
-## conda コマンドが使えない場合
-
-もしすでに conda コマンドが使える場合、次の `miniconda のインストール` はスキップして、 `conda-forge を用いた conda 環境の構築` に進んでください。
+## 事前準備
 
 ### miniconda のインストール
 
-下記コマンドを実行して miniconda のインストールを行います。
+もしすでに conda コマンドが使える場合、本節はスキップして、 `conda-forge を用いた conda 環境の構築` に進んでください。
+conda コマンドが使えない場合は、下記のコマンドを実行して miniconda のインストールを行います。
 
 ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -86,7 +83,7 @@ $ which conda
 $ conda --version
 ```
 
-## conda-forge を用いた conda 環境の構築
+### conda-forge を用いた conda 環境の構築
 
 続いて、下記コマンドを実行してください。
 ここでは、有償ライセンス契約を行う必要が無い `conda-forge` と呼ばれるパッケージリポジトリを使う方法を紹介しています。
@@ -97,7 +94,7 @@ conda のパッケージリポジトリのライセンスについては[こち�
 $ conda create -c conda-forge -n hail-python37-openjdk8 python=3.7 openjdk=8
 ```
 
-## Hail と Jupyter のインストール
+### Hail と Jupyter のインストール
 
 続いて、下記コマンドを実行して、`hail` と `jupyter` をインストールしてください。
 
