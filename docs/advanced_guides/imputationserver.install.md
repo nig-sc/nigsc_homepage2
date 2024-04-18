@@ -9,7 +9,9 @@ title: NBDC-DDBJインピュテーションサーバ (beta) インストール�
   style={{ width: '200px' }}
 />
 
-## 事前準備、Guacamole環境への接続
+## 事前準備
+
+### Guacamole環境への接続
 
 NBDC-DDBJインピュテーションサーバをインストールする前に、下記2点を行なってください。
 
@@ -21,7 +23,28 @@ NBDC-DDBJインピュテーションサーバをインストールする前に�
 
 該当するご案内が届いていない場合には、imputation-server@ddbj.nig.ac.jp までお問合せください
 
+### ターミナルを開く
+
+正しくGuacamole環境に接続できると以下のような画面がでてきます。
+
+![](./imputationserver-prerequisete-Fig1-ubuntu.png)
+
+次に、左上の`アクティビティ`をクリックします。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig2-activity.png)
+
+画面中央の`検索ワードを入力`と書いてある、検索窓をクリックします。
+そこに、`terminal`と入力します。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig3-terminal.png)
+
+`端末`をクリックします。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig4-display-terminal.png)
+
 ## 構成・使用方法
+
+以下は上記で開いたターミナルの中で作業を行います。
 
 ### jq のインストール
 
