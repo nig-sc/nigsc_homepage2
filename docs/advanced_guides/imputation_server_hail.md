@@ -30,7 +30,7 @@ $ chmod 755 ./Miniconda3-latest-Linux-x86_64.sh
 $ ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-上記コマンドを実行した際に、下記のように使用許諾条件 (license terms) へと続くメッセージが表示されます。
+上記コマンドを実行した後に、下記のように使用許諾条件 (license terms) へと続くメッセージが表示されます。
 
 ```
 Welcome to Miniconda3 py312_24.3.0-0
