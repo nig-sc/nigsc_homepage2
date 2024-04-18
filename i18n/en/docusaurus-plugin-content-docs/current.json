@@ -72,6 +72,10 @@
     "message": "Development Environment and Libraries",
     "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
   },
+  "sidebar.softwareSidebar.category.C/C++の使い方 (Intel Compiler)": {
+    "message": "C/C++ (Intel Compilern)",
+    "description": "The label for category C/C++の使い方 (Intel Compiler) in sidebar softwareSidebar"
+  },
   "sidebar.applicationsSidebar.category.各種申請": {
     "message": "Use Application, etc.",
     "description": "The label for category 各種申請 in sidebar applicationsSidebar"
