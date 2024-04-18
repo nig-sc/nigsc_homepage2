@@ -19,6 +19,8 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ## テストデータの準備
 
+**この作業は、手元のPCで行います**
+
 チュートリアルをすすめるにあたって、使用するテストデータをダウンロードし、遺伝研スパコン個人ゲノム解析区画へコピーします。
 
 ### テスト用データのダウンロード
@@ -34,7 +36,7 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ![](./imputationserver.tutorial.Fig1.png)
 
-### 遺伝研スパコン個人ゲノム解析区画へコピーします。
+### 遺伝研スパコン個人ゲノム解析区画へのコピー
 
 さきほどダウンロードしたテストデータをコピーします。
 
@@ -52,11 +54,25 @@ scp -i 秘密鍵ファイル ~/ダウンロード/test-data.GRCh37.vcf.gz (お�
 
 ## Imputation Workflow用の設定ファイルの生成
 
-遺伝研スパコンのguacamole 経由で以下のアドレスにアクセスします。
+**この作業は、遺伝研個人ゲノム解析区画のGuacamole環境から行いますので、Guacamoleに接続してください**
+
+まず、遺伝研スパコンのguacamole の中で、`Firefox`を起動します。
+
+Guacamole環境の左上`アクティビティ`をクリックし、検索窓に、`Firefox`と入力します。
+
+以下のような画面がでてきますので、でてきたアイコンをクリックします。
+
+![](./imputationserver.tutorial.Fig2-2.firefox.png)
+
+Guacamole内で起動した、Firefox経由で以下のアドレスにアクセスします。
 
 ```text
 http://localhost:5000
 ```
+
+アドレスを入力中は、以下のような画面になります。
+
+![](./imputationserver.tutorial.Fig2-3.addressbar.png)
 
 実際にアクセスすると、次のような画面になります。
 
@@ -111,13 +127,23 @@ VCF の CHROM は、`chr1`, `chr2`, ..., `chrX`, `chrY` ではなく、`1`, `2`,
 
 ## Imputation Workflowの実行
 
-guacamole 経由で、以下のアドレスにアクセスします。
+**この作業は、遺伝研個人ゲノム解析区画のGuacamole環境から行いますので、Guacamoleに接続してください**
+
+新しいタブを開きます。
+
+Firefox の「+」ボタンを押下して別のタブを開いてください。新たなタブの URL 欄に http://localhost:1121 と入力すると、Sapporo wes のページが表示されますので、チュートリアルを進めてください。
+
+新しいタブを開くための「+」押す直前の画面例
+
+![](./imputationserver.tutorial.Fig4-2.newtab.png)
+
+以下のアドレスにアクセスします。
 
 ```text
 http://localhost:1121
 ```
 
-以下のような画面が表示されます。
+Sapporo wes のページがされます。
 
 ![](./imputationserver.tutorial.Fig4.png)
 
@@ -139,10 +165,15 @@ Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選�
 Workflow Parameters に先程、 imputationserver-web-uio で生成したパラメータを入力します。
 このとき、最初から書かれている `{}` を消して、生成したパラメータを入力します。
 
+Guacamole環境内での、コピーアンドペーストは、「Ctrl+c」でコピー、「Ctrl+v」でペーストが可能です。
+（Macユーザの方は、「Command+c」や「Command+v」ではなく「Ctrl+c」や「Ctrl+v」であることにご注意ください）
+
 ![](./imputationserver.tutorial.Fig8-2.png)
 
 一番下にあるExecute ボタンを押して、ワークフローを実行します。
-ジョブの状態がRunning になります。
+ジョブの状態が `Running` になります。
+
+その後、12〜15時間程度で imputation の計算が完了します。
 
 ![](./imputationserver.tutorial.Fig9-2.png)
 
