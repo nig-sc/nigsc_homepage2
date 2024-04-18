@@ -41,7 +41,7 @@ Please, press ENTER to continue
 >>>
 ```
 
-ENTER キーを押下すると、END USER LICENSE AGREEMENT の文面が表示されます。
+ENTER キーを押下すると、end user license agreement の文面が表示されます。
 SPACE キーを複数回押下することにより、文面がスクロールし、下記の license terms を許諾するかどうかの確認の質問が表示されます。
 
 ```
