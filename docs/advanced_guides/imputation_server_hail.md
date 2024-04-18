@@ -22,7 +22,7 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ## miniconda のインストール
 
-「conda コマンドが使えない場合」では、下記コマンドを実行して conda 環境 の作成を行います。
+「conda コマンドが使えない場合」では、下記コマンドを実行して miniconda のインストールを行います。
 
 ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
