@@ -16,13 +16,14 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ## システム利用方法
 
-**この作業は、遺伝研個人ゲノム解析区画のGuacamole環境から行いますので、Guacamoleに接続してください**
+**この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください**
+
 
 本システムでは、以下の流れでワークフローを実行します。
 
 1. 制限公開データの準備
-1. Imputation Workflow用の設定ファイルの生成
-1. Imputation Workflowの実行
+2. Imputation Workflow用の設定ファイルの生成
+3. Imputation Workflowの実行
 
 
 ## 制限公開データの準備
