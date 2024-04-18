@@ -73,6 +73,7 @@ Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル
 ここでは先程アップロードした、ファイルを使います。
 具体的なフルパスは `/home/youraccountname/test-data.GRCh37.vcf.gz`のようになります。
 
+
 次にReference panel preset config orを選択します。
 デフォルトで以下の４つについて、選択が可能です。
 
@@ -101,6 +102,12 @@ Number of threadsは、ワークフローを実行する際のジョブのスレ
 ![](./imputationserver.tutorial.Fig3.png)
 
 赤く塗りつぶされているところは、お使いのアカウント名になります。
+
+### 補足
+
+`/home/youraccountname/test-data.GRCh37.vcf.gz` で指定するのは、ユーザが手元に持っている(QC後の)SNPアレイデータを想定しています。
+VCF の CHROM は、`chr1`, `chr2`, ..., `chrX`, `chrY` ではなく、`1`, `2`, ..., `X`, `Y` となっている必要があります。
+現在の実装では、特定の染色体のみを含むデータは想定しておらず、`1`〜`22`, `X` の染色体について、参照パネルと共通しているバリアントが1つ以上必要です(X染色体は、PAR1, PAR2, nonPARのそれぞれで参照パネルと共通しているバリアントが1つ以上必要です)。
 
 ## Imputation Workflowの実行
 
