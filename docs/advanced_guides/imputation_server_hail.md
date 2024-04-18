@@ -150,6 +150,8 @@ hl.init()
 
 https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb
 
+作業を終える場合は、Guacamoleを表示しているブラウザタブを閉じてください。
+
 ## 補足
 
 Guacamole デスクトップ環境内でノートブックチュートリアルを開くには、
