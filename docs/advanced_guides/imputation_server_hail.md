@@ -12,7 +12,38 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 本チュートリアル3ではインピューテーションサーバのインピューテーション結果を
 [&#x1f517;<u>hail</u>](https://hail.is) で解析するための環境構築方法を説明します。
 
-まず THE_NEW_GUACAMOLE_LOGIN_INSTRUCTION_PAGE に従い、 guacamole の仮想マシンにログインください。
+## 事前準備
+
+### Guacamole環境への接続
+
+NBDC-DDBJインピュテーションサーバをインストールする前に、下記2点を行なってください。
+
+- 遺伝研スパコンの個人ゲノム解析区画へVPNを貼ってください
+- Guacamoleを使って、仮想デスクトップ環境へログインしてください
+「Guacamole ― 接続手順 (2024/02/27)」マニュアルP.5には「ポート番号は、Guacamole の利用申請を受理した際にお渡しした VNC のポート番号」と記載があります。インピュテーションサーバをご利用の方は、Guacamole の利用申請は必要ありません。VNC のポート番号は 5901以上をご指定ください。
+
+これら2点については別途ご案内が届いているかと思います。
+
+該当するご案内が届いていない場合には、imputation-server@ddbj.nig.ac.jp までお問合せください
+
+### ターミナルを開く
+
+正しくGuacamole環境に接続できると以下のような画面がでてきます。
+
+![](./imputationserver-prerequisete-Fig1-ubuntu.png)
+
+次に、左上の`アクティビティ`をクリックします。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig2-activity.png)
+
+画面中央の`検索ワードを入力`と書いてある、検索窓をクリックします。
+そこに、`terminal`と入力します。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig3-terminal.png)
+
+`端末`をクリックします。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig4-display-terminal.png)
 
 次にguacamole デスクトップ環境の「アクティビティ」からターミナルを起動してください。
 
