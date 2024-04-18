@@ -89,6 +89,8 @@ cd ~/imputation-server-test
 ```
 
 以下のコマンドで、必要なものをインストールし、サービスの起動を行います。
+途中で入力をもとめられてたら、nを入力してください。
+10分程度でインストールが完了します。
 
 ```
 cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.sh install.sh
@@ -111,6 +113,10 @@ cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.s
 - Sapporo Service 1.0.16
 
 これでインストール完了です。
+
+以下は、サービスの起動と停止方法について記述してあります。
+
+すでに3つのアプリケーションが起動している状態となりますので、「起動と停止」セクションはスキップしてチュートリアルに進んでください。
 
 ### 注記：途中で入力をもとめられてたら、nを入力してください。
 
