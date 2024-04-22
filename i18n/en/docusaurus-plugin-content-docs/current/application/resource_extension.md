@@ -24,7 +24,7 @@ Click here.
 
 <a href="https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table2023_v1.2.1.xlsx"><ul><li><font size="+1.5">the usage plan table(2023)</font></li></ul></a>
 
-<a href="https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table2024_v1.0.0.xlsx"><ul><li><font size="+1.5">the usage plan table(2024)</font></li></ul></a>
+<a href="https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table2024_v1.1.0.xlsx"><ul><li><font size="+1.5">the usage plan table(2024)</font></li></ul></a>
 
 <p>&#x26A0; Currently, we are not accepting application for new use of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, <a href="https://sc.ddbj.nig.ac.jp/en/blog/2022-05-13-suspension-of-applications">refer to this announcement page</a>.</p>
 </td>
