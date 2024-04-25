@@ -12,7 +12,8 @@ title: "関連法規等"
 3. 居住者 非居住者の定義
     - [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  第六条
     - 居住者 非居住者の判定(財務省通達「[外国為替法令の解釈及び運用について（抄）蔵国第2345号 平成12年12月28日](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)」より)
-
+4. [貨物・技術のマトリクス](https://www.meti.go.jp/policy/anpo/matrix_intro.html)
+5. [安全保障貿易管理Q&A](https://www.meti.go.jp/policy/anpo/qanda.html)
 
 
 ## 個人ゲノム関係
