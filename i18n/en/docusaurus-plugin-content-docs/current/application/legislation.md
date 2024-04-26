@@ -12,7 +12,8 @@ title: "Related laws and regulations, etc."
 3. Definition of Residents and Non-Residents
     - [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  Article 6
     - Assessment of Residents and Non-Residents(Extracted from the Ministry of Finance circular, [Interpretation and Enforcement of the Foreign Exchange and Foreign Trade Act (Excerpt), Zokoku No. 2345, 28 December, 2000](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)) 
-- [Act on the Comprehensive and Systematic Promotion of Measures to Ensure the Public's Reliable Access to Quality and Appropriate Genomic Medicine (Act No. 57 of 2023), June 16, 2023](https://elaws.e-gov.go.jp/document?lawid=505AC1000000057)
+4. [Cargo & Technology Matrix](https://www.meti.go.jp/policy/anpo/matrix_intro.html)
+5. [Export Control FAQ](https://www.meti.go.jp/policy/anpo/qanda.html)
 
 
 ## The personal genome
