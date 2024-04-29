@@ -11,9 +11,13 @@ title: "Tutorial 3 - PRS calculation with hail"
 
 This Tutorial 3 describes how to set up an environment for analysing the results of an imputation server's imputation results in [&#x1f517;<u>hail</u>](https://hail.is)  to analyse the results of an imputation server.
 
+## Connecting to NIG Guacamole desktop environment
 
-Login to the guacamole virtual machine.
+You need to sign in to NIG Guacamole desktop environment via VPN first.
 
+Next, please launch the terminal from the "Activities" in the Guacamole desktop environment.
+
+You need to run the following tutorial in the terminal that you launched above.
 
 ## If you do not have a conda environment
 
