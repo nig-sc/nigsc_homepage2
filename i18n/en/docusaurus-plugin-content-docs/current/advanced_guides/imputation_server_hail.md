@@ -19,29 +19,67 @@ Next, please launch the terminal from the "Activities" in the Guacamole desktop 
 
 You need to run the following tutorial in the terminal that you launched above.
 
-## If you do not have a conda environment
-
-If you already have a conda environment, skip the following `miniconda installation` and go on to `create environment with conda`.
+## Preparations
 
 ### Installing miniconda
 
-As Anaconda requires a paid licence for some uses, it is recommended that you install miniconda and `conda'.
-
-In the following, miniconda and `conda-forge` are used.
-
-```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod 755 ./Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
-```
-
-Leave and re-enter the working environment terminal or SSH.
-
-Check that conda is available.
+If you can already use the conda command, skip this section and proceed to `Building a conda environment using conda-forge`.
+If you cannot use the conda command, run the following commands to install miniconda.
 
 ```
-which conda
-conda --version
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ chmod 755 ./Miniconda3-latest-Linux-x86_64.sh
+$ ./Miniconda3-latest-Linux-x86_64.sh
+```
+
+After running the above commands, the terminal shows the following message continuing to the license terms.
+
+```
+Welcome to Miniconda3 py312_24.3.0-0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>>
+```
+
+Pressing the ENTER key displays the text of the end user licence agreement.
+By pressing the SPACE key several times, the text scrolls and a confirmation question appears asking whether you accept the following licence terms.
+
+```
+7. Intellectual Property Notice. You acknowledge that, as between You and
+Anaconda, Anaconda owns all right, title, and interest, including all
+intellectual property rights, in and to Miniconda(R) and, with respect to
+third-party products distributed with or through Miniconda(R), the applicable
+third-party licensors own all right, title and interest, including all
+intellectual property rights, in and to such products.
+
+
+Do you accept the license terms? [yes|no]
+>>>
+```
+
+Type `yes` and press ENTER to continue.
+
+Next, you will see `Miniconda3 will now be installed into this location: /home/<username>/miniconda3:`.
+If the installation location is OK, press the ENTER key.
+If you want to install in a different location, specify a different path.
+You will then be asked `Do you wish to update your shell profile to automatically initialise conda? [yes|no]`.
+Type `yes` or `no` and press ENTER to proceed. (We recommend typing `no`.)
+
+Run the following command to set PATH for to the conda command.
+
+```
+$ PATH=$PATH:~/miniconda3/bin
+```
+
+Then, once sign out and re-enter to the terminal.
+
+Finally, check that the conda command is available by running the following command.
+
+```
+$ which conda
+$ conda --version
 ```
 
 
