@@ -23,7 +23,7 @@ You need to run the following tutorial in the terminal that you launched above.
 
 ### Installing miniconda
 
-If you can already use the conda command, skip this section and proceed to `Building a conda environment using conda-forge`.
+If you can already use the conda command, skip this section and proceed to `Creating a conda environment using conda-forge`.
 If you cannot use the conda command, run the following commands to install miniconda.
 
 ```
@@ -82,45 +82,32 @@ $ which conda
 $ conda --version
 ```
 
+### Creating a conda environment using conda-forge
 
-### Creating the conda environment
-
-Create Jupyter and Hail environments in the following method
-
-```
-conda create -c conda-forge -n hail-python37-openjdk8 python=3.7 openjdk=8
-```
-
-Activate the development environment:
+Next, run the following command.
+Here, we introduce a way to use a package repository called `conda-forge`, which does not require a paid license.
 
 ```
-conda activate hail-python37-openjdk8
+$ conda create -c conda-forge -n hail-python37-openjdk8 python=3.7 openjdk=8
 ```
-
-To deactivate (when exiting) the conda environment:
-
-```
-conda deactivate
-```
-
 
 ## Installing Jupyter and hail
 
-In the conda environment for Jupyter and hail, execute the following commands.
+Then, run the following commands to install `hail` and `jupyter`.
 
 ```
-pip install hail
-pip install jupyter
+$ conda activate hail-python37-openjdk8
+$ pip install hail
+$ pip install jupyter
 ```
 
 The following commands are also required. This means that 48G of memory is allocated for hail.
-If this memory is low, hail will output an out-of-memory error and the calculation will not be able to resume.
+If the memory is not enough, hail will output an out-of-memory error and the calculation will not be able to resume.
 
 ```
 export PYSPARK_SUBMIT_ARGS='--driver-memory 48g --executor-memory 48g pyspark-shell'
 ```
 
-Also create the following working directory for the tutorial notebook.
 
 ### Creating directory
 
