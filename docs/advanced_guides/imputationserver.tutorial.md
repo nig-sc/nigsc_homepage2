@@ -19,6 +19,8 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ## テストデータの準備
 
+**この作業は、手元のPCで行います**
+
 チュートリアルをすすめるにあたって、使用するテストデータをダウンロードし、遺伝研スパコン個人ゲノム解析区画へコピーします。
 
 ### テスト用データのダウンロード
@@ -34,7 +36,7 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 
 ![](./imputationserver.tutorial.Fig1.png)
 
-### 遺伝研スパコン個人ゲノム解析区画へコピーします。
+### 遺伝研スパコン個人ゲノム解析区画へのコピー
 
 さきほどダウンロードしたテストデータをコピーします。
 
@@ -52,11 +54,25 @@ scp -i 秘密鍵ファイル ~/ダウンロード/test-data.GRCh37.vcf.gz (お�
 
 ## Imputation Workflow用の設定ファイルの生成
 
-遺伝研スパコンのguacamole 経由で以下のアドレスにアクセスします。
+**この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください**
+
+まず、遺伝研スパコンのguacamole の中で、`Firefox`を起動します。
+
+Guacamole環境の左上`アクティビティ`をクリックし、検索窓に、`Firefox`と入力します。
+
+以下のような画面がでてきますので、でてきたアイコンをクリックします。
+
+![](./imputationserver.tutorial.Fig2-2.firefox.png)
+
+Guacamole内で起動した、Firefox経由で以下のアドレスにアクセスします。
 
 ```text
 http://localhost:5000
 ```
+
+アドレスを入力中は、以下のような画面になります。
+
+![](./imputationserver.tutorial.Fig2-3.addressbar.png)
 
 実際にアクセスすると、次のような画面になります。
 
@@ -72,6 +88,7 @@ http://localhost:5000
 Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル) のフルパスを指定します。
 ここでは先程アップロードした、ファイルを使います。
 具体的なフルパスは `/home/youraccountname/test-data.GRCh37.vcf.gz`のようになります。
+
 
 次にReference panel preset config orを選択します。
 デフォルトで以下の４つについて、選択が可能です。
@@ -102,15 +119,33 @@ Number of threadsは、ワークフローを実行する際のジョブのスレ
 
 赤く塗りつぶされているところは、お使いのアカウント名になります。
 
+**ここで作業を終える場合は、手元のPC上で開いている、遺伝研個人ゲノム解析環境のGuacamoleを表示しているタブを閉じてください**
+
+### 補足
+
+`/home/youraccountname/test-data.GRCh37.vcf.gz` で指定するのは、ユーザが手元に持っている(QC後の)SNPアレイデータを想定しています。
+VCF の CHROM は、`chr1`, `chr2`, ..., `chrX`, `chrY` ではなく、`1`, `2`, ..., `X`, `Y` となっている必要があります。
+現在の実装では、特定の染色体のみを含むデータは想定しておらず、`1`〜`22`, `X` の染色体について、参照パネルと共通しているバリアントが1つ以上必要です(X染色体は、PAR1, PAR2, nonPARのそれぞれで参照パネルと共通しているバリアントが1つ以上必要です)。
+
 ## Imputation Workflowの実行
 
-guacamole 経由で、以下のアドレスにアクセスします。
+**この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください**
+
+新しいタブを開きます。
+
+Firefox の「+」ボタンを押下して別のタブを開いてください。新たなタブの URL 欄に http://localhost:1121 と入力すると、Sapporo wes のページが表示されますので、チュートリアルを進めてください。
+
+新しいタブを開くための「+」押す直前の画面例
+
+![](./imputationserver.tutorial.Fig4-2.newtab.png)
+
+以下のアドレスにアクセスします。
 
 ```text
 http://localhost:1121
 ```
 
-以下のような画面が表示されます。
+Sapporo wes のページがされます。
 
 ![](./imputationserver.tutorial.Fig4.png)
 
@@ -132,10 +167,15 @@ Compose Run の項目から、Workflow Engine の項目で `cwltool 3.1` を選�
 Workflow Parameters に先程、 imputationserver-web-uio で生成したパラメータを入力します。
 このとき、最初から書かれている `{}` を消して、生成したパラメータを入力します。
 
+Guacamole環境内での、コピーアンドペーストは、「Ctrl+c」でコピー、「Ctrl+v」でペーストが可能です。
+（Macユーザの方は、「Command+c」や「Command+v」ではなく「Ctrl+c」や「Ctrl+v」であることにご注意ください）
+
 ![](./imputationserver.tutorial.Fig8-2.png)
 
 一番下にあるExecute ボタンを押して、ワークフローを実行します。
-ジョブの状態がRunning になります。
+ジョブの状態が `Running` になります。
+
+その後、12〜15時間程度で imputation の計算が完了します。
 
 ![](./imputationserver.tutorial.Fig9-2.png)
 
@@ -150,26 +190,22 @@ Run log の中の、Outputs をクリックすると結果ファイル一覧が�
 
 ダウンロードしたいファイルをクリックするとダイアログが表示され、デフォルトでは、 `~/ダウンロード` 以下にダウンロードされます。
 
-### 結果の取得
+**ここで作業を終える場合は、手元のPC上で開いている、遺伝研個人ゲノム解析環境のGuacamoleを表示しているタブを閉じてください**
+
+## 結果の取得
 
 Imputation Workflow 実行後、以下のものが取得できます。
 
-ウェブブラウザから取得ができます。
+Guacamole内のブラウザから結果を取得することができます。
 
-以下のコマンドを、手元のパソコンにコピーすることが可能です。
+### RunIDを調べる
+
+**この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください**
 
 ターミナルを開きます。
 
 実行すると、現在コマンドを実行しているディレクトリにファイルがダウンロードされます。
 
-```console
-scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(ダウンロードしたいファイル名) .
-```
-
-- `(お使いのアカウント名)` は、個人ゲノム解析環境へのログインに使用するアカウントです
-- `(ダウンロードしたいファイル名)` に、ダウンロードしたいファイル名を指定します。
-
-また、sapporo-serviceの結果ディレクトリから直接ダウンロードすることも可能です。
 
 `Run ID`を調べます。
 `Run ID` の右に表示されているものが `Run ID` です。
@@ -181,10 +217,52 @@ scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(�
 
 `runid`が`1b19d002-8d4c-4f52-973c-66a165cd135f`の場合、最初の２文字は `1b` になります。
 
+
+
+### インピューテーション後のデータ
+
+**この作業は、遺伝研個人ゲノム解析区画Guacamole環境から行いますので、VPN接続を行いGuacamoleに接続してください**
+
+
+guacamoleデスクトップ環境にてターミナルを開いていただき、下記のコマンドで結果をコピーしてください。
+chr\{1-22,X_PAR1,X_PAR2,X_nonPAR\}.beagle.vcf.gz がインピュテーション後のデータです。
+これをチュートリアル3で利用します。
+
+```
+$ cd ~/imputation-server-test
+$ cp -r sapporo-install/sapporo-service/run/runidの最初の２文字/runid/outputs .
+$ ls outputs/
+chr1.beagle.log
+chr1.beagle.vcf.gz
+chr1.beagle.vcf.gz.tbi
+chr1.conform-gt.log
+chr1.conform-gt.vcf.gz
+...
+```
+
+**ここで作業を終える場合は、手元のPC上で開いている、遺伝研個人ゲノム解析環境のGuacamoleを表示しているタブを閉じてください**
+
+
+### インピュテーション後のデータを手元のPCへ持ってくる
+
+**この作業は、手元のPCで行います**
+
+#### Guacamole内のブラウザでファイルをダウンロードしたところからの取得
+
+```console
+scp (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/ダウンロード/(ダウンロードしたいファイル名) .
+```
+
+- `(お使いのアカウント名)` は、個人ゲノム解析環境へのログインに使用するアカウントです
+- `(ダウンロードしたいファイル名)` に、ダウンロードしたいファイル名を指定します。
+
+#### sapporo-serviceの結果ディレクトリからの取得
+
+また、sapporo-serviceの結果ディレクトリから直接ダウンロードすることも可能です。
+
 scpでコピーするときは、お手元の計算機に以下のように入力します。
 手元の計算機に、`outputs` というディレクトリが作成され、その中に解析結果が個人ゲノム解析区画から、お手元の計算機にコピーされてきます。
 
 ```
-scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
+scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/imputation-server-test/sapporo-install/sapporo-service/run/1b/1b19d002-8d4c-4f52-973c-66a165cd135f/outputs outputs
 ```
-

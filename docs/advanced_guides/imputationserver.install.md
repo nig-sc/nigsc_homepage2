@@ -9,22 +9,64 @@ title: NBDC-DDBJインピュテーションサーバ (beta) インストール�
   style={{ width: '200px' }}
 />
 
+## 事前準備
+
+### Guacamole環境への接続
+
+NBDC-DDBJインピュテーションサーバをインストールする前に、下記2点を行なってください。
+
+- 遺伝研スパコンの個人ゲノム解析区画へVPN接続をしてください
+- Guacamoleを使って、仮想デスクトップ環境へログインしてください
+「Guacamole ― 接続手順 (2024/02/27)」マニュアルP.5には「ポート番号は、Guacamole の利用申請を受理した際にお渡しした VNC のポート番号」と記載があります。インピュテーションサーバをご利用の方は、Guacamole の利用申請は必要ありません。VNC のポート番号は 5901以上をご指定ください。
+
+これら2点については別途ご案内が届いているかと思います。
+
+該当するご案内が届いていない場合には、imputation-server@ddbj.nig.ac.jp までお問合せください
+
+### ターミナルを開く
+
+正しくGuacamole環境に接続できると以下のような画面がでてきます。
+
+![](./imputationserver-prerequisete-Fig1-ubuntu.png)
+
+次に、左上の`アクティビティ`をクリックします。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig2-activity.png)
+
+画面中央の`検索ワードを入力`と書いてある、検索窓をクリックします。
+そこに、`terminal`と入力します。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig3-terminal.png)
+
+`端末`をクリックします。以下のような画面が表示されます。
+
+![](./imputationserver-prerequisete-Fig4-display-terminal.png)
+
 ## 構成・使用方法
+
+以下は上記で開いたターミナルの中で作業を行います。
 
 ### jq のインストール
 
 `jq` というコマンドが必要なので、ないときはインストールします。
 
-以下のコマンドで　`jq` があるかどうかの確認をします。存在するときは `jq` のパスが返ってきます。存在しないときは、存在しないというメッセージとともに、エラーが返ってきます。
+以下のコマンドで `jq` があるかどうかの確認をします。存在するときは `jq` のパスが返ってきます。存在しないときは、存在しないというメッセージとともに、エラーが返ってきます。
 
 ```
 which jq
 ```
 
-存在しない場合は、以下のコマンドで、 `jq` を取得し、実行権限を与えます。
-以下の例は、環境変数 PATHに、 `~/bin` が存在している場合の例です。ない場合は `mkdir ~/bin` を実行し、環境変数PATHに `~/bin` を追加します。
+`~/bin`がない場合は、新規ディレクトリ`~/bin`を作成します。
 
 ```
+mkdir -p ~/bin
+```
+
+環境変数PATHに `~/bin` を追加します。
+そこに`jq`コマンドをインストールする例です。
+
+```
+PATH=$PATH:~/bin
 curl -L -o ~/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
 chmod 755 ~/bin/jq
 ```
@@ -35,20 +77,27 @@ chmod 755 ~/bin/jq
 
 本システムをセットアップし、サービスの実行を行うスクリプトがあります。
 
-#### スクリプトの実行
+#### インストールスクリプトの実行
 
-guacamoleの仮想マシンにログインします。
+guacamole上のターミナルで作業を行います。
 
-以下のコマンドを使って、必要なものをインストールし、サービスの実行を行います。
+インストール用のディレクトリを作り、そこに移動します。
+
+```
+mkdir ~/imputation-server-test
+cd ~/imputation-server-test
+```
+
+以下のコマンドで、必要なものをインストールし、サービスの起動を行います。
+途中で入力をもとめられてたら、nを入力してください。
+10分程度でインストールが完了します。
 
 ```
 cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.sh install.sh
 ./install.sh
 ```
 
-
-
-デフォルトでは、`$HOME/sapporo-install` 以下に必要なものがインストールされます。
+デフォルトでは、`$PWD/sapporo-install` 以下に必要なものがインストールされます。
 
 インストール先を変更したい場合は、スクリプトの中の `INSTALLDIR` を変更してください。
 
@@ -56,11 +105,18 @@ cp /usr/local/shared_data/imputation-server/imputation-desktop/scripts/install.s
 
 - Python 3.9.7
 - Node.js v14.17.6
+
+また、以下の３つのサービスが起動します。
+
 - ImputationServer web ui
 - Sapporo web 1.0.10
 - Sapporo Service 1.0.16
 
 これでインストール完了です。
+
+以下は、サービスの起動と停止方法について記述してあります。
+
+すでに3つのアプリケーションが起動している状態となりますので、「起動と停止」セクションはスキップしてチュートリアルに進んでください。
 
 ### 注記：途中で入力をもとめられてたら、nを入力してください。
 
