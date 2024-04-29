@@ -108,25 +108,21 @@ If the memory is not enough, hail will output an out-of-memory error and the cal
 export PYSPARK_SUBMIT_ARGS='--driver-memory 48g --executor-memory 48g pyspark-shell'
 ```
 
+## Launching Jupyter Notebook
 
-### Creating directory
-
-```
-mkdir ~/prs-on-hail
-```
-
-### Starting Jupyter
+Next, launch Jupyter Notebook with the following command.
 
 ```
-jupyter notebook --notebook-dir=~/prs-on-hail
+$ jupyter notebook --notebook-dir=~/imputation-server-test &
 ```
 
-To actually on a supercomputer, see [<u>the Jupyter Notebook page</u>](/software/jupyter_notebook).
+When you run this command, a new tab will open in Firefox, and the Jupyter Notebook will be displayed in the tab.
 
+Press the `New` button on the right side of the screen, select `Python 3 (ipykernel)`, and click on it.
+This will create a new Firefox tab, and the Jupyter Notebook will be displayed.
 
-### Checking Hail startup
-
-Create one new Jupyter Notebook, enter the following in the first cell and run it.
+## Checking Hail startup
+Create a new Jupyter Notebook, enter the following in the first cell and run it.
 
 ```
 import hail as hl
@@ -140,9 +136,20 @@ hl.init()
 
 Check that there are no errors.
 
-### Notebook for performing PRS calculations using the imputation results as input to hail
+## Notebook for performing PRS calculations using the imputation results as input to hail
 
-Refer to the following notebook and use hail on Jupyter.
-
+Next, use hail in Jupyter according to the following notebook:
 
 &#x1f517;<u>https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb</u>
+
+When you finish your work, please close the browser tab displaying Guacamole.
+
+## Supplementary information
+
+To open the notebook tutorial in the Guacamole desktop environment, 
+type "DDBJ imputation" in the web search field of Firefox and perform a search.
+Among the search results, there is "NBDC-DDBJ Imputation Server (beta) Tutorial 3 - PRS calculation with hail".
+There is a link to https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb at the bottom of that webpage.
+
+Once you open https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb from Firefox in the Guacamole desktop environment, 
+you can proceed with the tutorial by copying and pasting.
