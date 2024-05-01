@@ -11,93 +11,118 @@ title: "Tutorial 3 - PRS calculation with hail"
 
 This Tutorial 3 describes how to set up an environment for analysing the results of an imputation server's imputation results in [&#x1f517;<u>hail</u>](https://hail.is)  to analyse the results of an imputation server.
 
+## Connecting to NIG Guacamole desktop environment
 
-Login to the guacamole virtual machine.
+You need to sign in to NIG Guacamole desktop environment via VPN first.
 
+Next, please launch the terminal from the "Activities" in the Guacamole desktop environment.
 
-## If you do not have a conda environment
+You need to run the following tutorial in the terminal that you launched above.
 
-If you already have a conda environment, skip the following `miniconda installation` and go on to `create environment with conda`.
+## Preparations
 
 ### Installing miniconda
 
-As Anaconda requires a paid licence for some uses, it is recommended that you install miniconda and `conda'.
-
-In the following, miniconda and `conda-forge` are used.
-
-```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod 755 ./Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
-```
-
-Leave and re-enter the working environment terminal or SSH.
-
-Check that conda is available.
+If you can already use the conda command, skip this section and proceed to `Creating a conda environment using conda-forge`.
+If you cannot use the conda command, run the following commands to install miniconda.
 
 ```
-which conda
-conda --version
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ chmod 755 ./Miniconda3-latest-Linux-x86_64.sh
+$ ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-
-### Creating the conda environment
-
-Create Jupyter and Hail environments in the following method
+After running the above commands, the terminal shows the following message continuing to the license terms.
 
 ```
-conda create -c conda-forge -n hail-python37-openjdk8 python=3.7 openjdk=8
+Welcome to Miniconda3 py312_24.3.0-0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>>
 ```
 
-Activate the development environment:
+Pressing the ENTER key displays the text of the end user licence agreement.
+By pressing the SPACE key several times, the text scrolls and a confirmation question appears asking whether you accept the following licence terms.
 
 ```
-conda activate hail-python37-openjdk8
+7. Intellectual Property Notice. You acknowledge that, as between You and
+Anaconda, Anaconda owns all right, title, and interest, including all
+intellectual property rights, in and to Miniconda(R) and, with respect to
+third-party products distributed with or through Miniconda(R), the applicable
+third-party licensors own all right, title and interest, including all
+intellectual property rights, in and to such products.
+
+
+Do you accept the license terms? [yes|no]
+>>>
 ```
 
-To deactivate (when exiting) the conda environment:
+Type `yes` and press ENTER to continue.
+
+Next, you will see `Miniconda3 will now be installed into this location: /home/<username>/miniconda3:`.
+If the installation location is OK, press the ENTER key.
+If you want to install in a different location, specify a different path.
+You will then be asked `Do you wish to update your shell profile to automatically initialise conda? [yes|no]`.
+Type `yes` or `no` and press ENTER to proceed. (We recommend typing `no`.)
+
+Run the following command to set PATH for to the conda command.
 
 ```
-conda deactivate
+$ PATH=$PATH:~/miniconda3/bin
 ```
 
+Then, once sign out and re-enter to the terminal.
+
+Finally, check that the conda command is available by running the following command.
+
+```
+$ which conda
+$ conda --version
+```
+
+### Creating a conda environment using conda-forge
+
+Next, run the following command.
+Here, we introduce a way to use a package repository called `conda-forge`, which does not require a paid license.
+
+```
+$ conda create -c conda-forge -n hail-python37-openjdk8 python=3.7 openjdk=8
+```
 
 ## Installing Jupyter and hail
 
-In the conda environment for Jupyter and hail, execute the following commands.
+Then, run the following commands to install `hail` and `jupyter`.
 
 ```
-pip install hail
-pip install jupyter
+$ conda activate hail-python37-openjdk8
+$ pip install hail
+$ pip install jupyter
 ```
 
 The following commands are also required. This means that 48G of memory is allocated for hail.
-If this memory is low, hail will output an out-of-memory error and the calculation will not be able to resume.
+If the memory is not enough, hail will output an out-of-memory error and the calculation will not be able to resume.
 
 ```
 export PYSPARK_SUBMIT_ARGS='--driver-memory 48g --executor-memory 48g pyspark-shell'
 ```
 
-Also create the following working directory for the tutorial notebook.
+## Launching Jupyter Notebook
 
-### Creating directory
-
-```
-mkdir ~/prs-on-hail
-```
-
-### Starting Jupyter
+Next, launch Jupyter Notebook with the following command.
 
 ```
-jupyter notebook --notebook-dir=~/prs-on-hail
+$ jupyter notebook --notebook-dir=~/imputation-server-test &
 ```
 
-To actually on a supercomputer, see [<u>the Jupyter Notebook page</u>](/software/jupyter_notebook).
+When you run this command, a new tab will open in Firefox, and the Jupyter Notebook will be displayed in the tab.
 
+Press the `New` button on the right side of the screen, select `Python 3 (ipykernel)`, and click on it.
+This will create a new Firefox tab, and the Jupyter Notebook will be displayed.
 
-### Checking Hail startup
-
-Create one new Jupyter Notebook, enter the following in the first cell and run it.
+## Checking Hail startup
+Create a new Jupyter Notebook, enter the following in the first cell and run it.
 
 ```
 import hail as hl
@@ -111,9 +136,20 @@ hl.init()
 
 Check that there are no errors.
 
-### Notebook for performing PRS calculations using the imputation results as input to hail
+## Notebook for performing PRS calculations using the imputation results as input to hail
 
-Refer to the following notebook and use hail on Jupyter.
-
+Next, use hail in Jupyter according to the following notebook:
 
 &#x1f517;<u>https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb</u>
+
+When you finish your work, please close the browser tab displaying Guacamole.
+
+## Supplementary information
+
+To open the notebook tutorial in the Guacamole desktop environment, 
+type "DDBJ imputation" in the web search field of Firefox and perform a search.
+Among the search results, there is "NBDC-DDBJ Imputation Server (beta) Tutorial 3 - PRS calculation with hail".
+There is a link to https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb at the bottom of that webpage.
+
+Once you open https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb from Firefox in the Guacamole desktop environment, 
+you can proceed with the tutorial by copying and pasting.
