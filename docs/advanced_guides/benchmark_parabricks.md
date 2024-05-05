@@ -12,68 +12,6 @@ title: ベンチマーク(NVIDIA Parabricks)
 この二つの異なる環境下で運用されるノード間で，GPU 関連ドライバー等のバージョン違いなどに起因する実行性能への影響を防ぐ目的で，これまで対象アプリケーションの実行実績のある遺伝研 igt の環境設定を検証条件として採用し，高火力 PHY 上での環境構築を行った. 検証に利用した遺伝研 igt と高火力 PHY の GPU ノードのハードウェア環境およびソフトウェア環境を表 1 に示す.
 
 表 1 検証ノード構成
-| | 遺伝研igt | 高火力PHY|
-|----|----|----|
-|利用環境|マネージドクラスター|ベアメタルサーバ|
-|Hardware構成|
-|CPU (総コア数)|Intel Xeon Gold 6136 3.0GHz x 2 基 (24)|Intel Xeon Platinum 8480 2.0GHz x 2 基 (112)|
-|メモリー|DDR4 384GB|DDR5 2.0TB|
-|GPU (FP64)|NVIDIA V100 SXM2 16GB (7.8 TFlops) x 4 基|NVIDIA H100 SXM5 80GB (33.5 Tflops ) x 8 基|
-|GPU 間接続|NVLink Hybid Cube Mesh|NVSwitch Fabric|
-|システムディスク|NVMe SSD 1.6TB x 1 枚|NVMe SSD 960GB x 2 枚 (RAID1 構成)|
-|データディスク|NVMe SSD 3.2TB x 1 枚|NVMe 7.68TB x 4 枚|
-|Software 構成 |
-|OS|Ubuntu Server 22.04 LTS|Ubuntu Server 22.04 LTS |
-|GPU ドライバー|530.30.02|530.30.02|
-|CUDA|12.1|12.1|
-|Fabric Manager|N/A|UP|
-|Singularity CE|4.0.0|4.0.0|
-
-\begin{table*}[tb] 
-%\caption{V100搭載マシンのハードウェア構成}
-\caption{検証ノード構成}
-\ecaption{Node configuration of a machine}
-\label{tab:node-info}
-\hbox to\hsize{\hfil
-\begin{tabular}{l|l|l}
-\hline\hline
-& \textbf{遺伝研igt} & \textbf{高火力PHY} \\
-\hline\hline
-利用環境 & マネージドクラスター
-        & ベアメタルサーバ \\
-\hline\hline
-\multicolumn{3}{l}{Hardware構成} \\
-\hline
-CPU (総コア数) & Intel Xeon Gold 6136 3.0GHz x 2基 (24) 
-    & Intel Xeon Platinum 8480 2.0GHz x 2基 (112)\\
-メモリー & DDR4 384GB
-       & DDR5 2.0TB\\
-GPU (FP64) & NVIDIA V100 SXM2 16GB (7.8 TFlops) x 4基 
-     & NVIDIA H100 SXM5 80GB (33.5 Tflops ) x 8基 \\
-GPU間接続 & NVLink Hybid Cube Mesh 
-         & NVSwitch Fabric \\
-システムディスク & NVMe SSD 1.6TB x 1枚,  
-             & NVMe SSD 960GB x 2枚 (RAID1構成) \\
-データディスク & NVMe SSD 3.2TB x 1枚 
-        & NVMe 7.68TB x 4枚 \\
-\hline
-\hline
-\multicolumn{3}{l}{Software構成} \\
-\hline
-OS  & Ubuntu Server 22.04 LTS
-    & Ubuntu Server 22.04 LTS \\
-GPUドライバー & 530.30.02 
-           & 530.30.02          \\
-CUDA   & 12.1  
-       & 12.1       \\
-Fabric Manager & N/A  & UP \\ 
-Singularity CE & 4.0.0 & 4.0.0 \\
-\hline
-\hline
-\end{tabular}\hfil}
-\end{table*}
-
-表 1 検証ノード構成
 |  | 遺伝研igt | 高火力PHY |
 |---|---|---|
 | 利用環境 | マネージドクラスター | ベアメタルサーバ |
@@ -101,30 +39,13 @@ Singularity CE & 4.0.0 & 4.0.0 \\
 Parabricks の実行には，十分なサイズのデータセットを格納でき，高速に読み書きできるストレージ環境の確保は不可欠である. 遺伝研 igt および高火力 PHY は，高速な NVMe SSD をローカルストレージとして備えている事から，各アプリケーションの入出力用のストレージ領域として利用した. 検証に利用した遺伝研 igt と高火力 PHY の搭載されているストレージ構成と，fio コマンドによるファイルのシーケンシャルな READ/WRITE による I/O 性能測定結果を表 2 に示す. 測定対象にある/tmp は，システムディスク上の NVMe SSD を指している. 遺伝研 igt では/data 領域での性能に差は少なかった.一方で，高火力 PHY では約 7 倍の性能差があった.
 
 表 2 検証環境のストレージ構成とシーケンシャル I/O 性能
-| 測定対象 | READ | WRITE |
-|---|---|---|
+| | 測定対象 | READ | WRITE |
+|---|---|---|----|
 | 遺伝研igt | /tmp | 533MiB/s | 531MiB/s |
 | | /data | 607MiB/s | 605MiB/s |
 | 高火力PHY | /tmp | 145MiB/s | 153MiB/s |
 | | /data | 1052MiB/s | 1111MiB/s |
 
-\begin{table}[tb] 
-\caption{検証環境のストレージ構成とシーケンシャルI/O性能}
-\ecaption{Storage configuration and sequential I/O performance of the verification environment}
-\label{tab:storage-info}
-\hbox to\hsize{\hfil
-\begin{tabular}{l|l|l|l}\hline\hline
-        & 測定対象 & READ  & WRITE  \\
-\hline
-\hline
-遺伝研igt& /tmp & 533MiB/s  & 531MiB/s \\
-        & /data & 607MiB/s & 605MiB/s \\
-\hline
-高火力PHY & /tmp & 145MiB/s &  153MiB/s   \\
-         & /data & 1052MiB/s & 1111MiB/s \\
-\hline
-\end{tabular}\hfil}
-\end{table}
 
 ## ゲノム解析ソフトウェア
 NCGM WGSpipeline は，ヒト個人の全ゲノムシークエンス (whole-genome sequencing; WGS) データを入力として多型検出を行う汎用的なワークフローである.このワークフローは，複数のコンポーネントから構成されており，参照ゲノム配列へのマッピング，マップされた配列から多型を検出するバリアントコールなどのプロセスが含まれている.
@@ -136,6 +57,7 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
  - v4.1.1
  - v4.2.0
  - v4.2.1
+
 実行パラメータとして，GPU RAM の使用量を抑える ‘–low-memory’ オプションを指定した場合と指定しない場合の両方について計算時間を評価した.
 入力として 1000 人ゲノムプロジェクトから 20 サンプ ル (NA18941，NA18945, NA18946, NA18952, NA18953, NA18957, NA18960, NA18964, NA18969, NA18971, NA18972, NA18976, NA18983, NA18988, NA18990, NA18991, NA18995，NA19001, NA19002, NA19006) を選択して解析を行なった.Parabricks v4.2.0 および v4.2.1 において 2 サンプル (NA18941, NA18995) は実行エラーが生じ計算速度測定を行えなかった.そのため，18 サンプル の計算時間の平均を比較した.
 各サンプルの入力データは 20 個程度の圧縮済 fastq ファイルに分割収容されており，各サンプルにおける入力データの総データ量は圧縮下で約 43GB から 55GB であった.
@@ -146,7 +68,7 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
 ‘–low-memory’ オプション有りの結果を比較すると，いずれのバージョンでも，高火力 PHY は遺伝研 igt の 2.3 倍以上高速に解析を完了できた.解析が高速だった要因として GPU の性能や GPU の搭載数の差が考えられるが，どの要素が支配的かは今回の評価では判断できなかった.また高火力 PHY のいずれのバージョンでも，‘–low-memory’ オプションの有無で解析速度にほとんど差は出なかった.
 
 表 3 ノードおよび Parabricks バージョンごとの解析時間
-| GPU | Parabricks | 解析時間（分） | 解析時間（分） |
+| GPU | Parabricks<br>version | 解析時間（分）<br>w/ low memory | 解析時間（分）<br>w/o low memory |
 |---|---|---|---|
 | 高火力 PHY | v4.1.0 | 37.65 | 38.42 |
 | (H100x8) | v4.1.1 | 38.15 | 37.93 |
@@ -157,48 +79,13 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
 | | v4.2.0 | 89.13 | - |
 | | v4.2.1 | 90.05 | - |
 
-\begin{table*}[tb] 
-\caption{ノードおよびParabricksバージョンごとの解析時間}
-\ecaption{Comparison of analysis time for each machine and each Parabricks version}
-\label{tab:parabricks-comparison-speed}
-\hbox to\hsize{\hfil
-\begin{tabular}{cc|rr}\hline\hline
-GPU & Parabricks & 解析時間（分） & 解析時間（分）\\
-    & version    & w/ low memory & w/o low memory\\\hline
-%%%%%
-          & v4.1.0 & 37.65 & 38.42\\
-高火力 PHY & v4.1.1 & 38.15 & 37.93\\
-(H100x8)  & v4.2.0 & 36.17 & 36.78\\
-          & v4.2.1 & 37.87 & 36.38\\\hline
-%%%%%
-          & v4.1.0 & 88.00 & –\\
-遺伝研 igt & v4.1.1 & 88.42 & –\\
-(V100x4)  & v4.2.0 & 89.13 & –\\
-          & v4.2.1 & 90.05 & –\\\hline
-\hline
-\end{tabular}\hfil}
-\end{table*}
 
 ### 解析結果の妥当性
 表 4 に Parabricks v4.0.0 と今回評価した各バージョンの Parabricks の計算結果の多型検出結果の一致率 (genotype concordance) を示す. 一致率は多型の種類を考慮し SNP(一塩基置換) と INDEL(塩基配列の挿入・欠失) を区別して計算した.多型の種類にかかわらず，v4.1.0 および v4.1.1 の解析結果は v4.0.0 と完全に一致した.v4.2.0 および v4.2.1 では v4.0.0 の解析結果と完全一致ではないものの，非常に高い一致率を示しほとんど完全に一致していた.v4.0.0, v4.1.0, v4.1.1 は GATK v4.2.0.0 と互換となるよう実装されており，v4.2.0, v4.2.1 は GATK v4.3.0.0 と互換になるよう実装されている.この点が Parabricks v4.2.0 および v4.2.1 の結果が v4.0.0 と完全一致しなかった原因と考えられる.全てのバージョンにおいて解析結果は Parabricks v4.0.0 の結果と非常に高い一致率を示し，解析結果は妥当だと考えられる.
 
 表 4 Parabricks v4.0.0 と評価に用いた各Parabricksバージョンごとの変異ごとのgenotype concordance}
-| 変異 | v4.1.0 | v4.1.1 | v4.2.0 | v4.2.1 |
+|  | v4.1.0 | v4.1.1 | v4.2.0 | v4.2.1 |
 |---|---|---|---|---|
 | SNP | 1.0000000 | 1.0000000 | 0.9999979 | 0.9999979 |
 | INDEL | 1.0000000 | 1.0000000 | 0.9999932 | 0.9999932 |
 
-\begin{table}[tb] 
-\caption{Parabricks v4.0.0 と評価に用いた各Parabricksバージョンごとの変異ごとのgenotype concordance}
-\ecaption{Comparison of SNP and INDEL genotype concordance between Parabricks v4.0.0 and for each Parabricks version}
-\label{tab:parabricks-comparison-genotype}
-\hbox to\hsize{\hfil
-\begin{tabular}{l|rrrr}\hline\hline
-      & v4.1.0 & v4.1.1 & v4.2.0 & v4.2.1\\\hline
-%%%%%
-SNP   & 1.0000000 & 1.0000000 & 0.9999979 & 0.9999979\\
-%%%%%
-INDEL & 1.0000000 & 1.0000000 & 0.9999932 & 0.9999932\\\hline
-\hline
-\end{tabular}\hfil}
-\end{table}
