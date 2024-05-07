@@ -1,6 +1,6 @@
 ---
 id: jupyter_notebook
-title: "How to use Jupyter Notebook"
+title: "Jupyter Notebook"
 ---
 Jupyter Notebook is installed on the system. Follow the instruction below to use.[^1]
 
