@@ -9,6 +9,14 @@ title: "Tutorial 4 - HLA Genotype Imputation workflows using HIBAG"
   style={{ width: '200px' }}
 />
 
+## Connecting to NIG Guacamole desktop environment
+
+You need to sign in to NIG Guacamole desktop environment via VPN first.
+
+Next, please launch the terminal from the "Activities" in the Guacamole desktop environment.
+
+We will work in Firefox in the Guacamole desktop opened above, or in a terminal within that desktop.
+
 ## Procedures for using this system
 
 This system executes HLA Genotype Imputation workflows using [HIBAG](https://bioconductor.org/packages/release/bioc/html/HIBAG.html) in the following steps.
@@ -39,8 +47,6 @@ Download all `1KG.JPT.bim`, `1KG.JPT.fam`, and `1KG.JPT.bed` files.
 
 Copy the test data just downloaded.
 
-First, connect the VPN for connecting to the NIG supercomputer.
-
 Next, use the following command to copy the test data that you have just downloaded.
 (Please place all PLINK files in the same directory.)
 
@@ -56,7 +62,7 @@ Test data is now prepared.
 
 ## 2. Generate a configuration file for the HLA Genotype Imputation Workflow
 
-Access the following address via guacamole of the NIG Supercomputer.
+Open the following address via Firefox.
 
 ```
 http://localhost:5000/hibag
@@ -105,7 +111,7 @@ Use this in sapporo-web.
 
 ## 3. Execute the HLA Genotype Imputation Workflow
 
-Via guacamole, access the following address.
+Open the following address via Firefox.
 
 ```
 http://localhost:1121
@@ -179,3 +185,5 @@ and the analysis results will be copied from the personal genome analysis sectio
 ```
 scp -i [your private key file] -r ([your account name])@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/ee/eef64a2e-ca10-4ab0-a762-a965c4149a4a/ outputs outputs
 ```
+
+When you are finished, close the browser tab displaying Guacamole.
