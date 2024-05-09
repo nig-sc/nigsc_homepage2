@@ -15,14 +15,14 @@ title: ベンチマーク(NVIDIA Parabricks)
 |  | 遺伝研igt | 高火力PHY |
 |---|---|---|
 | 利用環境 | マネージドクラスター | ベアメタルサーバ |
-| ## ハードウェア構成 ## | | |
+| **ハードウェア構成** | | |
 | CPU (総コア数) | Intel Xeon Gold 6136 3.0GHz x 2基 (24) | Intel Xeon Platinum 8480 2.0GHz x 2基 (112) |
 | メモリー | DDR4 384GB | DDR5 2.0TB |
 | GPU (FP64) | NVIDIA V100 SXM2 16GB (7.8 TFlops) x 4基 | NVIDIA H100 SXM5 80GB (33.5 Tflops ) x 8基 |
 | GPU間接続 | NVLink Hybid Cube Mesh | NVSwitch Fabric |
 | システムディスク | NVMe SSD 1.6TB x 1枚 | NVMe SSD 960GB x 2枚 (RAID1構成) |
 | データディスク | NVMe SSD 3.2TB x 1枚 | NVMe 7.68TB x 4枚 |
-| ## ソフトウェア構成 ## | | |
+| **ソフトウェア構成** | | |
 | OS | Ubuntu Server 22.04 LTS | Ubuntu Server 22.04 LTS |
 | GPUドライバー | 530.30.02 | 530.30.02 |
 | CUDA | 12.1 | 12.1 |
@@ -48,8 +48,8 @@ Parabricks の実行には，十分なサイズのデータセットを格納で
 
 
 ## ゲノム解析ソフトウェア
-NCGM WGSpipeline は，ヒト個人の全ゲノムシークエンス (whole-genome sequencing; WGS) データを入力として多型検出を行う汎用的なワークフローである.このワークフローは，複数のコンポーネントから構成されており，参照ゲノム配列へのマッピング，マップされた配列から多型を検出するバリアントコールなどのプロセスが含まれている.
-NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲノム解析ソフトウェアとして利用しており，従来の CPU ベースの Genome Analysis Toolkit　(GATK) をゲノム解析ソフトウェアとして利用する場合と比較して，10 倍以上高速にデータ加工を実施することができる.FPGA を用いたアクセラレータを利用する手法も提案されているが，Parabricks の利点のひとつは，汎用の GPU を使用できるため計算機資源をより柔軟に活用できる面にある.ワークフローの可搬性と可用性を高めるため NCGM WGSpipeline は Common Workflow Language (CWL) を用いて実装されており，異なる計算機環境であっても容易に実行が可能である.
+[NCGM WGSpipeline](https://github.com/NCGM-genome/WGSpipeline) は，ヒト個人の全ゲノムシークエンス (whole-genome sequencing; WGS) データを入力として多型検出を行う汎用的なワークフローである.このワークフローは，複数のコンポーネントから構成されており，参照ゲノム配列へのマッピング，マップされた配列から多型を検出するバリアントコールなどのプロセスが含まれている.
+NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲノム解析ソフトウェアとして利用しており，従来の CPU ベースの Genome Analysis Toolkit (GATK) をゲノム解析ソフトウェアとして利用する場合と比較して，10 倍以上高速にデータ加工を実施することができる.FPGA を用いたアクセラレータを利用する手法も提案されているが，Parabricks の利点のひとつは，汎用の GPU を使用できるため計算機資源をより柔軟に活用できる面にある.ワークフローの可搬性と可用性を高めるため NCGM WGSpipeline は Common Workflow Language (CWL) を用いて実装されており，異なる計算機環境であっても容易に実行が可能である.
 
 ## 性能評価
 性能評価では高火力 PHY および遺伝研 igt 上で，以下のバージョンの Parabricks ソフトウェアを用いた NCGM WGSpipeline で解析を行った.
@@ -68,7 +68,7 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
 ‘–low-memory’ オプション有りの結果を比較すると，いずれのバージョンでも，高火力 PHY は遺伝研 igt の 2.3 倍以上高速に解析を完了できた.解析が高速だった要因として GPU の性能や GPU の搭載数の差が考えられるが，どの要素が支配的かは今回の評価では判断できなかった.また高火力 PHY のいずれのバージョンでも，‘–low-memory’ オプションの有無で解析速度にほとんど差は出なかった.
 
 表 3 ノードおよび Parabricks バージョンごとの解析時間
-| GPU | Parabricks<br>version | 解析時間（分）<br>w/ low memory | 解析時間（分）<br>w/o low memory |
+| GPU | Parabricks version | 解析時間（分）w/ low memory | 解析時間（分）w/o low memory |
 |---|---|---|---|
 | 高火力 PHY | v4.1.0 | 37.65 | 38.42 |
 | (H100x8) | v4.1.1 | 38.15 | 37.93 |
@@ -83,7 +83,7 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
 ### 解析結果の妥当性
 表 4 に Parabricks v4.0.0 と今回評価した各バージョンの Parabricks の計算結果の多型検出結果の一致率 (genotype concordance) を示す. 一致率は多型の種類を考慮し SNP(一塩基置換) と INDEL(塩基配列の挿入・欠失) を区別して計算した.多型の種類にかかわらず，v4.1.0 および v4.1.1 の解析結果は v4.0.0 と完全に一致した.v4.2.0 および v4.2.1 では v4.0.0 の解析結果と完全一致ではないものの，非常に高い一致率を示しほとんど完全に一致していた.v4.0.0, v4.1.0, v4.1.1 は GATK v4.2.0.0 と互換となるよう実装されており，v4.2.0, v4.2.1 は GATK v4.3.0.0 と互換になるよう実装されている.この点が Parabricks v4.2.0 および v4.2.1 の結果が v4.0.0 と完全一致しなかった原因と考えられる.全てのバージョンにおいて解析結果は Parabricks v4.0.0 の結果と非常に高い一致率を示し，解析結果は妥当だと考えられる.
 
-表 4 Parabricks v4.0.0 と評価に用いた各Parabricksバージョンごとの変異ごとのgenotype concordance}
+表 4 Parabricks v4.0.0 と評価に用いた各Parabricksバージョンごとの変異ごとのgenotype concordance
 |  | v4.1.0 | v4.1.1 | v4.2.0 | v4.2.1 |
 |---|---|---|---|---|
 | SNP | 1.0000000 | 1.0000000 | 0.9999979 | 0.9999979 |
