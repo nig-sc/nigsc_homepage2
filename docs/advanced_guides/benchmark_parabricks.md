@@ -90,4 +90,11 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
 | INDEL | 1.0000000 | 1.0000000 | 0.9999932 | 0.9999932 |
 
 
-![](xxx.png)
+![](NA18945-gpu-low-v421.png)
+図 1 高火力 PHY 環境上で Parabricks を用いた NA18945 解析時の GPU 使用率
+
+![](NA18945-cpu-low-v421.png)
+図 2 高火力 PHY 環境上で Parabricks を用いた NA18945 解析時の CPU 使用率
+
+![](NA18945-disk-low-v421.png)
+図 3 高火力 PHY 環境上で Parabricks を用いた NA18945 解析時のディスク使用率
