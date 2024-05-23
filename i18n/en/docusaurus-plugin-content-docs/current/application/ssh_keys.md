@@ -28,6 +28,9 @@ To generate SSH public and private keys, refer to the following link.
 ### 2. How to register or change the SSH public key to the NIG supercomputer
 
 To register or change the SSH public key to the NIG supercomputer, refer to the following link.
+
+It takes about 30 minutes for the SSH public key to be reflected.
+
 - [<u>How to register or change the SSH public key to the NIG supercomputer (Windows)</u>](/application/ssh_keys_register_win)
 - [<u>How to register or change the SSH public key to the NIG supercomputer (mac)</u>](/application/ssh_keys_register_mac)
 - [<u>How to register or change the SSH public key to the NIG supercomputer (Linux)</u>](/application/ssh_keys_register_linux)
