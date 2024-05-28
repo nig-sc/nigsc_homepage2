@@ -14,7 +14,6 @@ title: ベンチマーク(NVIDIA Parabricks)
 表 1 検証ノード構成
 |  | 遺伝研igt | 高火力PHY |
 |---|---|---|
-| 利用環境 | マネージドクラスター | ベアメタルサーバ |
 | **ハードウェア構成** | | |
 | CPU (総コア数) | Intel Xeon Gold 6136 3.0GHz x 2基 (24) | Intel Xeon Platinum 8480 2.0GHz x 2基 (112) |
 | メモリー | DDR4 384GB | DDR5 2.0TB |
@@ -89,12 +88,41 @@ NCGM WGSpipeline は，GPU を活用する NVIDIA 社の Parabricks を主なゲ
 | SNP | 1.0000000 | 1.0000000 | 0.9999979 | 0.9999979 |
 | INDEL | 1.0000000 | 1.0000000 | 0.9999932 | 0.9999932 |
 
+<img
+  src={require('./NA18945-gpu-low-v421.png').default}
+  alt=''
+  style={{ width: '800px' }}
+/>
+図 1 高火力 PHY 環境上で Parabricks 解析時の GPU 使用率
 
-![](NA18945-gpu-low-v421.png)
-図 1 高火力 PHY 環境上で Parabricks を用いた NA18945 解析時の GPU 使用率
+<img
+  src={require('./NA18945-cpu-low-v421.png').default}
+  alt=''
+  style={{ width: '800px' }}
+/>
+図 2 高火力 PHY 環境上で Parabricks 解析時の CPU 使用率
 
-![](NA18945-cpu-low-v421.png)
-図 2 高火力 PHY 環境上で Parabricks を用いた NA18945 解析時の CPU 使用率
-
+<img
+  src={require('./NA18945-disk-low-v421.png').default}
+  alt=''
+  style={{ width: '800px' }}
+/>
 ![](NA18945-disk-low-v421.png)
-図 3 高火力 PHY 環境上で Parabricks を用いた NA18945 解析時のディスク使用率
+図 3 高火力 PHY 環境上で Parabricks 解析時のディスク使用率
+
+## 本記事について
+**本成果は、国立遺伝学研究所DDBJセンターと、さくらインターネット株式会社との間で実施の共同研究「大規模研究データのライフサイクルデザインに関する研究(2020年度〜)」の一環で2023年度に測定された結果を元に作成されました。**
+
+## 記事詳細・関連リンク
+記事作成日：2024/5/28
+### プロジェクトメンバー
+- 丹生 智也<sup>1, 2</sup>
+- 野川 駿<sup>3</sup>
+- 山本 謙太郎<sup>3</sup>
+- 石井 学<sup>3</sup>，
+- 大田 達郎<sup>1, 4</sup>
+- 小西 史一<sup>5</sup>
+- 八谷 剛史<sup>3</sup>
+- 小笠原 理<sup>1</sup>
+
+1: 国立遺伝学研究所 生命情報・DDBJセンター, 2: データサイエンス共同利用基盤施設 バイオデータ研究拠点, 3: 株式会社ゲノムアナリティクスジャパン, 4: 千葉大学 国際高等研究基幹, 5: さくらインターネット株式会社
