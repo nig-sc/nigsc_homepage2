@@ -128,3 +128,8 @@ NCGM WGSpipeline では合計 5 種類のバリアントコールが実行され
 - 小笠原 理<sup>1</sup>
 
 1: 国立遺伝学研究所 生命情報・DDBJセンター, 2: データサイエンス共同利用基盤施設 バイオデータ研究拠点, 3: 株式会社ゲノムアナリティクスジャパン, 4: 千葉大学 国際高等研究基幹, 5: さくらインターネット株式会社
+
+### 関連リンク
+- [高火力PHY（さくらインターネット株式会社）](https://www.sakura.ad.jp/koukaryoku-phy/)
+- [NVIDIA Parabricks](https://www.nvidia.com/ja-jp/clara/parabricks/)
+- [NCGM WGSpipeline](https://github.com/NCGM-genome/WGSpipeline)
