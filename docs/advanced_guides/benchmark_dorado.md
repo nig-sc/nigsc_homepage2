@@ -65,9 +65,9 @@ fio --direct=1 --filename=/data/test --rw=readwrite --bs=1m --size=80G
 - [v0.5.1](https://hub.docker.com/layers/nanoporetech/dorado/shab1ff19616e2b8635791f17bef11f806628505a35/images/sha256-b41081baf4a8744847d53dd08d991ea2316860ddf22e29828682ea045d9e48a0?context=explore)
 
 Doradoには塩基配列を決定する機能に加えて、塩基のエピジェネティックな修飾状態を決定する機能が含まれており、以下の3通りの計算モードを検討した。
-- `without modification calling`：エピジェネティックな修飾状態は決定しない計算モード
-- `with methylation calling 5mCG`（以下 with 5mCG calling）：エピジェネティックな修飾状態として5mCGのみ考慮する計算モード
-- `with methylation calling 5mCG\_5hmCG`（以下 with 5mCG/5hmCG calling）：エピジェネティックな修飾状態として5mCGと5hmCGの両方を考慮する計算モード
+- without modification calling：エピジェネティックな修飾状態は決定しない計算モード
+- with methylation calling 5mCG（以下 with 5mCG calling）：エピジェネティックな修飾状態として5mCGのみ考慮する計算モード
+- with methylation calling 5mCG_5hmCG（以下 with 5mCG/5hmCG calling）：エピジェネティックな修飾状態として5mCGと5hmCGの両方を考慮する計算モード
 
 入力として、Amazon上で行われたベースコーラーの[ベンチマーク](https://aws.amazon.com/jp/blogs/hpc/benchmarking-the-oxford-nanopore-technologies-basecallers-on-aws/)と同様のFAST5ファイルを使用した。ファイルは584個に分割されており、各ファイルは約1GBから1.7GBであった。合計で765GBが解析対象の1つのデータセットとなる。
 
@@ -103,20 +103,20 @@ dorado basecaller \
 ```
 
 ## 4.2 ノードおよびバージョンごとの解析時間
-[表3](#表3-ノードおよび-dorado-バージョンごとの解析速度比較)にノードおよびDoradoのバージョンごとの解析時間を示す。また参考として，Amazonでのベンチマーク結果からp4d.24xlarge (A100x8搭載)およびp3.8xlarge (V100x4搭載) の結果も合わせて示す。Dorado v0.2.4 with 5mCG calling は解析途中でGPUを利用しなくなり，さらにメモリをすべて使い切り解析に失敗したため表では N.A. と記載した。Dorado v0.2.4 `with 5mCG/5hmCG calling` については，`with 5mCG calling` と同様の結果になる可能性が高かったことと他のパラメータでの結果の取得を優先したため実行を行っていない（表では`-`と記載）。
+[表3](#表3-ノードおよび-dorado-バージョンごとの解析速度比較)にノードおよびDoradoのバージョンごとの解析時間を示す。また参考として，Amazonでのベンチマーク結果からp4d.24xlarge (A100x8搭載)およびp3.8xlarge (V100x4搭載) の結果も合わせて示す。Dorado v0.2.4 with 5mCG calling は解析途中でGPUを利用しなくなり，さらにメモリをすべて使い切り解析に失敗したため表では N.A. と記載した。Dorado v0.2.4 with 5mCG/5hmCG calling については，with 5mCG calling と同様の結果になる可能性が高かったことと他のパラメータでの結果の取得を優先したため実行を行っていない（表では-と記載）。
 
-高火力PHYは遺伝研igtと比較して、`without modification`では8倍から15倍程度、その他のモードでは4倍から6倍程度の高速化した。
+高火力PHYは遺伝研igtと比較して、without modificationでは8倍から15倍程度、その他のモードでは4倍から6倍程度の高速化した。
 
-高火力PHY上での `without modification` では、v0.2.4とv0.3.0以降で1.3倍程度の高速化を実現できていることがわかる。また `with 5mCG calling` でもv0.3.0とv0.5.0で1.25倍程度の高速化が実現できていることがわかる。一方で `with 5mCG/5hmCG calling` では、バージョンごとに大きな差が見られなかった。
+高火力PHY上での without modification では、v0.2.4とv0.3.0以降で1.3倍程度の高速化を実現できていることがわかる。また with 5mCG calling でもv0.3.0とv0.5.0で1.25倍程度の高速化が実現できていることがわかる。一方で with 5mCG/5hmCG calling では、バージョンごとに大きな差が見られなかった。
 
 遺伝研igtでは傾向が異なり、いずれの計算モードでもv0.5.0以降では解析時間が伸びている。これは H100 などのGPU向けの変更が、遺伝研igtが搭載するV100での性能に影響を与えたと考えられる。
 
-高火力PHYの同一バージョン上で比較すると、いずれのバージョンでも `without modification calling` は他の計算モードよりも2倍以上高速になっている。
-各モードでのGPU使用率の推移を[図1](#図1-dorado-v051-で解析時の-gpu-使用率wo-modification-calling)、[図2](#図2-dorado-v051-で解析時の-gpu-使用率w-5mcg-calling)および[図3](#図3-dorado-v051-で解析時の-gpu-使用率w-5mcg5hmcg-calling)に、CPU使用率の推移を[図4](#図4-dorado-v051-で解析時の-cpu-使用率wo-modification-calling)、[図5](#図5-dorado-v051-で解析時の-cpu-使用率w-5mcg-calling)および[図6](#図6-dorado-v051-で解析時の-cpu-使用率w-5mcg5hmcg-calling)に示す。図のGPU使用率およびCPU使用率の違いから、`without modification calling`以外のモードではエピジェネティックな装飾状態を考慮するために、GPUとCPUの処理が頻繁に切り替わっている可能性がある。
+高火力PHYの同一バージョン上で比較すると、いずれのバージョンでも without modification calling は他の計算モードよりも2倍以上高速になっている。
+各モードでのGPU使用率の推移を[図1](#図1-dorado-v051-で解析時の-gpu-使用率wo-modification-calling)、[図2](#図2-dorado-v051-で解析時の-gpu-使用率w-5mcg-calling)および[図3](#図3-dorado-v051-で解析時の-gpu-使用率w-5mcg5hmcg-calling)に、CPU使用率の推移を[図4](#図4-dorado-v051-で解析時の-cpu-使用率wo-modification-calling)、[図5](#図5-dorado-v051-で解析時の-cpu-使用率w-5mcg-calling)および[図6](#図6-dorado-v051-で解析時の-cpu-使用率w-5mcg5hmcg-calling)に示す。図のGPU使用率およびCPU使用率の違いから、without modification calling以外のモードではエピジェネティックな装飾状態を考慮するために、GPUとCPUの処理が頻繁に切り替わっている可能性がある。
 
 一方で遺伝研igtの場合、各計算モードごとの大きな差は見られなかった。これは高火力PHYとは異なる部分が計算のボトルネックになっていると考えられるが、これについては今後調査が必要である。
 
-最後にそれぞれAmazonでのベンチマーク結果と比較すると、高火力PHYは `without modification` モードではp4d.24xlargeの半分程度の時間で解析が完了することがわかる。
+最後にそれぞれAmazonでのベンチマーク結果と比較すると、高火力PHYは without modification モードではp4d.24xlargeの半分程度の時間で解析が完了することがわかる。
 また遺伝研igtは、同じGPUを搭載したp3.8xlargeよりも1.2倍程度高速であることがわかる。
 
 ### 表3 ノードおよび Dorado バージョンごとの解析速度比較
@@ -181,10 +181,10 @@ dorado basecaller \
 一方で高火力PHYを利用できる期間が限られていたことから明らかにできなかった点も残っており、今後は関係者と連携してさらな調査を行う予定である。
 
 ## 6. 本記事について
-**本成果は、国立遺伝学研究所DDBJセンターと、さくらインターネット株式会社との間で実施の共同研究「大規模研究データのライフサイクルデザインに関する研究(2020年度〜)」の一環で2023年度に測定された結果を元に作成されました。**
+本成果は、国立遺伝学研究所DDBJセンターと、さくらインターネット株式会社との間で実施の共同研究「大規模研究データのライフサイクルデザインに関する研究(2020年度〜)」の一環で2023年度に測定された結果を元に作成されました。
 
 ## 7. 記事詳細・関連リンク
-記事作成日：2024/5/28
+記事作成日：2024/6/3
 ### プロジェクトメンバー
 - 丹生 智也<sup>1, 2</sup>
 - 野川 駿<sup>3</sup>
@@ -195,8 +195,13 @@ dorado basecaller \
 - 八谷 剛史<sup>3</sup>
 - 小笠原 理<sup>1</sup>
 
-1: 国立遺伝学研究所 生命情報・DDBJセンター, 2: データサイエンス共同利用基盤施設 バイオデータ研究拠点, 3: 株式会社ゲノムアナリティクスジャパン, 4: 千葉大学 国際高等研究基幹, 5: さくらインターネット株式会社
+1: 国立遺伝学研究所 生命情報・DDBJセンター  
+2: データサイエンス共同利用基盤施設 バイオデータ研究拠点  
+3: 株式会社ゲノムアナリティクスジャパン  
+4: 千葉大学 国際高等研究基幹  
+5: さくらインターネット株式会社
 ### 関連リンク
 - [高火力PHY（さくらインターネット株式会社）](https://www.sakura.ad.jp/koukaryoku-phy/)
+- [遺伝研igt（国立遺伝学研究所）](https://sc.ddbj.nig.ac.jp/guides/hardware/)
 - [nanoporetech/dorado](https://github.com/nanoporetech/dorado) 
 - [Benchmarking the Oxford Nanopore Technologies basecallers on AWS](https://aws.amazon.com/jp/blogs/hpc/benchmarking-the-oxford-nanopore-technologies-basecallers-on-aws/)
