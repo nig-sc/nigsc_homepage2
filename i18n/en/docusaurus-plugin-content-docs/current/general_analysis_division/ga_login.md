@@ -11,7 +11,7 @@ SSH connection is used for logging in to the general analysis division of the NI
 ![](pg_login_1.png)
 
 
-## Gateway Node
+## Gateway Node {#two-gateways}
 
 There are two gateway nodes for the general analysis division of the NIG supercomputer.
 
