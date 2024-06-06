@@ -28,5 +28,5 @@ Publication date: June 6, 2024
 
 ## Scope of impact
 - **From around 1:30 to 20:00 on 5 June, any writing to OST0031 from all compute nodes is not possible, nor is any reading between 15:30 and 20:00. The compute nodes listed above were also not read/write accessible as of 6 June. Please check your calculation results for any anomalies.** (Jobs that do not use OST0031 are not affected, but whether or not using OST0031 is randomly determined.) 
-- The personal genome analysis division are not affected.
+- As you cannot log in to the SSL-VPN, you may not be able to log in to the personal genome analysis division either.
 - Communication breakdowns will occur for DDBJ services that use data transfer nodes dtn2 and dtn4.
