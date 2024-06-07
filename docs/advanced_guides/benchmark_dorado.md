@@ -9,7 +9,7 @@ title: ベンチマーク(dorado)
 Doradoは Oxford Nanopore 社の DNA シーケンサーのために開発されたベースコーラーである。ベースコーラーとは、シーケンサーがDNA分子を測定して得られた波形データを塩基（ベース）配列に変換するソフトウェアである。波形の変換には機械学習モデルが用いられており、数TBの波形データを高速にかつ正確に塩基配列に変換するためのアクセラレータとしてGPUが用いられている。
 
 ## 2. 検証GPU環境
-アプリケーションの実効性能比較のために、H100搭載ノードの他にV100搭載ノードも用いて性能評価を行った。検証対象のH100搭載ノードは、さくらインターネットが提供する高火力PHYの[ベアメタルサーバ](https://www.sakura.ad.jp/koukaryoku-phy/)(以降 高火力PHY)で実行され、V100搭載ノードは、遺伝研スーパーコンピュータシステムが提供するThin計算ノード([Type 2b](https://sc.ddbj.nig.ac.jp/en/guides/hardware/)) (以降 遺伝研igt)で実行した。いずれも、単体のノードとして使用され、複数台のノード構成によるアプリケーション性能評価は行っていない。
+アプリケーションの実効性能比較のために、H100搭載ノードの他にV100搭載ノードも用いて性能評価を行った。検証対象のH100搭載ノードは、さくらインターネットが提供する高火力PHYの[ベアメタルサーバ](https://www.sakura.ad.jp/koukaryoku-phy/)(以降 高火力PHY)で実行され、V100搭載ノードは、遺伝研スーパーコンピュータシステムが提供するThin計算ノード([Type 2b](https://sc.ddbj.nig.ac.jp/guides/hardware/)) (以降 遺伝研igt)で実行した。いずれも、単体のノードとして使用され、複数台のノード構成によるアプリケーション性能評価は行っていない。
 
 この二つの異なる環境下で運用されるノード間で、GPU関連ドライバー等のバージョン違いなどに起因する実行性能への影響を防ぐ目的で、これまで対象アプリケーションの実行実績のある遺伝研igtの環境設定を検証条件として採用し、高火力PHY上での環境構築を行った。
 検証に利用した遺伝研igtと高火力PHYのGPUノードのハードウェア環境およびソフトウェア環境を[表1](#表1-検証ノード構成)に示す。
@@ -184,7 +184,7 @@ dorado basecaller \
 本成果は、国立遺伝学研究所DDBJセンターと、さくらインターネット株式会社との間で実施の共同研究「大規模研究データのライフサイクルデザインに関する研究(2020年度〜)」の一環で2023年度に測定された結果を元に作成されました。
 
 ## 7. 記事詳細・関連リンク
-記事作成日：2024/6/3
+記事作成日：2024/6/6
 ### プロジェクトメンバー
 - 丹生 智也<sup>1, 2</sup>
 - 野川 駿<sup>3</sup>
@@ -205,3 +205,4 @@ dorado basecaller \
 - [遺伝研igt（国立遺伝学研究所）](https://sc.ddbj.nig.ac.jp/guides/hardware/)
 - [nanoporetech/dorado](https://github.com/nanoporetech/dorado) 
 - [Benchmarking the Oxford Nanopore Technologies basecallers on AWS](https://aws.amazon.com/jp/blogs/hpc/benchmarking-the-oxford-nanopore-technologies-basecallers-on-aws/)
+- [高速GPUを活用したゲノム解析ソフトウェアの計算速度評価（HPC研究会発表資料）](http://id.nii.ac.jp/1001/00233052/)
