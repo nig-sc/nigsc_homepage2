@@ -19,8 +19,8 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [(Follow-up) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)＼&#x1f195;／
-- [June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-05-Lustre7_maintenance) (2024.06.05)
+- [(Ended) (Follow-up) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)＼&#x1f195;／
+- [(Ended) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-05-Lustre7_maintenance) (2024.06.05)
 - [(Ended) Scheduled maintenance from 24 to 30 November ← Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration)
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)

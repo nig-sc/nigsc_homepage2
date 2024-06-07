@@ -1,6 +1,6 @@
 ---
 slug: 2024-06-06-Lustre7_maintenance_followup
-title: "(Follow-up)[Outage] June 5, 2024: Emergency maintenance of Lustre7"
+title: "(Ended) (Follow-up)[Outage] June 5, 2024: Emergency maintenance of Lustre7"
 tags:
   - maintenance
 authros:
@@ -11,6 +11,7 @@ date: 2024-06-06
 
 Publication date: June 6, 2024
 
+The restoration work was completed at around 12:00 (24 hours notation) on Thursday, 6 June 2024.
 
 - At 1:34:21 am on Wed 5 Jun, a fault occurred on the Lustre7 high-speed storage system in the General Analysis division, resulting in a partial write failure. Specifically, one of the 88 RAID groups Lustre OST (OST0031) was not writable.
 - The recovery work started at around 15:30 and finished at around 20:00.
