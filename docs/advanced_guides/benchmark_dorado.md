@@ -103,7 +103,7 @@ dorado basecaller \
 ```
 
 ## 4.2 ノードおよびバージョンごとの解析時間
-[表3](#表3-ノードおよび-dorado-バージョンごとの解析速度比較)にノードおよびDoradoのバージョンごとの解析時間を示す。また参考として，Amazonでのベンチマーク結果からp4d.24xlarge (A100x8搭載)およびp3.8xlarge (V100x4搭載) の結果も合わせて示す。Dorado v0.2.4 with 5mCG calling は解析途中でGPUを利用しなくなり，さらにメモリをすべて使い切り解析に失敗したため表では N.A. と記載した。Dorado v0.2.4 with 5mCG/5hmCG calling については，with 5mCG calling と同様の結果になる可能性が高かったことと他のパラメータでの結果の取得を優先したため実行を行っていない（表では-と記載）。
+[表3](#表3-ノードおよび-dorado-バージョンごとの解析速度比較)にノードおよびDoradoのバージョンごとの解析時間を示す。また参考として、Amazonでのベンチマーク結果からp4d.24xlarge (A100x8搭載)およびp3.8xlarge (V100x4搭載) の結果も合わせて示す。Dorado v0.2.4 with 5mCG calling は解析途中でGPUを利用しなくなり、さらにメモリをすべて使い切り解析に失敗したため表では N.A. と記載した。Dorado v0.2.4 with 5mCG/5hmCG calling については、with 5mCG calling と同様の結果になる可能性が高かったことと他のパラメータでの結果の取得を優先したため実行を行っていない（表では-と記載）。
 
 高火力PHYは遺伝研igtと比較して、without modificationでは8倍から15倍程度、その他のモードでは4倍から6倍程度の高速化した。
 
@@ -189,7 +189,7 @@ dorado basecaller \
 - 丹生 智也<sup>1, 2</sup>
 - 野川 駿<sup>3</sup>
 - 山本 謙太郎<sup>3</sup>
-- 石井 学<sup>3</sup>，
+- 石井 学<sup>3</sup>
 - 大田 達郎<sup>1, 4</sup>
 - 小西 史一<sup>5</sup>
 - 八谷 剛史<sup>3</sup>
