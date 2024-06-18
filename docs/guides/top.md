@@ -20,7 +20,8 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
-- [(終了) 【続報】2024年6月5日(水) Lustre7の緊急メンテナンスを行います](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)＼&#x1f195;／
+- [2024年6月18日(火) Lustre7の緊急メンテナンスを行います](/blog/2024-06-18-Lustre7_maintenance) (2024.06.18)＼&#x1f195;／
+- [(終了) 【続報】2024年6月5日(水) Lustre7の緊急メンテナンスを行います](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)
 - [(終了) 2024年6月5日(水) Lustre7の緊急メンテナンスを行います](/blog/2024-06-05-Lustre7_maintenance)　(2024.06.05)
 - [(終了) 11 月 24 日 - 11 月 30 日に定期メンテナンスを行います ← 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.12.01)
     - [OS 移行に伴う FAQ のページを作成しました](/faq/faq_os_migration)

@@ -19,7 +19,8 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [(Ended) (Follow-up) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)＼&#x1f195;／
+- [June 18, 2024, Emergency maintenance of Lustre7](/blog/2024-06-18-Lustre7_maintenance) (2024.06.18)＼&#x1f195;／
+- [(Ended) (Follow-up) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)
 - [(Ended) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-05-Lustre7_maintenance) (2024.06.05)
 - [(Ended) Scheduled maintenance from 24 to 30 November ← Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
     - [FAQ page for OS migration has been created.](/faq/faq_os_migration)
