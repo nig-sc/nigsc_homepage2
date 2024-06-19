@@ -1,6 +1,6 @@
 ---
 slug: 2024-06-19-Lustre7_maintenance_followup
-title: "(Follow-up)[Outage] June 19, 2024: Emergency maintenance of Lustre7"
+title: "(Follow-up)[Outage] June 18, 2024: Emergency maintenance of Lustre7"
 tags:
   - maintenance
 authros:
