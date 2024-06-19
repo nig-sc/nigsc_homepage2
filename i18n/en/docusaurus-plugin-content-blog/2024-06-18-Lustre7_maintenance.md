@@ -12,7 +12,7 @@ date: 2024-06-18
 Publication date: June 18, 2024
 
 
-At 17:46:14 on Mon 17 Jun, OST0041, one of the 88 RAID groups "Lustre OST" of the Lustre7 high-speed storage system in the General Analysis division, has failed and is currently partially un-writable.
+At 18:21:14 on Mon 17 Jun, OST0029, one of the 88 RAID groups "Lustre OST" of the Lustre7 high-speed storage system in the General Analysis division, has failed and is currently partially un-writable.
 
 The system is currently being restored. 
 It is the same as on 6 June
@@ -22,6 +22,6 @@ We apologise for any inconvenience caused.
 
 ## Scope of impact
 
-- In the General Analysis division, an area (OST0041 on Lustre7) has been partially un-writable since 17:46 on Monday 17 June. During the restoration of this area, read/write access to this area OST0041 will be unavailable.
+- In the General Analysis division, an area (OST0029 on Lustre7) has been partially un-writable since 17:46 on Monday 17 June. During the restoration of this area, read/write access to this area OST0029 will be unavailable.
 - The personal genome analysis division will not be affected.
 - The impact on DDBJ services is under investigation.
