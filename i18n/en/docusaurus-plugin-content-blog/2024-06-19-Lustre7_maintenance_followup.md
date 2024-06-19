@@ -18,7 +18,7 @@ Publication date: June 19, 2024
     - at139,at140,at141,at142,at143,at144,at145,at146,at147,at148,at149,at150,at151,at152,at153,at154,at155,at156,at157,at159,at160,at161,at162,at163,at164 (25 out of 28 Thin compute nodes Type 1b, AMD ROMA CPU)
     - it001,it002,it004,it006,it007,it008,it009,it010,it013,it014,it015,it017,it024,it025,it026,it027,it028,it029,it031,it032,it034,it035,t036,it040,it041,it048,it049,it050,it051,it052 (30 out of 52 Thin compute nodes Type 2a, Intel CPU)
     - igt001,igt003,igt005,igt006,igt007,igt008,igt011,igt012,igt013,igt014 (10 out of 16 Thin compute nodes Type 2b, Intel CPU)
-    - gw1,gw4, (2 gateways for the general analysis division)
+    - `gw.ddbj.nig.ac.jp`, `gw2.ddbj.nig.ac.jp` (2 gateways for the general analysis division)
     - m01,m02,m03,m04 (4 of 10 medium nodes)
     - dtn4 (data transfer nodes used for DDBJ services)
 - - Wed 19 Jun, these nodes will be restarted in sequence to normalise access to Lustre7.
