@@ -1,6 +1,6 @@
 ---
 slug: 2024-06-19-Lustre7_maintenance_followup
-title: "【続報】2024年6月19日(水) Lustre7の緊急メンテナンス"
+title: "【続報】2024年6月18日(火) Lustre7の緊急メンテナンス"
 tags:
   - maintenance
 authros:
