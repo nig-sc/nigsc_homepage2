@@ -16,9 +16,9 @@ The restoration work was completed at around 12:00 (24 hours notation) on Thursd
 - At 1:34:21 am on Wed 5 Jun, a fault occurred on the Lustre7 high-speed storage system in the General Analysis division, resulting in a partial write failure. Specifically, one of the 88 RAID groups Lustre OST (OST0031) was not writable.
 - The recovery work started at around 15:30 and finished at around 20:00.
 - However, at 20:00, it was confirmed that some compute nodes were not able to access OST0031 (neither read nor write). Specifically, the following computation nodes.
-    - at017,at025,at054,at049,at051,at052,at047,at045,at050,at053,at085,at099,at102,at101,at132, (15 out of 136 Thin compute nodes Type 1a, AMD EPYC 7501 CPU)
-    - at140,at141,at149,at155, (4 out of 28 Thin compute nodes Type 1b, AMD ROMA CPU)
-    - it001,it040,igt003,it050,it049, (5 out of 52 Thin compute nodes Type 2a, Intel CPU)
+    - at017,at025,at054,at049,at051,at052,at047,at045,at050,at053,at085,at099,at102,at101,at132, (15 of 136 Thin compute nodes Type 1a, AMD EPYC 7501 CPU)
+    - at140,at141,at149,at155, (4 of 28 Thin compute nodes Type 1b, AMD ROMA CPU)
+    - it001,it040,igt003,it050,it049, (5 of 52 Thin compute nodes Type 2a, Intel CPU)
     - gw1,gw4, (2 gateways for the general analysis division)
     - m01 (one of 10 medium nodes)
     - dtn2,dtn4 (data transfer nodes used for DDBJ services)
