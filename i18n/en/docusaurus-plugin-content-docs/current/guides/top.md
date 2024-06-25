@@ -19,10 +19,10 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [Important Announcement from the NIG supercomputer: Phase 1 (Apr-Jul) FY2024](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.21)＼&#x1f195;／
-- [Emergency maintenance of General Analysis Division (Lustre7)](/blog/2024-06-21-ga_maintenance) (2024.06.21)＼&#x1f195;／
-- [(Follow-up) June 18, 2024, Emergency maintenance of Lustre7](/blog/2024-06-19-Lustre7_maintenance_followup) (2024.06.19)＼&#x1f195;／
-- [June 18, 2024, Emergency maintenance of Lustre7](/blog/2024-06-18-Lustre7_maintenance) (2024.06.18)＼&#x1f195;／
+- [Important Announcement from the NIG supercomputer: Phase 1 (Apr-Jul) FY2024](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)＼&#x1f195;／
+- [(Ended) Emergency maintenance of General Analysis Division (Lustre7)](/blog/2024-06-21-ga_maintenance) (2024.06.21)
+- [(Ended) (Follow-up) June 18, 2024, Emergency maintenance of Lustre7](/blog/2024-06-19-Lustre7_maintenance_followup) (2024.06.19)
+- [(Ended) June 18, 2024, Emergency maintenance of Lustre7](/blog/2024-06-18-Lustre7_maintenance) (2024.06.18)
 - [(Ended) (Follow-up) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)
 - [(Ended) June 5, 2024, Emergency maintenance of Lustre7](/blog/2024-06-05-Lustre7_maintenance) (2024.06.05)
 - [(Ended) Scheduled maintenance from 24 to 30 November ← Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)

@@ -1,6 +1,6 @@
 ---
 slug: 2024-06-19-Lustre7_maintenance_followup
-title: "(Follow-up)[Outage] June 18, 2024: Emergency maintenance of Lustre7"
+title: "(Ended) (Follow-up)[Outage] June 18, 2024: Emergency maintenance of Lustre7"
 tags:
   - maintenance
 authros:
@@ -10,6 +10,11 @@ date: 2024-06-19
 ---
 
 Publication date: June 19, 2024
+
+
+The restoration work was completed at 9:00am on Tuesday, 25 June 2024.
+
+Also, the gateways (gw.ddbj.nig.ac.jp, gw2.ddbj.nig.ac.jp) have been restored and are available for logging in.
 
 - At 18:21:14 on Mon 17 Jun, a fault occurred on the Lustre7 high-speed storage system in the General Analysis division, resulting in a partial write failure. Specifically, one of the 88 RAID groups Lustre OST (OST0029) was not writable.
 - The recovery work started at around 14:00 on Tue 18 Jun and finished at around 20:00.
