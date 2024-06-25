@@ -307,6 +307,14 @@ Many development environments are preinstalled on the system. But if you need a 
 <td width="300">installed</td>
 </tr>
 <tr>
+<td width="300">
+
+[Go](/software/go)
+</td>
+<td width="300">available</td>
+<td width="300">available</td>
+</tr>
+<tr>
 <td width="300">OpenMP</td>
 <td width="300">available</td>
 <td width="300">available</td>
@@ -318,10 +326,3 @@ Many development environments are preinstalled on the system. But if you need a 
 </tr>
 
 </table>
-
-
-
-
-
-
-

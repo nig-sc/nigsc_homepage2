@@ -318,6 +318,14 @@ title: ソフトウェア
 <td width="300">インストール済み</td>
 </tr>
 <tr>
+<td width="300">
+
+[Go](/software/go)
+</td>
+<td width="300">利用可能</td>
+<td width="300">利用可能</td>
+</tr>
+<tr>
 <td width="300">OpenMP</td>
 <td width="300">利用可能</td>
 <td width="300">利用可能</td>
