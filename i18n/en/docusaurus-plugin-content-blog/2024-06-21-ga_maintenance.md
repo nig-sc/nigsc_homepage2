@@ -1,6 +1,6 @@
 ---
 slug: 2024-06-21-ga_maintenance
-title: "[Outage] June 21, 2024: Notice of Emergency Maintenance for General Analysis Division (Lustre7)"
+title: "(Ended) [Outage] June 21, 2024: Notice of Emergency Maintenance for General Analysis Division (Lustre7)"
 tags:
   - maintenance
 authros:
@@ -11,7 +11,12 @@ date: 2024-06-21
 
 Publication date: June 21, 2024
 
-As of 12:00 on Friday, June 21, the high-speed storage system Lustre7 in the General Analysis Division is still experiencing issues. These issues appear to be related to the power outage on May 28, and similar issues occurred on June 5, June 17, and June 20.
+
+The restoration work was completed at 9:00am on Tuesday, 25 June 2024.
+
+Also, the gateways (gw.ddbj.nig.ac.jp, gw2.ddbj.nig.ac.jp) have been restored and are available for logging in.
+
+~~As of 12:00 on Friday, June 21, the high-speed storage system Lustre7 in the General Analysis Division is still experiencing issues. These issues appear to be related to the power outage on May 28, and similar issues occurred on June 5, June 17, and June 20.~~
 
 - https://sc.ddbj.nig.ac.jp/en/blog/2024-06-19-Lustre7_maintenance_followup
 - https://sc.ddbj.nig.ac.jp/en/blog/2024-06-18-Lustre7_maintenance
