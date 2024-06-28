@@ -1,19 +1,19 @@
 ---
 id: imputation_server_install
-title: NBDC-DDBJインピュテーションサーバ (beta) インストールマニュアル 
+title: TOGO Imputation (beta) インストールマニュアル 
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
 
 ## 事前準備
 
 ### Guacamole環境への接続
 
-NBDC-DDBJインピュテーションサーバをインストールする前に、下記2点を行なってください。
+TOGO Imputationをインストールする前に、下記2点を行なってください。
 
 - 遺伝研スパコンの個人ゲノム解析区画へVPN接続をしてください
 - Guacamoleを使って、仮想デスクトップ環境へログインしてください
