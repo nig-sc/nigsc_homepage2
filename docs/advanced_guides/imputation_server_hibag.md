@@ -1,6 +1,6 @@
 ---
 id: imputation_server_hibag
-title: TOGO Imputation (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
+title: TogoImputation (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
 ---
 
 <img

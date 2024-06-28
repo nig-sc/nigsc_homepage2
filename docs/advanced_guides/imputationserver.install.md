@@ -1,6 +1,6 @@
 ---
 id: imputation_server_install
-title: TOGO Imputation (beta) インストールマニュアル 
+title: TogoImputation (beta) インストールマニュアル 
 ---
 
 <img
@@ -13,7 +13,7 @@ title: TOGO Imputation (beta) インストールマニュアル
 
 ### Guacamole環境への接続
 
-TOGO Imputationをインストールする前に、下記2点を行なってください。
+TogoImputationをインストールする前に、下記2点を行なってください。
 
 - 遺伝研スパコンの個人ゲノム解析区画へVPN接続をしてください
 - Guacamoleを使って、仮想デスクトップ環境へログインしてください

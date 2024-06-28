@@ -1,6 +1,6 @@
 ---
 id: imputation_server_tutorial
-title: TOGO Imputation (beta) チュートリアル1、公開レファレンスパネルを使う場合
+title: TogoImputation (beta) チュートリアル1、公開レファレンスパネルを使う場合
 ---
 
 <img
