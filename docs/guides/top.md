@@ -20,14 +20,8 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
+- [2023年度 年度末アカウント継続申請の申請受付期限を、2024年7月31日(水)まで延長しました](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)＼&#x1f195;／
 - [遺伝研スパコンからの重要なお知らせ : 2024年第1期(4～7月)](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)＼&#x1f195;／
-- [(終了) 一般解析区画の緊急メンテナンスを行います](/blog/2024-06-21-ga_maintenance) (2024.06.21)
-- [(終了) 【続報】2024年6月18日(火) Lustre7の緊急メンテナンスを行います](/blog/2024-06-19-Lustre7_maintenance_followup) (2024.06.19)
-- [(終了) 2024年6月18日(火) Lustre7の緊急メンテナンスを行います](/blog/2024-06-18-Lustre7_maintenance) (2024.06.18)
-- [(終了) 【続報】2024年6月5日(水) Lustre7の緊急メンテナンスを行います](/blog/2024-06-06-Lustre7_maintenance_followup) (2024.06.06)
-- [(終了) 2024年6月5日(水) Lustre7の緊急メンテナンスを行います](/blog/2024-06-05-Lustre7_maintenance)　(2024.06.05)
-- [(終了) 11 月 24 日 - 11 月 30 日に定期メンテナンスを行います ← 作業内容について更新しました](/blog/2023-11-24-scheduled-maintenance)　(2023.12.01)
-    - [OS 移行に伴う FAQ のページを作成しました](/faq/faq_os_migration)
 - [ISMS 認証(ISO27001)を取得しました](/guides/ISMS_Certificate) (2023.11.22)
 - [オミクスデータグラフ化ツール 「RIAS®️ Visualization」 の提供を始めました](/advanced_guides/advanced_guide_2023#%E3%82%AA%E3%83%9F%E3%82%AF%E3%82%B9%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B0%E3%83%A9%E3%83%95%E5%8C%96%E3%83%84%E3%83%BC%E3%83%AB-rias%25EF%25B8%258F-visualization%20%E3%81%AE-%E6%8F%90%E4%BE%9B%E3%82%92%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%97%E3%81%9F) (2023.10.26)
 - [個人ゲノム解析区画で使用可能な GPU 専用 Slurm パーティションを新設しました](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)

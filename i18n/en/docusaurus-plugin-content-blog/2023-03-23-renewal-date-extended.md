@@ -14,6 +14,6 @@ In this fiscal year (FY2022), due to the renewal of the application system in Ju
 
 In order to avoid confusion caused by the end-of-year renewal system issues, we decided to extend the end-of-year renewal deadline as follows.
 
-## Period for enewal application
+## Period for renewal application
 
 1 Jun 2023 - <font color="red">~~31 Mar 2023 (Friday)~~ extended to 7 May 2023 (Sunday)</font>
