@@ -1,12 +1,12 @@
 ---
 id: imputation_server_hibag
-title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
+title: TogoImputation (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
 
 ## Guacamole 環境への接続

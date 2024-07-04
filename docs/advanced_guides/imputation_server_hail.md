@@ -1,12 +1,12 @@
 ---
 id: imputation_server_hail
-title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル3、hail を用いた PRS 計算
+title: TogoImputation (beta) チュートリアル3、hail を用いた PRS 計算
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
 
 本チュートリアル3ではインピューテーションサーバのインピューテーション結果を
@@ -156,7 +156,7 @@ https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-p
 
 Guacamole デスクトップ環境内でノートブックチュートリアルを開くには、
 Firefoxのウェブ検索欄に「DDBJ imputation」とタイプし検索を行ってください。
-その検索結果中に「[NBDC-DDBJインピュテーションサーバ(beta)チュートリアル3、hailを用いたPRS計算](https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server_hail)」があります。
+その検索結果中に「[TogoImputation(beta)チュートリアル3、hailを用いたPRS計算](https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server_hail)」があります。
 そのウェブページ下部に https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb へのリンクがあります。
 
 Guacamole デスクトップ環境中の Firefox から https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb を開けたら、
