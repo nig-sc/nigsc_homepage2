@@ -1,12 +1,12 @@
 ---
 id: imputation_server_tutorial
-title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル1、公開レファレンスパネルを使う場合
+title: TogoImputation (beta) チュートリアル1、公開レファレンスパネルを使う場合
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
 
 ## システム利用方法
