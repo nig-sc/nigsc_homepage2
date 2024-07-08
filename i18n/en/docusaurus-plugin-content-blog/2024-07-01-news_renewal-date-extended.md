@@ -9,7 +9,7 @@ authros:
 date: 2024-07-01
 ---
 
-掲載日: 2024年7月1日
+Publication date: July 1, 2024
 
 The period for accepting end-of-year account renewal applications for FY2023 is extended.
 
