@@ -20,6 +20,7 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ
 
+- [MediumノードのUbuntu Linuxへの一部移行とGride Engineキュー(medium-ubuntu.q)新設をしました](/blog/2024-07-08-news_medium-ubuntu-q) (2024.07.08)＼&#x1f195;／
 - [2023年度 年度末アカウント継続申請の申請受付期限を、2024年7月31日(水)まで延長しました](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)＼&#x1f195;／
 - [遺伝研スパコンからの重要なお知らせ : 2024年第1期(4～7月)](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)＼&#x1f195;／
 - [ISMS 認証(ISO27001)を取得しました](/guides/ISMS_Certificate) (2023.11.22)

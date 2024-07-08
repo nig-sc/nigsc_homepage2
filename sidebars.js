@@ -463,7 +463,14 @@ module.exports = {
             "report/papers_2013",
             "report/papers_2012",
             ],
-        }
+        },
+        {
+            type: "category",
+            label: "アカウントの所属機関数",
+            items: [
+            "report/number_of_account_institutions",
+            ]
+        },
     ],
 
 
