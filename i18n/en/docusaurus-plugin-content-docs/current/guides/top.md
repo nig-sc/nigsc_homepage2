@@ -19,6 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
+- [Migrated some of the Medium nodes to Ubuntu Linux and established a new Gride Engine queue (medium-ubuntu.q)](/blog/2024-07-08-news_medium-ubuntu-q) (2024.07.08)＼&#x1f195;／
 - [Extended deadline for account renewal application at the end of FY2023](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)＼&#x1f195;／
 - [Important Announcement from the NIG supercomputer: Phase 1 (Apr-Jul) FY2024](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)＼&#x1f195;／
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)

@@ -48,7 +48,7 @@ Thin ノード Type2b <br />
 <td>1 台・ 24 コア</td>
 </tr>
 <tr>
-<td rowspan="5">計算ノード</td>
+<td rowspan="6">計算ノード</td>
 <td>epyc.q</td>
 <td>
 Thin ノード Type1b<br />
@@ -87,12 +87,15 @@ Thin ノード Type1a <br />
 </tr>
 <tr>
 <td>medium.q</td>
-<td>
+<td rowspan="2">
 Medium ノード <br />
 (Intel Xeon Gold 6148, 80 CPU cores/node, <br />
 38.4GB moemory/CPU core)
 </td>
-<td>10 台・ 800 コア</td>
+<td rowspan="2">10 台・ 800 コア</td>
+</tr>
+<tr>
+<td>medium-ubuntu.q</td>
 </tr>
 
 </table>
