@@ -132,7 +132,7 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
-[NBDC-DDBJ TogoImputation (beta)](/advanced_guides/imputation_server)
+[TogoImputation (beta)](/advanced_guides/imputation_server)
 </td>
 <td width="300">利用不可(※デモ利用機能準備中)</td>
 <td width="300">要申請</td>
