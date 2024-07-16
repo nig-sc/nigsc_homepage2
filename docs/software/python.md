@@ -3,7 +3,13 @@ id: python
 title: "Pythonの使い方"
 ---
 
-Pythonの処理系はシステムにインストールされています。Pythonのバージョン、およびインストール済みパッケージを確認する手順は次のとおりです。
+Python処理系は遺伝研スパコンに最初からインストールされています。また、Python処理系のインストールは`venv`, `miniconda`などの仮想環境を用いてユーザー権限で行うことも可能です。
+
+
+## 遺伝研スパコンにインストール済みのPython処理系を利用する方法
+
+Pythonの処理系は遺伝研スパコンに最初からインストールされています。インストール済みのPythonのバージョン、およびインストール済みパッケージを確認する手順は次のとおりです。
+
 ```
 $ python --version
 Python 3.10.12
@@ -16,7 +22,12 @@ pandas                                           1.3.5
 scikit-learn                                     0.23.2
 scipy                                            1.8.0
 ```
-インストールされていないパッケージ、またはバージョンを使用したい場合はホームディレクトリに仮想環境をセットアップしてください。この場合システムにインストールされているPython、およびパッケージを使用する場合に比べて処理は低速になりますのでご注意ください。ここでは仮想環境の構築方法についてvenv、virtualenv、pyenv、Minicondaによる４つのアプローチを説明します。列挙の順に手順が複雑になりますがより柔軟なセットアップが可能になります。目的・用途に合わせていずれかのアプローチを選択してください。
+
+
+## venv, miniconda等の仮想環境を利用する方法
+
+インストールされていないパッケージ、またはバージョンを使用したい場合はホームディレクトリに仮想環境をセットアップしてください。ここでは仮想環境の構築方法についてvenv、virtualenv、pyenv、Minicondaによる４つのアプローチを説明します。目的・用途に合わせていずれかのアプローチを選択してください。
+
 |仮想環境管理ソフトウェア |説明                                                                                                  |
 |-------------------------|------------------------------------------------------------------------------------------------------|
 |[venv](#venv)            |Python公式ツール、pipによるパッケージ導入が可能                                                       |
@@ -25,25 +36,35 @@ scipy                                            1.8.0
 |[Miniconda](#miniconda)  |Pythonおよびパッケージを仮想環境毎に管理可能、[Jupyter Lab](/software/jupyter_lab)のセットアップに使用|
 
 
-## venv
+### venv
+
 Pyhtonに付属する仮想環境作成用モジュールです。インストールされていないパッケージが必要な場合に使用してください。
+
 ```
 $ python -m venv ~/venv_p310
 $ source ~/venv_p310/bin/activate
 $ python --version
 Python 3.10.12
 ```
+
 pipを使用して必要なライブラリをインストールしてください。
+
 ```
 $ pip install torch
 ```
+
 仮想環境を終了する場合は`deactivate`します。
+
 ```
 $ deactivate
 ```
-### ジョブ実行
+
+#### ジョブ実行
+
 ジョブスクリプト内で任意の仮想環境を有効にして実行します。
-#### Grid Engine
+
+##### Grid Engine
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -59,7 +80,9 @@ python tensorflow-testing.py
 deactivate
 $ qsub launch_python.sh
 ```
-#### Slurm
+
+##### Slurm
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -74,26 +97,39 @@ python tensorflow-testing.py
 deactivate
 $ sbatch launch_python.sh
 ```
-詳細は公式ページをご確認ください。[venv --- 仮想環境の作成](https://docs.python.org/ja/3/library/venv.html)```
-## virtualenv
+
+詳細は公式ページをご確認ください。[venv --- 仮想環境の作成](https://docs.python.org/ja/3/library/venv.html)
+
+
+### virtualenv
+
 Python2系の仮想環境が必要な場合に使用してください。
+
 ```
 $ virtualenv -p python2.7 ~/p27
 $ source ~/p27/bin/activate
 $ python --version
 Python 2.7.18
 ```
+
 pipを使用して必要なライブラリをインストールしてください。
+
 ```
 $ pip install torch
 ```
+
 仮想環境を終了する場合は`deactivate`します。
+
 ```
 $ deactivate
 ```
-### ジョブ実行
+
+#### ジョブ実行
+
 ジョブスクリプト内で任意の仮想環境を有効にして実行します。
-#### Grid Engine
+
+##### Grid Engine
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -109,7 +145,9 @@ python tensorflow-testing.py
 deactivate
 $ qsub launch_python.sh
 ```
-#### Slurm
+
+##### Slurm
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -124,9 +162,12 @@ python tensorflow-testing.py
 deactivate
 $ sbatch launch_python.sh
 ```
+
 詳細は公式ページをご確認ください。[virtualenv User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html)
 
-## pyenv
+
+### pyenv
+
 システムにインストールされていないバージョンのPythonが必要な場合に使用してください。Pythonのバージョン毎に使用するパッケージを管理できます。全体、およびカレントディレクトリ毎に設定が可能です。
 
 ```
@@ -136,7 +177,9 @@ $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 $ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 $ source ~/.bashrc
 ```
+
 インストール可能なPythonのバージョンを確認し必要なバージョンをインストールしてください。
+
 ```
 $ pyenv install --list
 Available versions:
@@ -147,20 +190,28 @@ Available versions:
   3.12.2
 $ pyenv install 3.12.2
 ```
+
 必要なバージョンのPythonを有効化します。全体への設定はglobal、カレントディレクトリへの設定はlocalを使用してください。
+
 ```
 $ pyenv global 3.12.1
 $ mkdir ~/p3122;cd $_;pyenv local 3.12.2
 $ python --version
 Python 3.12.2
 ```
+
 pipを使用して必要なライブラリをインストールしてください。
+
 ```
 $ pip install torch
 ```
-### ジョブ実行
+
+#### ジョブ実行
+
 ジョブスクリプト内で任意の仮想環境に移動してPythonを実行します。
-#### Grid Engine
+
+##### Grid Engine
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -176,7 +227,9 @@ cd ${WORKDIR}
 python tensorflow-testing.py
 $ qsub launch_python.sh
 ```
-#### Slurm
+
+##### Slurm
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -191,10 +244,14 @@ cd ${WORKDIR}
 python tensorflow-testing.py
 $ sbatch launch_python.sh
 ```
+
 詳細は公式ページをご確認ください。[pyenv](https://github.com/pyenv/pyenv)
 
-## Miniconda
+
+### Miniconda
+
 システムにインストールされていないバージョンのPythonが必要な場合、かつ同一バージョンでパッケージ構成を変更して仮想環境をセットアップしたい場合に使用してください。
+
 ```
 $ mkdir ~/miniconda3
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
@@ -203,20 +260,24 @@ $ rm -f ~/miniconda3/miniconda.sh
 $ ~/miniconda3/bin/conda init bash
 $ source ~/.bashrc
 ```
-conda-forgeレポジトリをデフォルトに設定し、.condarcのトップに追加されたことを確認してください。
+
+conda-forgeレポジトリをデフォルトに設定し、`.condarc`のトップに追加されたことを確認してください。
 
 ```
 $ conda config --add channels conda-forge
 $ conda config --set channel_priority strict
 $ vim ~/.condarc
 ```
+
 デフォルトではbase環境が自動起動しますが、セットアップしたい仮想環境と混同する場合があるため自動起動を停止します。
+
 ```
 (base) $ conda deactivate
 $ conda config --set auto_activate_base false
 ```
 
 使用可能なPythonのバージョンを確認して必要なバージョンで仮想環境を作成してください。
+
 ```
 $ conda search -f python
 Loading channels: done
@@ -230,17 +291,25 @@ $ conda activate py312
 $ python --version
 Python 3.12.0
 ```
+
 conda installを使用して必要なライブラリをインストールしてください。
+
 ```
 $ conda install pytorch
 ```
+
 仮想環境を終了する場合は`deactivate`します。
+
 ```
 $ conda deactivate
 ```
-### ジョブ実行
+
+#### ジョブ実行
+
 ジョブスクリプト内で任意の仮想環境を有効にして実行します。
-#### Grid ENgine
+
+##### Grid ENgine
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -257,7 +326,9 @@ python tensorflow-testing.py
 conda deactivate
 $ qsub launch_python.sh
 ```
-#### Slurm
+
+##### Slurm
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -273,4 +344,5 @@ python tensorflow-testing.py
 conda deactivate
 $ sbatch launch_python.sh
 ```
+
 詳細は公式ページをご確認ください。 [Installing on Linux conda 4.10.3.post11+888309718 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)

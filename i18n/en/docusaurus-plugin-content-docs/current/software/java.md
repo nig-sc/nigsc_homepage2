@@ -300,6 +300,14 @@ To install gradle:
 sdk install gradle 8.5
 ```
 
+### Installing JBang with SDKMAN!
+
+To install JBang:
+
+```
+sdk install jbang
+```
+
 
 ## Notes
 

@@ -25,6 +25,9 @@ SSH 公開鍵・秘密鍵の生成方法は、以下のリンクをご参照く�
 ### 2. 遺伝研スパコンへのSSH公開鍵の登録・変更方法
 
 遺伝研スパコンへのSSH公開鍵の登録方法は、以下のリンクをご参照ください。
+
+SSH公開鍵の反映には、30分ほどかかります。
+
 - [<u>遺伝研スパコンへのSSH公開鍵の登録・変更方法 (Windowsの場合)</u>](/application/ssh_keys_register_win)
 - [<u>遺伝研スパコンへのSSH公開鍵の登録・変更方法 (Macの場合)</u>](/application/ssh_keys_register_mac)
 - [<u>遺伝研スパコンへのSSH公開鍵の登録・変更方法 (Linuxの場合)</u>](/application/ssh_keys_register_linux)
