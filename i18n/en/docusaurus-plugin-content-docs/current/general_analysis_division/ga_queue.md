@@ -47,7 +47,7 @@ Thin nodes Type2b <br />
 </tr>
 
 <tr>
-<td rowspan="5">Compute Nodes</td>
+<td rowspan="6">Compute Nodes</td>
 <td>epyc.q</td>
 <td>
 Thin nodes Type1b<br />
@@ -85,12 +85,15 @@ Thin nodes Type1a <br />
 </tr>
 <tr>
 <td>medium.q</td>
-<td>
+<td rowspan="2">
 Medium nodes <br />
 (Intel Xeon Gold 6148, 80 CPU cores/node, <br />
 38.4GB moemory/CPU core)
 </td>
-<td>ten computers<br/>800 cores</td>
+<td rowspan="2">ten computers<br/>800 cores</td>
+</tr>
+<tr>
+<td>medium-ubuntu.q</td>
 </tr>
 
 </table>

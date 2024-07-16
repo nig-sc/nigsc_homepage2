@@ -312,6 +312,14 @@ sdk install gradle 8.5
 ```
 
 
+### SDKMAN!による JBang のインストール
+
+JBang をインストールするには以下のようにします。
+
+```
+sdk install jbang
+```
+
 
 
 ## 注意事項
