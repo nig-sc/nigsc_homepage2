@@ -4,16 +4,16 @@ title: TogoImputation
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
 
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;<u>Michigan Imputation Server</u>](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;<u>TOPMed Project Imputation Server</u>](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-Therefore, **[&#x1f517;<u>the Department of NBDC Program of the Japan Science and Technology Agency</u>](https://biosciencedbc.jp/en/)** has developed **the TogoImputation** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
+Therefore, **[&#x1f517;<u>the Database Center for Life Science</u>](https://dbcls.rois.ac.jp/index-en.html)** has developed **the TogoImputation** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
-The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
+The imputation workflow used in this server was modified and implemented as a web service with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project.
 
 Project name: **Platform Program for Promotion of Genome Medicine (Research and development research to resolve issues related to international data sharing)**
 
