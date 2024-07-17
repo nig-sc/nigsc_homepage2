@@ -393,7 +393,7 @@ module.exports = {
         },
         {
             type: "category",
-            label: "NBDC-DDBJ Imputation Server (beta)",
+            label: "TogoImputation (beta)",
             items: [
                 "advanced_guides/imputation_server",
                 "advanced_guides/imputation_server_install",

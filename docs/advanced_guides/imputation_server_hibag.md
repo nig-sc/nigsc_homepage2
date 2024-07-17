@@ -1,13 +1,22 @@
 ---
 id: imputation_server_hibag
-title: NBDC-DDBJインピュテーションサーバ (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
+title: TogoImputation (beta) チュートリアル4、HIBAG を用いた HLA Genotype Imputation
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
+
+## Guacamole 環境への接続
+
+この作業は、遺伝研個人ゲノム解析区画 Guacamole 環境から行いますので、VPN 接続を行い Guacamole に接続してください。
+
+次に Guacamole デスクトップ環境の「アクティビティ」からターミナルを起動してください。
+
+以下は上記で開いた Guacamole のデスクトップ中の Firefox や、そのデスクトップ内のターミナルの中で作業を行います。
+
 
 ## システム利用方法
 
@@ -37,8 +46,6 @@ title: NBDC-DDBJインピュテーションサーバ (beta) チュートリア�
 ### 遺伝研スパコン個人ゲノム解析区画へコピーします。
 さきほどダウンロードしたテストデータをコピーします。
 
-遺伝研スパコンへ接続するためのVPNを接続してください。
-
 次に、さきほどダウンロードしたテストデータを次のコマンドでコピーします。(PLINKのファイルはすべて同じ directory 内に配置してください。)
 
 以下の例では、コピーしたいテストデータは、ダウンロードフォルダの中にあり、コピー先は、遺伝研スパコン個人ゲノム解析区画のお使いのアカウントのホームディレクトリになります。
@@ -53,7 +60,7 @@ scp -i 秘密鍵ファイル ~/Downloads/1KG.JPT.bed (お使いのアカウン�
 
 ## HLA Genotype Imputation Workflow 用の設定ファイルの生成
 
-遺伝研スパコンの guacamole 経由で以下のアドレスにアクセスします。
+以下のアドレスにアクセスします。
 
 ```
 http://localhost:5000/hibag
@@ -101,7 +108,7 @@ http://localhost:5000/hibag
 
 ## Imputation Workflowの実行
 
-guacamole 経由で、以下のアドレスにアクセスします。
+以下のアドレスにアクセスします。
 
 ```
 http://localhost:1121
@@ -174,3 +181,5 @@ scpでコピーするときは、お手元の計算機に以下のように入�
 ```
 scp -i 秘密鍵ファイル -r (お使いのアカウント名)@gwa.ddbj.nig.ac.jp:~/sapporo-install/sapporo-service/run/ee/eef64a2e-ca10-4ab0-a762-a965c4149a4a/outputs outputs
 ```
+
+作業を終える場合は、Guacamole を表示しているブラウザタブを閉じてください。
