@@ -4,9 +4,9 @@ title: "Tutorial 3 - PRS calculation with hail"
 ---
 
 <img
-  src={require('./imputationserver.logo_color.png').default}
+  src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{ width: '200px' }}
+  style={{width:'200px'}}
 />
 
 This Tutorial 3 describes how to set up an environment for analysing the results of an imputation server's imputation results in [&#x1f517;<u>hail</u>](https://hail.is)  to analyse the results of an imputation server.
@@ -148,7 +148,7 @@ When you finish your work, please close the browser tab displaying Guacamole.
 
 To open the notebook tutorial in the Guacamole desktop environment, 
 type "DDBJ imputation" in the web search field of Firefox and perform a search.
-Among the search results, there is "NBDC-DDBJ Imputation Server (beta) Tutorial 3 - PRS calculation with hail".
+Among the search results, there is "TogoImputation (beta) Tutorial 3 - PRS calculation with hail".
 There is a link to https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb at the bottom of that webpage.
 
 Once you open https://nbviewer.org/github/ddbj/imputation-server-wf/blob/main/Notebooks/hail-prs-tutorial.ipynb from Firefox in the Guacamole desktop environment, 
