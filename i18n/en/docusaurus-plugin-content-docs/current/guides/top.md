@@ -19,8 +19,9 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [(Ended) Scheduled maintenance from 24 to 30 November ← Updated work description](/blog/2023-11-24-scheduled-maintenance) (2023.12.01)
-    - [FAQ page for OS migration has been created.](/faq/faq_os_migration) ＼&#x1f195;／
+- [Migrated some of the Medium nodes to Ubuntu Linux and established a new Gride Engine queue (medium-ubuntu.q)](/blog/2024-07-08-news_medium-ubuntu-q) (2024.07.08)＼&#x1f195;／
+- [Extended deadline for account renewal application at the end of FY2023](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)＼&#x1f195;／
+- [Important Announcement from the NIG supercomputer: Phase 1 (Apr-Jul) FY2024](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)＼&#x1f195;／
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
 - [Created a new Slurm partition for only GPUs available in the personal genome analysis division](/blog/2023-08-04-news_GPU_slurm)　(2023.08.04)

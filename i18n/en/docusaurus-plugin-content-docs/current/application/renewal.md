@@ -9,8 +9,8 @@ title: "Applying for a renewal of your account of the end of the fiscal year"
     - you will not be able to log in from 1 April.
         - You can still apply to renew your end-of-year account after 1 April. After applying, you will be able to log in again.
         - **The current application system for end-of-year account renewal does not allow you to log into this system when your account is suspended. If you would like to apply for an end-of-year account renewal, [contact us here](/application/reference).**
-    - after 30 June, your home directory will be deleted. 
-        - After 30 June, you can still apply to renew your end-of-year account, but all your data will be deleted. Please note that.
+    - after ~~30 June~~ 31 July, your home directory will be deleted. 
+        - After ~~30 June~~ 31 July, you can still apply to renew your end-of-year account, but all your data will be deleted. Please note that.
 
 
 

@@ -1,8 +1,9 @@
 ---
 id: jupyter_lab
-title: "How to use Jupyter Lab"
+title: "Jupyter Lab"
 ---
 Jupyter Lab was implemented based on Jupyter Notebook. Jupyter Lab provides better usability and supports extensions. You need to install it to use. Follow the instruction below.
+
 ### Jupyter Lab Installation
 You need to install conda before installation. Refer to [How to use Python](/software/python).
 
