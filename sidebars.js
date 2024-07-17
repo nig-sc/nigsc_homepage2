@@ -22,7 +22,7 @@ module.exports = {
       ],
     */
 
-    topSidebar: [  
+    topSidebar: [
         {
             type: "link",
             label: "お知らせ",
@@ -130,7 +130,7 @@ module.exports = {
                                 "personal_genome_division/pg_login_ssl-vpn_configure_file_linux",
                             ],
                         },
-                        {               
+                        {
                             type: "category",
                             label: "SSL-VPNへの接続方法",
                             items: [
@@ -148,7 +148,7 @@ module.exports = {
                 "general_analysis_division/largescale_storage",
                 "personal_genome_division/group_cloud",
             ],
-        },      
+        },
     ],
 
 
@@ -273,6 +273,7 @@ module.exports = {
                 },
                 "software/pgi_compiler/pgi_compiler",
                 "software/cuda",
+                "software/go",
             ]
 
         }
@@ -372,14 +373,14 @@ module.exports = {
             items: [
                 "advanced_guides/Rhelixa_RNAseq",
                 "advanced_guides/Rhelixa_RNAseq_manual",
-            ],  
+            ],
         },
         {
             type: "category",
             label: "Rhelixa Graphing Tool",
             items: [
                 "advanced_guides/Rhelixa_RNAseq_Visualization",
-            ],  
+            ],
         },
         {
             type: "category",
@@ -388,7 +389,7 @@ module.exports = {
                 "advanced_guides/Alphafold_2_1",
                 "advanced_guides/Alphafold_2_2",
                 "advanced_guides/Alphafold_2_3",
-            ],  
+            ],
         },
         {
             type: "category",
@@ -400,14 +401,14 @@ module.exports = {
                 "advanced_guides/imputation_server_tutorial2",
                 "advanced_guides/imputation_server_hail",
                 "advanced_guides/imputation_server_hibag",
-            ],  
+            ],
         },
         {
             type: "category",
             label: "NVIDIA Parabricks",
             items: [
                 "advanced_guides/parabricks/parabricks",
-            ],  
+            ],
         },
 
         {
@@ -444,7 +445,7 @@ module.exports = {
             ]
         },
     ],
-    
+
     reportSidebar: [
         "report/report",
         {
@@ -502,7 +503,7 @@ module.exports = {
         {
             type: 'category',
             label: "FAQ : 利用規定等",
-            items: [        
+            items: [
                 {
                 type: 'category',
                 label: "FAQ : 誓約書に署名する方法",
@@ -571,7 +572,7 @@ module.exports = {
                     items: [
                         "oldDocuments/software/guix/guix",
                         "oldDocuments/software/R",
-                    ],  
+                    ],
                 },
             ],
         },
