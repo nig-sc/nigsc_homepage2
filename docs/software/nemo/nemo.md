@@ -1,6 +1,6 @@
 ---
 id: nemo
-title: "NVIDIA AI Enterprise(NeMo利用環境)"
+title: "NVIDIA NeMo (LLM framework)"
 ---
 
 ## AI Enterprise(NeMo利用環境)について
