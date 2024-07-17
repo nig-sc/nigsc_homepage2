@@ -125,7 +125,7 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <td width="300">
 
-[NBDC-DDBJ Imputation Server](/advanced_guides/imputation_server)
+[TogoImputation](/advanced_guides/imputation_server)
 </td>
 <td width="300">available(※Demo function in preparation)</td>
 <td width="300">Application Required</td>
