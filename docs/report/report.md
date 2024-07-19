@@ -5,7 +5,7 @@ title: "各種統計"
 
 
 
-## ユーザー数
+## ユーザー数 {#number-of-users}
 
 <table>
 <tr>
@@ -117,7 +117,7 @@ title: "各種統計"
 ![](total_Accounts.png)
 
 
-## ユーザーの所属機関数
+## ユーザーの所属機関数 {#number-of-user-institutions}
 
 機関数は、[国内の科研費の申請機関数](https://www-kaken.jsps.go.jp/kaken1/kikanList.do)を表しています。
 
@@ -225,7 +225,7 @@ title: "各種統計"
 ![](totalnumber_institute_map.png)
 
 
-## 発行済み査読付き論文数
+## 発行済み査読付き論文数 {#peer-reviewed-papers}
 
 集計期間：1月1日〜12月31日
 
