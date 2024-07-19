@@ -339,6 +339,7 @@ module.exports = {
             "application/invoice",
             ],
         },
+        "application/handling_of_pii",
         {
             type: "link",
             label: "よくある質問(FAQ)",
@@ -474,9 +475,9 @@ module.exports = {
         },
         {
             type: "category",
-            label: "アカウントの所属機関数",
+            label: "所属機関ごとのアカウント数",
             items: [
-            "report/number_of_account_institutions",
+            "report/accounts_per_institution",
             ]
         },
     ],

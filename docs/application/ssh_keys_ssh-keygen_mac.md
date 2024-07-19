@@ -10,7 +10,7 @@ title: SSH公開鍵・秘密鍵の生成方法 (Macの場合)
 ![](/img/ssh_keys/mac/ssh_mac_1.png)
 
 
-## 「ターミナル」を起動する
+## 「ターミナル」を起動する {#open-terminal}
 
 ![](/img/ssh_keys/mac/ssh_mac_2.png)
 
@@ -71,7 +71,7 @@ ssh -V
 
 ![](/img/ssh_keys/mac/Openssh_none.png)
 
-## SSH公開鍵と秘密鍵を生成する
+## SSH公開鍵と秘密鍵を生成する {#generate-ssh-pub-sec-key}
 
 ![](/img/ssh_keys/mac/ssh_mac_32.png)
 
@@ -136,7 +136,7 @@ ssh-keygen -t rsa -b 3072
 ![](/img/ssh_keys/mac/ssh_mac_20.png)
 
 
-### &#x2666;**作ったSSH公開鍵と秘密鍵の存在を確認する**
+### &#x2666;**作ったSSH公開鍵と秘密鍵の存在を確認する** {#check-ssh-pub-sec-key}
 /Users/your_username/.ssh/というディレクトリの中に、SSH公開鍵と秘密鍵が本当に作られているかどうか確認していきます。
 
 ![](/img/ssh_keys/mac/ssh_mac_21.png)
@@ -174,7 +174,7 @@ ls -l
 ![](/img/ssh_keys/mac/ssh_mac_25.png)
 
 
-### &#x2666;**作ったSSH公開鍵を確認する**
+### &#x2666;**作ったSSH公開鍵の中身を確認する** {#check-pub-key}
 
 以下のコマンドを打ち込んで、「enter」キーまたは「return」キーを押して、作ったSSH公開鍵の中身を確認します。
 

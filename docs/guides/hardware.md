@@ -3,7 +3,7 @@ id: hardware
 title: "ハードウェア"
 ---
 
-## システム全体
+## システム全体 {#overview}
 
 <table>
 <tbody>
@@ -153,9 +153,9 @@ InfiniBand 4×EDR 100Gbps fat tree<br />
 
 
 
-## 計算ノード
+## 計算ノード {#compute-nodes}
 
-### Thin 計算ノード Type 1a (HPE ProLiant DL385 Gen10; 136 台)
+### Thin 計算ノード Type 1a (HPE ProLiant DL385 Gen10; 136 台) {#compute-nodes#thin-type-1a}
 
 CPU として AMD EPYC 7501 プロセッサを搭載した計算ノードです。
 
@@ -175,7 +175,7 @@ HPE ProLiant DL385 Gen10
 
 
  
-### Thin 計算ノード Type 1b (DELL PowerEdge R6525; 28 台)
+### Thin 計算ノード Type 1b (DELL PowerEdge R6525; 28 台) {#compute-nodes#thin-type-1b}
 
 CPU として AMD EPYC 7702 プロセッサを搭載した計算ノードです。
 
@@ -193,7 +193,7 @@ DELL PowerEdge R6525
 | Network  | InfiniBand 4xEDR                                   |    1 | 100Gbps                        |
 
  
-### Thin 計算ノード Type 2a (HPE Apollo 2000 Gen10; 52 台)
+### Thin 計算ノード Type 2a (HPE Apollo 2000 Gen10; 52 台) {#compute-nodes#thin-type-2a}
 
 CPU として Intel Xeon プロセッサを搭載した計算ノードです。
 
@@ -213,7 +213,7 @@ HPE Apollo 2000 Gen10
 
 
  
-### Thin 計算ノード Type 2b (HPE Apollo 6500 Gen10; 16 台)
+### Thin 計算ノード Type 2b (HPE Apollo 6500 Gen10; 16 台) {#compute-nodes#thin-type-2b}
 
 NVIDIA Tesla V100 GPU を各ノードに 4 基搭載した計算ノードです。
 
@@ -233,7 +233,7 @@ HPE Apollo 6500 Gen10
 
 
  
-#### （参考）GPU の仕様
+#### （参考）GPU の仕様 {#compute-nodes#thin-type-2b#reference-gpu-specifications}
 
 |  属性名                         |  値                      |
 |--------------------------------|-------------------------|
@@ -249,7 +249,7 @@ HPE Apollo 6500 Gen10
 | 接続帯域                       | 8 (PCIe2.0 x16)GB/sec   |
 
 
-### Medium 計算ノード (HPE ProLiant DL560 Gen10; 10 台)
+### Medium 計算ノード (HPE ProLiant DL560 Gen10; 10 台) {#compute-nodes#medium}
 
 [<u>MediumノードのUbuntu Linuxへの一部移行とGride Engineキュー(medium-ubuntu.q)新設をしました。詳細は、お知らせをご確認ください。</u>](/blog/2024-07-08-news_medium-ubuntu-q)
 
@@ -271,7 +271,7 @@ HPE ProLiant DL560 Gen10
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                             |
 
  
-### Fat 計算ノード (1 台 : ホスト名 fat1)
+### Fat 計算ノード (1 台 : ホスト名 fat1) {#compute-nodes#fat}
 
 
 [<u>Fat ノードのハードウェア（HPE ProLiant DL560 Gen10 と HPE Superdome Flex）は、Ubuntu Linux をサポートしていないため、2023 年 11 月の定期メンテナンス時に Cent OS 7.9 から Ubuntu Linux 22.04 に移行できず、Cent OS 7.9 のままとなっております。</u>](/blog/2023-11-24-scheduled-maintenance#作業内容)
@@ -292,9 +292,9 @@ FAT 計算ノード１ノード（HPE Superdome Flex 2 筐体）当たりのス�
 | Network  | InfiniBand 4xEDR                                        |    1 | 100Gbps                              |
 
 
-## ストレージ
+## ストレージ {#storage}
 
-### 大容量高速ストレージ
+### 大容量高速ストレージ {#storage#analysis-storage}
 
 
 | アクセスパス | 実効容量 | 用途                           | ピーク性能 | 構成                                             |
@@ -304,7 +304,7 @@ FAT 計算ノード１ノード（HPE Superdome Flex 2 筐体）当たりのス�
 
 
 
-### DB 用ストレージ
+### DB 用ストレージ {#storage#database-storage}
 
 | アクセスパス | 実効容量 | 用途                           | ピーク性能 | 構成                                             |
 |--------------|----------|--------------------------------|------------|--------------------------------------------------|

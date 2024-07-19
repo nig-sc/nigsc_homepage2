@@ -24,19 +24,19 @@ title: 実行開始までの待ち時間
 データは 10 分おきに更新されます。
 
 
-## 参考
+## 参考 {#reference}
 
-### ジョブの定義
+### ジョブの定義 {#job-definition}
 
 [<u>「Grid Engine の概要」のページをご参照ください。</u>](/software/grid_engine)
 
 
-### キューの定義
+### キューの定義 {#queue-definition}
 
 [<u>「Grid Engineキューの種類」のページをご参照ください。</u>](/general_analysis_division/ga_queue)
 
 
-### スロットの定義
+### スロットの定義 #slot-definition
 
 <table>
 <tr>
