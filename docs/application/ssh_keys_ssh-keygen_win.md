@@ -8,7 +8,7 @@ title: SSH公開鍵・秘密鍵の生成方法 (Windowsの場合)
 Windowsに標準搭載されているPowerShellを例に、ご説明します。
 
 
-## PowerShellを起動する
+## PowerShellを起動する {#open-powershell}
 
 ![](/img/ssh_keys/windows/ssh_win_intro_1-1.png)
 
@@ -110,7 +110,7 @@ State : Installed
 もし「State」が "NotPresent" になっている場合は、まだOpenSSHクライアントソフトウェアがインストールされていない状態です。[「参考文献」を参照してインストール](/application/ssh_keys_windows#参考文献)してから、次の「SSH公開鍵と秘密鍵を作る」に進んでください。
 
 
-## SSH公開鍵と秘密鍵を生成する
+## SSH公開鍵と秘密鍵を生成する {#generate-ssh-pub-sec-key}
 
 ![](/img/ssh_keys/windows/ssh_win_intro_1-2.png)
 
@@ -175,7 +175,7 @@ ssh-keygen -t rsa -b 3072
 ![](/img/ssh_keys/windows/ssh_win_23.png)
 
 
-### &#x2666;**作ったSSH公開鍵と秘密鍵の存在を確認する**
+### &#x2666;**作ったSSH公開鍵と秘密鍵の存在を確認する** {#check-pub-sec-key}
 
 C:\Users\your_username/.sshというフォルダの中に、SSH公開鍵と秘密鍵が本当に作られているかどうか確認していきます。
 
@@ -214,7 +214,7 @@ Get-ChildItem
 ![](/img/ssh_keys/windows/ssh_win_28.png)
 
 
-### &#x2666;**作ったSSH公開鍵を確認する**
+### &#x2666;**作ったSSH公開鍵の中身を確認する** {#check-pub-key}
 
 以下のコマンドを打ち込んで、[Enter]キーを押して、作ったSSH公開鍵の中身を確認します。
 

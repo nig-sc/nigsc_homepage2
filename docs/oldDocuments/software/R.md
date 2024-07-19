@@ -10,9 +10,9 @@ title: "R の使い方"
 
 
 
-## インストール方法 (1) tarball からインストールする方法
+## インストール方法 (1) tarball からインストールする方法 {#install-R-from-tarball}
 
-### インストール手順
+### インストール手順 {#installation-procedure}
 
 tarball からの R 処理系のインストールはユーザー権限で可能です。
 各自必要なバージョンを自分のホームディレクトリにインストールできます。
@@ -81,7 +81,7 @@ export LD_LIBRARY_PATH=$HOME/local/lib64/R/lib:$HOME/local/lib64:$LD_LIBRARY_PAT
 R
 ```
 
-### アンインストールの方法
+### アンインストールの方法 {#uninstall-R}
 
 1. パス(`PATH`および`LD_LIBRARY_PATH`環境変数)をもとに戻せば、ローカルインストールした R 処理系の存在 は無視されます。
 2. tarball が展開されたソースコードのディレクトリから`make uninstall`すれば`make install`作業をもとに戻せます。

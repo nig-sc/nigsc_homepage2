@@ -8,7 +8,7 @@ title: "誓約書に署名する方法"
 誓約書には署名欄があり、電子サイン(Adobe Acrobat Sign)をお願いしております。
 
 
-## 参考
+## 参考 {#references}
 
 - 「電子サインの作成方法」アドビ公式ページ
     - &#x1f517;<u>https://www.adobe.com/jp/sign/how-to/create-electronic-signature.html</u>
@@ -19,7 +19,7 @@ title: "誓約書に署名する方法"
     - 詳細は、アドビ公式ページ Adobe Acrobat SignのFAQをご参照ください。&#x1f517;<u>https://helpx.adobe.com/jp/sign/faq.html</u>
 
 
-## 署名の手順
+## 署名の手順 {#steps-to-sign-a-pledge}
 
 以下二つの場合で手順が異なります。ユーザが国内居住者の場合は、誓約書を提出するのは責任者だけですが、ユーザが非国内居住者の場合は、責任者の誓約書に加えてユーザの誓約書も必要になります。詳細は以下のページをご参照ください。
 

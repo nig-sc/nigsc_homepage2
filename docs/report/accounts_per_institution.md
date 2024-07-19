@@ -1,7 +1,9 @@
 ---
-id: number_of_account_institutions
-title: アカウントの所属機関数(2023)
+id: accounts_per_institution
+title: 所属機関ごとのアカウント数(2023)
 ---
+
+大学・国公立研究機関のみに関して集計(企業についてはカウントしない)
 
 <table>
 <tr>

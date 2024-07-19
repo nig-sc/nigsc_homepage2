@@ -4,7 +4,7 @@ title: "関連法規等"
 ---
 
 
-## 外為法関係
+## 外為法関係 {#fefta}
 
 1. [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) 第二十五条
 2. [キャッチオール規制の範囲](https://www.meti.go.jp/policy/anpo/anpo03.html)
@@ -17,7 +17,7 @@ title: "関連法規等"
 5. [安全保障貿易管理Q&A](https://www.meti.go.jp/policy/anpo/qanda.html)
 
 
-## 個人ゲノム関係
+## 個人ゲノム関係 {#the-personal-genome}
 
 
 - [個人情報の保護に関する法律（平成15年５月30日法律第57号、平成28年5月27日公布（平成28年法律第五十一号）、令和5年6月7日改正）](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
@@ -33,7 +33,7 @@ title: "関連法規等"
 -  [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
 
 
-## セキュリティ基準
+## セキュリティ基準 {#security-standards}
 
 
 - [医療情報システムの安全管理に関するガイドライン　第6.0版（令和5年5月）](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
