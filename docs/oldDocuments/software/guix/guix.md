@@ -21,7 +21,7 @@ GNU Guix はユーザ権限で利用できるパッケージマネージャで�
 
 
 
-## Guix を利用するための準備
+## Guix を利用するための準備 {#guix-preparation}
 
 以下を`~/.bashrc`に書きます。
 
@@ -38,7 +38,7 @@ source "$GUIX_PROFILE/etc/profile"
 export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
 ```
 
-## Guix で利用可能なパッケージを表示する
+## Guix で利用可能なパッケージを表示する {#list-in-guix}
 
 `guix search`で、パッケージを検索できます。
 
@@ -80,7 +80,7 @@ synopsis: Complete GCC tool chain for C/C++ development
 - https://guix.gnu.org/en/blog/2018/paper-on-reproducible-bioinformatics-pipelines-with-guix/
 
 
-## パッケージをインストールする
+## パッケージをインストールする {#installing-package}
 
 `guix install`コマンドでパッケージをインストールします。
 

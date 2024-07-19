@@ -4,7 +4,7 @@ title: "ログイン方法(一般解析区画)"
 ---
 
 
-## 概要
+## 概要 {#overview}
 
 遺伝研スパコンの一般解析区画へのログインには ssh 接続を用います。
 
@@ -19,7 +19,7 @@ title: "ログイン方法(一般解析区画)"
 - `gw2.ddbj.nig.ac.jp`
 
 
-## ログインの手順
+## ログインの手順 {#login-nig-supercom}
 
 
 1, ターミナルエミュレータを開き、`ssh アカウント名@ゲートウェイノード名` を入力し、enter を押下します。
@@ -62,7 +62,7 @@ Are you sure you want to continue connecting (yes/no)?
 
 
 
-### 実行例
+### 実行例 {#example}
 
 以下のように表示されれば成功です。
 
@@ -88,7 +88,7 @@ $
 
 
 
-## 利用可能メモリに関する注意
+## 利用可能メモリに関する注意 {#note}
 
 
 ログインノードで利用可能なメモリはデフォルトでは 4GB です。
@@ -98,7 +98,7 @@ $
 qlogin -l s_vmem=10G -l mem_req=10G
 ```
 
-### 参考
+### 参考 {#reference}
 
 - [Java の使い方](/software/java) > 注意事項 Java プログラムを起動するとメモリが足りないとのエラーが出る
 - [Singularity の使い方](/software/Apptainer/) > [スパコン上でのイメージのビルド : Docker コンテナイメージから Singularity イメージを生成する](/software/Apptainer/#スパコン上でのイメージのビルド--docker-コンテナイメージから-apptainer-sigularity-イメージを生成する)
@@ -106,7 +106,7 @@ qlogin -l s_vmem=10G -l mem_req=10G
 
 
 
-## GPU ノードの利用方法
+## GPU ノードの利用方法 {#usage-gpu}
 
 
 GPU を用いたプログラムの開発や動作テストの目的で、GPU を搭載したログインノードを１台用意しています。

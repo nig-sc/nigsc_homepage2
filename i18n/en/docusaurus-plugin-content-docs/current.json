@@ -132,6 +132,10 @@
     "message": "Related to OS migration",
     "description": "The label for link FAQ：OS移行に伴うご質問 in sidebar faqSidebar, linking to /faq/faq_os_migration"
   },
+  "sidebar.reportSidebar.category.所属機関ごとのアカウント数": {
+    "message": "Number of accounts per institution",
+    "description": "The label for category 所属機関ごとのアカウント数 in sidebar reportSidebar"
+  },
   "sidebar.applicationsSidebar.link.よくある質問(FAQ)": {
     "message": "FAQ",
     "description": "The label for link よくある質問(FAQ) in sidebar applicationsSidebar, linking to /faq/faq_software"

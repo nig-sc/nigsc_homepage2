@@ -3,7 +3,7 @@ id: advance_reservation
 title: アドバンスリザベーション
 ---
 
-## 概要
+## 概要 {#overview}
 
 
 アドバンスリザベーションは予めGrid Engineキューのある範囲のリソースを予約しておき、その予約領域を専有して利用できるサービスです。
@@ -32,7 +32,7 @@ title: アドバンスリザベーション
 
 
 
-## アドバンスリザベーションサービス使用手順
+## アドバンスリザベーションサービス使用手順 {#usage-procedure-advanced-reservation}
 
 アドバンスリザベーションサービスを使用する場合は、以下の手順で実施してください。
 
@@ -54,7 +54,7 @@ title: アドバンスリザベーション
 
   
  
-## 計算資源の予約枠の取得方法
+## 計算資源の予約枠の取得方法 {#get-resource}
 
 
 予約枠は、スパコンSEに依頼して確保することも出来ますし、コマンドを使ってユーザー自身で確保することも可能です。
@@ -67,7 +67,7 @@ title: アドバンスリザベーション
 下記の実行例の意味については[Grid Engineのページ](/software/grid_engine)もご参照ください。
 
 
-### 実行例(1)
+### 実行例(1) {#example1}
 
 medium.qを1ノードで、メモリ量4GB、スロット数3、使用期間2020年4月2日13時15分から2020年5月4日10時00分までの
 予約枠を取得する場合
@@ -85,7 +85,7 @@ QRSUB -l medium -l mem_req=4G -l s_vmem=4G -pe def_slot 3 -a 202004021315 -e 202
 - `-e 202005041000`：使用終了時刻2020年5月4日10時00分を指定
  
 
-### 実行例(2)
+### 実行例(2) {#example2}
 
 medium.qを複数ノードに跨るmpiジョブ(並列数は2~5)で、使用期間10月10日00時00分から10月20日7時5分までの予約枠を取得する場合
 この場合に確保される最大メモリ量は、40GB（8GB(デフォルト値)×10スロット）となり、計算資源の予約枠を取得する際はその分の空き容量が必要となります。
@@ -100,7 +100,7 @@ QRSUB -l medium -pe mpi 2-10 -a 10100000 -e 10200705
 
 ＊メモリ量は指定されていないので、デフォルト値が指定されたとみなされます。
  
-### 実行結果
+### 実行結果 {#result}
 
 QRSUBコマンドが正常終了した場合は、以下のメッセージが出力され、ar-id(4桁の予約番号)が発行されます。
 
@@ -113,7 +113,7 @@ Your advance reservation XXXX has been granted
 
 `QRSUB`コマンドが正常終了しなかった場合は、指定オプションを見直し、再度実行してください。
 
-### 予約開始時刻、予約終了時刻の指定方法
+### 予約開始時刻、予約終了時刻の指定方法 {#specify-time}
 
 `QRSUB`コマンドの以下の引数で予約開始時刻、終了時刻を指定します。
 
@@ -132,10 +132,10 @@ Your advance reservation XXXX has been granted
 ＊CC：西暦の上2桁　YY：西暦の下2桁　MM：月　DD：日　hh：時　mm：分　SS：秒
 
  
-## 予約枠取得状況の確認方法
+## 予約枠取得状況の確認方法 {#check-reserved-quota-status}
 
 
-### 予約枠取得状況の一覧表示
+### 予約枠取得状況の一覧表示 {#list-reserved-quota-status}
 
 ```
 qrstat
@@ -158,7 +158,7 @@ ar-id      name       owner        state start at             end at            
 - duration：予約時間
  
  
-### 予約枠取得状況の詳細表示
+### 予約枠取得状況の詳細表示 {#display-details-reserved-quota-status}
 
 ```
 qrstat -ar ar-id[,ar-id,ar-id・・・・]
@@ -239,7 +239,7 @@ granted_parallel_environment   def_slot slots
  
 
  
-## ジョブの実行方法
+## ジョブの実行方法 {#execute-the-job}
 
 `qsub`コマンドに`-ar`オプションで`ar-id`（予約番号）を指定し、ジョブを実行してください。
 
@@ -253,7 +253,7 @@ granted_parallel_environment   def_slot slots
 
 
  
-## 計算資源の予約枠の削除
+## 計算資源の予約枠の削除 {#delete-resource}
 
 計算資源の予約枠の削除するには、`QRDEL`コマンドに`ar-id`(予約番号)を指定して実行してください。
 
