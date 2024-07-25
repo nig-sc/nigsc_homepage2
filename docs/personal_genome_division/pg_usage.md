@@ -4,7 +4,7 @@ title: "使い方（個人ゲノム解析区画）"
 ---
 
 
-## 概要
+## 概要 {#introduction}
 
 現時点では、個人ゲノム解析区画は全て課金によるサービスでありノード貸しとなっています。 ノード上では通常のLinuxシステムとして開発作業や解析作業を行うことが可能です。
 
@@ -16,7 +16,7 @@ title: "使い方（個人ゲノム解析区画）"
 - 具体的な解析方法などについては[<u>活用方法</u>](../advanced_guides/advanced_guide_2023.md)をご参照ください。
 
 
-## セキュリティー上の注意
+## セキュリティー上の注意 {#security-precautions}
 
 Python等で解析を行う際、PyPI等のリポジトリに悪意のコードが含まれている場合があります。
 これによる被害を最小限にするために、[<u>biocontainersが提供するApptainer (Singularity)コンテナ</u>](/software/BioContainers)のように、
@@ -27,6 +27,6 @@ Python等で解析を行う際、PyPI等のリポジトリに悪意のコード�
 - &#x1f517;<u>https://news.mynavi.jp/techplus/article/20230605-2695874/</u>
 - &#x1f517;<u>https://www.reversinglabs.com/blog/when-python-bytecode-bites-back-who-checks-the-contents-of-compiled-python-files</u>
 
-## NVIDIA Parabricksの利用方法
+## NVIDIA Parabricksの利用方法 {#usage-nvidia-parabrics}
 
 [<u>NVIDIA Clara Parabricks の利用方法</u>](/advanced_guides/parabricks/)をご参照ください。

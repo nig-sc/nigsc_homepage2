@@ -20,14 +20,14 @@ Ths Slurm cluster assumes that all GPU nodes (4 GPUs) are used to use Parabricks
 3. If you would like to run Parabrick with rootless docker, fill out this in the "Purpose of use, ets." of your usage plan or let us know by email. (*This is not necessary when using Apptainer (Singularity)).
 
 
-## Usage instructions with Apptainer
+## Usage instructions with Apptainer {#usage-with-apptainer}
 
 In the following procedure, Parabricks v4.0 is executed using the apptainer image file. (For an explanation of Apptainer itself, refer to [the Apptainer (Singularity) page](/software/Apptainer))'.
 
 You can use Parabricks image files prepared by the user or under `/opt/pkg/nvidia/parabricks` deployed on the NIG supercomputer.
 
 
-### Login node for Slurm GPU queue and submit jobs
+### Login node for Slurm GPU queue and submit jobs {#usage-with-apptainer#slurm}
 
 There is a front server at022vm02 that can submit jobs.
 
@@ -113,7 +113,15 @@ Data   Ref   fq2bam_output.bam   fq2bam_output.bam.bai   fq2bam_output_chrs.txt
 * fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… results file
 
 
-### Login to each worker node (GPU node) and start Rootless Docker.
+## Usage instructions with Rootless Docker  {#usage-rootless-docker}
+
+This section describes the procedure for using Rootless Docker to analyse by Parabricks.
+
+1. Log in to each worker node (GPU node) and start Rootless Docker. 
+2. Log in to the Slurm GPU queue node and submit a job.
+
+
+### Login to each worker node (GPU node) and start Rootless Docker. {#usage-rootless-docker#worker}
 
 Rootless Docker is a Docker that the general account that is not root (administrator account) can also start and run. Normal Docker can only be started and run by root.
 
@@ -171,8 +179,7 @@ Log out of the GPU node.
 $ exit
 ```
 
-### Submit a job to the login node for the Slurm GPU queue.
-
+### Submit a job to the login node for the Slurm GPU queue. {#usage-rootless-docker#slurm-gpu}
 A front server at022vm02 is available for submitting jobs.
 
 Prerequisites

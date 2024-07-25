@@ -5,7 +5,7 @@ title: "Data file transfer（The Personal Genome Analysis division）"
 
 
 
-## How to transfer files using SSH protocol (scp, sftp)
+## How to transfer files using SSH protocol (scp, sftp) {#transfer-scp-sftp}
 
 You can transfer files using `scp`, `sftp`, etc. to the gateway server (`gwa.ddbj.nig.ac.jp`) of the personal genome analysis division.
 
@@ -50,6 +50,6 @@ you@gwa.ddbj.nig.ac.jp:/home/you
 
 
 
-## How to transfer files using Archaea tools(formerly HCPtools)
+## How to transfer files using Archaea tools(formerly HCPtools) {#transfer-archaea-tools}
 
 Refer to [How to use Archaea tools(formerly HCPtools)](/software/Archaea_tools).

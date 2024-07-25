@@ -4,7 +4,7 @@ title: How to sign the pledge
 ---
 
 
-## &#x1F180; What should I do if I am unable to electrically sign the pledge because I am using a mailer that can only receive text format?
+## &#x1F180; What should I do if I am unable to electrically sign the pledge because I am using a mailer that can only receive text format? {#unavailable-text-only-mailer}
 
 &#x1F150; "Acrobat Sign signature request emails are sent in HTML format, so you should be set up to be able to receive them.
 

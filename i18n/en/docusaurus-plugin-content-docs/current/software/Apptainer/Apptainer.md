@@ -18,7 +18,7 @@ By using Apptainer (Sigularity), for example, it is possible to run analysis sof
 - [Apptainer (Sigularity) official website](https://apptainer.org/)
 
 
-## Creating images with Singularity - The basic procedures
+## Creating images with Singularity - The basic procedures {#apptainer-basic-procedures}
 
 The Apptainer (Sigularity) container is generally used in the following procedure.
 
@@ -58,7 +58,7 @@ alias sing="singularity exec $HOME/ubuntu18.sif
 # Use it
 ```
 
-## Building images on the supercomputer : Generating Apptainer (Sigularity) images from Docker container images
+## Building images on the supercomputer : Generating Apptainer (Sigularity) images from Docker container images {#build-apptainer-image-from-docker}
 
 You can use a Docker container instead of Apptainer (Sigularity)'s sandbox mode. Using this method, you can build (create) a Apptainer (Sigularity) image on the supercomputer. (The Docker container image file must be registered in the Docker Hub in advance.)
 

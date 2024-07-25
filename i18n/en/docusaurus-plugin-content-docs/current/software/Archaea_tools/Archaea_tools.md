@@ -23,7 +23,7 @@ After the product name change, you can still use the same commands that you have
 
 For more information on the change, [&#x1f517;<u>refer to the Bytix official page 'Product name change etc.'</u>](https://support.bytix.tech/important/)
 
-## Installing the client software
+## Installing the client software {#install-client-software}
 
 For using Archaea tools(formerly HCPtools), all user must install that client software on user's client computer.
 Refer to the following documents depending on the environment of your client computer.
@@ -35,7 +35,7 @@ Refer to the following documents depending on the environment of your client com
 - [&#x1f517;<u>Windows</u>](https://support.bytix.tech/docs/archaea/tools/1.4_en/B_setup_client/B01_Windows)
 
 
-## How to setup the configuration file
+## How to setup the configuration file {#setup-configfile}
 
 To transfer data between the NIG supercomputer, a configuration file for Archaea tools (formerly HCPtools) must be setup in your home directory. So download the configuration file for the NIG supercomputer from github with the `git clone` command.
 
@@ -98,10 +98,10 @@ PrivateKeyFile C:\Users\youraccount\.ssh/id_rsa    # Specify the private key
 ```
 
 
-## The file transfer with Archaea tools(formerly HCPtools)
+## The file transfer with Archaea tools(formerly HCPtools){#filetransfer-archaeatools}
 
 
-### SSL-VPN connection to the personal genome analysis division
+### SSL-VPN connection to the personal genome analysis division {#filetransfer-archaeatools#sshvpn-pg}
 
 For file transfer to and from the personal genome analysis division, establish the SSL-VPN connection between the client computer and the personal genome compartment of the NIG supercomputer.
 
@@ -109,7 +109,8 @@ How to establish it: [<u>「How to Login (the personal genome analysis division)
 
 ![](upload_download_EN.png)
 
-### Upload files to the NIG supercomputer
+### Upload files to the NIG supercomputer {#filetransfer-archaeatools#upload}
+
 
 Start a terminal emulator on the user's client computer and execute the following command.
 
@@ -135,7 +136,7 @@ hcp --user username --hpfp \
     gwa.ddbj.nig.ac.jp:/home/your_account-pg/some_directory/your_file.txt
 ```
 
-### Download files from the NIG supercomputer
+### Download files from the NIG supercomputer {#filetransfer-archaeatools#download}
 
 Start a terminal emulator on the user's client computer and execute the following command.。
 
@@ -160,7 +161,7 @@ hcp --user username --hpfp  \
     C:\Users\username\your_file.txt
 ```
 
-### NOTE.
+### NOTE. {#filetransfer-archaeatools#note}
 
 For the first time when you transfer data, the following message will be displayed. Enter yes.
 
@@ -169,7 +170,7 @@ Are you sure you want to continue connecting [yes/no] ?
 ```
 
 
-## Frequently used options for file transfer
+## Frequently used options for file transfer {#filetransfer-archaeatools#options}
 
 For more information of options, refer to [&#x1f517;<u>the official manual</u>](https://support.bytix.tech/document/).
 
@@ -184,7 +185,7 @@ For more information of options, refer to [&#x1f517;<u>the official manual</u>](
 - `-z` : compress blocks of data transfered
 
 
-## Other Commands
+## Other Commands {#filetransfer-archaeatools#other-commands}
 
 
 | command  | feature                                          |

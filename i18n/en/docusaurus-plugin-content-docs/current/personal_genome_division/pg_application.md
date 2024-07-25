@@ -3,14 +3,14 @@ id: pg_application
 title: "Preparation for use（The Personal Genome Analysis division）"
 ---
 
-## Preparation of user's computer
+## Preparation of user's computer {#prepare-users-computer}
 
 The personal genome analysis division of NIG supercomputer can be used in the same way as the general analysis division, which with a computer running a SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
 
 - Mac and Linux computers can be accessed using a standard terminal emulator.
 - Windows computers can be accessed using PowerShell SSH client or Windows Subsystem for Linux version 2 (WSL2), etc.
 
-## Steps from account application to start of use
+## Steps from account application to start of use {#starting-to-use}
 
 The account name of the personal genome analysis division is the account name of the general analysis division with `-pg` added to the end.
 If you only use the personal genome analysis division, you will be given an account in the general analysis division.
@@ -37,7 +37,7 @@ The personal genome analysis division is [a billing service](../application/reso
     - [Contact us](/application/reference/) for Submission.
 
 
-### Additional notes on preferences
+### Additional notes on preferences{#starting-to-use#add-note-pref}
 
 When using the personal genome analysis division, indicate your preference regarding the following.
 
@@ -49,7 +49,7 @@ When using the personal genome analysis division, indicate your preference regar
 - If you would like to use NVIDIA Parabricks, contact us.
 
 
-## Application for use by a group
+## Application for use by a group {#application-group}
 
 If you would like to register many users, such as for using in a workshop or consortium, follow the steps below.
 

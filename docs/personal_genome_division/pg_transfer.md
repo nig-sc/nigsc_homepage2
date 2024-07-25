@@ -4,7 +4,7 @@ title: "データ転送（個人ゲノム解析区画）"
 ---
 
 
-## SSH プロトコルによるファイル転送の方法 (scp, sftp)
+## SSH プロトコルによるファイル転送の方法 (scp, sftp) {#transfer-scp-sftp}
 
 個人ゲノム解析区画のゲートウェイサーバ(`gwa.ddbj.nig.ac.jp`)に対して `scp`, `sftp` 等を用いたファイル転送が可能です。
 
@@ -47,6 +47,6 @@ you@gwa.ddbj.nig.ac.jp:/home/you
 ```
 
 
-## Archaea tools(旧 HCPtools) によるファイル転送の方法
+## Archaea tools(旧 HCPtools) によるファイル転送の方法 {#transfer-archaea-tools}
 
 転送方法は、[Archaea tools(旧 HCPtools) の使い方](/software/Archaea_tools)をご参照下さい。

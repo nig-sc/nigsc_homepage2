@@ -4,7 +4,7 @@ title: "SSH public key Registration Procedure(mac)"
 ---
 
 
-## &#x1F180; When I typed `ssh -V` and executed it, and the output is `-bash: ssh: command not found`.
+## &#x1F180; When I typed `ssh -V` and executed it, and the output is `-bash: ssh: command not found`. {#ssh-command-not-found}
 
 &#x1F150; OpenSSH client is not installed, so first execute the following command to install it.
 

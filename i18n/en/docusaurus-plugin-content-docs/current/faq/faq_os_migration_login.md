@@ -33,7 +33,7 @@ module load singularity
 ```
 
 
-## &#x1F180; After the scheduled maintenance in FY2023, files and directories are not colour coded after `ls`.
+## &#x1F180; After the scheduled maintenance in FY2023, files and directories are not colour coded after `ls`. {#ls-coloring}
 
 &#x1F150; If you would like to colour-code files and directories after `ls`, add the following description to the shell configuration file `.bashrc`.
 

@@ -3,7 +3,7 @@ id: faq_login_personal
 title: How to Login
 ---
 
-## &#x1F180; Public key authentication failed.
+## &#x1F180; Public key authentication failed. {#error-pubkey-auth}
 
 &#x1F150; Public key authentication fails if write permission is granted to group, other in the home directory.
 Also if any permission other than owner is granted to `~/.ssh` and `~/.ssh/authorised_keys`, public key authentication fails.
@@ -20,7 +20,7 @@ chmod 600 ~/.ssh/id_rsa.pub
 ```
 
 
-## &#x1F180; What to do if you cannot log in to the NIG supercomputer via SSH
+## &#x1F180; What should I do when I cannot log in to the NIG supercomputer via SSH? {#error-ssh-login}
 
 &#x1F150; When you try to log in to the NIG supercomputer, the following message may appear and you may not be able to log in.
 
@@ -58,7 +58,7 @@ This confirmation message is displayed the first time when connecting from a use
 It will be asked only once the first time and will not be displayed again the next time.
 
 
-## &#x1F180; SSH connections frequently disconnected.
+## &#x1F180; SSH connections frequently disconnected. {#disconnect-ssh}
 
 
 &#x1F150; Add the following to `~/.ssh/config`.
@@ -91,7 +91,7 @@ Click on the URL below to access the official ForiClient website page, then down
 
 
 
-## &#x1F180; VPN connection to the personal genome analysis division cannot be established.
+## &#x1F180; VPN connection to the personal genome analysis division cannot be established. {#error-vpn-connection}
 
 &#x1F150; If you got the error `Credential or ssl vpn configuration is wrong (-7200)` when accessing the personal genome analysis division with FortiClient on Windows 10 or 11,
 
@@ -113,7 +113,7 @@ Register the SSL-VPN address here.
 
 
 
-## &#x1F180; When entering your username and password for FortiClient for an SSL-VPN connection to the personal genome analysis division, the one-time password is not sent to the email address associated with your VPN account.
+## &#x1F180; When entering your username and password for FortiClient for an SSL-VPN connection to the personal genome analysis division, the one-time password is not sent to the email address associated with your VPN account. {#no-onetime-pw-received}
 
 &#x1F150; 
 - Google has tightened the security since 1 March 2022, therefore there have been incidents that the email with one-time password from the NIG supercomputer VPN is not sent to gmail.
@@ -121,7 +121,7 @@ Register the SSL-VPN address here.
 
 
 
-## &#x1F180; I can login from Windows PowerShell, but not from Ubuntu Linux on WSL2 (Windows Subsystem for Linux)?
+## &#x1F180; I can login from Windows PowerShell, but not from Ubuntu Linux on WSL2 (Windows Subsystem for Linux)?  {#wls2-login}
 
 
 &#x1F150; Yes, you can login.

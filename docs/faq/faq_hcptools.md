@@ -4,7 +4,7 @@ title: Archaea tools(旧HCPtools)
 ---
 
 
-## &#x1F180; ファイル転送のとき、転送元と転送先は、必ず絶対パスで指定しなければいけないのでしょうか。
+## &#x1F180; ファイル転送のとき、転送元と転送先は、必ず絶対パスで指定しなければいけないのでしょうか。{#available-relative-path}
 
 &#x1F150; ユーザの計算機のパスには、絶対パスでも相対パスでも、指定することができます。
 
@@ -64,7 +64,7 @@ hcp --user youraccountname gwa.ddbj.nig.ac.jp:/home/youraccountname/HCP_upload/u
 hcp --user youraccountname gwa.ddbj.nig.ac.jp:/home/youraccountname/HCP_upload/upload_ex1.txt .\HCP_upload\upload_ex1.txt
 ```
 
-## &#x1F180; ディレクトリを指定してファイル転送をしたいのですが、可能でしょうか。
+## &#x1F180; ディレクトリを指定してファイル転送をしたいのですが、可能でしょうか。{#transfer-specifed-directory}
 
 &#x1F150; はい、可能です。下記はディレクトリを指定した場合のアップロードの実行例です。
 
@@ -85,7 +85,7 @@ hcp --user youraccountname C:\Users\youraccountname\upload_ex1.txt gwa.ddbj.nig.
 hcp --user youraccountname C:\Users\youraccountname\HCPtools_upload_test\upload_ex1.txt gwa.ddbj.nig.ac.jp:/home/youraccountname/HCPtools_upload/upload_ex1.txt
 ```
 
-## &#x1F180; アップロード先またはダウンロード先を指定する時、ファイル名の指定は不要なのではないでしょうか。
+## &#x1F180; アップロード先またはダウンロード先を指定する時、ファイル名の指定は不要なのではないでしょうか。 {#transfer-specifed-filename}
 
 &#x1F150; 必要です。ファイル名を指定しない場合、下記のようなエラーメッセージが出力され、ファイル転送できません。
 
@@ -96,7 +96,7 @@ hcp --user youraccountname C:\Users\youraccountname\HCPtools_upload_test\upload_
 2022/03/11 14:28:54 00006070:INFO :File is not found.hcp::node:HcpnException @ hcp::node::HcpnEndPointTransfer:L454 :  > hcp::proto::HcppException @ hcp::proto::HcppSession:L1209 :
 ```
 
-## &#x1F180; Windows 11では利用できないのでしょうか。
+## &#x1F180; Windows 11では利用できないのでしょうか。{#available-windows11}
 
 &#x1F150; [<u>コマンド概要説明 p.12</u>](/pdf/HCPtools_overview_ja.pdf)には、Windows 10しか対応していないと書いてありますが、Windows 11でも、ご利用になれます。
 

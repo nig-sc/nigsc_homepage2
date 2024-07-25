@@ -31,7 +31,7 @@ Enter your account name and password. Click 'Sign In'<br/>
 <tr>
 <td width="400" valign="top">
 
-![](Keycload.png)
+![](Keycloak.png)
 
 </td>
 <td width="400" valign="top">
