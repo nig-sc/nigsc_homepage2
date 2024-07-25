@@ -4,7 +4,7 @@ title: 個人ゲノム解析区画 Slurm GPU ノード専用キューの利用�
 ---
 
 
-## 概要
+## 概要 {#overview}
 
 遺伝研スパコン個人ゲノム解析区画では Slurm リソーススケジューラ配下で管理した GPU ノードに対してジョブを投入することができます。
 
@@ -13,7 +13,7 @@ title: 個人ゲノム解析区画 Slurm GPU ノード専用キューの利用�
 
 ![](pg_gpu_slurm.png)
 
-## 利用の準備
+## 利用の準備 {#prepare-for-use}
 
 1. 課金サービスになりますので利用計画表を提出してください。
 2. GPU 用 Slurm 計算ノードにユーザホームの作成(シンボリック)を行いますので、利用されるおおよその期間を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。
@@ -21,13 +21,14 @@ title: 個人ゲノム解析区画 Slurm GPU ノード専用キューの利用�
 　subuid, subgid の割り当てを実施する必要がありますので、その旨を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。（※Apptainer(Singularity) にて利用される場合は設定不要です。）
 
 
-## Apptainer による利用手順
+## Apptainer による利用手順 {#usage-with-apptainer}
 
 以下の手順では Parabricks v4.0 を apptainer のイメージファイルを使用して実行します。(Apptainer 自体の説明は[Apptainer(Singularity) の使い方](/software/Apptainer)のページをご参照ください。)
 
 Parabricks イメージファイルはユーザが用意したものか、遺伝研スパコンに配置した`/opt/pkg/nvidia/parabricks`以下のものが利用可能です。
 
-### Slurm GPU キュー用ログインノードし、ジョブを投入する。
+### Slurm GPU キュー用ログインノードし、ジョブを投入する。{#usage-with-apptainer#slurm}
+
 ジョブを投入可能なフロントサーバー at022vm02 を用意しています。
 
 前提条件
@@ -107,14 +108,14 @@ Data   Ref   fq2bam_output.bam   fq2bam_output.bam.bai   fq2bam_output_chrs.txt
 * fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
 
 
-## Rootless Docker による利用手順
+## Rootless Docker による利用手順 {#usage-rootless-docker}
 
 Parabricks による解析を Rootless Docker を用いて実行するための利用手順を記します。
 
 1. 各 Worker ノード(GPU ノード)にログインし、Rootless Docker を起動する。
 2. Slurm GPU キュー用ログインノードし、ジョブを投入する。
 
-### 各 Worker ノード(GPU ノード)にログインし、Rootless Docker を起動する。
+### 各 Worker ノード(GPU ノード)にログインし、Rootless Docker を起動する。 {#usage-rootless-docker#worker}
 
 Rootless Docker は root（管理者アカウント）ではない一般アカウントでも起動・実行できる Docker のことです。通常の Docker は root のみ起動・実行が可能です。
 Parabricks のコンテナを実行するために本手順を実施します。
@@ -168,7 +169,7 @@ GPU ノードからログアウトします。
 $ exit
 ```
 
-### Slurm GPU キュー用ログインノードし、ジョブを投入する。
+### Slurm GPU キュー用ログインノードし、ジョブを投入する。{#usage-rootless-docker#slurm-gpu}
 ジョブを投入可能なフロントサーバー at022vm02 を用意しています。
 
 前提条件

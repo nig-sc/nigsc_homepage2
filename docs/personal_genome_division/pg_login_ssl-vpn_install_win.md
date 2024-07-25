@@ -4,17 +4,17 @@ title: "SSL-VPNクライアントソフトウェアのインストール(Windows
 ---
 
 
-## SSL-VPN クライアントソフトウェア「FortiClient」のダウンロード方法
+## SSL-VPN クライアントソフトウェア「FortiClient」のダウンロード方法 {#download-forticlient}
 
 1. 以下のURLをクリックして、ForiClientの公式サイトのページにアクセスします。いくつかソフトウェアが表示されますが、そのうちの「FortiClient VPN only」をダウンロードしてください。
 	- FortiClient公式サイト: [https://www.fortinet.com/support/product-downloads](https://www.fortinet.com/support/product-downloads)
 
-![figure](VPN_MAC_install_1_701_1.png)
+![](forticlientonly.png)
 
 より詳しくダウンロード方法を知りたい場合は、[FAQ](/faq/faq_login_personal#how-to-DL-VPN)をご参照ください。
 
 
-## SSL-VPN クライアントソフトウェア「FortiClient」のインストール方法
+## SSL-VPN クライアントソフトウェア「FortiClient」のインストール方法 {#install-forticlient}
 
 1. ダウンロードフォルダに保存されたインストールプログラムを実行します。
 「ユーザーアカウント制御」が表示された場合は［はい］を選択して許可します。

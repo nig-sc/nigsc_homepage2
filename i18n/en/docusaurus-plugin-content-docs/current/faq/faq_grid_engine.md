@@ -4,7 +4,7 @@ title: "Grid Engine"
 ---
 
 
-## &#x1F180; Is there anything I should be careful about when the job is re-run, e.g. due to a failure of the compute node?
+## &#x1F180; Is there anything I should be careful about when the job is re-run, e.g. due to a failure of the compute node? {#job-rerun-precautions}
 
 &#x1F150; When the job is re-run, then.
 

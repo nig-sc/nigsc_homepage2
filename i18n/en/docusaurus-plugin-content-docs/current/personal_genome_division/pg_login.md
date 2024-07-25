@@ -14,13 +14,13 @@ But it is possible to use only HTTPS on the Internet from the personal genome an
 ![figure](sslvpn.png)
 
 
-## How to log in to the Personal Genome Analysis Division
+## How to log in to the Personal Genome Analysis Division {#login-to-pg}
 
 The outline of the connection procedure is shown in the figure below.
 
 ![figure](howto.png)
 
-### STEP 1. Installing FortiClient VPN Client software
+### STEP 1. Installing FortiClient VPN Client software {#login-to-pg#install-sslvpn}
 
 
 Download and install FortiClient on the official website of "[&#x1f517;<u>FortiClient</u>](https://www.fortinet.com/support/product-downloads)".
@@ -49,7 +49,7 @@ For more information on how to download and install it, see the links below.
 - [<u>Installing FortiClient VPN Client software (Linux)</u>](/personal_genome_division/pg_login_ssl-vpn_install_linux)
 
 
-### STEP 2. Configure the SSL-VPN client
+### STEP 2. Configure the SSL-VPN client {#login-to-pg#conf-sslvpn}
 
 
 Set up the SSL-VPN client.
@@ -60,7 +60,7 @@ To set up, see the link below.
 - [Configure the SSL-VPN client (Linux)](/personal_genome_division/pg_login_ssl-vpn_configure_file_linux)
 
 
-### STEP 3. Connecting to the VPN 
+### STEP 3. Connecting to the VPN  {#login-to-pg#connect-sslvpn}
 
 You should connect to the SSL-VPN before logging in to the prsonal genome analysis division.
 
@@ -71,7 +71,7 @@ For more information on how to connect, see the following link.
 
 If you have trouble connecting, refer to [<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear).
 
-### STEP 4. SSH log in to the gateway
+### STEP 4. SSH log in to the gateway {#login-to-pg#ssh-login-gateway}
 
 After connecting to the SSL-VPN, launch a terminal emulator and execute the following command to log in to the gateway of the personal genome analysis division.
 
@@ -90,7 +90,7 @@ ssh [username]@gwa2.ddbj.nig.ac.jp
 For questions on how to login, Refer to [<u>FAQ</u>](/faq/faq_login_personal).
 
 
-## Logging in to the analysis server using SSH
+## Logging in to the analysis server using SSH {#ssh-login-analysis-server}
 
 The personal genome analysis division is a node rental, so the user logs in to the borrowed node by SSH from the gateway.
 The name of the relevant node will be provided at the start of use.

@@ -31,7 +31,7 @@ title: "アカウント情報の変更"
 <tr>
 <td width="400" valign="top">
 
-![](Keycload.png)
+![](Keycloak.png)
 
 </td>
 <td width="400" valign="top">

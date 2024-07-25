@@ -15,7 +15,7 @@ For more useful options, see the output of `ascp --help`, etc..
 
 
 
-## Installing Aspera Connect transfer client software
+## Installing Aspera Connect transfer client software {#install-client-software}
 
 For using your Aspera, all user must install the Aspera Connect transfer client software on user's client computer.
 
@@ -24,9 +24,9 @@ how to install Aspera Connect transfer client software：See [Installing Aspera]
 - You need to install Aspera Connect transfer client software version 4 or later. To install version 4 or later, you must install the Aspera connect web browser plug-in. 
 - Note: You can't download the version 4 `ascp` command unless you install version 4 or later.
 
-## The file transfer with Aspera Connect transfer client
+## The file transfer with Aspera Connect transfer client {#file-transfer}
 
-### Upload files to the NIG supercomputer
+### Upload files to the NIG supercomputer {#file-transfer#upload}
 
 Start a terminal emulator on the user's client computer and execute the following command.
 
@@ -48,7 +48,7 @@ Ascp Optins and meaning of each option in the above example
 
 
 
-### Download files from the NIG supercomputer
+### Download files from the NIG supercomputer {#file-transfer#download}
 
 Start a terminal emulator on the user's client computer and execute the following command.
 

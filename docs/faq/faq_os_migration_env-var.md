@@ -4,7 +4,7 @@ title: 解析環境の再インストールに関するご質問
 ---
 
 
-## &#x1F180; OS移行に伴って解析環境を再インストールしたいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合)
+## &#x1F180; OS移行に伴って解析環境を再インストールしたいのですが、どのようにしたらよいでしょうか。(Ubuntu Linux 22.04 の場合) {#reinstall-env-linux22.04}
 
 &#x1F150; これは解析環境をどのように構築されたかに依存するので、一概には言えませんが、一般論としてCent OS 7上で、ご自分でC言語のコードをコンパイルされた部分については、すべて再コンパイルが必要です。
 
@@ -22,7 +22,8 @@ Ubuntu Linux 22.04 にした際、インストールしてあるライブラリ�
 
 
 
-## &#x1F180; tarball からコンパイルし直しましたが、make の時に、以下のエラーが出ます。
+## &#x1F180; tarball からコンパイルし直しましたが、make の時に、以下のエラーが出ます。{#error-tarball-make}
+
 ```
 collect2: error: ld returned 1 exit status
 ```
@@ -39,7 +40,9 @@ CentOS 7 の環境でコンパイルされたライブラリは、Ubuntu の環�
 conda などを利用している場合、環境変数がそこで書き換えられているので、これにより影響を受けている場合があります。conda 環境を抜けてコンパイルからやり直し、エラーが出なくなるかどうかご確認ください。
 
 
-## &#x1F180; 何かプログラムを実行しようとすると、以下のようなライブラリに関するエラーが出ます。OS 移行前は問題なく実行できていました。
+## &#x1F180; 何かプログラムを実行しようとすると、以下のようなライブラリに関するエラーが出ます。OS 移行前は問題なく実行できていました。 {#error-while-loading-shared-libraries}
+
+
 ```
 error while loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
 ```
@@ -56,7 +59,11 @@ CentOS 7 のときに tarball からインストールしていた場合、こ�
 conda などを利用している場合、環境変数がそこで書き換えられているので、これにより影響を受けている場合があります。conda 環境を抜けてコンパイルからやり直し、エラーが出なくなるかどうかご確認ください。
 
 
-## &#x1F180; R を使用したいのですが、以下のようなエラーが出ます。error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory
+## &#x1F180; R を使用したいのですが、以下のようなエラーが出ます。{#r-error-while-loading-shared-libraries}
+
+```
+error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory
+```
 
 &#x1F150; 今回、CentOS 7 が 2024 年 6 月 30 日に End-Of-Life を迎えることを受け、定期メンテナンスで CentOS
 7.9 から Ubuntu Linux 22.04LTS
@@ -73,7 +80,7 @@ error while loading shared libraries: libgfortran.so.3: cannot open shared objec
 
 対処方法は 2 つあります。
 
-### i) Ubuntu Linux 22.04 に付属する R を利用する
+### i) Ubuntu Linux 22.04 に付属する R を利用する {#r-error-while-loading-shared-libraries#linux}
 
 Ubuntu Linux 22.04 にした際、インストールしてあるライブラリやツールについて大幅に拡充しました。Rについても Ubuntu
 Linus の apt install でインストールできるバージョンが最初からシステムにインストールされています。apt
@@ -88,7 +95,7 @@ Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 ```
 
-### ii) R を再インストールする
+### ii) R を再インストールする {#r-error-while-loading-shared-libraries#tarball}
 
 Ubuntu Linux 22.04 への移行の結果 R の tarball からのインストールも簡略化されました。
 
@@ -116,7 +123,8 @@ make install
 conda などを利用している場合、環境変数がそこで書き換えられているので、これにより影響を受けている場合があります。conda 環境を抜けてコンパイルからやり直し、エラーが出なくなるかどうかご確認ください。
 
 
-## &#x1F180; 以前のように OpenMPI を用いて解析しようとすると、以下のようなエラーが出ます。
+## &#x1F180; 以前のように OpenMPI を用いて解析しようとすると、以下のようなエラーが出ます。 {#openmpi-error-unable-to-locate-a-modulefile}
+
 ```
 ERROR: Unable to locate a modulefile for 'openmpi/mlnx/gcc/64'
 /var/spool/age/at***/job_scripts/<job id>: line 16: mpirun: command not found
@@ -154,7 +162,7 @@ mpirun -np 32 ....
 ```
 
 
-## &#x1F180; intel コンパイラを使おうとすると、`ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`というエラーが出ます。
+## &#x1F180; intel コンパイラを使おうとすると、`ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`というエラーが出ます。 {#intel-compiler-error-unable-to-locate-a-modulefile}
 
 &#x1F150; Environmental Modulesは、遺伝研スパコンのCentOS 7 の環境のみで有効です。Ubuntu Linuxの環境では使用できません。
 
@@ -170,7 +178,7 @@ source /opt/pkg/intel/oneapi/setvars.sh
 ```
 
 
-## &#x1F180; DRMAAを使用したいのですが、定期メンテナンスにより、これまで使用していた `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` から変更になったようです。ライブラリのパスを教えてください。
+## &#x1F180; DRMAAを使用したいのですが、定期メンテナンスにより、これまで使用していた `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` から変更になったようです。ライブラリのパスを教えてください。 {#drmaa-changed-path}
 
 &#x1F150;  DRMAAのライブラリは、[AGEのソフトウェアバージョンアップ (8.6.19/8.6.4 → 8.8.1)](/blog/2023-11-24-scheduled-maintenance#%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%86%85%E5%AE%B9)に伴い、以下のパスに変更されました。
 以下のパスに配置されたライブラリを使用してください。

@@ -6,9 +6,9 @@ title: "SSL-VPNクライアントソフトウェアのインストール(Linux�
 LinuxやWindows Subsystem for Linux 2(WSL2)の場合は、CUIのopenfortivpnを使います。
 
 
-## SSL-VPNクライアントソフト「openfortivpn」のインストール方法
+## SSL-VPNクライアントソフト「openfortivpn」のインストール方法 {#install-openfortivpn}
 
-### centOSにインストールする場合の実行例
+### centOSにインストールする場合の実行例 {#install-openfortivpn#centos}
 
 1. 下記URLの 「RPMs」 -> 「x86_64」 のリンクから、openfortivpnをユーザの計算機上 (下図の「クライアントマシン」) にインストールします。　[https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936](https://koji.fedoraproject.org/koji/buildinfo?buildID=1821936)(2021.12.10時点 最新版)
 
@@ -30,7 +30,7 @@ $ sudo openfortivpn --version
 1.17.0
 ```
 
-### Ubuntuにインストールする場合の実行例
+### Ubuntuにインストールする場合の実行例 {#install-openfortivpn#ubuntu}
 
 1. 以下のコマンドを実行してopenfortivpnをインストールします。
 
