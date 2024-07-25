@@ -33,7 +33,7 @@ $ hcp --version
 hcp client (hcp) 1.3.0R_45 / Linux (HpFP2 2.0.0.91_16 WSAPI 0.0.1.23)
 ```
 
-## Location the configuration file
+## Location the configuration file {#locat-configfile}
 
 Copy configuration files for HCP tools in the user home directory.
 
@@ -41,7 +41,7 @@ Copy configuration files for HCP tools in the user home directory.
 $ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
 ```
 
-## Editing the configuration file
+## Editing the configuration file {#edit-configfile}
 
 Locate the HCP tools configuration file in the user directory and add the public key settings for user authentication.
 

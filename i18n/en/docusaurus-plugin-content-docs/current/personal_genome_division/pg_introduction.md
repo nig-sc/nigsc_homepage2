@@ -3,7 +3,7 @@ id: pg_introduction
 title: "Introduction（The Personal Genome Analysis division）"
 ---
 
-## About the Personal Genome Analysis division
+## About the Personal Genome Analysis division {#about-pg-analysis-division}
 
 The NIG supercomputer delivers the personal genome analysis division that is independent of other systems and has an a high level of security for handling personal genomes.
 
@@ -17,7 +17,7 @@ The Personal Genome Analysis of the NIG supercomputer is [a server that complies
 Also, please read [Related laws and regulations, etc.](/application/legislation).
 
 
-# Introduction of how to use the personal genome analysis division
+# Introduction of how to use the personal genome analysis division {#usage-pg}
 
 At present, all personal genome analysis divisions are billing services and nodes are rented.
 

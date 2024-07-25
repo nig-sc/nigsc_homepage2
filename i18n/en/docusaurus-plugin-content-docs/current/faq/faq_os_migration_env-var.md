@@ -4,7 +4,7 @@ title: "Questions related to reinstallation of analysis environments"
 ---
 
 
-## &#x1F180; I want to reinstall my analysis environment along with the OS migration. (Ubuntu Linux 22.04)
+## &#x1F180; I want to reinstall my analysis environment along with the OS migration. (Ubuntu Linux 22.04) {#reinstall-env-linux22.04}
 
 &#x1F150; It depends on how you have built your analysis environment, so it is difficult to say, but in general, on Cent OS 7, any parts of C code that you have compiled yourself will need to be recompiled.
 
@@ -18,7 +18,8 @@ Referring to [<u>FAQ</u>](/faq/faq_software/#ubuntu-initialization), the procedu
 The libraries and tools installed on Ubuntu Linux 22.04 are greatly expanded, and installation from the tarball has been simplified.
 
 
-## &#x1F180; I have recompiled by tarball, but when make runs, I get the follow error.
+## &#x1F180; I have recompiled by tarball, but when make runs, I get the follow error. {#error-tarball-make}
+
 ```
 collect2: error: ld returned 1 exit status
 ```
@@ -34,7 +35,9 @@ To learn how to restore the initial state, [<u>refer to the FAQ 'Software Genera
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
 
-## &#x1F180; When I try to run some programme, I get the following error about libraries. It was running without problems before the OS has been changed.
+## &#x1F180; When I try to run some programme, I get the following error about libraries. It was running without problems before the OS has been changed. {#error-while-loading-shared-libraries}
+
+
 ```
 error while loading shared libraries: libcrypto.so.10: cannot open shared object file: No such file or directory
 ```
@@ -50,7 +53,7 @@ To learn how to restore the initial state, [<u>refer to the FAQ 'Software Genera
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
 
-## &#x1F180; I want to use R, but I get the following error: error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory
+## &#x1F180; I want to use R, but I get the following error: error while loading shared libraries: libgfortran.so.3: cannot open shared object file: No such file or directory. {#r-error-while-loading-shared-libraries}
 
 &#x1F150; Since CentOS 7 will reach its End-Of-Life on June 30, 2024, The OS of the NIG supercomputer has been migrated from CentOS 7 to Ubuntu Linux 22.04LTS in the scheduled maintenance.
 
@@ -66,7 +69,7 @@ This type of error is occurring due to the difference in library versions betwee
 
 There are two ways to deal with this issue.
 
-### i) Using R that comes with Ubuntu Linux 22.04
+### i) Using R that comes with Ubuntu Linux 22.04 {#r-error-while-loading-shared-libraries#linux}
 
 When we migrated to Ubuntu Linux 22.04, we significantly expanded the installed libraries and tools. The version of R that can be installed by `apt install` of Ubuntu Linux is installed on the system from the beginning. The various packages of R that can be installed by `apt install` are also already installed.
 
@@ -79,7 +82,7 @@ Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 ```
 
-### ii) Reinstalling R from a tarball
+### ii) Reinstalling R from a tarball {#r-error-while-loading-shared-libraries#tarball}
 
 As a result of migrating to Ubuntu Linux 22.04, the installation of R from tarballs has also been simplified.
 
@@ -107,7 +110,8 @@ To learn how to restore the initial state, [<u>refer to the FAQ 'Software Genera
 If you are using e.g. conda, your environment variables are rewritten there and may be affected by this - try leaving the conda environment and starting to compile again and see if the error does not occur again.
 
 
-## &#x1F180; When I try to analyse the data using OpenMPI as before, I get the following error.
+## &#x1F180; When I try to analyse the data using OpenMPI as before, I get the following error. {#openmpi-error-unable-to-locate-a-modulefile}
+
 ```
 ERROR: Unable to locate a modulefile for 'openmpi/mlnx/gcc/64'
 /var/spool/age/at***/job_scripts/jobid: line 16: mpirun: command not found
@@ -146,7 +150,7 @@ mpirun -np 32 ....
 ```
 
 
-## &#x1F180; When I try to use the intel compiler, I get an error: `ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`.
+## &#x1F180; When I try to use the intel compiler, I get an error: `ERROR: Unable to locate a modulefile for 'intel/compiler/64/2018/18.0.5'　ERROR: Unable to locate a modulefile for 'gcc/8.2.0'`.  {#intel-compiler-error-unable-to-locate-a-modulefile}
 
 &#x1F150; Environmental Modules is only available on the CentOS 7 environment of the NIG supercomputer. It is not available on the Ubuntu Linux environment.
 
@@ -160,7 +164,7 @@ Also, when you use the intel compiler, activate it with the following command.
 source /opt/pkg/intel/oneapi/setvars.sh
 ```
 
-## &#x1F180; I would like to use DRMAA, but the library path I have been using is not available. It seems to change from `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` that I have been using due to the scheduled maintenance.
+## &#x1F180; I would like to use DRMAA, but the library path I have been using is not available. It seems to change from `/home/geadmin/UGED/lib/lx-amd64/libdrmaa.so.1.0` that I have been using due to the scheduled maintenance.  {#drmaa-changed-path}
 
 &#x1F150;  The DRMAA libraries were changed to the following paths along with [the AGE version upgrade (8.6.19/8.6.4 → 8.8.1)](/blog/2023-11-24-scheduled-maintenance/#software-version-upgrade-details).
 Please use the libraries located in the following paths.

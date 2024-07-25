@@ -4,7 +4,7 @@ title: "関連法規等"
 ---
 
 
-## 外為法関係 {#fefta}
+## 外為法関係 {#related-fefta}
 
 1. [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) 第二十五条
 2. [キャッチオール規制の範囲](https://www.meti.go.jp/policy/anpo/anpo03.html)
@@ -17,7 +17,7 @@ title: "関連法規等"
 5. [安全保障貿易管理Q&A](https://www.meti.go.jp/policy/anpo/qanda.html)
 
 
-## 個人ゲノム関係 {#the-personal-genome}
+## 個人ゲノム関係 {#related-pg}
 
 
 - [個人情報の保護に関する法律（平成15年５月30日法律第57号、平成28年5月27日公布（平成28年法律第五十一号）、令和5年6月7日改正）](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)

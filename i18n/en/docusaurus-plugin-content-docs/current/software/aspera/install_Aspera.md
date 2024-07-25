@@ -3,7 +3,7 @@ id: install_Aspera
 title: Installing Aspera
 ---
 
-## Installing Aspera Connect transfer client software
+## Installing Aspera Connect transfer client software {#install-aspera}
 
 There are a web interface version (aspera connect) and a command line interface version (`ascp`) of Aspera Connect transfer client software.
 You need to install Aspera Connect transfer client software version 4 or later.
@@ -18,7 +18,7 @@ Procedure
 2. Run the installer and adjustment the path of `ascp`
 
 
-## Download the installer
+## Download the installer {#download-installer}
 
 The procedure is the same for Windows, Mac and Linux.
 
@@ -47,10 +47,10 @@ The procedure is the same for Windows, Mac and Linux.
 ![](aspera04b.png)
 
 
-## Run the installer and adjustment the path
+## Run the installer and adjustment the path {#run-installer-and-adjust-path}
 
 
-### Using Windows or Mac as the OS of the cliant computer
+### Using Windows or Mac as the OS of the cliant computer {#run-installer-and-adjust-path#windows-mac}
 
 For Windows and Mac, run the downloaded installer.
 The path will also be set when you run it.
@@ -58,7 +58,7 @@ The path will also be set when you run it.
 ![](aspera05.png)
 
 
-### Using Linux as the OS of the cliant computer
+### Using Linux as the OS of the cliant computer {#run-installer-and-adjust-path#linux}
 
 For Linux, follow the above steps, the file such as `ibm-aspera-connect_4.1.0.46-linux_x86_64.tar.gz` will be downloaded. Unzip and run it with bash. You can install it with user permission.
 

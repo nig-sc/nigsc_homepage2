@@ -28,6 +28,6 @@ References
 - &#x1f517;<u>https://www.reversinglabs.com/blog/when-python-bytecode-bites-back-who-checks-the-contents-of-compiled-python-files</u>
 
 
-## How to use NVIDIA Parabricks
+## How to use NVIDIA Parabricks {#usage-nvidia-parabrics}
 
 Refer [<u>the page "How to use NVIDIA Clara Parabricks"</u>](/advanced_guides/parabricks/).

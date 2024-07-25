@@ -3,7 +3,7 @@ id: faq_sshkeys_mac
 title: "SSH公開鍵登録の詳細(Macの場合)"
 ---
 
-## &#x1F180; `ssh -V`と入力して実行すると、`-bash: ssh: command not found`と出力されました。
+## &#x1F180; `ssh -V`と入力して実行すると、`-bash: ssh: command not found`と出力されました。 {#ssh-command-not-found}
 
 &#x1F150; OpenSSHクライアントがインストールされていない状態ですので、まず、以下のコマンドを実行して、インストールしてください。
 

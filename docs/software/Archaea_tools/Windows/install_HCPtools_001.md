@@ -3,7 +3,7 @@ id: install_HCPtools_001
 title: "HCPtoolsのインストール(Windowsの場合)"
 ---
 
-## インストーラの入手
+## インストーラの入手 {#get-the-installer}
 
 以下のリンクからインストーラがダウンロード可能です。
 
@@ -15,7 +15,7 @@ title: "HCPtoolsのインストール(Windowsの場合)"
 
 
 
-## HCP toolsクライアントソフトウェアのインストール
+## HCP toolsクライアントソフトウェアのインストール {#install-hcptools}
 
 `HCP_Tools_Client.msi`をダブルクリックします。
 
@@ -40,7 +40,7 @@ title: "HCPtoolsのインストール(Windowsの場合)"
 - 実行コマンド : 'C:\Program Files\Clealink\HCP Tools\hcp.exe'
 - 設定ファイル: 'C:\ProgramData\Clealink\HCP Tools\hcp.conf'
 
-## 設定ファイルの設置
+## 設定ファイルの設置 {#locat-configfile}
 
 HCP toolsは、ユーザのクライアント計算機がWindowsの場合、ユーザディレクトリ(`C:\Users\your_name`)直下の`_hcp`ディレクトリの中にある設定ファイルを参照します。
 
@@ -52,7 +52,7 @@ cp "C:\ProgramData\Clealink\HCP Tools\*.conf" C:\Users\your_name\.hcp
 ```
 
 
-## 設定ファイルの編集 
+## 設定ファイルの編集 {#edit-configfile}
 
 HCP toolsの設定ファイルをユーザディレクトリに設置し、ユーザ認証のための公開鍵の設定を追記します。
 

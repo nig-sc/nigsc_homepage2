@@ -4,7 +4,7 @@ title: "ログイン方法（個人ゲノム解析区画）"
 ---
 
 
-## 概要
+## 概要 {#introduction}
 
 遺伝研スパコンの個人ゲノム解析区画へのログイン及びファイル転送には SSL-VPN 接続を用います。SSL-VPN 接続を行うためにはユーザーの計算機に専用のソフトウェアをインストールする必要があります(これを以下 SSL-VPN クライアントソフトウェアと呼びます)。
 
@@ -15,7 +15,7 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 ![figure](sslvpn.png)
 
 
-## ログイン方法
+## ログイン方法 {#login-to-pg}
 
 
 以下の図に、ログイン方法の流れを示します。
@@ -23,7 +23,7 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 ![figure](howto.png)
 
 
-### STEP 1. SSL-VPN クライアントソフトウェアのインストール
+### STEP 1. SSL-VPN クライアントソフトウェアのインストール {#login-to-pg#install-sslvpn}
 
 「[&#x1f517;<u>FortiClient</u>](https://www.fortinet.com/support/product-downloads)」の 公式サイト にアクセスし、FortiClient をダウンロードして、インストールします。
 
@@ -53,7 +53,7 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 - [<u>SSL-VPN クライアントソフトウェアのインストール (Linux の場合)</u>](/personal_genome_division/pg_login_ssl-vpn_install_linux)
 
 
-### STEP 2. SSL-VPN クライアントの設定
+### STEP 2. SSL-VPN クライアントの設定 {#login-to-pg#conf-sslvpn}
 
 SSL-VPN クライアントのセットアップをします。
 
@@ -63,7 +63,7 @@ SSL-VPN クライアントのセットアップをします。
 - [SSL-VPN クライアントの設定方法(Linux の場合)](/personal_genome_division/pg_login_ssl-vpn_configure_file_linux)
 
 
-### STEP 3. SSL-VPN への接続
+### STEP 3. SSL-VPN への接続 {#login-to-pg#connect-sslvpn}
 
 SSL-VPN 接続を行います。
 
@@ -75,7 +75,7 @@ SSL-VPN 接続を行います。
 うまくつながらない場合は、[<u>FAQ</u>](/faq/faq_login_personal#dialogbox_disappear)をご参照ください。
 
 
-### STEP 4. SSH によるゲートウェイへのログイン
+### STEP 4. SSH によるゲートウェイへのログイン {#login-to-pg#ssh-login-gateway}
 
 SSL-VPN 接続を開始したら、ユーザの計算機上でターミナルエミュレータを起動し、個人ゲノム解析環境のゲートウェイにログインします。
 
@@ -95,7 +95,7 @@ ssh [アカウント名]@gwa2.ddbj.nig.ac.jp
 
 
 
-## SSH による解析サーバへのログイン
+## SSH による解析サーバへのログイン {#ssh-login-analysis-server}
 
 個人ゲノム解析区画はノード貸しなので、ユーザーの借りたノードにはゲートウェイ上から SSH することによりログインします。
 該当のノードの名前は利用開始時にお知らせします。

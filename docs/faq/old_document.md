@@ -7,9 +7,9 @@ title: "古いFAQ"
 
 ---
 
-## ログイン方法(一般解析区画)
+## ログイン方法(一般解析区画) {#gen-login}
 
-### &#x1F180; ssh 公開鍵を再度設定し直したのですが、`Permission denied`のエラーが出て接続できません。 {#general-sshlogin-permission-denied}
+### &#x1F180; ssh 公開鍵を再度設定し直したのですが、`Permission denied`のエラーが出て接続できません。 {#gen-login#gen-sshlogin-permission-denied}
 
 
 &#x1F150; 2022 年 7 月 7 日現在、新しいアカウント登録システムへの移行作業を行っております。(「[<u>2022 年 7 月 5 日(火) アカウント登録システムが新しくなりました</u>](https://sc.ddbj.nig.ac.jp/blog/2022-07-05-news_NewApp)」)
@@ -20,9 +20,9 @@ title: "古いFAQ"
 
 ---
 
-## ログイン方法(個人ゲノム解析区画)
+## ログイン方法(個人ゲノム解析区画) {#pg-login}
 
-### &#x1F180; ssh 公開鍵を再度設定し直したのですが、`Permission denied`のエラーが出て接続できません。 {#personal-sshlogin-permission-denied}
+### &#x1F180; ssh 公開鍵を再度設定し直したのですが、`Permission denied`のエラーが出て接続できません。 {#pg-login#pg-sshlogin-permission-denied}
 
 &#x1F150; 2022 年 7 月 7 日現在、新しいアカウント登録システムへの移行作業を行っております。(「[<u>2022 年 7 月 5 日(火) アカウント登録システムが新しくなりました</u>](https://sc.ddbj.nig.ac.jp/blog/2022-07-05-news_NewApp)」)
 そのため、新しいゲートウェイ`gw2.ddbj.nig.ac.jp`への公開鍵登録については即時設定が反映されますが、古い方のゲートウェイ`gw.ddbj.nig.ac.jp`へ設定が反映されるまでに１日程度かかります。
@@ -35,7 +35,7 @@ title: "古いFAQ"
 ## 課金サービスの利用方法 {#billing-usage}
 
 
-### &#x1F180; 高速ストレージとアーカイブストレージの違いがわかりません。 {#dif-storage-highspeed-archive}
+### &#x1F180; 高速ストレージとアーカイブストレージの違いがわかりません。 {#billing-usage#dif-storage-highspeed-archive}
 
 &#x1F150; アーカイブストレージは遺伝研の DNA 塩基配列データが入っている場所で、ほかには AMED AGD など特殊なプロジェクトで使われています。スパコンユーザーの方は高速ストレージ（30TB まで無料）をご利用ください。
 

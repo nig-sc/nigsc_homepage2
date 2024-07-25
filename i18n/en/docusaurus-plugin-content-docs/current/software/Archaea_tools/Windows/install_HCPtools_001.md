@@ -13,7 +13,7 @@ Download the HCP tools client software installer from the following link.
 If you need past versions and others, <a href="https://github.com/oogasawa/Ptools">you can download here</a>.
 
 
-## Installing the HCP tools client software
+## Installing the HCP tools client software {#install-hcptools}
 
 Double click `HCP_Tools_Client.msi`.
 
@@ -40,7 +40,7 @@ After installation, make sure that the run command exists under `C:\Program File
 - The run command : 'C:\Program Files\Clealink\HCP Tools\hcp.exe'
 - The configuration file: 'C:\ProgramData\Clealink\HCP Tools\hcp.conf'
 
-## Location the configuration file
+## Location the configuration file {#locat-configfile}
 
 
 HCP tools refers to the configuration file in the `_hcp` directory directly under the user directory (`C:\Users\your_name`) when you use Windows as the OS of the user's client computer.
@@ -53,7 +53,7 @@ cp "C:\ProgramData\Clealink\HCP Tools\*.conf" C:\Users\your_name\.hcp
 ```
 
 
-## Editing the configuration file
+## Editing the configuration file {#edit-configfile}
 
 Locate the HCP tools configuration file in the user directory and add the public key settings for user authentication.
 

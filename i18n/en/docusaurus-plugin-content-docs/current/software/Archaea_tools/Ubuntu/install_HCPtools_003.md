@@ -5,7 +5,7 @@ title: "Installing HCP tools (Ubuntu Linux)"
 
 ## Get the installer
 
-When you use Ubuntu Linux as the OS of the user's client computer, install the HCP tools client software installer from the following link.
+If you use Ubuntu Linux as the OS of the user's client computer, install the HCP tools client software installer from the following link.
 
 HCP tools addesses Ubuntu Linux 16.04, 18.04, 20.04.
 Download the zip file for your version [from here](https://github.com/nig-sc/HCPtools/tree/main/1.3.0R-45/Ubuntu_Linux).
@@ -42,7 +42,7 @@ $ hcp --version
 hcp client (hcp) 1.3.0R_45 / Linux (HpFP2 2.0.0.91_16 WSAPI 0.0.1.23)
 ```
 
-## Location the configuration file
+## Location the configuration file {#locat-configfile}
 
 Copy configuration files for HCP tools in the user home directory.
 
@@ -50,7 +50,7 @@ Copy configuration files for HCP tools in the user home directory.
 $ cp -rp ~/hcp-tools-1.3.0R_45.amd64.ubuntu2004/conf/ ~/.hcp
 ```
 
-## Editing the configuration file
+## Editing the configuration file {#edit-configfile}
 
 Locate the HCP tools configuration file in the user directory and add the public key settings for user authentication.
 
