@@ -3,7 +3,7 @@ id: faq_login_general
 title: ログイン方法(一般解析区画)
 ---
 
-## &#x1F180; 公開鍵による認証ができません。
+## &#x1F180; 公開鍵による認証ができません。 {#error-pubkey-auth}
 
 &#x1F150; ホームディレクトリの group,other に write 権限が付与されている場合、公開鍵による認証は失敗します。
 また、`~/.ssh`および`~/.ssh/authorized_keys`に、owner 以外の権限が付与されている場合も公開鍵認証に失敗します。
@@ -22,7 +22,7 @@ chmod 600 ~/.ssh/id_rsa.pub
 
 
 
-## &#x1F180; 新スパコンに SSH ログインできない場合の対応がわかりません。
+## &#x1F180; 新スパコンに SSH ログインできない場合の対応がわかりません。 {#error-ssh-login}
 
 &#x1F150; 遺伝研スパコンにログインしようとした際、下記のようなメッセージが表示されてログインできない場合があります。
 
@@ -56,7 +56,7 @@ Host key verification failed.
 実行すると、エラーは出なくなりますが、`Are you sure you want to continue connecting (yes/no)?` と聞かれます。「yes」を入力します。<br/>この確認メッセージは、ユーザの計算機から遺伝研スパコンのサーバに初めて接続する場合に、接続先がなりすまされた偽のサーバではなく正規のサーバであるかどうかの確認のために、表示されます。最初の1回だけ聞かれて、次回以降は表示されません。
 
 
-## &#x1F180; SSH のコネクションが頻繁に切れます。
+## &#x1F180; SSH のコネクションが頻繁に切れます。 {#disconnect-ssh}
 
 &#x1F150; `~/.ssh/config` に以下を追記してください。
 ```
@@ -70,12 +70,12 @@ Host *
 &#x1f517;<u>https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset</u>
 
 
-## &#x1F180; Windows PowerShellからはログインできましたが、WSL2 (Windows Subsystem for Linux)上のUbuntu Linuxからはログインできないのでしょうか？
+## &#x1F180; Windows PowerShellからはログインできましたが、WSL2 (Windows Subsystem for Linux)上のUbuntu Linuxからはログインできないのでしょうか？ {#wls2-login}
 
 &#x1F150; ログインできます。
 
 現在のWindowsはWSL2を使うために最初から仮想マシンの上で動いており、WSL2上のUbuntu
-Linuxは別の仮想マシンとして動作します。（例えば、以下のリンク&#x1f517;<u>
+Linuxは別の仮想マシンとして動作します。(例えば、以下のリンク&#x1f517;<u>
 https://www.thomasmaurer.ch/2019/06/install-wsl-2-on-windows-10/</u>)
 
 つまり一台の物理計算機の中に２台の完全に独立な仮想計算機が入っている状態で動作しています。

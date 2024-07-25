@@ -4,7 +4,7 @@ title: "How to Login"
 ---
 
 
-## &#x1F180; Public key authentication failed.
+## &#x1F180; Public key authentication failed. {#error-pubkey-auth}
 
 &#x1F150; Public key authentication fails if write permission is granted to group, other in the home directory.
 Also if any permission other than owner is granted to `~/.ssh` and `~/.ssh/authorised_keys`, public key authentication fails.
@@ -22,7 +22,7 @@ chmod 600 ~/.ssh/id_rsa.pub
 ```
 
 
-## &#x1F180; I cannot log in to the NIG supercomputer via SSH. What should I do?
+## &#x1F180; I cannot log in to the NIG supercomputer via SSH. What should I do? {#error-ssh-login}
 
 &#x1F150; When you try to log in to the NIG supercomputer, the following message may appear and you may not be able to log in.
 
@@ -60,7 +60,7 @@ This confirmation message is displayed the first time when connecting from a use
 It will be asked only once the first time and will not be displayed again the next time.
 
 
-## &#x1F180; SSH connections frequently disconnected.
+## &#x1F180; SSH connections frequently disconnected. {#disconnect-ssh}
 
 &#x1F150; Add the following to `~/.ssh/config`.
 
@@ -75,7 +75,7 @@ For more information, click the link below.
 &#x1f517;<u>https://unix.stackexchange.com/questions/602518/ssh-connection-client-loop-send-disconnect-broken-pipe-or-connection-reset</u>
 
 
-## &#x1F180; I can login from Windows PowerShell, but not from Ubuntu Linux on WSL2 (Windows Subsystem for Linux)?
+## &#x1F180; I can login from Windows PowerShell, but not from Ubuntu Linux on WSL2 (Windows Subsystem for Linux)? {#wls2-login}
 
 &#x1F150; Yes, you can login.
 

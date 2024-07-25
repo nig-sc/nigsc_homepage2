@@ -5,7 +5,7 @@ title: "Apptainer (Singularity)の使い方"
 
 [(Singularity は Apptainer と改称されました。)](https://github.com/apptainer/singularity)
 
-## 概要
+## 概要 {#introduction}
 
 遺伝研スパコンでは様々な解析ソフトウェアをユーザー権限でインストール出来るようにするため Apptainer (Sigularity) コンテナが利用可能です。
 
@@ -13,12 +13,12 @@ Apptainer (Sigularity) を使うことによって例えば遺伝研スパコン
 
 
 
-## 参考資料
+## 参考資料 {#reference}
 
 - [Apptainer (Sigularity) の公式ホームページ](https://apptainer.org/)
 
 
-## Apptainer (Sigularity) イメージ作成の基本的手順
+## Apptainer (Sigularity) イメージ作成の基本的手順 {#apptainer-basic-procedures}
 
 Apptainer (Sigularity) コンテナは一般に以下の手順で用います。
 
@@ -62,7 +62,7 @@ alias sing="singularity exec $HOME/ubuntu18.sif
 ```
 
 
-## スパコン上でのイメージのビルド : Docker コンテナイメージから Apptainer (Sigularity) イメージを生成する
+## スパコン上でのイメージのビルド : Docker コンテナイメージから Apptainer (Sigularity) イメージを生成する {#build-apptainer-image-from-docker}
 
 Apptainer (Sigularity) の sandbox モードの代わりに Docker コンテナを使うことが出来ます。この方法を使うとスパコン上で Apptainer (Sigularity) イメージをビルド（作成）することが出来ます。(その際 Docker コンテナイメージファイルはあらかじめ Docker Hub に登録しておいてください。）
 

@@ -4,7 +4,7 @@ title: How to write the configuration file
 ---
 
 
-## Configuration file types
+## Configuration file types {#configfile-types}
 
 There is a configuration file for each of the HCP tools commands.
 
@@ -39,7 +39,7 @@ Include C:\Users\username\_hcp\hcp-common.conf
 ```
 
 
-## An example of the common configuration file (`~/.hcp/hcp-common.conf`)
+## An example of the common configuration file (`~/.hcp/hcp-common.conf`) {#setteing-ex-hcp-common-conf}
 
 Normally write the contents of `hcp-common.conf` as follows.
 
@@ -52,7 +52,7 @@ DisableDataIntegrityChecking yes             # Allow no digest format
 
 (For Windows, you must specify `C:\Users\username\.ssh\id_rsa` for the pricate key.)
 
-### Specify the private key
+### Specify the private key {#setteing-ex-hcp-common-conf#specify-seckey}
 
 HCP tools authenticates users using the public/private keys.
 
@@ -60,12 +60,12 @@ In this case, you can use the public/private key files used for SSH login to the
 If you use them, make sure that the private key file (`id_rsa`) addresses under the user directory in the client computer (`C:\Users\username\.ssh` for Windows). (When you follow [how to set up the public key for SSH](/application/ssh_keys_mac), the private key file should already be here.)
 
 
-### Encryption
+### Encryption {#setteing-ex-hcp-common-conf#encrypt}
 
 It is not necessary to encrypt by HCPtools because the personal genome analysis division is used SSL-VPN connection.
 Therefore, normally there is no problem when you create the file with the following content and set it up as `~/.hcp/hcp-hcp-common.conf`.
 
-### Digest format
+### Digest format {#setteing-ex-hcp-common-conf#digest-format}
 
 This is the setting for check that datas are not corrupted or tampered in file transfers. Normally, enable this setting.
 When you check the integrity of files, add the `-y` option.

@@ -10,7 +10,7 @@ title: "ソフトウェア一般"
 
 以下 4 つの場合でシェル設定ファイルの読み込み順が異なります。`bash(1)`マニュアルの該当の記載を併記します。
 
-### 1, interactive, login shell
+### 1, interactive, login shell {#shell-config#interactive-login-shell}
 
 `ssh` でログインした場合や`su -`を実行した場合など。(`su -`は`su --login`と同じ。ログインシェルとしてシェルを起動せよの意味。)
 `qlogin`した場合もこれに該当します。
@@ -25,7 +25,7 @@ title: "ソフトウェア一般"
 したがって bash の動作としては SSH でログインした際には`~/.bashrc`は自動的には読み込まれませんが、
 上記のシェル設定ファイルの中に`~/.bashrc`を読み込むように書かれている場合が多い、という関係にあります。
 
-### 2, interactive, non-login shell
+### 2, interactive, non-login shell {#shell-config#interactive-non-login-shell}
 
 ターミナルエミュレータを起動した場合や、`screen`, emacs の shell-mode を起動した場合など。
 
@@ -39,7 +39,7 @@ title: "ソフトウェア一般"
 - 注意: GNU screen と同じような機能を持つポピュラーなソフトウェアとして`tmux`がありますが、`tmux`を起動するとデフォルトでは bash はログインシェルとして起動します。
 
 
-### 3, non-interactive, login shell
+### 3, non-interactive, login shell {#shell-config#non-interactive-login-shell}
 
 scp を実行する場合や、ローカルマシンにあるスクリプトをリモートサーバ上で実行する場合がこれに当たります。
 
@@ -57,7 +57,7 @@ ssh you@remotehost 'bash -s' < local_script.sh
 > them to be specified.
 > 
 
-### 4, non-interactive non-login shell
+### 4, non-interactive non-login shell {#shell-config#non-interactive-non-login-shell}
 
 シェルスクリプトを実行した場合など。
  
@@ -75,14 +75,14 @@ ssh you@remotehost 'bash -s' < local_script.sh
 
 
 
-### `.bash_profile`
+### `.bash_profile` {#ubuntu-initialization#dot-bash_profile}
 
 ```
 source ~/.bashrc
 ```
 
 
-### `.bashrc`
+### `.bashrc` {#ubuntu-initialization#dot-bashrc}
 
 
 ```
@@ -219,13 +219,14 @@ fi
 
 
 
-## &#x1F180; 環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。(CentOS 7 の場合)
+## &#x1F180; 環境を初期状態に戻したいのですが、どのようにしたらよいでしょうか。(CentOS 7 の場合){#centos7-initialization}
+
 
 
 &#x1F150; アカウント作成直後の`.bash_profile`, `.bashrc`は以下のとおりです。
 これらのファイルをこの状態に戻してログインし直してください。
 
-### `.bash_profile`
+### `.bash_profile` {#centos7-initialization#dot-bash_profile}
 
 ```bash
 # .bash_profile
@@ -243,7 +244,7 @@ export PATH
 ```
 
 
-### `.bashrc`
+### `.bashrc`{#centos7-initialization#dot-bashrc}
 
 ```bash
 # .bashrc
@@ -262,7 +263,7 @@ module load gcc
 
 
 
-## &#x1F180; Putty や TeraTerm などを使って遺伝研スパコンにログインする方法を教えてください。
+## &#x1F180; Putty や TeraTerm などを使って遺伝研スパコンにログインする方法を教えてください。 {#putty-teraterm-login}
 
 &#x1F150; ホームページでは Windows に標準搭載されている PowerShell をターミナルエミュレータとして使った場合の利用手順を記載しています。
 
@@ -279,7 +280,7 @@ module load gcc
 [&#x1f517;<u>Tera Term Open Source Project (osdn.jp)</u>](https://ttssh2.osdn.jp/index.html.en)
 
 
-## &#x1F180; 遺伝研スパコンで WinScp や FileZilla などを使ってにファイル転送する方法を教えてください。
+## &#x1F180; 遺伝研スパコンで WinScp や FileZilla などを使ってにファイル転送する方法を教えてください。 {#filetransfer-winscp-filezilla}
 
 &#x1F150; ホームページでは scp, sftp コマンドを用いたファイル転送の手順を記載しています。
 

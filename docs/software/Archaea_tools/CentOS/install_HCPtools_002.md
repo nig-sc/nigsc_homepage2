@@ -35,7 +35,7 @@ $ hcp --version
 hcp client (hcp) 1.3.0R_45 / Linux (HpFP2 2.0.0.91_16 WSAPI 0.0.1.23)
 ```
 
-## 設定ファイルの設置
+## 設定ファイルの設置 {#locat-configfile}
 
 HCP tools に必要な設定ファイルを、ホームディレクトリにコピーします。
 
@@ -44,7 +44,7 @@ $ cp -rp ~/ hcp-tools-1.3.0-42/conf/ ~/.hcp
 ```
 
 
-## 設定ファイルの編集
+## 設定ファイルの編集 {#edit-configfile}
 
 HCP tools の設定ファイルをユーザディレクトリに設置し、ユーザ認証のための公開鍵の設定を追記します。
 

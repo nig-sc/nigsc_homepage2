@@ -34,7 +34,7 @@ https://sc.ddbj.nig.ac.jp/general_analysis_division/ga_introduction
 うまくいかない場合は、[<u>よくある質問(FAQ)</u>](/faq/faq_login_general)をご参照ください。
 
 
-## 2. 個人ゲノム解析区画の利用方法 {#2-personal-usage}
+## 2. 個人ゲノム解析区画の利用方法 {#2-pg-usage}
 
 :::note
 セキュリティ向上のため、ログイン時の認証方式は、公開鍵認証に加えてSSL-VPN接続を採用しております。

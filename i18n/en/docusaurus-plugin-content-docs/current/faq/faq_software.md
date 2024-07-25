@@ -10,7 +10,7 @@ title: "Software General"
 
 The order in which shell configuration files are loaded differs in the following four cases. The corresponding descriptions in the `bash(1)` manual are given below.
 
-### 1, interactive, login shell
+### 1, interactive, login shell {#shell-config#interactive-login-shell}
 
 When logging in with `ssh` or executing `su -`. (`su -` is the same as `su --login`. It means start a shell as a login shell.)
 This also applies if you execute `qlogin`.
@@ -24,7 +24,7 @@ This also applies if you execute `qlogin`.
 
 Therefore, the behaviour of bash is that `~/.bashrc` is not automatically readed when you log in with SSH, but the relationship is that it is often written to read `~/.bashrc` in the shell configuration file above.
 
-### 2, interactive, non-login shell
+### 2, interactive, non-login shell {#shell-config#interactive-non-login-shell}
 
 When a terminal emulator is started, or `screen`, or shell-mode of emacs is started.
 
@@ -38,7 +38,7 @@ When a terminal emulator is started, or `screen`, or shell-mode of emacs is star
 - Note: A popular software with similar functionality to GNU screen is `tmux`, but when `tmux` is started, bash is started as a login shell by default.
 
 
-### 3, non-interactive, login shell
+### 3, non-interactive, login shell {#shell-config#non-interactive-login-shell}
 
 When executing scp or running a script on a local machine on a remote server.
 
@@ -56,7 +56,7 @@ ssh you@remotehost 'bash -s' < local_script.sh
 > them to be specified.
 > 
 
-### 4, non-interactive non-login shell
+### 4, non-interactive non-login shell {#shell-config#non-interactive-non-login-shell}
 
 When running a shell scrip, etc.
 
@@ -73,14 +73,14 @@ Reference
 &#x1F150; To restore the environment to its initial state, change `.bash_profile` and `.bashrc` back to the following state and log in again.
 
 
-### `.bash_profile`
+### `.bash_profile` {#ubuntu-initialization#dot-bash_profile}
 
 ```
 source ~/.bashrc
 ```
 
 
-### `.bashrc`
+### `.bashrc` {#ubuntu-initialization#dot-bashrc}
 
 
 ```
@@ -215,28 +215,11 @@ fi
 ```
 
 
-## &#x1F180; I want to restore my computer environment to its initial state. (CentOS 7)
+## &#x1F180; I want to restore my computer environment to its initial state. (CentOS 7) {#centos7-initialization}
 
 &#x1F150; The state of `.bashrc` and `.bash_profile` immediately after account creation are as follows, so to restore the environment to its initial state, restore the `.bashrc` and `.bashr_profile` to this state and login again.
 
-### `.bashrc`
-
-```bash
-# .bashrc
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-module load gcc
-```
-
-### `.bash_profile`
+### `.bash_profile` {#centos7-initialization#dot-bash_profile}
 
 ```bash
 # .bash_profile
@@ -254,7 +237,25 @@ export PATH
 ```
 
 
-## &#x1F180; How do I log in to the genetic laboratory supercomputer using Putty or TeraTerm?
+### `.bashrc` {#centos7-initialization#dot-bashrc}
+
+```bash
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+module load gcc
+```
+
+
+## &#x1F180; How do I log in to the genetic laboratory supercomputer using Putty or TeraTerm? {#putty-teraterm-login}
 
 &#x1F150; The NIG supercomputer website describes the procedure for using PowerShell, which comes standard with Windows, as a terminal emulator. 
 
@@ -271,7 +272,7 @@ If you want to use a third-party terminal emulator (Putty, TeraTerm, etc.), refe
 [&#x1f517;<u>Tera Term Open Source Project (osdn.jp)</u>](https://ttssh2.osdn.jp/index.html.en)
 
 
-## &#x1F180; How can I transfer files to/from the NIG supercomputer using WinScp or FileZilla?
+## &#x1F180; How can I transfer files to/from the NIG supercomputer using WinScp or FileZilla? {#filetransfer-winscp-filezilla}
 
 &#x1F150; The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
 

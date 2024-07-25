@@ -3,7 +3,7 @@ id: faq_sshkeys_windows
 title: "SSH公開鍵登録の詳細(Windowsの場合)"
 ---
 
-## &#x1F180; 最新バージョンのPowerShellをインストールする方法
+## &#x1F180; 最新バージョンのPowerShellをインストールする方法 {#install-latest-powershell}
 
 &#x1F150; Windowsに標準搭載されているPowerShellを最新バージョンにアップデートする方法をご説明します。
 
@@ -17,7 +17,7 @@ title: "SSH公開鍵登録の詳細(Windowsの場合)"
 ![](/img/ssh_keys/windows/ssh_win_PS5_1.png)
 
 
-### - インストール方法
+### - インストール方法 {#install-latest-powershell#how-to-install}
 
 PowerShellのコマンドプロンプトから、以下のコマンドを入力して、[Enter]キーを押します。
 
@@ -48,7 +48,7 @@ winget install --id Microsoft.Powershell --source winget
 
 インストールが完了しましたので、インストールした最新バージョンのPowerShellを起動して動作確認を行います。
 
-### - 動作確認
+### - 動作確認 {#install-latest-powershell#operation-check}
 
 最新バージョンのPowerShellを起動するには`pwsh`コマンドを用います。`powershell`コマンドを用いると古いバージョンのPowerShellが起動されてしまいます。&#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">この事情については公式サイトの説明をご確認ください。</a></u>
 
@@ -100,13 +100,13 @@ Windowsマークをクリックして、検索ボックスの中をクリック�
 &#x1F4D6; 確認したMicrosoftの公式WebサイトにあるGithubのURL: &#x1f517;<u>https://github.com/PowerShell/PowerShell/releases/</u>
 
 
-### - 参考資料
+### - 参考資料 {#install-latest-powershell#references}
 
 - &#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">microsoft公式Webサイト「WindowsへのPowerShellのインストール」</a></u>
 - &#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">microsoft公式Webサイト「Windows PowerShell 5.1 と PowerShell 7.x の相違点」</a></u>
 
 
-## &#x1F180; PowerShell を起動したいのですが、どのようにしたらよいでしょうか。
+## &#x1F180; PowerShell を起動したいのですが、どのようにしたらよいでしょうか。 {#how-to-open-powershell}
 
 &#x1F150; まず、検索ボックスに“powershell”と入力します。
 
@@ -125,11 +125,11 @@ Windowsマークをクリックして、検索ボックスの中をクリック�
 ![](/img/ssh_keys/windows/FAQ/win_ps_inst_15.png)
 
 
-## &#x1F180; PowerShellのバージョンを確認したいのですが、どのようにしたらよいでしょうか。
+## &#x1F180; PowerShellのバージョンを確認したいのですが、どのようにしたらよいでしょうか。 {#check-powershell-version}
 
 &#x1F150; 
 
-### - 現在インストールされているPowerShellのバージョンの確認方法
+### - 現在インストールされているPowerShellのバージョンの確認方法 {#check-powershell-version#current-ver}
 
 以下のコマンドを入力して、[Enter]キーを押します。
 
@@ -143,7 +143,7 @@ $PSVersionTable
 
 ![](/img/ssh_keys/windows/FAQ/win_ps_inst_17.png)
 
-### - 公開されている最新バージョンの確認方法
+### - 公開されている最新バージョンの確認方法 {#check-powershell-version#latest-ver}
 
 以下のコマンドを入力して、[Enter]キーを押します。
 
@@ -164,7 +164,7 @@ winget search Microsoft.PowerShell
 インストールする時は、正式にリリースされている安定版リリースをインストールします。末尾に'.Preview'がついていない方です。
 
 
-## &#x1F180; 最新バージョンのPowerShellをインストールしたのに、`A new PowerShell stable release is available`というメッセージが表示されてしまいます。
+## &#x1F180; 最新バージョンのPowerShellをインストールしたのに、`A new PowerShell stable release is available`というメッセージが表示されてしまいます。 {#a- new-powershell-stable-release-is-available}
 
 &#x1F150; 以下のコマンドを入力して、[Enter]キーを押し、さらに最新バージョンへアップグレードします。`winget`コマンドにまだ反映されていないため、Githubのページにあるスクリプトから直接取得します。
 
@@ -231,7 +231,7 @@ $PSVersionTable
 さらに最新のPowerShellのインストールが完了しました。
 
 
-## &#x1F180; PowerShell 5.1と7.2.6の主な違いはありますか。
+## &#x1F180; PowerShell 5.1と7.2.6の主な違いはありますか。 {#diff-5.1-7.2.6}
 
 &#x1F150; デフォルトの場合、以下のような違いがあります。
 
@@ -269,6 +269,6 @@ PowerShell 7.2.6では、実行ファイル名が`pwsh.exe`という名前でイ
 詳細は&#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.2#renamed-powershellexe-to-pwshexe">Microsoft公式Webサイトの「Windows PowerShell 5.1 と PowerShell 7.x の相違点」のページをご参照ください。</a></u>
 
 
-## &#x1F180; `winget`によるインストールについての詳細が知りたいです。
+## &#x1F180; `winget`によるインストールについての詳細が知りたいです。 {#install-with-winget}
 
 &#x1F150; microsoft公式Webサイトにある「WindowsへのPowerShellのインストール」のページをご参照ください。&#x1f517;<u><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#install-powershell-using-winget-recommended">ここをクリックすると、そのページに移動できます。</a></u>

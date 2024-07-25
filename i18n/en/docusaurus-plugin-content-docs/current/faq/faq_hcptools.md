@@ -4,7 +4,7 @@ title: Archaea tools(formerly HCPtools)
 ---
 
 
-## &#x1F180; When transferring files, do I always have to specify the transfer source and transfer destination with absolute paths?
+## &#x1F180; When transferring files, do I always have to specify the transfer source and transfer destination with absolute paths? {#available-relative-path}
 
 &#x1F150; The path on the user's computer can be specified as either an absolute or relative path.
 
@@ -66,7 +66,7 @@ hcp --user uesrname gwa.ddbj.nig.ac.jp:/home/uesrname/HCP_upload/upload_ex1.txt 
 ```
 
 
-## &#x1F180; Is it possible to specify a directory for file transfer?
+## &#x1F180; Is it possible to specify a directory for file transfer? {#transfer-specifed-directory}
 
 &#x1F150; Yes.
 
@@ -90,7 +90,7 @@ hcp --user username C:\Users\username\HCPtools_upload_test\upload_ex1.txt gwa.dd
 ```
 
 
-## &#x1F180; Is it necessary to specify the file name when specifying the upload or download destination?
+## &#x1F180; Is it necessary to specify the file name when specifying the upload or download destination? {#transfer-specifed-filename}
 
 &#x1F150; Yes.
 
@@ -104,7 +104,7 @@ If you do not specify a file name, the following error message will be output an
 ```
 
 
-## &#x1F180; [<u>HCP tools Command Overview p.10</u>](/pdf/HCPtools_overview_en.pdf) says that only Windows 10 is supported. Is it not available for Windows 11?
+## &#x1F180; [<u>HCP tools Command Overview p.10</u>](/pdf/HCPtools_overview_en.pdf) says that only Windows 10 is supported. Is it not available for Windows 11? {#available-windows11}
 
 &#x1F150; Yes, it can be used on Windows 11.
 
