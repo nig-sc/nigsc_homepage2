@@ -22,7 +22,7 @@ gccなどオープンソースコンパイラと比較してインテルのコ�
 
 以下に利用可能なコンポーネントの概略表を示します。
 
-#### 遺伝研スパコンで利用可能なコンポーネント
+#### 遺伝研スパコンで利用可能なコンポーネント {#available-components}
 
 |製品名称 |概要|
 |--------|---|
@@ -56,7 +56,7 @@ gccなどオープンソースコンパイラと比較してインテルのコ�
 の`2024.0`などの数値は記事作成時点の状況を示すものでありアップデートにより変わる可能性があります。実態に即して適宜読み替えてください。
 
 
-## インテル® oneAPI DPC++/C++ コンパイラ
+## インテル® oneAPI DPC++/C++ コンパイラ {#intel-one-api-dpc-compailer}
 
 遺伝研スパコンではIntel OneAPI DPC++/C++コンパイラが利用可能です。
 
@@ -75,14 +75,14 @@ Intelコンパイラにはデフォルトでパスが通っています。
 
 - [AGEのキュー構成](/general_analysis_division/ga_queue/)
 
-### コンパイラコマンド形式
+### コンパイラコマンド形式 {#intel-one-api-dpc-compailer#command-format}
 
 |言語 |コマンド |実行形式|
 |-----|--------|-------|
 |C  | icx    | icx [オプション] ファイル名 |
 |C++  | icpx    | icpx [オプション] ファイル名 |
 
-### 主なオプション
+### 主なオプション {#intel-one-api-dpc-compailer#main-option}
 
 インテルコンパイラで利用可能な主なオプションの概要について以下に示します。
 
@@ -108,7 +108,8 @@ Intelコンパイラにはデフォルトでパスが通っています。
 
 [インテルのドキュメントサイトでのコンパイラオプションの詳細](https://www.intel.com/content/www/us/en/docs/dpcpp-cpp-compiler/developer-guide-reference/2023-0/compiler-options.html)
 
-### OpenMPの利用
+### OpenMPの利用 {#intel-one-api-dpc-compailer#openmp}
+
 IntelコンパイラではOpenMPが利用可能です。
 IntelコンパイラでサポートされているOpenMPの機能詳細については以下のIntelサイトの情報を参照して下さい。2023/11/30現在でシステムにインストールされているIntel CompilerでサポートされているのはOpenMP 5.0～6.0（一部）までがサポートされています。
 

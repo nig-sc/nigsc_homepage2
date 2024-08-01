@@ -4,7 +4,7 @@ title: "C/C++ の使い方(GCC: GNU Compiler Collection)"
 ---
 
 
-## GCC バージョン:   C 言語標準、C++言語標準への対応状況
+## GCC バージョン:   C 言語標準、C++言語標準への対応状況 {#support-status-for-gcc-standards}
 
 GCC の各バージョンと、デフォルト状態での準拠言語仕様は以下のとおりです。
 (オプションを付けることにより準拠する標準は変えることができます。詳細は各バージョンのマニュアルをご参照ください。)
@@ -32,7 +32,7 @@ GCC の各バージョンと、デフォルト状態での準拠言語仕様は�
 
 
 
-## GCC のバージョンについて  (CentOS 7 の場合)
+## GCC のバージョンについて  (CentOS 7 の場合) {#gcc-version-centos7}
 
 遺伝研スパコンの CentOS 7 のシステムでは
 - CentOS 7 付属の rpm パッケージは GCC ver.4.8 系です。ver.4.8 は、古いバージョンですので、新しいバージョンをインストールすることを推奨いたします。新しいバージョンとして、ver.9 に切り替えることができますので、ver.9 をインストールして使ってください。
@@ -43,13 +43,13 @@ GCC の各バージョンと、デフォルト状態での準拠言語仕様は�
     - spack 自体の説明については[「利用案内 => ソフトウェア => spack」](/software/spack/install_spack)のページをご参照ください。
 
 
-## GCC のバージョンを切り替える方法 (Ubuntu Linux の場合)
+## GCC のバージョンを切り替える方法 (Ubuntu Linux の場合) {#gcc-version-linux}
 
 - Ubuntu Linux 22.04 付属の deb パッケージは GCC 12 系です。特にバージョンを指定する必要が無い場合は、GCC 12 系をお使いください。
 - バージョンを指定して使いになりたい場合は、[spack パッケージマネージャ](/software/spack/install_spack)を使って GCC のインストールおよび GCC のバージョン変更ができます。この場合は GCC をソースコードからコンパイルするので少し時間がかかります。
     - spack 自体の説明については[「利用案内 => ソフトウェア => spack」](/software/spack/install_spack)のページをご参照ください。
 
-## Environmental Modules による GCC のロード
+## Environmental Modules による GCC のロード {#load-gcc-with-env-modules}
 
 1, 現在自分の環境で利用可能になっている GCC のバージョンを確認します。
 
@@ -114,7 +114,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
 
-## Spack による GCC のインストール
+## Spack による GCC のインストール {#installing-gcc-with-spack}
 
 
 1, 現在自分の環境で利用可能になっている GCC のバージョンを確認します。

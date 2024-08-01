@@ -22,7 +22,7 @@ You may consider using Intel's compiler, libraries, and development environments
 
 The table below provides an overview of the components available on the NIG supercomputer.
 
-#### Components Available on the NIG Supercomputer
+#### Components Available on the NIG Supercomputer {#available-components}
 
 | Product Name | Overview |
 |--------------|----------|
@@ -55,7 +55,7 @@ Below, we explain an overview and the basic usage of the components available on
 
  with updates. Please interpret the actual situation accordingly.
 
-## Intel® oneAPI DPC++/C++ Compiler
+## Intel® oneAPI DPC++/C++ Compiler {#intel-one-api-dpc-compailer}
 
 The NIG supercomputer allows the use of the Intel OneAPI DPC++/C++ compiler.
 
@@ -72,14 +72,14 @@ To execute binaries with advanced optimizations, please run them on compute node
 
 - [Queue configuration in AGE](/general_analysis_division/ga_queue/)
 
-### Compiler Command Formats
+### Compiler Command Formats {#intel-one-api-dpc-compailer#command-format}
 
 | Language | Command | Execution Format |
 |----------|---------|------------------|
 | C  | icx  | icx [options] filename |
 | C++  | icpx  | icpx [options] filename |
 
-### Main Options
+### Main Options {#intel-one-api-dpc-compailer#main-option}
 
 Here are the summaries of the main options available with the Intel compiler:
 
@@ -104,7 +104,7 @@ For detailed options, refer to Intel's site:
 
 [Intel's detailed compiler options on the documentation site](https://www.intel.com/content/www/us/en/docs/dpcpp-cpp-compiler/developer-guide-reference/2023-0/compiler-options.html)
 
-### Using OpenMP
+### Using OpenMP {#intel-one-api-dpc-compailer#openmp}
 OpenMP is available with the Intel compiler.
 For details about the OpenMP features supported by the Intel compiler, please refer to the information on Intel's site. As of 11/30/2023, the Intel Compiler installed on the system supports OpenMP 5.0 to 6.0 (partially).
 

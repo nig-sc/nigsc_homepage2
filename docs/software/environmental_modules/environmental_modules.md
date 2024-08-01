@@ -20,7 +20,7 @@ Environmental Modulesは、遺伝研スパコンのCentOS 7 の環境のみで�
 
 
 
-## 利用可能なモジュールを表示する
+## 利用可能なモジュールを表示する {#listing-available-modules}
 
 `module avail`コマンドで、利用可能なパッケージの一覧を表示できます。
 
@@ -75,9 +75,9 @@ $
 
 ```
 
-## モジュールを利用する
+## モジュールを利用する {#using-modules}
 
-### module load
+### module load {#using-modules#module-load}
 
 何もしていない状態では CentOS7 付属の gcc version 4 系が使える状態になっています。
 
@@ -101,7 +101,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-### module unload
+### module unload {#using-modules#module-unload}
 
 `module unload`コマンドにより元の状態に戻すことができます。
 

@@ -3,7 +3,7 @@ id: gcc
 title: "C/C++ (GCC: GNU Compiler Collection)"
 ---
 
-## GCC version: status of support for C and C++ language standards
+## GCC version: status of support for C and C++ language standards {#support-status-for-gcc-standards}
 
 The GCC versions and the conforming language specifications of the default state are as follows.
 (You can change the standard you are compliant with by adding options. For more information, refer to the manuals for each version).
@@ -31,7 +31,7 @@ Reference
 
 
 
-## About GCC versions for CentOS 7
+## About GCC versions for CentOS 7 {#gcc-version-centos7}
 
 For CentOS 7 systems of the NIG supercomputer
 - The rpm package included in CentOS 7 is GCC ver.4.8. series. Ver. 4.8 is an old version, so it is recommended to install a newer version. You can switch to ver. 9 as a newer version, so just install and use ver. 9.
@@ -42,14 +42,14 @@ For CentOS 7 systems of the NIG supercomputer
     - For an explanation of spack itself, see the page [User Guide => software => spack](/software/spack/install_spack).
 
 
-## How to switch GCC versions for Ubuntu Linux
+## How to switch GCC versions for Ubuntu Linux {#gcc-version-linux}
 
 - The deb package included in Ubuntu Linux 22.04 is GCC 12 series. If you do not need to specify a version, use GCC 12 series.
 - If you would like to specify a version, you can install GCC and change the GCC version using the [spack package manager](/software/spack/install_spack). In this case, it will take a little longer since GCC is compiled from source code.
     - For an explanation of spack itself, see the page [User Guide => software => spack](/software/spack/install_spack).
 
 
-## Loading GCC with Environmental Modules
+## Loading GCC with Environmental Modules {#load-gcc-with-env-modules}
 
 1. Check which version of GCC is currently available in your environment.
 

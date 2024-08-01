@@ -3,7 +3,7 @@ id: accounts_per_institution
 title: Number of accounts per institution(2023)
 ---
 
-Aggregated only for universities and public research institutions (companies are not counted).
+Aggregated only for universities and public research institutions (companies are not dixcclosed).
 
 <table>
 <tr>
