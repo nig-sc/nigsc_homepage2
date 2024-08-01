@@ -117,9 +117,10 @@ title: "各種統計"
 ![](total_Accounts.png)
 
 
-## ユーザーの所属機関数 {#number-of-user-institutions}
+## 利用機関数 {#number-of-institutions}
 
-機関数は、[国内の科研費の申請機関数](https://www-kaken.jsps.go.jp/kaken1/kikanList.do)を表しています。
+[科研費の申請機関](https://www-kaken.jsps.go.jp/kaken1/kikanList.do)を1つの機関として集計。（科研費の申請機関でない場合は大学、企業などを１つの機関と数えた。企業については非公開とする。）
+具体的な機関名については「利用機関ごとのアカウント数」参照。（大学・国公立研究機関のみ集計。企業については非公開。）
 
 <table>
 <tbody>

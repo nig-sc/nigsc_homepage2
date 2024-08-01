@@ -5,7 +5,7 @@ title: "並列計算ライブラリ"
 
 
 
-## Intel MPI ライブラリ
+## Intel MPI Library
 IntelのMPI実装です。
 
 |コマンド|説明|
@@ -72,7 +72,8 @@ Hello world from processor at144, rank 1 out of 4 processors
 ```
 
 
-## Intel oneAPI DPC++ ライブラリ(oneDPL)
+## Intel oneAPI DPC++ Library (oneDPL)
+
 以下のコンポーネントを含むC++用基本ライブラリです。
 - Parallel STL(Standard Template Library)
 - ライブラリクラスと関数の追加セット
@@ -89,7 +90,8 @@ Hello world from processor at144, rank 1 out of 4 processors
 
 
 
-## Intel oneDAL（データ・アナリティクス・ライブラリ）
+## Intel oneDAL (Data Analytics Library)
+
 ビッグデータ解析アプリケーションと分散計算を高速化するライブラリです。
 
 
@@ -107,7 +109,8 @@ Hello world from processor at144, rank 1 out of 4 processors
 ```
 
 
-## Intel OneTBB（スレッディング・ビルディング・ブロック）
+## Intel OneTBB (Threading Building Blocks)
+
 C++のマルチスレッドライブラリです。このライブラリはSYCL*および、ISO C++で利用可能な機能の他に、CPU上での並列プログラミング向けに次の機能を提供します。
 
 - 汎用並列アルゴリズム

@@ -4,7 +4,7 @@ title: "Debugger"
 ---
 
 
-## Intel Distribution for GDB
+## Intel Distribution for GDB {#inteldistribution-gcb}
 A version of GDB that includes additional features for debugging on Intel CPUs, GPUs, and FPGAs compared to standard GDB.
 
 |Command|Description|

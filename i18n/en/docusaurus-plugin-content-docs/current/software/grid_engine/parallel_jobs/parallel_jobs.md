@@ -7,7 +7,7 @@ When you run a small number of programs that use multiple CPU cores and run for 
 
 To use the parallel job function in addition to the options described in the [Batch Jpbs (batch job)](/software/grid_engine/batch_jobs) page, specify the parallel environment with the `-pe` option.
 
-## Types of parallel jobs (overview)
+## Types of parallel jobs (overview) {#paralleljob-type-overview}
 
 Parallel environment types provided by the NIG supercomputer are as follows.
 
@@ -61,7 +61,7 @@ The number of cores can be specified a range besides a single number.
 - ` qsub -pe def_slot 20-100 -S /bin/bash job_script.sh `
 - ` qsub -pe mpi 20- -S /bin/bash job_script.sh `
 
-### Notes on specifying memory requirements for parallel jobs
+### Notes on specifying memory requirements for parallel jobs {#paralleljob-type-overview#note-specify-memory}
 
 When `-l s_vmem` or `-l mem_req` is specified for the parallel job, the job is submitted by requesting memory, which is multiplied by the number of parallels specified in the parallel environment and specified memory from the system.
 
@@ -73,9 +73,9 @@ For example, when you specify as below, it means that you have specified 16 × 8
 ```
 
 
-## Types of parallel jobs (detail)
+## Types of parallel jobs (detail) {#paralleljob-type-detail}
 
-### CPU and memory allocation
+### CPU and memory allocation {#paralleljob-type-detail#cpu-and-mem-alloc}
 
 The above example specifies one CPU core and the corresponding memory.
 
@@ -102,7 +102,7 @@ If the amount of memory is not specified when executing the qsub command (defaul
 ![](/img/software/grid_engine/pe_5_EN.png)
 
 
-### How to know which compute nodes have been allocated in a parallel job
+### How to check which compute nodes have been allocated in a parallel job {#paralleljob-type-detail#check-which-nodes-allocated}
 
 ```
 $ qstat

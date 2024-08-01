@@ -23,14 +23,14 @@ C,C++,C#,Fortranソフトウェア開発者向けの高性能ベクトル化／�
 遺伝研スパコン上での利用方法としては、性能評価ジョブを計算ノードにバッチジョブとして投入し、得られた結果をログインノード上のadvisorで
 評価するという利用形態になります。以下に順に説明します。
 
-### 実行ファイルのコンパイル
+### 実行ファイルのコンパイル {#intel-advisor#compile-exefile}
 
 評価情報を収集するために、プログラムのコンパイル時に`-g`オプションを指定する必要があります。
 ```
 icpx ソースファイル名 -g
 ```
 
-### 解析情報の取得
+### 解析情報の取得 {#intel-advisor#obtaining-analysis-info}
 
 コマンドラインツールadvisorを利用して解析情報を取得します。ここではサンプルプログラム名はvec_samplesというものを利用した例を記載しています。
 
@@ -58,7 +58,7 @@ Time in 2 Vectorized Loops: 0.85s
 上記の手順では、./resultsディレクトリの中に、取得した解析情報が格納されます。
 
 
-### CLIでの解析結果の確認方法
+### CLIでの解析結果の確認方法 {#intel-advisor#check-result-cli}
 
 以下のようなコマンドラインの指定で、レポートファイルをCLIで出力することも可能です。
 
@@ -85,7 +85,7 @@ ________________________________________________________________________________
 
 ```
 
-### GUIでの解析結果の確認方法
+### GUIでの解析結果の確認方法 {#intel-advisor#check-result-gui}
 
 GUI版のAdvisorの起動、確認手順を示します。AdvisorのGUI版はXアプリケーションである為、手元のPCにXサーバ環境が立ちあがって
 いることを前提とします。
@@ -129,7 +129,8 @@ GUIが立ち上がったら、show resultボタンを押します。しばらく
 ![figure](advisor2.png)
 
 
-## Intel VTune　プロファイラー
+## Intel VTune Profiler
+
 パフォーマンス分析ツールです。
 
 - [販売元の製品ページ](https://www.xlsoft.com/jp/products/intel/VTune/index.html)
@@ -213,7 +214,7 @@ mpirun -trace your_program
 ```
 実行が完了すると、実行ファイル名.stf というファイルができるので、これを読み込んで解析にかけます。
 
-### CLIでのトレース確認方法
+### CLIでのトレース確認方法 {#intel-trace-analy-collector#check-trace-cli}
 
 以下のコマンドでレポートファイルを生成することが可能です。
 
@@ -221,7 +222,7 @@ mpirun -trace your_program
 traceanalyzer --cli -o report.txt --messageprofile  stfファイル名
 ```
 
-### GUIでのトレース確認方法
+### GUIでのトレース確認方法 {#intel-trace-analy-collector#check-trace-gui}
 
 traceanalyzerのGUIはXアプリケーションなので、sshによるXポートフォワーディングの設定を行なった上で、
 ```

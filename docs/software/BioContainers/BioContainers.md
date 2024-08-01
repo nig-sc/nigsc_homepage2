@@ -3,7 +3,7 @@ id: BioContainers
 title: "BioContainers Apptainer (Singularity) Images の使い方"
 ---
 
-## 概要
+## 概要 {#introduce}
 
 
 <table border="0">
@@ -26,7 +26,7 @@ BioContainers project が作成した Singularity コンテナイメージ(2 千
 </table>
 
 
-## スパコン上に設置してある Apptainer (Sigularity) イメージを使う
+## スパコン上に設置してある Apptainer (Sigularity) イメージを使う {#use-singularity-image-of-nig-supercom}
  
 
 使用例は以下の通りです。
