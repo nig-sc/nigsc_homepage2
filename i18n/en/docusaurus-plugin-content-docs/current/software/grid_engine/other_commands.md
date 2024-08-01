@@ -12,9 +12,9 @@ Click [CUDA manual](/software/cuda).
 
 
 
-## Checking the job execution status (qstat)
+## Checking the job execution status (qstat) {#qstat}
 
-### Checking the job submission status
+### Checking the job submission status {#qstat#check-job-status}
 
 qstate checks whether the submitted job by using qsub was submitted as a job. To check the status of the submitted job, use the qstat command. For example, when the job is submitted, qstate shows as follows.
 
@@ -141,7 +141,7 @@ This makes it possible to determine which node (queue) the job is submitted to.
  ```
  
  
-## Checking the status of all cluster queues
+## Checking the status of all cluster queues {#cluster-congestion-check}
 
 To get a grasp on the job submission status of each queue, the queue load status, etc., type and execute "qstat -g c".
 You can also get the overall status with it.
@@ -170,7 +170,7 @@ The meanings of the numbers are as follows
 
 You can find more details with `man qstat`.
  
-## Deleting jobs(qdel)
+## Deleting jobs(qdel) {#qdel}
 
 The qdel command is used to delete a job without waiting for the job to finish. Use "qdel jobID". "qdel -u username" enables to delete all jobs that you have submitted.
 
@@ -195,10 +195,26 @@ a specific range of array jobs.
 </table>
 
 
-## Changing the job execution condition(qalter)
+## Changing the job execution condition(qalter) {#qalter}
+
+The qalter can be used to change the amount of memory used by a batch job submitted to a queue. To change the memory requirement of a job from 200GB to 100GB, first check the hard_resource_list of the job with qstat command.
+Since the change of hard_resource_list by qalter overwrites the entire hard_resource_list, you should also specify and change the hard_resource_list other than the memory requirement and memory.
 
 
-## Checking the result of jobs
+```
+[username@at027 ~]$ qstat -j 25453855 |grep hard_resource_list
+hard_resource_list:         mem_req=100G,s_vmem=100G
+
+[username@at027 ~]$ qalter -l  d_rt=600,mem_req=100G,s_rt=600,s_stack=10240K,s_vmem=100G,short=TRUE 25453855
+modified hard resource list of job 25453855
+modified environment of job 25453855
+
+[username@at027 ~]$ qstat -j 25453855 |grep hard_resource_list
+hard_resource_list:         d_rt=600,mem_req=100G,s_rt=600,s_stack=10240K,s_vmem=100G,short=TRUE
+```
+
+
+## Checking the result of jobs {#check-job-result}
 
 About the result, if you don't specify any options in the qsub command line, the standard output is output to the file named job name.o job ID and the standard error output is output with the following file name in the home directory. 
 
@@ -233,7 +249,7 @@ r_cpu                NONE
 
 ```
 
-## Setup of environment variables required for running Grid Engine 
+## Setup of environment variables required for running Grid Engine  {#setup-env}
 
 To be able to execute commands such as qsub of Grid Engine, a series of environment variables must be set up. Normally, you do not need to set up these environment variables yourself because they are automatically set up when you login to the gateway node of the general analysis division.
 

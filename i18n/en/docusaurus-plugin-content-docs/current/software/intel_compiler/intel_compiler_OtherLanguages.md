@@ -3,7 +3,8 @@ id: intel_compiler_OtherLanguages
 title: "Other Languages"
 ---
 
-## Intel Fortran Compiler
+## Intel Fortran Compiler {#intel-fortran-compiler}
+
 Intel's Fortran compiler.
 
 - Added support for the Fortran 2023 standard.
@@ -14,7 +15,7 @@ Intel's Fortran compiler.
 
 English)](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2024-0/overview.html)
 
-### Compiler Command Format
+### Compiler Command Format {#intel-fortran-compiler#command-form}
 
 |Language|Command|Execution Format|
 |--------|-------|----------------|
@@ -36,14 +37,14 @@ For more details, visit the following pages:
 - [Intel's product information page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.5k74sy)
 - [Numba's documentation site](https://numba.readthedocs.io/en/stable/)
 
-### Environment Setup
+### Environment Setup {#intel-distribution-py#setup-env}
 
 This section explains how to install Intel Distribution for Python in your environment. The following steps are based on the information provided on this site:
 - [AI Tools Selector](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-tools-selector.html)
 
 We will cover two methods of environment setup: using conda and using the offline installer.
 
-#### Environment Setup with conda
+#### Environment Setup with conda {#intel-distribution-py#setup-env#conda}
 
 Here, we describe the steps to install the Intel Distribution for Python environment using conda.
 
@@ -301,7 +302,7 @@ When prompted with `Proceed([y]/n)?`, respond with `y` to proceed with the insta
 
 After completion, you can check the installed packages with `conda list`. The installation includes a comprehensive set of packages enhanced for performance, including Intel® MKL, Intel® TBB, Numba, mpi4py, Cython, pyDAAL, and more, ensuring an optimized Python environment for computational tasks.
 
-#### Steps for Environment Setup Using the Offline Installer
+#### Steps for Environment Setup Using the Offline Installer {#intel-distribution-py#setup-env#offline-installer}
 
 Next, we'll explain how to set up the Intel Distribution for Python environment in your user environment using the offline installer.
 
@@ -638,7 +639,7 @@ zstd                      1.5.5                hfc55251_0    intel
 
 It is evident that packages such as numpy, scipy, and scikit-learn have also been introduced from the Intel channel.
 
-### Basic Operation Check with Sample Programs
+### Basic Operation Check with Sample Programs {#intel-distribution-py#check-operation}
 
 Let's use the sample programs distributed by Intel to check the environment.
 

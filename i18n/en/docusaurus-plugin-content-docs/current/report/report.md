@@ -118,9 +118,10 @@ title: "Statistics"
 ![](total_Accounts.png)
 
 
-## Number of user institutions
+## Number of institutions
 
-The number of institutions represents [the number of institutions applying for scientific research funding in Japan](https://www-kaken.jsps.go.jp/kaken1/kikanList.do).
+The number of [institutions applying for Grants-in-Aid for Scientific Research](https://www-kaken.jsps.go.jp/kaken1/kikanList.do) was counted as one institution. (In the case of non-applicant institutions for Grants-in-Aid for Scientific Research, universities, companies, etc. were counted as one institution. Companies are not disclosed).
+For specific institution names, see 'Number of accounts by institution'.
 
 <table>
 <tbody>

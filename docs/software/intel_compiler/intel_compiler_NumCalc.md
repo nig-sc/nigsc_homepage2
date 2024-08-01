@@ -4,7 +4,7 @@ title: "数値計算"
 ---
 
 
-## Intel oneMKL （マス・カーネル・ライブラリ）
+## Intel oneMKL （マス・カーネル・ライブラリ） {#intel_one-math-kernel-lib}
 
 遺伝研スパコンでは、Intel Math Kernel Libraryを利用可能です。MKLでは線形代数、高速フーリエ変換、ベクトル演算などの数学処理ルーチンを高速化します。
 
@@ -31,7 +31,8 @@ MKLを利用する場合のリンクオプションの指定の仕方につい�
 [Intel oneAPI Math Kernel Library Link Line Advisor](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-link-line-advisor.html#gs.4cdbls)
 
 
-## Intel IPP(インテグレーテッド・パフォーマンス・プリミティブ)
+## Intel IPP(インテグレーテッド・パフォーマンス・プリミティブ) {#intel_ipp}
+
 画像処理ライブラリです。画像処理、信号処理、データ圧縮、暗号化処理等の各関数ライブラリです。
 
 - [販売元の製品ページ](https://www.xlsoft.com/jp/products/intel/perflib/ipp/index.html)

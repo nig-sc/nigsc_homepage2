@@ -10,7 +10,7 @@ title: パラレルジョブ
   
   並列ジョブ機能を利用するには（バッチジョブの項で説明したオプションに加えて）`-pe` オプションを用いて parallel environment を指定します。
   
-## パラレルジョブの種類 (概要)
+## パラレルジョブの種類 (概要) {#paralleljob-type-overview}
 
 
   遺伝研スパコンで用意されている parallel environment の種類を以下に示します。
@@ -52,7 +52,7 @@ title: パラレルジョブ
 - ` qsub -pe def_slot 20-100 -S /bin/bash job_script.sh `
 - ` qsub -pe mpi 20- -S /bin/bash job_script.sh `
 
-### 並列ジョブに対して、メモリ要求量を指定する際の注意事項
+### 並列ジョブに対して、メモリ要求量を指定する際の注意事項 {#paralleljob-type-overview#note-specify-memory}
 
 並列ジョブに対して`-l s_vmem`、`-l mem_req` を指定する場合、並列環境で指定した並列数と指定したメモリ量が掛け合わされた容量のメモリをシステム に要求してジョブが投入されます。
 
@@ -64,9 +64,9 @@ title: パラレルジョブ
 ```
 
 
-## パラレルジョブの種類 (詳細)
+## パラレルジョブの種類 (詳細) {#paralleljob-type-detail}
 
-### CPU とメモリの確保の様子
+### CPU とメモリの確保の様子 {#paralleljob-type-detail#cpu-and-mem-alloc}
 
 先程までの例は、１個の CPU コアと、それに対応するメモリを指定する場合です。
 
@@ -93,7 +93,7 @@ qsub コマンド実行時にメモリ量を指定しない場合(デフォル�
 ![](/img/software/grid_engine/pe_5_JP.png)
 
 
-### 並列ジョブでどの計算ノードが確保されたかを知る方法
+### 並列ジョブでどの計算ノードが確保されたかを知る方法 {#paralleljob-type-detail#check-which-nodes-allocated}
 
 ```
 $ qstat

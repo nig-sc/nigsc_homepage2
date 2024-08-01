@@ -25,7 +25,7 @@ For the contents and how to use the software, refer to <a href="https://bioconta
 
 
 
-## Use the Singularity image installed on the supercomputer
+## Use the Singularity image installed on the supercomputer {#use-singularity-image-of-nig-supercom}
 
 The usage example is as follows:
 
