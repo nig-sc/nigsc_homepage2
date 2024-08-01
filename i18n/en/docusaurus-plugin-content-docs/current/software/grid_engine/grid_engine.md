@@ -51,7 +51,7 @@ Mainly used commands
 
 For more information, see the [Other Commands](/software/grid_engine/other_commands) page and the official manual.
 
-## If the job does not start running
+## If the job does not start running {#job-not-starting}
 
 1. Check if the job settings are correct.
     - We provide a program to check if the settings are appropriate. Refer to the [How to use qsub_beta](/software/qsub_beta) page. 

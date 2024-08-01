@@ -23,14 +23,14 @@ For more information, visit the following links:
 
 To use Advisor on the NIG supercomputer, you typically submit a performance evaluation job to a compute node as a batch job and then analyze the results on a login node using Advisor. The following explains this process step by step.
 
-### Compiling the Executable
+### Compiling the Executable {#intel-advisor#compile-exefile}
 
 To collect evaluation information, you need to compile your program with the `-g` option.
 ```
 icpx source_filename -g
 ```
 
-### Gathering Analysis Information
+### Obtaining Analysis Information {#intel-advisor#obtaining-analysis-info}
 
 Use the advisor command-line tool to gather analysis information. The example below uses a sample program named `vec_samples`.
 
@@ -57,7 +57,7 @@ Time in 2 Vectorized Loops: 0.85s
 ```
 In the above process, analysis information is stored in the `./results` directory.
 
-### Viewing Analysis Results via CLI
+### Checking Analysis Results via CLI {#intel-advisor#check-result-cli}
 
 You can output the report file via CLI with the following command line specification.
 
@@ -85,7 +85,7 @@ ________________________________________________________________________________
 
 ```
 
-### Viewing Analysis Results via GUI
+### Checking Analysis Results via GUI
 
 To launch and view results with the GUI version of Advisor, you need an X server environment set up on your local PC.
 
@@ -127,6 +127,7 @@ Click the "show result" button. After a while, the result display screen will ap
 For how to use the profiler, please refer to the user guide.
 
 ## Intel VTune Profiler
+
 A performance analysis tool.
 
 - [Product page by the distributor](https://www.xlsoft.com/jp/products/intel/VTune/index.html)
@@ -208,7 +209,7 @@ mpirun -trace your_program
 ```
 After execution, a file named `your_program_name.stf` is created, which you load and analyze.
 
-### CLI method for trace checking
+### CLI method for trace checking {#intel-trace-analy-collector#check-trace-cli}
 
 You can generate a report file with the following command.
 
@@ -216,7 +217,7 @@ You can generate a report file with the following command.
 traceanalyzer --cli -o report.txt --messageprofile stf file name
 ```
 
-### GUI method for trace checking
+### GUI method for trace checking {#intel-trace-analy-collector#check-trace-gui}
 
 Since the traceanalyzer GUI is an X application, set up SSH X port forwarding before running:
 

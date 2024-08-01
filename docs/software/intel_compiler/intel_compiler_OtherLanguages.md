@@ -3,7 +3,8 @@ id: intel_compiler_OtherLanguages
 title: "他の言語"
 ---
 
-## Intel Fortran コンパイラ
+## Intel Fortran コンパイラ {#intel-fortran-compiler}
+
 IntelのFortranコンパイラです。
 
 - Fortran 2023 標準規格サポートが追加されています。
@@ -14,7 +15,7 @@ IntelのFortranコンパイラです。
 - [販売元の製品ページ](https://www.xlsoft.com/jp/products/intel/compilers/fortran/index.html)
 - [インテルのデベロッパーズガイド（英語）](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2024-0/overview.html)
 
-### コンパイラコマンド形式
+### コンパイラコマンド形式 {#intel-fortran-compiler#command-form}
 
 |言語 |コマンド |実行形式|
 |-----|--------|-------|
@@ -36,7 +37,7 @@ IntelのFortranコンパイラです。
 - [Numbaのドキュメントサイト](https://numba.readthedocs.io/en/stable/)
 
 
-### 環境導入手順
+### 環境導入手順 {#intel-distribution-py#setup-env}
 
 ここでは、ユーザの個別の環境にIntel Distribution for Pythonを導入する方法について説明します。
 本手順は以下のサイトの記載に従っています。
@@ -45,7 +46,7 @@ IntelのFortranコンパイラです。
 
 condaを利用する方法とオフラインインストーラを利用する方法の２方法について以下で説明します。
 
-#### condaでの環境導入手順
+#### condaでの環境導入手順 {#intel-distribution-py#setup-env#conda}
 
 ここでは、condaでIntel Distribution for Python環境を導入する手順を説明します。
 
@@ -456,7 +457,7 @@ zstd                      1.5.5                hfc55251_0    intel
 インストールが完了します。
 
 
-#### オフラインインストーラで環境導入する手順
+#### オフラインインストーラで環境導入する手順 {#intel-distribution-py#setup-env#offline-installer}
 
 次に、ユーザ環境にオフラインインストーラでIntel Distribution for Python環境を導入する手順を説明します。
 
@@ -788,7 +789,8 @@ zstd                      1.5.5                hfc55251_0    intel
 ```
 numpy、scipy、scikit-learnなどもIntelチャネルから導入されていることがわかります。
 
-### サンプルプログラムによる基本動作確認
+### サンプルプログラムによる基本動作確認 {#intel-distribution-py#check-operation}
+ 
 
 Intelが配布するサンプルプログラムを利用して環境の確認をしてみます。
 

@@ -3,7 +3,7 @@ id: intel_compiler_debugger
 title: "デバッガ"
 ---
 
-## インテルディストリビューションのGDB
+## インテルディストリビューションのGDB {#inteldistribution-gcb}
 通常のgdbと比較して、IntelのCPU,GPU,FPGA上のデバッグに対して追加機能をしたGDBです。
 
 |コマンド|説明|

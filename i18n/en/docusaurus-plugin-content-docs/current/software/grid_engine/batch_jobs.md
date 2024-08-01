@@ -4,7 +4,7 @@ title: Batch Jobs (batch job)
 ---
 
 
-## How to use the batch job
+## How to use the batch job {#usage-batch-job}
 
 When you run a small number of programs that use only one CPU core and run for a long time, run them as the batch job. (When you execute many jobs, use the array job described later.)
 

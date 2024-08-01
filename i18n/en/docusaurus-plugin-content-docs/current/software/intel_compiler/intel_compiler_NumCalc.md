@@ -4,7 +4,7 @@ title: "Numeric Calculation"
 ---
 
 
-## Intel oneMKL (Math Kernel Library)
+## Intel oneMKL (Math Kernel Library) {#intel_one-math-kernel-lib}
 
 The NIG supercomputer allows the use of the Intel Math Kernel Library (MKL), which accelerates mathematical processing routines such as linear algebra, fast Fourier transforms, and vector operations.
 
@@ -29,7 +29,7 @@ For linking options with MKL, consider using the Link Line Advisor:
 [Intel oneAPI Math Kernel Library Link Line Advisor](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-link-line-advisor.html#gs.4cdbls)
 
 
-## Intel IPP (Integrated Performance Primitives)
+## Intel IPP (Integrated Performance Primitives) {#intel_ipp}
 
 A library for image processing functions, including image processing, signal processing, data compression, and encryption functions.
 - [Distributor's product page](https://www.xlsoft.com/jp/products/intel/perflib/ipp/index.html)

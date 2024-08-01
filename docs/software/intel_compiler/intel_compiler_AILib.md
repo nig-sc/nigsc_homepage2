@@ -4,7 +4,7 @@ title: "AIライブラリ"
 ---
 
 
-## Intel OneCCL(コレクティブ・コミュニケーションズ・ライブラリ)
+## Intel OneCCL(コレクティブ・コミュニケーションズ・ライブラリ) {#intel_oneccl}
 
 分散深層学習の為のハイパフォーマンスなコミュニケーションライブラリです。
 
@@ -15,7 +15,9 @@ title: "AIライブラリ"
 例題が入っています。
 
 
-## Intel OneDNN(ディープ・ニューラル・ネットワーク・ライブラリ)
+## Intel OneDNN(ディープ・ニューラル・ネットワーク・ライブラリ) {#intel_onednn}
+
+
 インテルアーキテクチャベースのプロセッサおよびインテルプロセッサグラフィックス向けに最適化されたニューラル・ネットワークを使用するディープラーニングアプリケーションで使用します。
 
 - [Intelの製品ページ](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onednn.html#gs.4ojwxo)
