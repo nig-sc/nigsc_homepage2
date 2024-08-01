@@ -121,7 +121,7 @@ title: "Statistics"
 ## Number of institutions
 
 The number of [institutions applying for Grants-in-Aid for Scientific Research](https://www-kaken.jsps.go.jp/kaken1/kikanList.do) was counted as one institution. (In the case of non-applicant institutions for Grants-in-Aid for Scientific Research, universities, companies, etc. were counted as one institution. Companies are not disclosed).
-For specific institution names, see 'Number of accounts by institution'.
+For specific institution names, see '[Number of accounts by institution](/report/accounts_by_institution)'. Aggregated only for universities and public research institutions (companies are not dixcclosed).
 
 <table>
 <tbody>
