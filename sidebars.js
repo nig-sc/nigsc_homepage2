@@ -475,9 +475,9 @@ module.exports = {
         },
         {
             type: "category",
-            label: "所属機関ごとのアカウント数",
+            label: "利用機関ごとのアカウント数",
             items: [
-            "report/accounts_per_institution",
+            "report/accounts_by_institution",
             ]
         },
     ],
