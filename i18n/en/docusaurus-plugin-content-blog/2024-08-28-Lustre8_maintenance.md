@@ -1,6 +1,6 @@
 ---
 slug: 2024-08-28-Lustre8_maintenance
-title: "(Ended) July 8, 2024: Emergency maintenance of Lustre8"
+title: "(Ended) July 28, 2024: Emergency maintenance of Lustre8"
 tags:
   - maintenance
 authros:
