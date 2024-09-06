@@ -1,6 +1,6 @@
 ---
 slug: 2024-07-01-news_renewal-date-extended
-title: "2023年度 年度末アカウント継続申請の申請受付期限の延長"
+title: "(終了) 2023年度 年度末アカウント継続申請の申請受付期限の延長"
 tags:
   - news
 authros:
