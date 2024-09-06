@@ -65,7 +65,7 @@ module.exports = {
                         id: "software/software",
                     },
                     items: [
-                        "software/software_update_log",
+                        "software/software_update_info",
                     ],
                 },
             ],
