@@ -1,6 +1,6 @@
 ---
-slug: (Ended) 2024-07-01-news_renewal-date-extended
-title: "July 1, 2024:  Extended deadline for account renewal application at the end of FY2023"
+slug: 2024-07-01-news_renewal-date-extended
+title: "(Ended) July 1, 2024:  Extended deadline for account renewal application at the end of FY2023"
 tags:
   - news
 authros:
