@@ -19,9 +19,9 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
-- [&#x26A0;(Ended) Emergency maintenance of Lustre8](/blog/2024-09-04-Lustre8_maintenance) (2024.09.04) &#x1F195;
+- [(Ended) Emergency maintenance of Lustre8](/blog/2024-09-04-Lustre8_maintenance) (2024.09.04) &#x1F195;
 - [Migrated some of the Medium nodes to Ubuntu Linux and established a new Gride Engine queue (medium-ubuntu.q)](/blog/2024-07-08-news_medium-ubuntu-q) (2024.07.08)
-- [Extended deadline for account renewal application at the end of FY2023](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)
+- [(Ended) Extended deadline for account renewal application at the end of FY2023](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)
 - [Important Announcement from the NIG supercomputer: Phase 1 (Apr-Jul) FY2024](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)
 - [Certified to ISMS (ISO 27001:2013)](/guides/ISMS_Certificate) (2023.11.22)
 - [Launched the omics data graphing tool 'RIAS®️ Visualization'](/advanced_guides/advanced_guide_2023#the-omics-data-graphing-tool-rias%EF%B8%8F-visualization-is-now-available) (2023.10.26)
