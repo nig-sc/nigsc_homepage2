@@ -159,6 +159,15 @@ title: ソフトウェア
 </tr>
 
 
+<tr>
+<td width="300">
+
+[Sentieon](/advanced_guides/Sentieon/)
+</td>
+<td width="300">☓</td>
+<td width="300">要申請</td>
+</tr>
+
 </table>
 
 
