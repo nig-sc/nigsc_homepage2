@@ -1,17 +1,17 @@
 ---
 id: sentieon
-title: "How to use Sentieon"
+title: "How to use Sentieon Genomics pipeline tools"
 ---
 
 
 ## System Overview
 
-Sentieon is a bioinformatics tool that provides fast genomic data analysis, allowing fast joint calls on CPU-based systems.
+Sentieon is a bioinformatics tool that provides fast genomic data analysis, allowing fast variant calling and/or joint calling on CPU-based systems.
 
 
 ### References
 
-- [&#x1f517;<u>Sentieon Official website</u>](https://support.sentieon.com/manual/)
+- [&#x1f517;<u>Sentieon Genomics pipeline tools manual (Official website)</u>](https://support.sentieon.com/manual/)
 
 
 ### Flow of using Sentieon
@@ -31,10 +31,10 @@ Sentieon is a bioinformatics tool that provides fast genomic data analysis, allo
 ssh <the computation node name>
 ```
 
-### Export the server address
-- Export the specified Sentieon license server address as environment variable.
+### Set an environmental variable
+- Specify license server address (`gwa.ddbj.nig.ac.jp:8992`) as an environment variable.
 ```
-export SENTIEON_LICENSE=<the Sentieon license server address>
+export SENTIEON_LICENSE=gwa.ddbj.nig.ac.jp:8992
 ```
 
 ### Download Sentieon binary files
