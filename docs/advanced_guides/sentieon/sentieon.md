@@ -1,24 +1,24 @@
 ---
 id: sentieon
-title: "Sentieon の利用方法"
+title: "Sentieon Genomics pipeline tools の利用方法"
 ---
 
 
 ## システム概要
 
-Sentieon は高速なゲノムデータ解析を提供するバイオインフォマティクスツールです。CPU ベースのシステムで高速なジョイントコールができます。
+Sentieon Genomics pipeline tools は高速なゲノムデータ解析を提供するバイオインフォマティクスツールです。CPU ベースのシステムで高速なバリアントコールやジョイントコールができます。
 
 
 ### 参考資料
 
-- [&#x1f517;<u>Sentieon 公式サイト</u>](https://support.sentieon.com/manual/)
+- [&#x1f517;<u>Sentieon Genomics pipeline tools manual (公式サイト)</u>](https://support.sentieon.com/manual/)
 
 
 ### Sentieon利用時の流れ
 
 ![](sentieon.png)
 
-- 遺伝研スパコン個人ゲノム解析区画からSentieonのライセンスサーバーに接続して実行できます。
+- 遺伝研スパコン個人ゲノム解析区画からライセンスサーバに接続して実行できます。
 
 
 ## Sentieonの実行方法
@@ -31,10 +31,10 @@ Sentieon は高速なゲノムデータ解析を提供するバイオインフ�
 ssh <計算ノード>
 ```
 
-### Sentieonライセンスサーバーをexport
-- 指定されたライセンスサーバーをexport
+### 環境変数の設定
+- ライセンスサーバのアドレス(`gwa.ddbj.nig.ac.jp:8992`)を環境変数で指定します
 ```
-export SENTIEON_LICENSE=<指定されたライセンスサーバー>
+export SENTIEON_LICENSE=gwa.ddbj.nig.ac.jp:8992
 ```
 
 ### Sentieonのバイナリファイルのダウンロード
