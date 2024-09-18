@@ -143,11 +143,21 @@ The following package managers can be used only with user permission. They facil
 <tr>
 <td width="300">
 
+[Sentieon Genomics pipeline tools](/advanced_guides/sentieon/)
+</td>
+<td width="300">☓</td>
+<td width="300">available</td>
+</tr>
+
+<tr>
+<td width="300">
+
 [Rhelixa RNAseq pipeline](/advanced_guides/Rhelixa_RNAseq)
 </td>
 <td width="300">installed</td>
 <td width="300">available</td>
 </tr>
+
 </table>
 
 

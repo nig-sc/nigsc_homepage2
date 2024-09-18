@@ -413,6 +413,13 @@ module.exports = {
         },
         {
             type: "category",
+            label: "Sentieon",
+            items: [
+                "advanced_guides/sentieon/sentieon",
+            ],
+        },
+        {
+            type: "category",
             label: "Benchmark",
             items: [
                 "advanced_guides/benchmark_dorado",
