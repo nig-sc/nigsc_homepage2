@@ -148,6 +148,16 @@ The following package managers can be used only with user permission. They facil
 <td width="300">installed</td>
 <td width="300">available</td>
 </tr>
+
+<tr>
+<td width="300">
+
+[Sentieon](/advanced_guides/sentieon/)
+</td>
+<td width="300">☓</td>
+<td width="300">Application Required</td>
+</tr>
+
 </table>
 
 

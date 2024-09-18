@@ -6,8 +6,7 @@ title: "Sentieon の利用方法"
 
 ## システム概要
 
-Sentieon は xxxです。
-xxxできます。
+Sentieon は高速なゲノムデータ解析を提供するバイオインフォマティクスツールです。CPU ベースのシステムで高速なジョイントコールができます。
 
 
 参考資料
@@ -15,17 +14,18 @@ xxxできます。
 - [&#x1f517;<u>Sentieon 公式サイト</u>](https://support.sentieon.com/manual/)
 
 
-xxx
+Sentieon利用時の流れ
 
-![](slurm_in_personal_genome_section.png)
+![](sentieon.png)
 
-- xxx
+- 遺伝研スパコン個人ゲノム解析区画からSentieonのライセンスサーバーに接続することができます。
+- 個人ゲノム解析区画からライセンスサーバー等の設定を行うことで、Sentieonを実行できます。
 
 ## Sentieonの実行方法 
 ### 実行環境にログイン
 - SSL-VPNに接続
 - sshで遺伝研スパコン個人ゲノム解析区画のゲートウェイにログイン
-- sshで計算ノードにログイン　※ノード貸しで借りた計算ノードを指定する
+- sshで計算ノードにログイン　※指定された計算ノードを記載
 ```
 ssh <計算ノード>
 ```
@@ -35,27 +35,28 @@ ssh <計算ノード>
 export SENTIEON_LICENSE=<指定されたライセンスサーバー>
 ```
 ### Sentieonのバイナリファイルのダウンロード
-- [Sentieon 公式サイトのリリースノート](https://support.sentieon.com/manual/appendix/releasenotes/?highlight=aws)を確認し、最新のバージョンをダウンロード
+- [Sentieon 公式サイトのリリースノート](https://support.sentieon.com/manual/appendix/releasenotes/?highlight=aws)を確認し、最新のバージョンをダウンロードした後、解凍
 ```
 curl https://s3.amazonaws.com/sentieon-release/software/sentieon-genomics-202308.tar.gz -o sentieon-genomics-202308.tar.gz
+
 tar -zxvf sentieon-genomics-202308.tar.gz
 ```
 ### Sentieonのインストールディレクトリを指定
-- 解凍したSentieonのバイナリファイルのパスを指定。
-- path/to/sentieon は /home からのパスを記載
+- 解凍したSentieonのバイナリファイルのパスを指定
+- `/home/path/to/sentieon-genomics-202308`は自身の`/home`から`sentieon-genomics-202308`までのパスを記載
 ```
-SENTIEON_INSTALL_DIR=path/to/sentieon/sentieon-genomics-202308
+SENTIEON_INSTALL_DIR=/path/to/sentieon-genomics-202308
 ```
 ### jemallocのインストール
 - Sentieon 公式サイトより、jemallocの使用が推奨されています。
 - [INSTALL.md](https://github.com/jemalloc/jemalloc/blob/dev/INSTALL.md)に従ってインストールしてください
 - 詳しい内容は[using-jemalloc-to-optimize-memory-allocation](https://support.sentieon.com/appnotes/jemalloc/#using-jemalloc-to-optimize-memory-allocation)をご確認ください
 
-### コマンド実行
-- 下記のようにSentieonコマンドを実行（ヘルプの例）します。
+### Sentieonコマンド実行
+- 下記のようにSentieonコマンドを実行（例：`sentieon driver`のヘルプ）
 ```
 $SENTIEON_INSTALL_DIR/bin/sentieon driver -h
-Usage: path/to/sentieon/sentieon-genomics-202308/libexec/driver [options] --algo <algo_name> [algo_options]
+Usage: /home/path/to/sentieon-genomics-202308/libexec/driver [options] --algo <algo_name> [algo_options]
 
 Options:
   -r, --reference       Reference file (FASTA)
