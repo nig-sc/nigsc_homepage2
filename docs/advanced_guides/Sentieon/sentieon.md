@@ -9,19 +9,20 @@ title: "Sentieon の利用方法"
 Sentieon は高速なゲノムデータ解析を提供するバイオインフォマティクスツールです。CPU ベースのシステムで高速なジョイントコールができます。
 
 
-参考資料
+### 参考資料
 
 - [&#x1f517;<u>Sentieon 公式サイト</u>](https://support.sentieon.com/manual/)
 
 
-Sentieon利用時の流れ
+### Sentieon利用時の流れ
 
 ![](sentieon.png)
 
 - 遺伝研スパコン個人ゲノム解析区画からSentieonのライセンスサーバーに接続することができます。
 - 個人ゲノム解析区画からライセンスサーバー等の設定を行うことで、Sentieonを実行できます。
 
-## Sentieonの実行方法 
+## Sentieonの実行方法
+
 ### 実行環境にログイン
 - SSL-VPNに接続
 - sshで遺伝研スパコン個人ゲノム解析区画のゲートウェイにログイン
@@ -29,11 +30,13 @@ Sentieon利用時の流れ
 ```
 ssh <計算ノード>
 ```
+
 ### Sentieonライセンスサーバーをexport
 - 指定されたライセンスサーバーをexport
 ```
 export SENTIEON_LICENSE=<指定されたライセンスサーバー>
 ```
+
 ### Sentieonのバイナリファイルのダウンロード
 - [Sentieon 公式サイトのリリースノート](https://support.sentieon.com/manual/appendix/releasenotes/?highlight=aws)を確認し、最新のバージョンをダウンロードした後、解凍
 ```
@@ -41,12 +44,14 @@ curl https://s3.amazonaws.com/sentieon-release/software/sentieon-genomics-202308
 
 tar -zxvf sentieon-genomics-202308.tar.gz
 ```
+
 ### Sentieonのインストールディレクトリを指定
 - 解凍したSentieonのバイナリファイルのパスを指定
 - `/home/path/to/sentieon-genomics-202308`は自身の`/home`から`sentieon-genomics-202308`までのパスを記載
 ```
 SENTIEON_INSTALL_DIR=/path/to/sentieon-genomics-202308
 ```
+
 ### jemallocのインストール
 - Sentieon 公式サイトより、jemallocの使用が推奨されています。
 - [INSTALL.md](https://github.com/jemalloc/jemalloc/blob/dev/INSTALL.md)に従ってインストールしてください
@@ -81,4 +86,3 @@ For algo or other help information, type
   driver --help read_filter
   driver --help read_flag_bits
 ```
-
