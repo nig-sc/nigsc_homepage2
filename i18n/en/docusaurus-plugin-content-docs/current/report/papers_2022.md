@@ -216,3 +216,60 @@ title: Published Papers(2022)
 </tr>
 
 </table>
+
+
+### Additional papers submitted after the end-of-year renewal in 2020
+
+<table>
+
+<tr>
+<td></td>
+<td>Supercomputer users in authors list(Japanese)</td>
+<td>Supercomputer users in authors list</td>
+<td>Title</td>
+<td>Journal, Volume, Number, Pages</td>
+<td>PMID</td>
+<td>DOI</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>石崎 公庸</td>
+<td>Kimitsune Ishizaki</td>
+<td>Migration of prospindle before the first asymmetric division in germinating spore of Marchantia polymorpha.</td>
+<td>Plant Biotechnol (Tokyo). 2022 Mar 25; 39(1): 5-12.</td>
+<td>35800969</td>
+<td>doi: 10.5511/plantbiotechnology.21.1217b</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>付 希</td>
+<td>Xi Fu</td>
+<td>CircSeqAlignTk: An R package for end-to-end analysis of RNA-seq data for circular genomes.</td>
+<td>F1000Res. 2022; 11: 1221.</td>
+<td>38686041</td>
+<td>doi: 10.12688/f1000research.127348.1</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>古村 祥也, 吉田 健太郎</td>
+<td>Shoya Komura, Kentaro Yoshida</td>
+<td>Genome sequencing-based coverage analyses facilitate high-resolution detection of deletions linked to phenotypes of gamma-irradiated wheat mutants.</td>
+<td>BMC Genomics. 2022 Feb 09; 23(1): 111.</td>
+<td>35139819</td>
+<td>doi: 10.1186/s12864-022-08344-8</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>森 隆弘</td>
+<td>Takahiro Mori</td>
+<td>A single-nucleotide-polymorphism in the 5'-flanking region of MSX1 gene as a predictive marker candidate for platinum-based therapy of esophageal carcinoma.</td>
+<td>Ther Adv Med Oncol. 2022; 14: 17588359221080580.</td>
+<td>35251318</td>
+<td>doi: 10.1177/17588359221080580</td>
+</tr>
+
+</table>
