@@ -1526,18 +1526,156 @@ title: Published Papers(2021)
 
 ### Additional papers submitted after the end-of-year renewal in 2020
 
+
 <table>
-<tr><td></td><td>Supercomputer users in authors list(Japanese)</td><td>Supercomputer users in authors list</td><td>Title</td><td>"Journal, Volume, Number, Pages"</td><td>PMID</td><td>DOI</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>1</td><td>江副 晃洋</td><td>Akihiro Ezoe</td><td>Degree of Functional Divergence in Duplicates Is Associated with Distinct Roles in Plant Evolution.</td><td>Mol Biol Evol. 2021 Apr 13; 38(4): 1447-1459.</td><td>33290522</td><td>doi: 1093/molbev/msaa302</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>2</td><td>河合 洋介</td><td>Yosuke Kawai</td><td>Mapping of susceptible variants for cold medicine-related Stevens-Johnson syndrome by whole-genome resequencing.</td><td>NPJ Genom Med. 2021 Feb 11; 6(1): 9.</td><td>33574277</td><td>doi: 1038/s41525-021-00171-2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>3</td><td>前野 慎太朗</td><td>Shintaro Maeno</td><td>Niche-specific adaptation of Lactobacillus helveticus strains isolated from malt whisky and dairy fermentations.</td><td>Microb Genom. 2021 Apr; 7(4): 000560.</td><td>33900907</td><td>doi: 1099/mgen.0.000560</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>4</td><td>竹崎 直子</td><td>Naoko Takezaki</td><td>Resolving the Early Divergence Pattern of Teleost Fish Using Genome-Scale Data.</td><td>Genome Biol Evol. 2021 May 07; 13(5): evab052.</td><td>34146396</td><td>doi: 1093/gbe/evab052</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>5</td><td>松前 ひろみ</td><td>Hiromi Matsumae</td><td>Exploring correlations in genetic and cultural variation across language families in northeast Asia.</td><td>Sci Adv. 2021 Jul; 7(34): eabd9223.</td><td>34407936</td><td>doi: 1126/sciadv.abd9223</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>6</td><td>佐藤 綾</td><td>Aya Satoh</td><td>De novo assembly and annotation of the mangrove cricket genome.</td><td>BMC Res Notes. 2021 Oct 09; 14(1): 387.</td><td>34627387</td><td>doi: 1186/s13104-021-05798-z</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>7</td><td>杉本 竜太</td><td>Ryota Sugimoto</td><td>"Comprehensive discovery of CRISPR-targeted terminally redundant sequences in the human gut metagenome: Viruses, plasmids, and more."</td><td>PLoS Comput Biol. 2021 Oct; 17(10): e1009428.</td><td>34673779</td><td>doi: 1371/journal.pcbi.1009428</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>8</td><td>高井 俊之</td><td>Toshiyuki Takai</td><td>Effects of quantitative trait locus MP3 on the number of panicles and rice productivity in nutrient-poor soils of Madagascar</td><td>Crop Science. 2021 January/February; 61(1): 519-528</td><td>NULL</td><td>doi: 10.1002/csc2.20344</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>9</td><td>鎌倉 史帆</td><td>Shiho Kamakura</td><td>Inheritance of spheroid body and plastid in the raphid diatom Epithemia (Bacillariophyta) during sexual reproduction</td><td>Phycologia. 2021; 60(3): 265-273</td><td>NULL</td><td>doi: 10.1080/00318884.2021.1909399</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>10</td><td>美世 一守</td><td>Kazumori Mise</td><td>Global soil metagenomics reveals ubiquitous yet previously-hidden predominance of Deltaproteobacteria in nitrogen-fixing microbiome</td><td>bioRxiv. 2021</td><td>NULL</td><td>doi: 10.1101/2022.12.09.519847</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>11</td><td>下野 嘉子</td><td>Yoshiko Shimono</td><td>Revegetation in Japan overlooks geographical genetic structure of native Artemisia indica var. maximowiczii populations</td><td>Restoration Ecology. 2021; 30(7): e13567</td><td>NULL</td><td>doi: 10.1111/rec.13567</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>12</td><td>北崎 一義</td><td>Kazuyoshi Kitazaki</td><td>Nuclear DNA segments homologous to mitochondrial DNA are obstacles for detecting heteroplasmy in sugar beet (Beta vulgaris L.)</td><td>PLOS ONE. 2021</td><td>NULL</td><td>doi: 10.1371/journal.pone.0285430</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td></td>
+<td>Supercomputer users in authors list(Japanese)</td>
+<td>Supercomputer users in authors list</td>
+<td>Title</td>
+<td>Journal, Volume, Number, Pages</td>
+<td>PMID</td>
+<td>DOI</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>江副 晃洋</td>
+<td>Akihiro Ezoe</td>
+<td>Degree of Functional Divergence in Duplicates Is Associated with Distinct Roles in Plant Evolution.</td>
+<td>Mol Biol Evol. 2021 Apr 13; 38(4): 1447-1459.</td>
+<td>33290522</td>
+<td>doi: 1093/molbev/msaa302</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>河合 洋介</td>
+<td>Yosuke Kawai</td>
+<td>Mapping of susceptible variants for cold medicine-related Stevens-Johnson syndrome by whole-genome resequencing.</td>
+<td>NPJ Genom Med. 2021 Feb 11; 6(1): 9.</td>
+<td>33574277</td>
+<td>doi: 1038/s41525-021-00171-2</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>前野 慎太朗</td>
+<td>Shintaro Maeno</td>
+<td>Niche-specific adaptation of Lactobacillus helveticus strains isolated from malt whisky and dairy fermentations.</td>
+<td>Microb Genom. 2021 Apr; 7(4): 000560.</td>
+<td>33900907</td>
+<td>doi: 1099/mgen.0.000560</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>竹崎 直子</td>
+<td>Naoko Takezaki</td>
+<td>Resolving the Early Divergence Pattern of Teleost Fish Using Genome-Scale Data.</td>
+<td>Genome Biol Evol. 2021 May 07; 13(5): evab052.</td>
+<td>34146396</td>
+<td>doi: 1093/gbe/evab052</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>松前 ひろみ</td>
+<td>Hiromi Matsumae</td>
+<td>Exploring correlations in genetic and cultural variation across language families in northeast Asia.</td>
+<td>Sci Adv. 2021 Jul; 7(34): eabd9223.</td>
+<td>34407936</td>
+<td>doi: 1126/sciadv.abd9223</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>佐藤 綾</td>
+<td>Aya Satoh</td>
+<td>De novo assembly and annotation of the mangrove cricket genome.</td>
+<td>BMC Res Notes. 2021 Oct 09; 14(1): 387.</td>
+<td>34627387</td>
+<td>doi: 1186/s13104-021-05798-z</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>杉本 竜太</td>
+<td>Ryota Sugimoto</td>
+<td>"Comprehensive discovery of CRISPR-targeted terminally redundant sequences in the human gut metagenome: Viruses, plasmids, and more."</td>
+<td>PLoS Comput Biol. 2021 Oct; 17(10): e1009428.</td>
+<td>34673779</td>
+<td>doi: 1371/journal.pcbi.1009428</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>足助 聡一郎</td>
+<td>Soichiro Asuke</td>
+<td>Correlation of Genomic Compartments with Contrastive Modes of Functional Losses of Host Specificity Determinants During Pathotype Differentiation in Pyricularia oryzae.</td>
+<td>Mol Plant Microbe Interact. 2021 Jun; 34(6): 680-690.</td>
+<td>33522841</td>
+<td>10.1094/MPMI-12-20-0339-R</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>久保 稔</td>
+<td>Minoru Kubo</td>
+<td>Expression of peat moss VASCULAR RELATED NAC-DOMAIN homologs in Nicotiana benthamiana leaf cells induces ectopic secondary wall formation.</td>
+<td>Plant Mol Biol. 2021 Jun; 106(3): 309-317.</td>
+<td>33881701</td>
+<td>10.1007/s11103-021-01148-6</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>高井 俊之</td>
+<td>Toshiyuki Takai</td>
+<td>Effects of quantitative trait locus MP3 on the number of panicles and rice productivity in nutrient-poor soils of Madagascar</td>
+<td>Crop Science. 2021 January/February; 61(1): 519-528</td>
+<td>NULL</td>
+<td>doi: 10.1002/csc2.20344</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>鎌倉 史帆</td>
+<td>Shiho Kamakura</td>
+<td>Inheritance of spheroid body and plastid in the raphid diatom Epithemia (Bacillariophyta) during sexual reproduction</td>
+<td>Phycologia. 2021; 60(3): 265-273</td>
+<td>NULL</td>
+<td>doi: 10.1080/00318884.2021.1909399</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>美世 一守</td>
+<td>Kazumori Mise</td>
+<td>Global soil metagenomics reveals ubiquitous yet previously-hidden predominance of Deltaproteobacteria in nitrogen-fixing microbiome</td>
+<td>bioRxiv. 2021</td>
+<td>NULL</td>
+<td>doi: 10.1101/2022.12.09.519847</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>下野 嘉子</td>
+<td>Yoshiko Shimono</td>
+<td>Revegetation in Japan overlooks geographical genetic structure of native Artemisia indica var. maximowiczii populations</td>
+<td>Restoration Ecology. 2021; 30(7): e13567</td>
+<td>NULL</td>
+<td>doi: 10.1111/rec.13567</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>北崎 一義</td>
+<td>Kazuyoshi Kitazaki</td>
+<td>Nuclear DNA segments homologous to mitochondrial DNA are obstacles for detecting heteroplasmy in sugar beet (Beta vulgaris L.)</td>
+<td>PLOS ONE. 2021</td>
+<td>NULL</td>
+<td>doi: 10.1371/journal.pone.0285430</td>
+</tr>
+
 </table>
