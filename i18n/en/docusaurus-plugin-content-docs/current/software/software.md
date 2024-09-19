@@ -146,7 +146,7 @@ The following package managers can be used only with user permission. They facil
 [Sentieon Genomics pipeline tools](/advanced_guides/sentieon/)
 </td>
 <td width="300">☓</td>
-<td width="300">available</td>
+<td width="300">Application Required</td>
 </tr>
 
 <tr>

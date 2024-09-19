@@ -155,7 +155,7 @@ title: ソフトウェア
 [Sentieon Genomics pipeline tools](/advanced_guides/sentieon/)
 </td>
 <td width="300">☓</td>
-<td width="300">利用可能</td>
+<td width="300">要申請</td>
 </tr>
 
 
