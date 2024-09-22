@@ -272,7 +272,7 @@ $ sbatch tutorial3.sh
 |--NA12878.cram.crai
 ```
 
-#### `germline-gpu.cwl`の利用方法
+#### 参考: `germline-gpu.cwl`の利用方法
 
 ```
 usage: Workflows/germline-gpu.cwl [-h] [--bwa_options STRING] \
