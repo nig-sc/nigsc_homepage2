@@ -467,6 +467,7 @@ module.exports = {
             type: "category",
             label: "論文リスト",
             items: [
+            "report/papers_2023",
             "report/papers_2022",
             "report/papers_2021",
             "report/papers_2020",
