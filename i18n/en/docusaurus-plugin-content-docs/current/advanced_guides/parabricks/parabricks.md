@@ -63,6 +63,9 @@ The basic procedure is the same as the advance reservation for Grid Engine in th
 
 Please submit an application to use the Personal Genome Analysis division and to be granted login access to the parabricks analysis environment (at022vm02).
 Afterward, please log in to the gateway to the Personal Genome Analysis division and then log in to the parabricks analysis environment using the following command.
+```
+ssh at022vm02 
+```
 
 ## How to submit a job
 
