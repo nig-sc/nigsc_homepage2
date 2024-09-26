@@ -248,6 +248,7 @@ cwltool --singularity \
     --chrX_interval WGSpipeline/interval_files/chrX.bed \
     --chrY_interval WGSpipeline/interval_files/chrY.bed
 ```
+その後以下のコマンドで解析を行います。
 ```
 $ cd /path/to/working/directory
 $ sbatch tutorial3.sh
