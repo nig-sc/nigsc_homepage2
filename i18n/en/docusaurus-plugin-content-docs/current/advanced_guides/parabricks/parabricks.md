@@ -252,6 +252,7 @@ cwltool --singularity \
     --chrX_interval WGSpipeline/interval_files/chrX.bed \
     --chrY_interval WGSpipeline/interval_files/chrY.bed
 ```
+Subsequently, the analysis will be conducted using the following command.
 ```
 $ cd /path/to/working/directory
 $ sbatch tutorial3.sh
@@ -276,7 +277,7 @@ Output files will be saved to the following directory.
 |--NA12878.cram.crai
 ```
 
-#### Reference: details for `germline-gpu.cwl`
+#### Reference: usage for `germline-gpu.cwl`
 
 ```
 usage: Workflows/germline-gpu.cwl [-h] [--bwa_options STRING] \
