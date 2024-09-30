@@ -152,6 +152,16 @@ title: ソフトウェア
 <tr>
 <td width="300">
 
+[Sentieon Genomics pipeline tools](/advanced_guides/sentieon/)
+</td>
+<td width="300">☓</td>
+<td width="300">要申請</td>
+</tr>
+
+
+<tr>
+<td width="300">
+
 [Rhelixa RNAseq パイプライン](/advanced_guides/Rhelixa_RNAseq)
 </td>
 <td width="300">インストール済み</td>
