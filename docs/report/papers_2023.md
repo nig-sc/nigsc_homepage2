@@ -750,7 +750,7 @@ title: 論文のリスト(2023)
 
 <tr>
 <td>74</td>
-<td>望月 孝子, 谷澤 靖洋, 中村 保一"</td>
+<td>望月 孝子, 谷澤 靖洋, 中村 保一</td>
 <td>Takako Mochizuki, Yasuhiro Tanizawa, Yasukazu Nakamura</td>
 <td>A practical assembly guideline for genomes with various levels of heterozygosity.</td>
 <td>Brief Bioinform. 2023 Sep 22; 24(6): bbad337.</td>
@@ -1840,6 +1840,16 @@ title: 論文のリスト(2023)
 
 <tr>
 <td>182</td>
+<td>水口 洋平, 豊田 敦</td>
+<td>Yohei Minakuchi, Atsushi Toyoda</td>
+<td>Identification of small-sized intrachromosomal segments at the ends of INV-DUP-DEL patterns</td>
+<td>J Hum Genet. 2023年11月; 68(11): 751-757</td>
+<td>37423943</td>
+<td>10.1038/s10038-023-01181-x</td>
+</tr>
+
+<tr>
+<td>183</td>
 <td>齊賀 空知</td>
 <td>Sorachi Saiga, Takagi Hiroko</td>
 <td>NGS-based genome wide association study helps to develop co-dominant marker for the physical map-based locus of PFRU controlling flowering in cultivated octoploid strawberry.</td>
@@ -1849,7 +1859,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>183</td>
+<td>184</td>
 <td>高橋 鉄美</td>
 <td>Takahashi Tetsumi</td>
 <td>Offspring mortality during mouthbrooding in two open-water spawning cichlids from Lake Tanganyika.</td>
@@ -1859,7 +1869,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>184</td>
+<td>185</td>
 <td>武藤 望生</td>
 <td>Nozomu Muto</td>
 <td>Allopatric origin, secondary contact and subsequent isolation of sympatric rockfishes (Sebastidae: Sebastes) in the north-western Pacific.</td>
@@ -1869,7 +1879,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>185</td>
+<td>186</td>
 <td>佐藤 稜真</td>
 <td>Ryoma Sato</td>
 <td>The first released available genome of the common ice plant (Mesembryanthemum crystallinum L.) extended the research region on salt tolerance, C3-CAM photosynthetic conversion, and halophism.</td>
@@ -1877,5 +1887,236 @@ title: 論文のリスト(2023)
 <td>NULL</td>
 <td>doi: 10.12688/f1000research.129958.2</td>
 </tr>
+
+<tr>
+<td>187</td>
+<td>夏 天</td>
+<td>Tian Xia</td>
+<td>Penalty Gradient Normalization for Generative Adversarial Networks</td>
+<td>arXiv. 2023年6月23日; 2306.13576v1</td>
+<td>NULL</td>
+<td>10.48550/arXiv.2306.13576</td>
+</tr>
+
+<tr>
+<td>188</td>
+<td>飯山 和弘</td>
+<td>Kazuhiro Iiyama</td>
+<td>Prediction of gene clusters associated with host specificity of Ralstonia pseudosolanacearum race 4 based on comparative genomic analysis</td>
+<td>Journal of General Plant Pathology. 2023年9月15日; 89: 328–332</td>
+<td>NULL</td>
+<td>10.1007/s10327-023-01150-4</td>
+</tr>
+
+<tr>
+<td>189</td>
+<td>佐藤 行人</td>
+<td>Yukuto Sato</td>
+<td>Animal-sourced model of human norovirus infection predicted using environmental DNA metabarcoding analysis</td>
+<td>Journal of Freshwater Ecology. 2023年12月13日; 39(1): </td>
+<td>NULL</td>
+<td>10.1080/02705060.2023.2293171</td>
+</tr>
+
+<tr>
+<td>190</td>
+<td>本田 大士</td>
+<td>Hiroshi Honda</td>
+<td>Deciphering mechanisms of UV filter- and temperature-induced bleaching in the coral Acropora tenuis, using ecotoxicogenomics</td>
+<td>bioRxiv. 2023年11月06日;</td>
+<td>NULL</td>
+<td>10.1101/2023.11.05.564681</td>
+</tr>
+
+<tr>
+<td>191</td>
+<td>下野 嘉子</td>
+<td>Yoshiko Shimono</td>
+<td>Introduction pathways and evolutionary mechanisms of alien species of Lolium spreading across sandy coasts in Japan</td>
+<td>Journal of Ecology. 2023年10月07日; 111(12): 2583-2596</td>
+<td>NULL</td>
+<td>10.1111/1365-2745.14206</td>
+</tr>
+
+<tr>
+<td>192</td>
+<td>Isaac Planas-Sitjà, Adam L. Cronin</td>
+<td>Isaac Planas-Sitjà, Adam L. Cronin</td>
+<td>To disperse or compete? Coevolution of traits leads to a limited number of reproductive strategies</td>
+<td>OIKOS. 2023年6月22日; 2023(9): </td>
+<td>NULL</td>
+<td>10.1111/oik.09972</td>
+</tr>
+
+<tr>
+<td>193</td>
+<td>齋藤 裕</td>
+<td>Yutaka Saito</td>
+<td>タンパク質の言語モデル</td>
+<td>JSBi Bioinformatics Review. 2023年6月03日; 4(1): 52-67</td>
+<td>NULL</td>
+<td>10.11234/jsbibr.2023.1</td>
+</tr>
+
+<tr>
+<td>194</td>
+<td>宮崎 智史</td>
+<td>Satoshi Miyazaki</td>
+<td>Thelytokous parthenogenesis in dealate queens of the ponerine ant Anochetus shohki</td>
+<td>Asian Myrmecology. 2023年5月12日; 16: 1-6</td>
+<td>NULL</td>
+<td>10.20362/am.016006</td>
+</tr>
+
+<tr>
+<td>195</td>
+<td>原田 亮</td>
+<td>Ryo Harada</td>
+<td>AtLASS: A scheme for end-to-end prediction of splice sites using attention-based bi-LSTM</td>
+<td>IPSJ Transactions on Bioinformatics. 2023年7月25日; 16: 20-27</td>
+<td>NULL</td>
+<td>10.2197/ipsjtbio.16.20</td>
+</tr>
+
+<tr>
+<td>196</td>
+<td>坂山 英俊</td>
+<td>Hidetoshi Sakayama</td>
+<td>New distribution and DNA barcoding of the endangered alga Lamprothamnium succinctum (Charales, Charophyceae) in Tottori Prefecture, Japan</td>
+<td>The Journal of Japanese Botany. 2023年10月20日; 98(5): 247-253</td>
+<td>NULL</td>
+<td>10.51033/jjapbot.ID0176</td>
+</tr>
+
+<tr>
+<td>197</td>
+<td>村上 正志</td>
+<td>Masashi Murakami</td>
+<td>Drivers of functional and phylogenetic structures of mountain bird assemblages along an altitudinal gradient from the montane to alpine zones</td>
+<td>Global Ecology and Conservation. 2023年10月18日; 48</td>
+<td>NULL</td>
+<td>10.1016/j.gecco.2023.e02689</td>
+</tr>
+
+<tr>
+<td>198</td>
+<td>廣田 主樹</td>
+<td>Kazuki Hirota</td>
+<td>Comparative proteomics of the shell matrix proteins of Nautilus pompilius and the conchiferans provide insights into mollusk shell evolution at the molecular level</td>
+<td>Marine Biology. 2023年7月14日; 170(9): </td>
+<td>NULL</td>
+<td>10.1007/s00227-023-04244-x</td>
+</tr>
+
+<tr>
+<td>199</td>
+<td>筒井 直昭</td>
+<td>Naoaki Tsutsui</td>
+<td>Identification of an additional vitellogenin gene showing hepatopancreas-specific expression in the kuruma prawn Marsupenaeus japonicus</td>
+<td>Fisheries Science. 2023年8月02日; 89: 613–623</td>
+<td>NULL</td>
+<td>10.1007/s12562-023-01705-6</td>
+</tr>
+
+<tr>
+<td>200</td>
+<td>本多 了</td>
+<td>Ryo Honda</td>
+<td>Transition of antimicrobial resistome in wastewater treatment plants: impact of process configuration, geographical location and season</td>
+<td>npj Clean Water. 2023年6月15日; 6:</td>
+<td>NULL</td>
+<td>10.1038/s41545-023-00261-x</td>
+</tr>
+
+<tr>
+<td>201</td>
+<td>今本 南</td>
+<td>Minami Imamoto</td>
+<td>A severe bottleneck impacted the genomic structure of egg-eating cichlids</td>
+<td>bioRxiv. 2023年5月19日;</td>
+<td>NULL</td>
+<td>10.1101/2023.05.17.541056</td>
+</tr>
+
+<tr>
+<td>202</td>
+<td>吉岡 資洋</td>
+<td>Motohiro Yoshioka</td>
+<td>Breeding of a near-isogenic wheat line resistant to wheat blast at both seedling and heading stages through incorporation of Rmg8</td>
+<td>biorxiv. 2023年7月12日;</td>
+<td>NULL</td>
+<td>10.1101/2023.07.12.546477</td>
+</tr>
+
+<tr>
+<td>203</td>
+<td>藤原 一道</td>
+<td>Kazumichi Fujiwara</td>
+<td>Inference of Selective Force on House Mouse Genomes during Secondary Contact in East Asia</td>
+<td>bioRxiv. 2023年12月18日;</td>
+<td>NULL</td>
+<td>10.1101/2023.08.07.552211</td>
+</tr>
+
+<tr>
+<td>204</td>
+<td>浜端 朋子</td>
+<td>Tomoko Hamabata</td>
+<td>Twenty-year changes in the composition of a mixed stock of foraging green turtles in the Yaeyama Islands of Japan</td>
+<td>Marine Ecology Progress Series. 2023年8月10日; 716: 93-105</td>
+<td>NULL</td>
+<td>10.3354/meps14367</td>
+</tr>
+
+<tr>
+<td>205</td>
+<td>林 方州</td>
+<td>Fangzhou Lin</td>
+<td>Hyperbolic Chamfer Distance for Point Cloud Completion</td>
+<td>2023 IEEE/CVF International Conference on Computer Vision (ICCV). 2023年1月15日; 2023: 14595-14606</td>
+<td>NULL</td>
+<td>10.1109/ICCV51070.2023.01342</td>
+</tr>
+
+<tr>
+<td>206</td>
+<td>森本 拓也</td>
+<td>Takuya Morimoto</td>
+<td>Characterization and phylogenetic analysis of the ancient Japanese grape cultivar 'Juraku’</td>
+<td>Acta Hortic. 2023; 1384(62): 491-496</td>
+<td>NULL</td>
+<td>10.17660/ActaHortic.2023.1384.62</td>
+</tr>
+
+<tr>
+<td>207</td>
+<td>藤戸 尚子</td>
+<td>Naoko Fujito</td>
+<td>Distinct haplogroups with star-like diversification in the APOBEC3 regulatory region indicate ancient viral pandemics before and during the Out-of-Africa migration of modern humans</td>
+<td>bioRxiv. 2023年7月19日;</td>
+<td>NULL</td>
+<td>10.1101/2023.07.18.549600</td>
+</tr>
+
+<tr>
+<td>208</td>
+<td>林 方州</td>
+<td>Lin Fangzhou</td>
+<td>InfoCD: A Contrastive Chamfer Distance Loss for Point Cloud Completion</td>
+<td>Advances in Neural Information Processing Systems. 2023; 36: 76960-76973</td>
+<td>NULL</td>
+<td>NULL</td>
+</tr>
+
+<tr>
+<td>209</td>
+<td>友成 航平</td>
+<td>Kohei Tomonari</td>
+<td>日本国内より分離された Helicobacter pylori の集団構造解析</td>
+<td>大分県医学会雑誌. 2023年3月1日; 29: 99-107</td>
+<td>NULL</td>
+<td>NULL</td>
+</tr>
+
 
 </table>
