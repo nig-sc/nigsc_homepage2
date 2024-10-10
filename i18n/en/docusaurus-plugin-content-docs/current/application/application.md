@@ -24,7 +24,7 @@ In principle, the purpose of use and results are open to the public. However, if
 
 ## Precautions for FEFTA
 
-If your nationality or current residence stipulated by FEFTA is the areas other than listed in appended table 3 of the Export Trade Control Order of Catch-All Controls, provide us with the following information for the examination when applying for an account. (Refer to the division of [related laws and regulations](/application/legislation). )
+For those whose nationality or place of residence is not Japan, the following information is required when registering a new account for screening purposes. (Refer to the division of [related laws and regulations](/application/legislation). )
 
 - Whether or not the applicant is a domestic resident stipulated by FEFTA
 - whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)

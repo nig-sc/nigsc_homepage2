@@ -822,5 +822,245 @@ title: 論文のリスト(2024)
 <td>doi: 101016/j.isci.2024.109121</td>
 </tr>
 
+<tr>
+<td>81</td>
+<td>古村 祥也, 吉田 健太郎</td>
+<td>Shoya Komura, Kentaro Yoshida</td>
+<td>Identification of the causal mutation in early heading mutant of bread wheat (Triticum aestivum L.) using MutMap approach</td>
+<td>Mol Breed. 2024 May 21;44(6):41.</td>
+<td>38779634</td>
+<td>doi: 10.1007/s11032-024-01478-5</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td>山根 健司</td>
+<td>Kenji Yamane</td>
+<td>Proposal of Lactobacillus amylovorus subsp. animalis subsp. nov. and an emended description of Lactobacillus amylovorus</td>
+<td>Int J Syst Evol Microbiol. 2024 Sep 12; 74(9)</td>
+<td>39264830</td>
+<td>doi: 10.1099/ijsem.0.006517</td>
+</tr>
+
+<tr>
+<td>83</td>
+<td>高木 宏樹</td>
+<td>Hiroki Takagi</td>
+<td>DNAMarkMaker: streamlining ARMS and CAPS marker development from resequencing data with NGS short reads.</td>
+<td>Breed Sci. 2024 Apr; 74(2): 73-82.</td>
+<td>39355627</td>
+<td>doi: 10.1270/jsbbs.23048</td>
+</tr>
+
+<tr>
+<td>84</td>
+<td>岡田 貴裕</td>
+<td>Takahiro Okada</td>
+<td>The complete chloroplast genome sequence of Lithospermum erythrorhizon: Insights into the phylogenetic relationship among Boraginaceae species and the maternal lineages of purple gromwells</td>
+<td>Plant Gene. 2024 Mar; 37:</td>
+<td>NULL</td>
+<td>doi: 10.1016/j.plgene.2024.100447</td>
+</tr>
+
+<tr>
+<td>85</td>
+<td>國枝 武和</td>
+<td>Takekazu Kunieda</td>
+<td>Single-step generation of homozygous knock-out/knock-in individuals in an extremotolerant parthenogenetic tardigrade using DIPA-CRISPR</td>
+<td>bioRxiv. 2024 Jan 11;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.01.10.575120</td>
+</tr>
+
+<tr>
+<td>86</td>
+<td>中山 卓郎</td>
+<td>Takuro Nakayama</td>
+<td>Convergent reductive evolution of cyanobacteria in symbiosis with Dinophysiales dinoflagellates</td>
+<td>bioRxiv. 2024 Jan 11;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.01.11.574452</td>
+</tr>
+
+<tr>
+<td>87</td>
+<td>大里 直樹</td>
+<td>Naoki Osato</td>
+<td>Systematic discovery of regulatory motifs associated with human insulator sites</td>
+<td>bioRxiv. 2024 Jan 23;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.01.20.573595</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td>丸岡 奈津美</td>
+<td>Natsumi Maruoka</td>
+<td>To lose is to win: Long‐term co‐occurrence of two asexual populations realized by a dormant strategy of the inferior competitor</td>
+<td>Functional Ecology. 2024 Apr 08; 38(5): 1121-1133</td>
+<td>NULL</td>
+<td>doi: 10.1111/1365-2435.14551</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td>山形 悦透</td>
+<td>Yoshiyuki Yamagata</td>
+<td>Development of genomic and genetic resources facilitating molecular genetic studies on untapped Myanmar rice germplasms</td>
+<td>Breeding Science. 2024 Mar 22; 74(2): 124-137</td>
+<td>NULL</td>
+<td>doi: 10.1270/jsbbs.23077</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td>武田 淳志</td>
+<td>Atsushi Takeda</td>
+<td>De novo repeat detection using inexact seeding</td>
+<td>bioRxiv. 2024 Jan 24;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.01.21.576581</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td>宮崎 智史</td>
+<td>Satoshi Miyazaki</td>
+<td>Reproductive potentials of task-shifting workers in a queenless ant.</td>
+<td>Insectes Sociaux. 2024 Feb 24; 74: 109–117</td>
+<td>NULL</td>
+<td>doi: 10.1007/s00040-024-00949-4</td>
+</tr>
+
+<tr>
+<td>92</td>
+<td>三澤 計治</td>
+<td>Kazuharu Misawa</td>
+<td>A simple method for estimating time-irreversible nucleotide substitution rates in the SARS-CoV-2 genome</td>
+<td>NAR Genomics and Bioinformatics. 2024 Feb 02; 6(1):</td>
+<td>NULL</td>
+<td>doi: 10.1093/nargab/lqae009</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td>栂 浩平, 坊農 秀雅</td>
+<td>Kouhei Toga, Hidemasa Bono</td>
+<td>Long-read genome assembly of the Japanese parasitic wasp Copidosoma floridanum (Hymenoptera: Encyrtidae)</td>
+<td>bioRxiv. 2024 Feb 20;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2023.09.24.559078</td>
+</tr>
+
+<tr>
+<td>94</td>
+<td>奈良 拓也</td>
+<td>Takuya Nara</td>
+<td>Identification of anisotropy in chromosome dynamics by principal component analysis using integrated spatial genomics</td>
+<td>bioRxiv. 2024 Jan 30;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.01.27.577362</td>
+</tr>
+
+<tr>
+<td>95</td>
+<td>Biswa Bhim</td>
+<td>Biswa Bhim</td>
+<td>Enhanced tameness by Limosilactobacillus reuteri from gut microbiota of selectively bred mice</td>
+<td>bioRxiv. 2024 Mar 11;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.03.11.584526</td>
+</tr>
+
+<tr>
+<td>96</td>
+<td>齋藤 絡</td>
+<td>Taku Saito</td>
+<td>ADMA-histones define genomic loading of Rhino at the initial step of piRNA cluster formation</td>
+<td>bioRxiv. 2024 Mar 15;</td>
+<td>NULL</td>
+<td>doi: 10.1101/2024.03.15.585151</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td>松井 求</td>
+<td>Motomu Matsui</td>
+<td>NeTaGFT: A similarity network-based method for trait analysis</td>
+<td>Methods in Ecology and Evolution. 2024 Jan;15(1):153-163</td>
+<td>NULL</td>
+<td>doi: 10.1111/2041-210X.14251</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td>木下 豪太</td>
+<td>Gohta Kinoshita</td>
+<td>Ice age land bridges to continental islands: Repeated migration of the forest‐dwelling sable in northeastern Asia</td>
+<td>Journal of Biogeography. 2024 May; 51(5): 924-939</td>
+<td>NULL</td>
+<td>doi: 10.1111/jbi.14797</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td>栗田 隆気</td>
+<td>Takaki Kurita</td>
+<td>Genetic and morphological studies on Goniurosaurus kuroiwae (Squamata: Eublepharidae), with a description of a new species from the northern part of Okinawajima Island, Ryukyu Archipelago, Japan</td>
+<td>Current Herpetology. 2024 Mar 1; 43(1): 86-114</td>
+<td>NULL</td>
+<td>doi: 10.5358/hsj.43.86</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td>濱田 麻友子</td>
+<td>Mayuko Hamada</td>
+<td>Evaluation of the Effects of Environmental Factors on Seasonal Variations in Fish Diversity on a Coastal Island in Western Japan.</td>
+<td>Environments. 2024 Mar 20; 11(3): 60</td>
+<td>NULL</td>
+<td>doi: 10.3390/environments11030060</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>田村 隆</td>
+<td>Takashi Tamura</td>
+<td>Illumina-based transcriptomic analysis of the fast-growing leguminous tree Acacia crassicarpa: functional gene annotation and identification of novel SSR markers</td>
+<td>Frontiers in Plant Science. 2024 Aug 29; 15:</td>
+<td>NULL</td>
+<td>doi: 10.3389/fpls.2024.1339958</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>大野 誠之</td>
+<td>Masayuki Ono</td>
+<td>A genome-wide association study of emm89 Streptococcus pyogenes identifies genetic variations contributing to severe invasive infections</td>
+<td>Research Square. 2024 Mar 18;</td>
+<td>NULL</td>
+<td>doi: 10.21203/rs.3.rs-3896691/v1</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>下桐 猛</td>
+<td>Takeshi Shimogiri</td>
+<td>Estimation of inbreeding in Japanese Noma horses using genome-wide SNP genotyping</td>
+<td>The Journal of Animal Genetics (1345-9961). 2024; 52(1): 3-8</td>
+<td>NULL</td>
+<td>doi: 10.5924/abgri.52.3</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>夏 天</td>
+<td>Tian Xia</td>
+<td>LSN-GAN: A Novel Least Square Gradient Normalization for Generative Adversarial Networks</td>
+<td>2024 4th IEEE International Conference on Software Engineering and Artificial Intelligence (SEAI). 2024 Jun 21; 343-347</td>
+<td>NULL</td>
+<td>doi: 10.1109/SEAI62072.2024.10674581</td>
+</tr>
+
 
 </table>
