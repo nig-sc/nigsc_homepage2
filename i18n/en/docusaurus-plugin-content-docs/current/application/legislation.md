@@ -8,13 +8,16 @@ title: "Related laws and regulations, etc."
 
 1. [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) Article 25
 2. [The scope of Catch-all control](https://www.meti.go.jp/policy/anpo/anpo03.html)
-    - the areas listed in appended table 3 of the Export Trade Control Order, as of October 1, 2021 : Argentina, Australia, Austria, Belgium, Bulgaria, Canada, Czech Republic, Denmark, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Korea, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, Spain, Sweden, Switzerland, United Kingdom, the United States.
+    - the areas listed in appended table 3 of the Export Trade Control Order, as of July 3, 2024 : Argentina, Australia, Austria, Belgium, Bulgaria, Canada, Czech Republic, Denmark, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Korea, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, Spain, Sweden, Switzerland, United Kingdom, the United States.
     - Countries/regions under UNSC Arms Embargo(Appended Table 3-2 of the ETCO) : Afghanistan, Central Africa, Democratic Republic of Congo, Iraq, Lebanon, Libya, North Korea, Somalia, South Sudan, Sudan
 3. Definition of Residents and Non-Residents
     - [Foreign Exchange and Foreign Trade Act](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  Article 6
     - Assessment of Residents and Non-Residents(Extracted from the Ministry of Finance circular, [Interpretation and Enforcement of the Foreign Exchange and Foreign Trade Act (Excerpt), Zokoku No. 2345, 28 December, 2000](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)) 
-4. [Cargo & Technology Matrix](https://www.meti.go.jp/policy/anpo/matrix_intro.html)
-5. [Export Control FAQ](https://www.meti.go.jp/policy/anpo/qanda.html)
+4. Overview of specific categories
+    - [Foreign Exchange and Foreign Trade Act, Article 25(1).](https://laws.e-gov.go.jp/law/324AC0000000228#Mp-Ch_4-At_25)
+    - [Notification for Transactions or Acts of Transferring Technology Requiring Permission pursuant to Article 25 (1) of the Foreign Exchange and Foreign Trade Act and Article 17 (2) of the Foreign Exchange Order (Document No. 492 of the Trade Bureau published on December 21, 1992), 1(3)"sa"①-③.](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t10kaisei/ekimu__tutatu.pdf)
+5. [Cargo & Technology Matrix](https://www.meti.go.jp/policy/anpo/matrix_intro.html)
+6. [Export Control FAQ](https://www.meti.go.jp/policy/anpo/qanda.html)
 
 
 ## The personal genome

@@ -8,13 +8,16 @@ title: "関連法規等"
 
 1. [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228) 第二十五条
 2. [キャッチオール規制の範囲](https://www.meti.go.jp/policy/anpo/anpo03.html)
-    - 輸出令別表第３の地域(2021年10月01日現在) : アルゼンチン、オーストラリア、オーストリア、ベルギー、ブルガリア、カナダ、チェコ、デンマーク、フィンランド、フランス、ドイツ、ギリシャ、ハンガリー、アイルランド、イタリア、大韓民国、ルクセンブルク、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、スペイン、スウェーデン、スイス、英国、アメリカ合衆国
+    - 輸出令別表第３の地域(2024年7月3日現在) : アルゼンチン、オーストラリア、オーストリア、ベルギー、ブルガリア、カナダ、チェコ、デンマーク、フィンランド、フランス、ドイツ、ギリシャ、ハンガリー、アイルランド、イタリア、大韓民国、ルクセンブルク、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、スペイン、スウェーデン、スイス、英国、アメリカ合衆国
     - 国連武器禁輸国・地域：「輸出令別表第３の２」の地域 : アフガニスタン、中央アフリカ、コンゴ民主共和国、イラク、レバノン、リビア、北朝鮮、ソマリア、南スーダン、スーダン 
 3. 居住者 非居住者の定義
     - [外国為替及び外国貿易法](https://elaws.e-gov.go.jp/document?lawid=324AC0000000228)  第六条
     - 居住者 非居住者の判定(財務省通達「[外国為替法令の解釈及び運用について（抄）蔵国第2345号 平成12年12月28日](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t02chukai/t02chukai_unyokaishaku.pdf)」より)
-4. [貨物・技術のマトリクス](https://www.meti.go.jp/policy/anpo/matrix_intro.html)
-5. [安全保障貿易管理Q&A](https://www.meti.go.jp/policy/anpo/qanda.html)
+4. 特定類型の概要
+    - [外国為替及び外国貿易法第２５条第１項](https://laws.e-gov.go.jp/law/324AC0000000228#Mp-Ch_4-At_25)
+    - [外国為替及び外国貿易法第２５条第１項及び外国為替令第１７条第２項の規定に基づき許可を要する技術を提供する取引又は行為について（平成4年12月21日付4貿局第492号）１（３）サ①から③まで](https://www.meti.go.jp/policy/anpo/law_document/tutatu/t10kaisei/ekimu__tutatu.pdf)
+5. [貨物・技術のマトリクス](https://www.meti.go.jp/policy/anpo/matrix_intro.html)
+6. [安全保障貿易管理Q&A](https://www.meti.go.jp/policy/anpo/qanda.html)
 
 
 ## 個人ゲノム関係 {#related-pg}
