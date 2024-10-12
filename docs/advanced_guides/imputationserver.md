@@ -64,7 +64,7 @@ TogoImputation（ベータ版）（以下、本システム）は、遺伝研ス
 ### 本システムを利用して論文を作成する際のお願い
 - 本システムの論文を引用してください。
     - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
-- 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)）。
+- 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://sc.ddbj.nig.ac.jp/#acknowledgement)）。
 - 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[&#x1f517;<u>記載文例</u>](https://humandbs.dbcls.jp/faq#faq-23)の内容を記述して下さい。
 
 
