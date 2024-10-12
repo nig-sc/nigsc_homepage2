@@ -56,6 +56,8 @@ TogoImputation（ベータ版）（以下、本システム）は、遺伝研ス
 | **GRCh38.1KGP_EAS** | [&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルです。東アジアancestryに属する 508 名のサンプルを含みます | 非制限公開 | GRCh38 |
 | **BBJ1K+GRCh37.1KGP** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)のリファレンスパネルと[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の複数の ancestryに属する 2,504 名のサンプル（合計 3,541名）を含みます | 制限公開 | hg19, GRCh37 |
 | **BBJ1K+GRCh37.1KGP_EAS** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)のリファレンスパネルと[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org) のリファレンスパネルをクロスインピュテーションして得られたリファレンスパネルです。BioBank Japanプロジェクトの 1,037名のサンプルと、10000 Genomes Project の東アジアancestryに属する 504 名のサンプル（合計 1,541名）を含みます | 制限公開 | hg19, GRCh37 |
+| **BBJ1K (GRCh38)** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)の1,026名の全ゲノムシークエンス（WGS）データを加工することにより得られたリファレンスパネルです | 制限公開 | GRCh38 |
+| **BBJ2K (GRCh38)** | [&#x1f517;<u>BioBank Japanプロジェクト</u>](https://biobankjp.org)の1,964名のWGSデータを加工することにより得られたリファレンスパネルです | 制限公開 | GRCh38 |
 
 リファレンスパネルごとのインピュテーション精度を比較した結果、制限公開データである BBJ1K+GRCh37.1KGP reference panel の精度が最も高いと評価されました。詳細は[&#x1f517;<u>本システムの論文</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)をご参照ください。
 
@@ -63,7 +65,7 @@ TogoImputation（ベータ版）（以下、本システム）は、遺伝研ス
 - 本システムの論文を引用してください。
     - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
 - 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)）。
-- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[&#x1f517;<u>記載文例</u>](https://humandbs.biosciencedbc.jp/faq#faq-23)の内容を記述して下さい。
+- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[&#x1f517;<u>記載文例</u>](https://humandbs.dbcls.jp/faq#faq-23)の内容を記述して下さい。
 
 
 ## TogoImputation（ベータ版）の利用方法
@@ -93,12 +95,14 @@ RAM： ______ (推奨： 128GB以上)
 ```
 
 ## 制限公開データのデータ利用申請
-制限公開リファレンスパネルは **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)** に登録されています。JGAデータの利用申請方法は **[&#x1f517;<u>NBDCヒトデータベース データの利用</u>](https://humandbs.biosciencedbc.jp/data-use)** をご参照ください。申請時に必要となるアクセッションcode は次表を参照してください。
+制限公開リファレンスパネルは **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)** に登録されています。JGAデータの利用申請方法は **[&#x1f517;<u>NBDCヒトデータベース データの利用</u>](https://humandbs.dbcls.jp/data-use)** をご参照ください。申請時に必要となるアクセッションcode は次表を参照してください。
 
 | リファレンスパネルの名前 | リサーチID | データセットID |
 | --- | --- | --- |
 | **BBJ1K+GRCh37.1KGP** | hum0014 | JGAD000679 |
 | **BBJ1K+GRCh37.1KGP_EAS** | hum0014 | JGAD000679 |
+| **BBJ1K (GRCh38)** | hum0014 | JGAD000867 |
+| **BBJ2K (GRCh38)** | hum0014 | JGAD000868 |
 
 ## 問合せ窓口
 本システムに関する問合せは **imputation-server@ddbj.nig.ac.jp** にご連絡ください。
