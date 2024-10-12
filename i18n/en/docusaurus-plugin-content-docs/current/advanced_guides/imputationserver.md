@@ -55,12 +55,15 @@ In this system, six types of reference panels are currently available. If you us
 
 | Reference Panel Name | Overview | Access Level | Assembly Version |
 | --- | --- | --- | --- |
-| **GRCh37.1KGP** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 2,504 samples belonging to several ancestries | Unrestricted publication | hg19, GRCh37 |
-| **GRCh37.1KGP_EAS** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 504 samples belonging to East Asian ancestry | Unrestricted publication | hg19, GRCh37 |
-| **GRCh38.1KGP** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 2,548 samples belonging to several ancestries | Unrestricted publication | GRCh38 |
-| **GRCh38.1KGP_EAS** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 508 samples belonging to East Asian ancestry | Unrestricted publication | GRCh38 |
-| **BBJ1K+GRCh37.1KGP** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org)' with the reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 2,504 samples from several ancestries of the 10,000 Genomes Project (3,541 in total) | restricted publication | hg19, GRCh37 |
-| **BBJ1K+GRCh37.1KGP_EAS** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org)' with the reference panel '[&#x1f517;<u>1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 504 samples belonging to the East Asian ancestry of the 10,000 Genomes Project (1,541 in total) | restricted publication | hg19, GRCh37 |
+| **GRCh37.1KGP** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 2,504 samples belonging to several ancestries | Unrestricted-Access | hg19, GRCh37 |
+| **GRCh37.1KGP_EAS** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 504 samples belonging to East Asian ancestry | Unrestricted-Access | hg19, GRCh37 |
+| **GRCh38.1KGP** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 2,548 samples belonging to several ancestries | Unrestricted-Access | GRCh38 |
+| **GRCh38.1KGP_EAS** | Reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 508 samples belonging to East Asian ancestry | Unrestricted-Access | GRCh38 |
+| **BBJ1K+GRCh37.1KGP** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org/en/)' with the reference panel '[&#x1f517;<u>The 1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 2,504 samples from several ancestries of the 10,000 Genomes Project (3,541 in total) | Controlled-Access | hg19, GRCh37 |
+| **BBJ1K+GRCh37.1KGP_EAS** | Reference panel obtained by cross-imputing the reference panel '[&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org/en/)' with the reference panel '[&#x1f517;<u>1000 Genomes Project</u>](https://www.internationalgenome.org)'. Includes 1,037 samples from the BioBank Japan project and 504 samples belonging to the East Asian ancestry of the 10,000 Genomes Project (1,541 in total) | Controlled-Access | hg19, GRCh37 |
+| **BBJ1K (GRCh38)** | A reference panel obtained by processing the WGS data of the [&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org/en/) (N=1,026). |  Controlled-Access | GRCh38 |
+| **BBJ2K (GRCh38)** | A reference panel obtained by processing the WGS data of the [&#x1f517;<u>BioBank Japan project</u>](https://biobankjp.org/en/) (N=1,964). |  Controlled-Access | GRCh38 |
+
 
 A result comparing the imputation accuracy of different reference panels showed that the restricted public data, BBJ1K+GRCh37.1KGP reference panel, was rated as the most accurate. For more information, see [&#x1f517;<u>the paper written about this system</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/).
 
@@ -68,8 +71,8 @@ A result comparing the imputation accuracy of different reference panels showed 
 ### Notes on using this system to prepare papers.
 - Cite the paper in this system.
     - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
-- Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://www.ddbj.nig.ac.jp/faq/ja/acknowledge-nig-supercomputer.html)).
-- If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [&#x1f517;<u>the example text</u>](https://humandbs.biosciencedbc.jp/faq#faq-23) as an acknowledgement.
+- Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://sc.ddbj.nig.ac.jp/en/#about-acknowledgements)).
+- If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [&#x1f517;<u>the example text</u>](https://humandbs.dbcls.jp/faq#faq-23) as an acknowledgement.
 
 
 ## How to use the TogoImputation (beta)
@@ -101,12 +104,14 @@ Please also install singularity.
 
 
 ## Applying for data use of restricted public data
-Restricted Public Reference Panels are registered in the **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)**. For how to apply for use of JGA data, see **[&#x1f517;<u>NBDC Human Database - Data Usage</u>](https://humandbs.biosciencedbc.jp/data-use)**. Refer to the following table for the accession code required when applying.
+Restricted Public Reference Panels are registered in the **[Japanese Genotype-phenotype Archive (JGA)](https://www.ddbj.nig.ac.jp/jga/index.html)**. For how to apply for use of JGA data, see **[&#x1f517;<u>NBDC Human Database - Data Usage</u>](https://humandbs.dbcls.jp/en/data-use)**. Refer to the following table for the accession code required when applying.
 
 | Reference Panel Name | Research ID | Dataset ID |
 | --- | --- | --- |
 | **BBJ1K+GRCh37.1KGP** | hum0014 | JGAD000679 |
 | **BBJ1K+GRCh37.1KGP_EAS** | hum0014 | JGAD000679 |
+| **BBJ1K (GRCh38)** | hum0014 | JGAD000867 |
+| **BBJ2K (GRCh38)** | hum0014 | JGAD000868 |
 
 ## Contact us
 
