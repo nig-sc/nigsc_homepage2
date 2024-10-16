@@ -65,7 +65,13 @@ TogoImputation（ベータ版）（以下、本システム）は、遺伝研ス
 - 本システムの論文を引用してください。
     - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
 - 遺伝研スパコンの利用について謝辞などにてご記載ください（[記載文例](https://sc.ddbj.nig.ac.jp/#acknowledgement)）。
-- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として[&#x1f517;<u>記載文例</u>](https://humandbs.dbcls.jp/faq#faq-23)の内容を記述して下さい。
+	- 【謝辞の例(日本語)】本研究は、情報・システム研究機構 国立遺伝学研究所が有する遺伝研スーパーコンピュータシステムを利用しました。
+	- 【謝辞の例(英語)】Computations were partially performed on the NIG supercomputer at ROIS National Institute of Genetics.
+- 制限公開データを利用された際には、使用したデータセットのアクセッション番号を記載し、[Nucleic Acids Res. 2015, 43 Database issue: D18-D22](https://academic.oup.com/nar/article/43/D1/D18/2437855)を引用してください。また、当該データセットについて報告された論文（当該データセットのデータ提供者等が当該データセットを根拠データとして作成した論文）の引用、もしくは謝辞（Acknowledgement）として以下の内容を記述して下さい。
+	- 【謝辞の例(日本語)】「本研究に使用したデータ（の一部）はAAAAプロジェクト/研究グループ（代表者 BBBB）によって取得され、情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター（DBCLS）の『NBDCヒトデータベース』ウェブサイトを通じて提供されたものです。」
+	- 【謝辞の例(英語)】"(A part of) The data used for this research was originally obtained by AAAA research project/group led by Prof./Dr. BBBB and available at the website of the NBDC Human Database website of the Database Center for Life Science (DBCLS) / the Joint Support-Center for Data Science Research of the Research Organization of Information and Systems."
+
+
 
 
 ## TogoImputation（ベータ版）の利用方法

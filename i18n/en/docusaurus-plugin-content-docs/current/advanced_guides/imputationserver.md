@@ -72,7 +72,9 @@ A result comparing the imputation accuracy of different reference panels showed 
 - Cite the paper in this system.
     - [&#x1f517;<u>Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)</u>](https://pubmed.ncbi.nlm.nih.gov/36539398/)
 - Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://sc.ddbj.nig.ac.jp/en/#about-acknowledgements)).
-- If you have used restricted public data,  include the accession number of the dataset used in your paper. In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or provide the content of [&#x1f517;<u>the example text</u>](https://humandbs.dbcls.jp/faq#faq-23) as an acknowledgement.
+	- Example text: Computations were partially performed on the NIG supercomputer at ROIS National Institute of Genetics.
+- If you have used restricted public data, include the accession number of the dataset used in your paper and cite [Nucleic Acids Res. 2015, 43 Database issue: D18-D22](https://academic.oup.com/nar/article/43/D1/D18/2437855).  In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or describe an acknowledgement as the following example text. 
+	- Example text: (A part of) The data used for this research was originally obtained by AAAA research project/group led by Prof./Dr. BBBB and available at the website of the NBDC Human Database website of the Database Center for Life Science (DBCLS) / the Joint Support-Center for Data Science Research of the Research Organization of Information and Systems.
 
 
 ## How to use the TogoImputation (beta)
