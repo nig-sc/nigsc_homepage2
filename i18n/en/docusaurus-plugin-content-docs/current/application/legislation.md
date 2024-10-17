@@ -32,9 +32,9 @@ The personal genomic analysis division in the NIG supercomputer complies with th
 
 - [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
 - [NBDC Human Data Handling Security Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines)
-
-
 -  [Checklist for NBDC Human Data Handling Security Guidelines and NBDC Guidelines for Human Data Sharing（for “Off-Premise-Server” Operation Managers）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+- [Guidelines for businesses handling personal information, etc.](https://www.ppc.go.jp/personalinfo/legal/#anc_Guide)
+- [Guidelines for the use of medical digital data for AI research and development, etc.](https://drive.google.com/file/d/1_qwYjjiG2yUqahnvBIGS-54jrd1De2Qy/view)
 
 
 ## Security standards
