@@ -31,9 +31,9 @@ title: "関連法規等"
 
 - [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
 - [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
-
-
--  [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+- [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](/pdf/security_checklist_for_dbcenters_2021706.pdf)
+- [個人情報取扱事業者等に係るガイドライン](https://www.ppc.go.jp/personalinfo/legal/#anc_Guide)
+- [医療デジタルデータのAI研究開発等への利活用に係るガイドライン](https://drive.google.com/file/d/1_qwYjjiG2yUqahnvBIGS-54jrd1De2Qy/view)
 
 
 ## セキュリティ基準 {#security-standards}
