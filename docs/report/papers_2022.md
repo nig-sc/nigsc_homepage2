@@ -282,16 +282,6 @@ title: 論文のリスト(2022)
 
 <tr>
 <td>6</td>
-<td>稲毛 純</td>
-<td>Jun Inamo</td>
-<td>Immune Isoform Atlas: Landscape of alternative splicing in human immune cells</td>
-<td>bioRxiv. 2022年9月15日;</td>
-<td>NULL</td>
-<td>10.1101/2022.09.13.507708</td>
-</tr>
-
-<tr>
-<td>7</td>
 <td>和久 大介</td>
 <td>Daisuke Waku</td>
 <td>Complete mitochondrial genome sequencing reveals double-buried Jomon individuals excavated from the Ikawazu shell-mound site were not in a mother–child relationship</td>
