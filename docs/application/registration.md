@@ -7,7 +7,7 @@ title: "アカウントの新規登録"
 
 
 
-[&#x1f517;<u>アカウントの新規登録はアカウント登録システムにて</u>](https://sc-account.ddbj.nig.ac.jp/application/registration)随時受け付けています。
+[&#x1f517;<u>アカウントの新規登録はアカウント登録システムにて</u>](/blog/2024-10-25-account_system_maintenance)<!-- (https://sc-account.ddbj.nig.ac.jp/application/registration) -->随時受け付けています。
 
 - アカウントの新規登録が受理されると高速ストレージ 1TB が利用可能となります。
 - 利用可能なストレージ領域を拡張したい場合や課金サービスを利用したい場合は、アカウントの新規登録が受理されたあとで[<u>利用計画表を提出</u>](/application/resource_extension)してください。
@@ -46,7 +46,9 @@ title: "アカウントの新規登録"
 </td>
 <td width="400" valign="top">
 
-<font size="5">次に、<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>アカウント登録システムの申請フォーム</u></a>にアクセスします。</font><br/>
+<!-- <font size="5">次に、<a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>アカウント登録システムの申請フォーム</u></a> --> 
+<font size="5">次に、
+[アカウント登録システムの申請フォーム](/blog/2024-10-25-account_system_maintenance)にアクセスします。</font><br/>
 
 アクセスすると左図のような画面が表示されますので、アカウント登録システムのフォームに入力し、「次へ」をクリックします。
 

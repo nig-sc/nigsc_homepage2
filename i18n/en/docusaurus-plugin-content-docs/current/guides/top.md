@@ -19,6 +19,7 @@ Due to disk space constraints, we do not back up the data in the user home direc
 
 ## Featured News
 
+- [Maintenance of the account application system](/blog/2024-10-25-account_system_maintenance)
 - [(Ended) Emergency maintenance of Lustre8](/blog/2024-09-04-Lustre8_maintenance) (2024.09.04) &#x1F195;
 - [Migrated some of the Medium nodes to Ubuntu Linux and established a new Gride Engine queue (medium-ubuntu.q)](/blog/2024-07-08-news_medium-ubuntu-q) (2024.07.08)
 - [(Ended) Extended deadline for account renewal application at the end of FY2023](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)

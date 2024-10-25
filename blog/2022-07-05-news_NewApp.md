@@ -9,7 +9,7 @@ authros:
 date: 2022-07-05
 ---
 
-- アカウント登録フォームの URL はこちらです。=><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウント登録システム</a>
+- アカウント登録フォームの URL はこちらです。=><!-- <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウント登録システム</a> --> [アカウント登録システム](/blog/2024-10-25-account_system_maintenance)
 - 申請についての説明はこちらです。=>[アカウントの新規登録](/application/registration)
 
 

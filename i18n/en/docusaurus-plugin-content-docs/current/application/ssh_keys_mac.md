@@ -197,7 +197,7 @@ To select a range: click just to the left of the leading letter 's' and drag it 
 
 ![](/img/ssh_keys/mac/ssh_mac_28.png)
 
-On the <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Application for new use page</a>, click in the 'SSH public key' frame on the 'Account' page, press command + V to paste them.
+On the <!-- <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">Application for new use page</a> -->[Application for new use pag](/blog/2024-10-25-account_system_maintenance), click in the 'SSH public key' frame on the 'Account' page, press command + V to paste them.
 
 ![](/img/ssh_keys/mac/ssh_mac_29.png)
 

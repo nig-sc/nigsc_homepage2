@@ -20,7 +20,7 @@ title: "利用の準備（個人ゲノム解析区画）"
 個人ゲノム解析区画は[課金サービス](../application/billing_service.md)ですので、[利用計画表をダウンロード](../application/resource_extension.md)し、記入の上、ご提出ください。
 
 
-1. [アカウントの新規利用手順](/application/registration)に沿って、[アカウント登録システムの申請フォーム](https://sc-account.ddbj.nig.ac.jp/application/registration)から申請登録をしてください。
+1. [アカウントの新規利用手順](/application/registration)に沿って、[アカウント登録システムの申請フォーム](/blog/2024-10-25-account_system_maintenance) <!-- (https://sc-account.ddbj.nig.ac.jp/application/registration) -->から申請登録をしてください。
     - 事前に[「ユーザーアカウント発行基準」](/application/)及び[「利用規程」](/application/use_policy)をご確認ください。
     - メールアドレスは、フリーメールアドレスではなく、所属機関のメールアドレスをご入力ください。(特別な場合を除く)
     - 事前に SSH 公開鍵を作成してください。登録フォームの中で、SSH 公開鍵の登録を行う箇所があります。SSH 公開鍵の作成・登録などは[ SSH 公開鍵の登録](/application/ssh_keys)をご参照ください。
