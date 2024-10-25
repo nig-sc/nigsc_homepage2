@@ -1650,16 +1650,6 @@ title: Published Papers(2021)
 
 <tr>
 <td>12</td>
-<td>美世 一守</td>
-<td>Kazumori Mise</td>
-<td>Global soil metagenomics reveals ubiquitous yet previously-hidden predominance of Deltaproteobacteria in nitrogen-fixing microbiome</td>
-<td>bioRxiv. 2021</td>
-<td>NULL</td>
-<td>doi: 10.1101/2022.12.09.519847</td>
-</tr>
-
-<tr>
-<td>13</td>
 <td>下野 嘉子</td>
 <td>Yoshiko Shimono</td>
 <td>Revegetation in Japan overlooks geographical genetic structure of native Artemisia indica var. maximowiczii populations</td>
@@ -1669,7 +1659,7 @@ title: Published Papers(2021)
 </tr>
 
 <tr>
-<td>14</td>
+<td>13</td>
 <td>北崎 一義</td>
 <td>Kazuyoshi Kitazaki</td>
 <td>Nuclear DNA segments homologous to mitochondrial DNA are obstacles for detecting heteroplasmy in sugar beet (Beta vulgaris L.)</td>

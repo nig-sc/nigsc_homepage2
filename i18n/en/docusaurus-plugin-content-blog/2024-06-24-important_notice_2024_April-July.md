@@ -120,8 +120,8 @@ After the suspension is lifted, click on the link below to complete the end-of-y
 
 Click on the link below to stop using your account.
 
-- Application for account suspension
-	- https://sc-account.ddbj.nig.ac.jp/en/application/suspension
+- [Application for account suspension](/blog/2024-10-25-account_system_maintenance)
+	<!-- - https://sc-account.ddbj.nig.ac.jp/en/application/suspension -->
 
 ### NOTES.
 - 4.1. After account lock, the home directory will be deleted sequentially from 1 July.

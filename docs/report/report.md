@@ -295,20 +295,20 @@ title: "各種統計"
 <tr>
 <td>2021</td>
 <td>167</td>
-<td>14</td>
-<td>181</td>
+<td>13</td>
+<td>180</td>
 </tr>
 <tr>
 <td>2022</td>
 <td>177</td>
-<td>8</td>
-<td>185</td>
+<td>7</td>
+<td>184</td>
 </tr>
 <tr>
 <td>2023</td>
-<td>209</td>
+<td>203</td>
 <td>0</td>
-<td>209</td>
+<td>203</td>
 </tr>
 </table>
 

@@ -1062,5 +1062,84 @@ title: 論文のリスト(2024)
 <td>doi: 10.1109/SEAI62072.2024.10674581</td>
 </tr>
 
+<tr>
+<td>105</td>
+<td>本田 大士</td>
+<td>Hiroshi Honda</td>
+<td>Deciphering mechanisms of UV filter- and temperature-induced bleaching in the coral Acropora tenuis, using ecotoxicogenomics</td>
+<td>bioRxiv. 2023年11月06日;</td>
+<td>NULL</td>
+<td>10.1101/2023.11.05.564681</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td>今本 南</td>
+<td>Minami Imamoto</td>
+<td>A severe bottleneck impacted the genomic structure of egg-eating cichlids</td>
+<td>bioRxiv. 2023年5月19日;</td>
+<td>NULL</td>
+<td>10.1101/2023.05.17.541056</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td>吉岡 資洋</td>
+<td>Motohiro Yoshioka</td>
+<td>Breeding of a near-isogenic wheat line resistant to wheat blast at both seedling and heading stages through incorporation of Rmg8</td>
+<td>biorxiv. 2023年7月12日;</td>
+<td>NULL</td>
+<td>10.1101/2023.07.12.546477</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td>藤原 一道</td>
+<td>Kazumichi Fujiwara</td>
+<td>Inference of Selective Force on House Mouse Genomes during Secondary Contact in East Asia</td>
+<td>bioRxiv. 2023年12月18日;</td>
+<td>NULL</td>
+<td>10.1101/2023.08.07.552211</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td>藤戸 尚子</td>
+<td>Naoko Fujito</td>
+<td>Distinct haplogroups with star-like diversification in the APOBEC3 regulatory region indicate ancient viral pandemics before and during the Out-of-Africa migration of modern humans</td>
+<td>bioRxiv. 2023年7月19日;</td>
+<td>NULL</td>
+<td>10.1101/2023.07.18.549600</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td>夏 天</td>
+<td>Tian Xia</td>
+<td>Penalty Gradient Normalization for Generative Adversarial Networks</td>
+<td>arXiv. 2023年6月23日; 2306.13576v1</td>
+<td>NULL</td>
+<td>10.48550/arXiv.2306.13576</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td>稲毛 純</td>
+<td>Jun Inamo</td>
+<td>Immune Isoform Atlas: Landscape of alternative splicing in human immune cells</td>
+<td>bioRxiv. 2022年9月15日;</td>
+<td>NULL</td>
+<td>10.1101/2022.09.13.507708</td>
+</tr>
+
+<tr>
+<td>112</td>
+<td>美世 一守</td>
+<td>Kazumori Mise</td>
+<td>Global soil metagenomics reveals ubiquitous yet previously-hidden predominance of Deltaproteobacteria in nitrogen-fixing microbiome</td>
+<td>bioRxiv. 2021</td>
+<td>NULL</td>
+<td>doi: 10.1101/2022.12.09.519847</td>
+</tr>
 
 </table>

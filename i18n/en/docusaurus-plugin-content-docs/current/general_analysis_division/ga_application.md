@@ -15,7 +15,7 @@ The general analysis division of NIG supercomputer can be used with a computer r
 
 
 
-1. [Follow the account application procedure](/application/registration) and apply from [the account application form](https://sc-account.ddbj.nig.ac.jp/en/application/registration).
+1. [Follow the account application procedure](/application/registration) and apply from [the account application form](/blog/2024-10-25-account_system_maintenance)<!-- (https://sc-account.ddbj.nig.ac.jp/en/application/registration) -->.
     - Before you fill it in, ensure ["User Account Issuance Criteria"](/application/) and ["Acceptable Use Policy"](/application/use_policy).
     - You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)
     - In the registration form, there is a page to register the SSH public key, so create your SSH public key in advance. For details, see [SSH public key registration](/application/ssh_keys)

@@ -86,7 +86,7 @@ Contact: ![](soumu_mail.png)
 <p align="right">
 Established: June 21, 2023
 
-Revised: December 1, 2023
+Revised: February 7, 2024
 
 Masanori Arita, Director, Center for Bioinformation and DDBJ, National Institute of Genetics
 </p>
