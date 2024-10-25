@@ -129,8 +129,8 @@ medium.qキューにジョブを投入するとCent OS 7.9のMediumノードで�
 
 以下のリンクより、アカウント停止の手続きをお願い致します。
 
-- アカウント利用停止申請
-  - https://sc-account.ddbj.nig.ac.jp/application/suspension
+- [アカウント利用停止申請](/blog/2024-10-25-account_system_maintenance)
+<!--  - https://sc-account.ddbj.nig.ac.jp/application/suspension -->
 
 
 ### 諸注意

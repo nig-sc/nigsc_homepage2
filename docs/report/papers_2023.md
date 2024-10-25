@@ -1890,16 +1890,6 @@ title: 論文のリスト(2023)
 
 <tr>
 <td>187</td>
-<td>夏 天</td>
-<td>Tian Xia</td>
-<td>Penalty Gradient Normalization for Generative Adversarial Networks</td>
-<td>arXiv. 2023年6月23日; 2306.13576v1</td>
-<td>NULL</td>
-<td>10.48550/arXiv.2306.13576</td>
-</tr>
-
-<tr>
-<td>188</td>
 <td>飯山 和弘</td>
 <td>Kazuhiro Iiyama</td>
 <td>Prediction of gene clusters associated with host specificity of Ralstonia pseudosolanacearum race 4 based on comparative genomic analysis</td>
@@ -1909,7 +1899,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>189</td>
+<td>188</td>
 <td>佐藤 行人</td>
 <td>Yukuto Sato</td>
 <td>Animal-sourced model of human norovirus infection predicted using environmental DNA metabarcoding analysis</td>
@@ -1919,17 +1909,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>190</td>
-<td>本田 大士</td>
-<td>Hiroshi Honda</td>
-<td>Deciphering mechanisms of UV filter- and temperature-induced bleaching in the coral Acropora tenuis, using ecotoxicogenomics</td>
-<td>bioRxiv. 2023年11月06日;</td>
-<td>NULL</td>
-<td>10.1101/2023.11.05.564681</td>
-</tr>
-
-<tr>
-<td>191</td>
+<td>189</td>
 <td>下野 嘉子</td>
 <td>Yoshiko Shimono</td>
 <td>Introduction pathways and evolutionary mechanisms of alien species of Lolium spreading across sandy coasts in Japan</td>
@@ -1939,7 +1919,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>192</td>
+<td>190</td>
 <td>Isaac Planas-Sitjà, Adam L. Cronin</td>
 <td>Isaac Planas-Sitjà, Adam L. Cronin</td>
 <td>To disperse or compete? Coevolution of traits leads to a limited number of reproductive strategies</td>
@@ -1949,7 +1929,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>193</td>
+<td>191</td>
 <td>齋藤 裕</td>
 <td>Yutaka Saito</td>
 <td>タンパク質の言語モデル</td>
@@ -1959,7 +1939,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>194</td>
+<td>192</td>
 <td>宮崎 智史</td>
 <td>Satoshi Miyazaki</td>
 <td>Thelytokous parthenogenesis in dealate queens of the ponerine ant Anochetus shohki</td>
@@ -1969,7 +1949,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>195</td>
+<td>193</td>
 <td>原田 亮</td>
 <td>Ryo Harada</td>
 <td>AtLASS: A scheme for end-to-end prediction of splice sites using attention-based bi-LSTM</td>
@@ -1979,7 +1959,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>196</td>
+<td>194</td>
 <td>坂山 英俊</td>
 <td>Hidetoshi Sakayama</td>
 <td>New distribution and DNA barcoding of the endangered alga Lamprothamnium succinctum (Charales, Charophyceae) in Tottori Prefecture, Japan</td>
@@ -1989,7 +1969,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>197</td>
+<td>195</td>
 <td>村上 正志</td>
 <td>Masashi Murakami</td>
 <td>Drivers of functional and phylogenetic structures of mountain bird assemblages along an altitudinal gradient from the montane to alpine zones</td>
@@ -1999,7 +1979,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>198</td>
+<td>196</td>
 <td>廣田 主樹</td>
 <td>Kazuki Hirota</td>
 <td>Comparative proteomics of the shell matrix proteins of Nautilus pompilius and the conchiferans provide insights into mollusk shell evolution at the molecular level</td>
@@ -2009,7 +1989,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>199</td>
+<td>197</td>
 <td>筒井 直昭</td>
 <td>Naoaki Tsutsui</td>
 <td>Identification of an additional vitellogenin gene showing hepatopancreas-specific expression in the kuruma prawn Marsupenaeus japonicus</td>
@@ -2019,7 +1999,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>200</td>
+<td>198</td>
 <td>本多 了</td>
 <td>Ryo Honda</td>
 <td>Transition of antimicrobial resistome in wastewater treatment plants: impact of process configuration, geographical location and season</td>
@@ -2029,37 +2009,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>201</td>
-<td>今本 南</td>
-<td>Minami Imamoto</td>
-<td>A severe bottleneck impacted the genomic structure of egg-eating cichlids</td>
-<td>bioRxiv. 2023年5月19日;</td>
-<td>NULL</td>
-<td>10.1101/2023.05.17.541056</td>
-</tr>
-
-<tr>
-<td>202</td>
-<td>吉岡 資洋</td>
-<td>Motohiro Yoshioka</td>
-<td>Breeding of a near-isogenic wheat line resistant to wheat blast at both seedling and heading stages through incorporation of Rmg8</td>
-<td>biorxiv. 2023年7月12日;</td>
-<td>NULL</td>
-<td>10.1101/2023.07.12.546477</td>
-</tr>
-
-<tr>
-<td>203</td>
-<td>藤原 一道</td>
-<td>Kazumichi Fujiwara</td>
-<td>Inference of Selective Force on House Mouse Genomes during Secondary Contact in East Asia</td>
-<td>bioRxiv. 2023年12月18日;</td>
-<td>NULL</td>
-<td>10.1101/2023.08.07.552211</td>
-</tr>
-
-<tr>
-<td>204</td>
+<td>199</td>
 <td>浜端 朋子</td>
 <td>Tomoko Hamabata</td>
 <td>Twenty-year changes in the composition of a mixed stock of foraging green turtles in the Yaeyama Islands of Japan</td>
@@ -2069,7 +2019,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>205</td>
+<td>200</td>
 <td>林 方州</td>
 <td>Fangzhou Lin</td>
 <td>Hyperbolic Chamfer Distance for Point Cloud Completion</td>
@@ -2079,7 +2029,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>206</td>
+<td>201</td>
 <td>森本 拓也</td>
 <td>Takuya Morimoto</td>
 <td>Characterization and phylogenetic analysis of the ancient Japanese grape cultivar 'Juraku’</td>
@@ -2089,17 +2039,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>207</td>
-<td>藤戸 尚子</td>
-<td>Naoko Fujito</td>
-<td>Distinct haplogroups with star-like diversification in the APOBEC3 regulatory region indicate ancient viral pandemics before and during the Out-of-Africa migration of modern humans</td>
-<td>bioRxiv. 2023年7月19日;</td>
-<td>NULL</td>
-<td>10.1101/2023.07.18.549600</td>
-</tr>
-
-<tr>
-<td>208</td>
+<td>202</td>
 <td>林 方州</td>
 <td>Lin Fangzhou</td>
 <td>InfoCD: A Contrastive Chamfer Distance Loss for Point Cloud Completion</td>
@@ -2109,7 +2049,7 @@ title: 論文のリスト(2023)
 </tr>
 
 <tr>
-<td>209</td>
+<td>203</td>
 <td>友成 航平</td>
 <td>Kohei Tomonari</td>
 <td>日本国内より分離された Helicobacter pylori の集団構造解析</td>
@@ -2117,6 +2057,5 @@ title: 論文のリスト(2023)
 <td>NULL</td>
 <td>NULL</td>
 </tr>
-
 
 </table>
