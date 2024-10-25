@@ -20,7 +20,7 @@ sidebar_label: トップページ
 
 ## 重要なお知らせ {#featured-news}
 
-- [アカウント申請システムのメンテナンスを行います](/blog/2024-10-25-account_system_maintenance)
+- [&#x26A0; アカウント申請システムのメンテナンスを行います](/blog/2024-10-25-account_system_maintenance) (2024.10.25)
 - [(終了) Lustre8で緊急メンテナンスを行います](/blog/2024-09-04-Lustre8_maintenance) (2024.09.04) &#x1F195;
 - [MediumノードのUbuntu Linuxへの一部移行とGride Engineキュー(medium-ubuntu.q)新設をしました](/blog/2024-07-08-news_medium-ubuntu-q) (2024.07.08)
 - [(終了) 2023年度 年度末アカウント継続申請の申請受付期限を、2024年7月31日(水)まで延長しました](/blog/2024-07-01-news_renewal-date-extended) (2024.07.01)
