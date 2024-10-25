@@ -24,6 +24,6 @@ date: 2022-08-01
 
 ## 影響の範囲
 
-- アカウント登録システムが利用できません。
-https://sc-account.ddbj.nig.ac.jp/application/registration
+- [アカウント登録システムが利用できません。](/blog/2024-10-25-account_system_maintenance)
+<!-- https://sc-account.ddbj.nig.ac.jp/application/registration -->
 - 一般解析区画、個人ゲノム解析区画、その他上記以外には影響有りません。

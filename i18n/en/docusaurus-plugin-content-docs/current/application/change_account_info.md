@@ -4,7 +4,7 @@ title: "Change of Account Information"
 ---
 
 
-If your affiliation or other details change, immediately [&#x1f517;<u>change of your account information by clicking here</u>](https://sc-account.ddbj.nig.ac.jp/login).
+If your affiliation or other details change, immediately [&#x1f517;<u>change of your account information by clicking here</u>](/blog/2024-10-25-account_system_maintenance)<!-- (https://sc-account.ddbj.nig.ac.jp/login) -->.
 
 
 
@@ -20,9 +20,9 @@ If your affiliation or other details change, immediately [&#x1f517;<u>change of 
 
 Click on the URL below to access the change of application details page. When accessed, you can see first a login screen to the page.<br/>
 
-Enter your account name and password. Click 'Sign In'<br/>
+Enter your account name and password. Click ['Sign In'](/blog/2024-10-25-account_system_maintenance)<br/>
 
-&#x1f517;<u>https://sc-account.ddbj.nig.ac.jp/login</u>
+<!-- &#x1f517;<u>https://sc-account.ddbj.nig.ac.jp/login</u> -->
 
 </td>
 </tr>

@@ -8,7 +8,7 @@ title: "New account registration"
 
 ## The NIG supercomputer Account Application
 
-[&#x1f517;<u>This Application is accepted</u>](https://sc-account.ddbj.nig.ac.jp/application/registration) at any time. 
+[&#x1f517;<u>This Application is accepted</u>](/blog/2024-10-25-account_system_maintenance) <!-- (https://sc-account.ddbj.nig.ac.jp/application/registration) --> at any time. 
 
 - 1TB of high-speed storage is available after the account application.
 - If you extend the available storage or use a billing service, [<u>submit a usage plan table</u>](/application/resource_extension) after your application has been accepted.
@@ -46,7 +46,11 @@ For instructions on how to create it, see below.
 </td>
 <td width="400" valign="top">
 
-<font size="5"><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>Access the page of registration for the NIG supercomputer account application</u>.</a></font><br/>
+<!-- <font size="5"><a href="https://sc-account.ddbj.nig.ac.jp/application/registration">&#x1f517;<u>Access the page of registration for the NIG supercomputer account application</u>.</a> -->
+<font size="5">
+[Access the page of registration for the NIG supercomputer account application.](/blog/2024-10-25-account_system_maintenance)
+
+</font><br/>
 
 When you access that page, the screen shown on the left is displayed. Enter the form and click 'Go next'.
 

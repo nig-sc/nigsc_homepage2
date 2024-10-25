@@ -4,7 +4,7 @@ title: "アカウント情報の変更"
 ---
 
 
-所属などが変更になった場合は速やかに[&#x1f517;<u>ログインページから申請内容の変更</u>](https://sc-account.ddbj.nig.ac.jp/login)をお願いいたします。
+所属などが変更になった場合は速やかに[&#x1f517;<u>ログインページから申請内容の変更</u>](/blog/2024-10-25-account_system_maintenance)<!-- (https://sc-account.ddbj.nig.ac.jp/login) -->をお願いいたします。
 
 
 <table>
@@ -22,7 +22,7 @@ title: "アカウント情報の変更"
 
 アカウント名とパスワードを入力して、「Sign In」をクリックします。そうすると、ログインできます。<br/>
 
-&#x1f517;<u>https://sc-account.ddbj.nig.ac.jp/login</u>
+&#x1f517;<u>[アカウント申請システムのログイン画面](/blog/2024-10-25-account_system_maintenance)<!-- https://sc-account.ddbj.nig.ac.jp/login --></u>
 
 </td>
 </tr>

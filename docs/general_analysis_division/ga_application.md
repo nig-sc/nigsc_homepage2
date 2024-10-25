@@ -16,7 +16,7 @@ title: "利用の準備(一般解析区画)"
 
 ユーザーアカウント発行基準につきましては、[「ユーザーアカウント発行基準」](/application/)をご参照下さい。
 
-1. [アカウントの新規登録手順](/application/registration)に沿って、[アカウント登録システムのフォーム](https://sc-account.ddbj.nig.ac.jp/application/registration)から申請登録をしてください。
+1. [アカウントの新規登録手順](/application/registration)に沿って、[アカウント登録システムのフォーム](/blog/2024-10-25-account_system_maintenance)　<!-- (https://sc-account.ddbj.nig.ac.jp/application/registration) -->から申請登録をしてください。
     - 事前に[「ユーザーアカウント発行基準」](/application/)及び[「利用規程」](/application/use_policy)をご確認ください。
     - メールアドレスは、フリーメールアドレスではなく、所属機関のメールアドレスをご入力ください。(特別な場合を除く)
     - 事前に SSH 公開鍵を作成してください。登録フォームの中で、SSH 公開鍵の登録を行う箇所があります。SSH 公開鍵の作成・登録などは、[SSH 公開鍵の登録](/application/ssh_keys)をご参照ください。
