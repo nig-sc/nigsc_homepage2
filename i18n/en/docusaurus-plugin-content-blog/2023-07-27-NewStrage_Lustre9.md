@@ -3,17 +3,16 @@ slug: 2023-07-27-NewStrage_Lustre9
 title: "(Ended) July 27, 2023: Communication breakdown due to switchover to new storage system."
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2023-07-26
 ---
 
 
-Due to switching work associated with the update of the storage system for the DDBJ database, the FTP service and connections with Aspera will be temporarily unavailable during the following time period.
+Due to switching work associated with the update of the storage system for the DDBJ database, the FTP service and connections with Aspera will be temporarily unavailable during the following period.
 
+<!-- truncate -->
 
-## Date
+## Period
 
 Monday, 27 July 2023, 9:00 - 15:00 (24h notation)
 - Communication interruptions of about 15 minutes occur.

@@ -3,13 +3,11 @@ slug: 2022-06-17-UserRegistration
 title: "(Ended)(Extension of suspension period) June 15, 2022: Suspend acceptance of applying a NIG suprecomputer account due to renewal of the account application system"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2022-06-15
 ---
 
-Publication date: 2022年6月15日
+
 
 
 ## Overview
@@ -17,6 +15,7 @@ Publication date: 2022年6月15日
 Currently, we are working on the renewal of the account application system of the NIG supercomputer.
 Therefor, we will suspend the acceptance of application during the following period in order to perform the data migration.
 
+<!-- truncate -->
 
 ## Suspension period
 

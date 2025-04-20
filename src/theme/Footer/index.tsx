@@ -1,36 +1,26 @@
-import React from 'react'
-import { useThemeConfig } from '@docusaurus/theme-common'
+import React from 'react';
 
-import {
-  ServiceGroupsContainer,
-  ServiceGroup, ServiceGroupTitle,
-  ServiceList, ServiceListItem
-} from './Services'
+import {useThemeConfig} from '@docusaurus/theme-common';
+import FooterLinks from '@theme/Footer/Links';
+import FooterLogo from '@theme/Footer/Logo';
+import FooterCopyright from '@theme/Footer/Copyright';
+import FooterLayout from '@theme/Footer/Layout';
 
-import s from './styles.module.css'
-
-export default function Footer () {
-  const { footer: { copyright, links: serviceGroups } } = useThemeConfig()
+function Footer(): JSX.Element | null {
+  const {footer} = useThemeConfig();
+  if (!footer) {
+    return null;
+  }
+  const {copyright, links, logo, style} = footer;
 
   return (
-    <footer className={s.Footer}>
-      <div className={s.Footer__Contents}>
-        <ServiceGroupsContainer>
-          {serviceGroups.map((serviceGroup, i) => (
-            <ServiceGroup key={i}>
-              <ServiceGroupTitle>{serviceGroup.title}</ServiceGroupTitle>
-              <ServiceList>
-                {serviceGroup.items.map((item, i) => (
-                  <ServiceListItem key={i} href={item.href}>{item.label}</ServiceListItem>
-                ))}
-              </ServiceList>
-            </ServiceGroup>
-          ))}
-        </ServiceGroupsContainer>
-      </div>
-      <div className={s.Footer__CopyRight}>
-        <p className={s.Footer__CopyRightBody}>{copyright}</p>
-      </div>
-    </footer>
-  )
+    <FooterLayout
+      style={style}
+      links={links && links.length > 0 && <FooterLinks links={links} />}
+      logo={logo && <FooterLogo logo={logo} />}
+      copyright={copyright && <FooterCopyright copyright={copyright} />}
+    />
+  );
 }
+
+export default React.memo(Footer);

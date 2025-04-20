@@ -15,20 +15,20 @@ export default function DDBJNavbar (): JSX.Element {
       </a>
       <div className={s.DDBJNavbar__Contents}>
         <ServiceList>
-          <ServiceListItem href="https://www.ddbj.nig.ac.jp/ddbj/index.html">
-            <Translate id="theme.DDBJNavbar.データ登録">データ登録</Translate>
+          <ServiceListItem href="https://www.ddbj.nig.ac.jp/ddbj/index-e.html">
+            <Translate id="theme.DDBJNavbar.データ登録">Data Submission</Translate>
           </ServiceListItem>
-          <ServiceListItem href="https://www.ddbj.nig.ac.jp/services/index.html">
-            <Translate id="theme.DDBJNavbar.データベース">データベース</Translate>
+          <ServiceListItem href="https://www.ddbj.nig.ac.jp/services/index-e.html">
+            <Translate id="theme.DDBJNavbar.データベース">Databases</Translate>
           </ServiceListItem>
-          <ServiceListItem href="https://sc.ddbj.nig.ac.jp/">
-            <Translate id="theme.DDBJNavbar.スパコン">スパコン</Translate>
+          <ServiceListItem href="https://sc.ddbj.nig.ac.jp/en/">
+            <Translate id="theme.DDBJNavbar.スパコン">Supercomputer</Translate>
           </ServiceListItem>
-          <ServiceListItem href="https://www.ddbj.nig.ac.jp/activities/index.html">
-            <Translate id="theme.DDBJNavbar.活動">活動</Translate>
+          <ServiceListItem href="https://www.ddbj.nig.ac.jp/activities/index-e.html">
+            <Translate id="theme.DDBJNavbar.活動">Activities</Translate>
           </ServiceListItem>
-          <ServiceListItem href="https://www.ddbj.nig.ac.jp/about/index.html">
-            <Translate id="theme.DDBJNavbar.センターについて">センターについて</Translate>
+          <ServiceListItem href="https://www.ddbj.nig.ac.jp/about/index-e.html">
+            <Translate id="theme.DDBJNavbar.センターについて">About Us</Translate>
           </ServiceListItem>
         </ServiceList>
       </div>

@@ -3,17 +3,16 @@ slug: 2024-06-05-Lustre7_maintenance
 title: "(Ended) [Outage] June 5, 2024: Emergency maintenance of Lustre7"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2024-06-05
 ---
 
-Publication date: June 5, 2024
+
 
 
 The restoration work was completed at around 12:00 (24 hours notation) on Thursday, 6 June 2024.
 
+<!-- truncate -->
 
 ~~The Lustre7 high-speed storage system in the General Analysis division has experienced a failure and is currently partially un-writable.~~
 

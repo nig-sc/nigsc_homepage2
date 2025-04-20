@@ -3,14 +3,13 @@ slug: 2023-07-26-gpu-configure
 title: "(Ended) [Maintainance] July 11, 2023: Temporary suspension of new job execution in GPU queues due to configuration changes on Wednesday, July 26, 2023"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2023-07-11
 ---
 
 Until now, a part of the CPU of the GPU compute node has been allocated to short.q because the utilisation rate of the CPU of the GPU compute node is low, but in recent years, various software using the GPU has been created and the usage methods have changed, so the AGE queue configuration will be changed as follows to increase the number of CPU cores available in the GPU node.
 
+<!-- truncate -->
 
 - Before change
 
@@ -29,27 +28,20 @@ Until now, a part of the CPU of the GPU compute node has been allocated to short
 
 For short.q, the CPU will be changed from AMD EPYC 7501 to Intel Xeon Gold 6130 due to the node type change. Please review the execution job if necessary.
 
-## Date
+## Date and time
 
 Wednesday, July 26, 2023 11:00 - 11:30 (24h notation)
 
 
 ## Scope of Impact
 
-<ul>
-<li>
-During the work,
+- During the work,
+  - There is no impact for running jobs.
+  - gpu.q will not be able to execute new jobs.
+  - You can run new jobs for short.q.
+  - Information updates for the system [Job accumulation status and estimated waiting time](/operation/operation/) will be stopped.
+- Before and after the work, there is no change in the method of submitting jobs for each queue.
 
-  <ul>
-  <li>There is no impact for running jobs.</li>
-  <li>gpu.q will not be able to execute new jobs.</li>
-  <li>You can run new jobs for short.q.</li>
-  <li>Information updates for the system "<a href="https://sc.ddbj.nig.ac.jp/en/operation/"><u>Job accumulation status and estimated waiting time</u></a>"  will be stopped.</li>
-  </ul>
 
-<li>
-Before and after the work, there is no change in the method of submitting jobs for each queue.
-</li>
 
-</li>
-</ul>
+

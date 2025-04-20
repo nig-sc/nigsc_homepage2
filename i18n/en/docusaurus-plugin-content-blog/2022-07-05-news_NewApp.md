@@ -3,15 +3,14 @@ slug: 2022-07-05-news_NewApp
 title: "July 5, 2022: Application system for new use is new"
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2022-07-05
 ---
 
 
 - The URL for the NIG supercomputer account application form `=>` [Registration](/application/registration)
-- The URL for application instructions `=>` [Account Application and Change of Application Details](/application/registration/)
+- The URL for application instructions `=>` [Account Application and Change of Application Details](/application/registration)/
+
+<!-- truncate -->
 
 
 <table>

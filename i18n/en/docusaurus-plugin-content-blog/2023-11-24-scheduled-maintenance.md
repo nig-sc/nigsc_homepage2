@@ -3,15 +3,14 @@ slug: 2023-11-24-scheduled-maintenance
 title: "(Ended) [Maintenance] November 24 - November 30, 2023: Scheduled Maintenance."
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
 date: 2023-11-24
 ---
 
-Publication date: October 2, 2023
+
 
 The scheduled maintenance of the NIG supercomputer is scheduled on the following date and time in accordance with the legal power outage of the NIG. The supercomputer will not be available during the scheduled maintenance.
+
+<!-- truncate -->
 
 ## Period
 
@@ -32,7 +31,7 @@ Works for scheduled maintenance are as follows.
 
 1. Software version upgrade 
 2. OS migration (from CentOS 7.9 to Ubuntu Linux 22.04LTS)
-    - [FAQ page for OS migration has been created.](/faq/faq_os_migration)＼&#x1f195;／
+    - [FAQ page for OS migration has been created.](/guides/FAQ/faq_os_migration/)＼&#x1f195;／
     - The medium nodes and the fat node hardware (that is, HPE ProLiant DL560 Gen10 and HPE Superdome Flex) do not support Ubuntu Linux and could not be migrated from Cent OS 7.9 to Ubuntu Linux 22.04 this time.
 3. Grid Engine version upgrade 
 4. yum update for Cent OS that did not migrate OS 

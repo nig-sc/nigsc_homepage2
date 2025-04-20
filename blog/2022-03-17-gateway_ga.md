@@ -1,16 +1,15 @@
 ---
 slug: 2022-03-17-gateway_ga
-title: 2022 年 3 月 17 日 （木）ゲートウェイノードの追加
+title: 2022年3月17日(木) ゲートウェイノードの追加
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2022-03-17
 ---
 
 
 混雑対策およびハードウェア冗長化を目的として新しいゲートウェイノードを導入し公開しました。
+
+<!-- truncate -->
 
 - 一般解析区画ゲートウェイノード
     - `gw.ddbj.nig.ac.jp`

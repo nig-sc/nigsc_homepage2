@@ -3,18 +3,17 @@ slug: 2024-02-27-ssh-vpn-mail-unavailable
 title: "(終了) 2024 年 2 月 27 日(火) SSL-VPN接続のためのToken codeが送信されない不具合発生のお知らせ"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
 date: 2024-02-27
 ---
 
-掲載日: 2024年2月27日
+
 
 
 2024年2月27日(火)、SSL-VPN接続のためのToken codeを含むメールが送信されない事象が発生しました。
 
-発生日時：2024年2月27日(火)　10:00 - 15:45
+<!-- truncate -->
+
+発生日時：2024年2月27日(火)　10時00分 - 15時45分　(24h表記)
 
 現在は復旧して、メールが送信されるようになっています。
 

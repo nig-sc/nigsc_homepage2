@@ -11,8 +11,10 @@ date: 2023-03-08
 
 In the Lustre8 high-speed storage system for the Personal Genome Analysis division, we are going to upgrade the server version and perform maintenance related with it.
 
+<!-- truncate -->
 
-## Date
+
+## Date and Time
 
 Wednesday, March 8, 2023 14:00 - 17:00 (24h notation)
 

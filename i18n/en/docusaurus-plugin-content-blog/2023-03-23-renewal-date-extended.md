@@ -3,16 +3,15 @@ slug: 2023-03-23-renewal-date-extended
 title: "March 23, 2023:  Extended deadline for account renewal application at the end of FY2022"
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2023-03-23
 ---
 
-In this fiscal year (FY2022), due to the renewal of the application system in July 2022, there have been some system issues with end-of-year account renewal applications. We apologize for the inconvenience. For information on how to deal with this, [refer to FAQ](/faq/faq_renewal). 
+In this fiscal year (FY2022), due to the renewal of the application system in July 2022, there have been some system issues with end-of-year account renewal applications. We apologize for the inconvenience. For information on how to deal with this, [refer to FAQ](/guides/FAQ/faq_application/faq_renewal/). 
 
 
 In order to avoid confusion caused by the end-of-year renewal system issues, we decided to extend the end-of-year renewal deadline as follows.
+
+<!-- truncate -->
 
 ## Period for renewal application
 

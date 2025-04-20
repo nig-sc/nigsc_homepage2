@@ -3,15 +3,13 @@ slug: 2024-07-01-news_renewal-date-extended
 title: "(終了) 2023年度 年度末アカウント継続申請の申請受付期限の延長"
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2024-07-01
 ---
 
-掲載日: 2024年7月1日
 
 2023年度　年度末アカウント継続申請の受付期間を、延長します。
+<!-- truncate -->
+
 
 まだ継続申請がお済みでない方は、期間中に申請を行ってください。
 

@@ -3,17 +3,18 @@ slug: 2024-06-06-Lustre7_maintenance_followup
 title: "(Ended) (Follow-up)[Outage] June 5, 2024: Emergency maintenance of Lustre7"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2024-06-06
 ---
 
-Publication date: June 6, 2024
+
 
 The restoration work was completed at around 12:00 (24 hours notation) on Thursday, 6 June 2024.
 
 - At 1:34:21 am on Wed 5 Jun, a fault occurred on the Lustre7 high-speed storage system in the General Analysis division, resulting in a partial write failure. Specifically, one of the 88 RAID groups Lustre OST (OST0031) was not writable.
+
+<!-- truncate -->
+
 - The recovery work started at around 15:30 and finished at around 20:00.
 - However, at 20:00, it was confirmed that some compute nodes were not able to access OST0031 (neither read nor write). Specifically, the following computation nodes.
     - at017,at025,at054,at049,at051,at052,at047,at045,at050,at053,at085,at099,at102,at101,at132, (15 of 136 Thin compute nodes Type 1a, AMD EPYC 7501 CPU)
@@ -24,7 +25,7 @@ The restoration work was completed at around 12:00 (24 hours notation) on Thursd
     - dtn2,dtn4 (data transfer nodes used for DDBJ services)
 - - Thu 6 Jun, these nodes will be restarted in sequence to normalise access to Lustre7.
     - Since two gateways in the general analysis section are included, login to the supercomputer will not be possible during this work and it will be disconnected from SSH communication.
-    - [There are two gateways in the general analysis division, so if you cannot log in to one of them, please log in from the other one.](/general_analysis_division/ga_login#two-gateways)
+    - [There are two gateways in the general analysis division, so if you cannot log in to one of them, please log in from the other one.](/guides/using_general_analysis_division/ga_login/#two-gateways)
 
 
 ## Scope of impact

@@ -3,14 +3,12 @@ slug: 2023-07-26-gpu-configure
 title: "(終了) 2023 年 7 月 26 日(水) 構成変更に伴う GPU キューの新規ジョブ実行の一時停止のお知らせ"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
 date: 2023-07-11
 ---
 
 これまでは GPU 計算ノードの CPU の利用率が低いことから、GPU 計算ノードの CPU の一部を short.q に割り当てていましたが、近年 GPU を利用したソフトウェアが様々作られ利用方法も変化してきていることから、AGE キューの構成を以下のように変更し、GPU ノードで利用可能な CPU コア数を増やします。
 
+<!-- truncate -->
 
 〔変更前〕
 
@@ -32,7 +30,7 @@ short.q はノード種変更に伴い、CPU が AMD EPYC 7501 から Intel Xeon
 
 ## 作業日程
 
-2023/7/26(水) 10:00 ~ 11:30
+2023年7月26日(水) 10時00分 ~ 11時30分　(24h表記)
 
 
 ## 影響の範囲
@@ -43,7 +41,7 @@ short.q はノード種変更に伴い、CPU が AMD EPYC 7501 から Intel Xeon
   <li>作業中においても short.q は新規実行可能です。</li>
   <li>作業中は以下のシステムの情報更新は停止します。</li>
   <ul>
-    <li><a href="https://sc.ddbj.nig.ac.jp/operation/"><u>ジョブの蓄積状況と予想される待ち時間</u></a></li>
+    <li><a href="https://sc.ddbj.nig.ac.jp/operation/operation/">ジョブの蓄積状況と予想される待ち時間</a></li>
   </ul>
   <li>作業の前後で各キューのジョブのサブミット方法に変更はありません。</li>
 </ul>

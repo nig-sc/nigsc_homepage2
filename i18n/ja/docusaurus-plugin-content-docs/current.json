@@ -102,5 +102,161 @@
   "sidebar.operationInfoSidebar.link.メンテナンス情報": {
     "message": "メンテナンス情報",
     "description": "The label for link メンテナンス情報 in sidebar operationInfoSidebar, linking to /blog/tags/maintenance"
+  },
+  "sidebar.guidesSidebar.category.情報セキュリティ方針 (ISO27001)": {
+    "message": "情報セキュリティ方針 (ISO27001)",
+    "description": "The label for category 情報セキュリティ方針 (ISO27001) in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.ハードウェア": {
+    "message": "ハードウェア",
+    "description": "The label for category ハードウェア in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.ソフトウェア": {
+    "message": "ソフトウェア",
+    "description": "The label for category ソフトウェア in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.JobScheduler": {
+    "message": "JobScheduler",
+    "description": "The label for category JobScheduler in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Slurm の概要": {
+    "message": "Slurm の概要",
+    "description": "The label for category Slurm の概要 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Grid Engine の概要": {
+    "message": "Grid Engine の概要",
+    "description": "The label for category Grid Engine の概要 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Container": {
+    "message": "Container",
+    "description": "The label for category Container in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.spack": {
+    "message": "spack",
+    "description": "The label for category spack in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.CopyTool": {
+    "message": "CopyTool",
+    "description": "The label for category CopyTool in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Archaea tools(旧 HCPtools) の使い方": {
+    "message": "Archaea tools(旧 HCPtools) の使い方",
+    "description": "The label for category Archaea tools(旧 HCPtools) の使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.CentOS": {
+    "message": "CentOS",
+    "description": "The label for category CentOS in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Ubuntu": {
+    "message": "Ubuntu",
+    "description": "The label for category Ubuntu in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Windows": {
+    "message": "Windows",
+    "description": "The label for category Windows in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Aspera の使い方": {
+    "message": "Aspera の使い方",
+    "description": "The label for category Aspera の使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.DevelopmentEnvironment": {
+    "message": "DevelopmentEnvironment",
+    "description": "The label for category DevelopmentEnvironment in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Rの使い方": {
+    "message": "Rの使い方",
+    "description": "The label for category Rの使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.C/C++の使い方 (Intel Compiler)": {
+    "message": "C/C++の使い方 (Intel Compiler)",
+    "description": "The label for category C/C++の使い方 (Intel Compiler) in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.一般解析区画の使い方": {
+    "message": "一般解析区画の使い方",
+    "description": "The label for category 一般解析区画の使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.個人ゲノム解析区画の使い方": {
+    "message": "個人ゲノム解析区画の使い方",
+    "description": "The label for category 個人ゲノム解析区画の使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_software": {
+    "message": "faq_software",
+    "description": "The label for category faq_software in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_general_analysis_division": {
+    "message": "faq_general_analysis_division",
+    "description": "The label for category faq_general_analysis_division in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_personal_genome": {
+    "message": "faq_personal_genome",
+    "description": "The label for category faq_personal_genome in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_application": {
+    "message": "faq_application",
+    "description": "The label for category faq_application in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.FAQ：OS 移行に伴うご質問": {
+    "message": "FAQ：OS 移行に伴うご質問",
+    "description": "The label for category FAQ：OS 移行に伴うご質問 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.link.お知らせ": {
+    "message": "お知らせ",
+    "description": "The label for link お知らせ in sidebar guidesSidebar, linking to /blog/tags/news"
+  },
+  "sidebar.guidesSidebar.link.メンテナンス情報": {
+    "message": "メンテナンス情報",
+    "description": "The label for link メンテナンス情報 in sidebar guidesSidebar, linking to /blog/tags/maintenance"
+  },
+  "sidebar.guidesSidebar.link.全文検索": {
+    "message": "全文検索",
+    "description": "The label for link 全文検索 in sidebar guidesSidebar, linking to https://sc.ddbj.nig.ac.jp/search"
+  },
+  "sidebar.guidesSidebar.link.Github Discussions": {
+    "message": "Github Discussions",
+    "description": "The label for link Github Discussions in sidebar guidesSidebar, linking to https://github.com/nig-sc/nigsc_homepage2/discussions"
+  },
+  "sidebar.applicationSidebar.category.利用規定等": {
+    "message": "利用規定等",
+    "description": "The label for category 利用規定等 in sidebar applicationSidebar"
+  },
+  "sidebar.applicationSidebar.category.registration": {
+    "message": "registration",
+    "description": "The label for category registration in sidebar applicationSidebar"
+  },
+  "sidebar.applicationSidebar.category.誓約書に署名する方法": {
+    "message": "誓約書に署名する方法",
+    "description": "The label for category 誓約書に署名する方法 in sidebar applicationSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.topics": {
+    "message": "topics",
+    "description": "The label for category topics in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.Rhelixa_RNAseq": {
+    "message": "Rhelixa_RNAseq",
+    "description": "The label for category Rhelixa_RNAseq in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.AlphaFold": {
+    "message": "AlphaFold",
+    "description": "The label for category AlphaFold in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.TogoImputation": {
+    "message": "TogoImputation",
+    "description": "The label for category TogoImputation in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.advancedGuidesSidebar.category.benchmark": {
+    "message": "benchmark",
+    "description": "The label for category benchmark in sidebar advancedGuidesSidebar"
+  },
+  "sidebar.reportSidebar.category.papers": {
+    "message": "papers",
+    "description": "The label for category papers in sidebar reportSidebar"
+  },
+  "sidebar.reportSidebar.category.institution": {
+    "message": "institution",
+    "description": "The label for category institution in sidebar reportSidebar"
   }
 }

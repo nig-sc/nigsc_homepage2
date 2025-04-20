@@ -3,16 +3,16 @@ slug: 2022-04-25-scheduled-maintenance
 title: "(Ended)[Maintenance] June 28 - July 1, 2022: Scheduled Maintenance."
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2022-04-25
 ---
 
-Publication date: April 25, 2022
+
 
 
 The scheduled maintenance of the NIG supercomputer is scheduled on the following date and time. The supercomputer will not be available during the scheduled maintenance.
+
+<!-- truncate -->
 
 ## Period
 

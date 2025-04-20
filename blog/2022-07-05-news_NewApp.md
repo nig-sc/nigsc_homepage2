@@ -3,14 +3,13 @@ slug: 2022-07-05-news_NewApp
 title: 2022年7月5日(火) アカウント登録システムの刷新
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2022-07-05
 ---
 
+<!-- truncate -->
+
 - アカウント登録フォームの URL はこちらです。=><!-- <a href="https://sc-account.ddbj.nig.ac.jp/application/registration">アカウント登録システム</a> --> [アカウント登録システム](/blog/2024-10-25-account_system_maintenance)
-- 申請についての説明はこちらです。=>[アカウントの新規登録](/application/registration)
+- 申請についての説明はこちらです。=>[アカウントの新規登録](/application/registration/)
 
 
 
