@@ -1,31 +1,18 @@
 {
   "title": {
-    "message": "NIG Supercomputer",
+    "message": "The NIG Supercomputer",
     "description": "The title in the navbar"
   },
-  "item.label.システム概要": {
-    "message": "System Overview",
-    "description": "Navbar item with label システム概要"
+  "logo.alt": {
+    "message": "NIG supercomputer logo",
+    "description": "The alt text of navbar logo"
   },
-
-  "item.label.各種申請": {
-    "message": "Make Application",
-    "description": "Navbar item with label 各種申請"
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
   },
-  "item.label.利用案内": {
-    "message": "User Guide",
-    "description": "Navbar item with label 利用案内"
-  },
-  "item.label.活用方法": {
-    "message": "Advanced Guides",
-    "description": "Navbar item with label 活用方法"
-  },
-  "item.label.稼働状況": {
-    "message": "Operation Info",
-    "description": "Navbar item with label 稼働状況"
-  },
-  "item.label.成果報告": {
-    "message": "Reports",
-    "description": "Navbar item with label 成果報告"
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
   }
 }

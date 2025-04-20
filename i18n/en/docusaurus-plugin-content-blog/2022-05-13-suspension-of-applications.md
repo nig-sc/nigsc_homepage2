@@ -3,15 +3,14 @@ slug: 2022-05-13-suspension-of-applications
 title: "May 13, 2022: Suspend acceptance of the account application of the personal genome anaysis division and  large-scale storage on the general analysis division"
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2022-05-13
 ---
 
 Thank you very much for using the NIG supercomputer.
 
 Due to the computing resources of CPU and Disk are current very tight, we suspend the NIG supercomputer account application for the following users.
+
+<!-- truncate -->
 
 - Application for using large-scale for the general analysis division
 - Account Application of personal genome analysis division users

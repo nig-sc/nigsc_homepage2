@@ -1,23 +1,17 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
- .tableOfContents {
-  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
-  overflow-y: auto;
-  position: sticky;
-  top: calc(var(--ifm-navbar-height) + 1rem);
+.tocContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-@media (max-width: 996px) {
-  .tableOfContents {
-    display: none;
-  }
+.feedIcons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
-  .docItemContainer {
-    padding: 0 0.3rem;
-  }
+.icon {
+  width: 80px;
+  height: auto;
 }

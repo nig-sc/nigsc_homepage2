@@ -3,14 +3,14 @@ slug: 2023-04-21-data_migration
 title: "April 21, 2023:  Request for data migration of some users due to the start of operation of the new storage system for databases"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2023-04-21
 ---
 
 
 The storage system used to build the DDBJ database was replaced in April 2023 and the disk space was renewed from approximately 15 PB to 40 PB.
+
+<!-- truncate -->
 
 Currently, data on Lustre6 high-speed storage for DDBJ operations and data on GPFS1,2 storage for the previous database are being migrated to the new storage system. The data migration will be completed around July, after which full-scale operations will be started.
 
@@ -20,4 +20,4 @@ Lustre6 was mainly used for building the DDBJ database, but some users' data of 
 
 For information on the current storage types, see below.
 
-[Hardware > "Storage" High-speed storage : Lustre file systems](/guides/hardware/#high-speed-storage--lustre-file-systems)
+[Hardware > Storage > Analysis storage](/guides/hardware/hardware2025/#analysis-storage)

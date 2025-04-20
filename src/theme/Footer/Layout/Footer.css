@@ -1,0 +1,33 @@
+.footer {
+  background-color: #f5f5f5; 
+  background-image: url('/img/ddbj-footer-background.svg'); /* Replace with your actual image path */
+  background-repeat: repeat; /* 繰り返し表示 */
+  background-size: auto 60%; 
+  background-position: top left; /* 画像の表示開始位置 */
+  color: #000;
+}
+
+.footer__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+
+.footer a {
+  color: #000;
+}
+
+
+.footer a:hover {
+  color: #ff8c00;
+}
+
+
+
+.footer__copyright {
+  text-align: center;
+  padding: 1rem;
+  color: #000;
+}
+

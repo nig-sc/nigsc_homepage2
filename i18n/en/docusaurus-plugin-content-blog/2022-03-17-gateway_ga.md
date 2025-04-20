@@ -3,24 +3,21 @@ slug: 2022-03-17-gateway_ga
 title: "March 17, 2022: Addition of New General Analysis Gateway"
 tags:
   - news
-authros:
-  - oogasawara
-  - akatsumata
 date: 2022-03-16
 ---
 
-Publication date : March 16, 2022
+
 
 ## Overview
 
 For congestion control and hardware redundancy
 A new gateway node `gw2.ddbj.nig.ac.jp` will be installed and opened to the public in the personal genome analysis division.
 
+<!-- truncate -->
 
-## Work Schedule
+## Work Date and Time
 
 Thursday, March 17, 2022, around 13:00 
-
 - Publication work has been completed and is now available.
 
 ## Scope of Impact

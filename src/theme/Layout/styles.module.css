@@ -1,0 +1,34 @@
+html,
+body {
+  height: 100%;
+}
+
+.mainWrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Docusaurus-specific utility class */
+:global(.docusaurus-mt-lg) {
+  margin-top: 3rem;
+}
+
+:global(#__docusaurus) {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.DDBJ_Navi table {
+  background-color: #0000;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0.5rem;
+  gap: 0.5em;
+  list-style: none;
+  align-items: left;
+  width: 100%;
+}

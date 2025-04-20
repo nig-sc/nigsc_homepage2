@@ -11,4 +11,6 @@ date: 2023-03-14
 
 You can now use your electronic signature to sign the pledge to be submitted after registering your application.
 
-For more information, [refer to 'How to sign the pledge'](/application/signing_PDF).
+For more information, [refer to 'How to sign the pledge'](/application/agreement_signing).
+
+<!-- truncate -->

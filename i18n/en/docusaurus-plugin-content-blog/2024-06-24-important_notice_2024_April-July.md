@@ -1,19 +1,21 @@
 ---
 slug: 2024-06-24-important_notice_2024_April-July
-title: "June 24, 2024: Important Announcement from the NIG supercomputer: Phase 1 (Apr-Jul) FY2024"
+title: "June 24, 2024: Important Announcement from the NIG supercomputer: 1st Period of 2024 (April - July)"
 tags:
   - maintenance
-authros:
-  - oogasawara
-  - akatsumata
+
 date: 2024-06-24
 ---
 
-Publication date: June 24, 2024
 
 
 ## Contents
-1. Notice of software update2. Notice of operating system change to Ubuntu Linux 22.04 for Medium node3. Notice of replacement to the next generation of the NIG supercomputer4. **!!NOTICE!!** Data of users who have not renewed the account by the end of June will be deleted from 1 July.
+1. Notice of software update
+2. Notice of operating system change to Ubuntu Linux 22.04 for Medium node
+3. Notice of replacement to the next generation of the NIG supercomputer
+4. **!!NOTICE!!** Data of users who have not renewed the account by the end of June will be deleted from 1 July.
+
+<!-- truncate -->
 
 ## １．Notice of software update
 
