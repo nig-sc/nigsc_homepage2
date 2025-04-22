@@ -27,9 +27,9 @@
     "message": "開発環境・ライブラリ",
     "description": "The label for category 開発環境・ライブラリ in sidebar softwareSidebar"
   },
-  "sidebar.applicationsSidebar.category.利用規定等": {
-    "message": "利用規定等",
-    "description": "The label for category 利用規定等 in sidebar applicationsSidebar"
+  "sidebar.applicationsSidebar.category.関連法規等": {
+    "message": "関連法規等",
+    "description": "The label for category 関連法規等 in sidebar applicationsSidebar"
   },
   "sidebar.applicationsSidebar.category.アカウントの新規登録": {
     "message": "アカウントの新規登録",
@@ -219,9 +219,9 @@
     "message": "Github Discussions",
     "description": "The label for link Github Discussions in sidebar guidesSidebar, linking to https://github.com/nig-sc/nigsc_homepage2/discussions"
   },
-  "sidebar.applicationSidebar.category.利用規定等": {
-    "message": "利用規定等",
-    "description": "The label for category 利用規定等 in sidebar applicationSidebar"
+  "sidebar.applicationSidebar.category.関連法規等": {
+    "message": "関連法規等",
+    "description": "The label for category 関連法規等 in sidebar applicationSidebar"
   },
   "sidebar.applicationSidebar.category.registration": {
     "message": "registration",

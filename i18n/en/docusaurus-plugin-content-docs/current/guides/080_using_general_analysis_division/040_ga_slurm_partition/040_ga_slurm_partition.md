@@ -76,3 +76,4 @@ In the general analysis division of the NIG Supercomputer, Slurm partitions are 
   </tr>
 </table>
 
+For details on how to use Slurm, refer to ['How to use Slurm'](/guides/software/JobScheduler/Slurm/) in the Software section.

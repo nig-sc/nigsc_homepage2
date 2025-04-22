@@ -44,7 +44,7 @@ title: "関連法規等"
 - [政府機関等の情報セキュリティ対策のための統一基準群](https://www.nisc.go.jp/policy/group/general/kijun.html)
 
 
-## 利用規定 {#terms-of-use}
+## 利用規程 {#terms-of-use}
 
 - [情報・システム研究機構 情報セキュリティポリシー](ROIS_security_policy.pdf)
 - [情報・システム研究機構 国立遺伝学研究所 情報セキュリティガイドライン（2018年 2月13日 改訂）](nig_security_guide_20180213.pdf)

@@ -5,7 +5,7 @@ title: ストレージの大規模利用
 
 サービス利用の際は、利用規程および[利用規程別表（料金表）](/application/terms_and_policies/terms_of_use_2025/#price-list-revised-on-2025)をご確認いただき、[利用計画表をダウンロード](/application/resource_extension/#download-table)し必要事項を記入の上、![](sc-helpdesk.png)までメールにてお送りください。利用目的を審査の上、課金サービス利用許可の案内をお送りします。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。
 
-- [スパコン(2025)利用規定](/application/terms_and_policies/terms_of_use_2025/)
+- [スパコン(2025)利用規程](/application/terms_and_policies/terms_of_use_2025/)
 
 遺伝研スパコンの計算ノード及びストレージは一般解析区画と個人ゲノム解析区画 の２つの区画に大別されます。以下のストレージ大規模利用サービスは両方の区画から利用可能です。
 

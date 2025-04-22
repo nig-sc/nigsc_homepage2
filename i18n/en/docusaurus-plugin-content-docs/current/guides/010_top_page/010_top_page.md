@@ -125,7 +125,7 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 ## Year-End Account Renewal Applications {#year-end-renewals}
 
-The account application system is currently being revised for security enhancements, which is causing a delay in its reopening. Account renewal applications will be processed after the system is reopened. For this fiscal year, account renewal for the next-generation supercomputer will be handled by the supercomputer administrator without use's application.
+The account application system is currently being revised for security enhancements, which is causing a delay in its reopening. Account renewal applications will be processed after the system is reopened. For 2024FY, account renewal for the supercomputer(2025) will be handled by the supercomputer administrator without use's application.
 
 
 ## Regular Maintenance in Fiscal Year 2024 {#2024-annual-maintenance}
