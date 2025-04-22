@@ -18,7 +18,7 @@ title: アカウントの新規登録から利用開始までの流れ
 
 事前に「[ユーザーアカウント発行基準](/application/terms_and_policies/user_account_issurance_criteria)」及び「利用規程」をご確認ください。
 
-- [スパコン(2025)利用規定](/application/terms_and_policies/terms_of_use_2025/)
+- [スパコン(2025)利用規程](/application/terms_and_policies/terms_of_use_2025/)
 
 
 </td>

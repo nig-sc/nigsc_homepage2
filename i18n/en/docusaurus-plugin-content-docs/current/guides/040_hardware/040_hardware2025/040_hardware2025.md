@@ -1,6 +1,6 @@
 ---
 id: hardware
-title: Next-Generation Supercomputer (2025 hardware)
+title: Supercomputer (2025 hardware)
 ---
 
 ## Overview

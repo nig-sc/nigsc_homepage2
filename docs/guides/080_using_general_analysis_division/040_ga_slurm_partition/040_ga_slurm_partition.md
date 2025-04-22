@@ -81,6 +81,6 @@ HPC CPU最適化ノード Type 1<br />
 
 </table>
 
-
+Slurmの使い方は、[Softwareの「Slurmの使い方」のページをご参照ください](/guides/software/JobScheduler/Slurm/)。
 
 

@@ -5,13 +5,11 @@ title: Data file transfer（The general analysis division）
 
 In addition to commonly used protocols such as SCP and SFTP, the NIG supercomputer also supports Aspera and Archaea tools, which are optimized for large-scale data transfers over long distances.
 
-:::info
 - Aspera can be used to download data from sources such as NCBI, EBI, and DDBJ to the NIG supercomputer or to users’ personal computers. The total transfer bandwidth is limited to 10 Gbps across the entire NIG supercomputer.
 - Archaea tools are available for transferring data between the user’s home directory on the supercomputer and their personal computer. There is no bandwidth limitation due to licensing.
 
 The NIG supercomputer is currently connected to SINET6 at 100 Gbps.
 **Using Archaea tools allows users to take full advantage of the NIG supercomputer’s high-speed network.**
-:::
 
 
 Since Aspera Server is not installed in the general analysis division and the personal genome analysis division, users cannot upload or download data via Aspera from their computers. If you need to transfer data from your computer to those division, please use Archaea Tools.
@@ -19,7 +17,7 @@ Since Aspera Server is not installed in the general analysis division and the pe
 
 ![](copytool_1.png)
 
-If you install ascp (Aspera client) in the general analysis division and the individual genome area, you will be able to upload and download data via Aspera from DDBJ, NCBI, and EBI.
+ On the other hand, if you install ascp (Aspera client) in the general analysis division and the individual genome area, you will be able to upload and download data via Aspera from DDBJ, NCBI, and EBI.
 
 
 ![](copytool_2.png)

@@ -25,7 +25,7 @@ DDBJ グループクラウドは、個人ゲノムデータを含みアクセス
  サービス利用の際は、利用規程および利用規程別表（料金表）ご確認いただき、[利用計画表](/application/resource_extension)をダウンロードし必要事項を記入の上、![](sc-helpdesk.png)までメールにてお送りください。利用目的を審査の上、課金サービス利用許可の案内をお送りします。遺伝研スパコンの混雑状況によってはご利用できない場合がありますのでご了承願います。
 
 
-- [次期スパコン(2025)利用規定および利用規程別表](/application/terms_and_policies/terms_of_use_2025/)
+- [スパコン(2025)利用規程および利用規程別表](/application/terms_and_policies/terms_of_use_2025/)
 
 ## 利用料金 {#usage-fees}
 
