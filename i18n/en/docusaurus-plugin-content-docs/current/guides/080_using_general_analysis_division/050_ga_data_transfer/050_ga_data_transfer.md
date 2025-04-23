@@ -28,17 +28,33 @@ Preparing content...
 
 ## How to Use Aspera {#usage-aspera}
 
-**Aspera** is a commercial software solution designed for efficient transfer of large files.  
-It is particularly effective over long distances, with minimal degradation in transfer speed.  
-When properly tuned, Aspera can achieve speeds close to the theoretical bandwidth limits.
-
-On the NIG supercomputer, an Aspera server with a total bandwidth cap of **10 Gbps** is available.  
-(Note: The overall bandwidth of the NIG network is **100 Gbps**.)
-
-For details on how to use Aspera, please refer to:  
-[System Architecture > Software > How to use Aspera client](/guides/software/CopyTool/aspera_client/)
+Aspera is a commercial software solution designed for efficient transfer of large files.  
+Its key features include minimal degradation of transfer speed, particularly when communicating over long distances, and the ability to achieve transfer speeds very close to the theoretical bandwidth, provided it is properly tuned. On the NIG supercomputer, an Aspera server with a total bandwidth cap of 10 Gbps is available.  
+(Note: The overall bandwidth of the NIG network is 100 Gbps.)
 
 
+### Aspera Usage Guide
+
+For example, to download `SRR1448774.fastq.gz` (2.7GB) from the EBI server, execute the following command:
+
+```
+apptainer exec ./ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp -P33001 -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR144/004/SRR1448774/SRR1448774.fastq.gz /path/to/download_dir/
+```
+
+Here is an example of executing the command:
+
+```
+you@a001:~/path/to/workdir/apptainer_ascp3 (2025-04-22 16:54:17)
+$ apptainer exec ./ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp -P33001 -i ~/.aspera/connect/e
+tc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR144/004/SRR1448774/SRR1448774.fastq.gz /path/to/download_dir/
+tc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR144/004/SRR1448774/SRR1448774.fastq.gz $HOME/works/
+you@a001:~/path/to/workdir/apptainer_ascp3 (2025-04-22 16:57:55)
+$
+```
+
+For a detailed explanation of the options and usage, refer to [Software > CopyTool > How to Use Aspera client(ascp)](/guides/software/CopyTool/aspera_client/).
+
+On the NIG supercomputer environment, when downloading from EBI using Aspera, a download speed of around 100-200Mb/s is typically achieved. It takes approximately 6-12 minutes to download `SRR1448774.fastq.gz` (2.7GB).
 
 ## To transfer files with SSH protocol (scp, sftp)
 

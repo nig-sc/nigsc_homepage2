@@ -47,9 +47,38 @@ $ apptainer exec ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp --help
 ```
 
 
-## 2. Downloading Data from EBI {#aspera_download_from_ebi}
+## 2. Downloading Data from NCBI {#aspera_download_from_ncbi}
 
-### 2-1. Check the file path on the EBI server {#check-file-path-of-ebi}
+### 2-1. Check the file path on the NCBI server {#check-file-path-of-ncbi}
+ 
+You can view the list of downloadable files from NCBI at the following URL:
+ 
+https://ftp.ncbi.nlm.nih.gov/
+ 
+Below is an example of downloading `/blast/db/core_nt.00.tar.gz` (5.5 GB).
+If you want to test with a smaller file, you can try downloading `/blast/db/core_nt.00.tar.gz.md5` (52 bytes).
+ 
+### 2-2. Download files from the NCBI server {#download-file-from-ncbi}
+ 
+You can run the `ascp` command as follows to download the file:
+ 
+```
+$ cd /path/to/workdir/apptainer_ascp3
+$ apptainer exec ./ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp -T -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh anonftp@ftp.ncbi.nlm.nih.gov:/blast/db/core_nt.00.tar.gz /path/to/download_dir/
+```
+
+- `-i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh` specifies the private key required for downloading.
+- `-T` disables encryption to maximize throughput. This option is required when downloading from NCBI.
+- `anonftp@ftp.ncbi.nlm.nih.gov:/blast/db/core_nt.00.tar.gz` specifies the file to be downloaded. Modify `/blast/db/core_nt.00.tar.gz` as needed.
+- `/path/to/download_dir/` specifies the destination path for the downloaded file.
+ 
+On the NIG supercomputer, download speeds from NCBI using Aspera are typically around 100–300 Mb/s.
+Downloading the 5.5 GB file `core_nt.00.tar.gz` takes approximately 2.5 to 7.5 minutes.
+ 
+ 
+## 3. Downloading Data from EBI {#aspera_download_from_ebi}
+
+### 3-1. Check the file path on the EBI server {#check-file-path-of-ebi}
 
 You can view the list of downloadable files from EBI at the following URL:
 
@@ -57,7 +86,7 @@ https://ftp.sra.ebi.ac.uk/
 
 Below is an example of downloading `/vol1/fastq/SRR144/004/SRR1448774/SRR1448774.fastq.gz` (2.7 GB).
 
-### 2-2. Download files from the EBI server {#downliad-file-from-ebi}
+### 3-2. Download files from the EBI server {#downliad-file-from-ebi}
 
 You can run the `ascp` command as follows to download the file:
 
@@ -74,7 +103,7 @@ On the NIG supercomputer, download speeds from EBI using Aspera are typically ar
 Downloading the 2.7 GB file `SRR1448774.fastq.gz` takes approximately 6 to 12 minutes.
 
 
-## 3. Options for the `ascp` Command {#ascp-command-options}
+## 4. Options for the `ascp` Command {#ascp-command-options}
 
 You can find the available options for the `ascp` command at the following URL:
 
