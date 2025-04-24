@@ -71,7 +71,7 @@ title: "課金サービスの利用方法"
 (Thin, Mediumノード)
 <br />
 
-[使い方（個人ゲノム解析区画）](/guides/using_personal_genome_division/pg_usage/) 
+[使い方（個人ゲノム解析区画）](/guides/using_personal_genome_division/) 
 </td>
 </tr>
 
