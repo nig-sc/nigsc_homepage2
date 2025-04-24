@@ -153,3 +153,18 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   border-radius: 4px;
 }
 
+.tabs__list {
+  display: flex;
+  justify-content: center; /* 👈 横並びタブを中央寄せ */
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tabs__item {
+  width: 120px;
+  text-align: center;       /* 👈 ラベル（Windowsなど）を中央揃え */
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* 👈 ← これでラベルがど真ん中に配置されます */
+  padding: 0.3em 0.5em;
+}
