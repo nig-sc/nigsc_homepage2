@@ -66,6 +66,87 @@ SSL-VPN クライアントのセットアップをします。
 
 SSL-VPN 接続を行います。
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="windows" label="Windows" attributes={{className: 'tab-blue'}}>
+<div className="tab-blue-content">
+
+
+Windowsの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
+
+
+1. 「ユーザ名」と「パスワード」を入力します。
+    - 「ユーザ名」：アカウント登録証の「利用区分：個人ゲノム解析区画」に記載されている個人ゲノムのアカウント名を入力してください。
+    - 「パスワード」：SECURE DELIVERの往復便で送信されたSSL-VPNのパスワード「VPNパスワード」を入力してください。
+
+![figure](VPNwin_13.png) 
+
+2. SSL-VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送信されます。
+3. 「トークン」へワンタイムパスワード(下図の例の場合、269274)を入力し、「OK」をクリックします。
+
+![figure](VPNwin_16.png)
+
+</div>
+</TabItem>
+<TabItem value="mac" label="MacOS" attributes={{className: 'tab-orange'}}>
+<div className="tab-orange-content">
+
+Macの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
+
+1. 「ユーザ名」と「パスワード」を入力します。
+    - 「ユーザ名」：アカウント登録証の「利用区分：個人ゲノム解析区画」に記載されている個人ゲノムのアカウント名を入力してください。
+    - 「パスワード」：SECURE DELIVERの往復便で送信されたSSL-VPNのパスワード「VPNパスワード」を入力してください。
+
+![figure](VPNwin_13.png) 
+
+2. SSL-VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送信されます。
+3. 「答え」にワンタイムパスワード(下図の例の場合、269274)を入力し、「OK」をクリックします。
+
+![figure](VPN_Mac_install_19.png)
+
+</div>
+</TabItem>
+<TabItem value="linux" label="Linux" attributes={{className: 'tab-green'}}>
+<div className="tab-green-content">
+
+Linuxの場合は、openfortivpn CUIを使ってSSL-VPNに接続します。
+
+1. 設定ファイルを引数に指定して、以下のコマンドを実行します。
+
+```
+sudo openfortivpn -c config
+```
+2. SSL-VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送信されます。
+3. ワンタイムパスワード(下記の実行例の場合、269347)を入力し、Enterキーを押します。
+
+以下に、実行例を示します。
+
+```
+$ sudo openfortivpn -c config
+INFO: Connected to gateway.
+Two-factor authentication token:
+INFO: Authenticated.
+INFO: Remote gateway has allocated a VPN.
+Using interface ppp0
+Connect: ppp0 <--> /dev/pts/1
+INFO: Got addresses: [10.212.134.11], ns [133.39.221.65, 133.39.222.41]
+INFO: negotiation complete
+INFO: negotiation complete
+local IP address 10.212.134.11
+remote IP address 192.0.2.1
+INFO: Interface ppp0 is UP.
+INFO: Setting new routes...
+INFO: Adding VPN nameservers...
+INFO: Tunnel is up and running.
+```
+
+</div>
+</TabItem> 
+</Tabs> 
+
 接続方法の詳細は、以下のリンクをご参照ください。
 - [Windows の場合 (FortiClient GUI)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_win)
 - [Mac の場合 (FortiClient GUI)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_mac)

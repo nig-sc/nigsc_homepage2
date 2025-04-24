@@ -6,7 +6,9 @@ title: "How to Login（The Personal Genome Analysis division）"
 
 ## Introduction
 
-SSL-VPN connection is used for login and file transfer to the personal genome analysis division of the NIG supercomputer. For SSL-VPN connection, dedicated software called SSL-VPN Client software must be installed on the user's client machine. Two-factor authentication is used for SSL-VPN connection. For the purpose of improving security, the client machine is set to block access to the Internet when it is connected using SSL-VPN. At this time, communication within the local network to which the client machine belongs is not blocked. Therefore, for example, if the client machine is connected to a file server in the local network, it is possible to send data from that file server to the personal genome analysis division without any problem. On the other hand, if you are working by connecting to the client machine with ssh from outside the local network, the ssh connection will be cut off.
+SSL-VPN connection is used for login and file transfer to the personal genome analysis division of the NIG supercomputer. For SSL-VPN connection, dedicated software called SSL-VPN Client software must be installed on the user's client machine. 
+
+Two-factor authentication is used for SSL-VPN connection. For the purpose of improving security, the client machine is set to block access to the Internet when it is connected using SSL-VPN. At this time, communication within the local network to which the client machine belongs is not blocked. Therefore, for example, if the client machine is connected to a file server in the local network, it is possible to send data from that file server to the personal genome analysis division without any problem. On the other hand, if you are working by connecting to the client machine with ssh from outside the local network, the ssh connection will be cut off.
 
 But it is possible to use only HTTPS on the Internet from the personal genome analysis division due to the settings on the firewall of the NIG supercomputer.
 
@@ -63,6 +65,86 @@ To set up, see the link below.
 ### STEP 3. Connecting to the VPN  {#connect-sslvpn}
 
 You should connect to the SSL-VPN before logging in to the prsonal genome analysis division.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="windows" label="Windows" attributes={{className: 'tab-blue'}}>
+<div className="tab-blue-content">
+
+
+For Windows, connect using the FortiClient GUI.
+
+1. Enter 'User name' and 'Password'.
+ - 'User name': enter the account name for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
+ - 'Password': enter the SSL-VPN password 'VPN password' sent by SECURE DELIVER return mail.
+
+![figure](VPNwin_13.png) 
+
+2. A one-time password will be sent to the email address linked to the SSL-VPN account.
+3. Enter the one-time password (In the example below, it is 269274.) in the "Token" field and click "OK".
+
+![figure](VPNwin_16.png)
+
+</div>
+</TabItem>
+<TabItem value="mac" label="MacOS" attributes={{className: 'tab-orange'}}>
+<div className="tab-orange-content">
+
+For MacOS, connect using the FortiClient GUI.
+
+1. Enter 'User name' and 'Password'.
+ - 'User name': enter the account name for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
+ - 'Password': enter the SSL-VPN password 'VPN password' sent by SECURE DELIVER return mail.
+
+![figure](VPNwin_13.png) 
+
+2. A one-time password will be sent to the email address linked to the SSL-VPN account.
+3. Enter the one-time password (In the example below, it is 269274.) in "Answer" and click "OK".
+
+![figure](VPN_Mac_install_19.png)
+
+</div>
+</TabItem>
+<TabItem value="linux" label="Linux" attributes={{className: 'tab-green'}}>
+<div className="tab-green-content">
+
+For Linux, connect using the openfortivpn CUI.
+
+1. Specify the configuration file as an argument and execute the command as follows.
+
+```
+sudo openfortivpn -c config
+```
+
+2. A one-time password will be sent to the email address linked to the SSL-VPN account.
+3. Enter the one-time password (In the example below, it is ikani269274.) interactively as shown below and press the Enter key.
+
+An example of the command execution is shown below.
+
+```
+$ sudo openfortivpn -c config
+INFO: Connected to gateway.
+Two-factor authentication token:
+INFO: Authenticated.
+INFO: Remote gateway has allocated a VPN.
+Using interface ppp0
+Connect: ppp0 <--> /dev/pts/1
+INFO: Got addresses: [10.212.134.11], ns [133.39.221.65, 133.39.222.41]
+INFO: negotiation complete
+INFO: negotiation complete
+local IP address 10.212.134.11
+remote IP address 192.0.2.1
+INFO: Interface ppp0 is UP.
+INFO: Setting new routes...
+INFO: Adding VPN nameservers...
+INFO: Tunnel is up and running.
+```
+
+</div>
+</TabItem> 
+</Tabs> 
 
 For more information on how to connect, see the following link.
 - [How to connect to the VPN (Windows)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_win)

@@ -32,10 +32,39 @@ $ apptainer exec ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp --help
 ```
 
 
+## 2. NCBIからのデータのダウンロード {#aspera_download_from_ncbi}
 
-## 2. EBIからのデータのダウンロード {#aspera_download_from_ebi}
+### 2-1. NCBIサーバのファイルパス確認 {#check-file-path-of-ncbi}
+ 
+NCBIのダウンロード対象のファイル一覧は、次のURLから閲覧することができます。
+ 
+https://ftp.ncbi.nlm.nih.gov/
+ 
+以下では、`/blast/db/core_nt.00.tar.gz` (5.5GB) をダウンロードする例を示します。
+小さいサイズのデータで一度試したい場合は、`/blast/db/core_nt.00.tar.gz.md5`(52b)をダウンロードしても良いです。
+ 
 
-### 2-1. EBIサーバのファイルパス確認 {#check-file-path-of-ebi}
+### 2-2. NCBIサーバからのファイルダウンロード {#download-file-from-ncbi}
+ 
+以下のようにすることで、ascpコマンドを実行しファイルをダウンロードすることができます。
+ 
+```
+$ cd /path/to/workdir/apptainer_ascp3
+$ apptainer exec ./ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp -T -i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh anonftp@ftp.ncbi.nlm.nih.gov:/blast/db/core_nt.00.tar.gz /path/to/download_dir/
+```
+ 
+- `-i ~/.aspera/connect/etc/asperaweb_id_dsa.openssh` でダウンロードに必要な秘密鍵を指定しています。
+- `-T` は最大スループットを確保するために暗号化を無効にするオプションです。NCBIからダウンロードする際には必須のオプションです。
+- `anonftp@ftp.ncbi.nlm.nih.gov:/blast/db/core_nt.00.tar.gz` はダウンロードするファイルを指定しています。`/blast/db/core_nt.00.tar.gz` の部分を適宜変更してください。
+- `/path/to/download_dir/` は、ダウンロード先のパスを指定してください。
+ 
+遺伝研スパコン環境では、NCBIからasperaを用いてダウンロードする際には、100–300Mb/s 程度の速度が出ています。5.5GBある `core_nt.00.tar.gz` をダウンロードするのに、2.5–7.5分程度かかります。
+ 
+
+
+## 3. EBIからのデータのダウンロード {#aspera_download_from_ebi}
+
+### 3-1. EBIサーバのファイルパス確認 {#check-file-path-of-ebi}
 
 EBIのダウンロード対象のファイル一覧は、次のURLから閲覧することができます。
 
@@ -43,7 +72,7 @@ https://ftp.sra.ebi.ac.uk/
 
 以下では、`/vol1/fastq/SRR144/004/SRR1448774/SRR1448774.fastq.gz`(2.7GB)をダウンロードする例を示します。
 
-### 2-2. EBIサーバからのファイルダウンロード {#downliad-file-from-ebi}
+### 3-2. EBIサーバからのファイルダウンロード {#downliad-file-from-ebi}
 
 以下のようにすることで、ascpコマンドを実行しファイルをダウンロードすることができます。
 
@@ -59,7 +88,7 @@ $ apptainer exec ./ascp3_ubuntu22.sif ~/.aspera/connect/bin/ascp -P33001 -i ~/.a
 遺伝研スパコン環境では、EBIからasperaを用いてダウンロードする際には、30–60Mb/s 程度の速度が出ています。2.7GBある `SRR1448774.fastq.gz` をダウンロードするのに、6–12分程度かかります。
 
 
-## 3. ascpコマンドのオプション {#ascp-command-options}
+## 4. ascpコマンドのオプション {#ascp-command-options}
 
 ascpコマンドのオプションは次のURLから閲覧することができます。
 
