@@ -32,7 +32,7 @@ Macの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/guides/FAQ/faq_personal_genome/faq_forticlient/#no-onetime-pw-received)をご参照ください。
 
 
-4. [答え]にワンタイムパスワード(上記の例の場合、269274)を入力し、[OK]をクリックします。
+4. 「答え」にワンタイムパスワード(上記の例の場合、269274)を入力し、「OK」をクリックします。
 
 ![figure](VPN_Mac_install_19.png)
 

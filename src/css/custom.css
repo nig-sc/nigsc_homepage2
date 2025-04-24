@@ -96,3 +96,75 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   padding: 10px;
   border-radius: 8px;
 }
+
+
+/*以下は、個人ゲノム解析区画のVPN接続方法のタブの色を指定*/
+/* Windows（ロイヤルブルー） */
+.tab-blue {
+  background-color: #cce4ff; /* 背景は明るめ */
+  border: 4px solid #003366; /* ロイヤルブルー (枠幅を4pxに変更) */
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.tab-blue.tabs__item--active {
+  background-color: #003366; /* ロイヤルブルー */
+  color: white;
+}
+.tab-blue-content {
+  background-color: #e8f1ff;
+  border-left: 5px solid #003366;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+/* macOS（コーラル） */
+.tab-orange {
+  background-color: #ffe0b2; /* 背景は明るいオレンジ */
+  border: 4px solid #ff7043; /* コーラル (枠幅を4pxに変更) */
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.tab-orange.tabs__item--active {
+  background-color: #ff7043; /* コーラル */
+  color: white;
+}
+.tab-orange-content {
+  background-color: #fff3e0;
+  border-left: 5px solid #ff7043;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+/* Linux（ディープグリーン） */
+.tab-green {
+  background-color: #c8e6c9; /* 背景は少し明るめ */
+  border: 4px solid #2e7d32; /* ディープグリーン (枠幅を4pxに変更) */
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.tab-green.tabs__item--active {
+  background-color: #2e7d32; /* ディープグリーン */
+  color: white;
+}
+.tab-green-content {
+  background-color: #e8f5e9;
+  border-left: 5px solid #2e7d32;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.tabs__list {
+  display: flex;
+  justify-content: center; /* 👈 横並びタブを中央寄せ */
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tabs__item {
+  width: 120px;
+  text-align: center;       /* 👈 ラベル（Windowsなど）を中央揃え */
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* 👈 ← これでラベルがど真ん中に配置されます */
+  padding: 0.3em 0.5em;
+}
