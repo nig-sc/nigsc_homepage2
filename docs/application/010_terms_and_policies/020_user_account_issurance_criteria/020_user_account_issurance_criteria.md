@@ -45,6 +45,9 @@ title: ユーザーアカウント発行基準
 
 ### 誓約書の雛形 {#pledge-template}
 
+電子サイン(Adobe Acrobat Sign)をお願いしております。
+申請受付後に別途連絡いたします。
+
 #### (1) 誓約書①「申請者と責任者が同一の場合」 {#same-person-apply-responsible}
 
 ```

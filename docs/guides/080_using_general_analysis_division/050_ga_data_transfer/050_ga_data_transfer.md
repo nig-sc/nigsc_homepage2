@@ -28,7 +28,12 @@ scp, sftpなどに加えて、
 
 ## Archaea Toolsの利用方法 {#usage-archaea}
 
-準備中
+遺伝研スパコンに対してファイルのアップロード、ダウンロードを行うには、一般的に広く用いられているファイル転送ソフトウェアであるscpやsftpをつかうことができますが、これらは遠距離間で大量のファイルを転送する際に転送速度が遅くなる性質があります。
+
+株式会社クレアリンクテクノロジーが開発した Archaea toolsは遠距離通信の際にも100Gbpsクラスの高速通信が可能です。
+
+マニュアルや利用方法の詳細については、[Software > CopyTool > Archaea toolsの使い方](/guides/software/CopyTool/Archaea_tools/) を参照してください。
+
 
 ## Aspera の利用方法 {#usage-aspera}
 
