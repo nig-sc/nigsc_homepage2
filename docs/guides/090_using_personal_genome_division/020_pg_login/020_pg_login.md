@@ -38,7 +38,11 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 </td>
 <td width="400" valign="top">
 
-「Product Downloads」の「FortiClient VPN only」をダウンロードしてください。
+ダウンロードするFortiClient「FortiClient VPN-only」は、無料で使うことができます。
+
+「FortiClient VPN-only」は、「Product Downloads and Free Trials」のページの一番下にあります。
+
+上記の公式サイトURLをクリックして、「Product Downloads and Free Trials」のページの一番下にある「FortiClient VPN-only」をダウンロードしてください。
 
 </td>
 </tr>
@@ -71,7 +75,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="windows" label="Windows" attributes={{className: 'tab-blue'}}>
+<TabItem value="windows" label="Windowsの場合" attributes={{className: 'tab-blue'}}>
 <div className="tab-blue-content">
 
 
@@ -80,7 +84,7 @@ Windowsの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 
 1. 「ユーザ名」と「パスワード」を入力します。
     - 「ユーザ名」：アカウント登録証の「利用区分：個人ゲノム解析区画」に記載されている個人ゲノムのアカウント名を入力してください。
-    - 「パスワード」：SECURE DELIVERの往復便で送信されたSSL-VPNのパスワード「VPNパスワード」を入力してください。
+    - 「パスワード」：アカウント登録証の「利用区分：個人ゲノム解析区画」に記載されている個人ゲノムのパスワードを入力してください。
 
 ![figure](VPNwin_13.png) 
 
@@ -91,14 +95,14 @@ Windowsの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 
 </div>
 </TabItem>
-<TabItem value="mac" label="MacOS" attributes={{className: 'tab-orange'}}>
+<TabItem value="mac" label="MacOSの場合" attributes={{className: 'tab-orange'}}>
 <div className="tab-orange-content">
 
 Macの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 
 1. 「ユーザ名」と「パスワード」を入力します。
     - 「ユーザ名」：アカウント登録証の「利用区分：個人ゲノム解析区画」に記載されている個人ゲノムのアカウント名を入力してください。
-    - 「パスワード」：SECURE DELIVERの往復便で送信されたSSL-VPNのパスワード「VPNパスワード」を入力してください。
+    - 「パスワード」：アカウント登録証の「利用区分：個人ゲノム解析区画」に記載されている個人ゲノムのパスワードを入力してください。
 
 ![figure](VPNwin_13.png) 
 
@@ -109,16 +113,20 @@ Macの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 
 </div>
 </TabItem>
-<TabItem value="linux" label="Linux" attributes={{className: 'tab-green'}}>
+<TabItem value="linux" label="Linuxの場合" attributes={{className: 'tab-green'}}>
 <div className="tab-green-content">
 
 Linuxの場合は、openfortivpn CUIを使ってSSL-VPNに接続します。
 
 1. 設定ファイルを引数に指定して、以下のコマンドを実行します。
 
+
 ```
 sudo openfortivpn -c config
 ```
+
+configの書き方は、STEP2 の「SSV-VPN クライアントの設定方法(Linuxの場合)」をご参照下さい。
+
 2. SSL-VPNアカウントに紐付くメールアドレスへワンタイムパスワードが送信されます。
 3. ワンタイムパスワード(下記の実行例の場合、269347)を入力し、Enterキーを押します。
 
@@ -147,10 +155,6 @@ INFO: Tunnel is up and running.
 </TabItem> 
 </Tabs> 
 
-接続方法の詳細は、以下のリンクをご参照ください。
-- [Windows の場合 (FortiClient GUI)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_win)
-- [Mac の場合 (FortiClient GUI)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_mac)
-- [Linux の場合 (openfortivpn CUI)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_linux)
 
 うまくつながらない場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear)をご参照ください。
 
