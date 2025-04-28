@@ -14,7 +14,7 @@ $ sudo openfortivpn -c /path/to/config
 
 2. コマンドを実行すると、SSL-VPNアカウントに紐付くメールアドレスへ以下のようなワンタイムパスワードが送信されます。
 
-![figure](../VPNwin_15.png)
+![figure](VPNwin_15.png)
 
 送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/guides/FAQ/faq_personal_genome/faq_forticlient/#no-onetime-pw-received)をご参照ください。
 
