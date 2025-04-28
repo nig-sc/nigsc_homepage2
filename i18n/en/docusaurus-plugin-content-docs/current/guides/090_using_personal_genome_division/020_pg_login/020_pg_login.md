@@ -38,7 +38,11 @@ Download and install FortiClient on the official website of "[&#x1f517;FortiClie
 </td>
 <td width="400" valign="top">
 
-Download 'FortiClient VPN only' from 'Product Downloads'.
+You can use FortiClient 'FortiClient VPN-only' version for free.
+
+'FortiClient VPN-only' is located at the very bottom of the 'Product Downloads and Free Trials' page.
+
+Please download 'FortiClient VPN-only' from the bottom of the 'Product Downloads and Free Trials' page.
 
 </td>
 </tr>
@@ -78,7 +82,7 @@ For Windows, connect using the FortiClient GUI.
 
 1. Enter 'User name' and 'Password'.
  - 'User name': enter the account name for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
- - 'Password': enter the SSL-VPN password 'VPN password' sent by SECURE DELIVER return mail.
+ - 'Password': enter the password for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
 
 ![figure](VPNwin_13.png) 
 
@@ -96,7 +100,7 @@ For MacOS, connect using the FortiClient GUI.
 
 1. Enter 'User name' and 'Password'.
  - 'User name': enter the account name for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
- - 'Password': enter the SSL-VPN password 'VPN password' sent by SECURE DELIVER return mail.
+ - 'Password': enter the password for the personal genome listed in the 'Usage category: personal genome analysis division' on the account registration card.
 
 ![figure](VPNwin_13.png) 
 
@@ -117,6 +121,8 @@ For Linux, connect using the openfortivpn CUI.
 ```
 sudo openfortivpn -c config
 ```
+
+For configuration instructions, refer to STEP 2: "How to Configure the SSV-VPN Client (Linux)".
 
 2. A one-time password will be sent to the email address linked to the SSL-VPN account.
 3. Enter the one-time password (In the example below, it is ikani269274.) interactively as shown below and press the Enter key.
@@ -145,11 +151,6 @@ INFO: Tunnel is up and running.
 </div>
 </TabItem> 
 </Tabs> 
-
-For more information on how to connect, see the following link.
-- [How to connect to the VPN (Windows)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_win)
-- [How to connect to the VPN (MacOS)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_mac)
-- [How to connect to the VPN (Linux)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_connection_linux)
 
 If you have trouble connecting, refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear).
 
