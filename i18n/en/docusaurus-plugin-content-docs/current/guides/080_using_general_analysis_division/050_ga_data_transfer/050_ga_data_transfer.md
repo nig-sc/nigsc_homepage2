@@ -54,7 +54,6 @@ $
 
 For a detailed explanation of the options and usage, refer to [Software > CopyTool > How to Use Aspera client(ascp)](/guides/software/CopyTool/aspera_client/).
 
-On the NIG supercomputer environment, when downloading from EBI using Aspera, a download speed of around 100-200Mb/s is typically achieved. It takes approximately 6-12 minutes to download `SRR1448774.fastq.gz` (2.7GB).
 
 ## To transfer files with SSH protocol (scp, sftp)
 

@@ -59,8 +59,6 @@ $
 オプションの説明や利用方法の詳細については、[Software > CopyTool > Aspera client(ascp)の使い方](/guides/software/CopyTool/aspera_client/) を参照してください。
 
 
-遺伝研スパコン環境では、EBIからasperaを用いてダウンロードする際には、100-200Mb/s 程度の速度が出ています。2.7GBある `SRR1448774.fastq.gz` をダウンロードするのに、6–12分程度かかります。
-
 ##  SSH プロトコルによるファイル転送の方法 (scp, sftp) {#usage-scp-sftp}
 
 遺伝研スパコンの一般解析区画のゲートウェイサーバ ( `gw.ddbj.nig.ac.jp` ) に対して `scp`, `sftp` 等を用いたファイル転送が可能です。
