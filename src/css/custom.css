@@ -25,64 +25,64 @@
 */
 
 :root {
-    --ifm-color-primary: #ff8c00;
-    --ifm-color-primary-dark: #e67e00;
-    --ifm-color-primary-darker: #d97700;
-    --ifm-color-primary-darkest: #b36200;
-    --ifm-color-primary-light: #ff981a;
-    --ifm-color-primary-lighter: #ff9d26;
-    --ifm-color-primary-lightest: #ffaf4d;
-    --ifm-code-font-size: 95%;
+  --ifm-color-primary: #ff8c00;
+  --ifm-color-primary-dark: #e67e00;
+  --ifm-color-primary-darker: #d97700;
+  --ifm-color-primary-darkest: #b36200;
+  --ifm-color-primary-light: #ff981a;
+  --ifm-color-primary-lighter: #ff9d26;
+  --ifm-color-primary-lightest: #ffaf4d;
+  --ifm-code-font-size: 95%;
 }
 
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+background-color: rgba(0, 0, 0, 0.1);
+display: block;
+margin: 0 calc(-1 * var(--ifm-pre-padding));
+padding: 0 var(--ifm-pre-padding);
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+background-color: rgba(0, 0, 0, 0.3);
 }
 
 .tableHeader {
-    background-color: #fafad2;
+  background-color: #fafad2;
 }
 
 .tableBody {
-    background-color: white;
+  background-color: white;
 }
 
 .recentBlogPosts__title_src-theme-RecentBlogPosts-styles-module {
-    margin: 0;
-    font-size: 0.9rem;
-    font-weight: bold;
-    font-weight: normal;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    background-color: #fafad2;
-    border: 1px solid;
-    border-color: lightgray;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  background-color: #fafad2;
+  border: 1px solid;
+  border-color: lightgray;
 }
 
 .recentBlogPosts__list_src-theme-RecentBlogPosts-styles-module {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 
 
 
 .blog-wrapper h2 {
-  font-size: 1.5rem;
+font-size: 1.5rem;
 }
 
 
@@ -90,81 +90,107 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 
 .box-link {
-  background: #2f4f4f;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 8px;
+background: #2f4f4f;
+color: #fff;
+text-decoration: none;
+padding: 10px;
+border-radius: 8px;
 }
 
 
 /*以下は、個人ゲノム解析区画のVPN接続方法のタブの色を指定*/
 /* Windows（ロイヤルブルー） */
 .tab-blue {
-  background-color: #cce4ff; /* 背景は明るめ */
-  border: 4px solid #003366; /* ロイヤルブルー (枠幅を4pxに変更) */
-  border-radius: 5px;
-  padding: 0.5em;
+background-color: #003366; /* ロイヤルブルー */
+border: 4px solid #003366;
+border-radius: 5px;
+padding: 0.5em;
 }
 .tab-blue.tabs__item--active {
-  background-color: #003366; /* ロイヤルブルー */
-  color: white;
+background-color: #003366;
+color: white;
 }
 .tab-blue-content {
-  background-color: #e8f1ff;
-  border-left: 5px solid #003366;
-  padding: 1em;
-  border-radius: 4px;
+background-color: #e8f1ff; /* 薄いロイヤルブルー */
+border-left: 5px solid #003366;
+padding: 1em;
+border-radius: 4px;
 }
 
-/* macOS（コーラル） */
+/* macOS（温かみのあるオレンジ） */
 .tab-orange {
-  background-color: #ffe0b2; /* 背景は明るいオレンジ */
-  border: 4px solid #ff7043; /* コーラル (枠幅を4pxに変更) */
-  border-radius: 5px;
-  padding: 0.5em;
+background-color: #ff8a00; /* 温かみのあるオレンジ */
+border: 4px solid #ff8a00;
+border-radius: 5px;
+padding: 0.5em;
 }
 .tab-orange.tabs__item--active {
-  background-color: #ff7043; /* コーラル */
-  color: white;
+background-color: #ff8a00;
+color: white;
 }
 .tab-orange-content {
-  background-color: #fff3e0;
-  border-left: 5px solid #ff7043;
-  padding: 1em;
-  border-radius: 4px;
+background-color: #ffe0b2; /* 薄いオレンジ */
+border-left: 5px solid #ff8a00;
+padding: 1em;
+border-radius: 4px;
 }
 
-/* Linux（ディープグリーン） */
+/* Linux（深緑） */
 .tab-green {
-  background-color: #c8e6c9; /* 背景は少し明るめ */
-  border: 4px solid #2e7d32; /* ディープグリーン (枠幅を4pxに変更) */
-  border-radius: 5px;
-  padding: 0.5em;
+background-color: #388e3c; /* 深緑 */
+border: 4px solid #388e3c;
+border-radius: 5px;
+padding: 0.5em;
 }
 .tab-green.tabs__item--active {
-  background-color: #2e7d32; /* ディープグリーン */
-  color: white;
+background-color: #388e3c;
+color: white;
 }
 .tab-green-content {
-  background-color: #e8f5e9;
-  border-left: 5px solid #2e7d32;
-  padding: 1em;
-  border-radius: 4px;
+background-color: #e8f5e9; /* 薄い緑 */
+border-left: 5px solid #388e3c;
+padding: 1em;
+border-radius: 4px;
 }
 
+/* タブのリスト */
 .tabs__list {
-  display: flex;
-  justify-content: center; /* 👈 横並びタブを中央寄せ */
-  width: fit-content;
-  margin: 0 auto;
+display: flex;
+justify-content: center;
+width: fit-content;
+margin: 0 auto;
 }
 
+/* 各タブ */
 .tabs__item {
-  width: 120px;
-  text-align: center;       /* 👈 ラベル（Windowsなど）を中央揃え */
-  display: flex;
-  align-items: center;
-  justify-content: center;  /* 👈 ← これでラベルがど真ん中に配置されます */
-  padding: 0.3em 0.5em;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0.6em 1.2em;
+white-space: nowrap;
+width: 120px;
+margin-right: 12px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+/* 最後のタブの右側に余分なスペースが入らないように調整 */
+.tabs__item:last-child {
+margin-right: 0;
+}
+
+/* ホバー時の変化でクリック感を強調 */
+.tabs__item:hover {
+background-color: #ffe57f; /* 明るいオレンジ（ホバー） */
+transform: scale(1.1);
+box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* アクティブタブ（選択されたタブ）のスタイル */
+.tabs__item--active {
+background-color: #003366; /* ロイヤルブルー */
+color: white;
+transform: scale(1.1);
+box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
 }
