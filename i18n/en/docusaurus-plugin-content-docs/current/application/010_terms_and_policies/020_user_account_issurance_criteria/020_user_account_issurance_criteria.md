@@ -43,6 +43,9 @@ We ask the responsible person to submit a written pledge when applying for use o
 
 ### PLEDGE template
 
+We request your electronic signature (Adobe Acrobat Sign). We will contact you separately after the application is received.
+
+
 #### (1) Pledge ① "The applicant and the responsible person is the same" {#same-person-apply-responsible}
 
 ```
