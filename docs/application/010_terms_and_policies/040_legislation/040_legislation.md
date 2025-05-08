@@ -24,13 +24,13 @@ title: "関連法規等"
 
 
 - [個人情報の保護に関する法律（平成15年５月30日法律第57号、平成28年5月27日公布（平成28年法律第五十一号）、令和5年6月7日改正）](https://elaws.e-gov.go.jp/document?lawid=415AC0000000057)
-- [人を対象とする生命科学・医学系研究に関する倫理指針（令和３年６月３０日）](https://www.meti.go.jp/press/2020/03/20210323004/20210323004.html)
+- [人を対象とする生命科学・医学系研究に関する倫理指針（令和３年６月３０日）](https://www.mext.go.jp/a_menu/lifescience/bioethics/seimeikagaku_igaku.html)
 - [良質かつ適切なゲノム医療を国民が安心して受けられるようにするための施策の総合的かつ計画的な推進に関する法律（令和5年法律第57号）(令和5年6月16日施行)](https://elaws.e-gov.go.jp/document?lawid=505AC1000000057)
 
 遺伝研スパコン個人ゲノム解析区画は以下のセキュリティーガイドラインを遵守しております。
 
-- [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
-- [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.biosciencedbc.jp/guidelines)
+- [NBDCヒトデータ共有ガイドライン](https://humandbs.dbcls.jp/guidelines)
+- [NBDCヒトデータ取扱セキュリティガイドライン](https://humandbs.dbcls.jp/guidelines)
 - [NBDCヒトデータ取扱いセキュリティガイドラインおよびNBDCヒトデータグループ共有データ取扱いセキュリティガイドライン チェックリスト（「機関外サーバ」運用責任者向け）](security_checklist_for_dbcenters_20250123_JP.pdf)
 - [個人情報取扱事業者等に係るガイドライン](https://www.ppc.go.jp/personalinfo/legal/#anc_Guide)
 - [医療デジタルデータのAI研究開発等への利活用に係るガイドライン](https://drive.google.com/file/d/1_qwYjjiG2yUqahnvBIGS-54jrd1De2Qy/view)
@@ -40,7 +40,7 @@ title: "関連法規等"
 
 
 - [医療情報システムの安全管理に関するガイドライン　第6.0版（令和5年5月）](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
-- [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン(令和2年8月（令和5年7月改定）)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
+- [医療情報を取り扱う情報システム・サービスの提供事業者における安全管理ガイドライン 第2.0版(令和2年8月（令和7年3月改定）)](https://www.meti.go.jp/policy/mono_info_service/healthcare/teikyoujigyousyagl.html)
 - [政府機関等の情報セキュリティ対策のための統一基準群](https://www.nisc.go.jp/policy/group/general/kijun.html)
 
 

@@ -24,7 +24,13 @@ Since Aspera Server is not installed in the general analysis division and the pe
 
 ## How to Use Archaea Tools {#usage-archaea}
 
-Preparing content...
+To upload and download files to and from the NIG supercomputer, you can generally use widely-used file transfer software such as `scp` or `sftp`. However, these tools tend to experience slower transfer speeds when transferring large files over long distances.
+
+Archaea tools, developed by Clalink Technology, Inc., enable high-speed communication at 100 Gbps even over long-distance connections.
+
+For a detailed explanation of usage, refer to [Software > CopyTool > How to use Archaea tools](/guides/software/CopyTool/Archaea_tools/).
+
+
 
 ## How to Use Aspera {#usage-aspera}
 
