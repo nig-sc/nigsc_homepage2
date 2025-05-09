@@ -76,7 +76,7 @@ ssh -i ~/.ssh/id_ed25519_nigsc-gw youraccount@gw.ddbj.nig.ac.jp
 
 If you are unable to connect, refer to FAQ:
 - [The General Analysis Division FAQ](/guides/FAQ/faq_general_analysis_division/faq_login_general/)
-- [The Personal Genome Analysis Area FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/)
+- [The Personal Genome Analysis Area FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient)
 
 
 ## 4. Configuring with the `~/.ssh/` config File {#conf-ssh-config}

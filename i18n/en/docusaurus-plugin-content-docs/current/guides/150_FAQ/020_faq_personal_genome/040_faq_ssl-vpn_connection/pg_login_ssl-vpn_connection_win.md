@@ -19,14 +19,14 @@ For Windows, connect using the FortiClient GUI.
 ![figure](VPNwin_14.png)
 
 :::info
-If the dialog box does not appear, refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear).
+If the dialog box does not appear, refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#dialogbox_disappear).
 :::
 
 A one-time password will be sent to the email address linked to the SSL-VPN account as follows.
 
 ![figure](VPNwin_15.png)
 
-If the message is not sent, see [FAQ:Login > FAQ(Login)](/guides/FAQ/faq_personal_genome/faq_forticlient/#no-onetime-pw-received).
+If the message is not sent, see [FAQ:Login > FAQ(Login)](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#no-onetime-pw-received).
 
 - Windows
 

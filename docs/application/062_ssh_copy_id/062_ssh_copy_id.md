@@ -84,7 +84,7 @@ ssh -i ~/.ssh/id_ed25519_nigsc-gw youraccount@gw.ddbj.nig.ac.jp
 
 うまく接続できない場合は、よくある質問(FAQ)もご参照ください。
 - [一般解析区画](/guides/FAQ/faq_general_analysis_division/faq_login_general/)
-- [個人ゲノム解析区画](/guides/FAQ/faq_personal_genome/faq_forticlient/)
+- [個人ゲノム解析区画](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient)
 
 
 

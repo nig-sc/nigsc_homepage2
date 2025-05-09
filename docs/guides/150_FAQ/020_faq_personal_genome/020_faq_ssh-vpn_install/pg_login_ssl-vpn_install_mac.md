@@ -11,7 +11,7 @@ title: "SSL-VPNクライアントソフトウェアのインストール(Macの�
 
 ![](forticlientonly.png)
 
-より詳しくダウンロード方法を知りたい場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#how-to-DL-VPN)をご参照ください。
+より詳しくダウンロード方法を知りたい場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#how-to-DL-VPN)をご参照ください。
 
 
 ## SSL-VPN クライアントソフトウェア「FortiClient」のインストール方法 {#install-forticlient}
