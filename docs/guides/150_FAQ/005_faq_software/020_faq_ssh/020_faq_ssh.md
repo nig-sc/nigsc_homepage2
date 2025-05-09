@@ -33,7 +33,7 @@ title: "FAQ: SSH"
       <td>/home/USERNAME/</td>
       <td>ホームディレクトリ</td>
       <td>750, 711, 700など</td>
-      <td>ホームディレクトリに他人の書き込み権限がないことが必須。クライアント側とサーバ側の両方に存在する。</td>
+      <td>ホームディレクトリに他人の書き込み権限がないことが必須。クライアント側とサーバ側の両方に存在する。<br />「USERNAME」には、ユーザーのアカウント名が入る。</td>
     </tr>
     <tr>
       <td>~/.ssh/</td>
@@ -61,6 +61,8 @@ title: "FAQ: SSH"
     </tr>
   </tbody>
 </table>
+
+
 
 #### パーミッションの確認方法(1) `stat`コマンド
 
@@ -107,7 +109,6 @@ $ ls -l ~/.ssh
 -rw------- 1 you you 10368  5月  2 08:05 known_hosts
 ```
 
-- 「USERNAME」には、ユーザーのアカウント名が入ります。
 - SSHログは `/var/log/auth.log` または `journalctl -u ssh` で確認できます。
 
 
