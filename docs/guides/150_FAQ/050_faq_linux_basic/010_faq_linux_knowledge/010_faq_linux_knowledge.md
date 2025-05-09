@@ -3,22 +3,24 @@ id: 010_faq_linux_knowledge
 title: "FAQ：Linux Knowledge"
 ---
 
-## &#x1F180; The following materials describe the necessary knowledge. Please refer to the links below.
+## &#x1F180; 遺伝研スパコンを利用するにあたり、Linuxに関する前提知識は、どの程度必要でしょうか。
 
-&#x1F150; 1. Materials related to the content described in the introductory documents on operating methods provided by the Linux Documentation Project (LDP):
+&#x1F150; 以下のような資料に書かれている内容は、下記リンクをご参照ください。
 
-- [“Bash Guide for Beginners” by Machtelt Garrels](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html?utm_source=chatgpt.com)  
-    - This guide thoroughly explains the basics of the Bash shell and script creation, making it a valuable resource for beginners.
-- [“Introduction to Linux - A Hands on Guide” by Machtelt Garrels](https://tldp.org/guides.html?utm_source=chatgpt.com)  
-    - A hands-on guide designed to help you learn the basic operations of Linux in a practical way.
+1．Linux documentation project (LDP)に操作方法の入門的なドキュメントに書かれている内容に関する資料
 
-Both of these resources are freely available for viewing and downloading from the official LDP site.
+- [Machtelt Garrels氏による「Bash Guide for Beginners」](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html?utm_source=chatgpt.com)
+    - Bashシェルの基本からスクリプト作成までを丁寧に解説しており、初心者にとって有用な資料です。 
+- [Machtelt Garrels氏による「Introduction to Linux - A Hands on Guide」](https://tldp.org/guides.html?utm_source=chatgpt.com)
+    - Linuxの基本操作を実践的に学ぶためのガイドとして提供されています。 
 
-2. Learn Linux operations for beginners:
+上記2つの資料は、LDPの公式サイトから無料で閲覧・ダウンロードが可能です。
 
-These materials are available for free.
+2．Linuxの操作方法を初心者向けに学べる
 
-- [Linux Standard Textbook](https://linuc.org/textbooks/linux/)  
-    - A free learning resource provided by LPI-Japan, covering everything from basic Linux operations to system administration.
-- [Introduction to Linux (LFS101-JP)](https://training.linuxfoundation.org/ja/training/introduction-to-linux-lfs101-jp/)  
-    - A free online course provided by the Linux Foundation where you can learn the basic operations of major Linux distributions and command-line usage.
+無料で提供されています。
+- [Linux標準教科書](https://linuc.org/textbooks/linux/)
+    - LPI-Japanが提供する無料の学習教材で、Linuxの基本操作からシステム管理までを網羅しています。
+- [Linux入門（LFS101-JP）](https://training.linuxfoundation.org/ja/training/introduction-to-linux-lfs101-jp/)
+    - Linux Foundationが提供する無料のオンラインコースで、主要なLinuxディストリビューションの基本操作やコマンドラインの使い方を学べます。
+

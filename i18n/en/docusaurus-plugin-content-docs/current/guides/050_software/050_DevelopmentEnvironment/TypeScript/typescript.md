@@ -64,7 +64,7 @@ $ npm config get prefix
 
 Adjust the prefix correctly with the following command. 
 
-` npm config set prefix /home/youraccount/.nvm/versions/node/v12.18.3 `
+` npm config set prefix /home/youraccount/.nvm/versions/node/v18.20.3 `
       
 Then install TypeScript.
 

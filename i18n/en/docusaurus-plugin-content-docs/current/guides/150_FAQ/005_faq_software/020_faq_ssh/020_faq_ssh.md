@@ -32,7 +32,7 @@ Please refer to the table below to ensure that file permissions are correctly co
       <td>/home/USERNAME/</td>
       <td>Home directory</td>
       <td>750, 711, or 700</td>
-      <td>The home directory must not be writable by others. This applies on both the client and server sides.</td>
+      <td>The home directory must not be writable by others. This applies on both the client and server sides.<br />"USERNAME" means the user's account name.</td>
     </tr>
     <tr>
       <td>~/.ssh/</td>
@@ -60,6 +60,7 @@ Please refer to the table below to ensure that file permissions are correctly co
     </tr>
   </tbody>
 </table>
+
 
 #### How to Check Permissions (1): Using the `stat` Command
 
@@ -116,7 +117,6 @@ $ ls -l ~/.ssh
 -rw------- 1 you you 10368  5月  2 08:05 known_hosts
 ```
 
-- "USERNAME" means the user's account name.
 - SSH logs can be checked in `/var/log/auth.log` or by using `journalctl -u ssh`.
 
 
