@@ -60,10 +60,8 @@ To ensure the safety and reliability of the NIG supercomputer, we will comply wi
 - [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
 - [NBDC Human Data Handling Security Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines)
 - [Research Organization of Information and Systems Information Security Policy](ROIS_security_policy.pdf) 
-- [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer  (Amended on April 5, 2022)](nigsc_use_policy_2204.pdf)
-- [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-3 (Amended on August 1, 2023)](/guides/old_docs/terms_of_use_2019/)
 - [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer  (Amended on March 10, 2025)](nigsc_use_policy_2025.pdf)
-- [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-2 (Amended on March 10, 2025)](tables_of_nigsc_use_policy_2025.pdf)
+- [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-2 (Amended on March 10, 2025)](/application/terms_and_policies/terms_of_use_2025/)
 - [Research Organization of Information and Systems, National Institute of Genetics Information Security Guidelines (Revised February 13, 2018)](nig_security_guide_20180213.pdf)
 - [Research Organization of Information and Systems Personal Information Protection Regulations (Revised April 14, 2022)](ROIS_personal_information_protection_regulation.pdf)
 

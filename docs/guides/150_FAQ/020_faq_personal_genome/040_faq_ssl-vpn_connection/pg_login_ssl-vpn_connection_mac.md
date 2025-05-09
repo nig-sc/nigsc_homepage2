@@ -23,14 +23,14 @@ Macの場合は、FortiClient GUIを使ってSSL-VPNに接続します。
 ![figure](VPNwin_14.png)
 
 :::info
-ダイヤログボックスが表示されない場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear)をご参照ください。
+ダイヤログボックスが表示されない場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#dialogbox_disappear)をご参照ください。
 :::
 
 クリックすると、SSL-VPNアカウントに紐付くメールアドレスへ以下のようなワンタイムパスワードが送信されます。
 
 ![figure](VPNwin_15.png)
 
-送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/guides/FAQ/faq_personal_genome/faq_forticlient/#no-onetime-pw-received)をご参照ください。
+送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#no-onetime-pw-received)をご参照ください。
 
 
 4. 「答え」にワンタイムパスワード(上記の例の場合、269274)を入力し、「OK」をクリックします。

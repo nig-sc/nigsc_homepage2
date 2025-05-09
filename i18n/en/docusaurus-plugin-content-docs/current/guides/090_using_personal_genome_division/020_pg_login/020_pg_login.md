@@ -50,9 +50,9 @@ Please download 'FortiClient VPN-only' from the bottom of the 'Product Downloads
 
 For more information on how to download and install it, see the links below.
 
-- [Installing FortiClient VPN Client software (Windows)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_install_win)
-- [Installing FortiClient VPN Client software (MacOS)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_install_mac)
-- [Installing FortiClient VPN Client software (Linux)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_install_linux)
+- [Installing FortiClient VPN Client software (Windows)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_win)
+- [Installing FortiClient VPN Client software (MacOS)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_mac)
+- [Installing FortiClient VPN Client software (Linux)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_linux)
 
 
 ### STEP 2. Configure the SSL-VPN client {#conf-sslvpn}
@@ -61,9 +61,9 @@ For more information on how to download and install it, see the links below.
 Set up the SSL-VPN client.
 
 To set up, see the link below.
-- [Configure the SSL-VPN client (Windows)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_configure_file_win)
-- [Configure the SSL-VPN client (Mac)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_configure_file_mac)
-- [Configure the SSL-VPN client (Linux)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_configure_file_linux)
+- [Configure the SSL-VPN client (Windows)](/guides/FAQ/faq_personal_genome/ssl-vpn_config_file/pg_login_ssl-vpn_configure_file_win)
+- [Configure the SSL-VPN client (Mac)](/guides/FAQ/faq_personal_genome/ssl-vpn_config_file/pg_login_ssl-vpn_configure_file_mac)
+- [Configure the SSL-VPN client (Linux)](/guides/FAQ/faq_personal_genome/ssl-vpn_config_file/pg_login_ssl-vpn_configure_file_linux)
 
 
 ### STEP 3. Connecting to the VPN  {#connect-sslvpn}
@@ -152,7 +152,7 @@ INFO: Tunnel is up and running.
 </TabItem> 
 </Tabs> 
 
-If you have trouble connecting, refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear).
+If you have trouble connecting, refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#dialogbox_disappear).
 
 ### STEP 4. SSH log in to the gateway {#ssh-login-gateway}
 
@@ -170,7 +170,7 @@ or
 ssh [username]@gwa2.ddbj.nig.ac.jp 
 ```
 
-For questions on how to login, Refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear).
+For questions on how to login, Refer to [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient).
 
 
 ## Logging in to the analysis server using SSH {#ssh-login-analysis-server}

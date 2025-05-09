@@ -51,9 +51,9 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 
 ダウンロードとインストール方法の詳細は、以下のリンクからをご参照ください。
 
-- [SSL-VPN クライアントソフトウェアのインストール (Windows の場合)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_install_win)
-- [SSL-VPN クライアントソフトウェアのインストール (Mac の場合)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_install_mac)
-- [SSL-VPN クライアントソフトウェアのインストール (Linux の場合)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_install_linux)
+- [SSL-VPN クライアントソフトウェアのインストール (Windows の場合)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_win)
+- [SSL-VPN クライアントソフトウェアのインストール (Mac の場合)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_mac)
+- [SSL-VPN クライアントソフトウェアのインストール (Linux の場合)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_linux)
 
 
 ### STEP 2. SSL-VPN クライアントの設定 {#conf-sslvpn}
@@ -61,9 +61,9 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 SSL-VPN クライアントのセットアップをします。
 
 設定方法は、以下のリンクをご参照ください。
-- [SSL-VPN クライアントの設定方法(Windows の場合)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_configure_file_win)
-- [SSL-VPN クライアントの設定方法(Mac の場合)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_configure_file_mac)
-- [SSL-VPN クライアントの設定方法(Linux の場合)](/guides/FAQ/faq_personal_genome/pg_login_ssl-vpn_configure_file_linux)
+- [SSL-VPN クライアントの設定方法(Windows の場合)](/guides/FAQ/faq_personal_genome/ssl-vpn_config_file/pg_login_ssl-vpn_configure_file_win)
+- [SSL-VPN クライアントの設定方法(Mac の場合)](/guides/FAQ/faq_personal_genome/ssl-vpn_config_file/pg_login_ssl-vpn_configure_file_mac)
+- [SSL-VPN クライアントの設定方法(Linux の場合)](/guides/FAQ/faq_personal_genome/ssl-vpn_config_file/pg_login_ssl-vpn_configure_file_linux)
 
 
 ### STEP 3. SSL-VPN への接続 {#connect-sslvpn}
@@ -156,7 +156,7 @@ INFO: Tunnel is up and running.
 </Tabs> 
 
 
-うまくつながらない場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#dialogbox_disappear)をご参照ください。
+うまくつながらない場合は、[FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#dialogbox_disappear)をご参照ください。
 
 
 ### STEP 4. SSH によるゲートウェイへのログイン {#ssh-login-gateway}
@@ -175,7 +175,7 @@ ssh [アカウント名]@gwa.ddbj.nig.ac.jp
 ssh [アカウント名]@gwa2.ddbj.nig.ac.jp 
 ```
 
-うまく行かない場合は、[よくある質問(FAQ)](/guides/FAQ/faq_personal_genome/faq_forticlient)をご参照ください。
+うまく行かない場合は、[よくある質問(FAQ)](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient)をご参照ください。
 
 
 
