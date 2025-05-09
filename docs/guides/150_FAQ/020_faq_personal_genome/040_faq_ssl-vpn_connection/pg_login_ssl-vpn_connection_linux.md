@@ -16,7 +16,7 @@ $ sudo openfortivpn -c /path/to/config
 
 ![figure](VPNwin_15.png)
 
-送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/guides/FAQ/faq_personal_genome/faq_forticlient/#no-onetime-pw-received)をご参照ください。
+送信されない場合は、[FAQ:Login > FAQ(ログインについて)](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#no-onetime-pw-received)をご参照ください。
 
 3. 以下のように対話式でワンタイムパスワード(上記の例の場合、269274)を入力し、Enterキーを押してください。
 ```

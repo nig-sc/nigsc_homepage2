@@ -17,7 +17,7 @@ After executing the command, a one-time password will be sent to the email addre
 
 ![figure](VPNwin_15.png)
 
-If the message is not sent, see [FAQ:Login > FAQ(Login)](/guides/FAQ/faq_personal_genome/faq_forticlient/#no-onetime-pw-received).
+If the message is not sent, see [FAQ:Login > FAQ(Login)](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#no-onetime-pw-received).
 
 
 2. Enter the one-time password (269274 in the example above) interactively as shown below and press the Enter key.

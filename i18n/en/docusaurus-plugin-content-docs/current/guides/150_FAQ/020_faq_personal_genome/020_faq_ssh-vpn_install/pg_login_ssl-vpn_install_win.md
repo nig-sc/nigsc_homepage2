@@ -12,7 +12,7 @@ Click on the following URL to access the official ForiClient website page. You w
 
 ![](forticlientonly.png)
 
-For more detailed download instructions, see [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/#how-to-DL-VPN).
+For more detailed download instructions, see [FAQ](/guides/FAQ/faq_personal_genome/faq_forticlient/faq_forticlient#how-to-DL-VPN).
 
 
 ## Install the SSL-VPN client software "FortiClient" {#install-forticlient}
