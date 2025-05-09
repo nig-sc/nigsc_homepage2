@@ -3,66 +3,121 @@ id: faq_ssh
 title: "FAQ: SSH"
 ---
 
-## &#x1F180; The following materials describe the necessary knowledge. Please refer to the links below.
-
-&#x1F150; 1. Materials related to the content described in the introductory documents on operating methods provided by the Linux Documentation Project (LDP):
-
-- [“Bash Guide for Beginners” by Machtelt Garrels](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html?utm_source=chatgpt.com)  
-    - This guide thoroughly explains the basics of the Bash shell and script creation, making it a valuable resource for beginners.
-- [“Introduction to Linux - A Hands on Guide” by Machtelt Garrels](https://tldp.org/guides.html?utm_source=chatgpt.com)  
-    - A hands-on guide designed to help you learn the basic operations of Linux in a practical way.
-
-Both of these resources are freely available for viewing and downloading from the official LDP site.
-
-2. Learn Linux operations for beginners:
-
-These materials are available for free.
-
-- [Linux Standard Textbook](https://linuc.org/textbooks/linux/)  
-    - A free learning resource provided by LPI-Japan, covering everything from basic Linux operations to system administration.
-- [Introduction to Linux (LFS101-JP)](https://training.linuxfoundation.org/ja/training/introduction-to-linux-lfs101-jp/)  
-    - A free online course provided by the Linux Foundation where you can learn the basic operations of major Linux distributions and command-line usage.
-
 ## &#x1F180; Causes and Solutions for the SSH "Permission denied (publickey)" Error {#error-pubkey-auth}
-
-&#x1F150; When connecting via SSH, the error `Permission denied (publickey)` can occur for several reasons. Go through the following checklist step by step to resolve the issue.
-
-### 1. Check File and Directory Permissions
-
-The most common cause of this error is **incorrect file or directory permissions**. Use the tables below to ensure your permissions are properly set.
-
-
-#### On the **Client Side** (where you run the SSH command)
-
-| Path                                | Purpose                             | Recommended Permission     | Notes                                            |
-|-------------------------------------|--------------------------------------|----------------------------|--------------------------------------------------|
-| `/home/USERNAME/`                   | Home directory                       | `755` or `700`             | Ensure no write access for other users          |
-| `/home/USERNAME/.ssh/`              | SSH keys and config directory        | `700` (`drwx------`)       | Only accessible by the owner                    |
-| `/home/USERNAME/.ssh/id_rsa`        | Private key                          | `600` (`-rw-------`)       | Only the owner can read/write                   |
-| `/home/USERNAME/.ssh/id_rsa.pub`    | Public key                           | `644` (`-rw-r--r--`)       | Safe to share with others                       |
-| `/home/USERNAME/.ssh/known_hosts`   | Record of previously connected hosts | `644` or `600`             | `600` is recommended, but `644` is also fine    |
-
----
-
-#### On the **Server Side** (the machine you are connecting to)
-
-| Path                                | Purpose                                | Recommended Permission     | Notes                                             |
-|-------------------------------------|-----------------------------------------|----------------------------|---------------------------------------------------|
-| `/home/USERNAME/`                   | Home directory                          | `755` or `700`             | Must not be writable by others (`777` is bad)    |
-| `/home/USERNAME/.ssh/`              | Stores authorized/public keys           | `700` (`drwx------`)       | No one else should have access                   |
-| `/home/USERNAME/.ssh/authorized_keys` | Contains allowed public keys            | `600` (`-rw-------`)       | Strictly checked by `sshd`                       |
-| `/home/USERNAME/.ssh/known_hosts`   | (Optional) Records connected hosts      | `600` or `644`             | Not always needed—if present, should be secure   |
-
-It is mandatory that **the owner of all files and directories is the user attempting to connect**.
 
 - "Client" means the user's local computer.
 - "Server" means the RIKEN supercomputer.
-- "USERNAME" means the user's account name.
-- SSH logs can be checked in `/var/log/auth.log` or by using `journalctl -u ssh`.
 
 The relationship between the client and server is shown in the diagram below.
 
 ![](ssh_permission_1.png)
+
+&#x1F150; 
+
+### Check File Permissions (for client machines using Linux, macOS, or Windows WSL)
+
+Please refer to the table below to ensure that file permissions are correctly configured on both the client side (your local computer) and the server side (the NIG supercomputer).
+
+<table cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Path (Example)</th>
+      <th>Purpose</th>
+      <th>Permission</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/home/USERNAME/</td>
+      <td>Home directory</td>
+      <td>750, 711, or 700</td>
+      <td>The home directory must not be writable by others. This applies on both the client and server sides.</td>
+    </tr>
+    <tr>
+      <td>~/.ssh/</td>
+      <td>Directory for SSH keys and configuration files</td>
+      <td>700</td>
+      <td>Required on both the client and server sides.</td>
+    </tr>
+    <tr>
+      <td>~/.ssh/id_ed25519<br />(or id_rsa)</td>
+      <td>Private key</td>
+      <td>600</td>
+      <td>Should exist only on the client side. Do not store this on the server.</td>
+    </tr>
+    <tr>
+      <td>~/.ssh/authorized_keys</td>
+      <td>List of authorised public keys</td>
+      <td>600</td>
+      <td>Contains public keys allowed to connect to the server. Exists only on the server side.</td>
+    </tr>
+    <tr>
+      <td>~/.ssh/known_hosts</td>
+      <td>Stores known host keys of SSH servers</td>
+      <td>600 or 644</td>
+      <td>Exists only on the client side. Not needed on the server.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### How to Check Permissions (1): Using the `stat` Command
+
+The `stat` command can be used to display file permissions in numeric format.
+
+```
+stat -c "%a %n" your-file
+```
+
+Example Output:
+
+```
+you@MINIPC:~ (2025-05-05 14:07:49)
+$ stat -c "%a %n" ~/.ssh
+700 /home/you/.ssh
+you@MINIPC:~ (2025-05-05 14:08:06)
+$ stat -c "%a %n" ~/.ssh/*
+600 /home/you/.ssh/authorized_keys
+664 /home/you/.ssh/config
+600 /home/you/.ssh/id_ed25519
+644 /home/you/.ssh/id_ed25519.pub
+600 /home/you/.ssh/id_rsa
+644 /home/you/.ssh/id_rsa.pub
+600 /home/you/.ssh/known_hosts
+```
+
+#### How to Check Permissions (2): Using `ls -l`
+
+You can also use the commonly used `ls` command to display file permissions when listing files.
+
+The `rwx` symbols represent access rights and correspond to the following numeric values:
+- `r` (read) = 4  
+- `w` (write) = 2  
+- `x` (execute) = 1
+
+The sum of these values gives the numeric permission.  
+For example:
+- `rwx------` corresponds to `700`
+- `rw-r--r--` corresponds to `644`
+
+Example Output:
+
+
+```
+🎯 you@MINIPC:~ (2025-05-05 14:08:37)
+$ ls -l ~/.ssh
+合計 80
+-rw------- 1 you you     0  4月 10 18:21 authorized_keys
+-rw-rw-r-- 1 you you  1373  5月  5 13:37 config
+-rw------- 1 you you   419  5月  2 07:52 id_ed25519
+-rw-r--r-- 1 you you   105  5月  2 07:52 id_ed25519.pub
+-rw------- 1 you you  1766  3月 14 14:09 id_rsa
+-rw-r--r-- 1 you you   105  3月 14 14:09 id_rsa.pub
+-rw------- 1 you you 10368  5月  2 08:05 known_hosts
+```
+
+- "USERNAME" means the user's account name.
+- SSH logs can be checked in `/var/log/auth.log` or by using `journalctl -u ssh`.
 
 
 ### 2. Key Pair Mismatch

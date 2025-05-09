@@ -13,7 +13,7 @@ It is convenient to use ` nvm (node version manager)` for installation.
 
 1, Install nvm in your home directory with the following command. (It will be installed in the $HOME/.nvm directory.)
 
-` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash `
+` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash `
 
 - Check the latest version of nvm at the following page. [GitHub - nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm)
 
@@ -27,11 +27,11 @@ export NVM_DIR="$HOME/.nvm"
 
 You can use nvm by executing the above description by `source ~/.bashrc` or by `qlogin` again.
 
-2, Display the available Node.JS versions using` nvm ls-remote `. 
+2, Display the available Node.JS versions using` nvm ls-remote --lts `. 
 
-3, Install with ` nvm install v12.18.3 `.
+3, Install with ` nvm install v18.20.3 `.
 
-4, Activate the Node.JS processor by doing ` nvm use v12.18.3 `. You can add this to the end of `~/.bashrc `.
+4, Activate the Node.JS processor by doing ` nvm use v18.20.3 `. You can add this to the end of `~/.bashrc `.
 
 
 ### Installing TypeScript and other software {#installing-typescript-etc}
@@ -40,10 +40,10 @@ Install TypeScript and related tools by using the npm (node package manager) com
 
 
 ```
-npm install -g typescript @types/node ts-node
-npm install -g typedoc jsdoc 
-npm install -g pkg yarn
-npm install -g tslint
+npm install -g typescript @types/node ts-node \
+  typedoc jsdoc \
+  pkg yarn \
+  eslint
 ```
 
 If you change the version of the Node.js processor used using 'nvm install' or 'nvm use', TypeScript and related tools must also be re-installed.
@@ -53,7 +53,7 @@ If you change the version of the Node.js processor used using 'nvm install' or '
 
 #### TypeScript cannot be installed.
 
-When you execute 'npm install -g typescript' as above, files such as tsc and tsserver should be installed in your directory such as $HOME/.nvm/versions/node/v12.18.3/. Here's what to do if they are not installed.
+When you execute 'npm install -g typescript' as above, files such as tsc and tsserver should be installed in your directory such as $HOME/.nvm/versions/node/v18.20.3/. Here's what to do if they are not installed.
 
 Check that the same version as that specified in nvm use is displayed when the following command is executed. (If this does not match, this is the reason why it cannot be installed).
 
