@@ -63,7 +63,7 @@ $ npm config get prefix
 ```
 
 以下のコマンドで prefix を正しく調整します。 
-` npm config set prefix /home/youraccount/.nvm/versions/node/v12.18.3 `
+` npm config set prefix /home/youraccount/.nvm/versions/node/v18.20.3 `
       
 その後、TypeScript をインストールします。
 
