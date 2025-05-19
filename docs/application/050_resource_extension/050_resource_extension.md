@@ -23,7 +23,7 @@ title: "利用計画表の提出"
 <td valign="top">
 以下をクリックします。
 
-- [利用計画表(2025年度版)](https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table2025_v1.0.0.xlsx)
+- [利用計画表(2025年度版)](https://github.com/nig-sc/usage_plan_table/blob/main/usage_plan_table2025_v1.1.0.xlsx)
 
 <p>&#x26A0;現在、大規模利用ユーザおよび一般解析区画大規模ユーザのアカウントの新規登録の受付を停止しております。詳細は<a href="https://sc.ddbj.nig.ac.jp/blog/2022-05-13-suspension-of-applications">こちらのお知らせをご参照ください</a>。</p>
 </td>
