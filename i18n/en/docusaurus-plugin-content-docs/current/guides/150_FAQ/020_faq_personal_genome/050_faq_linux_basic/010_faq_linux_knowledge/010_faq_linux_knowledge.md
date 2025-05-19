@@ -1,5 +1,5 @@
 ---
-id: 010_faq_linux_knowledge
+id: faq_linux_knowledge
 title: "FAQ：Linux Knowledge"
 ---
 
