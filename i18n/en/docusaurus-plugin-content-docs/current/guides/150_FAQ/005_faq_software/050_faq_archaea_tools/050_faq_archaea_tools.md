@@ -1,6 +1,6 @@
 ---
 id: faq_archaea_tools
-title: Archaea tools(formerly HCPtools)
+title: "FAQ: Archaea tools(formerly HCPtools)"
 ---
 
 
