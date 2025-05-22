@@ -113,14 +113,15 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 ## Featured News {#featured-news}
 
-- [Network Maintenance due to Switchover to SINET6 on Wednesday, May 24, 2025](/blog/2025-05-24-network) (2025.04.10)
-- [Power Outage on April 7, 2025](/blog/2025-04-07-power-outage) (2025.04.07)
-- [Important Notices from the NIG Supercomputer: Third Term of 2024 (December–March)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (2025-02-10) &#x1F195;
-- [Announcement on Replacement to New Supercomputer](/blog/2024-12-05-supercomputer_replacement_announcement) (2024.12.05) 
-- [Extended Maintenance Period for Account Application System](/blog/2024-12-05-extened_account_system_maintenance) (2024.12.05) 
-- [Important Notices from the NIG Supercomputer: Second Term of 2024 (August–November)](/blog/2024-11-11-important_notice_2024_Aug-Nov) (2024.11.11)
-- [Maintenance of Account Application System](/blog/2024-10-25-account_system_maintenance) (2024.10.25)
-- [Important Notices from the NIG Supercomputer: First Term of 2024 (April–July)](/blog/2024-06-24-important_notice_2024_April-July) (2024.06.24)
+- [(Resolved) [Outage] Slurm Outage in General Analysis Division on Thursday, May 22, 2025](/blog/2025-05-22-Slurm_ga_maintenance) (May 22, 2025) ＼ &#x1F195; ／
+- [Network Maintenance due to Switchover to SINET6 on Wednesday, May 24, 2025](/blog/2025-05-24-network) (April 10, 2025)
+- [Power Outage on April 7, 2025](/blog/2025-04-07-power-outage) (April 7, 2025)
+- [Important Notices from the NIG Supercomputer: Third Term of 2024 (December–March)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (February 10, 2025) 
+- [Announcement on Replacement to New Supercomputer](/blog/2024-12-05-supercomputer_replacement_announcement) (December 5, 2024) 
+- [Extended Maintenance Period for Account Application System](/blog/2024-12-05-extened_account_system_maintenance) (December 5, 2024) 
+- [Important Notices from the NIG Supercomputer: Second Term of 2024 (August–November)](/blog/2024-11-11-important_notice_2024_Aug-Nov) (November 11, 2024)
+- [Maintenance of Account Application System](/blog/2024-10-25-account_system_maintenance) (October 25, 2024)
+- [Important Notices from the NIG Supercomputer: First Term of 2024 (April–July)](/blog/2024-06-24-important_notice_2024_April-July) (June 24, 2024)
 
 
 ## Year-End Account Renewal Applications {#year-end-renewals}

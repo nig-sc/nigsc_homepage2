@@ -13,6 +13,7 @@ title: パラレルジョブ
  - [CPU Management User and Administrator Guide](https://slurm.schedmd.com/cpu_management.html)
 
 
+
 ## パラレルジョブの種類（概要） {#types-of-parallel-jobs-overview}
 
 AGEのPEで用意されている環境に沿って、Slurmで、それに対応するコアの割り付け方をほぼ実現する為のSlurmでのオプション群を示します。
@@ -149,8 +150,7 @@ OpenMPを利用したプログラムのバイナリモジュールを実行す�
 ノード内のスレッド並列実行数を指定することが可能です。以下のような記述でOMP_NUM_THREADSを設定してプログラムを実行してください。
 
 OMP_NUM_THREADS指定を省略することは可能ですが、その場合はデフォルト動作としては環境が認識するCPUコア数全てを利用しようとしてプログラムは動作します。
-計算ノードを１台占有してジョブを実行する場合は、OMP_NUM_THREADSを指定しなくても問題ありませんが１台の計算ノードを複数ジョブで共有する場合や、
-環境に働きかけるオプションが複数指定されていて、どの数値が設定されるかわからない場合は、明示的にOMP_NUM_THREADSを設定することを推奨します。
+計算ノードを１台占有してジョブを実行する場合は、OMP_NUM_THREADSを指定しなくても問題ありませんが１台の計算ノードを複数ジョブで共有する場合や、環境に働きかけるオプションが複数指定されていて、どの数値が設定されるかわからない場合は、明示的にOMP_NUM_THREADSを設定することを推奨します。
 
 ```js
 #!/bin/bash
@@ -274,7 +274,9 @@ int main(int argc, char** argv) {
     MPI_Finalize();
 }
 ```
+
 上記プログラムを上記のジョブ投入スクリプトで実行した際の、CPUコアの割り当てられ方を以下に示します。
+
 ```js
 yxxxx-pg@at022vm02:~/mpitest$ pestat
 Hostname       Partition     Node Num_CPU  CPUload  Memsize  Freemem  Joblist
@@ -285,8 +287,10 @@ igt010        parabricks   alloc   48  48    0.25*   386462   377564  1663 yxxxx
 igt015            igt015    idle    0  48    0.00    386458   380819   
 igt016            igt016    idle    0  48    0.05    386462   379490   
 ```
+
 上記では、計算ノードigt010上で、`-n`で指定した並列数8ではなく、igt010上で利用可能なCPUコア48コア全てを割り当てられた形で
 ジョブが動作していることがわかります。サンプルプログラムの出力結果を以下に示します。
+
 ```
 Hello world from processor igt010, rank 0 out of 8 processors
 Hello world from processor igt010, rank 6 out of 8 processors
@@ -304,6 +308,7 @@ Hello world from processor igt010, rank 5 out of 8 processors
 計算ノードを１台占有するかたちでOpenMPスレッド並列プログラムを実行する場合は、以下のように指示行を記述してください。
 
 #### ジョブスクリプトでの指定内容 {#openmp-job-script-config}
+
 ```js
 #!/bin/bash
 //highlight-start
@@ -316,6 +321,7 @@ Hello world from processor igt010, rank 5 out of 8 processors
 omp_sample
 
 ```
+
 - `-N 1-1` で計算ノード１ノードを指定。
 - `-n 1` で１タスクを指定。
 - `--exclusive` で計算ノード１台を排他的に利用することを指定。
@@ -340,6 +346,7 @@ printf("good by \n");
 return 0;
 }
 ```
+
 ラインマークされている部分がスレッド並列で動作します。
 
 #### サンプルプログラムの出力結果(長いので中略部分あり) {#sample-output-results}
@@ -358,12 +365,14 @@ processing thread num= 0
 processing thread num= 10 
 good by
 ```
+
+
 48スレッド並列で実行されていることがわかります。
 
-ノードを占有してかつスレッド並列数を明示的に指定したい場合は、以下のように`-c`を指定して、かつ環境変数
-OMP_NUM_THREADSを設定してください。
+ノードを占有してかつスレッド並列数を明示的に指定したい場合は、以下のように`-c`を指定して、かつ環境変数`OMP_NUM_THREADS`を設定してください。
 
 #### ジョブスクリプトでの指定内容 {#thread-parallel-job-script-config}
+
 ```js
 #!/bin/bash
 #SBATCH -N 1-1
@@ -376,7 +385,9 @@ export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}
 omp_sample
 
 ```
+
 `--exclusive`を指定すると、ジョブが動作する計算ノードのCPUコア全てを割り当られてジョブが動作しています。
+
 ```js
 yxxxx-pg@at022vm02:~/openmp$ pestat
 Hostname       Partition     Node Num_CPU  CPUload  Memsize  Freemem  Joblist
@@ -387,7 +398,9 @@ igt010        parabricks   alloc   48  48    0.10*   386462   377612  1684 yxxxx
 igt015            igt015    idle    0  48    0.00    386458   380808   
 igt016            igt016    idle    0  48    0.00    386462   379467   
 ```
+
 一方スレッド並列プログラムは、`-c`で指定されたコア数で動作します。以下にサンプルプログラムの出力結果を示します。
+
 ```
 hello openmp world 
 processing thread num= 0 
@@ -401,3 +414,16 @@ processing thread num= 3
 good by 
 ```
 8並列で動作していることがわかります。
+
+
+### ジョブ数制限を超えてコアを使いたい場合 {#exceeding_32_jobs_limit}
+
+Slurmマスターデーモン側で何も設定しないと、一人のユーザがジョブをたくさん流した場合すべての計算ノードのすべてのコアを埋めようとすることを避けることは不可能となります。
+
+そこでパーティションあたり一人最大32ジョブだけしか流れない設定にしています。
+この状態で例えば128コアを並列で使いたい場合は、並列ジョブを使うことによって実現できます。
+
+実現方法は、下記リンクのFAQをご覧ください。例として、128コアを使用するためのジョブスクリプト例と設定方法を記載しています。
+
+- [Q: 128コアを使用したいと申し込みましたが、実際に使われているのは32コアに見えます。](/guides/FAQ/faq_software/faq_slurm/)
+

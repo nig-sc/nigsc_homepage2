@@ -126,9 +126,28 @@ The memory allocation in the example above is 8GB per CPU core, totaling 32GB pe
 
 The supercomputer at the Genetics Research Institute uses OpenMPI as the MPI implementation. Use the OpenMPI `mpirun` command to launch MPI program execution modules. With mpirun and Slurm combination, it's unnecessary to specify options like `-np` for mpirun.
 
+```
+#!/bin/bash
+#SBATCH --job-name mpi-test
+#SBATCH -N 1-1
+#SBATCH -n 8
+#SBATCH -o %x.%J.out
+
+mpirun mpi_test
+
+```
+
+If written as above, the `sbatch` command will request the necessary computing resources from Slurm, and `mpirun` will launch processes in 8-way parallelism as specified by the `-n` option.
+
+
 ### Executing Programs Written in OpenMP {#executing-programs-openmp}
 
-When executing binary modules of programs using OpenMP, you can specify the OMP_NUM_THREADS as an environment variable to set the number of threads for parallel execution within a node. It's possible to omit the OMP_NUM_THREADS specification, but by default, the program will attempt to use all recognized CPU cores. If running a job exclusively on one compute node, it's fine to not specify OMP_NUM_THREADS. However, if sharing a compute node among multiple jobs or when multiple options affecting the environment are specified and it's unclear which value will be set, explicitly setting OMP_NUM_THREADS is recommended.
+When executing a binary module of a program that uses OpenMP, you can specify the number of threads for parallel execution within a node by setting the `OMP_NUM_THREADS` environment variable. Please configure `OMP_NUM_THREADS` as shown below when running the program.
+
+It is possible to omit the `OMP_NUM_THREADS` specification. In such cases, the program will, by default, attempt to utilize all CPU cores recognized by the environment. 
+If your job occupies an entire compute node, it is generally fine to leave `OMP_NUM_THREADS` unspecified. However, in cases where a compute node is shared by multiple jobs, or when there are multiple environment options that could influence the configuration and the actual number of threads is unclear, it is recommended to explicitly set `OMP_NUM_THREADS`.
+
+
 
 ```js
 #!/bin/bash
@@ -256,7 +275,9 @@ int main(int argc, char** argv) {
     MPI_Finalize();
 }
 ```
+
 The allocation of CPU cores when executing the above program with the submission script is illustrated below.
+
 ```js
 yxxxx-pg@at022vm02:~/mpitest$ pestat
 Hostname       Partition     Node Num_CPU  CPUload  Memsize  Freemem  Joblist
@@ -267,13 +288,30 @@ igt010        parabricks   alloc   48  48    0.25*   386462   377564  1663 yxxxx
 igt015            igt015    idle    0  48    0.00    386458   380819   
 igt016            igt016    idle    0  48    0.05    386462   379490   
 ```
+
 This shows that on compute node igt010, the job operates with all 48 available CPU cores allocated, not just the parallel count of 8 specified by `-n`. The output of the sample program demonstrates it operates in 8 parallel.
+
+
+```
+Hello world from processor igt010, rank 0 out of 8 processors
+Hello world from processor igt010, rank 6 out of 8 processors
+Hello world from processor igt010, rank 1 out of 8 processors
+Hello world from processor igt010, rank 4 out of 8 processors
+Hello world from processor igt010, rank 2 out of 8 processors
+Hello world from processor igt010, rank 3 out of 8 processors
+Hello world from processor igt010, rank 7 out of 8 processors
+Hello world from processor igt010, rank 5 out of 8 processors
+```
+
+It can be confirmed that the program is running with 8-way parallelism.
+
 
 ### Executing OpenMP Thread Parallel Programs {#openmp-thread-parallel-execution}
 
 To execute an OpenMP thread parallel program while occupying a compute node, describe the directive lines as follows.
 
 #### Job Script Specifications {#openmp-job-script-config}
+
 ```js
 #!/bin/bash
 //highlight-start
@@ -286,6 +324,7 @@ To execute an OpenMP thread parallel program while occupying a compute node, des
 omp_sample
 
 ```
+
 - `-N 1-1` specifies one compute node.
 - `-n 1` specifies one task.
 - `--exclusive` specifies the exclusive use of one compute node.
@@ -310,6 +349,7 @@ printf("good by \n");
 return 0;
 }
 ```
+
 The marked lines operate in thread parallel.
 
 #### Output of the Sample Program (abbreviated for brevity) {#sample-output-results}
@@ -322,13 +362,15 @@ processing thread num= 0
 ...
 good by
 ```
+
+
 It can be seen operating in 48 thread parallel.
 
-If you wish to occupy a node and explicitly specify the thread parallel count, specify `-c` and set the environment variable O
+If you would like to occupy an entire node and explicitly specify the number of threads for parallel execution, use the `-c` option as shown below and set the environment variable `OMP_NUM_THREADS`.
 
-OMP_NUM_THREADS environment variable.
 
 #### Job Script Specifications {#thread-parallel-job-script-config}
+
 ```js
 #!/bin/bash
 #SBATCH -N 1-1
@@ -342,3 +384,44 @@ omp_sample
 
 ```
 Specifying `--exclusive` results in the job operating with all CPU cores of the compute node being allocated. The marked lines are crucial for ensuring that the compute node's resources are dedicated to the job, and the program operates within the specified core count.
+
+```js
+yxxxx-pg@at022vm02:~/openmp$ pestat
+Hostname       Partition     Node Num_CPU  CPUload  Memsize  Freemem  Joblist
+                            State Use/Tot  (15min)     (MB)     (MB)  JobID User ...
+igt009            igt009   down*    0  48    0.03    386452   366715   
+//highlight-next-line
+igt010        parabricks   alloc   48  48    0.10*   386462   377612  1684 yxxxx-pg  
+igt015            igt015    idle    0  48    0.00    386458   380808   
+igt016            igt016    idle    0  48    0.00    386462   379467   
+```
+
+On the other hand, a thread-parallel program runs using the number of cores specified by the `-c` option. Below is an example of the output from a sample program.
+
+```
+hello openmp world 
+processing thread num= 0 
+processing thread num= 7 
+processing thread num= 6 
+processing thread num= 2 
+processing thread num= 1 
+processing thread num= 5 
+processing thread num= 4 
+processing thread num= 3 
+good by 
+```
+
+It can be seen that the program is running with 8 threads in parallel.
+
+
+### When You Would like to Use More Cores Than the Job Limit Allows {#exceeding_32_jobs_limit}
+
+If no specific settings are applied on the Slurm master daemon side, it becomes impossible to prevent a single user from occupying all cores on all compute nodes by submitting a large number of jobs.
+
+To address this, we have configured the system to allow a maximum of 32 jobs per user per partition.
+
+In this situation, if you would like to use, for example, 128 cores in parallel, you can achieve this by using parallel jobs.
+
+For details on how to do this, please refer to the FAQ at the link below. It includes example job scripts and instructions for using 128 cores.
+
+- [Q: I requested to use 128 cores, but it appears that only 32 cores are actually being used.](/guides/FAQ/faq_software/faq_slurm/)
