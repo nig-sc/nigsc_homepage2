@@ -11,16 +11,16 @@ Note2: For more detailed instructions, please refer to the following site of ncb
 
 ## 1. Basic Usage
 
-- 1. Check the size of the downloaded file using the vdb-dump command (it will be displayed in the size: field). If it is larger than 20 GB, specify a number greater than the required size in the --max-size option when using the prefetch command.  
-- 2. Next, use the prefetch command to download the directory corresponding to the SRA accession.
-- 3. Finally, use the fastq-dump command to extract the fastq files. Note that the free HDD space should be approximately 17 times the accession size.
+1. Check the size of the downloaded file using the vdb-dump command (it will be displayed in the size: field). If it is larger than 20 GB, specify a number greater than the required size in the --max-size option when using the prefetch command.  
+2. Next, use the prefetch command to download the directory corresponding to the SRA accession.
+3. Finally, use the fastq-dump command to extract the fastq files. Note that the free HDD space should be approximately 17 times the accession size.
     
 
 Below is the case of downloading SRR000001 (size is less than 20 GB), and downloaded to . /path/to/be/used..
 
 ```
   $ vdb-dump SRR1951777 --info
-  $ prefetch SRR000001 -O ./path/to/be/used
+  $ prefetch SRR000001 -O /path/to/download_dir
   $ cd ./path/to/be/used
   $ fasterq-dump SRR000001
 ```
@@ -28,7 +28,7 @@ Below is the case of downloading SRR000001 (size is less than 20 GB), and downlo
 The following is another example of downloading SRR1951777 (size is over then 20GB), and downloaded to current directory (./).
 ```
   $ vdb-dump SRR1951777 --info
-  $ prefetch SRR1951777 --max-size 420000000000 -O ./
+  $ prefetch SRR1951777 --max-size 420000000000 -O /path/to/download_dir
   $ fasterq-dump SRR1951777
 ```
 
