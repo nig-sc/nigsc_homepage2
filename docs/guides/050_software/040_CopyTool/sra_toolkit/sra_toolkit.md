@@ -23,7 +23,7 @@ https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 
 ```
   $ vdb-dump SRR1951777 --info
-  $ prefetch SRR000001 -O ./path/to/be/used
+  $ prefetch SRR000001 -O /path/to/download_dir
   $ cd ./path/to/be/used
   $ fasterq-dump SRR000001
 ```
@@ -32,7 +32,7 @@ https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 ダウンロード先はカレントディレクトリ(./)であった場合。
 ```
   $ vdb-dump SRR1951777 --info
-  $ prefetch SRR1951777 --max-size 420000000000 -O ./
+  $ prefetch SRR1951777 --max-size 420000000000 -O /path/to/download_dir
   $ fasterq-dump SRR1951777
 ```
 
