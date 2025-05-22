@@ -195,9 +195,8 @@ NVIDIA AI Enterprise
 
 ## データ転送・データ共有 {#data-transfer}
 
-AsperaおよびArchaeaはscp, sftp, ftpなどに比べて長距離の大規模データ転送に適したソフトウェアです。
-- AsperaはNCBI/EBI/DDBJなどからデータをスパコンやユーザのパソコンにダウンロードする際に利用できます。(合計10Gbps上限)
-- Archaea toolsはスパコンのユーザホーム領域とユーザのパソコンとの間のデータ転送に利用できます。(帯域上限なし)
+- prefetchは、NCBIの提供するsratoolkit内のコマンドです。
+- prefetchは、NCBIからデータをスパコンやユーザのパソコンにダウンロードする際に利用できます。
 
 詳細は[データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_data_transfer/)
 および[データ転送(個人ゲノム解析区画)](/guides/using_personal_genome_division/pg_data_transfer/)
@@ -216,25 +215,12 @@ AsperaおよびArchaeaはscp, sftp, ftpなどに比べて長距離の大規模�
 <tr>
 <td width="300">
 
-[Archaea tools](/guides/software/CopyTool/Archaea_tools)
+[prefetch](/guides/using_general_analysis_division/ga_data_transfer/prefetch)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">インストール済み</td>
 
 </tr>
-
-
-<tr>
-<td width="300">
-
-[Aspera](/guides/software/CopyTool/aspera_client)
-
-</td>
-<td width="300">利用可能</td>
-<td width="300">利用可能</td>
-
-</tr>
-
 
 <tr>
 <td width="300">
