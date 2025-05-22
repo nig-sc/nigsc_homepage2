@@ -117,9 +117,10 @@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
 ## 重要なお知らせ {#featured-news}
 
+- [(終了) 2025年5月22日(木) 一般解析区画のslurm障害発生のお知らせ](/blog/2025-05-22-Slurm_ga_maintenance) (2025.05.22) ＼ &#x1F195; ／
 - [2025年5月24日(水) SINET6への切替作業による通信断のお知らせ](/blog/2025-05-24-network) (2025.04.10)
 - [2025年4月7日(月)停電の発生について](/blog/2025-04-07-power-outage) (2025.04.07)
-- [遺伝研スパコンからの重要なお知らせ : 2024年第3期(12～3月)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (2025.02.10) &#x1F195;
+- [遺伝研スパコンからの重要なお知らせ : 2024年第3期(12～3月)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (2025.02.10) 
 - [新スパコンへのリプレースに関するお知らせ](/blog/2024-12-05-supercomputer_replacement_announcement) (2024.12.05)
 - [アカウント申請システムのメンテナンス期間を延長します](/blog/2024-12-05-extened_account_system_maintenance) (2024.12.05)
 - [遺伝研スパコンからの重要なお知らせ : 2024年第2期(8～11月)](/blog/2024-11-11-important_notice_2024_Aug-Nov) (2024.11.11)
