@@ -16,7 +16,7 @@ Note2: For more detailed instructions, please refer to the following site of ncb
 3. Finally, use the fastq-dump command to extract the fastq files. Note that the free HDD space should be approximately 17 times the accession size.
     
 
-Below is the case of downloading SRR000001 (size is less than 20 GB), and downloaded to . /path/to/be/used..
+Below is the case of downloading SRR000001 (size is less than 20 GB), and downloaded to /path/to/download_dir .
 
 ```
   $ vdb-dump SRR1951777 --info
@@ -25,7 +25,7 @@ Below is the case of downloading SRR000001 (size is less than 20 GB), and downlo
   $ fasterq-dump SRR000001
 ```
 
-The following is another example of downloading SRR1951777 (size is over then 20GB), and downloaded to current directory (./).
+The following is another example of downloading SRR1951777 (size is over then 20GB), and downloaded to /path/to/download_dir .
 ```
   $ vdb-dump SRR1951777 --info
   $ prefetch SRR1951777 --max-size 420000000000 -O /path/to/download_dir
