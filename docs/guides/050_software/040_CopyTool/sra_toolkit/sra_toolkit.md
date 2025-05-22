@@ -19,7 +19,7 @@ https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
     
 
 以下は、SRR000001(サイズは20GB以下)をダウンロードする場合。
-ダウンロード先は./path/to/be/usedとした場合。
+ダウンロード先は /path/to/download_dirとした場合。
 
 ```
   $ vdb-dump SRR1951777 --info
@@ -29,7 +29,7 @@ https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 ```
 
 以下は、SRR1951777(サイズは20GB以上)をダウンロードする場合。
-ダウンロード先はカレントディレクトリ(./)であった場合。
+ダウンロード先は /path/to/download_dir とした場合。
 ```
   $ vdb-dump SRR1951777 --info
   $ prefetch SRR1951777 --max-size 420000000000 -O /path/to/download_dir
