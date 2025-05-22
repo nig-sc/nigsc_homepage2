@@ -1,6 +1,6 @@
 ---
 slug: 2025-05-22-Slurm_ga_maintenance
-title: "(Resolved) [Outage] May 22, 2025:  Slurm Outage in General Analysis Division on Thursday, May 22, 2025"
+title: "(Restored) [Outage] May 22, 2025:  Slurm Outage in General Analysis Division on Thursday, May 22, 2025"
 tags:
   - maintenance
 date: 2025-05-22
