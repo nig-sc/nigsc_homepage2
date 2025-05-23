@@ -1,6 +1,6 @@
 ---
 slug: 2025-05-22-Slurm_ga_maintenance
-title: "(終了) 2025年5月22日(木) 一般解析区画のslurm障害発生"
+title: "(復旧) 2025年5月22日(木) 一般解析区画のslurm障害発生"
 tags:
   - maintenance
 date: 2025-05-22
