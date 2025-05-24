@@ -3,21 +3,6 @@ id: aspera_client
 title: How to use Aspera client(ascp)
 ---
 
-:::danger This is an old document
-
-This document is a former NIG supercomputer (2019) document and is kept for reference purposes.
-
-Please note that it does not work in the same way on the current NIG supercomputer (2025).
-:::
-
-
-:::info
-Instructions on how to write the configuration file can be found in the official documentation at the following link. Refer to the official documentation for the most up-to-date information.
-
-- https://support.bytix.tech/docs/archaea/tools/1.5_en/G_configurationRef/G03_conffile_client
-
-:::
-
 ## Overview {#introduction}
 
 Aspera is a high-speed data transfer software.
