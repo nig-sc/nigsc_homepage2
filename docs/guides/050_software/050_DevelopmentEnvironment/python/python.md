@@ -10,6 +10,8 @@ Python処理系は遺伝研スパコンに最初からインストールされ�
 
 Pythonの処理系は遺伝研スパコンに最初からインストールされています。インストール済みのPythonのバージョン、およびインストール済みパッケージを確認する手順は次のとおりです。
 
+:::note 出力結果
+
 ```
 $ python --version
 Python 3.10.12
@@ -22,6 +24,8 @@ pandas                                           1.3.5
 scikit-learn                                     0.23.2
 scipy                                            1.8.0
 ```
+
+:::
 
 
 ## venv, miniconda等の仮想環境を利用する方法 {#use-venv-miniconda}
@@ -40,6 +44,9 @@ scipy                                            1.8.0
 
 Pyhtonに付属する仮想環境作成用モジュールです。インストールされていないパッケージが必要な場合に使用してください。
 
+
+:::note 出力結果
+
 ```
 $ python -m venv ~/venv_p310
 $ source ~/venv_p310/bin/activate
@@ -47,16 +54,19 @@ $ python --version
 Python 3.10.12
 ```
 
+:::
+
+
 pipを使用して必要なライブラリをインストールしてください。
 
 ```
-$ pip install torch
+pip install torch
 ```
 
 仮想環境を終了する場合は`deactivate`します。
 
 ```
-$ deactivate
+deactivate
 ```
 
 #### ジョブ実行 
@@ -65,6 +75,8 @@ $ deactivate
 
 ##### Grid Engine
 
+:::note 出力結果
+
 ```
 $ cat launch_python.sh
 #!/bin/bash
@@ -81,7 +93,12 @@ deactivate
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -97,6 +114,9 @@ python tensorflow-testing.py
 deactivate
 $ sbatch launch_python.sh
 ```
+
+:::
+
 
 詳細は公式ページをご確認ください。[venv --- 仮想環境の作成](https://docs.python.org/ja/3/library/venv.html)
 
@@ -105,6 +125,9 @@ $ sbatch launch_python.sh
 
 Python2系の仮想環境が必要な場合に使用してください。
 
+
+:::note 出力結果
+
 ```
 $ virtualenv -p python2.7 ~/p27
 $ source ~/p27/bin/activate
@@ -112,16 +135,19 @@ $ python --version
 Python 2.7.18
 ```
 
+:::
+
+
 pipを使用して必要なライブラリをインストールしてください。
 
 ```
-$ pip install torch
+pip install torch
 ```
 
 仮想環境を終了する場合は`deactivate`します。
 
 ```
-$ deactivate
+deactivate
 ```
 
 #### ジョブ実行
@@ -129,6 +155,8 @@ $ deactivate
 ジョブスクリプト内で任意の仮想環境を有効にして実行します。
 
 ##### Grid Engine
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -146,7 +174,12 @@ deactivate
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -162,6 +195,9 @@ python tensorflow-testing.py
 deactivate
 $ sbatch launch_python.sh
 ```
+
+:::
+
 
 詳細は公式ページをご確認ください。[virtualenv User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html)
 
@@ -171,14 +207,16 @@ $ sbatch launch_python.sh
 システムにインストールされていないバージョンのPythonが必要な場合に使用してください。Pythonのバージョン毎に使用するパッケージを管理できます。全体、およびカレントディレクトリ毎に設定が可能です。
 
 ```
-$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-$ source ~/.bashrc
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 インストール可能なPythonのバージョンを確認し必要なバージョンをインストールしてください。
+
+:::note 出力結果
 
 ```
 $ pyenv install --list
@@ -191,7 +229,13 @@ Available versions:
 $ pyenv install 3.12.2
 ```
 
+:::
+
+
 必要なバージョンのPythonを有効化します。全体への設定はglobal、カレントディレクトリへの設定はlocalを使用してください。
+
+
+:::note 出力結果
 
 ```
 $ pyenv global 3.12.1
@@ -200,10 +244,13 @@ $ python --version
 Python 3.12.2
 ```
 
+:::
+
+
 pipを使用して必要なライブラリをインストールしてください。
 
 ```
-$ pip install torch
+pip install torch
 ```
 
 #### ジョブ実行
@@ -211,6 +258,8 @@ $ pip install torch
 ジョブスクリプト内で任意の仮想環境に移動してPythonを実行します。
 
 ##### Grid Engine
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -228,7 +277,12 @@ python tensorflow-testing.py
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -245,6 +299,9 @@ python tensorflow-testing.py
 $ sbatch launch_python.sh
 ```
 
+:::
+
+
 詳細は公式ページをご確認ください。[pyenv](https://github.com/pyenv/pyenv)
 
 
@@ -253,30 +310,39 @@ $ sbatch launch_python.sh
 システムにインストールされていないバージョンのPythonが必要な場合、かつ同一バージョンでパッケージ構成を変更して仮想環境をセットアップしたい場合に使用してください。
 
 ```
-$ mkdir ~/miniconda3
-$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-$ sh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-$ rm -f ~/miniconda3/miniconda.sh
-$ ~/miniconda3/bin/conda init bash
-$ source ~/.bashrc
+mkdir ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+sh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -f ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+source ~/.bashrc
 ```
 
 conda-forgeレポジトリをデフォルトに設定し、`.condarc`のトップに追加されたことを確認してください。
 
 ```
-$ conda config --add channels conda-forge
-$ conda config --set channel_priority strict
-$ vim ~/.condarc
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+vim ~/.condarc
 ```
 
 デフォルトではbase環境が自動起動しますが、セットアップしたい仮想環境と混同する場合があるため自動起動を停止します。
+
+
+:::note 出力結果
 
 ```
 (base) $ conda deactivate
 $ conda config --set auto_activate_base false
 ```
 
+:::
+
+
 使用可能なPythonのバージョンを確認して必要なバージョンで仮想環境を作成してください。
+
+
+:::note 出力結果
 
 ```
 $ conda search -f python
@@ -292,16 +358,19 @@ $ python --version
 Python 3.12.0
 ```
 
+:::
+
+
 conda installを使用して必要なライブラリをインストールしてください。
 
 ```
-$ conda install pytorch
+conda install pytorch
 ```
 
 仮想環境を終了する場合は`deactivate`します。
 
 ```
-$ conda deactivate
+conda deactivate
 ```
 
 #### ジョブ実行
@@ -309,6 +378,8 @@ $ conda deactivate
 ジョブスクリプト内で任意の仮想環境を有効にして実行します。
 
 ##### Grid ENgine
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -327,7 +398,12 @@ conda deactivate
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note 出力結果
 
 ```
 $ cat launch_python.sh
@@ -344,5 +420,8 @@ python tensorflow-testing.py
 conda deactivate
 $ sbatch launch_python.sh
 ```
+
+:::
+
 
 詳細は公式ページをご確認ください。 [Installing on Linux conda 4.10.3.post11+888309718 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
