@@ -11,6 +11,8 @@ Python processors are installed from the outset on the NIG supercomputer. You ca
 
 Python processors are installed from the outset on the NIG supercomputer. The procedure for checking the installed Python version and the installed packages is as follows.
 
+:::note Output
+
 ```
 $ python --version
 Python 3.10.12
@@ -23,6 +25,8 @@ pandas                                           1.3.5
 scikit-learn                                     0.23.2
 scipy                                            1.8.0
 ```
+
+:::
 
 
 ## Using a virtual environment such as venv, miniconda, etc.
@@ -41,6 +45,9 @@ To use a package or version that is not installed, set up a virtual Python envir
 
 `venv` is the official Pyhton tool for virtual environment. You need to use it to install and use packages that are not installed.
 
+
+:::note Output
+
 ```
 $ python -m venv ~/venv_p310
 $ source ~/venv_p310/bin/activate
@@ -48,16 +55,19 @@ $ python --version
 Python 3.10.12
 ```
 
+:::
+
+
 After you activate your virtual environment, use pip to install required libraries
 
 ```
-$ pip install torch
+pip install torch
 ```
 
 To terminate your virtual environment, use `deactivate`.
 
 ```
-$ deactivate
+deactivate
 ```
 
 #### Launch Python with Job scheduler
@@ -65,6 +75,8 @@ $ deactivate
 You need to run Python after you activate your virtual environment in your job script.
 
 ##### Grid Engine
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -82,7 +94,12 @@ deactivate
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -98,6 +115,9 @@ python tensorflow-testing.py
 deactivate
 $ sbatch launch_python.sh
 ```
+
+:::
+
 
 Refer to the official web page for the details [venv --- Create Virtual Envi](https://docs.python.org/ja/3/library/venv.html)
 
@@ -106,6 +126,9 @@ Refer to the official web page for the details [venv --- Create Virtual Envi](ht
 
 Basically, you need virtualenv in order to use Python2.
 
+
+:::note Output
+
 ```
 $ virtualenv -p python2.7 ~/p27
 $ source ~/p27/bin/activate
@@ -113,16 +136,19 @@ $ python --version
 Python 2.7.18
 ```
 
+:::
+
+
 After you activate your virtual environment, use pip to install required libraries.
 
 ```
-$ pip install torch
+pip install torch
 ```
 
 To terminate your virtual environment, use `deactivate`.
 
 ```
-$ deactivate
+deactivate
 ```
 
 #### Launch Python with Job scheduler
@@ -130,6 +156,8 @@ $ deactivate
 You need to run Python after you activate your virtual environment in your job script.
 
 ##### Grid Engine
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -147,7 +175,12 @@ deactivate
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -163,6 +196,9 @@ python tensorflow-testing.py
 deactivate
 $ sbatch launch_python.sh
 ```
+
+:::
+
 
 Refer to the official web page for the details [virtualenv User Guide](https://virtualenv.pypa.io/en/latest/user_guide.html).
 
@@ -173,14 +209,17 @@ You need to use pyenv to install and use the versions of Python that are not ins
 You can activate your virtual environment for all directories (global) or any given directory (local).
 
 ```
-$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-$ source ~/.bashrc
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 You need to confirme what versions of Python are available and you can install the required version.
+
+
+:::note Output
 
 ```
 $ pyenv install --list
@@ -193,7 +232,13 @@ Available versions:
 $ pyenv install 3.12.2
 ```
 
+:::
+
+
 After you install Python, you need to activate the version of Python. You can set global version and local version. The global version affects all directries and local version only affects the current directory.
+
+
+:::note Output
 
 ```
 $ pyenv global 3.12.1
@@ -202,10 +247,13 @@ $ python --version
 Python 3.12.2
 ```
 
+:::
+
+
 After you enter your virtual environment, use pip to install required libraries.
 
 ```
-$ pip install torch
+pip install torch
 ```
 
 #### Launch Python with Job scheduler
@@ -213,6 +261,8 @@ $ pip install torch
 You need to run Python after you move to your virtual environment in your job script.
 
 ##### Grid Engine
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -230,7 +280,12 @@ python tensorflow-testing.py
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -247,6 +302,9 @@ python tensorflow-testing.py
 $ sbatch launch_python.sh
 ```
 
+:::
+
+
 Refer to the official web page for the details [pyenv](https://github.com/pyenv/pyenv).
 
 
@@ -255,30 +313,39 @@ Refer to the official web page for the details [pyenv](https://github.com/pyenv/
 Miniconda is needed if you need to use a version of Python that is not installed on the sysytem and need to use packages that are not installed on the system and need to manage packages per virutal environment with the same version of Python.
 
 ```
-$ mkdir ~/miniconda3
-$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-$ sh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-$ rm -f ~/miniconda3/miniconda.sh
-$ ~/miniconda3/bin/conda init bash
-$ source ~/.bashrc
+mkdir ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+sh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -f ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+source ~/.bashrc
 ```
 
 You need to set the conda-forge repository to the default repository and confirm whether it is added to `.condarc`.
 
 ```
-$ conda config --add channels conda-forge
-$ conda config --set channel_priority strict
-$ vim ~/.condarc
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+vim ~/.condarc
 ```
 
 The `base` environment starts by default. It may be safe to disable this behavior to prevent you from setting up unintended environment.
+
+
+:::note Output
 
 ```
 (base) $ conda deactivate
 $ conda config --set auto_activate_base false
 ```
 
+:::
+
+
 Confirm what versions of Python are available and create a virtual environment with the required version of Python.
+
+
+:::note Output
 
 ```
 $ conda search -f python
@@ -294,16 +361,19 @@ $ python --version
 Python 3.12.0
 ```
 
+:::
+
+
 Install required packages by using `conda install`.
 
 ```
-$ conda install pytorch
+conda install pytorch
 ```
 
 To terminate your virtual environmnet, use `deactivate`.
 
 ```
-$ conda deactivate
+conda deactivate
 ```
 
 #### Launch Python with Job scheduler
@@ -311,6 +381,8 @@ $ conda deactivate
 You need to run Python after you activate your virtual environment in your job script.
 
 ##### Grid Engine
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -329,7 +401,12 @@ conda deactivate
 $ qsub launch_python.sh
 ```
 
+:::
+
+
 ##### Slurm
+
+:::note Output
 
 ```
 $ cat launch_python.sh
@@ -346,5 +423,8 @@ python tensorflow-testing.py
 conda deactivate
 $ sbatch launch_python.sh
 ```
+
+:::
+
 
 Refer to the official web page for the details [Installing on Linux conda 4.10.3.post11+888309718 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html).
