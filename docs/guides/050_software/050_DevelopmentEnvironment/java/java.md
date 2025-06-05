@@ -78,54 +78,215 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 `sdk list java`コマンドを実行することによりインストール可能な Java 処理系のリストが表示されます。
 
 ```
+$ sdk list java
 ================================================================================
 Available Java Versions for Linux 64bit
 ================================================================================
  Vendor        | Use | Version      | Dist    | Status     | Identifier
 --------------------------------------------------------------------------------
- Corretto      |     | 21.0.1       | amzn    |            | 21.0.1-amzn
-               |     | 17.0.9       | amzn    |            | 17.0.9-amzn
-               |     | 11.0.21      | amzn    |            | 11.0.21-amzn
-               |     | 8.0.392      | amzn    |            | 8.0.392-amzn
- Dragonwell    |     | 17.0.9       | albba   |            | 17.0.9-albba
-               |     | 11.0.20      | albba   |            | 11.0.20-albba
-               |     | 8.0.382      | albba   |            | 8.0.382-albba
- Gluon         |     | 22.1.0.1.r17 | gln     |            | 22.1.0.1.r17-gln
-               |     | 22.1.0.1.r11 | gln     |            | 22.1.0.1.r11-gln
- GraalVM CE    |     | 21.0.1       | graalce |            | 21.0.1-graalce
-               |     | 17.0.9       | graalce |            | 17.0.9-graalce
- GraalVM Oracle|     | 21.0.1       | graal   |            | 21.0.1-graal
-               |     | 17.0.9       | graal   |            | 17.0.9-graal
- Java.net      |     | 23.ea.3      | open    |            | 23.ea.3-open
-               |     | 23.ea.2      | open    |            | 23.ea.2-open
-               |     | 23.ea.1      | open    |            | 23.ea.1-open
-               |     | 22.ea.29     | open    |            | 22.ea.29-open
-               |     | 22.ea.28     | open    |            | 22.ea.28-open
-               |     | 22.ea.27     | open    |            | 22.ea.27-open
-               |     | 22.ea.26     | open    |            | 22.ea.26-open
-               |     | 21.ea.35     | open    |            | 21.ea.35-open
- JetBrains     |     | 17.0.9       | jbr     |            | 17.0.9-jbr
-               |     | 11.0.14.1    | jbr     |            | 11.0.14.1-jbr
- Liberica      |     | 21.0.1.crac  | librca  |            | 21.0.1.crac-librca
-               |     | 21.0.1.fx    | librca  |            | 21.0.1.fx-librca
-               |     | 21.0.1       | librca  |            | 21.0.1-librca
-               |     | 17.0.9.crac  | librca  |            | 17.0.9.crac-librca
-               |     | 17.0.9.fx    | librca  |            | 17.0.9.fx-librca
-               |     | 17.0.9       | librca  |            | 17.0.9-librca
-               |     | 11.0.21.fx   | librca  |            | 11.0.21.fx-librca
-               |     | 11.0.21      | librca  |            | 11.0.21-librca
-               |     | 8.0.392.fx   | librca  |            | 8.0.392.fx-librca
-               |     | 8.0.392      | librca  |            | 8.0.392-librca
- Liberica NIK  |     | 23.1.1.r21   | nik     |            | 23.1.1.r21-nik
-               |     | 22.3.4.r17   | nik     |            | 22.3.4.r17-nik
-               |     | 22.3.4.r11   | nik     |            | 22.3.4.r11-nik
- Mandrel       |     | 23.1.1.r21   | mandrel |            | 23.1.1.r21-mandrel
- Microsoft     |     | 21.0.1       | ms      |            | 21.0.1-ms
-               |     | 17.0.9       | ms      |            | 17.0.9-ms
-               |     | 11.0.21      | ms      |            | 11.0.21-ms
- Oracle        |     | 21.0.1       | oracle  |            | 21.0.1-oracle
-               |     | 17.0.9       | oracle  |            | 17.0.9-oracle
-... (以下略)
+ Corretto      |     | 24.0.1       | amzn    |            | 24.0.1-amzn         
+               |     | 24           | amzn    |            | 24-amzn             
+               |     | 23.0.2       | amzn    |            | 23.0.2-amzn         
+               |     | 21.0.7       | amzn    |            | 21.0.7-amzn         
+               |     | 21.0.6       | amzn    |            | 21.0.6-amzn         
+               |     | 17.0.15      | amzn    |            | 17.0.15-amzn        
+               |     | 17.0.14      | amzn    |            | 17.0.14-amzn        
+               |     | 11.0.27      | amzn    |            | 11.0.27-amzn        
+               |     | 11.0.26      | amzn    |            | 11.0.26-amzn        
+               |     | 8.0.452      | amzn    |            | 8.0.452-amzn        
+               |     | 8.0.442      | amzn    |            | 8.0.442-amzn        
+ Dragonwell    |     | 21.0.6       | albba   |            | 21.0.6-albba        
+               |     | 17.0.14      | albba   |            | 17.0.14-albba       
+               |     | 17.0.13      | albba   |            | 17.0.13-albba       
+               |     | 11.0.26      | albba   |            | 11.0.26-albba       
+               |     | 11.0.25      | albba   |            | 11.0.25-albba       
+               |     | 8.0.442      | albba   |            | 8.0.442-albba       
+               |     | 8.0.432      | albba   |            | 8.0.432-albba       
+ Gluon         |     | 22.1.0.1.r17 | gln     |            | 22.1.0.1.r17-gln    
+               |     | 22.1.0.1.r11 | gln     |            | 22.1.0.1.r11-gln    
+ GraalVM CE    |     | 24.0.1       | graalce |            | 24.0.1-graalce      
+               |     | 24           | graalce |            | 24-graalce          
+               | >>> | 23.0.2       | graalce | installed  | 23.0.2-graalce      
+               |     | 21.0.2       | graalce |            | 21.0.2-graalce      
+               |     | 17.0.9       | graalce |            | 17.0.9-graalce      
+ GraalVM Oracle|     | 25.ea.22     | graal   |            | 25.ea.22-graal      
+               |     | 25.ea.21     | graal   |            | 25.ea.21-graal      
+               |     | 25.ea.20     | graal   |            | 25.ea.20-graal      
+               |     | 25.ea.19     | graal   |            | 25.ea.19-graal      
+               |     | 25.ea.18     | graal   |            | 25.ea.18-graal      
+               |     | 25.ea.17     | graal   |            | 25.ea.17-graal      
+               |     | 25.ea.16     | graal   |            | 25.ea.16-graal      
+               |     | 25.ea.15     | graal   |            | 25.ea.15-graal      
+               |     | 25.ea.14     | graal   |            | 25.ea.14-graal      
+               |     | 25.ea.13     | graal   |            | 25.ea.13-graal      
+               |     | 25.ea.8      | graal   |            | 25.ea.8-graal       
+               |     | 24.ea.32     | graal   |            | 24.ea.32-graal      
+               |     | 24.0.1       | graal   |            | 24.0.1-graal        
+               |     | 24           | graal   |            | 24-graal            
+               |     | 23.0.2       | graal   |            | 23.0.2-graal        
+               |     | 21.0.7       | graal   |            | 21.0.7-graal        
+               |     | 21.0.6       | graal   |            | 21.0.6-graal        
+               |     | 17.0.12      | graal   |            | 17.0.12-graal       
+ Huawei        |     | 21.0.6       | bisheng |            | 21.0.6-bisheng      
+               |     | 17.0.14      | bisheng |            | 17.0.14-bisheng     
+               |     | 11.0.26      | bisheng |            | 11.0.26-bisheng     
+               |     | 8.0.442      | bisheng |            | 8.0.442-bisheng     
+ Java.net      |     | 25.ea.16     | open    |            | 25.ea.16-open       
+               |     | 25.ea.15     | open    |            | 25.ea.15-open       
+               |     | 25.ea.14     | open    |            | 25.ea.14-open       
+               |     | 25.ea.10     | open    |            | 25.ea.10-open       
+               |     | 24.ea.36     | open    |            | 24.ea.36-open       
+               |     | 24           | open    |            | 24-open             
+               |     | 23.0.1       | open    |            | 23.0.1-open         
+               |     | 21.0.2       | open    |            | 21.0.2-open         
+ JetBrains     |     | 21.0.7       | jbr     |            | 21.0.7-jbr          
+               |     | 21.0.6       | jbr     |            | 21.0.6-jbr          
+               |     | 17.0.14      | jbr     |            | 17.0.14-jbr         
+               |     | 11.0.14.1    | jbr     |            | 11.0.14.1-jbr       
+ Liberica      |     | 24.fx        | librca  |            | 24.fx-librca        
+               |     | 24.0.1.fx    | librca  |            | 24.0.1.fx-librca    
+               |     | 24.0.1       | librca  |            | 24.0.1-librca       
+               |     | 24           | librca  |            | 24-librca           
+               |     | 23.0.2.fx    | librca  |            | 23.0.2.fx-librca    
+               |     | 23.0.2       | librca  |            | 23.0.2-librca       
+               |     | 21.0.7.crac  | librca  |            | 21.0.7.crac-librca  
+               |     | 21.0.7.fx    | librca  |            | 21.0.7.fx-librca    
+               |     | 21.0.7       | librca  |            | 21.0.7-librca       
+               |     | 21.0.6.crac  | librca  |            | 21.0.6.crac-librca  
+               |     | 21.0.6.fx    | librca  |            | 21.0.6.fx-librca    
+               |     | 21.0.6       | librca  |            | 21.0.6-librca       
+               |     | 17.0.15.crac | librca  |            | 17.0.15.crac-librca 
+               |     | 17.0.15.fx   | librca  |            | 17.0.15.fx-librca   
+               |     | 17.0.15      | librca  |            | 17.0.15-librca      
+               |     | 17.0.14.crac | librca  |            | 17.0.14.crac-librca 
+               |     | 17.0.14.fx   | librca  |            | 17.0.14.fx-librca   
+               |     | 17.0.14      | librca  |            | 17.0.14-librca      
+               |     | 11.0.27.fx   | librca  |            | 11.0.27.fx-librca   
+               |     | 11.0.27      | librca  |            | 11.0.27-librca      
+               |     | 11.0.26.fx   | librca  |            | 11.0.26.fx-librca   
+               |     | 11.0.26      | librca  |            | 11.0.26-librca      
+               |     | 8.0.452.fx   | librca  |            | 8.0.452.fx-librca   
+               |     | 8.0.452      | librca  |            | 8.0.452-librca      
+               |     | 8.0.442.fx   | librca  |            | 8.0.442.fx-librca   
+               |     | 8.0.442      | librca  |            | 8.0.442-librca      
+ Liberica NIK  |     | 24.2.1.r24   | nik     |            | 24.2.1.r24-nik      
+               |     | 24.2.1.fx    | nik     |            | 24.2.1.fx-nik       
+               |     | 24.1.2.r23   | nik     |            | 24.1.2.r23-nik      
+               |     | 23.1.7.r21   | nik     |            | 23.1.7.r21-nik      
+               |     | 23.1.7.fx    | nik     |            | 23.1.7.fx-nik       
+               |     | 23.1.6.r21   | nik     |            | 23.1.6.r21-nik      
+               |     | 23.1.6.fx    | nik     |            | 23.1.6.fx-nik       
+               |     | 23.0.8.r17   | nik     |            | 23.0.8.r17-nik      
+               |     | 23.0.8.fx    | nik     |            | 23.0.8.fx-nik       
+               |     | 23.0.7.r17   | nik     |            | 23.0.7.r17-nik      
+               |     | 23.0.7.fx    | nik     |            | 23.0.7.fx-nik       
+               |     | 22.3.5.r17   | nik     |            | 22.3.5.r17-nik      
+               |     | 22.3.5.r11   | nik     |            | 22.3.5.r11-nik      
+ Mandrel       |     | 24.2.r24     | mandrel |            | 24.2.r24-mandrel    
+               |     | 24.2.1.r24   | mandrel |            | 24.2.1.r24-mandrel  
+               |     | 24.1.2.r23   | mandrel |            | 24.1.2.r23-mandrel  
+               |     | 24.0.2.r22   | mandrel |            | 24.0.2.r22-mandrel  
+               |     | 23.1.7.r21   | mandrel |            | 23.1.7.r21-mandrel  
+               |     | 23.1.6.r21   | mandrel |            | 23.1.6.r21-mandrel  
+               |     | 23.0.6.r17   | mandrel |            | 23.0.6.r17-mandrel  
+               |     | 22.3.5.r17   | mandrel |            | 22.3.5.r17-mandrel  
+ Microsoft     |     | 21.0.7       | ms      |            | 21.0.7-ms           
+               |     | 21.0.6       | ms      |            | 21.0.6-ms           
+               |     | 17.0.15      | ms      |            | 17.0.15-ms          
+               |     | 17.0.14      | ms      |            | 17.0.14-ms          
+               |     | 11.0.27      | ms      |            | 11.0.27-ms          
+               |     | 11.0.26      | ms      |            | 11.0.26-ms          
+ Oracle        |     | 24.0.1       | oracle  |            | 24.0.1-oracle       
+               |     | 24           | oracle  |            | 24-oracle           
+               |     | 23.0.2       | oracle  |            | 23.0.2-oracle       
+               |     | 22.0.2       | oracle  |            | 22.0.2-oracle       
+               |     | 21.0.7       | oracle  |            | 21.0.7-oracle       
+               |     | 21.0.6       | oracle  |            | 21.0.6-oracle       
+               |     | 17.0.12      | oracle  |            | 17.0.12-oracle      
+ SapMachine    |     | 24.0.1       | sapmchn |            | 24.0.1-sapmchn      
+               |     | 24           | sapmchn |            | 24-sapmchn          
+               |     | 23.0.2       | sapmchn |            | 23.0.2-sapmchn      
+               |     | 21.0.7       | sapmchn |            | 21.0.7-sapmchn      
+               |     | 21.0.6       | sapmchn |            | 21.0.6-sapmchn      
+               |     | 17.0.15      | sapmchn |            | 17.0.15-sapmchn     
+               |     | 17.0.14      | sapmchn |            | 17.0.14-sapmchn     
+               |     | 11.0.27      | sapmchn |            | 11.0.27-sapmchn     
+               |     | 11.0.26      | sapmchn |            | 11.0.26-sapmchn     
+ Semeru        |     | 21.0.7       | sem     |            | 21.0.7-sem          
+               |     | 21.0.6       | sem     |            | 21.0.6-sem          
+               |     | 17.0.15      | sem     |            | 17.0.15-sem         
+               |     | 17.0.14      | sem     |            | 17.0.14-sem         
+               |     | 11.0.27      | sem     |            | 11.0.27-sem         
+               |     | 11.0.26      | sem     |            | 11.0.26-sem         
+               |     | 8.0.452      | sem     |            | 8.0.452-sem         
+               |     | 8.0.442      | sem     |            | 8.0.442-sem         
+ Temurin       |     | 24.0.1       | tem     |            | 24.0.1-tem          
+               |     | 24           | tem     |            | 24-tem              
+               |     | 23.0.2       | tem     |            | 23.0.2-tem          
+               |     | 21.0.7       | tem     |            | 21.0.7-tem          
+               |     | 21.0.6       | tem     |            | 21.0.6-tem          
+               |     | 17.0.15      | tem     |            | 17.0.15-tem         
+               |     | 17.0.14      | tem     |            | 17.0.14-tem         
+               |     | 11.0.27      | tem     |            | 11.0.27-tem         
+               |     | 11.0.26      | tem     |            | 11.0.26-tem         
+               |     | 8.0.452      | tem     |            | 8.0.452-tem         
+               |     | 8.0.442      | tem     |            | 8.0.442-tem         
+ Tencent       |     | 21.0.7       | kona    |            | 21.0.7-kona         
+               |     | 21.0.6       | kona    |            | 21.0.6-kona         
+               |     | 21.0.5       | kona    |            | 21.0.5-kona         
+               |     | 17.0.15      | kona    |            | 17.0.15-kona        
+               |     | 17.0.14      | kona    |            | 17.0.14-kona        
+               |     | 17.0.13      | kona    |            | 17.0.13-kona        
+               |     | 11.0.27      | kona    |            | 11.0.27-kona        
+               |     | 11.0.26      | kona    |            | 11.0.26-kona        
+               |     | 11.0.25      | kona    |            | 11.0.25-kona        
+               |     | 8.0.452      | kona    |            | 8.0.452-kona        
+               |     | 8.0.442      | kona    |            | 8.0.442-kona        
+               |     | 8.0.432      | kona    |            | 8.0.432-kona        
+ Trava         |     | 11.0.15      | trava   |            | 11.0.15-trava       
+               |     | 8.0.282      | trava   |            | 8.0.282-trava       
+ Zulu          |     | 24.crac      | zulu    |            | 24.crac-zulu        
+               |     | 24.fx        | zulu    |            | 24.fx-zulu          
+               |     | 24.0.1.crac  | zulu    |            | 24.0.1.crac-zulu    
+               |     | 24.0.1.fx    | zulu    |            | 24.0.1.fx-zulu      
+               |     | 24.0.1       | zulu    |            | 24.0.1-zulu         
+               |     | 24           | zulu    |            | 24-zulu             
+               |     | 23.0.2.fx    | zulu    |            | 23.0.2.fx-zulu      
+               |     | 23.0.2       | zulu    |            | 23.0.2-zulu         
+               |     | 23.0.1.crac  | zulu    |            | 23.0.1.crac-zulu    
+               |     | 21.0.7.crac  | zulu    |            | 21.0.7.crac-zulu    
+               |     | 21.0.7.fx    | zulu    |            | 21.0.7.fx-zulu      
+               |     | 21.0.7       | zulu    |            | 21.0.7-zulu         
+               |     | 21.0.6.crac  | zulu    |            | 21.0.6.crac-zulu    
+               |     | 21.0.6.fx    | zulu    |            | 21.0.6.fx-zulu      
+               |     | 21.0.6       | zulu    |            | 21.0.6-zulu         
+               |     | 21.0.5.crac  | zulu    |            | 21.0.5.crac-zulu    
+               |     | 17.0.15.crac | zulu    |            | 17.0.15.crac-zulu   
+               |     | 17.0.15.fx   | zulu    |            | 17.0.15.fx-zulu     
+               |     | 17.0.15      | zulu    |            | 17.0.15-zulu        
+               |     | 17.0.14.crac | zulu    |            | 17.0.14.crac-zulu   
+               |     | 17.0.14.fx   | zulu    |            | 17.0.14.fx-zulu     
+               |     | 17.0.14      | zulu    |            | 17.0.14-zulu        
+               |     | 17.0.13.crac | zulu    |            | 17.0.13.crac-zulu   
+               |     | 11.0.27.fx   | zulu    |            | 11.0.27.fx-zulu     
+               |     | 11.0.27      | zulu    |            | 11.0.27-zulu        
+               |     | 11.0.26.fx   | zulu    |            | 11.0.26.fx-zulu     
+               |     | 11.0.26      | zulu    |            | 11.0.26-zulu        
+               |     | 8.0.452.fx   | zulu    |            | 8.0.452.fx-zulu     
+               |     | 8.0.452      | zulu    |            | 8.0.452-zulu        
+               |     | 8.0.442.fx   | zulu    |            | 8.0.442.fx-zulu     
+               |     | 8.0.442      | zulu    |            | 8.0.442-zulu        
+               |     | 7.0.352      | zulu    |            | 7.0.352-zulu        
+               |     | 6.0.119      | zulu    |            | 6.0.119-zulu        
+================================================================================
+Omit Identifier to install default version 21.0.7-tem:
+    $ sdk install java
+Use TAB completion to discover available versions
+    $ sdk install java [TAB]
+Or install a specific version by Identifier:
+    $ sdk install java 21.0.7-tem
+Hit Q to exit this list view
+================================================================================
 ```
 
 リストの表示をやめてプロンプトに戻るには`q`キーを押します。
@@ -133,6 +294,13 @@ Available Java Versions for Linux 64bit
 
 ```
 sdk list java | less -X
+```
+
+あるいは、`less`ページャを使わないようにするには、`PAGER`環境変数に`cat`を設定します。
+
+```
+export PAGER=cat
+sdk list java
 ```
 
 
