@@ -5,7 +5,9 @@ title: ISMS Certificate
 
 
 Division of High Performance Computing and Division of Internal Affairs in Bioinformation and DDBJ Center at National Institute of Genetics has received ISMS (ISO27001:2013, Information Security Management System) certification for compliance with ISO27001 standards on November 19th, 2023 
-within the scope of the construction and operation of the personal genome analysis section of the NIG supercomputer (ISO27001: 2013, Information Security Management System)
+within the scope of the construction and operation of the personal genome analysis section of the NIG supercomputer (ISO27001: 2013, Information Security Management System). The center has also received ISO27001:2022 certification on December 15th, 2024.
+
+
 
 
 <p>
