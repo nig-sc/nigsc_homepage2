@@ -1,121 +1,7 @@
 ---
-id: gpu_slurm
-title: 個人ゲノム解析区画 Slurm GPU ノード専用キューの利用方法
+id: Parabricks
+title: GPUノード上でのParabricksの使い方
 ---
-
-
-
-## GPUを使用するジョブのGrid Engineへの投入方法 {#submit-job-to-grid-engine}
-
-
-GPUを使用するジョブを投入する場合、`-l gpu`オプションの他`-l cuda=n`(nは使用するGPU数を指定。上限は4)オプションを付与します。"-l cuda=n"オプションを付与しない場合、ジョブはgpu.qに投入されますが、GPUは使用できません。
-
-例えば2つのGPUを使用する場合、以下のように指定します。
-
-```
-[username@at027 ~]$ qsub -l gpu -l cuda=2 gputest.sh
-Your job 10000 ("gputest.sh") has been submitted
-```
-
-GPUはジョブから、`cuda=n`で指定した数だけ参照可能です。
-
-```
-[username@at027 ~]$ cat gputest.sh
-#!/bin/bash
-#$ -S /bin/bash
-
-nvidia-smi
-[username@at027 ~]$ qsub -l gpu -l cuda=1 gputest.sh 
-Your job 10001 ("gputest.sh") has been submitted
-[username@at027 ~]$ qsub -l gpu -l cuda=2 gputest.sh 
-Your job 10002 ("gputest.sh") has been submitted
-[username@at027 ~]$ qsub -l gpu -l cuda=4 gputest.sh 
-Your job 10003 ("gputest.sh") has been submitted
-[username@at027 ~]$ cat gputesh.sh.o10001
-Wed Mar  4 20:00:00 2019
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 396.26                 Driver Version: 410.66                    |
-|-------------------------------|----------------------|----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|===============================+======================+======================|
-|   0  Tesla V100-SXM2...  On   | 00000000:15:00.0 Off |                    0 |
-| N/A   32C    P0    39W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-[username@at027 ~]$ cat gputesh.sh.o10002
-Wed Mar  4 20:00:00 2019
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 396.26                 Driver Version: 410.66                    |
-|-------------------------------|----------------------|----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|===============================+======================+======================|
-|   0  Tesla V100-SXM2...  On   | 00000000:15:00.0 Off |                    0 |
-| N/A   29C    P0    39W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-|   1  Tesla V100-SXM2...  On   | 00000000:16:00.0 Off |                    0 |
-| N/A   30C    P0    39W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-[username@at027 ~]$ cat gputesh.sh.o10003
-Wed Mar  4 20:00:00 2019
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 396.26                 Driver Version: 410.66                    |
-|-------------------------------|----------------------|----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|===============================+======================+======================|
-|   0  Tesla V100-SXM2...  On   | 00000000:15:00.0 Off |                    0 |
-| N/A   32C    P0    38W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-|   1  Tesla V100-SXM2...  On   | 00000000:16:00.0 Off |                    0 |
-| N/A   32C    P0    39W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-|   2  Tesla V100-SXM2...  On   | 00000000:3A:00.0 Off |                    0 |
-| N/A   30C    P0    39W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-|   3  Tesla V100-SXM2...  On   | 00000000:3B:00.0 Off |                    0 |
-| N/A   31C    P0    37W / 300W |      0MiB / 16130MiB |      0%      Default |
-+-------------------------------|----------------------|----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                       GPU Memory |
-|  GPU       PID   Type   Process name                             Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-```
-
-
-
-## 概要 {#overview}
-
-遺伝研スパコン個人ゲノム解析区画では Slurm リソーススケジューラ配下で管理した GPU ノードに対してジョブを投入することができます。
-
-この Slrum クラスタは Parabricks を使用するために GPU ノードの全 GPU (4 つ)をすべて使う想定となりますので同時に同じ GPU ノードに別のユーザのジョブが入ることはありません。
-
-
-![](pg_gpu_slurm.png)
-
-## 利用の準備 {#prepare-for-use}
-
-1. 課金サービスになりますので利用計画表を提出してください。
-2. GPU 用 Slurm 計算ノードにユーザホームの作成(シンボリック)を行いますので、利用されるおおよその期間を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。
-3. Parabrick を rootless docker での実行を希望する場合、
-　subuid, subgid の割り当てを実施する必要がありますので、その旨を利用計画表の「利用目的等」に記載いただくか、メールでお知らせください。（※Apptainer(Singularity) にて利用される場合は設定不要です。）
 
 
 ## Apptainer による利用手順 {#usage-with-apptainer}
@@ -129,7 +15,7 @@ Parabricks イメージファイルはユーザが用意したものか、遺伝
 ジョブを投入可能なフロントサーバー at022vm02 を用意しています。
 
 前提条件
-* gwa.ddbj.nig.ac.jp にログイン済みである。
+- gwa.ddbj.nig.ac.jp にログイン済みである。
 
 Slurm GPU キュー用インタラクティブノードへログインします。
 ```
@@ -153,7 +39,7 @@ $ ls
 ジョブスクリプトを作成します。
 本手順では`test.sh`という名前のスクリプトを以下の内容で作成します。
 
-* ジョブスクリプト`test.sh`の記載内容
+- ジョブスクリプト`test.sh`の記載内容
 ```
 #!/bin/bash
 #
@@ -201,8 +87,8 @@ $ cat res.txt
 $ ls parabricks_sample/
 Data   Ref   fq2bam_output.bam   fq2bam_output.bam.bai   fq2bam_output_chrs.txt
 ```
-* res.txt … 出力ログ
-* fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
+- res.txt … 出力ログ
+- fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
 
 
 ## Rootless Docker による利用手順 {#usage-rootless-docker}
@@ -221,8 +107,8 @@ Parabricks のコンテナを実行するために本手順を実施します。
 
 
 前提条件
-* gwa.ddbj.nig.ac.jp にログイン済みである。
-* Rootless Docker を起動するサーバは igt009 と igt016 の 2 台とする。
+- gwa.ddbj.nig.ac.jp にログイン済みである。
+- Rootless Docker を起動するサーバは igt009 と igt016 の 2 台とする。
 
 
 Rootless Docker の起動時に必要となるディレクトリ、ファイルを Lustre 上の自身のホームディレクトリに作成します。
@@ -270,8 +156,8 @@ $ exit
 ジョブを投入可能なフロントサーバー at022vm02 を用意しています。
 
 前提条件
-* gwa.ddbj.nig.ac.jp にログイン済みである。
-* Parabricks を実行する場合、前述の手順で Rootless Docker を起動済みであること。
+- gwa.ddbj.nig.ac.jp にログイン済みである。
+- Parabricks を実行する場合、前述の手順で Rootless Docker を起動済みであること。
 
 Slurm GPU キュー用インタラクティブノードへログインします。
 ```
@@ -297,7 +183,7 @@ $ ls
 ※「source /etc/profile.d/rootless-docker.sh」は必要な環境変数を定義しているので、必ず記入してください。
 
 
-* ジョブスクリプト`test.sh`の記載内容
+- ジョブスクリプト`test.sh`の記載内容
 ```
 #!/bin/bash
 #
@@ -342,6 +228,6 @@ $ cat res.txt
 $ ls parabricks_sample/
 Data   Ref   fq2bam_output.bam   fq2bam_output.bam.bai   fq2bam_output_chrs.txt
 ```
-* res.txt … 出力ログ
-* fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
+- res.txt … 出力ログ
+- fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
 
