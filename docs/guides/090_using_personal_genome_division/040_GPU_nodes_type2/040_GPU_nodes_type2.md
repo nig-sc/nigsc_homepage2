@@ -1,6 +1,6 @@
 ---
 id: GPU_nodes_type2
-title: アクセラレータ最適化ノード Type 2 (NVIDIA L40Sノード)の使い方
+title: アクセラレータ最適化ノード Type 2 (L40Sノード)の使い方
 ---
 
 アクセラレータ最適化ノード Type 2は、NVIDIA L40Sを1台に8本搭載した計算ノードです。
