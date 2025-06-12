@@ -10,11 +10,16 @@ description: New 20250219
 - [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-2 (Amended on Match 10, 2025)](tables_of_nigsc_use_policy_2025.pdf)
 
 
----
 
 ## Price list (Revised on March 10, 2025)
 
 Terms of Use for Supercomputer Systems of the National Institute of Genetics, the Research Organization of Information and Systems
+
+
+:::info Reference
+For details about the configuration of the NIG supercomputer, such as the types of compute nodes and storage systems, please refer to [the NIG Supercomputer (2025) Hardware page](/guides/hardware/hardware2025/).
+:::
+
 
 
 ### **Appendix 1（Pertaining to Article 12）**

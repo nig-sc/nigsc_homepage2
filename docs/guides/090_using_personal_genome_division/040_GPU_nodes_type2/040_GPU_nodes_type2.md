@@ -27,7 +27,7 @@ AI用に設計されたGPUに比べてメモリサイズが小さいですが、
 :::
 
 
-## インタラクティブノードへのログイン
+## インタラクティブノードへのログイン {#logging-ininteractive-node}
 
 
 ![](pg_gpu_slurm.png)
