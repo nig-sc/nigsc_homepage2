@@ -1,6 +1,6 @@
 ---
 id: pg_login
-title: "How to Login（The Personal Genome Analysis division）"
+title: "How to Log In to the Gateway Using SSL-VPN (The Personal Genome Analysis Division）"
 ---
 
 

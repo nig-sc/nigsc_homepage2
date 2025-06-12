@@ -34,7 +34,7 @@ example.sh biotools_list.txt
 - Unlike AGE, Slurm, by default, runs jobs in the current working directory where the sbatch command was executed. If you want to run a job in a different directory, please use the `--chdir` option to specify it.
 - Unlike AGE, Slurm, by default, inherits all shell environment variables at the time of sbatch execution to the job's startup shell. If you want to inherit only specific environment variables (or not inherit them), please use the `--export` option. Please refer to the online manual for more details.
 - `-p partition_name`: Specifies the type of queue (partition) to submit the batch job to.
-  - For the personal genome analysis division, the available partition configuration depends on the system configuration applied for at the time of application. For details, please see the section on [Slurm Partition Configuration](/guides/using_personal_genome_division/pg_slurm_partition/).
+  - For the personal genome analysis division, the available partition configuration depends on the system configuration applied for at the time of application. For details, please see [the section "Logging in to Interactive Nodes" on the Using the Accelerator-optimised node Type 2 (L40S Node) page](/guides/using_personal_genome_division/GPU_nodes_type2/#logging-ininteractive-node).
 - `-t 0-00:10:00`: The execution time limit for the batch job.
   - The batch job will be forcibly terminated if it exceeds this execution time limit.
   - It is safer to write a slightly longer execution time, but if it is too long, scheduling may become difficult and the job may not run. In that case, consider specifying `--time-min` in combination.
