@@ -30,7 +30,7 @@ While its memory capacity is smaller compared to GPUs designed specifically for 
 :::
 
 
-## Logging in to Interactive Nodes
+## Logging in to Interactive Nodes {#logging-ininteractive-node}
 
 
 ![](pg_gpu_slurm.png)
@@ -77,7 +77,7 @@ ssh at022vm02
 
 
 
-## ジョブのSlurmへの投入方法 {#submit-job-to-slurm}
+## Submitting Jobs to Slurm {#submit-job-to-slurm}
 
 
 When submitting a job that uses GPUs, please include the `--partition=l40s` option along with the `--gres=gpu:n` option, where `n` specifies the number of GPUs to use (up to a maximum of 4).

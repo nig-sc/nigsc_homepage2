@@ -25,4 +25,4 @@ For more information on the usage plan table and price list, refer to the follow
 
 Please refer to the following link for details on how to use this service.
 
-- [How to use Slurm GPU queue of Personal genome analysis division](/guides/using_personal_genome_division/gpu_slurm)
+- [Using the Accelerator-optimised node Type 2 (L40S Node)](/guides/using_personal_genome_division/GPU_nodes_type2/)
