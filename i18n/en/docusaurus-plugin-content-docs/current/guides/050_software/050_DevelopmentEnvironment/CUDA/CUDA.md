@@ -15,6 +15,6 @@ Even if you are not conducting personal genome analysis, please create an accoun
 
 - For information on how to use GPU nodes in the personal genome analysis division, please see [here](/guides/using_personal_genome_division/GPU_nodes_type2/).
 - All usage of the personal genome analysis division is subject to charges. Please submit a usage plan.
-    - [About the usage fees](/application/terms_and_policies/terms_of_use_2025/#price-list-revised-on-2025)
+    - [About the usage fees](/application/terms_and_policies/terms_of_use_2025/#price-list-revised-on-march-10-2025)
 :::
 
