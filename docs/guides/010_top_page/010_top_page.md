@@ -117,7 +117,8 @@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
 ## 重要なお知らせ {#featured-news}
 
-- [(復旧) 2025年5月22日(木) 一般解析区画のslurm障害発生のお知らせ](/blog/2025-05-22-Slurm_ga_maintenance) (2025.05.22) ＼ &#x1F195; ／
+- [東京大学大学院農学生命科学研究科水圏生物科学専攻水圏生物工学研究室の吉武和敏先生により、PortablePipelineが新スパコン対応になりました](/advanced_guides/topics/advanced_guide_2025/#portablepipeline) (2025.06.05) ＼ &#x1F195; ／
+- [(復旧) 2025年5月22日(木) 一般解析区画のslurm障害発生のお知らせ](/blog/2025-05-22-Slurm_ga_maintenance) (2025.05.22)
 - [(終了) 2025年5月24日(水) SINET6への切替作業による通信断のお知らせ](/blog/2025-05-24-network) (2025.04.10)
 - [2025年4月7日(月)停電の発生について](/blog/2025-04-07-power-outage) (2025.04.07)
 - [遺伝研スパコンからの重要なお知らせ : 2024年第3期(12～3月)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (2025.02.10) 
@@ -138,9 +139,9 @@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
 
 
-## 2024 年度の定期メンテナンス等 {#2024-annual-maintenance}
+## 2025 年度の定期メンテナンス等 {#2025-annual-maintenance}
 
-[2024年度の定期メンテナンスは、2024年12月13日-12月19日に行いました。](/blog/2024-12-13-scheduled-maintenance)
+2025年度の定期メンテナンスは、2025年11月ごろを予定しています。
 
 
 ## 2022 年 5 月 13 日(金) 個人ゲノム解析区画および一般解析区画大規模ユーザのアカウントの新規登録受付の一時停止 {#registration-suspension}
