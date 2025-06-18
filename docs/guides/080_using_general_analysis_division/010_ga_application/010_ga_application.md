@@ -4,16 +4,6 @@ title: "利用の準備(一般解析区画)"
 ---
 
 
-
-## ユーザーの計算機の用意  {#prepare-users-computer}
-
-遺伝研スパコン個人ゲノム解析区画は（一般解析区画と同様）SSH クライアントおよび Web ブラウザが動作する計算機があれば利用できます。 16 GB 以上のメインメモリを持った Windows, Mac, Linux の計算機を推奨します。
-
-- Mac, Linux については、標準のターミナルエミュレータを使ってアクセス利用可能です。
-- Windows については、PowerShell の SSH クライアントまたは Windows Subsystem for Linux version 2(WSL2) 等により、アクセス可能です。
-
-
-
 ## アカウントの新規登録から利用開始までの流れ {#steps-from-application-to-start}
 
 ユーザーアカウント発行基準につきましては、[「ユーザーアカウント発行基準」](/application/terms_and_policies/user_account_issurance_criteria)をご参照下さい。
