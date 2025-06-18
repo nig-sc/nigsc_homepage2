@@ -4,15 +4,6 @@ title: "Preparation for use (The General Analysis division)"
 ---
 
 
-## Preparing the User's Computer {#prepare-users-computer}
-
-The personal genome analysis division of the NIG supercomputer (like the general analysis division) can be accessed from any computer that supports an SSH client and a web browser. A computer running Windows, macOS, or Linux with at least 16 GB of main memory is recommended.
-
-- For macOS and Linux, you can access the system using the standard terminal emulator.
-- For Windows, access is possible using an SSH client via PowerShell or tools such as Windows Subsystem for Linux version 2 (WSL2).
-
-
-
 ## Steps from  account application to start of use
 
 For issuance criteria of user account, check [the 'Issuance criteria for user accounts' page](/application/terms_and_policies/user_account_issurance_criteria).
