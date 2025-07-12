@@ -3,6 +3,7 @@ id: ga_slurm_partition
 title: Slurm Partitions（The general analysis division）
 --- 
 
+![](GA_division_slurm.png)
 
 The compute nodes managed by the Slurm job scheduler are broadly categorised into interactive nodes and batch compute nodes.
 
