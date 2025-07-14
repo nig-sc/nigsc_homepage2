@@ -1,5 +1,5 @@
 ---
-id: ga_grid_engine_queue
+id: ga_grid_engine_queue_old
 title: Grid Engine キューの種類
 ---
 

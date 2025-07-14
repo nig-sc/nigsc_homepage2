@@ -3,7 +3,7 @@ id: Parabricks_old
 title: GPUノード上でのParabricksの使い方
 ---
 
-:::caution
+:::danger
 これは古いドキュメントです。参考のために残してあります。
 :::
 
