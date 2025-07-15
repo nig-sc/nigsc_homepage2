@@ -52,9 +52,9 @@ Due to limited disk capacity, the research institute does not back up data in us
 The account application system is currently being revised for security enhancements, which is causing a delay in its reopening. Account renewal applications will be processed after the system is reopened. For 2024FY, account renewal for the supercomputer(2025) will be handled by the supercomputer administrator without use's application.
 
 
-## Regular Maintenance in Fiscal Year 2024 {#2024-annual-maintenance}
+## Regular Maintenance in Fiscal Year 2025 {#2025-annual-maintenance}
 
-[Regular maintenance for fiscal year 2024 was conducted from December 13 to December 19, 2024.](/blog/2024-12-13-scheduled-maintenance)
+The regular maintenance for fiscal year 2025 is scheduled around November 2025.
 
 
 ## Temporary Suspension of New Account Registrations for Large-Scale Users in General and Personal Genome Analysis Areas (May 13, 2022) {#registration-suspension}
@@ -97,4 +97,3 @@ at ROIS National Institute of Genetics.
 有する遺伝研スーパーコンピュータシステムを利用しました。
 
 ================================================
-

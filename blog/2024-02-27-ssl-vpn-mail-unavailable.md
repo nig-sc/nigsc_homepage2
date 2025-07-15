@@ -1,5 +1,5 @@
 ---
-slug: 2024-02-27-ssh-vpn-mail-unavailable
+slug: 2024-02-27-ssl-vpn-mail-unavailable
 title: "(終了) 2024 年 2 月 27 日(火) SSL-VPN接続のためのToken codeが送信されない不具合発生のお知らせ"
 tags:
   - maintenance
