@@ -50,9 +50,9 @@ Please download 'FortiClient VPN-only' from the bottom of the 'Product Downloads
 
 For more information on how to download and install it, see the links below.
 
-- [Installing FortiClient VPN Client software (Windows)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_win)
-- [Installing FortiClient VPN Client software (MacOS)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_mac)
-- [Installing FortiClient VPN Client software (Linux)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_linux)
+- [Installing FortiClient VPN Client software (Windows)](/guides/FAQ/faq_personal_genome/faq_ssl-vpn_install/pg_login_ssl-vpn_install_win)
+- [Installing FortiClient VPN Client software (MacOS)](/guides/FAQ/faq_personal_genome/faq_ssl-vpn_install/pg_login_ssl-vpn_install_mac)
+- [Installing FortiClient VPN Client software (Linux)](/guides/FAQ/faq_personal_genome/faq_ssl-vpn_install/pg_login_ssl-vpn_install_linux)
 
 
 ### STEP 2. Configure the SSL-VPN client {#conf-sslvpn}
