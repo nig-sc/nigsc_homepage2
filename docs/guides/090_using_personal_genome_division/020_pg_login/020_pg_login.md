@@ -1,6 +1,6 @@
 ---
 id: pg_login
-title: "SSL-VPNを用いたゲートウェイへのログイン方法（個人ゲノム解析区画）"
+title: "ログイン方法（個人ゲノム解析区画）"
 ---
 
 
@@ -51,9 +51,9 @@ SSL-VPN 接続の際は二要素認証が行われます。セキュリティー
 
 ダウンロードとインストール方法の詳細は、以下のリンクからをご参照ください。
 
-- [SSL-VPN クライアントソフトウェアのインストール (Windows の場合)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_win)
-- [SSL-VPN クライアントソフトウェアのインストール (Mac の場合)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_mac)
-- [SSL-VPN クライアントソフトウェアのインストール (Linux の場合)](/guides/FAQ/faq_personal_genome/faq_ssh-vpn_install/pg_login_ssl-vpn_install_linux)
+- [SSL-VPN クライアントソフトウェアのインストール (Windows の場合)](/guides/FAQ/faq_personal_genome/faq_ssl-vpn_install/pg_login_ssl-vpn_install_win)
+- [SSL-VPN クライアントソフトウェアのインストール (Mac の場合)](/guides/FAQ/faq_personal_genome/faq_ssl-vpn_install/pg_login_ssl-vpn_install_mac)
+- [SSL-VPN クライアントソフトウェアのインストール (Linux の場合)](/guides/FAQ/faq_personal_genome/faq_ssl-vpn_install/pg_login_ssl-vpn_install_linux)
 
 
 ### STEP 2. SSL-VPN クライアントの設定 {#conf-sslvpn}
