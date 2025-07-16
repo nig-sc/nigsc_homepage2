@@ -233,5 +233,5 @@ $ ls parabricks_sample/
 Data   Ref   fq2bam_output.bam   fq2bam_output.bam.bai   fq2bam_output_chrs.txt
 ```
 - res.txt … 出力ログ
-- fq2bam_output.bam, fq2bam_output.bam.bai, fq2bam_output_chrs.txt… 結果ファイル
+- `fq2bam_output.bam`, `fq2bam_output.bam.bai`, `fq2bam_output_chrs.txt` … 結果ファイル
 
