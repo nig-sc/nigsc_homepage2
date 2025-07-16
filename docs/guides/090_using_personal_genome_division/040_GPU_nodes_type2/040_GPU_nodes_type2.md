@@ -27,41 +27,19 @@ AI用に設計されたGPUに比べてメモリサイズが小さいですが、
 :::
 
 
+## 利用申請について
+
+現在GPUノードは、計算機の台数が限られていることから、個人ゲノム解析区画に設置されています。
+解析対象が個人ゲノムでない場合でも個人ゲノム区画のアカウントを作成の上、利用計画表の作成と提出をお願いしております。
+
+
+
+
 ## インタラクティブノードへのログイン {#logging-ininteractive-node}
 
 
-![](pg_gpu_slurm.png)
-
-
-L40S GPUノード(アクセラレータ最適化ノード Type 2)は計算機の台数が特に限られているため、計算機の利用効率向上を優先するため共用のGPU専用のSlurmジョブスケジューラを介して使っていただく形とさせていただいております。
-
-
-<table>
-<tr>
-<th>Slurmパーティションの名称</th>
-<th>ハードウェア種別</th>
-<th>台数・合計コア数</th>
-</tr>
-
-<tr>
-<td>l40s</td>
-<td>
-GPUノード Type 2<br />
-(AMD EPYC 9334, 64 CPU cores/node, <br />
-12GB memory/CPU core), 8GPUs/node
-</td>
-<td>3 台・合計192 コア・合計24 GPU</td>
-</tr>
-
-</table>
-
-
-:::info
-
-Slurmの使い方の詳しい説明は[Slurmの使い方](/guides/software/JobScheduler/Slurm/)のページを参照してください。
-
-:::
-
+GPUノードは計算機の台数が特に限られているため、計算機の利用効率向上を優先する目的で
+共用のGPU専用のSlurmジョブスケジューラを介して使っていただく形とさせていただいております。
 
 このSlurmパーティションにジョブを投入するには、個人ゲノム解析区画のゲートウェイにSSL-VPN経由でログインした後、まず以下のコマンドを実行してゲートウェイからGPU専用Slurmインタラクティブノードにログインしてください。
 
@@ -70,71 +48,71 @@ ssh at022vm02
 ```
 
 
+![](pg_gpu_slurm.png)
+
+
+:::info
+- ハードウェア構成の詳細は 
+[遺伝研スパコン(2025)ハードウェア](/guides/hardware/hardware2025/)のページを参照してください。
+- Slurmの使い方の詳しい説明は[Slurmの使い方](/guides/software/JobScheduler/Slurm/)のページを参照してください。
+
+:::
+
+
 
 ## ジョブのSlurmへの投入方法 {#submit-job-to-slurm}
 
+L40S GPUを使用してジョブを実行する場合は、以下のSlurmオプションを指定する必要があります：
 
-GPUを使用するジョブを投入する場合、`--partition=l40s` オプションと `--gres=gpu:n` (nは使用するGPU数を指定。上限は`4`)オプションを付与してください。
+- `--partition=l40s --account=l40s`: L40S GPU用のパーティションを指定
+- `--gres=gpu:N`: 使用するGPUの数（`N` は1～8の範囲で指定可能）
 
+### ジョブスクリプトの作成
 
-例えば1つのGPUを使用する場合、以下のように指定します。
+以下は、GPUの状態確認用の簡易ジョブスクリプトの例です。任意のファイル名（たとえば `gputest.sh`）で保存してください。
 
+```bash
+#!/usr/bin/bash
+# Simple GPU test script
+
+nvidia-smi
 ```
-username@l40s-03:~$ sbatch --partition=l40s --gres=gpu:1 gputest.sh
+
+### sbatchによるジョブ投入
+
+たとえば、GPUを1つ使用して `gputest.sh` を実行するには、次のように `sbatch` コマンドを使用します：
+
+```bash
+you-pg@at022vm02:~$ sbatch --partition=l40s --account=l40s --gres=gpu:1 gputest.sh
 Submitted batch job 228259
 ```
 
-GPUはジョブから、`--gres=gpu:n`で指定した数だけ参照可能です。
+### 実行結果の確認
 
+ジョブが完了すると、カレントディレクトリに `slurm-<ジョブID>.out` というファイルが出力されます。内容を確認することで、GPUの状態が取得できていることを確認できます：
 
-
-実行例は以下のとおり。
-
-```
-username@l40s-03:~$ cat gputest.sh
-#!/usr/bin/bash
-
-
-
-nvidia-smi
-
-
-
-username@l40s-03:~$ cat slurm-228259.out
+```bash
+you-pg@at022vm02:~$ cat slurm-228259.out
 Tue Jun  3 14:13:25 2025
 +-----------------------------------------------------------------------------------------+
-| NVIDIA-SMI 570.124.06             Driver Version: 570.124.06
-CUDA Version: 12.8     |
+| NVIDIA-SMI 570.124.06             Driver Version: 570.124.06       CUDA Version: 12.8  |
 |-----------------------------------------+------------------------+----------------------+
-| GPU  Name                 Persistence-M | Bus-Id          Disp.A |
-Volatile Uncorr. ECC |
-| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage |
-GPU-Util  Compute M. |
-|                                         |                        |
-            MIG M. |
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |            MIG M.     |
 |=========================================+========================+======================|
-|   0  NVIDIA L40S                    On  |   00000000:25:00.0 Off |
-                 0 |
-| N/A   35C    P8             33W /  350W |       1MiB /  46068MiB |
-   0%      Default |
-|                                         |                        |
-               N/A |
+|   0  NVIDIA L40S                    On  |   00000000:25:00.0 Off |                 0     |
+| N/A   35C    P8             33W /  350W |       1MiB /  46068MiB |   0%      Default     |
 +-----------------------------------------+------------------------+----------------------+
 
-
-
 +-----------------------------------------------------------------------------------------+
-| Processes:
-                   |
-|  GPU   GI   CI              PID   Type   Process name
-        GPU Memory |
-|        ID   ID
-        Usage      |
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                             Usage        |
 |=========================================================================================|
-|  No running processes found
-                   |
+|  No running processes found                                                           |
 +-----------------------------------------------------------------------------------------+
 ```
 
-
+この出力により、指定したGPUノード上でジョブが正常に実行されたことが確認できます。
 
