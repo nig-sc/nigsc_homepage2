@@ -1,6 +1,6 @@
 ---
 id: parabricks_fq2bam
-title: Parabricksを用いたfq2bamの実行
+title: "Running fq2bam with Parabricks"
 ---
 
 

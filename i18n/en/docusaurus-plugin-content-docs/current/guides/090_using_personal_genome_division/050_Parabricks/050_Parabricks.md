@@ -1,19 +1,17 @@
 ---
 id: Parabricks
-title: Parabricksの使い方
+title: "Preparation for Using Parabricks"
 ---
 
 
-## 概要
 
-遺伝研スパコンのGPUノードでParabricksによるゲノム解析の実行方法を説明します。
-ParabricksのプログラムはDockerコンテナイメージとしてNVIDIAから無償で配布されています。
+## Overview
 
-NVIDIAのチュートリアルを遺伝研スパコンのアクセラレータ最適化ノード Type 2 (NVIDIA L40S)で実行する
-手順を例にして、Parabricksの使い方を説明します。
+This guide explains how to run genome analysis using Parabricks on the GPU nodes of the NIG Supercomputer.
+Parabricks is distributed free of charge by NVIDIA as a Docker container image.
 
+Using NVIDIA’s official tutorial as a reference, this document describes how to use Parabricks on the NIG Supercomputer's Accelerator-Optimized Node Type 2 (featuring NVIDIA L40S GPUs).
 
-参考資料
-- https://docs.nvidia.com/clara/parabricks/latest/tutorials/stepbysteptutorials.html
+Reference:
 
-
+- [https://docs.nvidia.com/clara/parabricks/latest/tutorials/stepbysteptutorials.html](https://docs.nvidia.com/clara/parabricks/latest/tutorials/stepbysteptutorials.html)

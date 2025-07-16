@@ -1,6 +1,6 @@
 ---
 id: parabricks_setup
-title: Parabricksを使用するための準備
+title: "Preparation for Using Parabricks"
 ---
 
 
