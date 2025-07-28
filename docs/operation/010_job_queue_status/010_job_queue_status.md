@@ -1,5 +1,5 @@
 ---
-id: operation
+id: job_queue_status
 title: 実行開始までの待ち時間
 ---
 
@@ -11,7 +11,7 @@ title: 実行開始までの待ち時間
 
 ジョブの量は、ジョブが占めるスロットの数として計算しています。
 
-<img alt="job accumlation status" src="https://ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
+<img alt="job accumlation status" src="https://dtn1.ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
 
 
 - 左図（折れ線グラフ）: キューの中で待ち状態にあったジョブのうち、実行開始したジョブの一時間あたりの量
