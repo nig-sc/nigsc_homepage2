@@ -258,5 +258,73 @@
   "sidebar.reportSidebar.category.institution": {
     "message": "institution",
     "description": "The label for category institution in sidebar reportSidebar"
+  },
+  "sidebar.guidesSidebar.category.Hardware": {
+    "message": "Hardware",
+    "description": "The label for category Hardware in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Software": {
+    "message": "Software",
+    "description": "The label for category Software in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Slurm の使い方": {
+    "message": "Slurm の使い方",
+    "description": "The label for category Slurm の使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.Parabricksの使い方": {
+    "message": "Parabricksの使い方",
+    "description": "The label for category Parabricksの使い方 in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_forticlient": {
+    "message": "faq_forticlient",
+    "description": "The label for category faq_forticlient in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_ssl-vpn_install": {
+    "message": "faq_ssl-vpn_install",
+    "description": "The label for category faq_ssl-vpn_install in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.ssl-vpn_config_file": {
+    "message": "ssl-vpn_config_file",
+    "description": "The label for category ssl-vpn_config_file in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_ssl-vpn_connection": {
+    "message": "faq_ssl-vpn_connection",
+    "description": "The label for category faq_ssl-vpn_connection in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.faq_linux_basic": {
+    "message": "faq_linux_basic",
+    "description": "The label for category faq_linux_basic in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.old_docs": {
+    "message": "old_docs",
+    "description": "The label for category old_docs in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.hardware": {
+    "message": "hardware",
+    "description": "The label for category hardware in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.software": {
+    "message": "software",
+    "description": "The label for category software in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.general_analysis_division": {
+    "message": "general_analysis_division",
+    "description": "The label for category general_analysis_division in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.category.personal_genome_division": {
+    "message": "personal_genome_division",
+    "description": "The label for category personal_genome_division in sidebar guidesSidebar"
+  },
+  "sidebar.guidesSidebar.link.News": {
+    "message": "お知らせ",
+    "description": "The label for link News in sidebar guidesSidebar, linking to /blog/tags/news"
+  },
+  "sidebar.guidesSidebar.link.Maintenance Info": {
+    "message": "メンテナンス情報",
+    "description": "The label for link Maintenance Info in sidebar guidesSidebar, linking to /blog/tags/maintenance"
+  },
+  "sidebar.guidesSidebar.link.Full-text Search": {
+    "message": "全文検索",
+    "description": "The label for link Full-text Search in sidebar guidesSidebar, linking to https://sc.ddbj.nig.ac.jp/search"
   }
 }
