@@ -36,6 +36,7 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 ## Featured News {#featured-news}
 
+- [(Resolved) [Outage] SSH Connection Disruption on General Analysis Gateway Node on Tuesday, July 29, 2025](/blog/2025-07-29-ssh-failure_ga_gw) (July 29, 2025) ＼ &#x1F195; ／
 - [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, May 22, 2025](/blog/2025-05-22-Slurm_ga_maintenance) (May 22, 2025) ＼ &#x1F195; ／
 - [(Ended) Network Maintenance due to Switchover to SINET6 on Wednesday, May 24, 2025](/blog/2025-05-24-network) (April 10, 2025)
 - [Power Outage on April 7, 2025](/blog/2025-04-07-power-outage) (April 7, 2025)
