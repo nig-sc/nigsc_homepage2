@@ -9,6 +9,8 @@ date: 2025-07-29
 
 On Tuesday, 29 July 2025, at 10:48 (24-hour format), an issue occurred preventing SSH connections to the General Analysis Division Gateway Node (`gw.ddbj.nig.ac.jp`).
 
+<!-- truncate -->
+
 The issue occurred due to a memory shortage on the gateway node caused by the execution of a user program. This caused the sssd process to stop, making SSH connections to the gateway node unavailable.
 
 To address the issue, the sssd service was restarted at 12:19 on the same day, and the service has since been fully restored.
