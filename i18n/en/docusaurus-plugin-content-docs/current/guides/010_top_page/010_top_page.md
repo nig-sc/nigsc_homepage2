@@ -36,8 +36,9 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 ## Featured News {#featured-news}
 
-- [(Resolved) [Outage] SSH Connection Disruption on General Analysis Gateway Node on Tuesday, July 29, 2025](/blog/2025-07-29-ssh-failure_ga_gw) (July 29, 2025) ＼ &#x1F195; ／
-- [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, May 22, 2025](/blog/2025-05-22-Slurm_ga_maintenance) (May 22, 2025) ＼ &#x1F195; ／
+- [[Power Outage] Power Outage at NIG on September 8, 2025 (Breaking News)](/blog/2025-09-08-blackout) (September 08, 2025) ＼ &#x1F195; ／
+- [(Resolved) [Outage] SSH Connection Disruption on General Analysis Gateway Node on Tuesday, July 29, 2025](/blog/2025-07-29-ssh-failure_ga_gw) (July 29, 2025) 
+- [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, May 22, 2025](/blog/2025-05-22-Slurm_ga_maintenance) (May 22, 2025) 
 - [(Ended) Network Maintenance due to Switchover to SINET6 on Wednesday, May 24, 2025](/blog/2025-05-24-network) (April 10, 2025)
 - [Power Outage on April 7, 2025](/blog/2025-04-07-power-outage) (April 7, 2025)
 - [Important Notices from the NIG Supercomputer: Third Term of 2024 (December–March)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (February 10, 2025) 
@@ -55,7 +56,7 @@ The account application system is currently being revised for security enhanceme
 
 ## Regular Maintenance in Fiscal Year 2025 {#2025-annual-maintenance}
 
-The regular maintenance for fiscal year 2025 is scheduled around November 2025.
+The regular maintenance for fiscal year 2025 is scheduled around March 2026.
 
 
 ## Temporary Suspension of New Account Registrations for Large-Scale Users in General and Personal Genome Analysis Areas (May 13, 2022) {#registration-suspension}
