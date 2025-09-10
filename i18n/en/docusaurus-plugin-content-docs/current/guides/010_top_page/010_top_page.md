@@ -11,23 +11,6 @@ The National Institute of Genetics (NIG) provides a cutting-edge supercomputer s
 
 ![top_image](top_image.png)
 
-:::tip Important
-
-## Announcement of New System Launch
-
-### Important Notes on Migration from the Previous Supercomputer  
-
-The following is a reiteration of the information previously provided via email and on the website.  
-
-#### (1) Home Directory Migration  
-The final state of user home directories as of February 14, 2025, 5:00 PM has been copied to the new supercomputer’s storage.  
-
-#### (2) Changes to Billing for Charged Services  
-The billing rates for storage, memory-optimized nodes, and accelerator-optimized nodes (GPU nodes) have been revised to reflect the proportional leasing costs, in consideration of business continuity.  
-For details on the updated pricing, please refer to the [Supercomputer (2025) Terms of Use](/application/terms_and_policies/terms_of_use_2025/) page.
-
-
-:::
 
 :::warning
 Due to limited disk capacity, the research institute does not back up data in users' home directories. Users are responsible for backing up their data.
@@ -35,6 +18,30 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 
 ## Featured News {#featured-news}
+
+:::info Notice of Resumption of Supercomputer Login Service ＼ 🆕 ／
+Due to the power outage caused by lightning around 13:40 on Friday, September 5, 2025, the NIG supercomputer had been out of service. However, the login service was resumed at 12:00 on Tuesday, September 9, 2025. (For dedicated VMs that had not been confirmed to be running as of 12:00 on September 9, all of them were successfully restarted by 15:00 on Wednesday, September 10.)
+
+For details, please refer to the following:
+
+September 8, 2025 – Supercomputer shutdown due to NIG power outage
+ (2025.09.08) ＼ 🆕 ／
+
+:::
+
+:::caution
+
+In the notice issued as of 12:00 on September 9, the supercomputer recovery time was incorrectly stated as:
+
+“Restored at 12:00 on Monday, September 8, 2025.”
+
+The correct statement is:
+
+“Restored at 12:00 on Tuesday, September 9, 2025.”
+
+We sincerely apologize for this error and issue this correction.
+
+:::
 
 - [[Power Outage] Power Outage at NIG on September 8, 2025 (Breaking News)](/blog/2025-09-08-blackout) (September 08, 2025) ＼ &#x1F195; ／
 - [(Resolved) [Outage] SSH Connection Disruption on General Analysis Gateway Node on Tuesday, July 29, 2025](/blog/2025-07-29-ssh-failure_ga_gw) (July 29, 2025) 
