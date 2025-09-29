@@ -6,6 +6,15 @@ title: "Topics in 2023"
 ---
 ## The omics data graphing tool RIAS®️ Visualization is now available. {#rias_omics_viz_available}
 
+:::caution
+
+This service will end on 31 October 2025 (Friday).
+
+For more information, please refer to the information below.
+- [" Notice of Discontinuation of Rhelixa Graphing Tool (RIAS Visualisation) by October 2025 "](/blog/2025-09-29-news_Rhelixa-rias-visualisation-end-october-2025)
+
+:::
+
 26 Oct 2023.
 
 An omics data graphing tool Visualization has been provided by Rhelixa Corporation (CTO: Ryu Nakaki), which has a comprehensive collaboration agreement with the National Institute of Genetics, and is available for free trial for NIG supercomputer users.
