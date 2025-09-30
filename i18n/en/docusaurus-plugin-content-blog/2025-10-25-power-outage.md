@@ -7,15 +7,20 @@ date: 2025-10-25
 ---
 
 
-On 25th October 2025, restoration work will be undertaken on the National Institute of Genetics' power supply equipment, which was disrupted due to a lightning strike on 5th September 2025.
+We would like to inform you that, due to ongoing restoration work related to a lightning strike on Friday, 5th September 2025, which affected the power supply equipment at the National Institute of Genetics, there will be a scheduled power outage on Saturday, 25th October 2025.
 
-As a consequence, the NIG Supercomputer services will be temporarily unavailable during the following period:
+As a result of this outage, the supercomputer will be temporarily unavailable during the weekend of 25th October.
+
+Further details regarding the restoration timeline and any potential impacts will be communicated once confirmed. 
+
 
 <!-- truncate -->
 
 ## Period of Service Interruption
 
-24th Oct 2025 (Friday) evening – 27th Oct 2025 (Monday) morning
+The scheduled power outage and supercomputer downtime are planned for the evening of Friday, 24th October 2025, to the morning of Monday, 27th October 2025. However, please note that these dates are not yet final.
+
+Further details will be provided and updated on our official website once confirmed.
 
 
 ## Scope of Impact
@@ -30,4 +35,4 @@ As a consequence, the NIG Supercomputer services will be temporarily unavailable
 - DDBJ services
     - The services will be suspended and unavailable during the above period.
 
-We apologise for any inconvenience this may cause.
+We kindly ask for your cooperation and understanding in this matter.
