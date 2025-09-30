@@ -21,14 +21,6 @@ Due to limited disk capacity, the research institute does not back up data in us
 :::danger Notice of Power Outage Due to Lightning Strike: Resumption of Supercomputer Service
 
 [Due to the power outage caused by lightning around 13:40 on Friday, September 5, 2025, the NIG supercomputer had been out of service.](/blog/2025-09-08-blackout)  However, the login service was resumed at 12:00 on Tuesday, September 9, 2025. (For dedicated VMs that had not been confirmed to be running as of 12:00 on September 9, all of them were successfully restarted by 15:00 on Wednesday, September 10.)
-=======
-
-
-## Featured News {#featured-news}
-
-:::danger Notice of Power Outage Due to Lightning Strike: Resumption of Supercomputer Service
-
-[Due to the power outage caused by lightning around 13:40 on Friday, September 5, 2025, the NIG supercomputer had been out of service.](/blog/2025-09-08-blackout)  However, the login service was resumed at 12:00 on Tuesday, September 9, 2025. (For dedicated VMs that had not been confirmed to be running as of 12:00 on September 9, all of them were successfully restarted by 15:00 on Wednesday, September 10.)
 
 - **[We shall be undertaking restoration work on the National Institute of Genetics' power supply equipment, which was impacted by a lightning strike, on 25th October 2025. Consequently, the NIG Supercomputer services will be temporarily unavailable from the evening of 24th October until the morning of 27th October. We sincerely apologise for any inconvenience this may cause and greatly appreciate your understanding.](/blog/2025-10-25-power-outage)**
 
