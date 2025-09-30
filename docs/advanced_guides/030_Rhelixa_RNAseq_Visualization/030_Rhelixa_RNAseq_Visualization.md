@@ -4,6 +4,15 @@ title: Rhelixa Graphing Tool
 ---
 
 
+:::danger
+
+Rhelixa Graphing Tool（RIAS Visualization）は、2025年10月末をもちまして、サービス提供を終了いたします。
+
+詳細は、以下をご参照ください。
+- [「Rhelixa Graphing Tool（RIAS Visualization）2025年10月末 提供終了のお知らせ」](/blog/2025-09-29-news_Rhelixa-rias-visualisation-end-october-2025)
+
+:::
+
 
 国立遺伝学研究所と包括連携協定を結ぶ株式会社Rhelixa（代表取締役：仲木 竜）より、オミクスデータグラフ化ツール Visualization が提供され、遺伝研スーパーコンピュータの利用者は無料で試用できるようになりました。
 
