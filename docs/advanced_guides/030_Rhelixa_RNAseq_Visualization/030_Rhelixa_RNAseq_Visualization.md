@@ -4,7 +4,7 @@ title: Rhelixa Graphing Tool
 ---
 
 
-:::caution
+:::danger
 
 Rhelixa Graphing Tool（RIAS Visualization）は、2025年10月末をもちまして、サービス提供を終了いたします。
 
