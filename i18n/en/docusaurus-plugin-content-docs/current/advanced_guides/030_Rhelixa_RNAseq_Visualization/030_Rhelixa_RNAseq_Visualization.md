@@ -3,7 +3,7 @@ id: Rhelixa_RNAseq_Visualization
 title: RIAS®️ Visualization
 ---
 
-:::caution
+:::danger
 
 This service will end on 31 October 2025 (Friday).
 

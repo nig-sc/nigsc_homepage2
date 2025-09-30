@@ -6,7 +6,7 @@ title: "2023年のトピック"
 ---
 ## オミクスデータグラフ化ツール 「RIAS®️ Visualization」の 提供を始めました {#rias_omics_viz_available}
 
-:::caution
+:::danger
 
 Rhelixa Graphing Tool（RIAS Visualization）は、2025年10月末をもちまして、サービス提供を終了いたします。
 

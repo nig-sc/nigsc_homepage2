@@ -6,7 +6,7 @@ title: "Topics in 2023"
 ---
 ## The omics data graphing tool RIAS®️ Visualization is now available. {#rias_omics_viz_available}
 
-:::caution
+:::danger
 
 This service will end on 31 October 2025 (Friday).
 
