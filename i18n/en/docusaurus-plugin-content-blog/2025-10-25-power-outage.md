@@ -1,6 +1,6 @@
 ---
 slug: 2025-10-25-power-outage
-title: "(Postponed) Supercomputer Service Suspension (24th–27th October 2025) Due to NIG Power Restoration Following 5th September Lightning Strike"
+title: "(Postponed) The NIG Supercomputer Service Suspension (24th–27th October 2025) Due to NIG Power Restoration Following 5th September Lightning Strike"
 tags:
   - maintenance
 date: 2025-10-25
