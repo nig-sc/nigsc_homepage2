@@ -73,7 +73,7 @@ Intelコンパイラにはデフォルトでパスが通っています。
 高度な最適化を行ったバイナリを実行する場合は、インテルCPUを搭載した計算ノードで実行してください（AMD CPUでも動作はします）。一般区画に
 ついては以下のキュー構成を参照してください。
 
-- [AGEのキュー構成](/guides/old_docs/ga_grid_engine_queue/)
+- [AGEのキュー構成](/guides/old_docs/general_analysis_division/ga_grid_engine_queue_old/)
 
 ### コンパイラコマンド形式 {#intel-one-api-dpc-compailer#command-format}
 

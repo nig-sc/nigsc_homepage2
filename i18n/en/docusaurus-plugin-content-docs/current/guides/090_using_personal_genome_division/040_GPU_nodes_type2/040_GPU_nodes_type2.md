@@ -23,7 +23,7 @@ Although it has less memory than GPUs designed for AI, it can still be used for 
 
 - N/A: Not Available, N/D: Not Disclosed
 - Benchmark times are based on the 1KGP 30x dataset (NA18945 sample) available at [https://www.internationalgenome.org/data-portal/data-collection/30x-grch38](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38).
-  For details, see the benchmark page [here](https://sc.ddbj.nig.ac.jp/advanced_guides/benchmark_parabricks).
+  For details, see [this benchmark page](https://sc.ddbj.nig.ac.jp/en/guides/hardware/hardware2025/#gpu-and-accel-perf-comparison).
 
 :::
 
