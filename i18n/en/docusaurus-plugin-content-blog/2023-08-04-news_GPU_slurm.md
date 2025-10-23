@@ -25,4 +25,5 @@ For more information on the usage plan table and price list, refer to the follow
 
 Please refer to the following link for details on how to use this service.
 
+- [Using Parabricks on GPU nodes](/guides/old_docs/personal_genome_division/Parabricks_old/)
 - [Using the Accelerator-optimised node Type 2 (L40S Node)](/guides/using_personal_genome_division/GPU_nodes_type2/)
