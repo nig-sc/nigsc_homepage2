@@ -33,7 +33,7 @@ title: 実行開始までの待ち時間
 
 ### キューの定義 {#queue-definition}
 
-[「Grid Engineキューの種類」のページをご参照ください。](/guides/old_docs/ga_grid_engine_queue/)
+[「Grid Engineキューの種類」のページをご参照ください。](/guides/old_docs/general_analysis_division/ga_grid_engine_queue_old/)
 
 
 ### スロットの定義 {#slot-definition}
