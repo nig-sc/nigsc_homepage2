@@ -1,5 +1,5 @@
 ---
-id: resource_extension_old
+id: resource_extension
 title: "Submission of Your Usage Plan"
 ---
 

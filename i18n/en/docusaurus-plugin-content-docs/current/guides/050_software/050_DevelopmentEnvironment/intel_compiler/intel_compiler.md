@@ -70,7 +70,7 @@ The Intel compiler is available by default.
 
 To execute binaries with advanced optimizations, please run them on compute nodes equipped with Intel CPUs (they will also work on AMD CPUs). For the general division, please refer to the queue configuration.
 
-- [Queue configuration in AGE]/guides/old_docs/ga_grid_engine_queue/)
+- [Queue configuration in AGE](/guides/old_docs/general_analysis_division/ga_grid_engine_queue_old/)
 
 ### Compiler Command Formats {#intel-one-api-dpc-compailer#command-format}
 

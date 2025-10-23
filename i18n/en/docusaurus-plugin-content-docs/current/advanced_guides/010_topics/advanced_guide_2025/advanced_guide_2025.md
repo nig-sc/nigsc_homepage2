@@ -1,6 +1,6 @@
 ---
 id: advanced_guide_2025
-title: "2025年のトピック"
+title: "Topic in 2025"
 ---
 
 ---

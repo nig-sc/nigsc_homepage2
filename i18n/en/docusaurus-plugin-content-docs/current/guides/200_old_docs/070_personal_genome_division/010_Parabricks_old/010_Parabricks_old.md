@@ -1,6 +1,6 @@
 ---
 id: Parabricks_old
-title: GPUノード上でのParabricksの使い方
+title: Using Parabricks on GPU nodes
 ---
 
 :::danger This is an outdated document

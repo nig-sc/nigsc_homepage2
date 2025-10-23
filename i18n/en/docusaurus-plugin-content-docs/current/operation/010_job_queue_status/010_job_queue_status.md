@@ -32,7 +32,7 @@ Refere to [the "Grid Engine Overview" page](/guides/old_docs/software/JobSchedul
 
 ### Queue definition
 
-Refere to [the "Grid Engine Queue Type" page](/guides/old_docs/ga_grid_engine_queue/). 
+Refere to [the "Grid Engine Queue Type" page](/guides/old_docs/general_analysis_division/ga_grid_engine_queue_old/). 
 
 
 ### Slot definition
