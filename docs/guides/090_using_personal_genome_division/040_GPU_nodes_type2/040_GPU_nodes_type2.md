@@ -22,7 +22,7 @@ AI用に設計されたGPUに比べてメモリサイズが小さいですが、
 | TF32 tensor core [TFlops] | 125     | 312         | 366         | 989         | 2,200         | N/A      |
 
 - N/A : Not Available, N/D : Not Disclosed
-- GATK互換ソフトのベンチマーク実行時間は1KGP 30xデータセット(https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) のNA18945サンプルを使った時の計算時間。ベンチマーク詳細はこちらのページ(https://sc.ddbj.nig.ac.jp/guides/hardware/hardware2025/#gpu-and-accel-perf-comparison) をご参照ください。
+- GATK互換ソフトのベンチマーク実行時間は1KGP 30xデータセット(https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) のNA18945サンプルを使った時の計算時間。ベンチマーク詳細はこちらのページ(https://sc.ddbj.nig.ac.jp/advanced_guides/benchmark/benchmark_parabricks/) をご参照ください。
 
 :::
 
