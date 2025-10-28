@@ -169,9 +169,8 @@ The findings presented here were generated based on measurements conducted in th
 Article Creation Date: 6th June 2024
 
 
-### Project Members {#project-members}
+### 7.1 Project Members {#project-members}
 
-### Project Members
 - Tomoya Tanjo<sup>1, 2</sup>
 - Shun Nogawa<sup>3</sup>
 - Kentaro Yamamoto<sup>3</sup>
@@ -188,7 +187,7 @@ Article Creation Date: 6th June 2024
 5: Sakura Internet Inc.
 
 
-### Related Links {#related-links}
+### 7.2 Related Links {#related-links}
 
 - [The high-performance PHY (Sakura Internet Inc.](https://www.sakura.ad.jp/koukaryoku-phy/)
 - [NIG igt (National Institute of Genetics）](https://sc.ddbj.nig.ac.jp/en/guides/hardware/)
