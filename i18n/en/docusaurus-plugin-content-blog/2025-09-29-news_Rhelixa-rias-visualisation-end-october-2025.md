@@ -7,7 +7,7 @@ date: 2025-09-29
 ---
 
 
-We would like to inform users that the [Rhelixa Graphing Tool (RIAS Visualisation)](/advanced_guides/Rhelixa_RNAseq_Visualization/), which has been provided through our collaboration with the National Institute of Genetics, will be discontinued as the underlying system is being decommissioned. The service will end on 31 October 2025 (Friday).
+We would like to inform users that the [Rhelixa Graphing Tool (RIAS Visualisation)](/guides/old_docs/Rhelixa_RNAseq_Visualization/), which has been provided through our collaboration with the National Institute of Genetics, will be discontinued as the underlying system is being decommissioned. The service will end on 31 October 2025 (Friday).
 
 <!-- truncate -->
 
