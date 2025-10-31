@@ -7,7 +7,7 @@ date: 2025-09-29
 ---
 
 
-国立遺伝学研究所と包括連携協定を結ぶ株式会社Rhelixa（代表取締役：仲木 竜）よりご提供いただいておりました[「Rhelixa Graphing Tool（RIAS Visualization）」](/advanced_guides/Rhelixa_RNAseq_Visualization/)は、サービスの基盤となっていたシステムの提供終了に伴って株式会社Rhelixaでの提供も終了になるため、2025年10月31日(金)をもちまして、サービスが終了することとなりました。
+国立遺伝学研究所と包括連携協定を結ぶ株式会社Rhelixa（代表取締役：仲木 竜）よりご提供いただいておりました[「Rhelixa Graphing Tool（RIAS Visualization）」](/guides/old_docs/Rhelixa_RNAseq_Visualization/)は、サービスの基盤となっていたシステムの提供終了に伴って株式会社Rhelixaでの提供も終了になるため、2025年10月31日(金)をもちまして、サービスが終了することとなりました。
 
 <!-- truncate -->
 
