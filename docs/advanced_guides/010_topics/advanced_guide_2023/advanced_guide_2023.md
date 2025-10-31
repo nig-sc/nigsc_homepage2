@@ -8,7 +8,7 @@ title: "2023年のトピック"
 
 :::danger
 
-Rhelixa Graphing Tool（RIAS Visualization）は、2025年10月末をもちまして、サービス提供を終了いたします。
+Rhelixa Graphing Tool（RIAS Visualization）は、2025年10月末をもちまして、サービス提供を終了いたしました。
 
 詳細は、以下をご参照ください。
 - [「Rhelixa Graphing Tool（RIAS Visualization）2025年10月末 提供終了のお知らせ」](/blog/2025-09-29-news_Rhelixa-rias-visualisation-end-october-2025)
