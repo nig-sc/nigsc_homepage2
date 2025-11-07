@@ -1,16 +1,18 @@
 --- 
 slug: 2025-11-06-power-outage 
-title: "The NIG Supercomputer Service Suspension (6th - 10th November)" 
+title: "(Ended) The NIG Supercomputer Service Suspension (6th - 10th November)" 
 tags: 
   - maintenance 
 date: 2025-11-06 
 ---
 
-We would like to inform you that, due to ongoing restoration work related to a lightning strike on Friday, 5th September 2025, which affected the power supply equipment at the National Institute of Genetics, there will be a scheduled power outage on Thursday, 6th November 2025.
+The restoration work was completed on 7th November 2025, at 16:49.
 
-As a result of this outage, the supercomputer will be temporarily unavailable from 8:30 AM on 6th November 2025 to 9:00 AM on 10th November 2025.
+~~We would like to inform you that, due to ongoing restoration work related to a lightning strike on Friday, 5th September 2025, which affected the power supply equipment at the National Institute of Genetics, there will be a scheduled power outage on Thursday, 6th November 2025.~~
 
-Please note the following schedule and important details regarding the maintenance.
+~~As a result of this outage, the supercomputer will be temporarily unavailable from 8:30 AM on 6th November 2025 to 9:00 AM on 10th November 2025.~~
+
+~~Please note the following schedule and important details regarding the maintenance.~~
 
 <!-- truncate -->
 
