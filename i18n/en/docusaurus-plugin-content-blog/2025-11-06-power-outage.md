@@ -6,7 +6,10 @@ tags:
 date: 2025-11-06 
 ---
 
-The restoration work was completed on 7th November 2025, at 16:49.
+
+- The restoration work was successfully completed on 7th November 2025 at 16:49.
+- The services of the NIG Supercomputer were resumed promptly on 7th November 2025 at 17:30.
+
 
 ~~We would like to inform you that, due to ongoing restoration work related to a lightning strike on Friday, 5th September 2025, which affected the power supply equipment at the National Institute of Genetics, there will be a scheduled power outage on Thursday, 6th November 2025.~~
 
