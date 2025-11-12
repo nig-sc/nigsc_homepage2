@@ -5,7 +5,7 @@ title: 遺伝研スパコンでのalphafold 2.3の実行
 
 
 ## 概略 {#introduction}
-遺伝研スパコンでは&#x1f517;<a href="https://github.com/deepmind/alphafold">alphafold 2.3.2</a>をインストールしたsingularity imageとalphafold 2.3で使用するデータベースを /lustre7/software/alphafold/2.3.2/ に用意してあります。
+遺伝研スパコンでは[alphafold 2.3.2](https://github.com/deepmind/alphafold)をインストールしたapptainer singularity imageとalphafold 2.3で使用するデータベースを /lustre10/software/alphafold/2.3.2/ に用意してあります。
 
  
 
@@ -65,7 +65,7 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 
 ## ジョブスクリプトの準備 {#prepare-job-scripts}
 
-/lustre7/software/alphafold/2.3.2/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+/lustre10/software/alphafold/2.3.2/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
 
 
 ### example_job_script_cpu.sh
@@ -73,16 +73,14 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 GPUを使用しない場合のジョブスクリプトです。
 
 ```
-#!/bin/sh
-#$ -S /bin/sh
-#$ -cwd
-#$ -l s_vmem=160G
-#$ -l mem_req=8G
-#$ -pe def_slot 16
+#!/bin/bash
+#SBATCH -p rome
+#SBATCH --mem-per-cpu=8g
+#SBATCH -c 16
 
 FASTAFILE="${HOME}/input/test.fasta"
 OUTPUTDIR="${HOME}/output"
-DATE="2022-12-01"
+DATE="2099-12-31"
 MODEL="monomer"
 PRED=5
 VERSION="2.3.2"
@@ -92,9 +90,9 @@ export OPENMM_CPU_THREADS=16
 export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=16"
 
 singularity exec \
--B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/${VERSION}/database:/data1/database \
-/lustre7/software/alphafold/${VERSION}/alphafold-${VERSION}-CPU.sif \
+-B /lustre10/software/alphafold/database:/lustre7/software/alphafold/database \
+-B /lustre10/software/alphafold/${VERSION}/database:/data1/database \
+/lustre10/software/alphafold/${VERSION}/alphafold-${VERSION}-CPU.sif \
 /opt/alphafold/bin/alphafold \
 --fasta_paths=${FASTAFILE} \
 --output_dir=${OUTPUTDIR} \
@@ -108,7 +106,13 @@ singularity exec \
 #### 修正箇所 {#modification-place}
 
 ```
-#$ -pe def_slot 16
+#SBATCH -p rome
+```
+
+使用するSlurmのパーティションを指定します。romeまたはepycを指定してください。
+
+```
+#SBATCH -c 16
 ```
 
 ```
@@ -126,20 +130,16 @@ export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_thread
  
 
 ```
-#$ -l s_vmem=160G
+#SBATCH --mem-per-cpu=8g
 ```
-2560G / def_slotの値 を入力してください。
 
-
-```
-#$ -l mem_req=8G
-```
-128G / def_slotの値 を入力してください。
+`128g / < -cの値 >` を入力してください。
 
  
 ```
 FASTAFILE="${HOME}/input/test.fasta"
 ```
+
 入力ファイルのパスを入力してください。
 
 
@@ -152,7 +152,7 @@ OUTPUTDIR="${HOME}/output"
 
  
 ```
-DATE="2022-12-01"
+DATE="2099-12-31"
 ```
 立体構造の予測に使用するPDBの構造データのリリース日の上限を指定してください。この日付よりリリース日が新しい構造データは使用されません。
 
@@ -179,143 +179,4 @@ RELAX_MODE=”all” を指定した場合、すべての予測モデルのrelax
 
 ### example_job_script_gpu.sh
 
-GPUを使用する場合のジョブスクリプトです。gpu.qでジョブを実行します。
-
-```
-#!/bin/sh
-#$ -S /bin/sh
-#$ -cwd
-#$ -l gpu
-#$ -l cuda=1
-#$ -l s_vmem=320G
-#$ -l mem_req=16G
-#$ -pe def_slot 8
-
-FASTAFILE="${HOME}/input/test.fasta"
-OUTPUTDIR="${HOME}/output"
-DATE="2022-12-01"
-MODEL="monomer"
-PRED=5
-VERSION="2.3.2"
-RELAX_MODE="all"    # all, best or none
-
-export OPENMM_CPU_THREADS=8
-export XLA_FLAGS="--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=8"
-export CUDA_VISIBLE_DEVICES='0'
-
-singularity exec \
---nv \
--B /lustre7/software/alphafold/database:/lustre7/software/alphafold/database \
--B /lustre7/software/alphafold/${VERSION}/database:/data1/database \
-/lustre7/software/alphafold/${VERSION}/alphafold-${VERSION}-GPU.sif \
-/opt/alphafold/bin/alphafold \
---fasta_paths=${FASTAFILE} \
---output_dir=${OUTPUTDIR} \
---model_preset=${MODEL} \
---max_template_date=${DATE} \
---use_gpu_relax=true \
---num_multimer_predictions_per_model=${PRED} \
---models_to_relax=${RELAX_MODE}
-```
-
-#### 修正箇所 {#modification-place}
-
-```
-#$ -l cuda=1
-```
-
-```
-export CUDA_VISIBLE_DEVICES='0'
-```
-
-構造予測するタンパク質の大きさが1000アミノ酸残基程度までは cuda=1 で実行可能です。GPUのメモリ不足でエラーになった場合、数を増やして実行してください。
-
-それにあわせて、CUDA_VISIBLE_DEVICES環境変数の設定を cuda=2 の場合は `'0'` から `'0,1'` に、cuda=3の場合は `'0,1,2'` に変更してください。cuda=4の場合は `export CUDA_VISIBLE_DEVICES='0'` の行を削除してください。
-
-```
-FASTAFILE="${HOME}/input/test.fasta"
-```
-
-入力ファイルのパスを入力してください。
-
-```
-OUTPUTDIR="${HOME}/output"
-```
-
-結果を出力するディレクトリのパスを入力してください。
-
-このディレクトリ内に入力ファイル名から拡張子を除いた名前でディレクトリが作成され、結果が出力されます。同じ名前のディレクトリが既に存在し、その中に計算結果が入っていた場合、類縁配列の検索（ステップ1-6）は行われず立体構造の予測部分（ステップ7・8）のみ再計算されます。
-
- 
-```
-DATE="2022-12-01"
-```
-
-立体構造の予測に使用するPDBの構造データのリリース日の上限を指定してください。この日付よりリリース日が新しい構造データは使用されません。
-
-```
-MODEL="monomer"
-```
-
-入力ファイルの内容に従って単量体タンパク質の構造予測の場合はmonomer、多量体タンパク質の構造予測の場合はmultimerを入力してください。
-
-```
-PRED=5
-```
-
-MODEL=”multimer” を指定した際に、1モデルに対していくつ予測を実行するかを指定します。デフォルト値は5で、総計25個の予測結果が出力されます。この値はMODEL=”monomer” を指定した際は無視されます。
-
-
-```
-RELAX_MODE="all"
-```
-
-RELAX_MODE=”all” を指定した場合、すべての予測モデルのrelaxation stepを実行します。RELAX_MODE=”best” を指定した場合はpLDDTの値が最も良いモデルのみrelaxation stepを実行します。
-
-
-## ジョブの実行 {#running-a-job}
-
-ジョブスクリプトをqsubコマンドでGrid Engineに投入してください。
-
-```
-$ qsub example_job_script_cpu.sh
-```
-
-```
-$ qsub example_job_script_gpu.sh
-```
-
-## 出力例 {#output-example}
-
-入力ファイル
-
-[test.fasta](test_2-3-0.fasta)
-
-
-出力ファイル
-
-[ranking_debug.json](ranking_debug_2-3-0.json)
-
-[ranked_4.pdb](ranked_4_2-3-0.pdb)
-
-
-[ranked_3.pdb](ranked_3_2-3-0.pdb)
-
-
-[ranked_2.pdb](ranked_2_2-3-0.pdb)
-
-
-[ranked_1.pdb](ranked_1_2-3-0.pdb)
-
-
-[ranked_0.pdb](ranked_0_2-3-0.pdb)
-
-
-入力ファイルと同一アミノ酸配列（近縁種）のタンパク質のPDBエントリー
-
-&#x1f517;<a href="https://www.rcsb.org/structure/3AS4">https://www.rcsb.org/structure/3AS4</a>
-
-&#x1f517;<a href="https://www.rcsb.org/structure/3AS5">https://www.rcsb.org/structure/3AS5</a>
-
-
- 
+現在、一般解析区画にGPUを使用できるノードがありません。GPUを使用可能な個人ゲノム解析区画に[AlphaFold3](/advanced_guides/AlphaFold/Alphafold_3_0_1)を準備してあります。
