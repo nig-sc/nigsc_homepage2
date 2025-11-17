@@ -11,7 +11,7 @@ This graph shows the power consumption of the NIG supercomputer.
 ![](Total_PowerConsumption.png)
 
 
-You can see power consumption graphs　for the last week by clicking on the links below.
+You can see a graph of power consumption for the last week and year by clicking the link below.
 
 
-- 「[Power consumption of the NIG supercomputer](https://dtn1.ddbj.nig.ac.jp/grafana/public-dashboards/099a1329b7694a55bd2d66d61ef9618a)」
+- 「[Power consumption of the NIG supercomputer](https://dtn1.ddbj.nig.ac.jp:10443/grafana/public-dashboards/099a1329b7694a55bd2d66d61ef9618a?orgId=1&from=now-7d&to=now&timezone=browser)」
