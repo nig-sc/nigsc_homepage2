@@ -13,4 +13,4 @@ title: 遺伝研スパコンの使用電力の状況
 
 以下のリンクをクリックすると、最近一週間および一年間の消費電力に関するグラフが表示されます。
 
-- 「&#x1f517;<a href="https://sc2.ddbj.nig.ac.jp/grafana/dashboard/snapshot/V5Kd3yKcH1neOapGUu7atXUpjBXlGIvA?orgId=1&kiosk">遺伝研スパコンの使用電力の状況</a>」
+- 「[遺伝研スパコンの使用電力の状況](https://dtn1.ddbj.nig.ac.jp:10443/grafana/public-dashboards/099a1329b7694a55bd2d66d61ef9618a?orgId=1&from=now-7d&to=now&timezone=browser)」

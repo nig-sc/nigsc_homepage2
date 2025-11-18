@@ -9,6 +9,9 @@ date: 2025-11-06
 
 The services of the NIG Supercomputer were resumed promptly on 7th November 2025 at 17:30.
 
+Following this, emergency construction work is required to repair the high-voltage generator that had failed. A second planned power outage will be needed for testing and adjustment after the repairs.
+
+This outage is scheduled to take place around March 2026, during the statutory power shutdown.
 
 ~~We would like to inform you that, due to ongoing restoration work related to a lightning strike on Friday, 5th September 2025, which affected the power supply equipment at the National Institute of Genetics, there will be a scheduled power outage on Thursday, 6th November 2025.~~
 
