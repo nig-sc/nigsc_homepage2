@@ -11,7 +11,7 @@ In the line graph below, queueing time is the waiting time until starting execut
 
 The quantity of jobs is calculated as the number of slots occupied by jobs.
 
-<img alt="job accumlation status" src="https://dtn1.ddbj.nig.ac.jp/nigsc/sc_GraphStack_1.png" />
+<img alt="job accumlation status" src="https://dtn1.ddbj.nig.ac.jp:10443/nigsc/sc_GraphStack_1.png" />
 
 - Left (the line graph): The amount of jobs per hour that have started running out of the jobs waiting in the queue.
 - Right (the bar chart)
