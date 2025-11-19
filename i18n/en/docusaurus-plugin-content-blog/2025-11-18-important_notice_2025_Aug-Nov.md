@@ -22,7 +22,7 @@ At approximately 13:40 on Friday, 5 September 2025, the National Institute of Ge
 
 As a consequence, the NIG Supercomputer was temporarily rendered unavailable. However, the login service was restored promptly at 12:00 on Tuesday, 9 September 2025. (For those dedicated virtual machines that had not been confirmed to be operational by 12:00 on 9 September, all were successfully restarted by 15:00 on Wednesday, 10 September.)
 
-Repairs to the damaged equipment were completed on Thursday, 6 November 2025. During this period, the entire NIG facility experienced a power shutdown, during which the supercomputer was offline from 08:30 on 6 November until 09:00 on 10 November. The supercomputer, however, was brought back online ahead of schedule, with services fully restored by 17:30 on Friday, 7 November 2025.
+Repairs to the damaged equipment were completed on Thursday, 6 November 2025. During this period, the entire NIG facility experienced a power shutdown, during which the NIG Supercomputer was offline from 08:30 on 6 November. However, The NIG Supercomputer was restored by 17:30 on Friday, 7 November 2025.
 
 For further details, please refer to the following page:
 
@@ -37,7 +37,7 @@ Please note that the high-voltage generator, which also sustained damage from th
 
 The NIG Supercomputer will undergo scheduled maintenance in accordance with the NIG’s statutory power outage on Saturday, 14 March 2026, with maintenance taking place for approximately one week before and after the power shutdown.
 
-During this maintenance period, the supercomputer will be completely unavailable.
+During this maintenance period, the NIG Supercomputer will be completely unavailable.
 
 Jobs in progress will be terminated, so please resubmit jobs after the scheduled maintenance.
 
@@ -59,6 +59,6 @@ last day of December (Wednesday, December 31st), when the amount will be finalis
 Please note that for the billing service for the third period, no
 changes to plans with changes in amounts can be made after January 1.
 
-For more information, please refer to the following page
+For more information, please refer to the following page:
 
 https://sc.ddbj.nig.ac.jp/en/application/invoice/
