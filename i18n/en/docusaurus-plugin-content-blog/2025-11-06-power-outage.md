@@ -7,11 +7,13 @@ date: 2025-11-06
 ---
 
 
-The services of the NIG Supercomputer were resumed promptly on 7th November 2025 at 17:30.
+At approximately 13:40 on Friday, 5 September 2025, the National Institute of Genetics (NIG) was struck by a lightning bolt, causing significant damage to the facility’s electrical infrastructure and resulting in a power outage.
 
-Following this, emergency construction work is required to repair the high-voltage generator that had failed. A second planned power outage will be needed for testing and adjustment after the repairs.
+As a consequence, the NIG Supercomputer was temporarily rendered unavailable. However, the login service was restored promptly at 12:00 on Tuesday, 9 September 2025. (For those dedicated virtual machines that had not been confirmed to be operational by 12:00 on 9 September, all were successfully restarted by 15:00 on Wednesday, 10 September.)
 
-This outage is scheduled to take place around March 2026, during the statutory power shutdown.
+Repairs to the damaged equipment were completed on Thursday, 6 November 2025. During this period, the entire NIG facility experienced a power shutdown, during which the supercomputer was offline from 08:30 on 6 November until 09:00 on 10 November. The supercomputer, however, was brought back online ahead of schedule, with services fully restored by 17:30 on Friday, 7 November 2025.
+
+<!-- truncate -->
 
 ~~We would like to inform you that, due to ongoing restoration work related to a lightning strike on Friday, 5th September 2025, which affected the power supply equipment at the National Institute of Genetics, there will be a scheduled power outage on Thursday, 6th November 2025.~~
 
@@ -19,7 +21,6 @@ This outage is scheduled to take place around March 2026, during the statutory p
 
 ~~Please note the following schedule and important details regarding the maintenance.~~
 
-<!-- truncate -->
 
 ## Maintenance Schedule
 - 6th November 2025, 8:30: The NIG Supercomputer shutdown
