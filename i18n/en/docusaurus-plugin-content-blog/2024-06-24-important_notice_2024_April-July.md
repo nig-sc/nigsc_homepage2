@@ -1,6 +1,6 @@
 ---
 slug: 2024-06-24-important_notice_2024_April-July
-title: "June 24, 2024: Important Announcement from the NIG supercomputer: 1st Period of 2024 (April - July)"
+title: "June 24, 2024: Important Announcement from the NIG supercomputer: 1st Period of 2024 (April-July)"
 tags:
   - maintenance
 

@@ -26,19 +26,20 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 :::
 
-- [(Ended) Supercomputer Service Suspension (6th November 2025, 8:00 AM – 10th November 2025, Morning) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-11-06-power-outage) (October 16, 2025) ＼ &#x1F195; ／
-- [(Postponed) Supercomputer Service Suspension (24th–27th October 2025) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-10-25-power-outage) (September 30, 2025) ＼ &#x1F195; ／
+- [Important Announcement from the NIG supercomputer: 2nd Period of 2025 (August-November)](/blog/2025-11-18-important_notice_2025_Aug-Nov) (November 18, 2025) ＼ &#x1F195; ／
+- [(Ended) Supercomputer Service Suspension (6th November 2025, 8:00 AM – 10th November 2025, Morning) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-11-06-power-outage) (October 16, 2025)
+- [(Postponed) Supercomputer Service Suspension (24th–27th October 2025) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-10-25-power-outage) (September 30, 2025)
 - [Notice of Discontinuation of Rhelixa Graphing Tool (RIAS Visualisation) by 31 October 2025](/blog/2025-09-29-news_Rhelixa-rias-visualisation-end-october-2025) (September 29, 2025)
 - [(Resolved) [Outage] SSH Connection Disruption on General Analysis Gateway Node on Tuesday, July 29, 2025](/blog/2025-07-29-ssh-failure_ga_gw) (July 29, 2025) 
 - [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, May 22, 2025](/blog/2025-05-22-Slurm_ga_maintenance) (May 22, 2025) 
 - [(Ended) Network Maintenance due to Switchover to SINET6 on Wednesday, May 24, 2025](/blog/2025-05-24-network) (April 10, 2025)
 - [Power Outage on April 7, 2025](/blog/2025-04-07-power-outage) (April 7, 2025)
-- [Important Notices from the NIG Supercomputer: Third Term of 2024 (December–March)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (February 10, 2025) 
+- [Important Announcement from the NIG supercomputer: 3rd Period of 2024 (December-March)](/blog/2025-02-10-important_notice_2024_Dec-2025_Mar) (February 10, 2025) 
 - [Announcement on Replacement to New Supercomputer](/blog/2024-12-05-supercomputer_replacement_announcement) (December 5, 2024) 
 - [Extended Maintenance Period for Account Application System](/blog/2024-12-05-extened_account_system_maintenance) (December 5, 2024) 
-- [Important Notices from the NIG Supercomputer: Second Term of 2024 (August–November)](/blog/2024-11-11-important_notice_2024_Aug-Nov) (November 11, 2024)
+- [Important Announcement from the NIG supercomputer: 2nd Period of 2024 (August-November)](/blog/2024-11-11-important_notice_2024_Aug-Nov) (November 11, 2024)
 - [Maintenance of Account Application System](/blog/2024-10-25-account_system_maintenance) (October 25, 2024)
-- [Important Notices from the NIG Supercomputer: First Term of 2024 (April–July)](/blog/2024-06-24-important_notice_2024_April-July) (June 24, 2024)
+- [Important Announcement from the NIG supercomputer: 1st Period of 2024 (April-July)](/blog/2024-06-24-important_notice_2024_April-July) (June 24, 2024)
 
 
 ## Year-End Account Renewal Applications {#year-end-renewals}
