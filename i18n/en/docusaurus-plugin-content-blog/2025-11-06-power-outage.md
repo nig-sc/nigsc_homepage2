@@ -11,7 +11,7 @@ At approximately 13:40 on Friday, 5 September 2025, the National Institute of Ge
 
 As a consequence, the NIG Supercomputer was temporarily rendered unavailable. However, the login service was restored promptly at 12:00 on Tuesday, 9 September 2025. (For those dedicated virtual machines that had not been confirmed to be operational by 12:00 on 9 September, all were successfully restarted by 15:00 on Wednesday, 10 September.)
 
-Repairs to the damaged equipment were completed on Thursday, 6 November 2025. During this period, the entire NIG facility experienced a power shutdown, during which the supercomputer was offline from 08:30 on 6 November until 09:00 on 10 November. The supercomputer, however, was brought back online ahead of schedule, with services fully restored by 17:30 on Friday, 7 November 2025.
+Repairs to the damaged equipment were completed on Thursday, 6 November 2025. Due to the repair work being close to the weekend, the NIG Supercomputer was scheduled to be offline from 08:30 on Thursday, 6 November 2025, until 09:00 on Monday, 10 November 2025. However, the work proceeded smoothly, and the NIG Supercomputer was restored earlier than planned, by 17:30 on Friday, 7 November 2025.
 
 <!-- truncate -->
 
