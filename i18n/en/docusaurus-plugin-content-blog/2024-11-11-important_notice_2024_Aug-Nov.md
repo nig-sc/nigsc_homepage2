@@ -60,15 +60,15 @@ scheduled maintenance is completed.
 
 As usual, the deadline for billing for the second period is the last
 day of November (Saturday, November 30).
-We will send you the estimated billing amount for the second term
+We will send you the estimated billing amount for the second period
 around November 20. If you need a written estimate, please let us
 know.
 We will send you an invoice in early December.
 
-As in previous years, the billing deadline for the third term is the
+As in previous years, the billing deadline for the third period is the
 last day of December (Tuesday, December 31st), when the amount will be
 finalized.
-Please note that for the billing service for the third term, no
+Please note that for the billing service for the third period, no
 changes to plans with changes in amounts can be made after January 1.
 
 For more information, please refer to the following page
