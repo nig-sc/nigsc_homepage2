@@ -22,7 +22,7 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 [Due to the power outage caused by lightning around 13:40 on Friday, September 5, 2025, the NIG supercomputer had been out of service.](/blog/2025-09-08-blackout)  However, the login service was resumed at 12:00 on Tuesday, September 9, 2025. (For dedicated VMs that had not been confirmed to be running as of 12:00 on September 9, all of them were successfully restarted by 15:00 on Wednesday, September 10.)
 
-- **[On 6th November 2025, restoration works were conducted on the power supply infrastructure at the National Institute of Genetics, which had been disrupted by a lightning strike. As a result, the NIG Supercomputer services were temporarily suspended from 08:00 AM on 6th November 2025 until the morning of 10th November 2025. We are, however, pleased to inform you that the services were successfully restored at 17:30 on 7th November 2025. We deeply regret any inconvenience this may have caused and greatly appreciate your patience and understanding in this matter.](/blog/2025-11-06-power-outage)**
+- **[On 6th November 2025, restoration works were conducted on the power supply infrastructure at the National Institute of Genetics, which had been disrupted by a lightning strike. Due to the repair work being close to the weekend, the NIG Supercomputer was scheduled to be offline from 08:30 on Thursday, 6 November 2025, until 09:00 on Monday, 10 November 2025. However, the work proceeded smoothly, and the NIG Supercomputer was restored earlier than planned, by 17:30 on Friday, 7 November 2025.](/blog/2025-11-06-power-outage)**
 
 :::
 
