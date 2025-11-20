@@ -159,13 +159,37 @@ RSA host key for gw.ddbj.nig.ac.jp has changed and you have requested strict che
 Host key verification failed.
 ```
 
-There are two gateway nodes of the NIG supercomputer: `gw.ddbj.nig.ac.jp` and `gw2.ddbj.nig.ac.jp`. By executing `ssh-keygen -R gw.ddbj.nig.ac.jp` , `ssh-keygen -R gw2.ddbj.nig.ac.jp` respectively, this error will disappear. **<font color="red">Execute it on the user's computer</font>, not on the NIG supercomputer.**
+SSH (Secure Shell) includes a mechanism to prevent server impersonation during secure communication with a server. When establishing an SSH connection, the host’s authenticity is verified through a cryptographic key known as the host key. This ensures that the server being connected to is legitimate.
 
-When you execute it, the error will disappear, but you will be asked `Are you sure you want to continue connecting (yes/no)? `. Select `yes'.<br/>
+If the host key of the server you are attempting to connect to differs from a previously known one, it may indicate that you are being directed to a malicious server. In such cases, a warning message will appear, notifying you that the authenticity of the destination server should be confirmed.
 
-This confirmation message is displayed the first time when connecting from a user's computer to the NIG supercomputer server, to make sure that the connection is to a legitimate server and not to a spoofed fake server. 
+This message typically appears in the following cases:
+- When the server’s operating system has been reinstalled or undergone a major update, leading to the regeneration of the host key.
+- If you are redirected to a suspicious server masquerading as the intended one, potentially due to a server impersonation attack.
+- If the known_hosts file on the client side has been deleted or corrupted.
 
-It will be asked only once the first time and will not be displayed again the next time.
+To resolve this warning, you will need to remove the old host key from the `known_hosts` file, which stores trusted host keys, and update it with the new host key.
+
+
+There are two gateway nodes of the NIG supercomputer: `gw.ddbj.nig.ac.jp` and `gw2.ddbj.nig.ac.jp`. 
+
+Please execute the following commands:
+
+- For `gw.ddbj.nig.ac.jp`:
+
+```
+ssh-keygen -R gw.ddbj.nig.ac.jp
+```
+
+- For `gw2.ddbj.nig.ac.jp`:
+
+```
+ssh-keygen -R gw2.ddbj.nig.ac.jp
+```
+
+This will remove the old host keys from your `known_hosts` file. On your next connection, the correct host keys will be retrieved, and the warning message will no longer appear. **<font color="red">Please note, execute it on the user's computer</font>, not on the NIG supercomputer.**
+
+When you execute it, the warning message will disappear, but you will be asked `Are you sure you want to continue connecting (yes/no)? `. Select `yes'.<br/>This confirmation message is displayed the first time when connecting from a user's computer to the NIG supercomputer server, to make sure that the connection is to a legitimate server and not to a spoofed fake server. It will be asked only once the first time and will not be displayed again the next time.
 
 
 ## &#x1F180; SSH connections frequently disconnected. {#disconnect-ssh}
