@@ -26,7 +26,8 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 :::
 
-- [Important Announcement from the NIG supercomputer: 2nd Period of 2025 (August-November)](/blog/2025-11-18-important_notice_2025_Aug-Nov) (November 18, 2025) ＼ &#x1F195; ／
+- [March 13 - March 19, 2026: Regular Maintenance](/blog/2026-03-13-regular-maintenance) (December 16, 2025) ＼ &#x1F195; ／
+- [Important Announcement from the NIG supercomputer: 2nd Period of 2025 (August-November)](/blog/2025-11-18-important_notice_2025_Aug-Nov) (November 18, 2025)
 - [(Ended) Supercomputer Service Suspension (6th November 2025, 8:00 AM – 10th November 2025, Morning) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-11-06-power-outage) (October 16, 2025)
 - [(Postponed) Supercomputer Service Suspension (24th–27th October 2025) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-10-25-power-outage) (September 30, 2025)
 - [Notice of Discontinuation of Rhelixa Graphing Tool (RIAS Visualisation) by 31 October 2025](/blog/2025-09-29-news_Rhelixa-rias-visualisation-end-october-2025) (September 29, 2025)
@@ -49,7 +50,10 @@ The account application system is currently being revised for security enhanceme
 
 ## Regular Maintenance in Fiscal Year 2025 {#2025-annual-maintenance}
 
-The regular maintenance for fiscal year 2025 is scheduled around March 2026.
+The Regular maintenance for the 2025 financial year will be carried out from Friday, 13 March 2026 to Thursday, 19 March 2026.
+
+For further details, please refer to the information below.
+- [[Maintenance] 13-19 March 2026: Regular Maintenance](/blog/2026-03-13-regular-maintenance)
 
 
 ## Temporary Suspension of New Account Registrations for Large-Scale Users in General and Personal Genome Analysis Areas (May 13, 2022) {#registration-suspension}
