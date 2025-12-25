@@ -5,7 +5,6 @@ title: Parallel Jobs
 
 When running programs that utilize multiple CPU cores simultaneously for extended periods, please execute them as parallel jobs. For executing many such programs, use array jobs for parallel tasks. The submission command should utilize the `sbatch` command.
 
-Slurm does not have a feature equivalent to the Parallel Environment (PE) in AGE. We will introduce how to specify options to allocate cores in a nearly equivalent manner.
 
 Reference Information:
 
@@ -13,37 +12,9 @@ Reference Information:
 - [CPU Management User and Administrator Guide](https://slurm.schedmd.com/cpu_management.html)
 
 
-## Types of Parallel Jobs (Overview) {#types-of-parallel-jobs-overview}
 
-In line with the environments provided by PE in AGE, we present the options in Slurm to achieve nearly equivalent core allocations.
+## Types of Parallel Jobs {#types-of-parallel-jobs-details}
 
-|Environment Name in AGE PE|Meaning of the PE Environment|Slurm Options to Specify for Similar Resource Allocation (Example)|
-|--------------------------|-----------------------------|-----------------------------------------------------------|
-|def_slot|Secures NTASK number of CPU cores on the same compute node (The job will not start if NTASK exceeds the CPU cores available on the compute node)|`-N 1-1 --n NTASK`|
-|mpi|Prepares NTASK number of CPU cores across multiple compute nodes, distributing tasks across nodes using round-robin|`[-N NODES] -n NTASK --spread-job`|
-|mpi-fillup|Secures NTASK number of CPU cores across multiple compute nodes, ensuring as few nodes as possible are used|`[-N NODES] -n NTASK`|
-|pe_n|Secures NTASK_1 number of CPU cores across multiple compute nodes, allocating NTASK_2 number of CPU cores per node|`[-N NODES] -n NTASK_1 --ntasks-per-node=NTASK_2`|
-
-Unlike the AGE PE, you cannot specify a range for NTASK. However, for NODES, a range can be specified, e.g., `-N MINNODES-MAXNODES`.
-
-In Slurm, it's common to adjust the number of nodes with `-N` and the number of tasks per node with `--ntasks-per-node` to execute parallel jobs. Note that the product of the number of nodes and tasks per node equals the total number of tasks (parallelism).
-
-### Attention for Memory Request in Parallel Jobs {#memory-parallel-job}
-
-When specifying memory for parallel jobs with `--mem` (the memory allocated to the job per node) and `--mem-per-cpu` (the memory allocated to the job per CPU core), be aware that the system requests a memory capacity multiplied by the specified number of nodes or CPU cores.
-
-## Types of Parallel Jobs (Details) {#types-of-parallel-jobs-details}
-
-### CPU and Memory Allocation {#cpu-and-memory-alloc}
-
-When executing sbatch or srun commands without explicitly specifying the memory amount, the system allocates 8GB of memory per CPU core by default. This allocation can vary depending on the type of computer or queue used.
-
-For example, specifying the following would allocate a total memory of 128GB on one compute node for the parallel job. Carefully consider this when deciding on the required memory amount.
-
-```
--N 1-1 -n 16 --mem-per-cpu 8G 
-```
-![figure](pe_1.png)
 
 ### Parallel Job (1) (Corresponding to def_slot) - Method to Secure Specified Number of Cores on the Same Compute Node {#parallel-job-def-slot-same-node-method}
 
