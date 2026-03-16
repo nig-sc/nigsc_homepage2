@@ -119,6 +119,14 @@ title: "各種統計"
 <td>36</td>
 <td>1952</td>
 </tr>
+<tr>
+<td>2025.12.31</td>
+<td>1845</td>
+<td>451</td>
+<td>149</td>
+<td>24</td>
+<td>2469</td>
+</tr>
 </table>
 
 ![](total_Accounts.png)
@@ -234,6 +242,16 @@ title: "各種統計"
 <td>0</td>
 <td>26</td>
 <td>248</td>
+</tr>
+<tr>
+<td>2025.12.31</td>
+<td>189</td>
+<td>44</td>
+<td>233</td>
+<td>31</td>
+<td>0</td>
+<td>31</td>
+<td>264</td>
 </tr>
 </tbody>
 </table>

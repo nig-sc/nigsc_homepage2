@@ -1,5 +1,5 @@
 ---
-slug: 2026-03-13-regular-maintenance
+slug: 2026-03-13-scheduled-maintenance
 title: "【定期メンテナンス】2026 年 3 月 13 日～3 月 19 日 定期メンテナンスのお知らせ"
 tags:
   - maintenance
