@@ -1,6 +1,6 @@
 ---
 id: accounts_by_institution_2024
-title: Number of accounts by institution(as of December 31, 2024)
+title: Number of accounts by institution (as of December 31, 2024)
 ---
 
 Aggregated only for universities and public research institutions (companies are not dixcclosed).

@@ -1,6 +1,6 @@
 ---
-slug: 2026-03-13-regular-maintenance
-title: "[Maintenance] 13-19 March 2026: Regular Maintenance"
+slug: 2026-03-13-scheduled-maintenance
+title: "[Maintenance] 13-19 March 2026: Scheduled Maintenance"
 tags:
   - maintenance
 date: 2026-03-13
