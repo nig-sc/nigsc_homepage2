@@ -28,7 +28,7 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 - [Important Notice from the NIG Supercomputer: Third Period of 2025 (December–March)](/blog/2026-02-26-important_notice_2025_Dec-2026_Mar) (February 26, 2026) ＼ &#x1F195; ／
 - [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, December 25, 2025](/blog/2025-12-25-Slurm_ga_maintenance) (December 25, 2025) 
-- [March 13 - March 19, 2026: Scheduled Maintenance](/blog/2026-03-13-scheduled-maintenance) (December 16, 2025)
+- [(Ended) March 13 - March 19, 2026: Scheduled Maintenance](/blog/2026-03-13-scheduled-maintenance) (December 16, 2025)
 - [Important Announcement from the NIG supercomputer: 2nd Period of 2025 (August-November)](/blog/2025-11-18-important_notice_2025_Aug-Nov) (November 18, 2025)
 - [(Ended) Supercomputer Service Suspension (6th November 2025, 8:00 AM – 10th November 2025, Morning) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-11-06-power-outage) (October 16, 2025)
 - [(Postponed) Supercomputer Service Suspension (24th–27th October 2025) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-10-25-power-outage) (September 30, 2025)
