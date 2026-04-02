@@ -44,6 +44,7 @@ jobs:
             -n nigsc-homepage
 
       - name: Clean up old images from registry
+        continue-on-error: true
         run: |
           python3 - <<'EOF'
           import urllib.request, json, sys
