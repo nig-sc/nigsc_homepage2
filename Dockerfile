@@ -1,10 +1,7 @@
-FROM node:20-alpine AS builder
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
-COPY . .
-RUN yarn build
-
-FROM nginx:alpine
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY html-saurus.jar /app/html-saurus.jar
+COPY . /data/nigsc_homepage2/
 EXPOSE 80
+CMD ["java", "-jar", "/app/html-saurus.jar", "/data/nigsc_homepage2", \
+     "--production", "--port", "80"]
