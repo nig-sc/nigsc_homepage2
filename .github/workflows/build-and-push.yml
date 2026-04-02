@@ -31,9 +31,15 @@ jobs:
             --destination=10.96.0.100:5000/${{ steps.tag.outputs.TAG }} \
             --insecure
 
+      - name: Install kubectl
+        run: |
+          curl -LO "https://dl.k8s.io/release/$(curl -sL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+          chmod +x kubectl
+          sudo mv kubectl /usr/local/bin/kubectl
+
       - name: Deploy to k8s
         run: |
-          k0s kubectl set image deployment/nigsc-homepage \
+          kubectl set image deployment/nigsc-homepage \
             nigsc-homepage=10.96.0.100:5000/${{ steps.tag.outputs.TAG }} \
             -n nigsc-homepage
 
