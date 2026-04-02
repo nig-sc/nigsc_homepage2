@@ -1,0 +1,169 @@
+/* DDBJ theme for html-saurus --production mode
+ * Copy html-saurus.css, html-saurus-header.html, html-saurus-footer.html
+ * to your project root (next to docusaurus.config.js).
+ */
+
+/* ============================================================
+   Brand header (hs-brand-header)
+   ============================================================ */
+.hs-brand-header {
+  display: flex;
+  align-items: center;
+  background: #303846;
+  padding: 0 1.5rem;
+  height: 52px;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.hs-brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.hs-brand-logo {
+  height: 34px;
+  width: auto;
+}
+
+.hs-brand-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 0;
+}
+
+.hs-brand-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0 0.875rem;
+  line-height: 52px;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.hs-brand-nav a:hover {
+  color: #fff;
+}
+
+/* ============================================================
+   html-saurus native header — keep but make secondary
+   ============================================================ */
+header {
+  top: 52px !important;   /* offset by brand header height */
+  position: sticky;
+  z-index: 100;
+}
+
+/* ============================================================
+   Page layout — push content down so both headers fit
+   ============================================================ */
+.content-wrap {
+  padding-top: 0;
+}
+
+/* ============================================================
+   Primary color overrides (DDBJ orange + white navbar)
+   ============================================================ */
+:root {
+  --c-nav-bg:     #fff;
+  --c-nav-border: #e3e4e5;
+  --c-nav-accent: #e99523;
+  --c-act-text:   #c97d10;
+  --c-act-bg:     #fef3d0;
+}
+
+/* White navbar needs dark text */
+header { color: var(--c-text); }
+header .site-title { color: var(--c-text); }
+header nav.top a { color: #555; }
+header nav.top a:hover { color: #111; }
+header nav.top a.active { color: var(--c-nav-accent); border-bottom-color: var(--c-nav-accent); }
+
+/* Search input: dark text/border on white navbar */
+#search-input { background: rgba(0,0,0,0.06); border-color: #ccc; color: var(--c-text); }
+#search-input::placeholder { color: #888; }
+#search-input:focus { background: rgba(0,0,0,0.08); border-color: #999; }
+
+/* Language switcher: dark text on white navbar */
+.lang-btn { color: #555; border-color: #ccc; }
+.lang-btn:hover { color: #111; background: rgba(0,0,0,0.06); }
+.lang-menu { background: #fff; border-color: #ddd;
+             box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+.lang-item { color: #555; }
+.lang-item:hover { background: var(--c-hover); color: #111; }
+.lang-item.active { color: var(--c-nav-accent); }
+
+/* Content links */
+main a, .content a {
+  color: #e99523;
+}
+main a:hover, .content a:hover {
+  color: #c97d10;
+}
+
+/* ============================================================
+   DDBJ footer (hs-ddbj-footer)
+   ============================================================ */
+.hs-ddbj-footer {
+  background: #303846;
+  color: #ebedf0;
+  margin-top: 4rem;
+}
+
+.hs-footer-inner {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hs-footer-col {
+  flex: 1;
+  min-width: 170px;
+}
+
+.hs-footer-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.hs-footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hs-footer-col li {
+  margin-bottom: 0.4rem;
+}
+
+.hs-footer-col a {
+  color: #b0b8c8;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.15s;
+}
+
+.hs-footer-col a:hover {
+  color: #fff;
+}
+
+.hs-footer-bottom {
+  background: #1d2330;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  font-size: 0.8rem;
+  color: #888;
+}
