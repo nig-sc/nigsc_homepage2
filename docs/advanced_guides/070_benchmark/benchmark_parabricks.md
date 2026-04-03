@@ -115,25 +115,25 @@ NCGM WGSpipeline では合計 5 種類のバリアントコールが実行され
 #### 図 1 高火力 PHY 環境上で Parabricks 解析時の GPU 使用率 {#figure-1}
 
 <img
-  src={require('./NA18945-gpu-low-v421.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./NA18945-gpu-low-v421.png"
+  alt=""
+  style="width:800px"
 />
 
 #### 図 2 高火力 PHY 環境上で Parabricks 解析時の CPU 使用率 {#figure-2}
 
 <img
-  src={require('./NA18945-cpu-low-v421.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./NA18945-cpu-low-v421.png"
+  alt=""
+  style="width:800px"
 />
 
 #### 図 3 高火力 PHY 環境上で Parabricks 解析時のディスク使用率 {#figure-3}
 
 <img
-  src={require('./NA18945-disk-low-v421.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./NA18945-disk-low-v421.png"
+  alt=""
+  style="width:800px"
 />
 
 ### 4.2 解析結果の妥当性

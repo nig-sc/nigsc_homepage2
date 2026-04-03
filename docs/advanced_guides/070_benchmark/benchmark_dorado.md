@@ -162,49 +162,49 @@ dorado basecaller \
 ### 図1 Dorado v0.5.1 で解析時の GPU 使用率(w/o modification calling) {#gpu-wo-mod-v051}
 
 <img
-  src={require('./fig4-gpu-wo-mod-v051.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./fig4-gpu-wo-mod-v051.png"
+  alt=""
+  style="width:800px"
 />
 
 ### 図2 Dorado v0.5.1 で解析時の GPU 使用率(w/ 5mCG calling) {#pu-w-5mCG-v051}
 
 <img
-  src={require('./fig5-pu-w-5mCG-v051.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./fig5-pu-w-5mCG-v051.png"
+  alt=""
+  style="width:800px"
 />
 
 ### 図3 Dorado v0.5.1 で解析時の GPU 使用率(w/ 5mCG/5hmCG calling) {#gpu-w-5hmCG-v051}
 
 <img
-  src={require('./fig6-gpu-w-5hmCG-v051.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./fig6-gpu-w-5hmCG-v051.png"
+  alt=""
+  style="width:800px"
 />
 
 ### 図4 Dorado v0.5.1 で解析時の CPU 使用率(w/o modification calling) {#cpu-wo-mod-v051}
 
 <img
-  src={require('./fig7-cpu-wo-mod-v051.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./fig7-cpu-wo-mod-v051.png"
+  alt=""
+  style="width:800px"
 />
 
 ### 図5 Dorado v0.5.1 で解析時の CPU 使用率(w/ 5mCG calling) {#cpu-w-5mGC-v051}
 
 <img
-  src={require('./fig8-cpu-w-5mGC-v051.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./fig8-cpu-w-5mGC-v051.png"
+  alt=""
+  style="width:800px"
 />
 
 ### 図6 Dorado v0.5.1 で解析時の CPU 使用率(w/ 5mCG/5hmCG calling) {#cpu-w-5hmCG-v051}
 
 <img
-  src={require('./fig9-cpu-w-5hmCG-v051.png').default}
-  alt=''
-  style={{ width: '800px' }}
+  src="./fig9-cpu-w-5hmCG-v051.png"
+  alt=""
+  style="width:800px"
 />
 
 
