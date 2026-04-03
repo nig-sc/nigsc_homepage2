@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY html-saurus.jar /app/html-saurus.jar
 COPY . /data/nigsc_homepage2/
