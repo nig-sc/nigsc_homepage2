@@ -6,7 +6,7 @@ title: Install Manual
 <img
   src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{width:'200px'}}
+  style="width:200px"
 />
 
 ## Configuration and usage

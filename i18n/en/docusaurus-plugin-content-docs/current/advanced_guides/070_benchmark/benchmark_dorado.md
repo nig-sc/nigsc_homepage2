@@ -171,53 +171,53 @@ Finally, comparing with the Amazon benchmark results, high-performance PHY compl
 ### Figure 1: GPU Usage during Analysis with Dorado v0.5.1 (without modification calling) {#gpu-wo-mod-v051}
 
 <img
-  src={require('./fig4-gpu-wo-mod-v051.png').default}
+  src="./fig4-gpu-wo-mod-v051.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 
 ### Figure 2: GPU Usage during Analysis with Dorado v0.5.1 (with 5mCG calling) {#pu-w-5mCG-v051}
 
 <img
-  src={require('./fig5-pu-w-5mCG-v051.png').default}
+  src="./fig5-pu-w-5mCG-v051.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 
 ### Figure 3: GPU Usage during Analysis with Dorado v0.5.1 (with 5mCG/5hmCG calling) {#gpu-w-5hmCG-v051}
 
 <img
-  src={require('./fig6-gpu-w-5hmCG-v051.png').default}
+  src="./fig6-gpu-w-5hmCG-v051.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 ### Figure 4: CPU Usage during Analysis with Dorado v0.5.1 (without modification calling) {#cpu-wo-mod-v051}
 
 <img
-  src={require('./fig7-cpu-wo-mod-v051.png').default}
+  src="./fig7-cpu-wo-mod-v051.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 
 ### Figure 5: CPU Usage during Analysis with Dorado v0.5.1 (with 5mCG calling) {#cpu-w-5mGC-v051}
 
 <img
-  src={require('./fig8-cpu-w-5mGC-v051.png').default}
+  src="./fig8-cpu-w-5mGC-v051.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 
 ### Figure 6: CPU Usage during Analysis with Dorado v0.5.1 (with 5mCG/5hmCG calling) {#cpu-w-5hmCG-v051}
 
 <img
-  src={require('./fig9-cpu-w-5hmCG-v051.png').default}
+  src="./fig9-cpu-w-5hmCG-v051.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 

@@ -6,7 +6,7 @@ title: "Tutorial 4 - HLA Genotype Imputation workflows using HIBAG"
 <img
   src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{width:'200px'}}
+  style="width:200px"
 />
 
 ## Connecting to NIG Guacamole desktop environment {#Connect-nig-guacamole}
