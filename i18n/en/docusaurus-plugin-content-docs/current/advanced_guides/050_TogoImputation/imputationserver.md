@@ -6,7 +6,7 @@ title: TogoImputation
 <img
   src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{width:'200px'}}
+  style="width:200px"
 />
 
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;Michigan Imputation Server](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;TOPMed Project Imputation Server](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.

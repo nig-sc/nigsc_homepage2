@@ -6,7 +6,7 @@ title: "Tutorial 1 - Using the public reference panel"
 <img
   src='https://github.com/genome-analytics-japan/imputation-server-logo/blob/main/logo_color.png?raw=true'
   alt=''
-  style={{width:'200px'}}
+  style="width:200px"
 />
 
 ## Procedures for using this system {#usage-system}

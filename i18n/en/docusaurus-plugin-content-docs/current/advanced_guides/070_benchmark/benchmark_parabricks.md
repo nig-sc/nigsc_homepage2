@@ -119,25 +119,25 @@ In the NCGM WGSpipeline, five different types of variant calls are performed. Fr
 #### Figure 1: GPU Usage During Parabricks Analysis on High-performance PHY {#figure-1}
 
 <img
-  src={require('./NA18945-gpu-low-v421.png').default}
+  src="./NA18945-gpu-low-v421.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 #### Figure 2: CPU Usage During Parabricks Analysis on High-performance PHY {#figure-2}
 
 <img
-  src={require('./NA18945-cpu-low-v421.png').default}
+  src="./NA18945-cpu-low-v421.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 #### Figure 3: Disk Usage During Parabricks Analysis on High-performance PHY {#figure-3}
 
 <img
-  src={require('./NA18945-disk-low-v421.png').default}
+  src="./NA18945-disk-low-v421.png"
   alt=''
-  style={{ width: '800px' }}
+  style="width:800px"
 />
 
 
