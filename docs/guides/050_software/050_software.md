@@ -476,7 +476,7 @@ AMD Optimizing C/C++ and Fortran Compilers (AOCC)
 <tr>
 <td width="300">
 
-[FireDucks Enterprise](/advanced_guides/fireducks)<br />(pandas高速化ライブラリ)
+[FireDucks Enterprise](/advanced_guides/FireDucks)<br />(pandas高速化ライブラリ)
 
 </td>
 <td width="300">利用可能</td>

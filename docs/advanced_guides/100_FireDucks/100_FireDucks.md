@@ -1,5 +1,5 @@
 ---
-id: fireducks
+id: FireDucks
 title: FireDucks Enterprise
 ---
 
