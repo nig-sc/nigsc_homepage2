@@ -9,12 +9,10 @@ title: 遺伝研スパコンの活用に役立つアメリエフ株式会社「B
 
 :::info 先進ゲノム支援事業
 
-■ 過去の講習会情報（ビデオ・資料）- 先進ゲノム支援事業公式ページ
-https://www.genome-sci.jp/bioinformatic
-【関連】
-■ NBDCデータ解析講習会（AJACS）ビデオ資料 - DBCLS 統合TV
-https://togotv.dbcls.jp/ajacs_text.html
-
+- 過去の講習会情報（ビデオ・資料）- 先進ゲノム支援事業公式ページ
+    - https://www.genome-sci.jp/bioinformatic
+- 【関連】NBDCデータ解析講習会（AJACS）ビデオ資料 - DBCLS 統合TV
+    - https://togotv.dbcls.jp/ajacs_text.html
 :::
 
 しかし、参加対象が限られている場合があることに加え、講習時に参加者が一斉に実行するデモ環境と、実際に各自が研究で用いる解析環境とが異なることも少なくありません。また、参加者の習熟度もさまざまであり、個別の状況に応じた対応が難しいという現状もあります。
@@ -61,7 +59,7 @@ https://togotv.dbcls.jp/ajacs_text.html
   [https://amelieff.jp/online/cat\_transcriptome/video\_csrna/](https://amelieff.jp/online/cat_transcriptome/video_csrna/)  
 * **論文執筆のためのバイオインフォマティクス入門** SRAやGEOなどのデータベースから公開データを取得し、ご自身の研究に活用したい方に、役立てていただきたい内容です。論文のMethodに記載されたバイオインフォマティクス解析を追試・再現するコツをお伝えします。動画ではシングルセルRNA-seq解析を例に挙げ、Seuratパッケージを用いたデータの読み込み、クオリティコントロール、次元削減（UMAP）、細胞種同定までの解析ワークフローを実例を交えて紹介しています。  
 
-画像：ss01
+
 ![動画のサムネイル03](ss03.png)  
   [https://amelieff.jp/online/cat\_general/video\_bisg95/](https://amelieff.jp/online/cat_general/video_bisg95/)
 
