@@ -40,7 +40,7 @@ For more details, please refer to the [🔗 BI Practical Lab introduction page](
 <tr>
 <td width="400">
 
-![](ss02.jpg)
+![](ss02.png)
 
 </td>
 <td valign="top">
