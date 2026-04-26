@@ -1,6 +1,6 @@
 ---
 id: Amerieff
-title: "Introducing Amelieff Inc.'s \"BI Practical Lab\" — a resource for making the most of the NIG Supercomputer"
+title: Introducing Amelieff Inc.'s BI Practical Lab — a resource for making the most of the NIG Supercomputer
 ---
 
 In recent years, there has been a growing demand among researchers to analyze their own sequence data hands-on, with a genuine understanding of the methods involved. At the same time, selecting the right analytical approach for each researcher's specific goals and data, setting up the analysis environment, and getting it running stably present no small barriers.
@@ -22,7 +22,7 @@ With these challenges in mind, under the collaboration of Dr. Osamu Ogasawara, H
 Last year, we introduced convenient tools from academic sources. This year, as a new example of a company supporting academic research, we introduce Amelieff Inc.
 
 
-## Introducing Amelieff Inc.'s "BI Practical Lab" — a resource for making the most of the NIG Supercomputer
+## Introducing Amelieff Inc.'s BI Practical Lab — a resource for making the most of the NIG Supercomputer
 
 As the volume of data in life science research continues to grow explosively, the use of supercomputers as large-scale computational resources has become indispensable. For those of you performing bioinformatics analyses on the supercomputer, we would like to introduce a free learning site that can help you develop your analytical skills and troubleshoot day-to-day issues.
 
