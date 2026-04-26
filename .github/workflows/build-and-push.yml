@@ -14,7 +14,9 @@ jobs:
 
       - name: Set image tag
         id: tag
-        run: echo "TAG=nigsc-homepage:$(date -u +%y%m%d%H%M)" >> $GITHUB_OUTPUT
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('package.json'))['version'])")
+          echo "TAG=nigsc-homepage:${VERSION}-$(date -u +%y%m%d%H%M)" >> $GITHUB_OUTPUT
 
       - name: Download html-saurus.jar
         run: |
