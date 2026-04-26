@@ -462,3 +462,25 @@ AMD Optimizing C/C++ and Fortran Compilers (AOCC)
 
 </table>
 
+
+## 商用Pythonライブラリ {#commercial-python-libraries}
+
+<table>
+
+<tr>
+<th width="300">名称</th>
+<th width="300">一般解析区画</th>
+<th width="300">個人ゲノム解析区画</th>
+</tr>
+
+<tr>
+<td width="300">
+
+[FireDucks Enterprise](/advanced_guides/FireDucks)<br />(pandas高速化ライブラリ)
+
+</td>
+<td width="300">利用可能</td>
+<td width="300">利用可能</td>
+
+</tr>
+</table>
