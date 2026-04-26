@@ -1,0 +1,79 @@
+name: Build, Push and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set image tag
+        id: tag
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('package.json'))['version'])")
+          echo "TAG=nigsc-homepage:${VERSION}-$(date -u +%y%m%d%H%M)" >> $GITHUB_OUTPUT
+
+      - name: Download html-saurus.jar
+        run: |
+          curl -L -o html-saurus.jar \
+            https://github.com/scivicslab/html-saurus/releases/latest/download/html-saurus.jar
+
+      - name: Build and push with Kaniko
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}:/workspace \
+            gcr.io/kaniko-project/executor:latest \
+            --context=/workspace \
+            --dockerfile=/workspace/Dockerfile \
+            --destination=10.96.0.100:5000/${{ steps.tag.outputs.TAG }} \
+            --insecure
+
+      - name: Install kubectl
+        run: |
+          curl -LO "https://dl.k8s.io/release/$(curl -sL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+          chmod +x kubectl
+          sudo mv kubectl /usr/local/bin/kubectl
+
+      - name: Deploy to k8s
+        run: |
+          kubectl set image deployment/nigsc-homepage \
+            nigsc-homepage=10.96.0.100:5000/${{ steps.tag.outputs.TAG }} \
+            -n nigsc-homepage
+
+      - name: Clean up old images from registry
+        continue-on-error: true
+        run: |
+          python3 - <<'EOF'
+          import urllib.request, json, sys
+
+          registry = "http://10.96.0.100:5000"
+          repo = "nigsc-homepage"
+          keep = 3
+
+          with urllib.request.urlopen(f"{registry}/v2/{repo}/tags/list") as r:
+              tags = json.load(r).get("tags", [])
+
+          tags_to_delete = sorted(tags)[:-keep]
+          for tag in tags_to_delete:
+              req = urllib.request.Request(
+                  f"{registry}/v2/{repo}/manifests/{tag}",
+                  headers={"Accept": "application/vnd.docker.distribution.manifest.v2+json"},
+              )
+              with urllib.request.urlopen(req) as r:
+                  digest = r.headers.get("Docker-Content-Digest")
+              if digest:
+                  del_req = urllib.request.Request(
+                      f"{registry}/v2/{repo}/manifests/{digest}",
+                      method="DELETE",
+                  )
+                  try:
+                      urllib.request.urlopen(del_req)
+                      print(f"Deleted: {tag} ({digest})")
+                  except Exception as e:
+                      print(f"Failed to delete {tag}: {e}", file=sys.stderr)
+          EOF
