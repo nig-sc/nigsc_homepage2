@@ -1,6 +1,6 @@
 ---
 slug: 2026-03-13-scheduled-maintenance
-title: "[Maintenance] 13-19 March 2026: Scheduled Maintenance"
+title: "(Ended) [Maintenance] 13-19 March 2026: Scheduled Maintenance"
 tags:
   - maintenance
 date: 2026-03-13
