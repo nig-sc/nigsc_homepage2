@@ -1,4 +1,4 @@
-﻿---
+---
 title: Tips
 sidebar_position: 30
 ---
