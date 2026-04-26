@@ -376,7 +376,7 @@ AMD Optimizing C/C++ and Fortran Compilers (AOCC)
 </table>
 
 
-## Commercial Compiler{#commercila-compilar}
+## Commercial Compiler {#commercial-compiler}
 
 <table>
 
@@ -416,4 +416,27 @@ AMD Optimizing C/C++ and Fortran Compilers (AOCC)
 <td width="300">☓</td>
 </tr>
 
+</table>
+
+
+## Commercial Python Libraries {#commercial-python-libraries}
+
+<table>
+
+<tr>
+<th width="300">Name</th>
+<th width="300">General Analysis Division</th>
+<th width="300">Personal Genome Analysis Division</th>
+</tr>
+
+<tr>
+<td width="300">
+
+[FireDucks Enterprise](/advanced_guides/FireDucks)<br />(pandas acceleration library)
+
+</td>
+<td width="300">Available</td>
+<td width="300">Available</td>
+
+</tr>
 </table>
