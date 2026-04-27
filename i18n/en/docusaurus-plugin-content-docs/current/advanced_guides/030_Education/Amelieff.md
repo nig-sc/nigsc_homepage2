@@ -1,5 +1,5 @@
 ---
-id: Amerieff
+id: Amelieff
 title: Introducing Amelieff Inc.'s BI Practical Lab — a resource for making the most of the NIG Supercomputer
 ---
 
@@ -45,23 +45,23 @@ The company's commitment to helping researchers make effective use of limited re
 ![Supporting researchers](support.jpg)
 
 
-**③ Start here — three recommended videos**
+### ③ Start here — three recommended videos
 
 After registering with BI Practical Lab, here are three videos we recommend watching as a first step toward smoother analyses.
 
-* **Essentials of setting up a lab analysis environment** — Ideal for those who want to step up from a personal laptop and prepare a system for full-scale data analysis. Covers a practical comparison of the pros and cons of on-premises, supercomputer, and cloud environments, as well as the causes of very common issues in Linux server operation such as "system slowdowns due to memory exhaustion" and "library not found errors," along with concrete solutions using commands such as `htop`, `kill`, and `find`.
+- **Essentials of setting up a lab analysis environment** — Ideal for those who want to step up from a personal laptop and prepare a system for full-scale data analysis. Covers a practical comparison of the pros and cons of on-premises, supercomputer, and cloud environments, as well as the causes of very common issues in Linux server operation such as "system slowdowns due to memory exhaustion" and "library not found errors," along with concrete solutions using commands such as `htop`, `kill`, and `find`.
 
 ![Video thumbnail 01](ss01.png)
 
 [https://amelieff.jp/online/cat\_system/video\_bisg78/](https://amelieff.jp/online/cat_system/video_bisg78/)
 
-* **NGS case study course (RNA-seq analysis)** — A video for those who want to incorporate RNA-seq using next-generation sequencers into their research. Covers the full workflow: quality checking with FastQC, mapping with STAR, and expression quantification with featureCounts (R package) on Linux, followed by principal component analysis, two-group comparison, and pathway/GO analysis in R. Uses real public data and explains how to interpret the biological meaning of the results.
+- **NGS case study course (RNA-seq analysis)** — A video for those who want to incorporate RNA-seq using next-generation sequencers into their research. Covers the full workflow: quality checking with FastQC, mapping with STAR, and expression quantification with featureCounts (R package) on Linux, followed by principal component analysis, two-group comparison, and pathway/GO analysis in R. Uses real public data and explains how to interpret the biological meaning of the results.
 
 ![Video thumbnail 02](ss02.png)
 
 [https://amelieff.jp/online/cat\_transcriptome/video\_csrna/](https://amelieff.jp/online/cat_transcriptome/video_csrna/)
 
-* **Introduction to bioinformatics for paper writing** — Useful for those who want to retrieve public data from databases such as SRA and GEO and apply it to their own research. Provides tips for reproducing and verifying the bioinformatics analyses described in the Methods section of published papers. Uses single-cell RNA-seq analysis as an example, walking through data loading, quality control, dimensionality reduction (UMAP), and cell type identification using the Seurat package, with concrete examples throughout.
+- **Introduction to bioinformatics for paper writing** — Useful for those who want to retrieve public data from databases such as SRA and GEO and apply it to their own research. Provides tips for reproducing and verifying the bioinformatics analyses described in the Methods section of published papers. Uses single-cell RNA-seq analysis as an example, walking through data loading, quality control, dimensionality reduction (UMAP), and cell type identification using the Seurat package, with concrete examples throughout.
 
 ![Video thumbnail 03](ss03.png)
 
