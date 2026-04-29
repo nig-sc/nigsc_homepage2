@@ -11,6 +11,7 @@ title: 実行開始までの待ち時間
 
 ジョブの量は、ジョブが占めるスロットの数として計算しています。
 
+
 <img alt="job accumlation status" src="https://dtn1.ddbj.nig.ac.jp:10443/nigsc/sc_GraphStack_1.png" />
 
 
