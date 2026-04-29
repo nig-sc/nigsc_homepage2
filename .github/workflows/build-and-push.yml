@@ -21,7 +21,7 @@ jobs:
       - name: Download html-saurus.jar
         run: |
           curl -fL -o html-saurus.jar \
-            https://github.com/scivicslab/html-saurus/releases/download/v1.8.0/html-saurus-v1.8.0.jar
+            https://github.com/scivicslab/html-saurus/releases/download/v1.9.0/html-saurus-v1.9.0.jar
 
       - name: Build and push with Kaniko
         run: |
