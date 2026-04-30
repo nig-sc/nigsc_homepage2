@@ -1,6 +1,6 @@
 ---
-id: Alphafold_3_0_1
-title: alphafold 3.0.1
+id: Alphafold_3
+title: alphafold 3
 ---
 
 
@@ -8,7 +8,7 @@ title: alphafold 3.0.1
 
 AlphaFold3 is a protein structure prediction program developed by [DeepMind](https://deepmind.com/).
 
-On the NIG supercomputer, an Apptainer image with [AlphaFold 3.0.1](https://github.com/google-deepmind/alphafold3/tree/v3.0.1) installed is provided, along with the sequence and structure databases required for AlphaFold3 and sample scripts for submitting jobs to SLURM.
+On the NIG supercomputer, an Apptainer image with [AlphaFold 3.0.2](https://github.com/google-deepmind/alphafold3/tree/v3.0.2) installed is provided, along with the sequence and structure databases required for AlphaFold3 and sample scripts for submitting jobs to SLURM.
 
 The model parameter files required to run AlphaFold3 must be obtained directly by users from DeepMind, as [described later](#prep-model-params) in this manual.
 
@@ -99,8 +99,8 @@ INPUT_JSON_PATH="${HOME}/alphafold3/input/input.json"
 OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
-DB_DIR="/data1/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/alphafold3-v3.0.1.sif"
+DB_DIR="/lustre12/software/alphafold3/database"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -110,7 +110,8 @@ apptainer exec \
     --nv \
     -B ${DB_DIR}:${DB_DIR} \
     ${IMAGE_PATH} \
-    python3.11 ${ALPHAFOLD3DIR}/run_alphafold.py \
+    bash -c "cd $ALPHAFOLD3DIR && \
+    uv run --no-sync python3.12 run_alphafold.py \
         --jackhmmer_binary_path="${HMMER3_BINDIR}/jackhmmer" \
         --nhmmer_binary_path="${HMMER3_BINDIR}/nhmmer" \
         --hmmalign_binary_path="${HMMER3_BINDIR}/hmmalign" \
@@ -120,7 +121,7 @@ apptainer exec \
         --model_dir=${MODEL_DIR} \
         --max_template_date=${MAX_TEMPLATE_DATE} \
         --json_path=${INPUT_JSON_PATH} \
-        --output_dir=${OUTPUT_DIR}
+        --output_dir=${OUTPUT_DIR}"
 ```
 
 Please modify **lines 8–10** (`INPUT_JSON_PATH`, `OUTPUT_DIR`, `MODEL_DIR`) according to your environment.
@@ -221,7 +222,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre10/software/alphafold3/database"
-IMAGE_PATH="/lustre10/softwar/alphafold3/alphafold3-v3.0.1.sif"
+IMAGE_PATH="/lustre10/softwar/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -230,7 +231,8 @@ HMMER3_BINDIR="/hmmer/bin"
 apptainer exec \
     -B ${DB_DIR}:${DB_DIR} \
     ${IMAGE_PATH} \
-    python3.11 ${ALPHAFOLD3DIR}/run_alphafold.py \
+    bash -c "cd $ALPHAFOLD3DIR && \
+    uv run --no-sync python3.12 run_alphafold.py \
         --jackhmmer_binary_path="${HMMER3_BINDIR}/jackhmmer" \
         --nhmmer_binary_path="${HMMER3_BINDIR}/nhmmer" \
         --hmmalign_binary_path="${HMMER3_BINDIR}/hmmalign" \
@@ -241,7 +243,7 @@ apptainer exec \
         --max_template_date=${MAX_TEMPLATE_DATE} \
         --json_path=${INPUT_JSON_PATH} \
         --output_dir=${OUTPUT_DIR} \
-        --norun_inference
+        --norun_inference"
 ```
 
 Please modify the following lines according to your environment:
@@ -284,8 +286,8 @@ If you are using **dedicated CPU nodes** in the Personal Genome Analysis divisio
 If you do so, modify DB_DIR to point to the copied database path.
 
 - Line 11: `IMAGE_PATH`
-    - When running in the **General Analysis division**, use `/lustre10/software/alphafold3/alphafold3-v3.0.1.sif`
-    - When running in the **Personal Genome Analysis division**, use `/lustre12/software/alphafold3/alphafold3-v3.0.1.sif`
+    - When running in the **General Analysis division**, use `/lustre10/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif`
+    - When running in the **Personal Genome Analysis division**, use `/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif`
 
 Within the AlphaFold3 execution script, the MSA process is configured to use up to **32 CPU cores**, but assigning more than **16 cores** does not improve performance.
 Therefore, the number of CPU cores is specified as `-c 16`.
@@ -379,8 +381,8 @@ INPUT_JSON_PATH="${HOME}/alphafold3/output/pred_name/pred_name_data.json"
 OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
-DB_DIR="/data1/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/alphafold3-v3.0.1.sif"
+DB_DIR="/lustre12/software/alphafold3/database"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -390,7 +392,8 @@ apptainer exec \
     --nv \
     -B ${DB_DIR}:${DB_DIR} \
     ${IMAGE_PATH} \
-    python3.11 ${ALPHAFOLD3DIR}/run_alphafold.py \
+    bash -c "cd $ALPHAFOLD3DIR && \
+    uv run --no-sync python3.12 run_alphafold.py \
         --jackhmmer_binary_path="${HMMER3_BINDIR}/jackhmmer" \
         --nhmmer_binary_path="${HMMER3_BINDIR}/nhmmer" \
         --hmmalign_binary_path="${HMMER3_BINDIR}/hmmalign" \
@@ -401,7 +404,7 @@ apptainer exec \
         --max_template_date=${MAX_TEMPLATE_DATE} \
         --json_path=${INPUT_JSON_PATH} \
         --output_dir=${OUTPUT_DIR} \
-        --norun_data_pipeline
+        --norun_data_pipeline"
 ```
 
 Please modify **lines 8–10** (`INPUT_JSON_PATH`, `OUTPUT_DIR`, `MODEL_DIR`) to match your environment.
@@ -490,8 +493,8 @@ INPUT_JSON_PATH="${HOME}/alphafold3/input/input_data.json"
 OUTPUT_DIR="${HOME}/alphafold3_test/output"
 MODEL_DIR="${HOME}/alphafold3_test/models"
 
-DB_DIR="/data1/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/alphafold3-v3.0.1.sif"
+DB_DIR="/lustre12/software/alphafold3/database"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.2/alphafold3-v3.0.2.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -504,7 +507,8 @@ apptainer exec \
     --env 'TF_FORCE_UNIFIED_MEMORY=true' \
     --env 'XLA_CLIENT_MEM_FRACTION=3.2' \
     ${IMAGE_PATH} \
-    python3.11 ${ALPHAFOLD3DIR}/run_alphafold.py \
+    bash -c "cd $ALPHAFOLD3DIR && \
+    uv run --no-sync python3.12 run_alphafold.py \
         --jackhmmer_binary_path="${HMMER3_BINDIR}/jackhmmer" \
         --nhmmer_binary_path="${HMMER3_BINDIR}/nhmmer" \
         --hmmalign_binary_path="${HMMER3_BINDIR}/hmmalign" \
@@ -515,5 +519,5 @@ apptainer exec \
         --max_template_date=${MAX_TEMPLATE_DATE} \
         --json_path=${INPUT_JSON_PATH} \
         --output_dir=${OUTPUT_DIR} \
-        --norun_data_pipeline
+        --norun_data_pipeline"
 ```
