@@ -1,6 +1,6 @@
 ---
-id: Alphafold_2_3
-title: 遺伝研スパコンでのalphafold 2.3の実行
+id: Alphafold_2
+title: 遺伝研スパコンでのalphafold 2の実行
 ---
 
 
@@ -65,7 +65,7 @@ PINSNLCINKFVNHKDKSIMLQAASIYTQGDGREWDSKIMFEIMFDISTTSLRVLGRDLFEQLTSK
 
 ## ジョブスクリプトの準備 {#prepare-job-scripts}
 
-/lustre10/software/alphafold/2.3.2/ にジョブスクリプトのサンプルを用意してあります。こちらを自分のホームにダウンロードして適宜修正して使用してください。
+/lustre10/software/alphafold/2.3.2/ にジョブスクリプトのサンプルを用意してあります。こちらを自身のホームにダウンロードして適宜修正して使用してください。
 
 
 ### example_job_script_cpu.sh
@@ -179,4 +179,4 @@ RELAX_MODE=”all” を指定した場合、すべての予測モデルのrelax
 
 ### example_job_script_gpu.sh
 
-現在、一般解析区画にGPUを使用できるノードがありません。GPUを使用可能な個人ゲノム解析区画に[AlphaFold3](/advanced_guides/AlphaFold/Alphafold_3_0_1)を準備してあります。
+現在、一般解析区画にGPUを使用できるノードがありません。GPUを使用可能な個人ゲノム解析区画に[AlphaFold3](/advanced_guides/AlphaFold/Alphafold_3)を準備してあります。

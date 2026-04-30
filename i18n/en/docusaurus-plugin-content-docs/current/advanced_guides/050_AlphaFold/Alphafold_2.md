@@ -1,6 +1,6 @@
 ---
-id: Alphafold_2_3
-title: alphafold 2.3
+id: Alphafold_2
+title: alphafold 2
 ---
 
 
@@ -166,4 +166,4 @@ If RELAX_MODE="all" is specified, the relaxation step is executed for all predic
 
 ### example_job_script_gpu.sh
 
-Currently, there are no nodes available for GPU usage in the general analysis division. [AlphaFold3](/advanced_guides/AlphaFold/Alphafold_3_0_1) is set up in the personal genome analysis division, where GPUs are available.
+Currently, there are no nodes available for GPU usage in the general analysis division. [AlphaFold 3](/advanced_guides/AlphaFold/Alphafold_3) is set up in the personal genome analysis division, where GPUs are available.
