@@ -10,14 +10,14 @@ sidebar_position: 10
 遺伝研スーパーコンピュータシステムでは、以下の共有フォルダにFireDucksをインストールするためのwheelファイルが置かれています。
 
 ```
-/foo/bar/fireducks-enterprise-2026.03.0
+/lustre10/software/fireducks-enterprise-2026.03.0
 ```
 
 pipコマンドでこのフォルダを指定してPython仮想環境にインストールして下さい。
 
 
 ```
-$ pip install -f /foo/bar/fireducks-enterprise-2026.03.0 fireducks-enterprise
+$ pip install -f /lustre10/software/fireducks-enterprise-2026.03.0 fireducks-enterprise
 ```
 
 本コマンドの最後のパッケージ名は`fireducks-enterprise`としてください。`fireducks`とするとコミュニティ版がインストールされますのでご注意ください。
