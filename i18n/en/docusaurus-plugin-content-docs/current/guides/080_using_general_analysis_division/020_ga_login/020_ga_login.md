@@ -1,6 +1,6 @@
 ---
 id: ga_login
-title: "How to Login (The general analysis division)"
+title: "How to Login to the Gateway node (The general analysis division)"
 ---
 
 
@@ -11,7 +11,7 @@ SSH connection is used for logging in to the general analysis division of the NI
 ![](GA_division.png)
 
 
-## Preparation of user's computer
+## Preparation of user's computer {#preparation-computer}
 
 The general analysis division of NIG supercomputer can be used with a computer running a SSH client and a web browser. We recommend a Windows, Mac, or Linux computer with 16GB or more main memory.
 
@@ -27,12 +27,12 @@ There are two gateway nodes for the general analysis division of the NIG superco
 - `gw2.ddbj.nig.ac.jp`
 
 
-## Preparing to Log In
+## Preparing to Log In to the Gateway node {#preparing-to-log-in}
 
 The NIG supercomputer system uses public key authentication for SSH logins.
 
 
-### Generating a Public/Private Key Pair
+### Generating a Public/Private Key Pair {#generate-public-and-private-key}
 
 Before logging in, you need to generate a public/private key pair on your own computer.
 
@@ -50,7 +50,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_nigsc-gw -C "nigsc-gw:you:2025-01-15"
 For more detailed instructions on generating SSH public keys, refer to the following page:
 - [How to generate SSH public key](/application/ssh_keys)
 
-### Setting Up Your SSH Public Key
+### Setting Up Your SSH Public Key {#set-public-key}
 
 To access the NIG Supercomputer, you need to install your public key (generated on your local machine) on the system. Only the public key should be installed; do not send or upload your private key.
 
@@ -67,7 +67,6 @@ Please contact our support desk and send your public key directly to the system 
 Once your public key has been installed, you can add or replace keys using the following command.
 
 Assuming the currently registered public key is named `~/.ssh/id_ed25519.pub` and the new one you would like to add as `~/.ssh/id_ed25519_nigsc-gw.pub`, execute the following command in your terminal:
-:::
 
 
 ```bash
@@ -77,10 +76,12 @@ ssh-copy-id -f -i ~/.ssh/id_ed25519_nigsc-gw.pub -o IdentityFile=~/.ssh/id_ed255
 
 Details of the command are as follows:
 
-- `ssh-copy-id` copies the specified public key (`id_ed25519_nigsc-gw.pub`) to the ~/.ssh/authorized_keys file on the remote host (`gw.ddbj.nig.ac.jp`) for the user (`you`).
-- `-f` forces the addition of the key even if similar keys are already registered.
-- `-i` specifies the public key file to be added.
-- `-o IdentityFile=~/.ssh/id_ed25519` ensures that the connection to the remote host is made using the specified ED25519 private key, not the RSA key.
+- The `-f` option forces the addition of the key even if similar keys are already registered.
+- The `-i` option specifies the public key file to be added.
+- The `-o ` option specifies the filename of the public key you have been using.
+
+
+Note: To disable an old SSH key, please log in to the interactive node of the supercomputer and manually remove the corresponding public key from the `~/.ssh/authorized_keys` file using a text editor.
 :::
 
 For a detailed guide on how to install your SSH public key, please refer to the URL below:
@@ -88,7 +89,7 @@ For a detailed guide on how to install your SSH public key, please refer to the 
 - [How to Upload an SSH Public Key](/application/ssh_copy_id)
 
 
-##  How to log in to the general analysis division with your account {#login-nig-supercom}
+##  How to log in to the Gateway node on the general analysis division with your account {#login-gateway-node}
 
 1. Open a terminal emulator and enter `ssh username@gatewaynodename`. Then press enter. (The same way for the Windows PowerShell SSH client.)
 
@@ -105,7 +106,7 @@ $ ssh you@gw2.ddbj.nig.ac.jp
 To explicitly specify the location of your private key, use the `-i` option followed by the path to the key.
 
 ```
-ssh -i ~/yourpath/id_rsa you@gw.ddbj.nig.ac.jp
+ssh -i ~/.ssh/id_ed25519 you@gw.ddbj.nig.ac.jp
 ```
 
 2. Enter the passphrase for the SSH key pair(SSH public key and SSH secret key) and press enter in "Enter passphrase for key ...".
@@ -116,20 +117,7 @@ Enter "yes" to continue connecting ig the following message is displayed after e
 Are you sure you want to continue connecting (yes/no)?
 ```
 
-3.  Execute `qlogin` command to log in to the interactive node.
-
-```
-$ qlogin
-```
-
-Enter "yes" to continue connecting if the following message is displayed after entering your password.
-
-```
-Are you sure you want to continue connecting (yes/no)?
-```
-
-
-### Execution example
+### Execution example {#example}
 
 You will see the following message means success on your display.
 
@@ -171,46 +159,10 @@ $
 
 ```
 
+
 If it does not work, refer to [FAQ](/guides/FAQ/faq_general_analysis_division/faq_login_general).
 
 
-## Notes on available memory
 
-The default available memory for a interactive node is 4GB.
-Specify the amount of memory at `qlogin` as follows to increase this.
-
-```
-qlogin -l s_vmem=10G -l mem_req=10G
-```
-
-### Reference
-
-- [How to use Java](/guides/software/DevelopmentEnvironment/java) : Notes - when the Java program launches, you get an error message saying out of memory.
-- [How to use Singularity](/guides/software/Container/Apptainer) : [Building Images on Supercomputer - Generating Singularity Image from Docker Container Image](/guides/software/Container/Apptainer/#build-apptainer-image-from-docker)
-
-
-## How to use the GPU node
-
-
-For the purpose of developing programs using GPUs and testing their operation, we have a interactive node equipped with a GPU.
-To use this interactive node, `qlogin` with the `-l gpu` option.
-
-```
-qlogin -l gpu
-```
-
-
-
-
-
-:::note
-To enhance security, we use public key authentication for login.
-Please register your public key before using the system.
-
-The specific steps for registering your SSH public key are provided at the URL below:
-
-- [How to create an SSH public key](/application/ssh_keys))
-- [How to install an SSH public key](/application/ssh_copy_id))
-:::
 
 

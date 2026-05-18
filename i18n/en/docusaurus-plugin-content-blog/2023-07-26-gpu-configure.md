@@ -39,7 +39,7 @@ Wednesday, July 26, 2023 11:00 - 11:30 (24h notation)
   - There is no impact for running jobs.
   - gpu.q will not be able to execute new jobs.
   - You can run new jobs for short.q.
-  - Information updates for the system [Job accumulation status and estimated waiting time](/operation/operation/) will be stopped.
+  - Information updates for the system [Job accumulation status and estimated waiting time](/operation/job_queue_status/) will be stopped.
 - Before and after the work, there is no change in the method of submitting jobs for each queue.
 
 

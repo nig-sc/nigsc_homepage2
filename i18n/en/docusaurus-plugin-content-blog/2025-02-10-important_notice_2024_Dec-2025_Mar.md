@@ -66,7 +66,7 @@ For this year, account renewals for the Next-generation NIG Supercomputer will b
 
 As usual, the deadline for billing for the third period is the last day of December (Tuesday, December 31). 
  
-Please note that for the billing service for the third term, no changes to plans with changes in amounts can be made after January 1.
+Please note that for the billing service for the third period, no changes to plans with changes in amounts can be made after January 1.
 
 The expected amount to be billed was already notified at the end of January, and the invoice will be sent by post in mid-March.
 

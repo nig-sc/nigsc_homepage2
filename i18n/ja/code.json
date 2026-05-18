@@ -215,7 +215,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "Switch between dark and light mode (currently {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "dark mode",
@@ -350,5 +350,20 @@
   "theme.contentVisibility.draftBanner.message": {
     "message": "このページは下書きです。開発環境でのみ表示され、本番環境のビルドには含まれません。",
     "description": "The draft content banner message"
+  },
+  "navbar.overview": {
+    "message": "システム概要"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "システムモード",
+    "description": "The name for the system color mode"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   }
 }

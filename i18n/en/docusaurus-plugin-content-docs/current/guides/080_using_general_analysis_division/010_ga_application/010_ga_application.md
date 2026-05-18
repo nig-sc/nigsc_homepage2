@@ -23,11 +23,3 @@ For issuance criteria of user account, check [the 'Issuance criteria for user ac
 5. If you have a request to expand the resources or use billing services, [download the Usage Plan Form](/application/resource_extension), fill it out and submit it.
     - [Contact us](/application/reference/) for Submission.
 
-
-
-## Application for use by a group
-
-If you would like to register many users, such as for using in a workshop or consortium, follow the steps below.
-
-1. If the person in charge does not yet have an account for NIG supercomputer, create an account by following the steps above.
-2. [Download the usage plan](/application/resource_extension) and submit it with all information. At that time, fill in the purpose of use and the amount of resources to be used.

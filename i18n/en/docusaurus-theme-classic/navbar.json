@@ -14,5 +14,29 @@
   "item.label.Blog": {
     "message": "Blog",
     "description": "Navbar item with label Blog"
+  },
+  "navbar.docs.system overview": {
+    "message": "System Overview"
+  },
+  "item.label.System Overview": {
+    "message": "System Overview",
+    "description": "Navbar item with label System Overview"
+  },
+  "item.label.Applications": {
+    "message": "Applications",
+    "description": "Navbar item with label Applications"
+  },
+  "item.label.Advanced Guides": {
+    "message": "Advanced Guides",
+    "description": "Navbar item with label Advanced Guides"
+  },
+  "item.label.System Status": {
+    "message": "System Status",
+    "description": "Navbar item with label System Status"
+  },
+  "item.label.Reports": {
+    "message": "Reports",
+    "description": "Navbar item with label Reports"
   }
+
 }

@@ -104,38 +104,38 @@ const config: Config = {
           type: 'doc',
           docId: 'guides/top_page/top_page', // document ID
           position: 'left',
-          label: 'システム概要', // sidebar label
+          label: 'System Overview', // sidebar label
         },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'guidesSidebar',
         //   position: 'left',
-        //   label: 'システム概要',
+        //   label: 'System Overview',
         // },
         
         {
           type: 'docSidebar',
           sidebarId: 'applicationSidebar',
           position: 'left',
-          label: '各種申請等',
+          label: 'Applications',
         },
         {
           type: 'docSidebar',
           sidebarId: 'advancedGuidesSidebar',
           position: 'left',
-          label: '活用方法',
+          label: 'Advanced Guides',
         },
         {
           type: 'docSidebar',
           sidebarId: 'operationSidebar',
           position: 'left',
-          label: '稼働状況',
+          label: 'System Status',
         },
         {
           type: 'docSidebar',
           sidebarId: 'reportSidebar',
           position: 'left',
-          label: '成果報告',
+          label: 'Reports',
         },
 
         
