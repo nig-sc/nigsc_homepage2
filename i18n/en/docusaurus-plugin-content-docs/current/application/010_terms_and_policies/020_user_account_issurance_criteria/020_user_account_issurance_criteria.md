@@ -96,7 +96,7 @@ For more infomation on the FEFTA, see ['Foreign Exchange and Foreign Trade Act' 
 
 <!-- the following information is required when registering a new account for screening purposes. (Refer to the division of [related laws and regulations](/application/legislation). ) -->
 
-- Whether or not the applicant is a domestic resident stipulated by FEFTA
+- Whether or not the applicant is a domestic resident stipulated by FEFTA (Whether six months have elapsed since the applicant's arrival in Japan.)
 - whether you fall under the specific categories formulated by the Ministry of Economy, Trade and Industry (METI)
 - a) Education, Professional experience and research content
 - b) Current Employment status (full-time or part-time)
@@ -108,7 +108,7 @@ For more infomation on the FEFTA, see ['Foreign Exchange and Foreign Trade Act' 
 ### Example of filling out a notification under the Foreign Exchange and Foreign Trade Act {#example-of-notification}
 
 ```
-# Whether or not the applicant is a domestic resident stipulated by FEFTA. (Whether or not the period of residence in Japan is for six months or more.) 
+# Whether or not the applicant is a domestic resident stipulated by FEFTA. (Whether six months have elapsed since the applicant's arrival in Japan.)
 
 ・The applicant OOO is a non-resident. The reason is that they have been in Japan for less than six months, reside overseas or foreign employees.
 ・The applicant OOO currently belongs to xxx university and has a supercomputer account, but will be changed to the following overseas research institutes from MM 20YY.

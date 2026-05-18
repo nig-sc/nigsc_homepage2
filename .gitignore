@@ -8,6 +8,9 @@ build.tar
 # Generated files
 .docusaurus
 .cache-loader
+/static-html
+/search-index
+html-saurus.jar
 
 # Misc
 .DS_Store

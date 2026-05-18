@@ -15,17 +15,17 @@ const sidebars: SidebarsConfig = {
   guidesSidebar: [
     {
       type: 'link',
-      label: 'お知らせ',
+      label: 'News',
       href: '/blog/tags/news'
     },
     {
       type: 'link',
-      label: 'メンテナンス情報',
+      label: 'Maintenance Info',
       href: '/blog/tags/maintenance'
     },
     {
       type: 'link',
-      label: '全文検索',
+      label: 'Full-text Search',
       href: 'https://sc.ddbj.nig.ac.jp/search'
     },
 

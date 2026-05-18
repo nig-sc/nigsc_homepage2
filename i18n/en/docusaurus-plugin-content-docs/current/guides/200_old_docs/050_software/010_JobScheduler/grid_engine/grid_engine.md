@@ -64,4 +64,4 @@ For more information, see the [Other Commands](other_commands) page and the offi
 1. Check if the job settings are correct.
     - We provide a program to check if the settings are appropriate. <!-- Refer to the [How to use qsub_beta](/software/qsub_beta) page.  -->
 2. Check the congestion status of the supercomputer.
-    - You can check the current operation status and congestion in the [Operation Status Overview](/operation/operation/) page.
+    - You can check the current operation status and congestion in the [Operation Status Overview](/operation/job_queue_status/) page.

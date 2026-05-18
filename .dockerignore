@@ -1,0 +1,9 @@
+node_modules
+build
+static-html
+search-index
+.docusaurus
+Dockerfile
+Dockerfile.k8s
+.dockerignore
+*.lock
