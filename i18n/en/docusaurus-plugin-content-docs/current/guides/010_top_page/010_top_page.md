@@ -41,12 +41,9 @@ Due to limited disk capacity, the research institute does not back up data in us
 The account application system is currently being revised for security enhancements, which is causing a delay in its reopening. Account renewal applications will be processed after the system is reopened. For 2024FY, account renewal for the supercomputer(2025) will be handled by the supercomputer administrator without use's application.
 
 
-## Regular Maintenance in Fiscal Year 2025 {#2025-annual-maintenance}
+## Regular Maintenance in Fiscal Year 2026 {#2026-annual-maintenance}
 
-The Regular maintenance for the 2025 financial year will be carried out from Friday, 13 March 2026 to Thursday, 19 March 2026.
-
-For further details, please refer to the information below.
-- [[Maintenance] 13-19 March 2026: Regular Maintenance](/blog/2026-03-13-regular-maintenance)
+Further details will be announced in due course.
 
 
 ## Temporary Suspension of New Account Registrations for Large-Scale Users in General and Personal Genome Analysis Areas (May 13, 2022) {#registration-suspension}
