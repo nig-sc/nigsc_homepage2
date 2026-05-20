@@ -11,14 +11,13 @@ title: 遺伝研スパコンの活用に役立つアメリエフ株式会社「B
 
 - 過去のPAGS・DDBJ合同情報解析講習会情報（ビデオ・資料）- 先進ゲノム支援事業公式ページ
     - https://www.genome-sci.jp/bioinformatic
-    - https://togotv.dbcls.jp/ajacs_text.html
 
 :::
 
 :::info 他の文科省関連事業
 
 - NBDCデータ解析講習会（AJACS）ビデオ資料 - DBCLS 統合TV
-    - https://www.genome-sci.jp/bioinformatic
+     - https://togotv.dbcls.jp/ajacs_text.html
 
 :::
 
