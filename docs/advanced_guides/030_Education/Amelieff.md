@@ -13,9 +13,14 @@ title: 遺伝研スパコンの活用に役立つアメリエフ株式会社「B
     - https://www.genome-sci.jp/bioinformatic
     - https://togotv.dbcls.jp/ajacs_text.html
 
+:::
+
 :::info 他の文科省関連事業
+
 - NBDCデータ解析講習会（AJACS）ビデオ資料 - DBCLS 統合TV
     - https://www.genome-sci.jp/bioinformatic
+
+:::
 
 しかし、参加対象が限られている場合があることに加え、講習時に参加者が一斉に実行するデモ環境と、実際に各自が研究で用いる解析環境とが異なることも少なくありません。また、参加者の習熟度もさまざまであり、個別の状況に応じた対応が難しいという現状もあります。
 
