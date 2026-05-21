@@ -9,10 +9,16 @@ Against this backdrop, bioinformatics training workshops are held at various ins
 
 :::info Advanced Genome Support Project (PAGS)
 
-- Past workshop materials (videos and slides) — PAGS official website
+- Past PAGS–DDBJ Joint Bioinformatics Training Courses: Videos and Materials — Official Website of the Advanced Genome Support Program
     - https://www.genome-sci.jp/bioinformatic
-- [Related] NBDC Data Analysis Workshop (AJACS) video materials — DBCLS Togo TV
+
+:::
+
+:::info Other MEXT-related programs
+
+- NBDC Data Analysis Workshop (AJACS) video materials — DBCLS Togo TV
     - https://togotv.dbcls.jp/ajacs_text.html
+
 :::
 
 However, participation is sometimes limited, and the demo environment used during a workshop often differs from the actual analysis environment each researcher uses in their own work. Participants also vary widely in skill level, making it difficult to provide individualized support.
