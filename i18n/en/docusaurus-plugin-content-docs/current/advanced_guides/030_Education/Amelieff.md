@@ -9,15 +9,21 @@ Against this backdrop, bioinformatics training workshops are held at various ins
 
 :::info Advanced Genome Support Project (PAGS)
 
-- Past workshop materials (videos and slides) — PAGS official website
+- Past PAGS–DDBJ Joint Bioinformatics Training Courses: Videos and Materials — Official Website of the Advanced Genome Support Program
     - https://www.genome-sci.jp/bioinformatic
-- [Related] NBDC Data Analysis Workshop (AJACS) video materials — DBCLS Togo TV
+
+:::
+
+:::info Other MEXT-related programs
+
+- NBDC Data Analysis Workshop (AJACS) video materials — DBCLS Togo TV
     - https://togotv.dbcls.jp/ajacs_text.html
+
 :::
 
 However, participation is sometimes limited, and the demo environment used during a workshop often differs from the actual analysis environment each researcher uses in their own work. Participants also vary widely in skill level, making it difficult to provide individualized support.
 
-With these challenges in mind, under the collaboration of Dr. Osamu Ogasawara, Head of the DDBJ Systems Administration Division at NIG and a research support collaborator for the PAGS project (NIG hub), efforts are ongoing to improve the analysis environment on the NIG Supercomputer and to enhance the information available to users. In parallel, we are progressively compiling information resources from organizations with relevant expertise — resources that are accessible to beginners and useful to PAGS and NIG Supercomputer users alike.
+With these challenges in mind, we are working to improve the analysis environment on the NIG Supercomputer and to enhance user-facing information. In parallel, we are gradually compiling information resources from organizations with relevant expertise, focusing on resources that are accessible to beginners and useful to both PAGS and NIG Supercomputer users.
 
 Last year, we introduced convenient tools from academic sources. This year, as a new example of a company supporting academic research, we introduce Amelieff Inc.
 
