@@ -1,6 +1,6 @@
 ---
 id: advanced_guide_2026
-title: "2026 Topics"
+title: "Topics in 2026"
 ---
 
 ---

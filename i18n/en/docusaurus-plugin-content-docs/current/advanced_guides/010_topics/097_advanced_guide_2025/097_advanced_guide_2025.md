@@ -1,6 +1,6 @@
 ---
 id: advanced_guide_2025
-title: "Topic in 2025"
+title: "Topics in 2025"
 ---
 
 ---
