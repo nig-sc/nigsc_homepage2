@@ -10,6 +10,7 @@ build.tar
 .cache-loader
 /static-html
 /search-index
+/search-embedding
 html-saurus.jar
 
 # Misc
