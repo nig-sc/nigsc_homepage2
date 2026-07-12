@@ -2,240 +2,128 @@
 id: Claude_Science
 title: 遺伝研スパコンで Claude Science を使う
 description: |
-  遺伝研スパコン（DDBJ）の一般ユーザが Claude Science を使うための手順です。gw.ddbj.nig.ac.jp を踏み台に a001 計算ノード計算機へ SSH で入り、自分のホームに claude-science を入れて起動し、SSH ポート転送で手元の Web ブラウザから使う。重い処理・GPU 処理は Slurm へ投入する。bubblewrap・非特権名前空間などの実行環境の用意は管理者作業であり、`ClaudeScienceNigAdmin_260706_oo01` を参照する。
+  Claude Science をユーザのPCで動かし、遺伝研スパコン（DDBJ）の a003 を SSH 計算ホストとして登録して、重い解析を Slurm に投入する構成の手順です。serve をログインノードに置く構成（`ClaudeScienceNig_260706_oo01`）と違い、SSH ポート転送もクラスタへの秘密鍵配置も要りません。
 ---
 
-# Claude Science serveを遺伝研スパコン上で動作させる（ユーザの操作）
 
-ユーザのPCではなく遺伝研スパコンのノード上でclaude science serveを動かす構成について説明する。
+## Claude Scienceとは
 
-- ユーザのPCが非力な場合に有効
-- slurmにジョブを投入する使い方をすることが困難になる。
+Claude Science は、研究・データ解析を半自律的に進める AI エージェントです。
+利用者が普通の言葉で「こういう解析をしたい」と伝えると、Claude Science自身がコードを書き、実行し、結果を見て次の手を決める、という多段の作業を実行します。
 
-推奨される使い方ではないが、この構成とすることが必要な場合もあるだろうからメモとして残しておく。
+Claude Science は、文献調査・データ解析・作図・原稿執筆という研究のあらゆる段階を通して使えるよう設計されています（公式の紹介文では "designed with every stage of research in mind"）。
+
+
+:::info
+利用には Anthropic の有料 Claude プランが必要です。
+:::
+
+<a href="https://www.youtube.com/watch?v=idtMsa_1yNk">
+<img src="claude_science01.png" />
+</a>
+
+
+公式ドキュメント
+- 概要: https://claude.com/docs/claude-science/overview
+- はじめかた: https://claude.com/docs/claude-science/get-started
+- ダウンロード・製品ページ（生物学の作業例つき）: https://claude.com/product/claude-science
+- 発表ブログ（実際の研究者の使用例つき）: https://www.anthropic.com/news/claude-science-ai-workbench
+- Claude for Life Sciences: https://www.anthropic.com/news/claude-for-life-sciences
+- 公式（リモート計算クラスタ）: https://claude.com/docs/claude-science/remote-compute-clusters
 
 ## システム構成
 
+Claude Scienceの中核はclaude science serveプログラムです。
+これはユーザのPCにインストールしてPC上で動かす想定のプログラムになっています。
+
+Claude science serveプログラムは、ユーザPC上に解析環境をオンデマンドで構築し、データベースなどからデータをダウンロードしPC上で解析を実行し、結果をAnthropicクラウドに送付し、ユーザPCのWebブラウザで表示します。
+
+この解析作業を外部の計算機にSSH接続するなどの方法で外部化することが可能です。
+この文章では遺伝研スパコンを使って大規模解析を行う方法を説明します。
+
+:::caution
+データはAnthropicクラウドに転送されることになります。
+個人ゲノムデータ等閉鎖環境での解析を前提としている場合には注意が必要です。
+:::
+
 ![](claude_science02.png)
+
+Claude Scienceには
+生命科学の主要なデータベースに接続するコネクタが同梱されています（`Settings > Connectors and Skills` で有効化）。
+2026年7月時点で使えるデータベース、コネクタ、スキルは以下の通りです。
+
+**Connect to the scientific web**
+- NCBI / NIH: PubMed, Entrez, NIH
+- Genomics & biology: Ensembl, Reactome, KEGG, gnomAD, GTEx, ENCODE
+- Proteomics: UniProt, STRING, EBI, Foldseek, RCSB PDB, Protein Atlas
+- Literature & citations: Semantic Scholar, arXiv, bioRxiv, Crossref, DOI, OpenAlex
+- Clinical & pharma: FDA, ClinicalTrials, Open Targets, COSMIC, ClinGen, CIViC
+
+**Anthropic 提供コネクタ:** BioMart, bioRxiv, Cancer Models, CellGuide, ChEMBL, Chemistry, Clinical Genomics, Clinical Trials, Drug Regulatory, Expression, Genes & Ontologies, Genomes, Human Genetics, Ketcher Chemistry, Literature Graph, Omics Archives, Protein Annotation, PubMed, Regulation, Research Resources, RNA, Structures & Interactions, Variants, ZINC
+
+**外部提供（ディレクトリ）コネクタ:** AdisInsight, Biomni Lab, BioRender, Boltz API, Consensus, Cortellis Regulatory Intelligence, EDEN by Basecamp Research, Elicit, Helix GenoSphere, Inductive Bio, LatchBio, Medidata, Open Targets, Owkin, Scholar Gateway, Scite, Synapse.org, Synthesize Bio
+
 
 
 ## インストール手順
 
+### 1. ユーザのPCに Claude Science をインストールする
 
-### 1. ログインノードに直接ログインできるように多段 SSH を設定する
+Claude Science は macOSまたはLinuxで動きます。
+
+Windows はWSL2（Ubuntu 24.04 以降）を使うことによりLinux と同じ手順で動きます
+- https://claude.com/docs/claude-science/run-on-windows-wsl 
 
 
-ユーザのPC の `~/.ssh/config` に次のように書いてください。ユーザPCから(げーとうぇいのーどにめいじてきにろぐいんすることなく)ログインノードa003 へ一度のコマンドでログインできるようになります。
-
-```sshconfig
-# ユーザのPC の ~/.ssh/config に書く（ユーザのPC 上のファイル）
-Host nig-gw
-  HostName gw.ddbj.nig.ac.jp                 # 遺伝研スパコン ゲートウェイ計算機（踏み台）
-  User youraccount
-  IdentityFile ~/.ssh/<遺伝研スパコン用の秘密鍵>
-  IdentitiesOnly yes
-
-Host nig-a003
-  HostName a003                              # 遺伝研スパコン a003 計算ノード計算機（gw から見える名前）
-  User youraccount
-  IdentityFile ~/.ssh/<遺伝研スパコン用の秘密鍵>
-  IdentitiesOnly yes
-  ProxyJump nig-gw                           # gw を自動で経由する
-```
-
-次を実行して、ユーザのPCからa003 に一回の操作でログインできることを確認してください。
+Linux の場合は、先に依存パッケージを入れてください（`bubblewrap` 0.8.0 以上と `socat`。非特権ユーザー名前空間が有効であること。macOS では不要）。
 
 ```bash
-# ユーザのPC で実行（ログイン端末を開く）。a003 にログインする
-ssh nig-a003   # a003 まで入れる
+# ユーザのPC（Linux）で実行。依存パッケージを入れる
+sudo apt update && sudo apt install -y bubblewrap socat
 ```
 
-### 2. ログインノード上でスパコンの自分のホームディレクトリに claude-science をインストールする。
-
-次を実行して claude-science をインストールしてください。
+次を実行して Claude Science をインストールしてください。
 
 ```bash
-# a003 で実行（ログイン端末で a003 にログイン済み）
+# ユーザのPC で実行
 curl -fsSL https://claude.ai/install-claude-science.sh | bash
 ```
 
-
-### 3. PATH環境変数の設定
-
-`claude-science` は `~/.local/bin` にインストールされます。
-今のシェルと今後のシェルの両方で使えるよう、`PATH`環境変数にパスを追加してください。
+`claude-science` は `~/.local/bin` に入ります。今のシェルと今後のシェルの両方で使えるよう、`PATH` に追加してください。
 
 ```bash
-# a003 で実行
+# ユーザのPC で実行
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+### 2. ユーザのPCで claude science serve を起動してサインインする
 
-## 利用手順
-
-claude scienceは最も単純な構成ではユーザのPC上でwebブラウザとclaude science serveの両方を動かしますが、大きな計算を遺伝研スパコンなど別の計算機上で動かすことも出来ます。
-その場合は２つの計算機の間をSSHポートフォワードでつなぐことになります。
-
-
-### 1. 利用可能なポートの確認
-
-以下のコマンドにより空いているポートを確認してください。
-
-```
-# a003 で実行（ログイン端末）。この範囲で使用中の番号だけが表示される。出なかった番号から選ぶ
-ss -tlnp 'sport >= :43000 and sport <= :43100'
-```
-
-### 2. 自分のホームディレクトリのパスの確認
-
-claude science serverの起動の際に、遺伝研スパコンではホームディレクトリ
-`/home/youraccount`がシンボリックリンクになっていることが起動の問題になります。
-そのため以下のコマンドにより本当のディレクトリのフルパスを取得してください。
-
-```
-readlink -f $HOME
-```
-
-実行例
-
-```
-youraccount@a003:~$ readlink -f $HOME
-/lustre10/home/youraccount
-```
-
-### 3. claude science serveの起動
-
-以下のコマンドによりclaude science serveを起動してください。
-
-```
-# a003 で実行（ログイン端末）。このコマンドはフォアグラウンドで動き続け、以後この端末を専有する
-HOME=/lustre10/home/youraccount claude-science serve --no-browser --port 43000 
-```
-
-- `--port`には1.で確認した空いているポートを指定する。
-- `HOME=`には2.で確認した自分のホームディレクトリのパスを指定する。
-
-
-
-実行例
-
-```
-youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science serve --no-browser --port 43000
-[claude-science] data dir: /lustre10/home/youraccount/.claude-science (0xbd00bd0)
-[migrate] 1ms total · 0 stmts · 0 slow (≥100ms)
-[daemon] growthbook: not signed in — flags stay at defaults
-[daemon] sandbox origin: http://localhost:43001/mcp_apps
-[daemon] warming 24 built-in MCP connectors...
-[daemon] listening on 127.0.0.1:43000 (pid 2532362, version 0.1.16-dev.20260707.t155726.shaf2472db)
-
-  ───────────────────────────────────────────────────────────────────────────────────
-  Web UI →  http://localhost:43000/?nonce=19XXXXXXXXXXXXXXXXXXXXf9f375fab6ed23385
-  ───────────────────────────────────────────────────────────────────────────────────
-
-  Remote? Forward both ports: 43000 (app) and 43001 (sandbox content)
-
-  This link is a one-time password, not a bookmark: it logs one
-  browser tab in, then expires (3 min). The tab stays logged in
-  until the daemon restarts.
-
-  Seeing "session expired", or need a fresh link?  claude-science url
-
-... 以下メッセージが続きます
-```
-
-ここに表示されたWeb UIを5.のステップで使います。
-
-
-### 4. SSHポートフォワード
-
-**ユーザのPCで新しくターミナルエミュレータを開き**以下のコマンドを実行してください。
+次を実行すると serve が起動し、既定の Web ブラウザにサインイン用のタブが自動で開きます。
 
 ```bash
-# ユーザのPC で実行（ポート転送端末を新しく開く。ログイン端末とは別のウィンドウ）
-ssh -L 43000:localhost:43000 nig-a003
+# ユーザのPC で実行。このコマンドはフォアグラウンドで動き続けます（終了は Ctrl-C）
+claude-science serve --port 43000
 ```
 
-- `43000`は3.で使ったポート番号を指定してください。
-
-
-| 部分 | 意味 |
-|---|---|
-| 左の `43000` | ユーザのPC 側のポート番号。この番号がユーザのPCでも空いている必要がある。 |
-| `localhost` | `nig-a003`が自分自身の `localhost:43000` へ転送するという意味 |
-| 右の `43000` | a003 計算ノード計算機 上のポート番号（手順1の `--port 43000` と一致させる） |
-| `nig-a003` | ユーザのPCの`~/.ssh/config`に書いた接続先の名前 |
-
-
-:::note 
-特別な理由がない限り**ユーザのPC 側とserve側のポート番号は、同じ番号に揃える。**とよい。 揃えない場合、5.のステップで `forbidden origin` エラーになり先へ進めない。
-
-このエラーが出る理由は
-Claude Science の serve プロセスは、Web UI への書き込みや WebSocket 接続に対して CSRF 対策の Origin チェックを行うからである。serve は自分が待ち受けているアドレス（`http://localhost:43000`）を、正規の Origin として許可リストに持っている。この判定は scheme（`http`）・ホスト（`localhost`）・**ポート番号まで完全一致**で行われる。
-:::
-
-
-実行するとログインメッセージのあと、a003 のプロンプトが出た状態で止まります。このターミナルは開いたままにしておいてください。
-
-
-実行例:
-
-```
-youraccount@stonefly514:~ (2026-07-08 17:54:26)
-$ ssh -L 43000:localhost:43000 nig-a003
-Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-90-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/pro
-
- System information as of Thu Jul  9 00:57:53 JST 2026
-
-  System load:  4.22                Temperature:                 70.0 C
-  Usage of /:   15.4% of 878.65GB   Processes:                   3063
-  Memory usage: 40%                 Users logged in:             14
-  Swap usage:   99%                 IPv4 address for ibp129s0f0: 172.19.13.3
-
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
-
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
-
-Expanded Security Maintenance for Applications is not enabled.
-
-3 updates can be applied immediately.
-To see these additional updates run: apt list --upgradable
-
-99 additional security updates can be applied with ESM Apps.
-Learn more about enabling ESM Apps service at https://ubuntu.com/esm
-
-
-*** System restart required ***
-Last login: Thu Jul  9 00:57:53 2026 from 172.19.13.202
-youraccount@a003:~$
-```
-
-
-
-### 5. ブラウザでweb UIを表示する 
-
-**ユーザのPC上で**Webブラウザを起動し、3.で表示されたURLをwebブラウザで表示してください。
-`http://localhost:43000/?nonce=19XXXXXXXXXXXXXXXXXXXXf9f375fab6ed23385`
-
-以下のような画面が表示されるはずです。
+開いたタブで Claude アカウントにサインインしてください。
 
 ![](cs01a.png)
 
 ![](cs01b.png)
 
+画面の案内に従って操作するとセットアップ画面になります。
+
 ![](cs01.png)
 
-:::note
-うまく行かない場合はログインがタイムアウトしているかもしれません。
-その場合は一旦claude science serveを停止して、手順3, 5, を繰り返してください。
-:::
+ブラウザが自動で開かない場合は、別のターミナルで次を実行し、表示されたリンクを開いてください。
 
-案内に従って順次必要項目を入力してください。
+```bash
+# ユーザのPC で実行（別のターミナル）
+claude-science url
+```
+
+セットアップ画面になったら、画面の案内に従って順次必要項目を入力してください。
 
 ![](cs02.png)
 
@@ -243,12 +131,91 @@ youraccount@a003:~$
 
 ![](cs04.png)
 
-### 6. claude science serveの停止
+最終的に以下のような画面になります。
 
-状態の確認
+
+## 遺伝研スパコンをClaude Scienceから利用可能にする
+
+### 1. ユーザPC上の`~/.ssh/config`を編集しパスワード無しで直接インタラクティブノードにログインできるようにする
+
+SSH計算ホストとして登録するには、
+ユーザPCから（ゲートウィノードに明示的にログインすることなく)インタラクティブノードへ一度のコマンドでログインできるように設定する必要が有ります。
+
+ユーザのPC の `~/.ssh/config` に次のように書いてください。
+
+```sshconfig
+# ユーザのPC の ~/.ssh/config に書く
+Host nig-gw
+  HostName gw.ddbj.nig.ac.jp                 # 遺伝研スパコン ゲートウェイノード
+  User youraccount
+  IdentityFile ~/.ssh/<遺伝研スパコン用の秘密鍵>
+  IdentitiesOnly yes
+
+Host nig-a003
+  HostName a003                              # 遺伝研スパコン インタラクティブノード
+  User youraccount
+  IdentityFile ~/.ssh/<遺伝研スパコン用の秘密鍵>
+  IdentitiesOnly yes
+  ProxyJump nig-gw                           # gw を自動で経由する
+```
+
+秘密鍵にパスフレーズがある場合は、`ssh-agent` に読み込んで置く必要が有ります（serve が非対話で接続するため）。次を実行して、`ssh nig-a003`でインタラクティブノードへログインできることを確認してください。
+
+```bash
+# ユーザのPC で実行
+ssh-add ~/.ssh/<遺伝研スパコン用の秘密鍵>
+ssh nig-a003
+```
+
+### 2. 遺伝研スパコンのインタラクティブノード を SSH 計算ホストとしてclaude scienceに登録する
+
+Claude Science の Web UI で `Settings > Compute > SSH hosts > Add SSH host` を開き、`~/.ssh/config` のエイリアス `nig-a003` を選びます。
+
+
+![](compute01.png)
+
+
+- 追加すると read-only の probe が走り、CPU・メモリ・GPU・`sbatch` の有無・partition などを検出します（a003 側には何もインストールされません）。
+
+
+ホスト詳細ページで **Scratch root** を、共有ファイルシステム上のパスに設定します。ここに中間データなどが書き込まれます。
+例えば`/home/youraccount/claude-scratch`のように書いておけばよいです。
+
+![](compute02.png)
+
+Detailsにはなにも書かなくてOKです。
+
+
+### 3. 遺伝研スパコン用のskillをclaude scienceに設定する
+
+このSkill https://github.com/nig-sc/claude-science-skills は遺伝研スパコンの使い方をclaudeのLLMに教えるものです。
+
+`左下の歯車 > Settings > Skills > Import from Githubボタン` をクリックすると以下の画面になります。
+
+![](import_from_github.png)
+
+GitHubインポート欄には、こう書きます:
 
 ```
-youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science status
+nig-sc/claude-science-skills
+```
+
+これだけでOKです(owner/repo 形式)。先ほど push したリポジトリがこれで、ルート直下に nig-general-analysis/ と nig-personal-genome/ の2つのskillディレクトリが入っているので、この1行で両方取り込まれます。
+
+
+![](nig_skills.png)
+
+
+## 終了、アンインストール
+
+
+### 1. claude science serveプロセスの終了
+
+#### 状態の確認
+
+```
+# ユーザのPC で実行
+$ claude-science status
 {
   "running": true,
   "pid": 2533288,
@@ -266,100 +233,35 @@ youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science status
     "url_host": "localhost"
   }
 }
-youraccount@a003:~$ 
 ```
 
-終了
+#### 終了
 
 ```
-youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science stop
+# ユーザのPC で実行
+$ claude-science stop
 Daemon stopped (pid 2533288).
-youraccount@a003:~$ 
-
 ```
 
+#### 終了確認
 
-### 7. SSHポートフォワードの停止
-
-SSHポートフォワードを実行しているターミナルエミュレータ上で`exit`コマンドを実行してください。
-
-実行例
+使っていたポート番号が表示されないことを確認する。
+ポート番号は上記の`claude-science status`で確認できる。
 
 ```
-channel 3: open failed: connect failed: Connection refused
-channel 3: open failed: connect failed: Connection refused
-
-youraccount@a003:~$ exit
-logout
-Connection to a003 closed.
-your-pc$
+# ユーザのPCで実行。指定したポート番号の範囲で使用中の番号だけが表示される。
+ss -tlnp 'sport >= :43000 and sport <= :43100'
 ```
 
-
-
-### 8. claude science serveのアンインストール
+### 2. claude science serveのアンインストール
 
 ```
+# ユーザのPC で実行
 # プログラム本体を消す
 rm ~/.local/bin/claude-science
 
 # データと conda 環境を消す
-rm -rf /lustre10/home/youraccount/.claude-science
+rm -rf ~/.claude-science
 ```
-
-## トラブルシュート
-
-### You're note signed in to Claude Science
-
-以下のようなエラーメッセージがブラウザに表示された場合
-
-```
-You're not signed in to Claude Science
-This browser's login is no longer valid — your sign-in link or session may have expired, or the daemon may have restarted.
-
-To get back in: relaunch Claude Science the way you normally start it — open the Claude Science app from your Applications / launcher, or if you use the command line, run claude-science url and open the link it prints.
-```
-
-これは
-
-`http://localhost:43000/` のようなURLで起動した場合に出ます。`nounce`が付記されたURLを使ってください。
-`http://localhost:43000/?nonce=19XXXXXXXXXXXXXXXXXXXXf9f375fab6ed23385`
-
-あるいはログインがタイムアウトしているかもしれません。
-その場合は一旦claude science serveを停止して、手順3, 5, を繰り返してください。
-
-
-## その他のFAQ
-
-## 複数のclaude science serveを立てる方法
-
-Claude Science は **1つの data-dir につき1デーモンしか起動できない**。
-`--data-dir`コマンドラインオプションをつけてインストールからやり直せば複数のclaude science serverを立てることができる。
-
-
-```bash
-# a003 で実行（2つ目。--port と --data-dir を1つ目と変える）
-HOME=/lustre10/home/youraccount claude-science serve --no-browser --port 43010 --data-dir /lustre10/home/youraccount/.claude-science-2
-```
-
-```bash
-# ユーザのPC で実行（2つ目のポートを転送。1つ目とは別のターミナル）
-ssh -L 43010:localhost:43010 nig-a003
-```
-
-起動時に表示された `http://localhost:43010/?nonce=...` をブラウザで開く。
-
-
-### 重い処理をSlurm へ投入する方法, GPU を使う方法
-
-このインストール方法だと、Slurmに投入することが難しくなる。サンドボックスでslurmへのジョブ投入が防がれてしまうからである。むりやりSlurmを使おうおするならば、SSH先にnig-a003を書くことだが、そうするとスパコン上に秘密鍵を置かないといけなくなる。
-
-正しい構成は、ユーザPCにclaude science serveをインストールして、SSHにnig-a003を指定することである。
-
-
-
-
-
-
 
 
