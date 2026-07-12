@@ -1,5 +1,5 @@
 ---
-id: ClaudeScience
+id: Claude_Science
 title: 遺伝研スパコンで Claude Science を使う
 description: |
   遺伝研スパコン（DDBJ）の一般ユーザが Claude Science を使うための手順です。gw.ddbj.nig.ac.jp を踏み台に a001 計算ノード計算機へ SSH で入り、自分のホームに claude-science を入れて起動し、SSH ポート転送で手元の Web ブラウザから使う。重い処理・GPU 処理は Slurm へ投入する。bubblewrap・非特権名前空間などの実行環境の用意は管理者作業であり、`ClaudeScienceNigAdmin_260706_oo01` を参照する。
