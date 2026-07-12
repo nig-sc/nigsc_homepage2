@@ -1,239 +1,128 @@
 ---
-id: ClaudeScienceNig_260706_oo01
+id: Claude_Science
 title: Using Claude Science on the NIG Supercomputer
 description: |
-  A procedure for general users of the NIG supercomputer (DDBJ) to use Claude Science. You SSH into the a001 compute node through gw.ddbj.nig.ac.jp as a stepping stone, install claude-science under your own home directory, launch it, and use it from a web browser on your local machine via SSH port forwarding. Heavy processing and GPU processing are submitted to Slurm. Preparing the execution environment such as bubblewrap and unprivileged namespaces is administrator work; see `ClaudeScienceNigAdmin_260706_oo01`.
+  A procedure for a configuration in which Claude Science runs on the user's PC and a003 of the NIG supercomputer (DDBJ) is registered as an SSH compute host, so that heavy analyses are submitted to Slurm. Unlike the configuration that places serve on the login node (`ClaudeScienceNig_260706_oo01`), this requires neither SSH port forwarding nor placing a private key on the cluster.
 ---
 
-# Running Claude Science serve on the NIG Supercomputer (user operations)
 
-This document explains a configuration in which claude science serve runs on a node of the NIG supercomputer instead of on the user's PC.
+## What is Claude Science
 
-- Effective when the user's PC is underpowered.
-- It becomes difficult to use a workflow that submits jobs to Slurm.
+Claude Science is an AI agent that advances research and data analysis semi-autonomously.
+When a user tells it, in plain language, "I want to run this kind of analysis," Claude Science itself writes code, runs it, looks at the results, and decides the next step — carrying out this multi-stage work.
 
-This is not the recommended way to use it, but since there may be cases where this configuration is required, it is left here as a note.
+Claude Science is designed to be usable across every stage of research: literature review, data analysis, figure creation, and manuscript writing (the official description says "designed with every stage of research in mind").
+
+
+:::info
+Use requires a paid Anthropic Claude plan.
+:::
+
+<a href="https://www.youtube.com/watch?v=idtMsa_1yNk">
+<img src="claude_science01.png" />
+</a>
+
+
+Official documentation
+- Overview: https://claude.com/docs/claude-science/overview
+- Getting started: https://claude.com/docs/claude-science/get-started
+- Download / product page (with a biology worked example): https://claude.com/product/claude-science
+- Announcement blog (with real-world researcher use cases): https://www.anthropic.com/news/claude-science-ai-workbench
+- Claude for Life Sciences: https://www.anthropic.com/news/claude-for-life-sciences
+- Official (remote compute clusters): https://claude.com/docs/claude-science/remote-compute-clusters
 
 ## System configuration
 
+The core of Claude Science is the claude science serve program.
+This is a program intended to be installed on, and run on, the user's PC.
+
+The claude science serve program builds an analysis environment on demand on the user's PC, downloads data from databases and so on, runs the analysis on the PC, sends the results to the Anthropic cloud, and displays them in the web browser on the user's PC.
+
+This analysis work can be externalized, for example by connecting to an external computer over SSH.
+This document explains how to run large-scale analyses using the NIG supercomputer.
+
+:::caution
+Data will be transferred to the Anthropic cloud.
+Caution is required if you are assuming analysis in a closed environment, such as with personal genome data.
+:::
+
 ![](claude_science02.png)
+
+Claude Science comes bundled with connectors to the major life-science databases (enable them under `Settings > Connectors and Skills`).
+As of July 2026, the available databases, connectors, and skills are as follows.
+
+**Connect to the scientific web**
+- NCBI / NIH: PubMed, Entrez, NIH
+- Genomics & biology: Ensembl, Reactome, KEGG, gnomAD, GTEx, ENCODE
+- Proteomics: UniProt, STRING, EBI, Foldseek, RCSB PDB, Protein Atlas
+- Literature & citations: Semantic Scholar, arXiv, bioRxiv, Crossref, DOI, OpenAlex
+- Clinical & pharma: FDA, ClinicalTrials, Open Targets, COSMIC, ClinGen, CIViC
+
+**Connectors provided by Anthropic:** BioMart, bioRxiv, Cancer Models, CellGuide, ChEMBL, Chemistry, Clinical Genomics, Clinical Trials, Drug Regulatory, Expression, Genes & Ontologies, Genomes, Human Genetics, Ketcher Chemistry, Literature Graph, Omics Archives, Protein Annotation, PubMed, Regulation, Research Resources, RNA, Structures & Interactions, Variants, ZINC
+
+**Externally provided (directory) connectors:** AdisInsight, Biomni Lab, BioRender, Boltz API, Consensus, Cortellis Regulatory Intelligence, EDEN by Basecamp Research, Elicit, Helix GenoSphere, Inductive Bio, LatchBio, Medidata, Open Targets, Owkin, Scholar Gateway, Scite, Synapse.org, Synthesize Bio
+
 
 
 ## Installation procedure
 
+### 1. Install Claude Science on the user's PC
 
-### 1. Configure multi-hop SSH so you can log in to the login node directly
+Claude Science runs on macOS or Linux.
+
+On Windows, it runs with the same procedure as Linux by using WSL2 (Ubuntu 24.04 or later).
+- https://claude.com/docs/claude-science/run-on-windows-wsl
 
 
-Write the following in the `~/.ssh/config` on the user's PC. This lets you log in to the login node a003 with a single command from the user's PC (without explicitly logging in to the gateway node).
-
-```sshconfig
-# Write in ~/.ssh/config on the user's PC (a file on the user's PC)
-Host nig-gw
-  HostName gw.ddbj.nig.ac.jp                 # NIG supercomputer gateway machine (stepping stone)
-  User youraccount
-  IdentityFile ~/.ssh/<private key for the NIG supercomputer>
-  IdentitiesOnly yes
-
-Host nig-a003
-  HostName a003                              # NIG supercomputer a003 compute node (name visible from gw)
-  User youraccount
-  IdentityFile ~/.ssh/<private key for the NIG supercomputer>
-  IdentitiesOnly yes
-  ProxyJump nig-gw                           # automatically hop through gw
-```
-
-Run the following to confirm that you can log in to a003 from the user's PC in a single operation.
+On Linux, install the dependency packages first (`bubblewrap` 0.8.0 or later and `socat`. Unprivileged user namespaces must be enabled. Not required on macOS).
 
 ```bash
-# Run on the user's PC (open a login terminal). Log in to a003
-ssh nig-a003   # reaches a003
+# Run on the user's PC (Linux). Install the dependency packages
+sudo apt update && sudo apt install -y bubblewrap socat
 ```
 
-### 2. Install claude-science into your own home directory on the supercomputer, on the login node
-
-Run the following to install claude-science.
+Run the following to install Claude Science.
 
 ```bash
-# Run on a003 (already logged in to a003 in the login terminal)
+# Run on the user's PC
 curl -fsSL https://claude.ai/install-claude-science.sh | bash
 ```
 
-
-### 3. Setting the PATH environment variable
-
-`claude-science` is installed under `~/.local/bin`.
-So that it is available in both the current shell and future shells, add its path to the `PATH` environment variable.
+`claude-science` is installed under `~/.local/bin`. So that it is available in both the current shell and future shells, add it to `PATH`.
 
 ```bash
-# Run on a003
+# Run on the user's PC
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+### 2. Launch claude science serve on the user's PC and sign in
 
-## Usage procedure
-
-In the simplest configuration, claude science runs both the web browser and claude science serve on the user's PC, but you can also run large computations on a separate machine such as the NIG supercomputer.
-In that case, you connect the two machines with SSH port forwarding.
-
-
-### 1. Check for an available port
-
-Check which ports are free with the following command.
-
-```
-# Run on a003 (login terminal). Only the numbers in use within this range are shown. Choose from the numbers that did not appear
-ss -tlnp 'sport >= :43000 and sport <= :43100'
-```
-
-### 2. Check the path of your own home directory
-
-When launching claude science server, the fact that the home directory `/home/youraccount` on the NIG supercomputer is a symbolic link causes a startup problem.
-Therefore, obtain the full path of the real directory with the following command.
-
-```
-readlink -f $HOME
-```
-
-Example
-
-```
-youraccount@a003:~$ readlink -f $HOME
-/lustre10/home/youraccount
-```
-
-### 3. Launch claude science serve
-
-Launch claude science serve with the following command.
-
-```
-# Run on a003 (login terminal). This command keeps running in the foreground and occupies this terminal from now on
-HOME=/lustre10/home/youraccount claude-science serve --no-browser --port 43000 
-```
-
-- For `--port`, specify the free port you checked in step 1.
-- For `HOME=`, specify the path of your own home directory that you checked in step 2.
-
-
-
-Example
-
-```
-youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science serve --no-browser --port 43000
-[claude-science] data dir: /lustre10/home/youraccount/.claude-science (0xbd00bd0)
-[migrate] 1ms total · 0 stmts · 0 slow (≥100ms)
-[daemon] growthbook: not signed in — flags stay at defaults
-[daemon] sandbox origin: http://localhost:43001/mcp_apps
-[daemon] warming 24 built-in MCP connectors...
-[daemon] listening on 127.0.0.1:43000 (pid 2532362, version 0.1.16-dev.20260707.t155726.shaf2472db)
-
-  ───────────────────────────────────────────────────────────────────────────────────
-  Web UI →  http://localhost:43000/?nonce=19XXXXXXXXXXXXXXXXXXXXf9f375fab6ed23385
-  ───────────────────────────────────────────────────────────────────────────────────
-
-  Remote? Forward both ports: 43000 (app) and 43001 (sandbox content)
-
-  This link is a one-time password, not a bookmark: it logs one
-  browser tab in, then expires (3 min). The tab stays logged in
-  until the daemon restarts.
-
-  Seeing "session expired", or need a fresh link?  claude-science url
-
-... the messages continue below
-```
-
-You will use the Web UI shown here in step 5.
-
-
-### 4. SSH port forwarding
-
-**Open a new terminal emulator on the user's PC** and run the following command.
+Running the following starts serve and automatically opens a sign-in tab in your default web browser.
 
 ```bash
-# Run on the user's PC (open a new port-forwarding terminal, a separate window from the login terminal)
-ssh -L 43000:localhost:43000 nig-a003
+# Run on the user's PC. This command keeps running in the foreground (exit with Ctrl-C)
+claude-science serve --port 43000
 ```
 
-- For `43000`, specify the port number you used in step 3.
-
-
-| Part | Meaning |
-|---|---|
-| Left `43000` | Port number on the user's PC side. This number also needs to be free on the user's PC. |
-| `localhost` | Means that `nig-a003` forwards to its own `localhost:43000` |
-| Right `43000` | Port number on the a003 compute node (match the `--port 43000` in step 1) |
-| `nig-a003` | The name of the destination written in `~/.ssh/config` on the user's PC |
-
-
-:::note 
-Unless there is a special reason, it is best to **use the same port number on the user's PC side and the serve side.** If they differ, step 5 fails with a `forbidden origin` error and you cannot proceed.
-
-The reason this error occurs is that the Claude Science serve process performs a CSRF-protection Origin check on writes to the Web UI and on WebSocket connections. serve holds the address it is listening on (`http://localhost:43000`) in its allow list as a legitimate Origin. This check requires an exact match of the scheme (`http`), the host (`localhost`), and **the port number**.
-:::
-
-
-When you run it, after the login messages it stops with the a003 prompt showing. Leave this terminal open.
-
-
-Example:
-
-```
-youraccount@stonefly514:~ (2026-07-08 17:54:26)
-$ ssh -L 43000:localhost:43000 nig-a003
-Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-90-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/pro
-
- System information as of Thu Jul  9 00:57:53 JST 2026
-
-  System load:  4.22                Temperature:                 70.0 C
-  Usage of /:   15.4% of 878.65GB   Processes:                   3063
-  Memory usage: 40%                 Users logged in:             14
-  Swap usage:   99%                 IPv4 address for ibp129s0f0: 172.19.13.3
-
- * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
-   just raised the bar for easy, resilient and secure K8s cluster deployment.
-
-   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
-
-Expanded Security Maintenance for Applications is not enabled.
-
-3 updates can be applied immediately.
-To see these additional updates run: apt list --upgradable
-
-99 additional security updates can be applied with ESM Apps.
-Learn more about enabling ESM Apps service at https://ubuntu.com/esm
-
-
-*** System restart required ***
-Last login: Thu Jul  9 00:57:53 2026 from 172.19.13.202
-youraccount@a003:~$
-```
-
-
-
-### 5. Display the Web UI in a browser 
-
-**On the user's PC**, launch a web browser and open the URL shown in step 3 in the web browser.
-`http://localhost:43000/?nonce=19XXXXXXXXXXXXXXXXXXXXf9f375fab6ed23385`
-
-A screen like the following should appear.
+Sign in to your Claude account in the tab that opens.
 
 ![](cs01a.png)
 
 ![](cs01b.png)
 
+Following the on-screen guidance brings you to the setup screen.
+
 ![](cs01.png)
 
-:::note
-If it does not work, the login may have timed out.
-In that case, stop claude science serve once and repeat steps 3 and 5.
-:::
+If the browser does not open automatically, run the following in another terminal and open the displayed link.
 
-Follow the guidance and enter the required items in order.
+```bash
+# Run on the user's PC (another terminal)
+claude-science url
+```
+
+Once you reach the setup screen, follow the on-screen guidance and enter the required items in order.
 
 ![](cs02.png)
 
@@ -241,12 +130,90 @@ Follow the guidance and enter the required items in order.
 
 ![](cs04.png)
 
-### 6. Stop claude science serve
+Eventually you reach a screen like the following.
 
-Check the status
+
+## Making the NIG supercomputer usable from Claude Science
+
+### 1. Edit `~/.ssh/config` on the user's PC so you can log in directly to the interactive node without a password
+
+To register it as an SSH compute host, you need to configure things so that you can log in to the interactive node with a single command from the user's PC (without explicitly logging in to the gateway node).
+
+Write the following in `~/.ssh/config` on the user's PC.
+
+```sshconfig
+# Write in ~/.ssh/config on the user's PC
+Host nig-gw
+  HostName gw.ddbj.nig.ac.jp                 # NIG supercomputer gateway node
+  User youraccount
+  IdentityFile ~/.ssh/<private key for the NIG supercomputer>
+  IdentitiesOnly yes
+
+Host nig-a003
+  HostName a003                              # NIG supercomputer interactive node
+  User youraccount
+  IdentityFile ~/.ssh/<private key for the NIG supercomputer>
+  IdentitiesOnly yes
+  ProxyJump nig-gw                           # automatically hop through gw
+```
+
+If the private key has a passphrase, you need to load it into `ssh-agent` in advance (because serve connects non-interactively). Run the following and confirm that you can log in to the interactive node with `ssh nig-a003`.
+
+```bash
+# Run on the user's PC
+ssh-add ~/.ssh/<private key for the NIG supercomputer>
+ssh nig-a003
+```
+
+### 2. Register the NIG supercomputer's interactive node with claude science as an SSH compute host
+
+In the Claude Science Web UI, open `Settings > Compute > SSH hosts > Add SSH host` and select the alias `nig-a003` from `~/.ssh/config`.
+
+
+![](compute01.png)
+
+
+- When you add it, a read-only probe runs and detects CPU, memory, GPU, whether `sbatch` is present, partitions, and so on (nothing is installed on the a003 side).
+
+
+On the host detail page, set **Scratch root** to a path on the shared file system. Intermediate data and the like are written here.
+For example, you can write something like `/home/youraccount/claude-scratch`.
+
+![](compute02.png)
+
+You can leave Details blank.
+
+
+### 3. Configure the skill for the NIG supercomputer in claude science
+
+This skill https://github.com/nig-sc/claude-science-skills teaches Claude's LLM how to use the NIG supercomputer.
+
+Clicking `the gear at the bottom left > Settings > Skills > Import from Github button` brings up the following screen.
+
+![](import_from_github.png)
+
+In the GitHub import field, write this:
 
 ```
-youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science status
+nig-sc/claude-science-skills
+```
+
+That is all you need (owner/repo format). This is the repository you pushed earlier; it contains two skill directories, nig-general-analysis/ and nig-personal-genome/, directly under the root, so this single line imports both.
+
+
+![](nig_skills.png)
+
+
+## Stopping and uninstalling
+
+
+### 1. Stop the claude science serve process
+
+#### Check the status
+
+```
+# Run on the user's PC
+$ claude-science status
 {
   "running": true,
   "pid": 2533288,
@@ -264,90 +231,33 @@ youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science status
     "url_host": "localhost"
   }
 }
-youraccount@a003:~$ 
 ```
 
-Stop
+#### Stop
 
 ```
-youraccount@a003:~$ HOME=/lustre10/home/youraccount claude-science stop
+# Run on the user's PC
+$ claude-science stop
 Daemon stopped (pid 2533288).
-youraccount@a003:~$ 
-
 ```
 
+#### Confirm it stopped
 
-### 7. Stop SSH port forwarding
-
-Run the `exit` command in the terminal emulator that is running the SSH port forwarding.
-
-Example
+Confirm that the port number you were using is no longer shown.
+You can check the port number with the `claude-science status` above.
 
 ```
-channel 3: open failed: connect failed: Connection refused
-channel 3: open failed: connect failed: Connection refused
-
-youraccount@a003:~$ exit
-logout
-Connection to a003 closed.
-your-pc$
+# Run on the user's PC. Only the numbers in use within the specified port range are shown.
+ss -tlnp 'sport >= :43000 and sport <= :43100'
 ```
 
-
-
-### 8. Uninstall claude science serve
+### 2. Uninstall claude science serve
 
 ```
+# Run on the user's PC
 # Remove the program itself
 rm ~/.local/bin/claude-science
 
 # Remove the data and the conda environment
-rm -rf /lustre10/home/youraccount/.claude-science
+rm -rf ~/.claude-science
 ```
-
-## Troubleshooting
-
-### You're not signed in to Claude Science
-
-If an error message like the following appears in the browser
-
-```
-You're not signed in to Claude Science
-This browser's login is no longer valid — your sign-in link or session may have expired, or the daemon may have restarted.
-
-To get back in: relaunch Claude Science the way you normally start it — open the Claude Science app from your Applications / launcher, or if you use the command line, run claude-science url and open the link it prints.
-```
-
-This appears when you started with a URL like `http://localhost:43000/`. Use the URL with the `nonce` appended.
-`http://localhost:43000/?nonce=19XXXXXXXXXXXXXXXXXXXXf9f375fab6ed23385`
-
-Alternatively, the login may have timed out.
-In that case, stop claude science serve once and repeat steps 3 and 5.
-
-
-## Other FAQ
-
-## How to start multiple claude science serve instances
-
-Claude Science **can start only one daemon per data-dir**.
-You can start multiple claude science servers by redoing the installation with the `--data-dir` command-line option.
-
-
-```bash
-# Run on a003 (the second one; change --port and --data-dir from the first one)
-HOME=/lustre10/home/youraccount claude-science serve --no-browser --port 43010 --data-dir /lustre10/home/youraccount/.claude-science-2
-```
-
-```bash
-# Run on the user's PC (forward the second port; a separate terminal from the first)
-ssh -L 43010:localhost:43010 nig-a003
-```
-
-Open the `http://localhost:43010/?nonce=...` shown at startup in the browser.
-
-
-### How to submit heavy processing to Slurm, and how to use GPUs
-
-With this installation method, it becomes difficult to submit to Slurm, because the sandbox prevents job submission to Slurm. If you try to force the use of Slurm, you would write nig-a003 as the SSH destination, but then you would have to place a private key on the supercomputer.
-
-The correct configuration is to install claude science serve on the user's PC and specify nig-a003 for SSH.
