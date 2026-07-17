@@ -10,10 +10,7 @@ build.tar
 .cache-loader
 /static-html
 /search-index
-<<<<<<< HEAD
-=======
 /search-embedding
->>>>>>> upstream/master
 html-saurus.jar
 
 # Misc
