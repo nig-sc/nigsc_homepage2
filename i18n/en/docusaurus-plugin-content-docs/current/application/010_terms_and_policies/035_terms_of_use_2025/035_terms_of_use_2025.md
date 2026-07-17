@@ -5,10 +5,8 @@ description: New 20250219
 ---
 
 ## Terms of Use
-
-- [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer (Amended on Match 10, 2025)](nigsc_use_policy_2025.pdf)
+- [Research Organization of Information and Systems Usage Regulations of the NIG Supercomputer (Amended on April 1, 2026)](nigsc_use_policy_2025_20260401.pdf)
 - [Research Organization of Information and Systems Usage Regulations of the NIG Suppercomputer Appendix Tables 1-2 (Amended on Match 10, 2025)](tables_of_nigsc_use_policy_2025.pdf)
-
 
 
 ## Price list (Revised on March 10, 2025)
