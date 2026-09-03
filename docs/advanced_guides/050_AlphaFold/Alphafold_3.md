@@ -8,7 +8,7 @@ title: 遺伝研スパコンでのalphafold 3の実行
 
 AlphaFold3 は[DeepMind社](https://deepmind.com/)が開発したタンパク質立体構造予測プログラムです。
 
-遺伝研スパコンでは [alphafold 3.0.3](https://github.com/google-deepmind/alphafold3/tree/v3.0.3) をインストールした apptainer image、AlphaFold3で使用する配列・構造データベース、slurmにジョブを投入するサンプルスクリプトを用意してあります。
+遺伝研スパコンでは [alphafold 3.0.4](https://github.com/google-deepmind/alphafold3/tree/v3.0.4) をインストールした apptainer image、AlphaFold3で使用する配列・構造データベース、slurmにジョブを投入するサンプルスクリプトを用意してあります。
 
 AlphaFold3 の実行に必要なモデルパラメータファイルは、[後述](#prep-model-params)するようにユーザー様ご自身でDeepMind社から取得していただく必要がございます。
 
@@ -16,6 +16,7 @@ AlphaFold3の実行には個人ゲノム解析区画のアクセラレータ最�
 
 L40S では、3500アミノ酸残基程度までの大きさのタンパク質の立体構造予測が可能です。[後述](#enable-unified-memory-during-model-inference)するようにUnified Memoryを有効化するとさらに大きなタンパク質の立体構造予測が可能ですが、実行速度は低下します。
 
+※AlphaFold3 v3.0.4より、GPUを使用する場合と比較して非常に低速（1/100以下）ですが、CPUでのモデル推論も可能となりました。
 
 ## AlphaFold3 の実行内容について {#af3-exec-details}
 
@@ -31,6 +32,8 @@ AlphaFold3によるタンパク質の立体構造の推論は以下のステッ�
 **L40S**を使用したステップ3の実行時間はタンパク質のサイズが600アミノ酸残基で**90秒**、1100アミノ酸残基で**180秒**、3500アミノ酸残基で**1400秒**程度です。
 
 モデル推論に**Unified Memory**を使用した場合、実行時間は3900アミノ酸残基で**2100秒**、4300アミノ酸残基で**3900秒**、4700アミノ酸残基で**12900秒**程度になります。
+
+**rome**ノードを使用したCPUでのステップ3の実行時間は、200アミノ酸残基で**2,000**秒、1100アミノ酸残基で**30,000秒**程度です。
 
 CPUを使用するステップ1-2のデータベース検索パートとGPUを使用するステップ3のモデル推論パートはAlphaFold3の実行オプションで分割して実行可能です。一括して実行する場合は、データベース検索パートの実行時間も**L40Sノード使用の課金対象**になることにご注意ください。L40Sノードの使用料金は、**日数単位**（小数点以下切り上げ）で算出いたします。
 
@@ -66,7 +69,7 @@ L40Sノードへのアクセス方法は [アクセラレータ最適化ノー�
 
 ### ジョブスクリプトの準備 {#prep-job-scripts}
 
-ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.3/sample_scripts/run_alphafold3.sh` に置いてあります。
+ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.4/sample_scripts/run_alphafold3.sh` に置いてあります。
 
 以下が**slurm**に登録するジョブスクリプト `run_alphafold3.sh`の内容になります。
 
@@ -82,7 +85,7 @@ INPUT_JSON_PATH="${HOME}/alphafold3/input/input.json"
 OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
 HMMER3_BINDIR="/hmmer/bin"
@@ -186,7 +189,7 @@ drwxr-xr-x 2 y-okuda-pg ddbj-m-pg     4096 10月 14 19:45 seed-1_sample-4
 
 #### ジョブスクリプトの準備 {#prepare-job-scripts}
 
-ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.3/sample_scripts/run_alphafold3_msa.sh` または `/lustre10/software/alphafold3/v3.0.3/sample_scripts/run_alphafold3_msa.sh` に置いてあります。
+ジョブスクリプトのサンプルは `/lustre12/software/alphafold3/v3.0.4/sample_scripts/run_alphafold3_msa.sh` または `/lustre10/software/alphafold3/v3.0.4/sample_scripts/run_alphafold3_msa.sh` に置いてあります。
 
 以下がデータベース検索パートを実行する`run_alphafold3_msa.sh`の内容になります。
 
@@ -201,7 +204,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre10/software/alphafold3/database"
-IMAGE_PATH="/lustre10/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre10/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -269,7 +272,7 @@ DB_DIRは、実行場所が一般解析区画の場合 `/lustre10/software/alpha
 
 - 11行目：
 
-IMAGE_PATHは、実行場所が**一般解析区画**の場合 `/lustre10/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif`、**個人ゲノム解析区画**の場合 `/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif` となります。
+IMAGE_PATHは、実行場所が**一般解析区画**の場合 `/lustre10/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif`、**個人ゲノム解析区画**の場合 `/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif` となります。
 
 AlphaFold3 の実行スクリプト中ではMSAの処理に最大**32 CPUコア**を使用する設定ですが、**16 CPUコア**以上を指定しても処理速度の向上は見られません。そのため、使用するCPUコア数の割り当てを `-c 16` としてあります。
 
@@ -352,7 +355,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -462,7 +465,7 @@ OUTPUT_DIR="${HOME}/alphafold3_test/output"
 MODEL_DIR="${HOME}/alphafold3_test/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -488,4 +491,108 @@ apptainer exec \
         --json_path=${INPUT_JSON_PATH} \
         --output_dir=${OUTPUT_DIR} \
         --norun_data_pipeline
+```
+
+## CPUでのモデル推論の実行
+
+### ジョブスクリプトの準備 {#prepare-job-scripts}
+
+一般解析区画においてCPUで**モデル推論パート**を実行するサンプルスクリプトです。
+アミノ酸配列の大きさによっては**データベース検索パート**と比較すると大量のメモリを使用するため、**データベース検索パート**とは別スクリプトとなっています。
+ジョブスクリプトのサンプルは `/lustre10/software/alphafold3/v3.0.4/sample_scripts/run_alphafold3_inference.sh` に置いてあります。
+
+```
+#!/bin/bash
+#SBATCH -p rome
+#SBATCH -c 16
+#SBATCH --mem-per-cpu=4g
+
+INPUT_JSON_PATH="${HOME}/alphafold3/output/pred_name/pred_name_data.json"
+OUTPUT_DIR="${HOME}/alphafold3/output"
+MODEL_DIR="${HOME}/alphafold3/models"
+
+DB_DIR="/lustre10/software/alphafold3/database"
+IMAGE_PATH="/lustre10/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
+
+MAX_TEMPLATE_DATE="2099-12-31"
+ALPHAFOLD3DIR="/app/alphafold"
+HMMER3_BINDIR="/hmmer/bin"
+
+apptainer exec \
+    -B ${DB_DIR}:${DB_DIR} \
+    ${IMAGE_PATH} \
+    bash -c "cd $ALPHAFOLD3DIR && \
+    uv run --no-sync python3.12 run_alphafold.py \
+        --jackhmmer_binary_path=${HMMER3_BINDIR}/jackhmmer \
+        --nhmmer_binary_path=${HMMER3_BINDIR}/nhmmer \
+        --hmmalign_binary_path=${HMMER3_BINDIR}/hmmalign \
+        --hmmsearch_binary_path=${HMMER3_BINDIR}/hmmsearch \
+        --hmmbuild_binary_path=${HMMER3_BINDIR}/hmmbuild \
+        --db_dir=${DB_DIR} \
+        --model_dir=${MODEL_DIR} \
+        --max_template_date=${MAX_TEMPLATE_DATE} \
+        --json_path=${INPUT_JSON_PATH} \
+        --output_dir=${OUTPUT_DIR} \
+        --jax_backend='cpu' \
+        --flash_attention_implementation='xla' \
+        --norun_data_pipeline"
+```
+**3, 8-10行目**の`--mem-per-cpu`, `INPUT_JSON_PATH`, `OUTPUT_DIR`, `MODEL_DIR`を自身の環境に合わせて修正してください。
+
+- 3行目：
+```
+#SBATCH --mem-per-cpu=4g
+```
+
+--mem-per-cpuオプションはCPU当たりのメモリ割り当て量を指定します。使用するCPUコア数は16なので、4gの場合は64GBが割り当てられます。
+200アミノ酸では10GB、1100アミノ酸では38GB必要です。
+
+- 8行目：
+
+```
+INPUT_JSON_PATH="${HOME}/alphafold3/output/pred_name/pred_name_data.json"
+```
+
+INPUT_JSON_PATHは**データベース検索パート**で`run_alphafold3_msa.sh`の実行により出力されたJSONファイルのパスです。
+
+- 9行目：
+
+```
+OUTPUT_DIR="${HOME}/alphafold3/output"
+```
+
+OUTPUT_DIRは**モデル推論結果**の出力ディレクトリです。
+
+- 10行目：
+
+```
+MODEL_DIR="${HOME}/alphafold3/models"
+```
+
+MODEL_DIRはDeep Mind社から取得した**モデルパラメータファイル**（`af3.bin`）を置いたディレクトリです。
+
+
+### ジョブ実行 {#execute-jobs}
+
+
+以下が**slurm**へのジョブ登録コマンドです。**インタラクティブノード**（`a001`, `a002`, `a003`）から実行してください。
+
+```
+sbatch run_alphafold3_inference.sh
+```
+
+CPUでモデル推論を実行する場合、ログに以下のようなエラーが複数回出力されます。
+```
+Traceback (most recent call last):
+  File "/app/alphafold/.venv/lib/python3.12/site-packages/tokamax/_src/ops/gated_linear_unit/api.py", line 114, in gated_linear_unit
+    return fn(x, weights, activation=activation, precision=precision)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/alphafold/.venv/lib/python3.12/site-packages/tokamax/_src/ops/op.py", line 197, in __call__
+    raise NotImplementedError(f"Not supported on {device.device_kind}.")
+NotImplementedError: Not supported on cpu.
+```
+
+メモリ割り当てが不足している場合、以下のエラーを出力してジョブが終了します。
+```
+slurmstepd: error: Detected 1 oom_kill event in StepId=xxxxx.batch. Some of the step tasks have been OOM Killed.
 ```

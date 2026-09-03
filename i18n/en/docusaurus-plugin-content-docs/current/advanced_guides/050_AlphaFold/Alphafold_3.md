@@ -8,7 +8,7 @@ title: alphafold 3
 
 AlphaFold3 is a protein structure prediction program developed by [DeepMind](https://deepmind.com/).
 
-On the NIG supercomputer, an Apptainer image with [AlphaFold 3.0.3](https://github.com/google-deepmind/alphafold3/tree/v3.0.3) installed is provided, along with the sequence and structure databases required for AlphaFold3 and sample scripts for submitting jobs to SLURM.
+On the NIG supercomputer, an Apptainer image with [AlphaFold 3.0.4](https://github.com/google-deepmind/alphafold3/tree/v3.0.4) installed is provided, along with the sequence and structure databases required for AlphaFold3 and sample scripts for submitting jobs to SLURM.
 
 The model parameter files required to run AlphaFold3 must be obtained directly by users from DeepMind, as [described later](#prep-model-params) in this manual.
 
@@ -18,6 +18,7 @@ Use of the Personal Genome Analysis division requires prior application. Please 
 On the L40S node, it is possible to predict the three-dimensional structure of proteins up to approximately 3,500 amino acid residues in length.
 By enabling Unified Memory, larger proteins can also be predicted, although execution speed will be reduced, as [described later](#enable-unified-memory-during-model-inference).
 
+AlphaFold3 v3.0.4 now supports model inference on the CPU, but the processing speed is significantly slower than when using a GPU (less than one-hundredth of the speed achieved with a GPU).
 
 ## Execution Process of AlphaFold3 {#af3-exec-details}
 
@@ -41,6 +42,11 @@ When **Unified Memory** is enabled, larger proteins can also be predicted, thoug
 - 3,900 residues: **2,100 seconds**
 - 4,300 residues: **3,900 seconds**
 - 4,700 residues: **12,900 seconds**
+
+When using a **rome** node for Step 3, the approximate runtimes are as follows:
+
+- 200 residues: **2,000 seconds**
+- 1,100 residues: **30,000 seconds**
 
 The database search (Steps 1–2, CPU) and model inference (Step 3, GPU) parts of AlphaFold3 can be executed separately by specifying the appropriate execution options.
 If the process is run as a single combined job, please note that the runtime for the database search part will also be charged under the **L40S node usage fee**.
@@ -100,7 +106,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -222,7 +228,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre10/software/alphafold3/database"
-IMAGE_PATH="/lustre10/softwar/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre10/softwar/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -286,8 +292,8 @@ If you are using **dedicated CPU nodes** in the Personal Genome Analysis divisio
 If you do so, modify DB_DIR to point to the copied database path.
 
 - Line 11: `IMAGE_PATH`
-    - When running in the **General Analysis division**, use `/lustre10/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif`
-    - When running in the **Personal Genome Analysis division**, use `/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif`
+    - When running in the **General Analysis division**, use `/lustre10/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif`
+    - When running in the **Personal Genome Analysis division**, use `/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif`
 
 Within the AlphaFold3 execution script, the MSA process is configured to use up to **32 CPU cores**, but assigning more than **16 cores** does not improve performance.
 Therefore, the number of CPU cores is specified as `-c 16`.
@@ -367,7 +373,7 @@ For details on how to access the Accelerator-Optimized Node Type 2, please refer
 
 A sample job script is available at `/lustre12/software/alphafold3/sample_scripts/run_alphafold3_inference.sh`.
 
-Below is the content of `run_alphafold3_inference.sh, which is used to run the model inference part:
+Below is the content of `run_alphafold3_inference.sh`, which is used to run the model inference part:
 
 ```
 #!/bin/bash
@@ -382,7 +388,7 @@ OUTPUT_DIR="${HOME}/alphafold3/output"
 MODEL_DIR="${HOME}/alphafold3/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -494,7 +500,7 @@ OUTPUT_DIR="${HOME}/alphafold3_test/output"
 MODEL_DIR="${HOME}/alphafold3_test/models"
 
 DB_DIR="/lustre12/software/alphafold3/database"
-IMAGE_PATH="/lustre12/software/alphafold3/v3.0.3/alphafold3-v3.0.3.sif"
+IMAGE_PATH="/lustre12/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
 
 MAX_TEMPLATE_DATE="2099-12-31"
 ALPHAFOLD3DIR="/app/alphafold"
@@ -521,3 +527,104 @@ apptainer exec \
         --output_dir=${OUTPUT_DIR} \
         --norun_data_pipeline"
 ```
+
+## Running Model Inference on the CPU
+
+### Preparing the Job Script {#prep-job-scripts}
+
+A sample job script is available at `/lustre10/software/alphafold3/sample_scripts/run_alphafold3_inference.sh`.
+
+Below is the content of `run_alphafold3_inference.sh`, which is used to run the model inference part on General Analysis division:
+
+Depending on the size of the amino acid sequence, this phase consumes a large amount of memory compared to the database search phase; therefore, it is handled in a separate script.
+
+
+```
+#!/bin/bash
+#SBATCH -p rome
+#SBATCH -c 16
+#SBATCH --mem-per-cpu=4g
+
+INPUT_JSON_PATH="${HOME}/alphafold3/output/pred_name/pred_name_data.json"
+OUTPUT_DIR="${HOME}/alphafold3/output"
+MODEL_DIR="${HOME}/alphafold3/models"
+
+DB_DIR="/lustre10/software/alphafold3/database"
+IMAGE_PATH="/lustre10/software/alphafold3/v3.0.4/alphafold3-v3.0.4.sif"
+
+MAX_TEMPLATE_DATE="2099-12-31"
+ALPHAFOLD3DIR="/app/alphafold"
+HMMER3_BINDIR="/hmmer/bin"
+
+apptainer exec \
+    -B ${DB_DIR}:${DB_DIR} \
+    ${IMAGE_PATH} \
+    bash -c "cd $ALPHAFOLD3DIR && \
+    uv run --no-sync python3.12 run_alphafold.py \
+        --jackhmmer_binary_path=${HMMER3_BINDIR}/jackhmmer \
+        --nhmmer_binary_path=${HMMER3_BINDIR}/nhmmer \
+        --hmmalign_binary_path=${HMMER3_BINDIR}/hmmalign \
+        --hmmsearch_binary_path=${HMMER3_BINDIR}/hmmsearch \
+        --hmmbuild_binary_path=${HMMER3_BINDIR}/hmmbuild \
+        --db_dir=${DB_DIR} \
+        --model_dir=${MODEL_DIR} \
+        --max_template_date=${MAX_TEMPLATE_DATE} \
+        --json_path=${INPUT_JSON_PATH} \
+        --output_dir=${OUTPUT_DIR} \
+        --jax_backend='cpu' \
+        --flash_attention_implementation='xla' \
+        --norun_data_pipeline"
+```
+Please modify **lines 4, 8, 9 and 10** (`#SBATCH --mem-per-cpu=4g`, `INPUT_JSON_PATH`, `OUTPUT_DIR`, `MODEL_DIR`) to match your environment.
+
+- Line 4: The `--mem-per-cpu` option specifies the amount of memory allocated per CPU. Since 16 CPU cores are used, specifying `4g` results in an allocation of 64 GB. An allocation of 10 GB is required for 200 amino acids, and 38 GB for 1,100 amino acids. 
+
+```
+#SBATCH --mem-per-cpu=4g
+```
+
+- Line 8: Path to the JSON file output from the **database search part** (`run_alphafold3_msa.sh`).
+
+```
+INPUT_JSON_PATH="${HOME}/alphafold3/output/pred_name/pred_name_data.json"
+```
+
+- Line 9: Directory where the **model inference results** will be saved.
+
+```
+OUTPUT_DIR="${HOME}/alphafold3/output"
+```
+
+- Line 10: Directory containing the **model parameter file** (`af3.bin`) obtained from DeepMind.
+
+```
+MODEL_DIR="${HOME}/alphafold3/models"
+```
+
+#### Job Execution {#execute-jobs}
+
+Submit the job to **SLURM** using the following command.
+Please execute it from one of the **interactive nodes** (`a001`, `a002` or `a003`):
+
+```
+sbatch run_alphafold3_inference.sh
+```
+
+When performing model inference on the CPU, errors like the following are output to the Slurm log multiple times.
+
+```
+Traceback (most recent call last):
+  File "/app/alphafold/.venv/lib/python3.12/site-packages/tokamax/_src/ops/gated_linear_unit/api.py", line 114, in gated_linear_unit
+    return fn(x, weights, activation=activation, precision=precision)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/alphafold/.venv/lib/python3.12/site-packages/tokamax/_src/ops/op.py", line 197, in __call__
+    raise NotImplementedError(f"Not supported on {device.device_kind}.")
+NotImplementedError: Not supported on cpu.
+```
+
+If there is insufficient memory allocation, the job will terminate with the following error. Please increase the allocated memory using the `--mem-per-cpu` option.
+
+```
+slurmstepd: error: Detected 1 oom_kill event in StepId=xxxxx.batch. Some of the step tasks have been OOM Killed.
+```
+
