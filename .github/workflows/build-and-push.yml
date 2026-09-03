@@ -64,8 +64,15 @@ jobs:
                   f"{registry}/v2/{repo}/manifests/{tag}",
                   headers={"Accept": "application/vnd.docker.distribution.manifest.v2+json"},
               )
-              with urllib.request.urlopen(req) as r:
-                  digest = r.headers.get("Docker-Content-Digest")
+              # A tag whose manifest is already gone answers 404. Asking for the next tag is the
+              # whole point of the step, so read the answer per tag rather than let the first
+              # dangling one end the loop.
+              try:
+                  with urllib.request.urlopen(req) as r:
+                      digest = r.headers.get("Docker-Content-Digest")
+              except Exception as e:
+                  print(f"No manifest for {tag}: {e}", file=sys.stderr)
+                  continue
               if digest:
                   del_req = urllib.request.Request(
                       f"{registry}/v2/{repo}/manifests/{digest}",
