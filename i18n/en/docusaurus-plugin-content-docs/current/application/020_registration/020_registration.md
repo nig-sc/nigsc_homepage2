@@ -28,7 +28,7 @@ The current procedure for applying for an account is as follows:
 
 - 1TB of high-speed storage is available after the account application.
 - If you extend the available storage or use a billing service, [submit a usage plan table](/application/resource_extension) after your application has been accepted.
-  - &#x26A0;  Currently, we are not accepting Create an NIG supercomputer account of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, [refer to this announcement page](/blog/2022-05-13-suspension-of-applications).
+  - &#x26A0;  Currently, we are not accepting Create an NIG supercomputer account of the personal genomic analysis division and large-scale storage on the general analysis division. For more information, [refer to this announcement page](https://sc.ddbj.nig.ac.jp/#registration-suspension).
 
 
 ### How to apply for use
