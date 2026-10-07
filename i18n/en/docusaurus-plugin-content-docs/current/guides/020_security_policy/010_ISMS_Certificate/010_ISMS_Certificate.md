@@ -11,7 +11,7 @@ within the scope of the construction and operation of the personal genome analys
 
 
 <p>
-&nbsp;&nbsp;<a class="box-link" href="/pdf/ISMS_2022.pdf" target="_blank">ISMS Certificate of Registration (PDF)</a>
+&nbsp;&nbsp;<a class="box-link" href="ISMS_2022.pdf" target="_blank">ISMS Certificate of Registration (PDF)</a>
 </p>
 
 ![ISNS_ANAB_ISMS-AC_color_IS794042_w400.png](ISMS_ANAB_ISMS-AC_color_IS794042_w400.png)
