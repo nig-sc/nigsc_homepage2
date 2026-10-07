@@ -15,8 +15,6 @@
 #   ./deploy-w206.sh ~/works/html-saurus.jar   # a jar of your own, to test a html-saurus change
 set -euo pipefail
 
-HTML_SAURUS_RELEASE=v2.2.0
-HTML_SAURUS_JAR_URL=https://github.com/scivicslab/html-saurus/releases/download/${HTML_SAURUS_RELEASE}/html-saurus-${HTML_SAURUS_RELEASE#v}.jar
 BUILD_HOST=devteam@192.168.5.14
 BUILD_DIR=/home/devteam/works/nigsc_homepage2-w206-build
 REGISTRY=192.168.5.13:32000
@@ -33,8 +31,16 @@ if [ $# -ge 1 ]; then
   echo "== using the jar given on the command line: $1"
   cp "$1" "$repo/html-saurus.jar"
 else
-  echo "== downloading the html-saurus release the production CI pins (${HTML_SAURUS_RELEASE})"
-  curl -fL -o "$repo/html-saurus.jar" "$HTML_SAURUS_JAR_URL"
+  # Read the URL out of the production workflow rather than repeat it here: the point of this
+  # script is to rehearse what production will do, and a second copy of the version drifts from it.
+  url=$(sed -n 's|.*\(https://github.com/scivicslab/html-saurus/releases/download/[^ ]*\.jar\).*|\1|p' \
+        "$repo/.github/workflows/build-and-push.yml" | head -1)
+  if [ -z "$url" ]; then
+    echo "could not read the html-saurus release URL from .github/workflows/build-and-push.yml" >&2
+    exit 1
+  fi
+  echo "== downloading the html-saurus release the production CI pins: $url"
+  curl -fL -o "$repo/html-saurus.jar" "$url"
 fi
 
 # sudo on the build host reads its password from standard input, which rsync and docker also use,
