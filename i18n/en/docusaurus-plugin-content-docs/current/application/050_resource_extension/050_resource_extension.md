@@ -96,4 +96,4 @@ We accept requests for settings that allow data sharing among groups. In this ca
 
 ## About changing storage capacity
 
-Refer to [FAQ (Change Storage Capacity)](/guides/FAQ/faq_application/faq_change_storagecapacity/).
+Refer to [FAQ (Change Storage Capacity)](/guides/FAQ/faq_application/faq_change_StorageCapacity/).
