@@ -26,5 +26,5 @@ title: "誓約書に署名する方法"
 - [ユーザが外為法の国内居住者の場合](/application/agreement_signing/signing_PDF_domestic_resident)
 - [ユーザが外為法の非国内居住者の場合、又は、特定類型に属する場合](/application/agreement_signing/signing_PDF_non-resident)
 
-外為法につきましては、[「ユーザアカウント発行基準　外為法に関する注意事項」をご参照ください](/application/terms_and_policies/user_account_issurance_criteria/#fefta)。
+外為法につきましては、[「ユーザアカウント発行基準　外為法に関する注意事項」をご参照ください](/application/terms_and_policies/user_issurance_criteria/#fefta)。
 

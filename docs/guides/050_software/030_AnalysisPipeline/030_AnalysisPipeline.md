@@ -47,7 +47,7 @@ title: 解析パイプライン
 <tr>
 <td width="300">
 
-[Rhelixa RNAseq パイプライン](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq)
+[Rhelixa RNAseq パイプライン](/advanced_guides/Rhelixa_RNAseq/)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">要申請</td>

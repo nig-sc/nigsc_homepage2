@@ -38,9 +38,9 @@ youraccount@gw.ddbj.nig.ac.jp:/home/youraccount
 
 &#x1F150; The NIG supercomputer website describes the procedure for transferring files using the scp and sftp commands.
 
-- [Data file transfer (The general analysis division)](/guides/using_general_analysis_division/ga_data_transfer/)
+- [Data file transfer (The general analysis division)](/guides/using_general_analysis_division/ga_transfer/)
 
-If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [Data file transfer (The general analysis division)](/guides/using_general_analysis_division/ga_data_transfer/) page.
+If you want to use third-party software (e.g. WinScp or FileZilla), refer to the manual of each software after referring to the [Data file transfer (The general analysis division)](/guides/using_general_analysis_division/ga_transfer/) page.
 
 - WinScp : 
 [&#x1f517;WinSCP :: Official Site :: Free SFTP and FTP client for Windows](https://winscp.net/eng/index.php)

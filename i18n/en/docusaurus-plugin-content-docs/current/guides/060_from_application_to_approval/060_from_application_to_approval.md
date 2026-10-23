@@ -16,7 +16,7 @@ To use the NIG supercomputer, you need to register your account application befo
 
 <font size="5">Check AUP, etc.</font><br/>
 
-Before you start using the service, check '[Issuance criteria for user accounts](/application/terms_and_policies/user_account_issurance_criteria/)' and '[Terms of Use](/application/terms_and_policies/terms_of_use_2025)'.
+Before you start using the service, check '[Issuance criteria for user accounts](/application/terms_and_policies/user_issurance_criteria/)' and '[Terms of Use](/application/terms_and_policies/terms_of_use_2025)'.
 
 </td>
 </tr>
@@ -46,7 +46,7 @@ Before you start using the service, check '[Issuance criteria for user accounts]
 
 <font size="5">Getting the responsible person's pledge by e-mail</font><br/>
 
-From the viewpoint of security traceability, specify the responsible person when applying for use. [For more information, see here](/application/terms_and_policies/user_account_issurance_criteria/#the-responsible-persons-responsibilities).<br/>
+From the viewpoint of security traceability, specify the responsible person when applying for use. [For more information, see here](/application/terms_and_policies/user_issurance_criteria/#the-responsible-persons-responsibilities).<br/>
 
 Sign and return the pledge PDF [following the steps in 'How to sign the pledge'](/application/agreement_signing)
 

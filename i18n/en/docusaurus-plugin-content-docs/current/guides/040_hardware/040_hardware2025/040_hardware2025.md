@@ -349,7 +349,7 @@ This node is equipped with the PEZY-SC3 accelerator. It is a compute node suitab
 | INT8 tensor core [TOPS] | N/A     |  1248 | 1466       | 3958        | N/D         | N/A      |
 
 - N/A : Not Available, N/D : Not Disclosed
-- Benchmark run times for GATK compatible software is the computing time when using the NA18945 sample from [the 1KGP 30x data set](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38). For more details on the benchmark, check [the Benchmark(NVIDIA Parabriks) page on our website](https://sc.ddbj.nig.ac.jp/advanced_guides/benchmark_parabricks).
+- Benchmark run times for GATK compatible software is the computing time when using the NA18945 sample from [the 1KGP 30x data set](https://www.internationalgenome.org/data-portal/data-collection/30x-grch38). For more details on the benchmark, check [the Benchmark(NVIDIA Parabriks) page on our website](https://sc.ddbj.nig.ac.jp/en/advanced_guides/benchmark/benchmark_parabricks/).
 
 
 

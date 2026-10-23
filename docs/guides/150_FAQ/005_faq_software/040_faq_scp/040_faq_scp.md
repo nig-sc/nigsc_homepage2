@@ -41,9 +41,9 @@ youraccount@gw.ddbj.nig.ac.jp:/home/youraccount
 
 &#x1F150; ホームページでは scp, sftp コマンドを用いたファイル転送の手順を記載しています。
 
-- [データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_data_transfer/)
+- [データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_transfer/)
 
-サードパーティ製のソフトウェア(WinScp や FileZilla 等)を利用したい場合は、[データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_data_transfer/)をご参考の上、各ソフトウェアのマニュアルをご参照ください。
+サードパーティ製のソフトウェア(WinScp や FileZilla 等)を利用したい場合は、[データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_transfer/)をご参考の上、各ソフトウェアのマニュアルをご参照ください。
 
 - WinScp : 
 [&#x1f517;WinSCP :: Official Site :: Free SFTP and FTP client for Windows](https://winscp.net/eng/index.php)

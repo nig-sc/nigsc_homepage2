@@ -10,7 +10,7 @@ This page presents the results of detailed performance testing of the genome ana
 
 ## 2. Verification GPU Environment {#2-verification-gpu-environment}
 
-To compare the effective performance of the application, performance evaluations were conducted using nodes equipped with both H100 and V100 GPUs. The H100-equipped node used for verification was executed on a [bare-metal server](https://www.sakura.ad.jp/koukaryoku-phy/) provided by Sakura Internet, featuring their high-performance PHY infrastructure (henceforth referred to as high-performance PHY), while the V100-equipped node was executed on the Thin computation node ([Type 2b](https://sc.ddbj.nig.ac.jp/en/guides/hardware/)) of the NIG supercomputer system (henceforth referred to as NIG igt). Both environments were utilised as single-node configurations, with no application performance evaluations conducted on multi-node setups.
+To compare the effective performance of the application, performance evaluations were conducted using nodes equipped with both H100 and V100 GPUs. The H100-equipped node used for verification was executed on a [bare-metal server](https://www.sakura.ad.jp/koukaryoku-phy/) provided by Sakura Internet, featuring their high-performance PHY infrastructure (henceforth referred to as high-performance PHY), while the V100-equipped node was executed on the Thin computation node ([Type 2b](https://sc.ddbj.nig.ac.jp/en/guides/hardware/hardware2025/)) of the NIG supercomputer system (henceforth referred to as NIG igt). Both environments were utilised as single-node configurations, with no application performance evaluations conducted on multi-node setups.
 
 To avoid performance discrepancies due to differences in GPU drivers and other system configurations, the software environment settings from the NIG igt were adopted as verification conditions, and the same setup was replicated on the high-performance PHY.
 
@@ -190,7 +190,7 @@ Article Creation Date: 6th June 2024
 ### 7.2 Related Links {#related-links}
 
 - [The high-performance PHY (Sakura Internet Inc.](https://www.sakura.ad.jp/koukaryoku-phy/)
-- [NIG igt (National Institute of Genetics）](https://sc.ddbj.nig.ac.jp/en/guides/hardware/)
+- [NIG igt (National Institute of Genetics）](https://sc.ddbj.nig.ac.jp/en/guides/hardware/hardware2025/)
 - [nanoporetech/dorado](https://github.com/nanoporetech/dorado) 
 - [Benchmarking the Oxford Nanopore Technologies basecallers on AWS](https://aws.amazon.com/jp/blogs/hpc/benchmarking-the-oxford-nanopore-technologies-basecallers-on-aws/)
 - [Performance Evaluation of Genome Analysis Software Utilizing High-Speed GPUs (IPSJ-HPC)](http://id.nii.ac.jp/1001/00233052/)

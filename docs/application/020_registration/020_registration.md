@@ -134,7 +134,7 @@ title: "アカウントの新規登録"
 <font size="5">責任者の情報を入力し、「次へ」をクリックします。</font><br/>
 
 セキュリティー上のトレーサビリティーの観点からアカウントの新規登録に際して責任者を指定していただいております。
-[責任者の指定方法の詳細についてはこちらのページ](/application/terms_and_policies/user_account_issurance_criteria/#the-responsible-persons-responsibilities)を参照してください。<br/>
+[責任者の指定方法の詳細についてはこちらのページ](/application/terms_and_policies/user_issurance_criteria/#the-responsible-persons-responsibilities)を参照してください。<br/>
 
 
 </td>

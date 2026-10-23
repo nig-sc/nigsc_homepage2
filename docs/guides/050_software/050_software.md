@@ -135,7 +135,7 @@ Singularity CE (旧Singularity)
 <tr>
 <td width="300">
 
-[Rhelixa RNAseq パイプライン](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq)
+[Rhelixa RNAseq パイプライン](/advanced_guides/Rhelixa_RNAseq/)
 </td>
 <td width="300">インストール済み</td>
 <td width="300">☓</td>
@@ -197,10 +197,10 @@ NVIDIA AI Enterprise
 
 AsperaおよびArchaeaはscp, sftp, ftpなどに比べて長距離の大規模データ転送に適したソフトウェアです。
 - AsperaはNCBI/EBI/DDBJなどからデータをスパコンやユーザのパソコンにダウンロードする際に利用できます。(合計10Gbps上限)  
-	- 現在NCBIではAsperaが利用できません。[SRA toolkit](/guides/050_software/040_CopyTool/sra_toolkit/sra_toolkit.md)の利用が推奨されています。
+	- 現在NCBIではAsperaが利用できません。[SRA toolkit](/guides/software/CopyTool/sra_toolkit/)の利用が推奨されています。
 - Archaea toolsはスパコンのユーザホーム領域とユーザのパソコンとの間のデータ転送に利用できます。(帯域上限なし)
 
-詳細は[データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_data_transfer/)
+詳細は[データ転送(一般解析区画)](/guides/using_general_analysis_division/ga_transfer/)
 および[データ転送(個人ゲノム解析区画)](/guides/using_personal_genome_division/pg_data_transfer/)
 をご参照ください。
 

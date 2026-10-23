@@ -125,7 +125,7 @@ Images](/guides/software/Container/BioContainers)
 <tr>
 <td width="300">
 
-[Rhelixa RNAseq Pipeline](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq)
+[Rhelixa RNAseq Pipeline](/advanced_guides/Rhelixa_RNAseq/)
 </td>
 <td width="300">Installed</td>
 <td width="300">☓</td>
@@ -179,11 +179,11 @@ NVIDIA AI Enterprise
 
 Aspera and Archaea are software tools optimized for large-scale data transfers over long distances, offering advantages over protocols like SCP, SFTP, and FTP.
 - Aspera can be used to download data from sources such as EBI and DDBJ to supercomputers or users' personal computers. (Up to a total bandwidth of 10 Gbps)
-	- Currently, Aspera is not available at NCBI; use of the [SRA-toolkit](/guides/050_software/040_CopyTool/sra_toolkit/sra_toolkit.md) is recommended.
+	- Currently, Aspera is not available at NCBI; use of the [SRA-toolkit](/guides/software/CopyTool/sra_toolkit/) is recommended.
 - Archaea tools are available for transferring data between the user's home directory on the supercomputer and their personal computer. (No bandwidth limit)
 
 For more details, please refer to:
-- [Data file transfer（The general analysis division）](/guides/using_general_analysis_division/ga_data_transfer/)
+- [Data file transfer（The general analysis division）](/guides/using_general_analysis_division/ga_transfer/)
 - [Data file transfer（The Personal Genome Analysis division）](/guides/using_personal_genome_division/pg_data_transfer/)
 
 <table>

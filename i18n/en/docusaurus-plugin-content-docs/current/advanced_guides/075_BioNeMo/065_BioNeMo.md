@@ -28,7 +28,7 @@ https://docs.nvidia.com/bionemo-framework/2.0/user-guide/
 https://developer.nvidia.com/ja-jp/blog/an-easy-way-to-building-cutting-edge-protein-language-models-with-bionemo-framework/
 
 Please note that this document does not describe how to log in to the NIG supercomputer.
-For information on how to log in via SSH, please refer to [Login Overview](https://sc.ddbj.nig.ac.jp/en/guides/account_activation/).
+For information on how to log in via SSH, please refer to [Login Overview](https://sc.ddbj.nig.ac.jp/en/guides/using_general_analysis_division/ga_login/).
 In this tutorial, the home directory is used as the working directory. If you use a different directory for actual work, please adjust the paths accordingly.
 
 ### Preliminary Notes

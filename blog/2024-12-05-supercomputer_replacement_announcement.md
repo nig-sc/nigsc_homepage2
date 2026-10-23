@@ -20,7 +20,7 @@ CPUコア当たりの演算性能は約二倍となります。
 
 次期スパコンの構成の詳細については、遺伝研スパコンホームページをご参照ください。
 
-https://sc.ddbj.nig.ac.jp/guides/hardware2025/
+https://sc.ddbj.nig.ac.jp/guides/hardware/hardware2025/
 
 
 ## 2. 稼働開始までのスケジュール

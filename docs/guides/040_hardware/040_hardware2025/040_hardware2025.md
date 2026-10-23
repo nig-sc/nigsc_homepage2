@@ -364,7 +364,7 @@ NVIDIA B200 GPU を各ノードに 8基搭載した計算ノードです。AI用
 | INT8 tensor core [TOPS] | N/A     |  1248 | 1466       | 3958        | 9,000         | N/A      |
 
 - N/A : Not Available, N/D : Not Disclosed
-- GATK互換ソフトのベンチマーク実行時間は1KGP 30xデータセット(https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) のNA18945サンプルを使った時の計算時間。ベンチマーク詳細はこちらのページ (https://sc.ddbj.nig.ac.jp/advanced_guides/benchmark_parabricks) をご参照ください。
+- GATK互換ソフトのベンチマーク実行時間は1KGP 30xデータセット(https://www.internationalgenome.org/data-portal/data-collection/30x-grch38) のNA18945サンプルを使った時の計算時間。ベンチマーク詳細はこちらのページ (https://sc.ddbj.nig.ac.jp/advanced_guides/benchmark/benchmark_parabricks/) をご参照ください。
 
 
 

@@ -41,7 +41,7 @@ title: Analysis pipeline
 <tr>
 <td width="300">
 
-[Rhelixa RNAseq pipeline](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq)
+[Rhelixa RNAseq pipeline](/advanced_guides/Rhelixa_RNAseq/)
 </td>
 <td width="300">installed</td>
 <td width="300">available</td>

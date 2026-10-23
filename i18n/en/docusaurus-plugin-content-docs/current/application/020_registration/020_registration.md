@@ -136,7 +136,7 @@ If you use the personal genome analysis division, tick the box at the bottom.
 <font size="5">Enter the information of the responsible person and click 'Go next'.</font><br/>
 
 For security traceability reasons, we ask you to designate a responsible person when applying for use.
-[For more information on how to designate a responsible person, see here](/application/terms_and_policies/user_account_issurance_criteria/#the-responsible-persons-responsibilities).
+[For more information on how to designate a responsible person, see here](/application/terms_and_policies/user_issurance_criteria/#the-responsible-persons-responsibilities).
 
 
 </td>
@@ -162,7 +162,7 @@ After the account application has been completed, DDBJ will normally send an ema
  For more information, refer to the link below, 'Steps from user account application to start of use'.
 
 <ul>
-  <li><a href="https://sc.ddbj.nig.ac.jp/guides/using_general_analysis_division/ga_application#steps-from--account-application-to-start-of-use">The General Analysis division</a></li>
+  <li><a href="https://sc.ddbj.nig.ac.jp/en/guides/using_general_analysis_division/ga_application#steps-from--account-application-to-start-of-use">The General Analysis division</a></li>
   <li><a href="https://sc.ddbj.nig.ac.jp/guides/using_personal_genome_division/pg_application#starting-to-use">The Personal Genome Analysis division</a></li>
 </ul>
 

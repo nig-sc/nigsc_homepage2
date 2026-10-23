@@ -11,7 +11,7 @@ title: TogoImputation
 
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;Michigan Imputation Server](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;TOPMed Project Imputation Server](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-Therefore, **[&#x1f517;the Database Center for Life Science](https://dbcls.rois.ac.jp/index-en.html)** has developed **the TogoImputation** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
+Therefore, **[&#x1f517;the Database Center for Life Science](https://dbcls.rois.ac.jp/index-en.html)** has developed **the TogoImputation** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/guides/using_personal_genome_division/pg_overview/)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
 The imputation workflow used in this server was modified and implemented as a web service with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project.
 
@@ -71,7 +71,7 @@ A result comparing the imputation accuracy of different reference panels showed 
 ### Notes on using this system to prepare papers. {#note}
 - Cite the paper in this system.
     - [&#x1f517;Hachiya T, Ishii M, Kawai Y, Khor SS, Kawashima M, Toyo-Oka L, et al., The NBDC-DDBJ imputation server facilitates the use of controlled access reference panel datasets in Japan. Hum Genome Var 9:48 (2022)](https://pubmed.ncbi.nlm.nih.gov/36539398/)
-- Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://sc.ddbj.nig.ac.jp/en/#about-acknowledgements)).
+- Describe the use of the NIG supercomputer in an acknowledgement letter or similar. ([Sample text](https://sc.ddbj.nig.ac.jp/en/#acknowledgement)).
 	- Example text: Computations were partially performed on the NIG supercomputer at ROIS National Institute of Genetics.
 - If you have used restricted public data, include the accession number of the dataset used in your paper and cite [Nucleic Acids Res. 2015, 43 Database issue: D18-D22](https://academic.oup.com/nar/article/43/D1/D18/2437855).  In addition, cite the paper in which the dataset was reported (the paper prepared by the data provider of the dataset using the dataset as the basis for the data), or describe an acknowledgement as the following example text. 
 	- Example text: (A part of) The data used for this research was originally obtained by AAAA research project/group led by Prof./Dr. BBBB and available at the website of the NBDC Human Database website of the Database Center for Life Science (DBCLS) / the Joint Support-Center for Data Science Research of the Research Organization of Information and Systems.

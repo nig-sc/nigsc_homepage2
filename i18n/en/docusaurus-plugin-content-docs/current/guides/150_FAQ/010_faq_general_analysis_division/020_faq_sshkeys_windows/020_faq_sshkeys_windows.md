@@ -10,8 +10,8 @@ title: "SSH public key Registration Procedure(Windows)"
 
 How to check the version: for more information [see "How to check the version of PowerShell" on this page](/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version).
 
-- [Check which version of PowerShell you are using](/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version#curren-ver) by execuing the `$PSVersionTable` command.
-- To [search for the latest version of PowerShell](/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version#latest-ver), execute the `winget search Microsoft.PowerShell` command.
+- [Check which version of PowerShell you are using](/en/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version#curren-ver) by execuing the `$PSVersionTable` command.
+- To [search for the latest version of PowerShell](/en/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version#latest-ver), execute the `winget search Microsoft.PowerShell` command.
 
 If it is not the latest version, the following screen appears.
 
@@ -89,7 +89,7 @@ If you see the following message on the screen when you start the latest version
 
 When a more recent version is released than the latest version installed this time, the executable file is immediately uploaded to Github on the official Microsoft website and becomes ready for installation, but there is a time lag before the latest version is reflected in the `winget` command, so this message is displayed.
 
-For further instructions on how to upgrade to the more recent version, see [instructions on how to upgrade on this page](/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version#latest-ver).
+For further instructions on how to upgrade to the more recent version, see [instructions on how to upgrade on this page](/en/guides/FAQ/faq_general_analysis_division/faq_sshkeys_windows/#check-powershell-version#latest-ver).
 
 &#x1F4D6; About the time difference
 - 19 Oct 2022 - The latest version 7.2.6 was installed at this point.

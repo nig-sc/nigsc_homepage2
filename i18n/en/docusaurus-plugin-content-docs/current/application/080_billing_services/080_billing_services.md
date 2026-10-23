@@ -102,7 +102,7 @@ It is a service that specifies the available capacity for high-speed storage. Th
 <tr>
 <td>
 
-[archive storage](/guides/using_general_analysis_division/largescale_storage#large-scale-use-of-archive-storage)
+[archive storage](/en/guides/using_general_analysis_division/largescale_storage#large-scale-use-of-archive-storage)
 <br />
 It is a service that a certain amount of memory space is allocated on archive storage.
 </td>

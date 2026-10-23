@@ -54,7 +54,7 @@ You may not be able to make a reservation on the desired dates during busy times
 
 ## How to specify the advance reservation {#specify-advance-reservation}
 
-The basic procedure is the same as the advance reservation for Grid Engine in the general analysis division. (See [Instruction for using Advance Reservation Service](/guides/using_general_analysis_division/ga_advance_reservation/#instruction-for-using-advance-reservation-service)).
+The basic procedure is the same as the advance reservation for Grid Engine in the general analysis division. (See [Instruction for using Advance Reservation Service](/en/guides/using_general_analysis_division/ga_advance_reservation/#instruction-for-using-advance-reservation-service)).
 
 - The instruction for the advance reservation command by using Slurm is currently being developed, so contact us to reserve slots.
 

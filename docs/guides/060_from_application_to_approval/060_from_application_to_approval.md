@@ -16,7 +16,7 @@ title: アカウントの新規登録から利用開始までの流れ
 
 <font size="5">利用規程等の確認</font><br/>
 
-事前に「[ユーザーアカウント発行基準](/application/terms_and_policies/user_account_issurance_criteria)」及び「利用規程」をご確認ください。
+事前に「[ユーザーアカウント発行基準](/application/terms_and_policies/user_issurance_criteria)」及び「利用規程」をご確認ください。
 
 - [スパコン(2025)利用規程](/application/terms_and_policies/terms_of_use_2025/)
 
@@ -50,7 +50,7 @@ title: アカウントの新規登録から利用開始までの流れ
 
 <font size="5">誓約書への署名</font><br/>
 
-セキュリティー上のトレーサビリティーの観点からアカウントの新規登録に際して責任者を指定していただいております。[詳細はこちらのページをご覧ください](/application/terms_and_policies/user_account_issurance_criteria/#the-responsible-persons-responsibilities)。<br/>
+セキュリティー上のトレーサビリティーの観点からアカウントの新規登録に際して責任者を指定していただいております。[詳細はこちらのページをご覧ください](/application/terms_and_policies/user_issurance_criteria/#the-responsible-persons-responsibilities)。<br/>
 
 [「誓約書に署名する方法」の手順に沿って](/application/agreement_signing)誓約書 PDF に署名し、ご返信ください。
 

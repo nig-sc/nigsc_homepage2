@@ -12,7 +12,7 @@ Doradoは Oxford Nanopore 社の DNA シーケンサーのために開発され�
 
 ## 2. 検証GPU環境 {#2-verification-gpu-environment}
 
-アプリケーションの実効性能比較のために、H100搭載ノードの他にV100搭載ノードも用いて性能評価を行った。検証対象のH100搭載ノードは、さくらインターネットが提供する高火力PHYの[ベアメタルサーバ](https://www.sakura.ad.jp/koukaryoku-phy/)(以降 高火力PHY)で実行され、V100搭載ノードは、遺伝研スーパーコンピュータシステムが提供するThin計算ノード([Type 2b](https://sc.ddbj.nig.ac.jp/guides/hardware/)) (以降 遺伝研igt)で実行した。いずれも、単体のノードとして使用され、複数台のノード構成によるアプリケーション性能評価は行っていない。
+アプリケーションの実効性能比較のために、H100搭載ノードの他にV100搭載ノードも用いて性能評価を行った。検証対象のH100搭載ノードは、さくらインターネットが提供する高火力PHYの[ベアメタルサーバ](https://www.sakura.ad.jp/koukaryoku-phy/)(以降 高火力PHY)で実行され、V100搭載ノードは、遺伝研スーパーコンピュータシステムが提供するThin計算ノード([Type 2b](https://sc.ddbj.nig.ac.jp/guides/hardware/hardware2025/)) (以降 遺伝研igt)で実行した。いずれも、単体のノードとして使用され、複数台のノード構成によるアプリケーション性能評価は行っていない。
 
 この二つの異なる環境下で運用されるノード間で、GPU関連ドライバー等のバージョン違いなどに起因する実行性能への影響を防ぐ目的で、これまで対象アプリケーションの実行実績のある遺伝研igtの環境設定を検証条件として採用し、高火力PHY上での環境構築を行った。
 検証に利用した遺伝研igtと高火力PHYのGPUノードのハードウェア環境およびソフトウェア環境を[表1](/advanced_guides/benchmark/benchmark_dorado#table-1-verification-node-config)に示す。
@@ -245,7 +245,7 @@ dorado basecaller \
 ### 7.2 関連リンク {#related-links}
 
 - [高火力PHY（さくらインターネット株式会社）](https://www.sakura.ad.jp/koukaryoku-phy/)
-- [遺伝研igt（国立遺伝学研究所）](https://sc.ddbj.nig.ac.jp/guides/hardware/)
+- [遺伝研igt（国立遺伝学研究所）](https://sc.ddbj.nig.ac.jp/guides/hardware/hardware2025/)
 - [nanoporetech/dorado](https://github.com/nanoporetech/dorado) 
 - [Benchmarking the Oxford Nanopore Technologies basecallers on AWS](https://aws.amazon.com/jp/blogs/hpc/benchmarking-the-oxford-nanopore-technologies-basecallers-on-aws/)
 - [高速GPUを活用したゲノム解析ソフトウェアの計算速度評価（HPC研究発表会資料）](http://id.nii.ac.jp/1001/00233052/)

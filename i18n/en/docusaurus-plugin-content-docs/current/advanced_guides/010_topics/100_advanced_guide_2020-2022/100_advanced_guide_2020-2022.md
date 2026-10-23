@@ -12,7 +12,7 @@ title: "Topics before 2022"
 
 The **Imputation Server** is a service to support imputation analysis of SNP array data. **[&#x1f517;Michigan Imputation Server](https://imputationserver.sph.umich.edu/)** and **[&#x1f517;TOPMed Project Imputation Server](https://imputation.biodatacatalyst.nhlbi.nih.gov/#!)** are public. These servers are located outside Japan and genomic data (SNP array data) had to be uploaded to the servers outside Japan for use.
 
-Therefore, **[&#x1f517;the Department of NBDC Program of the Japan Science and Technology Agency](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/personal_genome_division/pg_introduction)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
+Therefore, **[&#x1f517;the Department of NBDC Program of the Japan Science and Technology Agency](https://biosciencedbc.jp/en/)** has developed **the NBDC-DDBJ Imputation Server** system as a Japanese version of the imputation server that is easy for Japanese researchers to use. This system is currently available in **[the Personal Genome Analysis division](https://sc.ddbj.nig.ac.jp/en/guides/using_personal_genome_division/pg_overview/)** of **[the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/)**.
 
 The imputation workflow used in this server was modified and implemented as a web service by the Department of NBDC Program with reference to the information (selection of imputation software and setting of parameters) provided by the National Center for Global Health and Medicine in the following AMED project The NBDC Business Promotion Department has modified and implemented it as a web service using this information as a reference. 
 
@@ -111,7 +111,7 @@ This pipeline maps the Sequence Read Archive of a single sample obtained by the 
 The RNAseq pipeline of Rhelixa is installed on the NIG supercomputer in the form of the Singularity container image. The Singularity container image cannot be used outside the NIG supercomputer. Check to the link below for instructions on how to use it.<br />
 <br />
 
-- [Rhelixa RNAseq > Introduction](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq)
+- [Rhelixa RNAseq > Introduction](/advanced_guides/Rhelixa_RNAseq/)
 - [Rhelixa RNAseq > User manual](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq_manual)
 
 </td>

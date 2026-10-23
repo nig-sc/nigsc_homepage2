@@ -25,6 +25,6 @@ uid **** is using default file quota setting
 $
 ```
 
-For more information, see ["Checking Quota" in the "Using Lustre FS" page](/guides/hardware/ga_lustre/#checking-quota).
+For more information, see ["Checking Quota" in the "Using Lustre FS" page](/en/guides/hardware/ga_lustre/#checking-quota).
 
 

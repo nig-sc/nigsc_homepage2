@@ -107,7 +107,7 @@ Singularity コンテナイメージの遺伝研スパコン外での利用は�
 利用方法は下記リンクをご参照ください。<br />
 <br />
 
-- [Rhelixa RNAseq パイプラインの紹介](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq)
+- [Rhelixa RNAseq パイプラインの紹介](/advanced_guides/Rhelixa_RNAseq/)
 - [Rhelixa RNAseq パイプライン 利用マニュアル](/advanced_guides/Rhelixa_RNAseq/Rhelixa_RNAseq_manual)
 
 </td>

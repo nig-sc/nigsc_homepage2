@@ -20,11 +20,11 @@ The personal genome analysis division is [a billing service](/application/resour
 
 
 1. [Follow the account application procedure](/application/registration) and apply from [the account application form](/blog/2024-10-25-account_system_maintenance)<!-- (https://sc-account.ddbj.nig.ac.jp/en/application/registration) -->.
-    - Before you fill it in, ensure ['Issuance criteria for user accounts'](/application/terms_and_policies/user_account_issurance_criteria) and ["Term of Use"](/application/terms_and_policies/terms_of_use_2025).
+    - Before you fill it in, ensure ['Issuance criteria for user accounts'](/application/terms_and_policies/user_issurance_criteria) and ["Term of Use"](/application/terms_and_policies/terms_of_use_2025).
     - You can use the e-mail address of your institution, not a free e-mail address. (except in special cases)
     - In the registration form, there is a page to register the SSH public key, so create your SSH public key in advance. For details, see [SSH public key registration](/application/ssh_keys)
     - When applying to use the NIG supercomputer, you must designate a faculty member of a university or national/public research institution who is a resident of Japan under the Foreign Exchange and Foreign Trade Control Law as the responsible person. A UNIX group is created for each account of the responsible person.
-2. To confirm your identity, the person in charge of the NIG supercomputer send email to [the responsible person](/application/terms_and_policies/user_account_issurance_criteria/#the-responsible-persons-responsibilities). Send back the Pledge(PDF) [with reference to the 'Steps to sign a PDF'](/application/agreement_signing).
+2. To confirm your identity, the person in charge of the NIG supercomputer send email to [the responsible person](/application/terms_and_policies/user_issurance_criteria/#the-responsible-persons-responsibilities). Send back the Pledge(PDF) [with reference to the 'Steps to sign a PDF'](/application/agreement_signing).
     - The email will be sent in a few days after completing the application form.
 3. Wait for your account registration certificate to arrive.
     - It takes about a week to mail your account registration certidicate by post after you sent the pledge(PDF).

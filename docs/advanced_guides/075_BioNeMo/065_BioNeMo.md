@@ -31,7 +31,7 @@ https://developer.nvidia.com/ja-jp/blog/an-easy-way-to-building-cutting-edge-pro
 
 
 下記では遺伝研スーパーコンピューターへのログイン方法については解説をしていません。
-遺伝研スーパーコンピューターへのsshによるログイン方法については[ログイン方法の概要](https://sc.ddbj.nig.ac.jp/guides/account_activation/)を参考にしてください。
+遺伝研スーパーコンピューターへのsshによるログイン方法については[ログイン方法の概要](https://sc.ddbj.nig.ac.jp/guides/using_general_analysis_division/ga_login/)を参考にしてください。
 また、ログイン後、ホームディレクトリを作業ディレクトリとしています。実際の作業ディレクトリを別に作る場合は、パスを適宜読み替えてください。
 
 ### 事前の注意事項 {#preliminary-notes}

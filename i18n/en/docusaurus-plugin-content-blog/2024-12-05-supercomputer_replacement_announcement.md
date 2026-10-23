@@ -25,7 +25,7 @@ provide cost-effective solutions for genome analysis.
 
 For more details about the Successor Supercomputer (2025)’s configuration,
 please visit the NIG Supercomputer website:
-https://sc.ddbj.nig.ac.jp/guides/hardware2025
+https://sc.ddbj.nig.ac.jp/en/guides/hardware/hardware2025/
 
 
 ## 2. Schedule Until the New Supercomputer Becomes Operational

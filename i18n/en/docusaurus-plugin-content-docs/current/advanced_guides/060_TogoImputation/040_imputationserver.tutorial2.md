@@ -85,7 +85,7 @@ By default, you can choose for the following four.
 - GRCh38.1KGP
 - GRCh38.1KGP-EAS
 
-For more information on each of them, see [&#x1f517;Types of Reference Panels available](https://sc.ddbj.nig.ac.jp/en/advanced_guides/imputation_server/#available-reference-panel-types).
+For more information on each of them, see [&#x1f517;Types of Reference Panels available](https://sc.ddbj.nig.ac.jp/en/advanced_guides/TogoImputation/imputation_server/#available-reference-panel-types).
 
 If you want to use other than the above as a Reference Panel, select 'other' and specify the one you want to use for the Reference panel config file.
 

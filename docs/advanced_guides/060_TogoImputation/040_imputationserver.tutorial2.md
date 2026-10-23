@@ -100,7 +100,7 @@ Target VCF file には、解析対象の VCFファイル (\*.vcf.gz ファイル
 - GRCh38.1KGP
 - GRCh38.1KGP-EAS
 
-それぞれについては[利用可能なリファレンスパネルの種類](https://sc.ddbj.nig.ac.jp/advanced_guides/imputation_server/#%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E7%A8%AE%E9%A1%9E)を参照ください。
+それぞれについては[利用可能なリファレンスパネルの種類](https://sc.ddbj.nig.ac.jp/advanced_guides/TogoImputation/imputation_server/#available-reference-panel-types)を参照ください。
 
 上記以外のものをReference Panelとして使いたいときは
 other を選択し、Reference panel config fileに使いたいものを指定します。

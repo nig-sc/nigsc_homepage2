@@ -113,5 +113,5 @@ title: "利用計画表の提出"
 
 ## ストレージ容量変更について {#chang-storage-capacity}
 
-[FAQ(ストレージ容量変更について)](/guides/FAQ/faq_application/faq_change_storagecapacity/)をご参照ください。
+[FAQ(ストレージ容量変更について)](/guides/FAQ/faq_application/faq_change_StorageCapacity/)をご参照ください。
 

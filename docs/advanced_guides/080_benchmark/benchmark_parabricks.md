@@ -186,7 +186,7 @@ NCGM WGSpipeline では合計 5 種類のバリアントコールが実行され
 ### 7.2 関連リンク {#related-links}
 
 - [高火力PHY（さくらインターネット株式会社）](https://www.sakura.ad.jp/koukaryoku-phy/)
-- [遺伝研igt（国立遺伝学研究所）](https://sc.ddbj.nig.ac.jp/guides/hardware/)
+- [遺伝研igt（国立遺伝学研究所）](https://sc.ddbj.nig.ac.jp/guides/hardware/hardware2025/)
 - [nanoporetech/dorado](https://github.com/nanoporetech/dorado) 
 - [Benchmarking the Oxford Nanopore Technologies basecallers on AWS](https://aws.amazon.com/jp/blogs/hpc/benchmarking-the-oxford-nanopore-technologies-basecallers-on-aws/)
 - [高速GPUを活用したゲノム解析ソフトウェアの計算速度評価（HPC研究発表会資料）](http://id.nii.ac.jp/1001/00233052/)
