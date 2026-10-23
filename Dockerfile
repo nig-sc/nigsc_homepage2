@@ -28,5 +28,7 @@ WORKDIR /app
 COPY html-saurus.jar /app/html-saurus.jar
 COPY . /data/nigsc_homepage2/
 EXPOSE 80
-CMD ["java", "-jar", "/app/html-saurus.jar", "/data/nigsc_homepage2", \
-     "--production", "--port", "80"]
+# "serve" is the command; html-saurus-production-server has exactly one. The mode is no longer
+# chosen by an option — it is which jar this is.
+CMD ["java", "-jar", "/app/html-saurus.jar", "serve", \
+     "--dir", "/data/nigsc_homepage2", "--port", "80"]
