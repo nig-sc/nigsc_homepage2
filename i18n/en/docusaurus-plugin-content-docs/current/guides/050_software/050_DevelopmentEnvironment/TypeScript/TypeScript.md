@@ -1,5 +1,5 @@
 ---
-id: typescript
+id: TypeScript
 title: "Node.js, TypeScript"
 ---
 
