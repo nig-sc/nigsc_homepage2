@@ -22,8 +22,8 @@ slug: /
 ## 重要なお知らせ {#featured-news}
 
 
-- [【重要】セキュリティ問題3件（eMudhra 中間CA鍵漏洩、Node.js、PHP・Apache Tomcat）への対応のお願い](/blog/2026-10-24-security-issues) (2026.10.24) ＼ &#x1F195; ／
 - [遺伝研スパコンのNode.js脆弱性対応のお知らせ](/blog/2026-10-23-nodejs-vulnerability) (2026.10.23) ＼ &#x1F195; ／
+- [【重要・注意喚起】PHP／Node.jsの重大な脆弱性、およびeMudhra中間CA鍵漏洩について](/blog/2026-10-23-security-issues) (2026.10.23) ＼ &#x1F195; ／
 - [遺伝研スパコンからの重要なお知らせ : 2025年第3期(12～3月)](/blog/2026-02-26-important_notice_2025_Dec-2026_Mar) (2026.02.26) 
 
 

@@ -26,8 +26,8 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 :::
 
-- [[Important] Action Requested for Three Security Issues (eMudhra Intermediate CA Key Leak, Node.js, PHP and Apache Tomcat)](/blog/2026-10-24-security-issues) (October 24, 2026) ＼ &#x1F195; ／
 - [Notice on Node.js Vulnerability Response on the NIG Supercomputer](/blog/2026-10-23-nodejs-vulnerability) (October 23, 2026) ＼ &#x1F195; ／
+- [[Important Notice] Critical Vulnerabilities in PHP and Node.js, and the eMudhra Intermediate CA Key Leak](/blog/2026-10-23-security-issues) (October 23, 2026) ＼ &#x1F195; ／
 - [Important Notice from the NIG Supercomputer: Third Period of 2025 (December–March)](/blog/2026-02-26-important_notice_2025_Dec-2026_Mar) (February 26, 2026) ＼ &#x1F195; ／
 - [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, December 25, 2025](/blog/2025-12-25-Slurm_ga_maintenance) (December 25, 2025) 
 - [(Ended) March 13 - March 19, 2026: Scheduled Maintenance](/blog/2026-03-13-scheduled-maintenance) (December 16, 2025)
