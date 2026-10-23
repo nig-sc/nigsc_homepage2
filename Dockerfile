@@ -9,8 +9,11 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends curl ca-certificates \
  && rm -rf /var/lib/apt/lists/*
 
-ENV GRAALVM_VERSION=25.0.0
-RUN curl -fsSL "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${GRAALVM_VERSION}/graalvm-community-jdk-${GRAALVM_VERSION}_linux-x64_bin.tar.gz" \
+# Since the 25 Innovation releases the tag and the file name no longer share one version string,
+# so both are named: the release tag, and the build part of the file name.
+ENV GRAALVM_RELEASE=graal-25.4.4.1.1
+ENV GRAALVM_BUILD=25i4-25.0.4.1.1
+RUN curl -fsSL "https://github.com/graalvm/graalvm-ce-builds/releases/download/${GRAALVM_RELEASE}/graalvm-community-jdk-${GRAALVM_BUILD}_linux-x64_bin.tar.gz" \
       -o /tmp/graalvm.tar.gz \
  && mkdir -p /opt/graalvm \
  && tar -xzf /tmp/graalvm.tar.gz -C /opt/graalvm --strip-components=1 \
