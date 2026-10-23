@@ -1,0 +1,3 @@
+# Markdown is stored with LF, whatever the editor or the operating system of the author writes.
+*.md text eol=lf
+*.mdx text eol=lf
