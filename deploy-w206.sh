@@ -13,6 +13,8 @@
 # Usage:
 #   ./deploy-w206.sh                      # the html-saurus release the production CI pins
 #   ./deploy-w206.sh ~/works/html-saurus.jar   # a jar of your own, to test a html-saurus change
+#   LINK_CHECK=only ./deploy-w206.sh      # only look for broken same-site links; deploy nothing
+#   LINK_CHECK=skip ./deploy-w206.sh      # deploy without that look
 set -euo pipefail
 
 BUILD_HOST=devteam@192.168.5.14
@@ -42,6 +44,55 @@ else
   echo "== downloading the html-saurus release the production CI pins: $url"
   curl -fL -o "$repo/html-saurus.jar" "$url"
 fi
+
+# Look for broken same-site links in the pages, before anything is built or pushed. The check is
+# made here, in the rehearsal, and not inside the image: a container that stops at start-up
+# because of a broken link would leave the old pod running under a CI run that reports success,
+# while a failure here stops the rehearsal and prints the links. Production serves what this
+# step has let through.
+#   LINK_CHECK=skip       do not check
+#   LINK_CHECK=only       check and stop, without deploying
+#   BUILD_ONLY_JAR=path   the html-saurus-build-only jar to check with
+link_check() {
+  local jar work
+  jar="${BUILD_ONLY_JAR:-}"
+  work=$(mktemp -d)
+  if [ -z "$jar" ]; then
+    # The jar of the same release as the one served: the name differs in one word.
+    if [ $# -ge 1 ] && [ -n "$1" ]; then
+      jar="${1/html-saurus-production-server-/html-saurus-build-only-}"
+    fi
+    if [ -n "${url:-}" ]; then
+      jar="$work/html-saurus-build-only.jar"
+      echo "== downloading the build-only jar of the same release"
+      curl -fL -o "$jar" "${url/html-saurus-production-server-/html-saurus-build-only-}"
+    fi
+  fi
+  if [ -z "$jar" ] || [ ! -f "$jar" ]; then
+    echo "no html-saurus-build-only jar to check with (looked for: ${jar:-none}); set BUILD_ONLY_JAR=<path> or LINK_CHECK=skip" >&2
+    rm -rf "$work"
+    exit 1
+  fi
+  echo "== checking the pages for broken same-site links"
+  mkdir "$work/site"
+  rsync -a --exclude node_modules --exclude build --exclude static-html --exclude search-index \
+    --exclude search-embedding --exclude .docusaurus --exclude .git --exclude Dockerfile \
+    --exclude '*.jar' "$repo/" "$work/site/"
+  if nice -n 19 java -jar "$jar" html -d "$work/site" --no-diagrams --strict-links > "$work/check.log" 2>&1; then
+    echo "   no broken links"
+    rm -rf "$work"
+  else
+    echo "== broken same-site links found; nothing was built or pushed" >&2
+    sed -n '/^WARNING: .*broken internal link/,$p' "$work/check.log" >&2
+    rm -rf "$work"
+    exit 1
+  fi
+}
+case "${LINK_CHECK:-}" in
+  skip) echo "== skipping the link check (LINK_CHECK=skip)" ;;
+  only) link_check "$@"; exit 0 ;;
+  *)    link_check "$@" ;;
+esac
 
 # sudo on the build host reads its password from standard input, which rsync and docker also use,
 # so it is read once into a file the operator's own account can read and passed per command.
