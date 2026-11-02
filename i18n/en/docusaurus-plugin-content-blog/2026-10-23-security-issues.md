@@ -6,9 +6,6 @@ tags:
 date: 2026-10-23
 ---
 
-Published: 23 October 2026<br/>
-Last updated: 23 October 2026
-
 Four security issues that require action were published between 20 and 21 October.
 
 1. Leak of intermediate CA keys of the certificate authority eMudhra (emSign)
