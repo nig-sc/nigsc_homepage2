@@ -98,9 +98,7 @@ esac
 # so it is read once into a file the operator's own account can read and passed per command.
 pwfile=$(mktemp); chmod 600 "$pwfile"
 trap 'rm -f "$pwfile"' EXIT
-kubectl exec -n infra-vault vault-0 -- \
-  env VAULT_TOKEN="$(cat ~/.vault-token)" \
-  vault kv get -field=password devtools/sudo/devteam > "$pwfile"
+~/bin/vault-read devtools/sudo/devteam password > "$pwfile"
 
 echo "== copying the build context to $BUILD_HOST:$BUILD_DIR"
 # The same exclusions .dockerignore states, applied here so they never cross the network.

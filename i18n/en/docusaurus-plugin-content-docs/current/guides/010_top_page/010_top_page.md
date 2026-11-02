@@ -18,24 +18,10 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 ## Featured News {#featured-news}
 
-:::info Notice of Power Outage Due to Lightning Strike: Resumption of Supercomputer Service
-
-[Due to the power outage caused by lightning around 13:40 on Friday, September 5, 2025, the NIG supercomputer had been out of service.](/blog/2025-09-08-blackout)  However, the login service was resumed at 12:00 on Tuesday, September 9, 2025. (For dedicated VMs that had not been confirmed to be running as of 12:00 on September 9, all of them were successfully restarted by 15:00 on Wednesday, September 10.)
-
-- **[On 6th November 2025, restoration works were conducted on the power supply infrastructure at the National Institute of Genetics, which had been disrupted by a lightning strike. Due to the repair work being close to the weekend, the NIG Supercomputer was scheduled to be offline from 08:30 on Thursday, 6 November 2025, until 09:00 on Monday, 10 November 2025. However, the work proceeded smoothly, and the NIG Supercomputer was restored earlier than planned, by 17:30 on Friday, 7 November 2025.](/blog/2025-11-06-power-outage)**
-
-:::
-
+- [[Urgent] Network Outage Due to Emergency Network Maintenance on Thursday, November 5, 2026](/blog/2026-11-05-network) (November 2, 2026) ＼ &#x1F195; ／
 - [Notice on Node.js Vulnerability Response on the NIG Supercomputer](/blog/2026-10-23-nodejs-vulnerability) (October 23, 2026) ＼ &#x1F195; ／
 - [[Important Notice] Critical Vulnerabilities in PHP and Node.js, and the eMudhra Intermediate CA Key Leak](/blog/2026-10-23-security-issues) (October 23, 2026) ＼ &#x1F195; ／
-- [Important Notice from the NIG Supercomputer: Third Period of 2025 (December–March)](/blog/2026-02-26-important_notice_2025_Dec-2026_Mar) (February 26, 2026) ＼ &#x1F195; ／
-- [(Restored) [Outage] Slurm Outage in General Analysis Division on Thursday, December 25, 2025](/blog/2025-12-25-Slurm_ga_maintenance) (December 25, 2025) 
-- [(Ended) March 13 - March 19, 2026: Scheduled Maintenance](/blog/2026-03-13-scheduled-maintenance) (December 16, 2025)
-- [Important Announcement from the NIG supercomputer: 2nd Period of 2025 (August-November)](/blog/2025-11-18-important_notice_2025_Aug-Nov) (November 18, 2025)
-- [(Ended) Supercomputer Service Suspension (6th November 2025, 8:00 AM – 10th November 2025, Morning) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-11-06-power-outage) (October 16, 2025)
-- [(Postponed) Supercomputer Service Suspension (24th–27th October 2025) due to NIG Power Restoration Following 5th September Lightning Strike](/blog/2025-10-25-power-outage) (September 30, 2025)
-- [Notice of Discontinuation of Rhelixa Graphing Tool (RIAS Visualisation) by 31 October 2025](/blog/2025-09-29-news_Rhelixa-rias-visualisation-end-october-2025) (September 29, 2025)
-- [(Resolved) [Outage] SSH Connection Disruption on General Analysis Gateway Node on Tuesday, July 29, 2025](/blog/2025-07-29-ssh-failure_ga_gw) (July 29, 2025) 
+- [Important Notice from the NIG Supercomputer: Third Period of 2025 (December–March)](/blog/2026-02-26-important_notice_2025_Dec-2026_Mar) (February 26, 2026) 
 
 
 ## Year-End Account Renewal Applications {#year-end-renewals}
