@@ -18,7 +18,7 @@ Due to limited disk capacity, the research institute does not back up data in us
 
 ## Featured News {#featured-news}
 
-- [[Urgent] Network Outage Due to Emergency Network Maintenance on Thursday, November 5, 2026](/blog/2026-11-05-network) (November 2, 2026) ＼ &#x1F195; ／
+- [(Ended) [Urgent] Network Outage Due to Emergency Network Maintenance on Thursday, November 5, 2026](/blog/2026-11-05-network) (November 2, 2026) 
 - [Notice on Node.js Vulnerability Response on the NIG Supercomputer](/blog/2026-10-23-nodejs-vulnerability) (October 23, 2026) ＼ &#x1F195; ／
 - [[Important Notice] Critical Vulnerabilities in PHP and Node.js, and the eMudhra Intermediate CA Key Leak](/blog/2026-10-23-security-issues) (October 23, 2026) ＼ &#x1F195; ／
 - [Important Notice from the NIG Supercomputer: Third Period of 2025 (December–March)](/blog/2026-02-26-important_notice_2025_Dec-2026_Mar) (February 26, 2026) 
