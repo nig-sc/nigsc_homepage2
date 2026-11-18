@@ -23,6 +23,10 @@ ENV PATH=${JAVA_HOME}/bin:${PATH}
 # Without this the locale is POSIX, and the JVM cannot turn a path holding a non-ASCII character
 # into a Path.
 ENV LANG=C.UTF-8
+# CVE-2026-114938 (Java4Shell): the AVX-512 Base64 decoder intrinsic writes past its output array.
+# Keep the intrinsic off until a GraalVM Community build carrying Oracle's 2026-11-17 fix is used here,
+# then remove this line.
+ENV JAVA_TOOL_OPTIONS="-XX:-UseBASE64Intrinsics"
 
 WORKDIR /app
 COPY html-saurus.jar /app/html-saurus.jar
